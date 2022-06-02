@@ -2,9 +2,8 @@
 
 ## Useful links
 
-- [A useful link](http://beta-docs.nmaas.eu)
+- [An example link](https://beta.docs.nmaas.eu)
 
 ## Project members
 
-!!! info
-    Put project member icons
+Work in progress

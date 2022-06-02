@@ -1,21 +1,19 @@
-site_name: RARE/NMaaS documentation
-site_dir: ../docs.freertr.org/
+site_name: NMaaS documentation
 nav:
   - Home: index.md
   - Getting started:
     - Hello NMaaS !: 'guides/getting-started/001-hello-world.md'
-  - License: license.md
   - Contacts: contacts.md
   - About: about.md
 
 theme:
-  logo: 'img/rare-icon.png'
+  logo: 'img/NMaaS-logo-transparent.png'
   favicon: 'img/favicon.ico'
   name: 'material'
   palette:
     scheme: default
-    primary: 'blue'
-    accent: 'light blue'
+    primary: 'black'
+    accent: 'light-blue'
 
 extra_css:
   - 'css/extra.css'

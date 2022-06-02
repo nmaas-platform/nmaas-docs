@@ -1,0 +1,58 @@
+site_name: RARE/NMaaS documentation
+site_dir: ../docs.freertr.org/
+nav:
+  - Home: index.md
+  - Getting started:
+    - Hello NMaaS !: 'guides/getting-started/001-hello-world.md'
+  - License: license.md
+  - Contacts: contacts.md
+  - About: about.md
+
+theme:
+  logo: 'img/rare-icon.png'
+  favicon: 'img/favicon.ico'
+  name: 'material'
+  palette:
+    scheme: default
+    primary: 'blue'
+    accent: 'light blue'
+
+extra_css:
+  - 'css/extra.css'
+
+extra:
+  search:
+    language: 'en'
+    tokenizer: '[\s\-\.]+'
+
+markdown_extensions:
+  - pymdownx.snippets:
+        base_path: ['docs/guides/reference/snippets','.']
+        check_paths: true
+  - pymdownx.highlight:
+        linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+        alternate_style: true
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables

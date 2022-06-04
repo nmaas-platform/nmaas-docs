@@ -1,4 +1,4 @@
-site_name: NMaaS documentation
+site_name: NMaaS Documentation
 nav:
   - Home: index.md
   - What is NMaaS?: 'what-is-nmaas.md'

@@ -1,13 +1,25 @@
 site_name: NMaaS documentation
 nav:
   - Home: index.md
-  - Getting started:
-    - Hello NMaaS !: 'guides/getting-started/001-hello-world.md'
-  - Contacts: contacts.md
+  - What is NMaaS?: 'what-is-nmaas.md'
+  - Managed NMaaS:
+    - Introduction: 'managed-nmaas/introduction.md'
+    - NMaaS Instances: 'managed-nmaas/nmaas-instances.md'
+  - Self-Hosted NMaaS:
+    - Introduction: 'self-hosted-nmaas/introduction.md'
+    - Quick Start: 'self-hosted-nmaas/quick-start.md'
+    - Production Installation Guide:
+      - Requirements: 'self-hosted-nmaas/production-installation-guide/requirements.md'
+  - NMaaS Applications:
+    - List of Supported Applications: 'nmaas-applications/application-list.md'
+    - Adding a new Application: 'nmaas-applications/new-application.md'
+    - Application Deployment Tutorials:
+      - Booked: 'nmaas-applications/tutorials/booked.md'
+  - Contact: contact.md
   - About: about.md
 
 theme:
-  logo: 'img/NMaaS-logo-transparent.png'
+  logo: 'img/NMaaS-logo-transparent-white.png'
   favicon: 'img/favicon.ico'
   name: 'material'
   palette:

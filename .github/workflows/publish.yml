@@ -16,7 +16,5 @@ jobs:
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@1.25
         env:
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CUSTOM_DOMAIN: beta.docs.nmaas.eu
-        #   CONFIG_FILE: folder/mkdocs.yml
-        #   EXTRA_PACKAGES: build-base

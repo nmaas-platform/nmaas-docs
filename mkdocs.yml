@@ -14,6 +14,7 @@ nav:
     - List of Supported Applications: 'nmaas-applications/application-list.md'
     - Adding a new Application: 'nmaas-applications/new-application.md'
     - Application Deployment Tutorials:
+      - LibreNMS: 'nmaas-applications/tutorials/librenms.md'
       - Booked: 'nmaas-applications/tutorials/booked.md'
   - Contact: contact.md
   - About: about.md
@@ -66,3 +67,5 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - tables
+  - attr_list
+  - md_in_html

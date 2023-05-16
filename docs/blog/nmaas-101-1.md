@@ -1,42 +1,39 @@
 # [ #001 ] NMaaS-101 - "Hello NMaaS !"
 
-The main objective **[NMaaS 101]** series is to help you getting started with NMaaS service without any prior knowledge.
+The main objective **[NMaaS 101]** series is to help you to get started with NMaaS service without any prior knowledge.
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px;">
 
-### Requirement
+### Requirements
 - Having an eduGain account
 - Identified as NMaaS Domain Manager on behalf of your organisation
-- If you are not an NREN, have your local NREN endorsement for using NMaaS 
-  
+- If you are not an NREN, have your local NREN endorsement for using NMaaS
 
 </div>
 
-  
-
 ## Overview
 
-Network Management as a Service (NMaaS) is a GÉANT service proposed to R&E institutions. It proposes the opportunity for any R&E organisation to subscribe and deploy Network Management tools in a cloud environment via an intuitive web portal. Most of GÉANT members have their own network management software suite. Some encompasses off the shelf tools, but others are using Open Source tools as per the [last SIG-NOC tools report](https://wiki.geant.org/display/SIGNOC/SIG-NOC+Tools+Survey+2019). But all the ~40 GÉANT community members are not equal in that perspective. Some have a fully integrated sophisticated network management system, usually sophistication implies also "home made" and some small NRENs have difficulties to maintain existing systems. 
+Network Management as a Service (NMaaS) is a GÉANT service proposed to R&E institutions. It proposes the opportunity for any R&E organisation to subscribe and deploy Network Management tools in a cloud environment via an intuitive web portal. Most of GÉANT members have their own network management software suite. Some encompasses off the shelf tools, but others are using Open Source tools as per the [last SIG-NOC tools report](https://wiki.geant.org/display/SIGNOC/SIG-NOC+Tools+Survey+2019). But all the ~40 GÉANT community members are not equal in that perspective. Some have a fully integrated sophisticated network management system, usually sophistication implies also "home made" and some small NRENs have difficulties to maintain existing systems.
 
 NMaaS target customer audience is:
 
 - Small and Emerging NRENs
 
-Smaller NRENs may have **limited resources** to develop their own NMS
+  Smaller NRENs may have **limited resources** to develop their own NMS
 
-By using a **shared and supported platform**, NRENs can focus on the monitoring and management of their service components
+  By using a **shared and supported platform**, NRENs can focus on the monitoring and management of their service components
 
 - Campuses
 
-NMaaS platform is ideally suited for **Campus Network Management**
+  NMaaS platform is ideally suited for **Campus Network Management**
 
 - Small Organisations
 
-NMaaS supports the needs of institutional users, either on an NREN managed NMaaS platform or the centralised GÉANT platform.
+  NMaaS supports the needs of institutional users, either on an NREN managed NMaaS platform or the centralised GÉANT platform.
 
 - Distributed research projects
 
-It can be a global research project like LSST, SKA, JIVE etc. In our case I'll expose you the particular case of RARE, which is a GN4-3 research project.
+  It can be a global research project like LSST, SKA, JIVE etc. In our case I'll expose you the particular case of RARE, which is a GN4-3 research project.
 
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px; background-color: #fcfcfc;">
@@ -61,9 +58,6 @@ In order to validate the code produced by the RARE team we deployed a P4 Lab dis
 </div>
 
 
-
-
-
 ## Article objective
 
 This article is meant to guide you and provide you the very first mandatory steps in order to create a NMaaS domain for your organization.
@@ -85,12 +79,12 @@ In the end you should have access the NMaaS portal specifically dedicated to you
 <summary>Pré-requisites</summary>
 
 - eduGain R&E IDP
-
-Your organization should be part of the eduGain R&E federated Identity provider.
+  
+  Your organization should be part of the eduGain R&E federated Identity provider.
 
 - Designated as NMaaS domain manager internally by your organisation
 
-Usually, this is CIO role, but at least you should have been granted the privileges to deploy applications on behalf of your institution.
+  Usually, this is CIO role, but at least you should have been granted the privileges to deploy applications on behalf of your institution.
 
 </details>
 
@@ -141,15 +135,9 @@ With these information the NMaaS team should be able to:
 
 Congratulations! Your organisation has now a NMaaS domain and you are Domain manager for your organisation ! 
 
-
 </details>
 
-
-
 </details>
-
-
-
 
 
 ## Conclusion

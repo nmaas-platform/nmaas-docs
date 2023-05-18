@@ -17,7 +17,7 @@ nav:
       - LibreNMS: 'nmaas-applications/tutorials/librenms.md'
       - Booked: 'nmaas-applications/tutorials/booked.md'
   - Blog:
-    - NMaaS-101 - "Hello NMaaS !": 'blog/nmaas-101-1.md'
+    - NMaaS-101 - "Hello NMaaS !": 'blog/blog1/nmaas-101-1.md'
   - Contact: contact.md
   - About: about.md
 

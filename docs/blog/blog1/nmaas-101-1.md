@@ -48,9 +48,9 @@ NMaaS target customer audience is:
 
 In order to validate the code produced by the RARE team we deployed a P4 Lab distributed aming various European countries:
 
-<img src="../img/blog-nmaas-101-1-1.png" width="550">
+<img src="img/blog-nmaas-101-1-1.png" width="550">
 
-![Test](../img/blog-nmaas-101-1-1.png) 
+![Test](img/blog-nmaas-101-1-1.png) 
 
 <li> NMaaS is used as the platform to supervise all the P4 switches deployed in this Testbed.</li>
 <li> We will see in subsequent articles how NMaaS platform proposition value is helping the RARE team to deploy and use Network Management Application.</li>
@@ -73,7 +73,7 @@ In the end you should have access the NMaaS portal specifically dedicated to you
 
 ## Diagram
 
-<img src="../img/blog-nmaas-101-1-2.png" width="550">
+<img src="img/blog-nmaas-101-1-2.png" width="550">
 
 
 ## [ #001 ] - Cookbook
@@ -95,27 +95,27 @@ In the end you should have access the NMaaS portal specifically dedicated to you
 
 - Via your favorite browser, go to nmaas.eu, you should be granted by a welcome page:
 
-<img src="../img/blog-nmaas-101-1-3.png" width="550">
+<img src="img/blog-nmaas-101-1-3.png" width="550">
 
 - Click on "Login / Register" button and then "Federated login"
 
-<img src="../img/blog-nmaas-101-1-4.png" width="550">
+<img src="img/blog-nmaas-101-1-4.png" width="550">
 
 - You should be now familiar with eduGain authentication system
 
-<img src="../img/blog-nmaas-101-1-5.png" width="550">
+<img src="img/blog-nmaas-101-1-5.png" width="550">
 
 - You should be now familiar with national eduGain authentication system
 
-<img src="../img/blog-nmaas-101-1-6.png" width="550">
+<img src="img/blog-nmaas-101-1-6.png" width="550">
 
 - During first login you are asked to submit additional account information and login again
 
-<img src="../img/blog-nmaas-101-1-7.png" width="550">
+<img src="img/blog-nmaas-101-1-7.png" width="550">
 
 - At this point you should now have access to NMaaS portal but with no domain
 
-<img src="../img/blog-nmaas-101-1-8.png" width="550">
+<img src="img/blog-nmaas-101-1-8.png" width="550">
 
 - At that precise point your connection attempt is logged by the NMaaS team and your email contact associated to your eduGain account
 - The final step is to send a mail to <a href="mailto:nmaas@lists.geant.org">nmaas@lists.geant.org</a>
@@ -133,7 +133,7 @@ With these information the NMaaS team should be able to:
 <details>
 <summary>Check your NMaaS domain is created and that you are Domain manager for your organization</summary>
 
-<img src="../img/blog-nmaas-101-1-9.png" width="550">
+<img src="img/blog-nmaas-101-1-9.png" width="550">
 
 Congratulations! Your organisation has now a NMaaS domain and you are Domain manager for your organisation ! 
 

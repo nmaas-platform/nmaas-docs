@@ -48,7 +48,8 @@ NMaaS target customer audience is:
 
 In order to validate the code produced by the RARE team we deployed a P4 Lab distributed aming various European countries:
 
-<img src="../img/blog-nmaas-101-1-1.png" width="550">
+[//]: # (<img src="../img/blog-nmaas-101-1-1.png" width="550">)
+![Image1](../img/blog-nmaas-101-1-1.png){ width="550" }
 
 - NMaaS is used as the platform to supervise all the P4 switches deployed in this Testbed.
 - We will see in subsequent articles how NMaaS platform proposition value is helping the RARE team to deploy and use Network Management Application.

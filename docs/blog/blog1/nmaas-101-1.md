@@ -4,10 +4,10 @@ The main objective **[NMaaS 101]** series is to help you to get started with NM
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px;">
 
-### Requirements
-- Having an eduGain account
-- Identified as NMaaS Domain Manager on behalf of your organisation
-- If you are not an NREN, have your local NREN endorsement for using NMaaS
+<h3 style="margin: 0.6em 0 0.4em;">Requirements</h3>
+<li>Having an eduGain account</li> 
+<li> Identified as NMaaS Domain Manager on behalf of your organisation</li>
+<li> If you are not an NREN, have your local NREN endorsement for using NMaaS</li>
 
 </div>
 
@@ -38,22 +38,22 @@ NMaaS target customer audience is:
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px; background-color: #fcfcfc;">
 
-### Rare project brief description
+<h3> Rare project brief description </h3>
 
-[RARE](https://wiki.geant.org/display/RARE) (**R**outer for **A**cademia, **R**esearch & **E**ducation) is an ongoing effort under the [GÉANT 3<sup>rd</sup> programme](https://www.geant.org/Projects/GEANT_Project_GN4-3) which focus on determining if a routing software platform solution can fit R&E use cases. The project aims to integrate different pieces of software related to these building blocks:
+<a href="https://wiki.geant.org/display/RARE">RARE</a> (<b>R</b>outer for <b>A</b>cademia, <b>R</b>esearch & <b>E</b>ducation) is an ongoing effort under the <a href="https://www.geant.org/Projects/GEANT_Project_GN4-3">GÉANT 3<sup>rd</sup> programme</a> which focus on determining if a routing software platform solution can fit R&E use cases. The project aims to integrate different pieces of software related to these building blocks:
 
-- **control plane: RARE** uses [FreeRouter](http://freerouter.nop.hu/) under the hood used as the control plane component
-- **data plane:** [P4](https://p4.org/) is used to describe the behavioral model of **RARE** data plane
-- and **communication interface** between the control plane and data plane: Interface compliant to [P4Runtime](https://github.com/p4lang/p4runtime) specification ensure this function
+<li> <b>control plane: RARE</b> uses <a href="http://freerouter.nop.hu/">FreeRouter</a> under the hood used as the control plane component </li>
+<li> <b>data plane:</b> <a href="https://p4.org/">P4</a> is used to describe the behavioral model of <b>RARE</b> data plane </li>
+<li> and <b>communication interface</b> between the control plane and data plane: Interface compliant to <a href="https://github.com/p4lang/p4runtime"> P4Runtime</a> specification ensure this function </li>
 
 In order to validate the code produced by the RARE team we deployed a P4 Lab distributed aming various European countries:
 
 <img src="../img/blog-nmaas-101-1-1.png" width="550">
-
-- NMaaS is used as the platform to supervise all the P4 switches deployed in this Testbed.
-- We will see in subsequent articles how NMaaS platform proposition value is helping the RARE team to deploy and use Network Management Application.
-- NMaaS flexibility concept, enabled us to add supervision tools following KISS approach.
-- The NMaaS platform is step by step is becoming a turn key solution for P4 switch network monitoring and supervision. 
+ 
+<li> NMaaS is used as the platform to supervise all the P4 switches deployed in this Testbed.</li>
+<li> We will see in subsequent articles how NMaaS platform proposition value is helping the RARE team to deploy and use Network Management Application.</li>
+<li> NMaaS flexibility concept, enabled us to add supervision tools following KISS approach. </li>
+<li> The NMaaS platform is step by step is becoming a turn key solution for P4 switch network monitoring and supervision.</li>
 
 </div>
 
@@ -71,60 +71,64 @@ In the end you should have access the NMaaS portal specifically dedicated to you
 
 ## Diagram
 
-<img src="../img/blog-nmaas-101-1-2.png" width="550">
+![Diagram](img/blog-nmaas-101-1-2.png)
 
 
 ## [ #001 ] - Cookbook
 <details>
 <summary>Pré-requisites</summary>
 
-- eduGain R&E IDP
+<li> eduGain R&E IDP </li>
   
-  Your organization should be part of the eduGain R&E federated Identity provider.
-
-- Designated as NMaaS domain manager internally by your organisation
-
+<div style="margin-left: 20px">
+Your organization should be part of the eduGain R&E federated Identity provider.
+</div>
+<li>Designated as NMaaS domain manager internally by your organisation</li>
+<div style="margin-left: 20px">
   Usually, this is CIO role, but at least you should have been granted the privileges to deploy applications on behalf of your institution.
+</div>
 
 </details>
 
 <details>
 <summary>First time login to nmaas.eu</summary>
-
-- Via your favorite browser, go to nmaas.eu, you should be granted by a welcome page:
+<p style="margin-top: 15px">
+<li> Via your favorite browser, go to nmaas.eu, you should be granted by a welcome page:</li>
 
 <img src="../img/blog-nmaas-101-1-3.png" width="550">
-
-- Click on "Login / Register" button and then "Federated login"
+<p style="margin-top: 15px">
+<li> Click on "Login / Register" button and then "Federated login" </li>
 
 <img src="../img/blog-nmaas-101-1-4.png" width="550">
-
-- You should be now familiar with eduGain authentication system
+<p style="margin-top: 15px">
+<li> You should be now familiar with eduGain authentication system</li>
 
 <img src="../img/blog-nmaas-101-1-5.png" width="550">
-
-- You should be now familiar with national eduGain authentication system
+<p style="margin-top: 15px">
+<li> You should be now familiar with national eduGain authentication system</li>
 
 <img src="../img/blog-nmaas-101-1-6.png" width="550">
-
-- During first login you are asked to submit additional account information and login again
+<p style="margin-top: 15px">
+<li> During first login you are asked to submit additional account information and login again</li>
 
 <img src="../img/blog-nmaas-101-1-7.png" width="550">
-
-- At this point you should now have access to NMaaS portal but with no domain
+<p style="margin-top: 15px">
+<li> At this point you should now have access to NMaaS portal but with no domain</li>
 
 <img src="../img/blog-nmaas-101-1-8.png" width="550">
+<p style="margin-top: 15px">
+<li> At that precise point your connection attempt is logged by the NMaaS team and your email contact associated to your eduGain account</li>
+<li> The final step is to send a mail to <a href="mailto:nmaas@lists.geant.org">nmaas@lists.geant.org</a> </li>
 
-- At that precise point your connection attempt is logged by the NMaaS team and your email contact associated to your eduGain account
-- The final step is to send a mail to <a href="mailto:nmaas@lists.geant.org">nmaas@lists.geant.org</a>
-
+<p style="margin-top: 15px">
 This mail should briefly present your organisation, eventually your project, mention the domain name (like RARE in my case) and have the endorsement of your local NREN.
-
+<p style="margin-top: 15px">
 With these information the NMaaS team should be able to:
+<p style="margin-top: 15px">
+<li> create the NMaaS domain you specified in your request </li>
+<li> associate your eduGain account as Domain manager for your organisation </li>
 
-- create the NMaaS domain you specified in your request
-- associate your eduGain account as Domain manager for your organisation
-
+</details>
 
 ## Verification
 
@@ -133,11 +137,12 @@ With these information the NMaaS team should be able to:
 
 <img src="../img/blog-nmaas-101-1-9.png" width="550">
 
-Congratulations! Your organisation has now a NMaaS domain and you are Domain manager for your organisation ! 
-
+<p style="margin-top: 15px">
+Congratulations! Your organisation has now a NMaaS domain and you are Domain manager for your organisation !
+</p>
 </details>
 
-</details>
+
 
 
 ## Conclusion
@@ -151,9 +156,9 @@ In this article you:
 
 <div style="border: 3px solid #91c89c; border-radius: 5px; padding-left: 20px; background-color: #f3f9f4">
 
-### [ #001 ] NMaaS-101 - key take-away
+<h3> [ #001 ] NMaaS-101 - key take-away </h3>
 
-- NMaaS is a way to subscribe and deploy easily Network Management application (for now) in the cloud
-- NMaaS customer targets are small, medium R&E institutions that would like to outsource their network management
-- Your organisation must have an eduGain Identity Provider
+<li> NMaaS is a way to subscribe and deploy easily Network Management application (for now) in the cloud
+<li> NMaaS customer targets are small, medium R&E institutions that would like to outsource their network management</li> 
+<li> Your organisation must have an eduGain Identity Provider</li> 
 </div>

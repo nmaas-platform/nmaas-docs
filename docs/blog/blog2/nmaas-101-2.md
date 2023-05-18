@@ -1,6 +1,6 @@
 # [ #002 ] NMaaS-101 - "I can help! But... Please could you open these two doors?"I
 
-n article [#001](./blog/blog1/nmaas-101-1/) your organisation has now a NMaaS domain and you are the domain manager for this domain. 
+In article [#001](./blog/blog1/nmaas-101-1/) your organisation has now a NMaaS domain and you are the domain manager for this domain. 
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px;">
 
@@ -62,7 +62,7 @@ This management network should be only used to convey network management traffic
 In the RARE network example, this network is a multipoint to multipoint L2 VPLS implemented on top of GÉANT backbone by GEANT OC team. All the switches have their management Ethernet ports connected to this VPLS MPLS VPN.
 </p>
 
-<div style="border: 3px solid lightyellow; border-radius: 5px; padding-left: 20px; margin-bottom: 20px">
+<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
 In this particular case, the P4 Lab network span multiple countries, hence the VPLS implementation, it could have been a full mesh of L2VPN point to point tunnels or a L2 EVPN. Most of the case, in your organisation, the OOBM network is a simple 802.1q VLAN that spans your internal L2 network.
 
 </div>
@@ -91,13 +91,13 @@ This information will be used to create your OpenVPN profile. One profile specif
 <summary>Deploy an OpenVPN client in your out of band management VPN</summary>
 <img src="../img/blog-nmaas-101-2-3.png" width="550">
 In the RARE network example, the VPN client is a PfSense firewall using the built-in OpenVPN plugin to establish the site-to-site VPN connection between the management subnet and the NMaaS network.
-<div style="border: 3px solid lightyellow; border-radius: 5px; padding-left: 20px; margin-bottom: 20px">
+<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
 Once deployed you'll have to use the site to site OpenVPN profile provided by the NMaaS team in order to setup up the DCN VPN tunnel towards the NMaaS VPN server.
 </div>
 
 Once setup, you should have a full connectivity between the equipment and all the NMaaS services deployed in your domain.
 
-<div style="border: 3px solid lightyellow; border-radius: 5px; padding-left: 20px; margin-bottom: 20px">
+<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
 Your namespace is implemented inside a namespace that is specific to your domain, and your domain only. All domains are isolated between each other via this concept. This ensures that only people from your organization have access to your resources along with the deployed applications in the NMaaS environment.
 </div>
 
@@ -110,10 +110,66 @@ Your namespace is implemented inside a namespace that is specific to your domain
 
 Once setup, you should have a full connectivity between your laptop and all the NMaaS services deployed in your domain.
 
-<div style="border: 3px solid lightyellow; border-radius: 5px; padding-left: 20px; margin-bottom: 20px">
+<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
 Your namespace is implemented inside a namespace that is specific to your domain, and your domain only. All domains are isolated between each other via this concept. This ensures that only people from your organization have access to your resources along with the deployed applications in the NMaaS environment.
 </div>
 
 
 
 </details>
+
+## Verification
+
+<details>
+<summary>Check that your NMaaS domain is created and that you are the Domain Manager for your organization</summary>
+In order to test your site-to-site VPN connectivity you can execute the following steps:
+
+1. Try to access your private reverse proxy that will be responsible for providing web access to network management services deployed inside your NMaaS domain. You can first test the access to this proxy from your VPN concentrator. The IP address will be provided to you by the NMaaS team during the on-boarding process.
+   1. Ensure that the correct routing table entries have been pushed to your concentrator during the VPN connection phase.
+2. Try to access the same reverse proxy but this time from one of your client devices that you expect to be managed by NMaaS. In order for this test to work, you will have to configure the required routes on your devices so that traffic destined for NMaaS goes through your VPN concentrator. If you use the same device acting as a VPN concentrator as your default gateway in your network, then you are all set; if not, routing entries will have to be manually added or pushed to your client devices. Depending on the software being used on the VPN concentrator, the methods for configuring it as a router so that it will accept transit traffic will vary. The most common scenario, using a simple Linux VM would require enabling the ip forwarding option on your system and setting the necessary iptables FORWARDING rules.
+
+Once setup, you should have a full connectivity between your laptop and all the NMaaS services deployed in your domain.
+
+<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
+<h4>Note on GUI-less devices</h4>
+<p>Since it is expected that most of your devices that you would like to manage are only providing console access, reachability of the reverse proxy can be tested with various tools, such as curl https://<PROVIDED_IP_ADDRESS> or even establishing a TCP session to port 443 using the built-in telnet client: telnet <PROVIDED_IP_ADDRESS> 443. 
+
+The telnet approach is expected to be more widely used since the majority of the devices in use today have a telnet client available.</p>
+</div>
+
+The same steps as above can be used to verify that you have access to your dedicated NMaaS domain while connected from your workstation using the client-to-site VPN. The reverse proxy IP address remains the same, and you can open your browser and navigate to the provided IP address where you should be greeted with a 404 HTTP page.
+
+Congratulations! From this point on:
+
+<li>You should have enabled full connectivity between your equipment and NMaaS service </li>
+<li>You should have access to NMaaS service user interface via an interactive client to site OpenVPN access.</li>
+
+
+</details>
+
+<div style="border: 3px solid #f62d2d; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #ecbdbd">
+<h4>Note on GUI-less devices</h4>
+<p>Since it is expected that most of your devices that you would like to manage are only providing console access, reachability of the reverse proxy can be tested with various tools, such as curl https://<PROVIDED_IP_ADDRESS> or even establishing a TCP session to port 443 using the built-in telnet client: telnet <PROVIDED_IP_ADDRESS> 443. 
+
+The telnet approach is expected to be more widely used since the majority of the devices in use today have a telnet client available.</p>
+</div>
+
+## Conclusion
+
+After performing all of the above steps you should be ready to deploy your first NMaaS application and start managing your network! We will see in the next article how to deploy our first NMaaS service and consider oxidized CMDB software.
+
+In this article you:
+
+- Had a brief explanation regarding the mandatory connectivity required by NMaaS
+- One is a permanent connectivity between the OOBM network and NMaaS services in which only network management information is conveyed, also called a Data Communication Network (DCN).
+- The second one is an on demand connectivity enabled by an interactive VPN access.
+
+
+<div style="border: 3px solid #33ff00; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #c6fab7">
+<h4>[ #002 ] NMaaS-101 - key take-away
+</h4>
+<li>An existing OOBM network has to be implemented</li>
+<li>PfSense/OpenVPN is used as OpenVPN server, you can also deploy a OpenVPN client</li>
+<li>This manual step is a bit tedious but the good news is that it has to be configured only once. Once OpenVPN accesses are setup, they are valid for all NMaaS services available in the catalog.</li>
+
+</div>

@@ -1,6 +1,6 @@
 # [ #002 ] NMaaS-101 - "I can help! But... Please could you open these two doors?"I
 
-In article [#001](./blog/blog1/nmaas-101-1/) your organisation has now a NMaaS domain and you are the domain manager for this domain. 
+In article [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview) your organisation has now a NMaaS domain and you are the domain manager for this domain. 
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px;">
 
@@ -24,7 +24,7 @@ As it is now NMaaS is pretty useless for your organisation even if you deploy my
 
 In this article, we will expose what is needed in order to enable communication between the NMaaS service and your equipment in your network and what is the process to configure your VPN client in order to use NMaaS services.
 
-Let's take the example of the RARE domain, described in article [#001](./blog/blog1/nmaas-101-1/), the objective is to:
+Let's take the example of the RARE domain, described in article [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview), the objective is to:
 
 - Check that you have an out of band management network enabling reachability to all your equipment
 - Provide information required by the NMaaS team (list of users and also the internal out of band management subnet)
@@ -156,7 +156,7 @@ The telnet approach is expected to be more widely used since the majority of the
 
 ## Conclusion
 
-After performing all of the above steps you should be ready to deploy your first NMaaS application and start managing your network! We will see in the next article how to deploy our first NMaaS service and consider oxidized CMDB software.
+After performing all of the above steps you should be ready to deploy your first NMaaS application and start managing your network! We will see in the next article how to deploy our first NMaaS service and consider oxidized [CMDB](https://en.wikipedia.org/wiki/Configuration_management_database) software.
 
 In this article you:
 
@@ -165,7 +165,7 @@ In this article you:
 - The second one is an on demand connectivity enabled by an interactive VPN access.
 
 
-<div style="border: 3px solid #8afc69; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #d7f8cd">
+<div style="border: 3px solid #9ef6a6; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #dbeed1">
 <h4>[ #002 ] NMaaS-101 - key take-away
 </h4>
 <li>An existing OOBM network has to be implemented</li>

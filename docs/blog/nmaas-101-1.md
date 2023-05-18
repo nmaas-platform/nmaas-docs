@@ -4,7 +4,7 @@ The main objective **[NMaaS 101]** series is to help you to get started with NM
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px;">
 
-<h3>Requirements</h3>
+<h3 style="margin: 0.6em 0 0.4em;">Requirements</h3>
 <li>Having an eduGain account</li> 
 <li> Identified as NMaaS Domain Manager on behalf of your organisation</li>
 <li> If you are not an NREN, have your local NREN endorsement for using NMaaS</li>
@@ -38,23 +38,22 @@ NMaaS target customer audience is:
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px; background-color: #fcfcfc;">
 
-### Rare project brief description
+<h3> Rare project brief description </h3>
 
-[RARE](https://wiki.geant.org/display/RARE) (**R**outer for **A**cademia, **R**esearch & **E**ducation) is an ongoing effort under the [GÉANT 3<sup>rd</sup> programme](https://www.geant.org/Projects/GEANT_Project_GN4-3) which focus on determining if a routing software platform solution can fit R&E use cases. The project aims to integrate different pieces of software related to these building blocks:
+<a href="https://wiki.geant.org/display/RARE">RARE</a> (**R**outer for **A**cademia, **R**esearch & **E**ducation) is an ongoing effort under the <a href="https://www.geant.org/Projects/GEANT_Project_GN4-3">GÉANT 3<sup>rd</sup> programme</a> which focus on determining if a routing software platform solution can fit R&E use cases. The project aims to integrate different pieces of software related to these building blocks:
 
-- **control plane: RARE** uses [FreeRouter](http://freerouter.nop.hu/) under the hood used as the control plane component
-- **data plane:** [P4](https://p4.org/) is used to describe the behavioral model of **RARE** data plane
-- and **communication interface** between the control plane and data plane: Interface compliant to [P4Runtime](https://github.com/p4lang/p4runtime) specification ensure this function
+<li> <b>control plane: RARE</b> uses [FreeRouter](http://freerouter.nop.hu/) under the hood used as the control plane component </li>
+<li> <b>data plane:</b> <a href="https://p4.org/">P4</a> is used to describe the behavioral model of <b>RARE</b> data plane </li>
+<li> and <b>communication interface</b> between the control plane and data plane: Interface compliant to <a href="https://github.com/p4lang/p4runtime"> P4Runtime</a> specification ensure this function </li>
 
 In order to validate the code produced by the RARE team we deployed a P4 Lab distributed aming various European countries:
 
-[//]: # (<img src="../img/blog-nmaas-101-1-1.png" width="550">)
-![Image1](../img/blog-nmaas-101-1-1.png){ width="550" }
+<img src="../img/blog-nmaas-101-1-1.png" width="550">
 
-- NMaaS is used as the platform to supervise all the P4 switches deployed in this Testbed.
-- We will see in subsequent articles how NMaaS platform proposition value is helping the RARE team to deploy and use Network Management Application.
-- NMaaS flexibility concept, enabled us to add supervision tools following KISS approach.
-- The NMaaS platform is step by step is becoming a turn key solution for P4 switch network monitoring and supervision. 
+<li> NMaaS is used as the platform to supervise all the P4 switches deployed in this Testbed.</li>
+<li> We will see in subsequent articles how NMaaS platform proposition value is helping the RARE team to deploy and use Network Management Application.</li>
+<li> NMaaS flexibility concept, enabled us to add supervision tools following KISS approach. </li>
+<li> The NMaaS platform is step by step is becoming a turn key solution for P4 switch network monitoring and supervision.</li>
 
 </div>
 

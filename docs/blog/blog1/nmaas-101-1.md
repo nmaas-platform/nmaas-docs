@@ -73,7 +73,7 @@ In the end you should have access the NMaaS portal specifically dedicated to you
 
 ## Diagram
 
-<img src="img/blog-nmaas-101-1-2.png" width="550">
+![Diagram](img/blog-nmaas-101-1-2.png)
 
 
 ## [ #001 ] - Cookbook

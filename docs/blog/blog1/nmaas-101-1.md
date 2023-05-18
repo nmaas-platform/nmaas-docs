@@ -92,39 +92,39 @@ Your organization should be part of the eduGain R&E federated Identity provider.
 
 <details>
 <summary>First time login to nmaas.eu</summary>
-<p>
+<p style="margin-top: 15px">
 <li> Via your favorite browser, go to nmaas.eu, you should be granted by a welcome page:</li>
 
 <img src="../img/blog-nmaas-101-1-3.png" width="550">
-<p>
+<p style="margin-top: 15px">
 <li> Click on "Login / Register" button and then "Federated login" </li>
 
 <img src="../img/blog-nmaas-101-1-4.png" width="550">
-<p>
+<p style="margin-top: 15px">
 <li> You should be now familiar with eduGain authentication system</li>
 
 <img src="../img/blog-nmaas-101-1-5.png" width="550">
-<p>
+<p style="margin-top: 15px">
 <li> You should be now familiar with national eduGain authentication system</li>
 
 <img src="../img/blog-nmaas-101-1-6.png" width="550">
-<p>
+<p style="margin-top: 15px">
 <li> During first login you are asked to submit additional account information and login again</li>
 
 <img src="../img/blog-nmaas-101-1-7.png" width="550">
-<p>
+<p style="margin-top: 15px">
 <li> At this point you should now have access to NMaaS portal but with no domain</li>
 
 <img src="../img/blog-nmaas-101-1-8.png" width="550">
-<p>
+<p style="margin-top: 15px">
 <li> At that precise point your connection attempt is logged by the NMaaS team and your email contact associated to your eduGain account</li>
 <li> The final step is to send a mail to <a href="mailto:nmaas@lists.geant.org">nmaas@lists.geant.org</a> </li>
 
-<p>
+<p style="margin-top: 15px">
 This mail should briefly present your organisation, eventually your project, mention the domain name (like RARE in my case) and have the endorsement of your local NREN.
-<p>
+<p style="margin-top: 15px">
 With these information the NMaaS team should be able to:
-<p>
+<p style="margin-top: 15px">
 <li> create the NMaaS domain you specified in your request </li>
 <li> associate your eduGain account as Domain manager for your organisation </li>
 
@@ -137,8 +137,9 @@ With these information the NMaaS team should be able to:
 
 <img src="../img/blog-nmaas-101-1-9.png" width="550">
 
+<p style="margin-top: 15px">
 Congratulations! Your organisation has now a NMaaS domain and you are Domain manager for your organisation !
-
+</p>
 </details>
 
 

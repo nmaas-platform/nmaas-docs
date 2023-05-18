@@ -4,10 +4,10 @@ The main objective **[NMaaS 101]** series is to help you to get started with NM
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px;">
 
-### Requirements
-- Having an eduGain account
-- Identified as NMaaS Domain Manager on behalf of your organisation
-- If you are not an NREN, have your local NREN endorsement for using NMaaS
+<h3>Requirements</h3>
+<li>Having an eduGain account</li> 
+<li> Identified as NMaaS Domain Manager on behalf of your organisation</li>
+<li> If you are not an NREN, have your local NREN endorsement for using NMaaS</li>
 
 </div>
 

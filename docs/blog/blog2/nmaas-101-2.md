@@ -62,7 +62,7 @@ This management network should be only used to convey network management traffic
 In the RARE network example, this network is a multipoint to multipoint L2 VPLS implemented on top of GÉANT backbone by GEANT OC team. All the switches have their management Ethernet ports connected to this VPLS MPLS VPN.
 </p>
 
-<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
+<div style="border: 3px solid #fcfc91; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #ffffd1">
 In this particular case, the P4 Lab network span multiple countries, hence the VPLS implementation, it could have been a full mesh of L2VPN point to point tunnels or a L2 EVPN. Most of the case, in your organisation, the OOBM network is a simple 802.1q VLAN that spans your internal L2 network.
 
 </div>
@@ -91,13 +91,13 @@ This information will be used to create your OpenVPN profile. One profile specif
 <summary>Deploy an OpenVPN client in your out of band management VPN</summary>
 <img src="../img/blog-nmaas-101-2-3.png" width="550">
 In the RARE network example, the VPN client is a PfSense firewall using the built-in OpenVPN plugin to establish the site-to-site VPN connection between the management subnet and the NMaaS network.
-<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
+<div style="border: 3px solid #fcfc91; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #ffffd1">
 Once deployed you'll have to use the site to site OpenVPN profile provided by the NMaaS team in order to setup up the DCN VPN tunnel towards the NMaaS VPN server.
 </div>
 
 Once setup, you should have a full connectivity between the equipment and all the NMaaS services deployed in your domain.
 
-<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
+<div style="border: 3px solid #fcfc91; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #ffffd1">
 Your namespace is implemented inside a namespace that is specific to your domain, and your domain only. All domains are isolated between each other via this concept. This ensures that only people from your organization have access to your resources along with the deployed applications in the NMaaS environment.
 </div>
 
@@ -110,7 +110,7 @@ Your namespace is implemented inside a namespace that is specific to your domain
 
 Once setup, you should have a full connectivity between your laptop and all the NMaaS services deployed in your domain.
 
-<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
+<div style="border: 3px solid #fcfc91; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #ffffd1">
 Your namespace is implemented inside a namespace that is specific to your domain, and your domain only. All domains are isolated between each other via this concept. This ensures that only people from your organization have access to your resources along with the deployed applications in the NMaaS environment.
 </div>
 
@@ -130,7 +130,7 @@ In order to test your site-to-site VPN connectivity you can execute the followin
 
 Once setup, you should have a full connectivity between your laptop and all the NMaaS services deployed in your domain.
 
-<div style="border: 3px solid #f3f347; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #E2E2A5FF">
+<div style="border: 3px solid #fcfc91; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #ffffd1">
 <h4>Note on GUI-less devices</h4>
 <p>Since it is expected that most of your devices that you would like to manage are only providing console access, reachability of the reverse proxy can be tested with various tools, such as curl https://<PROVIDED_IP_ADDRESS> or even establishing a TCP session to port 443 using the built-in telnet client: telnet <PROVIDED_IP_ADDRESS> 443. 
 
@@ -147,7 +147,7 @@ Congratulations! From this point on:
 
 </details>
 
-<div style="border: 3px solid #f62d2d; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #ecbdbd">
+<div style="border: 3px solid #fc7a7a; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #fdd7d7">
 <h4>Note on GUI-less devices</h4>
 <p>Since it is expected that most of your devices that you would like to manage are only providing console access, reachability of the reverse proxy can be tested with various tools, such as curl https://<PROVIDED_IP_ADDRESS> or even establishing a TCP session to port 443 using the built-in telnet client: telnet <PROVIDED_IP_ADDRESS> 443. 
 
@@ -165,7 +165,7 @@ In this article you:
 - The second one is an on demand connectivity enabled by an interactive VPN access.
 
 
-<div style="border: 3px solid #33ff00; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #c6fab7">
+<div style="border: 3px solid #8afc69; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #d7f8cd">
 <h4>[ #002 ] NMaaS-101 - key take-away
 </h4>
 <li>An existing OOBM network has to be implemented</li>

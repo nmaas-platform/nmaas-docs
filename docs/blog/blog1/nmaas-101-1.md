@@ -82,7 +82,7 @@ In the end you should have access the NMaaS portal specifically dedicated to you
   
 <div style="margin-left: 20px">
 Your organization should be part of the eduGain R&E federated Identity provider.
-
+</div>
 <li>Designated as NMaaS domain manager internally by your organisation</li>
 <div style="margin-left: 20px">
   Usually, this is CIO role, but at least you should have been granted the privileges to deploy applications on behalf of your institution.
@@ -127,6 +127,7 @@ With these information the NMaaS team should be able to:
 <li> create the NMaaS domain you specified in your request </li>
 <li> associate your eduGain account as Domain manager for your organisation </li>
 
+</details>
 
 ## Verification
 
@@ -139,7 +140,7 @@ Congratulations! Your organisation has now a NMaaS domain and you are Domain man
 
 </details>
 
-</details>
+
 
 
 ## Conclusion
@@ -153,9 +154,9 @@ In this article you:
 
 <div style="border: 3px solid #91c89c; border-radius: 5px; padding-left: 20px; background-color: #f3f9f4">
 
-### [ #001 ] NMaaS-101 - key take-away
+<h3> [ #001 ] NMaaS-101 - key take-away </h3>
 
-- NMaaS is a way to subscribe and deploy easily Network Management application (for now) in the cloud
-- NMaaS customer targets are small, medium R&E institutions that would like to outsource their network management
-- Your organisation must have an eduGain Identity Provider
+<li> NMaaS is a way to subscribe and deploy easily Network Management application (for now) in the cloud
+<li> NMaaS customer targets are small, medium R&E institutions that would like to outsource their network management</li> 
+<li> Your organisation must have an eduGain Identity Provider</li> 
 </div>

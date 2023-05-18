@@ -48,7 +48,7 @@ NMaaS target customer audience is:
 
 In order to validate the code produced by the RARE team we deployed a P4 Lab distributed aming various European countries:
 
-<img src="img/blog-nmaas-101-1-1.png" width="550">
+<img src="../img/blog-nmaas-101-1-1.png" width="550">
 
 ![Test](img/blog-nmaas-101-1-1.png) 
 

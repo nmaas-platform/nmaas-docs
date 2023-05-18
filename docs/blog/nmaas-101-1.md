@@ -40,15 +40,17 @@ NMaaS target customer audience is:
 
 <h3> Rare project brief description </h3>
 
-<a href="https://wiki.geant.org/display/RARE">RARE</a> (**R**outer for **A**cademia, **R**esearch & **E**ducation) is an ongoing effort under the <a href="https://www.geant.org/Projects/GEANT_Project_GN4-3">GÉANT 3<sup>rd</sup> programme</a> which focus on determining if a routing software platform solution can fit R&E use cases. The project aims to integrate different pieces of software related to these building blocks:
+<a href="https://wiki.geant.org/display/RARE">RARE</a> (<b>R</b>outer for <b>A</b>cademia, <b>R</b>esearch & <b>E</b>ducation) is an ongoing effort under the <a href="https://www.geant.org/Projects/GEANT_Project_GN4-3">GÉANT 3<sup>rd</sup> programme</a> which focus on determining if a routing software platform solution can fit R&E use cases. The project aims to integrate different pieces of software related to these building blocks:
 
-<li> <b>control plane: RARE</b> uses [FreeRouter](http://freerouter.nop.hu/) under the hood used as the control plane component </li>
+<li> <b>control plane: RARE</b> uses <a href="http://freerouter.nop.hu/">FreeRouter</a> under the hood used as the control plane component </li>
 <li> <b>data plane:</b> <a href="https://p4.org/">P4</a> is used to describe the behavioral model of <b>RARE</b> data plane </li>
 <li> and <b>communication interface</b> between the control plane and data plane: Interface compliant to <a href="https://github.com/p4lang/p4runtime"> P4Runtime</a> specification ensure this function </li>
 
 In order to validate the code produced by the RARE team we deployed a P4 Lab distributed aming various European countries:
 
 <img src="../img/blog-nmaas-101-1-1.png" width="550">
+
+![Test](../img/blog-nmaas-101-1-1.png) 
 
 <li> NMaaS is used as the platform to supervise all the P4 switches deployed in this Testbed.</li>
 <li> We will see in subsequent articles how NMaaS platform proposition value is helping the RARE team to deploy and use Network Management Application.</li>

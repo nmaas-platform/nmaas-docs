@@ -12,7 +12,7 @@ nav:
     - Local Development Environment: 'self-hosted-nmaas/local-vm.md'
   - NMaaS Applications:
     - List of Supported Applications: 'nmaas-applications/application-list.md'
-    - Adding a new Application: 'nmaas-applications/new-application.md'
+    - Adding a new Application: 'nmaas-applications/new-application/new-application.md'
     - Application Deployment Tutorials:
       - LibreNMS: 'nmaas-applications/tutorials/librenms.md'
       - Booked: 'nmaas-applications/tutorials/booked.md'
@@ -30,6 +30,8 @@ theme:
     scheme: default
     primary: 'black'
     accent: 'light-blue'
+  features:
+    - content.code.copy
 
 extra_css:
   - 'css/extra.css'
@@ -45,6 +47,9 @@ markdown_extensions:
         check_paths: true
   - pymdownx.highlight:
         linenums: true
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
   - pymdownx.superfences
   - pymdownx.tabbed:
         alternate_style: true

@@ -43,47 +43,47 @@ NMaaS portal: Oxidized
 
     ![Select Oxidized](img/blog-nmaas-101-3-2.png)
 
-    -select "Deploy" 
+    - select "Deploy" 
 
     ![Deploy](img/blog-nmaas-101-3-3.png)
 
-    -choose a name for your service instance, in our case we chose: "p4-oxi-srv"
+    - choose a name for your service instance, in our case we chose: "p4-oxi-srv"
 
     ![Instance](img/blog-nmaas-101-3-4.png)
 
 
-    !!! warning
+    !!! warning ""
 
         The name has a particular importance as it will dynamically create a FQDN for the NMaaS service in the form: **<service_name>.<domain>.nmaas.eu** In my example it is: **oxidized.rare.nmaas.eu**
 
-        - fill in the mandatory basic configuration information
+    - fill in the mandatory basic configuration information
 
     ![Configuration](img/blog-nmaas-101-3-5.png)
 
-    !!! warning 
+    !!! warning ""
 
     - Oxidized access username
-        we chose: oxidized
+        \we chose: oxidized
 
     - Oxidized access password
-        we chose: oxidized
+        \we chose: oxidized
 
     - Device access username (login used by Oxidized to access the equipment via SSH)
-        we chose: rare
+        \we chose: rare
 
     - Device access password (password used to access the equipment via SSH)
-        we chose: rare
+        \we chose: rare
 
     - Device (IP address)
-        we chose: 172.16.26.103,172.16.26.105,172.16.26.108,172.16.26.109 
+        \we chose: 172.16.26.103,172.16.26.105,172.16.26.108,172.16.26.109 
 
-!!! error "VPN Connectivity Warning"
+    !!! error "VPN Connectivity Warning"
 
      It is important to note that you'll be connected inside a dedicated VPN so you'll be isolated from the outside world as if you were running your own Out of band management network. So we can assume that your domain is secured.
 
-- Congratulation. You should have completed Oxidized deployment
+    - Congratulation. You should have completed Oxidized deployment
 
-![Configuration](img/blog-nmaas-101-3-6.png)
+    ![Configuration](img/blog-nmaas-101-3-6.png)
 
 
 

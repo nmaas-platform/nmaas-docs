@@ -234,7 +234,6 @@ NMaaS portal: Oxidized
     ```
 
      !!! error "Oxidized router.db file sampl"
-
         \172.16.26.103:rare:wedge-bf100-32x
         \172.16.26.105:rare:wedge-bf100-32x
         \172.16.26.108:rare:wedge-bf100-32x

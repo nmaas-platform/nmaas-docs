@@ -64,23 +64,23 @@ NMaaS portal: Oxidized
 
     - Oxidized access username
 
-        we chose: oxidized
+    we chose: oxidized
 
     - Oxidized access password
 
-        we chose: oxidized
+    we chose: oxidized
 
     - Device access username (login used by Oxidized to access the equipment via SSH)
         
-        we chose: rare
+    we chose: rare
 
     - Device access password (password used to access the equipment via SSH)
 
-        we chose: rare
+    we chose: rare
 
     - Device (IP address)
 
-        we chose: 172.16.26.103,172.16.26.105,172.16.26.108,172.16.26.109 
+    we chose: 172.16.26.103,172.16.26.105,172.16.26.108,172.16.26.109 
 
     !!! error "VPN Connectivity Warning"
 

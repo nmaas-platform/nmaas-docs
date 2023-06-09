@@ -101,14 +101,156 @@ NMaaS portal: Oxidized
 
     ![Deploy](img/blog-nmaas-101-3-8.png)
 
-    ``` terminal title="From a terminal, clone oxidized configuration repository"
-    cd rare-oxidized-210
- 
+    ``` terminal title="Oxidized base configuration"
+    cd base
     ls -l
-    total 0
-    drwxr-xr-x  4 loui  staff  128 Jul 30 11:10 base
-    drwxr-xr-x  4 loui  staff  128 Jul 30 11:13 model
+    total 16
+    -rw-r--r--  1 loui  staff  734 Jul 30 11:12 config
+    -rw-r--r--  1 loui  staff  141 Jul 30 11:12 router.db
     ```
+
+    ``` terminal title="Oxidized config file sample"
+    ---
+    username: rare
+    password: rare
+    model: rare
+    interval: 600
+    use_syslog: false
+    debug: false
+    threads: 30
+    timeout: 20
+    retries: 3
+    prompt: !ruby/regexp /([\w.@-]+[#>]\s?)$/
+    rest: 0.0.0.0:8888
+    vars: {}
+    groups:
+        wedge-bf100-32x:
+            vars:
+                ssh_port: 2001
+    pid: "/storage/pid"
+    input:
+        default: ssh
+        debug: false
+        ssh:
+            secure: false
+    output:
+        default: git
+        file:
+        directory: "/storage/configs"
+    git:
+        single_repo: true
+        user: oxidized
+        email: oxidized@man.poznan.pl
+        repo: "/storage/oxidized.git"
+    source:
+        default: csv
+        csv:
+            file: "/root/.config/oxidized/router.db"
+            delimiter: !ruby/regexp /:/
+            map:
+                name: 0
+                model: 1
+                group: 2
+    model_map:
+        rare: rare
+        cisco: ios
+        juniper: junos
+    ```
+
+    ``` terminal title="Oxidized rare.rb file sample"
+    class RARE < Oxidized::Model
+        prompt /([\w.@()-]+[#>]\s?)$/
+        #prompt /^([\w.@()-]+[#>]\s?)$/
+        comment '! '
+        cmd :all do |cfg|
+            # cfg.gsub! /\cH+\s{8}/, '' # example how to handle pager cfg.gsub! /\cH+/, '' # example how to handle pager get rid of errors for commands that don't work on some devices
+            cfg.gsub! /^% Invalid input detected at '\^' marker\.$|^\s+\^$/, ''
+            cfg.cut_both
+    end
+    cmd :secret do |cfg|
+        cfg.gsub! /^(snmp-server community).*/, '\\1 <configuration removed>'
+        cfg.gsub! /^(snmp-server host \S+( vrf \S+)?( version (1|2c|3))?)\s+\S+((\s+\S*)*)\s*/, '\\1 <secret hidden> \\5'
+        cfg.gsub! /^(username .+ (password|secret) \d) .+/, '\\1 <secret hidden>'
+        cfg.gsub! /^(enable (password|secret)( level \d+)? \d) .+/, '\\1 <secret hidden>'
+        cfg.gsub! /^(\s+(?:password|secret)) (?:\d )?\S+/, '\\1 <secret hidden>'
+        cfg.gsub! /^(.*wpa-psk ascii \d) (\S+)/, '\\1 <secret hidden>'
+        cfg.gsub! /^(.*key 7) (\d.+)/, '\\1 <secret hidden>'
+        cfg.gsub! /^(tacacs-server (.+ )?key) .+/, '\\1 <secret hidden>'
+        cfg.gsub! /^(crypto isakmp key) (\S+) (.*)/, '\\1 <secret hidden> \\3'
+        cfg.gsub! /^(\s+ip ospf message-digest-key \d+ md5) .+/, '\\1 <secret hidden>'
+        cfg.gsub! /^(\s+ip ospf authentication-key) .+/, '\\1 <secret hidden>'
+        cfg.gsub! /^(\s+neighbor \S+ password) .+/, '\\1 <secret hidden>'
+        cfg.gsub! /^(\s+vrrp \d+ authentication text) .+/, '\\1 <secret hidden>'
+        cfg.gsub! /^(\s+standby \d+ authentication) .{1,8}$/, '\\1 <secret hidden>'
+        cfg.gsub! /^(\s+standby \d+ authentication md5 key-string) .+?( timeout \d+)?$/, '\\1 <secret hidden> \\2'
+        cfg.gsub! /^(\s+key-string) .+/, '\\1 <secret hidden>'
+        cfg.gsub! /^((tacacs|radius) server [^\n]+\n(\s+[^\n]+\n)*\s+key) [^\n]+$/m, '\1 <secret hidden>'
+        cfg
+    end
+    cmd 'show platform' do |cfg|
+        comment "TEST: show platform"
+        comments = []
+        comments << cfg.lines.first
+        lines = cfg.lines
+        lines.each_with_index do |line, i|
+            if line !~ /^mem:|^uptime:/
+                comments << line.strip!
+            end
+        end
+        comments << "\n"
+        comment comments.join "\n"
+    end
+    cmd 'show interfaces description' do |cfg|
+        comment cfg
+    end
+    cmd 'show running-config' do |cfg|
+        cfg = cfg.each_line.to_a[3..-1]
+        cfg = cfg.reject { |line| line.match /^ntp clock-period / }.join
+        cfg.gsub! /^Current configuration : [^\n]*\n/, ''
+        cfg.gsub! /^ tunnel mpls traffic-eng bandwidth[^\n]*\n*(
+                  (?: [^\n]*\n*)*
+                  tunnel mpls traffic-eng auto-bw)/mx, '\1'
+        cfg
+    end
+    cfg :telnet do
+        username /^Username:/i
+        password /^Password:/i
+    end
+    cfg :telnet, :ssh do
+        # preferred way to handle additional passwords
+        post_login do
+          if vars(:enable) == true
+             cmd "enable"
+          elsif vars(:enable)
+            cmd "enable", /^[pP]assword:/
+            cmd vars(:enable)
+            end
+        end
+        post_login 'terminal length 0'
+        post_login 'terminal width 0'
+        pre_logout 'exit'
+        end
+    end
+    ```
+
+     !!! warning "Oxidized router.db file sampl"
+
+    \172.16.26.103:rare:wedge-bf100-32x
+    \172.16.26.105:rare:wedge-bf100-32x
+    \172.16.26.108:rare:wedge-bf100-32x
+    \172.16.26.109:rare:wedge-bf100-32x
+
+    ``` terminal title="Oxidized model files"
+    cd model
+    ls -l
+    total 16
+    -rw-r--r--  1 loui  staff  2977 Jul 30 11:13 rare.rb
+    -rw-r--r--  1 loui  staff    69 Jul 30 11:10 readme.txt
+    ```
+
+    !!! warning "Oxidized model configuration"
+
+    Oxidized has the property to associate a model file specific to your equipment. In RARE context we needed to define a specific profile specifying the prompt used and also the command of interest during configuration versioning process.
 
 
 

@@ -41,26 +41,26 @@ NMaaS portal: Oxidized
     - Once your domain is created and associated to your account, log into [https://nmaas.eu](https://nmaas.eu) as in [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
     - select Oxidized application 
 
-![Select Oxidized](img/blog-nmaas-101-3-2.png)
+    ![Select Oxidized](img/blog-nmaas-101-3-2.png)
 
     -select "Deploy" 
 
-![Deploy](img/blog-nmaas-101-3-3.png)
+    ![Deploy](img/blog-nmaas-101-3-3.png)
 
     -choose a name for your service instance, in our case we chose: "p4-oxi-srv"
 
-![Instance](img/blog-nmaas-101-3-4.png)
+    ![Instance](img/blog-nmaas-101-3-4.png)
 
 
-!!! warning
+    !!! warning
 
-    The name has a particular importance as it will dynamically create a FQDN for the NMaaS service in the form: **<service_name>.<domain>.nmaas.eu** In my example it is: **oxidized.rare.nmaas.eu**
+        The name has a particular importance as it will dynamically create a FQDN for the NMaaS service in the form: **<service_name>.<domain>.nmaas.eu** In my example it is: **oxidized.rare.nmaas.eu**
 
-    - fill in the mandatory basic configuration information
+        - fill in the mandatory basic configuration information
 
-![Configuration](img/blog-nmaas-101-3-5.png)
+    ![Configuration](img/blog-nmaas-101-3-5.png)
 
-!!! warning 
+    !!! warning 
 
     - Oxidized access username
         we chose: oxidized

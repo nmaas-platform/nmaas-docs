@@ -29,6 +29,10 @@ NMaaS portal: Oxidized
 
 ## [#003] - Cookbook
 
+??? Pré-requisites
+- Having completed [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
+- Having completed [#002](https://docs.nmaas.eu/blog/blog2/nmaas-101-2/#overview)
+
 <details>
 <summary>Pré-requisites</summary>
 <li> Having completed <a href="https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview">#001</a> </li>
@@ -89,6 +93,24 @@ we chose: 172.16.26.103,172.16.26.105,172.16.26.108,172.16.26.109
 <li>Congratulation. You should have completed Oxidized deployment</li>
 
 <img src="../img/blog-nmaas-101-3-6.png" width="550">
+
+
+</details>
+
+<details>
+<summary>Oxidized application specific configuration</summary>
+
+In the RARE domain we had a specific requirement that requires a specific profiles for the RARE network equipment.
+
+We are using then NMaaS configuration feature (also refer to NMaaS configuration process), which actually will provide us the way to alter Oxidized configuration software.
+<li>From the NMaaS portal service instance page select "Update configuration" button </li>
+
+<img src="../img/blog-nmaas-101-3-7.png" width="550">
+
+<li>you should be provided a git command that will let you clone your Oxidized NMaaS configuration repository</li>
+
+<img src="../img/blog-nmaas-101-3-8.png" width="550">
+
 
 
 </details>

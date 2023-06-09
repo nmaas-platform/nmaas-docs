@@ -79,7 +79,7 @@ NMaaS portal: Oxidized
 
     !!! error "VPN Connectivity Warning"
 
-     It is important to note that you'll be connected inside a dedicated VPN so you'll be isolated from the outside world as if you were running your own Out of band management network. So we can assume that your domain is secured.
+        It is important to note that you'll be connected inside a dedicated VPN so you'll be isolated from the outside world as if you were running your own Out of band management network. So we can assume that your domain is secured.
 
     - Congratulation. You should have completed Oxidized deployment
 
@@ -87,21 +87,29 @@ NMaaS portal: Oxidized
 
 
 
-<details>
-<summary>Oxidized application specific configuration</summary>
+??? Oxidized application specific configuration
 
-In the RARE domain we had a specific requirement that requires a specific profiles for the RARE network equipment.
+    In the RARE domain we had a specific requirement that requires a specific profiles for the RARE network equipment.
 
-We are using then NMaaS configuration feature (also refer to NMaaS configuration process), which actually will provide us the way to alter Oxidized configuration software.
-<li>From the NMaaS portal service instance page select "Update configuration" button </li>
+    We are using then NMaaS configuration feature (also refer to NMaaS configuration process), which actually will provide us the way to alter Oxidized configuration software.
 
-<img src="../img/blog-nmaas-101-3-7.png" width="550">
+    - From the NMaaS portal service instance page select "Update configuration" button </li>
 
-<li>you should be provided a git command that will let you clone your Oxidized NMaaS configuration repository</li>
+    ![Deploy](img/blog-nmaas-101-3-7.png)
 
-<img src="../img/blog-nmaas-101-3-8.png" width="550">
+    - you should be provided a git command that will let you clone your Oxidized NMaaS configuration repository
+
+    ![Deploy](img/blog-nmaas-101-3-8.png)
+
+    ``` terminal title="From a terminal, clone oxidized configuration repository"
+    cd rare-oxidized-210
+ 
+    ls -l
+    total 0
+    drwxr-xr-x  4 loui  staff  128 Jul 30 11:10 base
+    drwxr-xr-x  4 loui  staff  128 Jul 30 11:13 model
+    ```
 
 
 
-</details>
 

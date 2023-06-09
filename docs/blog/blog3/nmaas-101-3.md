@@ -236,9 +236,9 @@ NMaaS portal: Oxidized
     !!! error "Oxidized router.db file sampl"
         
         172.16.26.103:rare:wedge-bf100-32x
-        172.16.26.105:rare:wedge-bf100-32x
-        172.16.26.108:rare:wedge-bf100-32x
-        172.16.26.109:rare:wedge-bf100-32x 
+        /172.16.26.105:rare:wedge-bf100-32x
+        /172.16.26.108:rare:wedge-bf100-32x
+        /172.16.26.109:rare:wedge-bf100-32x 
 
     ``` terminal title="Oxidized model files"
     cd model
@@ -253,5 +253,29 @@ NMaaS portal: Oxidized
         Oxidized has the property to associate a model file specific to your equipment. In RARE context we needed to define a specific profile specifying the prompt used and also the command of interest during configuration versioning process.
 
 
+## Verification
+
+??? note "Check that you can access Oxidized using: <svc-name>.<domain>.nmaas.eu"
+
+    ![Instance](img/blog-nmaas-101-3-9.png)
+
+    ![Instance](img/blog-nmaas-101-3-10.png)
+
+    Congratulations! You have deployed your first NMaaS service specifically for your domain !
+
+## Conclusion
+
+In this article you:
+
+- You have deployed a powerful CMDB software for your organisation
+- You have learned how to apply specific configurations to it in order to match your requirements
+
+!!! success "[ #003 ] NMaaS-101 - key take-away"
+    
+    - Deploying a NMaaS service is as easy as deploying an application on your mobile phone, you just have to log into the NMaaS portal and of course have the sufficient privileges to deploy application for your domain
+    - Deploying an application is a 2 steps process
+        - deploy the application via the portal
+        - configure the application via git tool
+    - Even if Oxidized deployment by NMaaS is made easy, it is mandatory to have a strong knowledge of the tool implemented. In this case, it is of course essential to read documentation from [Oxidized GitHub](https://github.com/ytti/oxidized).
 
 

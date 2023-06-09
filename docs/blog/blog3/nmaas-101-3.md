@@ -29,7 +29,7 @@ NMaaS portal: Oxidized
 
 ## [#003] - Cookbook
 
-??? note Pré-requisites
+??? note "Pré-requisites"
 
     - Having completed [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
     - Having completed [#002](https://docs.nmaas.eu/blog/blog2/nmaas-101-2/#overview)
@@ -233,14 +233,12 @@ NMaaS portal: Oxidized
     end
     ```
 
-
-     !!! error "Oxidized router.db file sampl"
-
+    !!! error "Oxidized router.db file sampl"
+        
         172.16.26.103:rare:wedge-bf100-32x
         172.16.26.105:rare:wedge-bf100-32x
         172.16.26.108:rare:wedge-bf100-32x
-        172.16.26.109:rare:wedge-bf100-32x
-
+        172.16.26.109:rare:wedge-bf100-32x 
 
     ``` terminal title="Oxidized model files"
     cd model

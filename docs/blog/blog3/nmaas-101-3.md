@@ -30,8 +30,9 @@ NMaaS portal: Oxidized
 ## [#003] - Cookbook
 
 ??? Pré-requisites
-- Having completed [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
-- Having completed [#002](https://docs.nmaas.eu/blog/blog2/nmaas-101-2/#overview)
+
+    - Having completed [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
+    - Having completed [#002](https://docs.nmaas.eu/blog/blog2/nmaas-101-2/#overview)
 
 <details>
 <summary>Pré-requisites</summary>

@@ -29,14 +29,14 @@ NMaaS portal: Oxidized
 
 ## [#003] - Cookbook
 
-??? Pré-requisites
+??? note Pré-requisites
 
     - Having completed [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
     - Having completed [#002](https://docs.nmaas.eu/blog/blog2/nmaas-101-2/#overview)
 
 
 
-??? example "Oxidized application deployment"
+??? note "Oxidized application deployment"
 
     - Once your domain is created and associated to your account, log into [https://nmaas.eu](https://nmaas.eu) as in [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
     - select Oxidized application 
@@ -87,7 +87,7 @@ NMaaS portal: Oxidized
 
 
 
-??? example "Oxidized application specific configuration"
+??? note "Oxidized application specific configuration"
 
     In the RARE domain we had a specific requirement that requires a specific profiles for the RARE network equipment.
 
@@ -235,10 +235,12 @@ NMaaS portal: Oxidized
 
 
      !!! error "Oxidized router.db file sampl"
-        \172.16.26.103:rare:wedge-bf100-32x
-        \172.16.26.105:rare:wedge-bf100-32x
-        \172.16.26.108:rare:wedge-bf100-32x
-        \172.16.26.109:rare:wedge-bf100-32x
+
+        172.16.26.103:rare:wedge-bf100-32x
+        172.16.26.105:rare:wedge-bf100-32x
+        172.16.26.108:rare:wedge-bf100-32x
+        172.16.26.109:rare:wedge-bf100-32x
+
 
     ``` terminal title="Oxidized model files"
     cd model

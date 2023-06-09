@@ -233,12 +233,12 @@ NMaaS portal: Oxidized
     end
     ```
 
-     !!! warning "Oxidized router.db file sampl"
+     !!! error "Oxidized router.db file sampl"
 
-    \172.16.26.103:rare:wedge-bf100-32x
-    \172.16.26.105:rare:wedge-bf100-32x
-    \172.16.26.108:rare:wedge-bf100-32x
-    \172.16.26.109:rare:wedge-bf100-32x
+        \172.16.26.103:rare:wedge-bf100-32x
+        \172.16.26.105:rare:wedge-bf100-32x
+        \172.16.26.108:rare:wedge-bf100-32x
+        \172.16.26.109:rare:wedge-bf100-32x
 
     ``` terminal title="Oxidized model files"
     cd model
@@ -250,7 +250,7 @@ NMaaS portal: Oxidized
 
     !!! warning "Oxidized model configuration"
 
-    Oxidized has the property to associate a model file specific to your equipment. In RARE context we needed to define a specific profile specifying the prompt used and also the command of interest during configuration versioning process.
+        Oxidized has the property to associate a model file specific to your equipment. In RARE context we needed to define a specific profile specifying the prompt used and also the command of interest during configuration versioning process.
 
 
 

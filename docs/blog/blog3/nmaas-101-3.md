@@ -34,69 +34,58 @@ NMaaS portal: Oxidized
     - Having completed [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
     - Having completed [#002](https://docs.nmaas.eu/blog/blog2/nmaas-101-2/#overview)
 
-<details>
-<summary>Pré-requisites</summary>
-<li> Having completed <a href="https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview">#001</a> </li>
-
-<li> Having completed <a href="https://docs.nmaas.eu/blog/blog2/nmaas-101-2/#overview">#002</a></li>
-</details>
-
-<details>
-<summary>Oxidized application deployment</summary>
-<li>Once your domain is created and associated to your account, log into <a href="https://nmaas.eu">https://nmaas.eu</a> as in <a href="https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview">#001</a>  </li>
-
-<li>select Oxidized application </li>
-
-<img src="../img/blog-nmaas-101-3-2.png" width="550">
-
-<li>select "Deploy" </li>
-
-<img src="../img/blog-nmaas-101-3-3.png" width="550">
-
-<li>choose a name for your service instance, in our case we chose: "p4-oxi-srv" </li>
-
-<img src="../img/blog-nmaas-101-3-4.png" width="550">
 
 
-<div style="border: 3px solid #fcfc91; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #ffffd1">
-The name has a particular importance as it will dynamically create a FQDN for the NMaaS service in the form: <b><service_name>.<domain>.nmaas.eu </b>
+??? Oxidized application deployment
 
-In my example it is: <b>oxidized.rare.nmaas.eu</b>
-</div>
+    - Once your domain is created and associated to your account, log into [https://nmaas.eu](https://nmaas.eu) as in [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
+    - select Oxidized application 
 
-<li>fill in the mandatory basic configuration information</li>
+![Select Oxidized](img/blog-nmaas-101-3-2.png)
 
-<img src="../img/blog-nmaas-101-3-5.png" width="550">
+    -select "Deploy" 
 
-<div style="border: 3px solid #fcfc91; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #ffffd1">
-<li>Oxidized access username</li>
-we chose: oxidized
+![Deploy](img/blog-nmaas-101-3-3.png)
 
-<li>Oxidized access password</li>
-we chose: oxidized
+    -choose a name for your service instance, in our case we chose: "p4-oxi-srv"
 
-<li>Device access username (login used by Oxidized to access the equipment via SSH)</li>
-we chose: rare
-
-<li>Device access password (password used to access the equipment via SSH)</li>
-we chose: rare
-
-<li>Device (IP address)</li>
-we chose: 172.16.26.103,172.16.26.105,172.16.26.108,172.16.26.109 
-
-</div>
-
-<div style="border: 3px solid #fc7a7a; border-radius: 5px; padding-left: 20px; margin-bottom: 20px; margin-top: 15px; background-color: #fdd7d7">
-<h4>VPN Connectivity Warning</h4>
-<p> It is important to note that you'll be connected inside a dedicated VPN so you'll be isolated from the outside world as if you were running your own Out of band management network. So we can assume that your domain is secured.</p>
-</div>
-
-<li>Congratulation. You should have completed Oxidized deployment</li>
-
-<img src="../img/blog-nmaas-101-3-6.png" width="550">
+![Instance](img/blog-nmaas-101-3-4.png)
 
 
-</details>
+!!! warning
+
+    The name has a particular importance as it will dynamically create a FQDN for the NMaaS service in the form: **<service_name>.<domain>.nmaas.eu** In my example it is: **oxidized.rare.nmaas.eu**
+
+    - fill in the mandatory basic configuration information
+
+![Configuration](img/blog-nmaas-101-3-5.png)
+
+!!! warning 
+
+    - Oxidized access username
+        we chose: oxidized
+
+    - Oxidized access password
+        we chose: oxidized
+
+    - Device access username (login used by Oxidized to access the equipment via SSH)
+        we chose: rare
+
+    - Device access password (password used to access the equipment via SSH)
+        we chose: rare
+
+    - Device (IP address)
+        we chose: 172.16.26.103,172.16.26.105,172.16.26.108,172.16.26.109 
+
+!!! error "VPN Connectivity Warning"
+
+     It is important to note that you'll be connected inside a dedicated VPN so you'll be isolated from the outside world as if you were running your own Out of band management network. So we can assume that your domain is secured.
+
+- Congratulation. You should have completed Oxidized deployment
+
+![Configuration](img/blog-nmaas-101-3-6.png)
+
+
 
 <details>
 <summary>Oxidized application specific configuration</summary>

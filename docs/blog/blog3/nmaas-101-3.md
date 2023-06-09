@@ -36,7 +36,7 @@ NMaaS portal: Oxidized
 
 
 
-??? Oxidized application deployment
+??? example "Oxidized application deployment"
 
     - Once your domain is created and associated to your account, log into [https://nmaas.eu](https://nmaas.eu) as in [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
     - select Oxidized application 
@@ -87,7 +87,7 @@ NMaaS portal: Oxidized
 
 
 
-??? Oxidized application specific configuration
+??? example "Oxidized application specific configuration"
 
     In the RARE domain we had a specific requirement that requires a specific profiles for the RARE network equipment.
 
@@ -232,6 +232,7 @@ NMaaS portal: Oxidized
         end
     end
     ```
+
 
      !!! error "Oxidized router.db file sampl"
         \172.16.26.103:rare:wedge-bf100-32x

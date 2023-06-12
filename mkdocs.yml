@@ -12,7 +12,7 @@ nav:
     - Local Development Environment: 'self-hosted-nmaas/local-vm.md'
   - NMaaS Applications:
     - List of Supported Applications: 'nmaas-applications/application-list.md'
-    - Adding a new Application: 'nmaas-applications/new-application/new-application.md'
+    - Adding a new Application: 'nmaas-applications/new-application.md'
     - Application Deployment Tutorials:
       - LibreNMS: 'nmaas-applications/tutorials/librenms.md'
       - Booked: 'nmaas-applications/tutorials/booked.md'

@@ -31,6 +31,8 @@ theme:
     scheme: default
     primary: 'black'
     accent: 'light-blue'
+  features:
+    - content.code.copy
 
 extra_css:
   - 'css/extra.css'
@@ -46,6 +48,9 @@ markdown_extensions:
         check_paths: true
   - pymdownx.highlight:
         linenums: true
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
   - pymdownx.superfences
   - pymdownx.tabbed:
         alternate_style: true

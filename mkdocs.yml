@@ -17,6 +17,7 @@ nav:
       - LibreNMS: 'nmaas-applications/tutorials/librenms.md'
       - Booked: 'nmaas-applications/tutorials/booked.md'
       - Uptime Kuma: 'nmaas-applications/tutorials/uptime-kuma.md'
+      - MailDev: 'nmaas-applications/tutorials/maildev.md'
   - Blog:
     - NMaaS-101 - "Hello NMaaS !": 'blog/blog1/nmaas-101-1.md'
     - NMaaS-101 - "I can help! But... Please could you open these two doors?": 'blog/blog2/nmaas-101-2.md'

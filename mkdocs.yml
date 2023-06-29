@@ -20,6 +20,8 @@ nav:
   - Blog:
     - NMaaS-101 - "Hello NMaaS !": 'blog/blog1/nmaas-101-1.md'
     - NMaaS-101 - "I can help! But... Please could you open these two doors?": 'blog/blog2/nmaas-101-2.md'
+    - NMaaS-101 - "My name is Oxidized and I'm a nifty configuration management tool": 'blog/blog3/nmaas-101-3.md'
+  - FAQ: faq.md
   - Contact: contact.md
   - About: about.md
 
@@ -31,6 +33,8 @@ theme:
     scheme: default
     primary: 'black'
     accent: 'light-blue'
+  features:
+    - content.code.copy
 
 extra_css:
   - 'css/extra.css'
@@ -60,6 +64,9 @@ markdown_extensions:
         check_paths: true
   - pymdownx.highlight:
         linenums: true
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
   - pymdownx.superfences
   - pymdownx.tabbed:
         alternate_style: true

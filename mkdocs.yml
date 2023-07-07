@@ -28,6 +28,7 @@ nav:
 
 theme:
   logo: 'img/NMaaS-logo-transparent-white.png'
+  custom_dir: docs/overrides
   favicon: 'img/favicon.ico'
   name: 'material'
   palette:
@@ -36,6 +37,7 @@ theme:
     accent: 'light-blue'
   features:
     - content.code.copy
+    - navigation.footer
 
 extra_css:
   - 'css/extra.css'
@@ -44,7 +46,7 @@ copyright: >
   <a href="#__consent">Change cookie settings</a>
 
 extra:
-  generator: false
+  generator: true
   search:
     language: 'en'
     tokenizer: '[\s\-\.]+'

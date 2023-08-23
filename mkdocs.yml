@@ -10,6 +10,9 @@ nav:
     - Quick Start: 'self-hosted-nmaas/quick-start.md'
     - Production Installation Guide: 'self-hosted-nmaas/install-guide.md'
     - Local Development Environment: 'self-hosted-nmaas/local-vm.md'
+  - NMaaS Use-Cases:
+    - Virtual Lab:
+      - Introduction: 'use-cases/virtual-lab/vlab-introduction.md'
   - NMaaS Applications:
     - List of Supported Applications: 'nmaas-applications/application-list.md'
     - Adding a new Application: 'nmaas-applications/new-application.md'

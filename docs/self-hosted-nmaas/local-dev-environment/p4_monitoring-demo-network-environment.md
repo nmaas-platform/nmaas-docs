@@ -291,3 +291,38 @@ Finally, alter the `base/router.db` file to reflect the changes made to the CSV 
 r1:10.99.99.50:rare
 r2:10.99.99.51:rare
 ```
+
+The second column, the IP addresses, should be replaced with the IP addresses of your virtual freeRTR devices.
+
+The final step is to simply commit the changes that have been made. If this is the first time that Git is used, then the global Git `user.name` and `email` should be set:
+
+```bash
+git config --global user.name "NMaaS Demo"
+git config --global user.email "nmaas_demo@example.com"
+```
+
+Any value can be used for these parameters, they are not related to NMaaS.
+
+The changes can be committed and pushed to the remote repository using:
+
+```bash
+git add .
+git commit -m "freeRTR config change"
+git push
+```
+
+After the push is made, the Oxidized container will be rebooted to apply the changes. 
+
+To verify the configuration changes that were made, the Oxidized web interface can be visited. It should show green boxes under Last Status for all devices. This means that the last attempt to fetch the configuration data has been successful.
+
+![Oxidized homepage](./img/29-oxidized-homepage.png)
+
+A complete version history can be obtained by using the versions option from the Actions column.
+
+![Oxidized version history](./img/30-oxidized-version-history.png)
+
+On the `Versions` page there is an option to download a given configuration archive or create a diff.
+
+![Oxidized actions](./img/31-oxidized-diff-initiation.png)
+
+![Oxidized diff preview](./img/32-oxidized-diff.png)

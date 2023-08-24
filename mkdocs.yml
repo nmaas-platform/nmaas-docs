@@ -12,6 +12,7 @@ nav:
     - Local Development Environment:
       - Introduction: 'self-hosted-nmaas/local-dev-environment/introduction.md'
       - Part 1 - Deploying a Local Kubernetes Cluster: 'self-hosted-nmaas/local-dev-environment/p1_local-kubernetes-cluster.md'
+      - Part 2 - Installing NMaaS: 'self-hosted-nmaas/local-dev-environment/p2_installing-nmaas.md'
   - NMaaS Use-Cases:
     - Virtual Lab:
       - Introduction: 'use-cases/virtual-lab/vlab-introduction.md'

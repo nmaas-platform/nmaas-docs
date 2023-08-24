@@ -358,7 +358,7 @@ Let's assume that our chart has a values.yaml parameter that enables or disables
 
 ![Application Wizard - Static global deploy parameters](./img/39-static-global-deploy-parameters.png)
 
-In the case of Uptime Kuma, we do not need to configure any global deploy parameters, since the chart itself is relatively simple.
+In the case of UptimeKuma, we do not need to configure any global deploy parameters, since the chart itself is relatively simple.
 
 #### Storage Volumes
 

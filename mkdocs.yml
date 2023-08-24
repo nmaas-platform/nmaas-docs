@@ -16,6 +16,7 @@ nav:
       - Part 3 - Demo Network Environment: 'self-hosted-nmaas/local-dev-environment/p3_demo-network-environment.md'
       - Part 4 - Monitoring the Demo Network Environment: 'self-hosted-nmaas/local-dev-environment/p4_monitoring-demo-network-environment.md'
       - Part 5 - Adding a Custom Application: 'self-hosted-nmaas/local-dev-environment/p5_adding_custom_app.md'
+      - Appendix - Credentials: 'self-hosted-nmaas/local-dev-environment/appendix.md'
   - NMaaS Use-Cases:
     - Virtual Lab:
       - Introduction: 'use-cases/virtual-lab/vlab-introduction.md'

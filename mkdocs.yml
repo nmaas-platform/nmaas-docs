@@ -9,7 +9,9 @@ nav:
     - Introduction: 'self-hosted-nmaas/introduction.md'
     - Quick Start: 'self-hosted-nmaas/quick-start.md'
     - Production Installation Guide: 'self-hosted-nmaas/install-guide.md'
-    - Local Development Environment: 'self-hosted-nmaas/local-vm.md'
+    - Local Development Environment:
+      - Introduction: 'self-hosted-nmaas/local-dev-environment/introduction.md'
+      - Part 1 - Deploying a Local Kubernetes Cluster: 'self-hosted-nmaas/local-dev-environment/p1_local-kubernetes-cluster.md'
   - NMaaS Use-Cases:
     - Virtual Lab:
       - Introduction: 'use-cases/virtual-lab/vlab-introduction.md'

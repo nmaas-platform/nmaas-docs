@@ -1,6 +1,6 @@
 # LibreNMS
 
-![LibreNMS Logo](img/librenms-logo.png){ align=left }
+![LibreNMS Logo](img/librenms-logo.png){ align=right }
 
 LibreNMS is an auto-discovering PHP/MySQL/SNMP based network monitoring system which includes support for a wide range of network hardware and operating systems.
 

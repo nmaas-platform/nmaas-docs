@@ -1,5 +1,7 @@
 # NAV
 
+![NAV Logo](img/nav-logo.png){ align=right }
+
 Network Administration Visualized (NAV) is an advanced software suite to monitor large computer networks. It automatically discovers network topology, monitors network load and outages, and can send alerts on network events by e-mail and SMS.
 
 ## Configuration Wizard

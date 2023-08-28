@@ -1,5 +1,7 @@
 # Oxidized
 
+![Oxidized Logo](img/oxidized-logo.png){ align=right }
+
 Oxidized is a simple open-source device configuration backup tool exposing a web-based GUI.
 
 ## Configuration Wizard

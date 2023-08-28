@@ -1,6 +1,7 @@
 # Netbox
 
 ![Netbox Logo](img/netbox-logo.png){ align=right width="200" }
+
 NetBox is an infrastructure resource modeling (IRM) application designed to empower network automation.
 
 Initially conceived by the network engineering team at DigitalOcean, NetBox was developed specifically to address the needs of network and infrastructure engineers.

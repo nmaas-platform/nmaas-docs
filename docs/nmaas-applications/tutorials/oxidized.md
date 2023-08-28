@@ -6,6 +6,8 @@ Oxidized is a simple open-source device configuration backup tool exposing a web
 
 Configuration parameters to be provided by the user are explained in the subsections below.
 
+![Oxidized configuration wizard](./img/oxidized-screenshot-01.png)
+
 ### Base Tab
 
 - `Oxidized access username` - Username to be used to access the Oxidized user interface (HTTP basic auth)
@@ -15,8 +17,6 @@ Configuration parameters to be provided by the user are explained in the subsect
 - `Device (IP address)` - List of IPv4 addresses of devices to be monitored by this Oxidized instance
 
 Multiple devices can be configured by using the `Add device` button.
-
-![Oxidized configuration wizard](./img/oxidized-screenshot-01.png)
 
 ### Advanced Tab
 

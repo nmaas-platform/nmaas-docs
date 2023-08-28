@@ -36,7 +36,7 @@ nav:
       - SPA Inventory: 'nmaas-applications/tutorials/spa-inventory.md'
       - PerfSONAR:
         - psConfig Web Admin: 'nmaas-applications/tutorials/psconfig-web-admin.md'
-        - MadDash: 'nmaas-applications/tutorials/maddash.md'
+        - MaDDash: 'nmaas-applications/tutorials/maddash.md'
         - Esmond: 'nmaas-applications/tutorials/esmond.md'
         - perfSONAR Central Management: 'nmaas-applications/tutorials/perfsonar-central-management.md'
       - InfluxDB: 'nmaas-applications/tutorials/influxdb.md'

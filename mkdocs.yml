@@ -45,7 +45,7 @@ nav:
       - WiFiMon: 'nmaas-applications/tutorials/wifimon.md'
       - Icinga2: 'nmaas-applications/tutorials/icinga2.md'
       - Victoria Metrics: 'nmaas-applications/tutorials/victoria-metrics.md'
-      - Synapse: 'nmaas-applications/tutorials/syanpse.md'
+      - Synapse: 'nmaas-applications/tutorials/synapse.md'
       - Routinator: 'nmaas-applications/tutorials/routinator.md'
       - CodiMD: 'nmaas-applications/tutorials/codimd.md'
       - WebDAV: 'nmaas-applications/tutorials/webdav.md'

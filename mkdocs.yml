@@ -21,6 +21,7 @@ nav:
     - Virtual Lab:
       - Introduction: 'use-cases/virtual-lab/vlab-introduction.md'
   - NMaaS Applications:
+    - General Application Deployment: 'nmaas-applications/general-app-deployment.md'
     - List of Supported Applications: 'nmaas-applications/application-list.md'
     - Adding a New Application: 'nmaas-applications/new-application.md'
     - Application Deployment Tutorials:

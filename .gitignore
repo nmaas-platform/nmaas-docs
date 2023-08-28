@@ -6,4 +6,4 @@ tst/
 old-raw/
 .vscode/
 venv/
-*png:Zone.Identifier
+*:Zone.Identifier

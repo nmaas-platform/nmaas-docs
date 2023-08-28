@@ -108,3 +108,7 @@ markdown_extensions:
   - tables
   - attr_list
   - md_in_html
+
+plugins: 
+  - search
+  - glightbox

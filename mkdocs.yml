@@ -25,6 +25,7 @@ nav:
     - List of Supported Applications: 'nmaas-applications/application-list.md'
     - Adding a New Application: 'nmaas-applications/new-application.md'
     - Application Deployment Tutorials:
+      - Oxidized: 'nmaas-applications/tutorials/oxidized.md'
       - LibreNMS: 'nmaas-applications/tutorials/librenms.md'
       - Booked: 'nmaas-applications/tutorials/booked.md'
       - Uptime Kuma: 'nmaas-applications/tutorials/uptime-kuma.md'

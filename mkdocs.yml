@@ -4,7 +4,7 @@ nav:
   - What is NMaaS?: 'what-is-nmaas.md'
   - Managed NMaaS:
     - Introduction: 'managed-nmaas/introduction.md'
-    - NMaaS Instances: 'managed-nmaas/nmaas-instances.md'
+    - NMaaS Playground Instance: 'managed-nmaas/nmaas-playground-instance.md'
   - Self-Hosted NMaaS:
     - Introduction: 'self-hosted-nmaas/introduction.md'
     - Quick Start: 'self-hosted-nmaas/quick-start.md'

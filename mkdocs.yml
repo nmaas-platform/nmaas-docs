@@ -27,6 +27,8 @@ nav:
     - Application Deployment Tutorials:
       - Oxidized: 'nmaas-applications/tutorials/oxidized.md'
       - LibreNMS: 'nmaas-applications/tutorials/librenms.md'
+      - NAV: 'nmaas-applications/tutorials/nav.md'
+      - Prometheus: 'nmaas-applications/tutorials/prometheus.md'
       - Booked: 'nmaas-applications/tutorials/booked.md'
       - Uptime Kuma: 'nmaas-applications/tutorials/uptime-kuma.md'
       - MailDev: 'nmaas-applications/tutorials/maildev.md'

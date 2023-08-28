@@ -5,3 +5,4 @@ __pycache__/
 tst/
 old-raw/
 .vscode/
+venv/

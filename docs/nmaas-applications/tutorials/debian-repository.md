@@ -1,6 +1,6 @@
 # Debian Repository
 
-![Debian Repository Logo](img/debian-repository-logo.png){ align=right }
+![Debian Repository Logo](img/debian-repository-logo.png){ align=right width="100" }
 
 Debian repository based on Reprepro is a tool for managing APT repositories.
 

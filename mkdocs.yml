@@ -10,8 +10,7 @@ nav:
     - NMaaS Playground Instance: 'managed-nmaas/nmaas-playground-instance.md'
   - Self-Hosted NMaaS:
     - Introduction: 'self-hosted-nmaas/introduction.md'
-    - Quick Start: 'self-hosted-nmaas/quick-start.md'
-    - Production Installation Guide: 'self-hosted-nmaas/install-guide.md'
+    - Installation Guide: 'self-hosted-nmaas/install-guide.md'
     - Local Development Environment:
       - Introduction: 'self-hosted-nmaas/local-dev-environment/introduction.md'
       - Part 1 - Deploying a Local Kubernetes Cluster: 'self-hosted-nmaas/local-dev-environment/p1_local-kubernetes-cluster.md'

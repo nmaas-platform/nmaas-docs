@@ -11,41 +11,7 @@ To install NMaaS into an existing Kubernetes cluster, the following requirements
 
 ## NMaaS Components
 
-NMaaS is comprised of multiple components, and a brief description for each one is provided below. 
-
-### NMaaS Platform
-
-NMaaS Platform is the central NMaaS component, exposing a REST API consumed by the NMaaS Portal. It stores the application catalog, the users, as well as information about any deployed applications. Upon a new request for an application deployment, it connects to the NMaaS Helm component and executes the necessary Helm command via an SSH connection. It also communicates with a self-hosted instance of GitLab, in order to provision boilerplate configuration files for the deployed application instances by the users, allowing them to make any additional configuration changes exclusively through Git.
-
-**External dependencies: PostgreSQL database, self-hosted GitLab instance**
-
-### NMaaS Portal
-
-NMaaS Portal represents the front-end application of NMaaS that consumes the REST API offered by NMaaS Platform. NMaaS Portal is a Angular based application that is run in user's browser.
-
-### NMaaS Helm
-
-NMaaS Helm interacts with the Kubernetes API of the underlying cluster where NMaaS is deployed, and manages it through the Helm v3 client. As a a result, it requires the cluster-admin Kubernetes role. Whenever a new application is deployed, the NMaaS Platform opens an SSH connection to NMaaS Helm and executes the required Helm command.
-
-### NMaaS Postfix
-
-NMaaS Postfix is an in-cluster mail server that is used by any deployed applications to send emails to external destinations. It does not require any authentication before sending emails, and it can either be configured as a standalone mail server, or it can use a smart host, routing all outgoing emails through some other email server (e.g. Gmail).
-
-!!! warning "NMaaS Postfix without a Smart Host"
-
-    If NMaaS Postfix is not configured to use an external mail service for sending the emails, than most likely all outgoing emails will be marked as spam, and users will face delivery problems when sending alerts from their deployed applications.
-
-### NMaaS Janitor
-
-The NMaaS Janitor is a helper service that interacts with the self-hosted GitLab API, and deploys the boilerplate configuration templates within the Kubernetes cluster. NMaaS Janitor is also used to retrieve the status of Kubernetes services and load balancer IPs assigned to them. For this reason it also needs privileges to use the Kubernetes API, albeit not as permissive as NMaaS Helm.
-
-### NMaaS SP
-
-The NMaaS SP is an in-cluster SAML Proxy that allows for SSO user login based on SAML. The NMaaS SP component is composed of Apache HTTP server and a Shibboleth Service Provider (Shibboleth SP) software. NMaaS SP is initially configured to authenticate with eduGAIN as the federated Identify Provider but can be customized to work with any compliant IdP.
-
-!!! warning "NMaaS SP is still in a Testing Phase"
-
-    The in-cluster NMaaS SP was developed some time back but was never thoroughly tested. However NMaaS development team can provide guidelines on how to setup a NMaaS SAML Proxy on a dedicated VM. Such a setup is currently used for NMaaS production service. Nevertheless basic username and password based log in is available at all times.
+NMaaS is comprised of multiple components, and a brief description for each one is provided in the [self-hosting introduction](./introduction.md) page.
 
 ## Installation 
 

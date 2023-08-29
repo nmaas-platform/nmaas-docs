@@ -2,6 +2,8 @@ site_name: NMaaS Documentation
 nav:
   - Home: index.md
   - What is NMaaS?: 'what-is-nmaas.md'
+  - NMaaS Guides:
+    - Application Manager Guide: 'guides/application-manager-guide.md'
   - Managed NMaaS:
     - Introduction: 'managed-nmaas/introduction.md'
     - NMaaS Playground Instance: 'managed-nmaas/nmaas-playground-instance.md'

@@ -253,3 +253,254 @@ Presentations given as part of the GÉANT GN4-2 project.
 **Slides:** Link to the presentation.
 
 ---
+
+### GARR Workshop 2020
+
+**Event Type:** Presentation
+
+**Presenter(s):** Lukasz Lopatowski, Frederic Loui, Damiano Verzulli
+
+**Event:** GARR Workshop 2020
+
+**Date:** 9th November 2021
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---
+
+### ACOnet Conference
+
+**Event Type:** Presentation
+
+**Presenter(s):** Lukasz Lopatowski, Frederic Loui
+
+**Event:** ACOnet Conference
+
+**Date:** 19th November 2020
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---
+
+### NMaaS Infoshare 2020
+
+**Event Type:** Infoshare
+
+**Presenter(s):** Lukasz Lopatowski, Pavle Vuletic, Frederic Loui, Vojdan Kjorveziroski
+
+**Event:** NMaaS Infoshare 2020
+
+**Date:** 25th November 2020
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---
+
+### Workshop on Network Management and Monitoring Tools
+
+**Event Type:** Presentation
+
+**Presenter(s):** Lukasz Lopatowski, Frederic Loui
+
+**Event:** Workshop on Network Management and Monitoring Tools
+
+**Event Homepage:** [https://events.geant.org/event/387/](https://events.geant.org/event/387/)
+
+**Date:** 24th March 2021
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---
+
+### Networkshop 2021
+
+**Event Type:** Presentation
+
+**Presenter(s):** Lukasz Lopatowski
+
+**Event:** Networkshop 2021
+
+**Event Homepage:** [https://www.jisc.ac.uk/networkshop](https://www.jisc.ac.uk/networkshop)
+
+**Date:** 28th April 2021
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---
+
+### GÉANT Infoshare: Tools for Campus Network Management as a Service (CNaaS)
+
+**Event Type:** Presentation
+
+**Presenter(s):** Lukasz Lopatowski
+
+**Event:** GÉANT Infoshare: Tools for Campus Network Management as a Service (CNaaS)
+
+**Event Homepage:** [https://events/geant.org/CNaaSTools](https://events/geant.org/CNaaSTools)
+
+**Date:** 28th April 2021
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---
+
+### TNC21
+
+**Event Type:** Presentation
+
+**Presenter(s):** Lukasz Lopatowski, Frederic Loui
+
+**Event:** TNC21
+
+**Event Homepage:** [https://tnc21.geant.org/](https://tnc21.geant.org/)
+
+**Date:** 21-25 June 2021
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---
+
+### 2nd Global Research Platform Workshop
+
+**Event Type:** Presentation
+
+**Presenter(s):** Pavle Vuletic
+
+**Event:** 2nd Global Research Platform Workshop
+
+**Event Homepage:** [https://grpworkshop2021.theglobalresearchplatform.net/](https://grpworkshop2021.theglobalresearchplatform.net/)
+
+**Date:** 20-24 September 2021
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---
+
+### GARR Workshop 2021
+
+**Event Type:** Presentation
+
+**Presenter(s):** Lukasz Lopatowski, Frederic Loui
+
+**Event:** GARR Workshop 2021
+
+**Event Homepage:** [https://www.eventi.garr.it/en/ws21/home](https://www.eventi.garr.it/en/ws21/home)
+
+**Date:** 8-12 November 2021
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---
+
+### NOMS 2022
+
+**Event Type:** Demo
+
+**Presenter(s):** Vojdan Kjorveziroski
+
+**Event:** NOMS 2022
+
+**Event Homepage:** [https://noms2022.ieee-noms.org/program/demo-sessions](https://noms2022.ieee-noms.org/program/demo-sessions)
+
+**Date:** 25-29 April 2022
+
+**Location:** Budapest, Hungary
+
+**Slides:** Link to the presentation.
+
+---
+
+### JRES 2022
+
+**Event Type:** Presentations
+
+**Presenter(s):** Vojdan Kjorveziroski
+
+**Event:** JRES 2022
+
+**Event Homepage:** [https://www.jres.org/programme/](https://www.jres.org/programme/)
+
+**Date:** 17-20 May 2022
+
+**Location:** Marseille, France
+
+**Slides:** Link to the presentation.
+
+---
+
+### TNC22
+
+**Event Type:** Presentations
+
+**Presenter(s):** Lukasz Lopatowski, Damiano Verzulli
+
+**Event:** TNC22
+
+**Event Homepage:** [https://tnc22.geant.org/](https://tnc22.geant.org/)
+
+**Date:** 13-17 June 2022
+
+**Location:** Trieste, Italy
+
+**Slides:** Link to the presentation.
+
+---
+
+### 27th STF
+
+**Event Type:** Presentations
+
+**Presenter(s):** Lukasz Lopatowski
+
+**Event:** 27th STF
+
+**Event Homepage:** [https://wiki.geant.org/display/APM/27th+STF+-+Zurich%2C+October+2022](https://wiki.geant.org/display/APM/27th+STF+-+Zurich%2C+October+2022)
+
+**Date:** 20th October 2022
+
+**Location:** Zurich, Switzerland
+
+**Slides:** Link to the presentation.
+
+---
+
+
+## GN5-1
+
+---
+
+### NMaaS Infoshare 2023
+
+**Event Type:** Presentations
+
+**Presenter(s):** Roman Lapacz, Lukasz Lopatowski, Frederic Loui, Vojdan Kjorveziroski
+
+**Event:** NMaaS Infoshare 2023
+
+**Event Homepage:** [https://events.geant.org/event/1455/overview](https://events.geant.org/event/1455/overview)
+
+**Date:** 23th May 2023
+
+**Location:** Online
+
+**Slides:** Link to the presentation.
+
+---

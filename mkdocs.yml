@@ -22,6 +22,7 @@ nav:
   - NMaaS Use-Cases:
     - Virtual Lab:
       - Introduction: 'use-cases/virtual-lab/vlab-introduction.md'
+      - Domain Groups: 'use-cases/virtual-lab/domain-groups.md'
   - NMaaS Applications:
     - General Application Deployment: 'nmaas-applications/general-app-deployment.md'
     - List of Supported Applications: 'nmaas-applications/application-list.md'

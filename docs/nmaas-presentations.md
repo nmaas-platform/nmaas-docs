@@ -298,7 +298,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [Introduction](https://box.psnc.pl/f/b7f3c44e19/?raw=1), [Concept, Architecture and Deployment](https://box.psnc.pl/f/739890b7d7/?raw=1), [Application portfolio](https://box.psnc.pl/f/61ccc03651/?raw=1), [Infrastructure requirements](https://box.psnc.pl/f/c5ca4ea0fc/?raw=1), [GÉANT production service](https://box.psnc.pl/f/75d1e8b5c1/?raw=1)
 
 ---
 
@@ -316,7 +316,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/427c7340b5](https://box.psnc.pl/f/427c7340b5/?raw=1)
 
 ---
 
@@ -334,7 +334,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/d5dccc4e14](https://box.psnc.pl/f/d5dccc4e14/?raw=1)
 
 ---
 
@@ -352,7 +352,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/67cf28cd51](https://box.psnc.pl/f/67cf28cd51/?raw=1)
 
 ---
 
@@ -370,7 +370,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/1132ef30aa](https://box.psnc.pl/f/1132ef30aa/?raw=1)
 
 ---
 
@@ -388,7 +388,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/2f62dd797e](https://box.psnc.pl/f/2f62dd797e/?raw=1)
 
 ---
 
@@ -406,7 +406,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/546af9f0de](https://box.psnc.pl/f/546af9f0de/?raw=1)
 
 ---
 
@@ -424,7 +424,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Budapest, Hungary
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/0861da6b54](https://box.psnc.pl/f/0861da6b54/?raw=1)
 
 ---
 
@@ -442,7 +442,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Marseille, France
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/c80e51a115](https://box.psnc.pl/f/c80e51a115/?raw=1)
 
 ---
 
@@ -460,7 +460,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Trieste, Italy
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/edf86afb7f](https://box.psnc.pl/f/edf86afb7f/?raw=1)
 
 ---
 
@@ -478,7 +478,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Zurich, Switzerland
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/707bcc4440](https://box.psnc.pl/f/707bcc4440/?raw=1)
 
 ---
 
@@ -497,10 +497,10 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Event Homepage:** [https://events.geant.org/event/1455/overview](https://events.geant.org/event/1455/overview)
 
-**Date:** 23th May 2023
+**Date:** 23rd May 2023
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/58d94370a3](https://box.psnc.pl/f/58d94370a3/?raw=1)
 
 ---

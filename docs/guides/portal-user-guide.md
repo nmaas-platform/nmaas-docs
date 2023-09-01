@@ -152,7 +152,7 @@ The installation process comprises few steps including subscription validation, 
 Once the installation process is completed user is provided with a way or multiple ways of accessing the deployed application instance depending on the application (in majority of cases a link for accessing the web-based UI).
 
 !!! info
-    Providing a suitable instance name is important since it is later on used to create a FQDN unique for this application instance following pattern: <instance name>.<user domain name>.<NMaaS base domain> (e.g. vminstance.pllab.nmaas.eu)
+    Providing a suitable instance name is important since it is later on used to create a FQDN unique for this application instance following pattern: `<instance name>.<user domain name>.<NMaaS base domain>` (e.g. vminstance.pllab.nmaas.eu)
 
 !!! info
     User is notified with an email once the new application instance becomes available
@@ -175,6 +175,7 @@ Once the application instance reaches the *Active* state it can be accessed by t
 
 Multiple access methods are supported by NMaaS and each of the applications supports one or more of them.
 
+![Application access](./img/user-guide-s19.png)
 ![Application access](./img/user-guide-s09.png)
 
 Four types of access are possible:
@@ -196,6 +197,8 @@ Some of the applications support the option of updating its configuration during
 
 In such case, when instance is in *Active* state, the *Configure* button from the Actions menu on the application instance details page should be used to open a window presenting the configuration options.
 
+![Application configuring](./img/user-guide-s20.png)
+
 ![Application configuring](./img/user-guide-s10.png)
 
 Typically a *git clone* link is provided that can be used by the user to locally clone the git repository created specifically for this application instance. 
@@ -210,6 +213,10 @@ After the files are committed and pushed back to the repository the configuratio
 !!! info
     The user that initiates a given application instance deployment is automatically added to GitLab as a member of the newly created repository.
     Other users, in order to have the same SSH-based access to the repository, have to be added as members to particular application instance using the *Members* button from the *Actions* menu. This operation can be performed by Domain administrator. Domain administrator can only select users that are added to his domain and have previously uploaded their SSH keys (see section 9.3).
+
+![Application configuring](./img/user-guide-s21.png)
+
+![Application configuring](./img/user-guide-s22.png)
 
 ### 8.6 Managing application instance upgrades
 
@@ -289,7 +296,7 @@ On clicking the *Change password* button new window will be displayed where user
 !!! info
     This option is not available for users that log in using the Federated / SSO option
 
-## Contact Form
+## 10. Contact Form
 
 An easy and recommended way for contacting the NMaaS Team is through the Contact Form.
 

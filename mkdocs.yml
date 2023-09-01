@@ -5,6 +5,7 @@ nav:
   - NMaaS Guides:
     - Application Manager Guide: 'guides/application-manager-guide.md'
     - Domain Admin Guide: 'guides/domain-admin-guide.md'
+    - User Guide: 'guides/portal-user-guide.md'
   - Managed NMaaS:
     - Introduction: 'managed-nmaas/introduction.md'
     - NMaaS Playground Instance: 'managed-nmaas/nmaas-playground-instance.md'

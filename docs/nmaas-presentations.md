@@ -6,74 +6,6 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 ---
 
-### 4th SIG-NOC Meeting
-
-**Event Type:** Presentation
-
-**Presenter(s):** Frederic Loui
-
-**Event:** 4th SIG-NOC Meeting
-
-**Event Homepage:** [https://wiki.geant.org/display/SIGNOC/4th+SIG-NOC+meeting](https://wiki.geant.org/display/SIGNOC/4th+SIG-NOC+meeting)
-
-**Date:** 28-29 November 2016
-
-**Location:** Cambridge, United Kingdom
-
-**Slides:** Link to the presentation.
-
----
-
-### 11th STF
-
-**Event Type:** Presentation
-
-**Presenter(s):** Frederic Loui
-
-**Event:** 11th Service and Technology Forum (STF)
-
-**Date:** 4-5 July 2017
-
-**Location:** Zurich, Switzerland
-
-**Slides:** Link to the presentation.
-
----
-
-### NORDUnet Technical Workshop 2017
-
-**Event Type:** Lightning talk
-
-**Presenter(s):** Morten Brekkevold
-
-**Event:** NORDUnet Technical Workshop 2017
-
-**Event Homepage:** [https://events.nordu.net/display/NTW2017/Programme](https://events.nordu.net/display/NTW2017/Programme)
-
-**Date:** 12-14 September 2017
-
-**Location:** Copenhagen, Denmark
-
-**Slides:** Link to the presentation.
-
----
-
-### GÉANT Project Symposium 2017
-
-**Event Type:** Demo
-
-**Presenter(s):** Jakub Gutkowski, Lukasz Lopatowski
-
-**Event:** GÉANT Project Symposium 2017
-
-**Date:** 3-4 October 2017
-
-**Location:** Budapest, Hungary
-
-**Slides:** Link to the presentation.
-
----
-
 ### SuperComputing 2017 (SC17)
 
 **Event Type:** Demo
@@ -88,77 +20,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Denver, USA
 
-**Slides:** Link to the presentation.
-
----
-
-### TNC18
-
-**Event Type:** Presentations
-
-**Presenter(s):** Ivana Golub
-
-**Event:** TNC18
-
-**Event Homepage:** [https://tnc18.geant.org/](https://tnc18.geant.org/)
-
-**Date:** 13th June 2018
-
-**Location:** Trondheim, Norway
-
-**Slides:** Link to the presentation.
-
----
-
-### NORDUnet Conference 2018
-
-**Event Type:** Presentations
-
-**Presenter(s):** Morten Brekkevold
-
-**Event:** NORDUnet Conference 2018
-
-**Event Homepage:** [https://events.nordu.net/display/NDN2018/Welcome](https://events.nordu.net/display/NDN2018/Welcome)
-
-**Date:** 18-20 September 2018
-
-**Location:** Elsinore, Denmark
-
-**Slides:** Link to the presentation.
-
----
-
-### TechEx 2018
-
-**Event Type:** Presentations
-
-**Presenter(s):** Ivana Golub, Antoine Delvaux
-
-**Event:** TechEx 2018
-
-**Date:** 15-18 October 2018
-
-**Location:** Orlando, FL, USA
-
-**Slides:** Link to the presentation.
-
----
-
-### 5th SIG-PMV
-
-**Event Type:** Presentations
-
-**Presenter(s):** Ivana Golub
-
-**Event:** 5th SIG-PMV
-
-**Event Homepage:** [https://wiki.geant.org/display/PMV/5th+SIG-PMV+Meeting+@+Manchester+UK](https://wiki.geant.org/display/PMV/5th+SIG-PMV+Meeting+@+Manchester+UK)
-
-**Date:** 23-24 October 2018
-
-**Location:** Manchester, UK
-
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/c3d5727e61](https://box.psnc.pl/f/c3d5727e61/?raw=1)
 
 ---
 
@@ -176,11 +38,13 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Dallas, USA
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/6303a85328](https://box.psnc.pl/f/6303a85328/?raw=1)
 
 ---
 
 ## GN4-3
+
+Presentations given as part of the GÉANT GN4-3 project.
 
 ---
 
@@ -198,7 +62,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Dublin, Ireland
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/d8e1ac8b26](https://box.psnc.pl/f/d8e1ac8b26/?raw=1)
 
 ---
 
@@ -216,7 +80,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Copenhagen, Denmark
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/b496d50542](https://box.psnc.pl/f/b496d50542/?raw=1)
 
 ---
 
@@ -234,7 +98,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Copenhagen, Denmark
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/a396c1b98f](https://box.psnc.pl/f/a396c1b98f/?raw=1)
 
 ---
 
@@ -250,23 +114,23 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Ljubljana, Slovenia
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/69d463b21e](https://box.psnc.pl/f/69d463b21e/?raw=1)
 
 ---
 
-### GARR Workshop 2020
+### GARR Workshop 2021
 
 **Event Type:** Presentation
 
 **Presenter(s):** Lukasz Lopatowski, Frederic Loui, Damiano Verzulli
 
-**Event:** GARR Workshop 2020
+**Event:** GARR Workshop 2021
 
 **Date:** 9th November 2021
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/546af9f0de](https://box.psnc.pl/f/546af9f0de/?raw=1)
 
 ---
 
@@ -282,7 +146,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Online
 
-**Slides:** Link to the presentation.
+**Slides:** [https://box.psnc.pl/f/9e0ef03a63](https://box.psnc.pl/f/9e0ef03a63/?raw=1)
 
 ---
 
@@ -484,6 +348,8 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 
 ## GN5-1
+
+Presentations given as part of the GÉANT GN5-1 project.
 
 ---
 

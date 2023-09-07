@@ -27,3 +27,7 @@ domain,username,networks,domainGroups,email
 
 !!! notice "Domain Groups"
     During bulk domain deployment, if any non-existent domain groups referenced in the CSV file are automatically created. After the domain import is completed, administrators should make sure to whitelist the desired applications for deployment, since by default all applications are blacklisted for new domain groups.
+
+The video below demonstrates the whole bulk domain deployment process.
+
+![type:video](https://static.nmaas.eu/techex23/01-bulk-domain-deployment.mp4)

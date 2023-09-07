@@ -55,3 +55,7 @@ Once deployment is completed, connection details can be obtained on a per-applic
 ![Bulk application deployment details](./img/bulk-app-deployment-details.png)
 
 ![Bulk application deployment application status](./img/bulk-app-deployment-app-status.png)
+
+The video below demonstrates the bulk application deployment process.
+
+![type:video](https://static.nmaas.eu/techex23/04-bulk-app-deployment.mp4)

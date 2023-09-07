@@ -31,3 +31,13 @@ an isolated environment for experimenting, where depending on the application ca
 ## The Road Ahead
 
 The vision for the NMaaS virtual lab use-case is to make it as easy as possible to deploy and use, both from the educators and learners perspective. By leveraging the possibility to add custom applications to the catalog, it is expected that each deployment will have a unique set of deployable applications. Through the introduction of catalog federation, it should be possible for different institutions to share their application templates, fostering collaboration, and knowledge exchange, bringing added value to the whole NMaaS ecosystem. It should be recognized that NMaaS does not necessarily have to be limited to organizing hands-on exercises for learners. As a result of its multi-tenancy, a single NMaaS instance can also be used by the educators themselves, making use of the compute capacity for running resource intensive processing pipelines or Jupyter notebooks. It can also be used by the supporting staff for easy deployment and management of network services which, of course, is the original use-case of NMaaS.
+
+## Demos
+
+The first video below demonstrates the deployment process of an application from a trainee's perspective.
+
+![type:video](https://static.nmaas.eu/techex23/03-app-deployment.mp4)
+
+The second video below showcases how NMaaS can be used as a remote development environment for various programming languages (Python in this particular case).
+
+![type:video](https://static.nmaas.eu/techex23/05-remote-dev-environment.mp4)

@@ -23,3 +23,7 @@ In the scenario described above, `test-domain` would have access to all 5 applic
 Domain groups can be managed by selecting the `Domain groups` option from the settings dropdown in the navigational menu (represented by a cog icon). Administrators are given the option to manually create a new domain group, manage domain group memberships, and alter the list of whitelisted/blacklisted applications for a given domain group.
 
 ![Managing an existing domain group](./img/domain-groups.png)
+
+The video below demonstrates the domain groups configuration process.
+
+![type:video](https://static.nmaas.eu/techex23/02-domain-configuration.mp4)

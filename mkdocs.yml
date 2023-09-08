@@ -23,8 +23,8 @@ nav:
   - NMaaS Use-Cases:
     - Virtual Lab:
       - Introduction: 'use-cases/virtual-lab/vlab-introduction.md'
-      - Domain Groups: 'use-cases/virtual-lab/domain-groups.md'
       - Bulk Domain Deployment: 'use-cases/virtual-lab/bulk-domain-deployment.md'
+      - Domain Groups: 'use-cases/virtual-lab/domain-groups.md'
       - Bulk Application Deployment: 'use-cases/virtual-lab/bulk-application-deployment.md'
   - NMaaS Applications:
     - General Application Deployment: 'nmaas-applications/general-app-deployment.md'
@@ -146,3 +146,4 @@ markdown_extensions:
 plugins: 
   - search
   - glightbox
+  - mkdocs-video

@@ -11,6 +11,6 @@ NMaaS components are open-source licensed under the Apache 2.0 Licence.
 
 - [Frederic Loui](https://github.com/frederic-loui) (RENATER, France)
 - [Lukasz Lopatowski](https://github.com/llopat) (Poznan Supercomputing and Network Center, Poland)
-- [Vojdan Kjorveziroski](https://github.com/korvoj) (Cyril and Methodius University in Skopje, North Macedonia)
+- [Vojdan Kjorveziroski](https://github.com/korvoj) (Ss. Cyril and Methodius University in Skopje, North Macedonia)
 
 Follow the information on the [contact](./contact.md) page to reach us! 

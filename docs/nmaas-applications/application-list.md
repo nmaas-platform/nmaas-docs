@@ -1,6 +1,6 @@
 # List of Supported Applications
 
-This is a continously updated list of currently supported applications on NMaaS. Note that not all applications are supported across all environments, some are supported only on the managed server, while others can only be supported on self-hosted installations.
+This is a continuously updated list of currently supported applications on NMaaS. Note that not all applications are supported across all environments, some are supported only on the managed server, while others can only be supported on self-hosted installations.
 
 | No |           Application name           |             Helm chart name             |                                             App Version (Helm chart version given in brackets)                                             | Environment           |
 |:--:|:------------------------------------:|:---------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------:|-----------------------|

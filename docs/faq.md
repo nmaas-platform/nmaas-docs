@@ -33,7 +33,7 @@ More information about the NMaaS sandbox is available at [NMaaS Playground page]
 ## How can I start monitoring my infrastructure with NMaaS?
 The GÉANT NMaaS production service is available at https://nmaas.eu where users have the possibility to log in with their eduGAIN accounts.
 
-However in order to be able to deploy network management applications user needs to be assigned to a domain. 
+However, in order to be able to deploy network management applications user needs to be assigned to a domain. 
 
 In order to request new dedicated domain creation refer to question <i>"How can I request creation of new NMaaS domain for my NREN/Institution/Project?"</i>
 

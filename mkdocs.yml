@@ -1,4 +1,5 @@
 site_name: NMaaS Documentation
+site_url: 'https://docs.nmaas.eu'
 nav:
   - Home: index.md
   - What is NMaaS?: 'what-is-nmaas.md'

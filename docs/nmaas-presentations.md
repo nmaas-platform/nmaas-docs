@@ -370,3 +370,22 @@ Presentations given as part of the GÉANT GN5-1 project.
 **Slides:** [https://box.psnc.pl/f/58d94370a3](https://box.psnc.pl/f/58d94370a3/?raw=1)
 
 ---
+
+### Internet2 Technology Exchange (TechEx) 2023
+
+**Event Type:** Presentations
+
+**Presenter(s):** Lukasz Lopatowski, Vojdan Kjorveziroski
+
+**Event:** TechEx 2023
+
+**Event Homepage:** [Internet2 TechEx 2023 Program](https://internet2.edu/2023-internet2-technology-exchange/program/abstracts/#deploymentofvirtuallabs)
+
+**Date:** 18-22 September 2023
+
+**Location:** Minneapolis, MN, USA
+
+**Slides (incl. videos):** [https://box.psnc.pl/f/6b709beffd](https://box.psnc.pl/f/6b709beffd/?raw=1)
+
+---
+

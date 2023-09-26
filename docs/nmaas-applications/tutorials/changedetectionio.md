@@ -32,6 +32,24 @@ All configuration is done from the built-in configuration manager accessible onc
 <figcaption>Fig. 4: Previewing Changes Diff</figcaption>
 </figure>
 
+## Notifications
+
+ChangeDetection.io has support for various notification providers, using the [Apprise library](https://github.com/caronc/apprise). Details about each supported notification provider are given on the [Apprise Wiki](https://github.com/caronc/apprise/wiki), as well as on the [ChangeDetection.io wiki](https://github.com/caronc/apprise/wiki) pages.
+
+In terms of the managed NMaaS production instance, users can leverage the built-in mail sender, using the following configuration:
+
+```
+mailto://nmaas.eu:587?smtp=nmaas-postfix.nmaas-system&from=changedetection.$domain-name@nmaas.eu&to=$dest-email
+```
+
+The parameters `$domain-name` and `$dest-name` are up to the user to replace with the specific values, as needed.
+
+For example, for the domain name `nmaas-test` and an admin email of `contact@example.com`, the configuration would be:
+
+```
+mailto://nmaas.eu:587?smtp=nmaas-postfix.nmaas-system&from=changedetection.nmaas-test@nmaas.eu&to=contact@example.com
+```
+
 ## Conclusion
 
 For more information and a complete features list, consult the up-to-date [ChangeDetection.io Wiki](https://github.com/dgtlmoon/changedetection.io/wiki) on GitHub.

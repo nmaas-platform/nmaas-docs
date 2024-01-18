@@ -389,3 +389,22 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 ---
 
+### NMaaS Virtual Labs for Education
+
+**Event Type:** Presentations
+
+**Presenter(s):** Vojdan Kjorveziroski, Lukasz Lopatowski
+
+**Event:** NMaaS Virtual Labs for Education Infoshare 2023
+
+**Event Homepage:** [https://events.geant.org/event/1553/](https://events.geant.org/event/1553/)
+
+**Date:** 30 November 2023
+
+**Location:** Online
+
+**Slides (incl. videos):** [https://box.psnc.pl/f/8fcec7c3eb](https://box.psnc.pl/f/8fcec7c3eb/?raw=1)
+
+**YouTube:** [https://www.youtube.com/watch?v=xx1NxqYTIpA](https://www.youtube.com/watch?v=xx1NxqYTIpA)
+
+---

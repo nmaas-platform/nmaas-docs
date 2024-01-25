@@ -421,6 +421,6 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 **Location:** Montpellier, France
 
-**Slides:** [https://box.psnc.pl/f/e3bdc8d26a](https://box.psnc.pl/f/e3bdc8d26a/?raw=1
+**Slides:** [https://box.psnc.pl/f/e3bdc8d26a](https://box.psnc.pl/f/e3bdc8d26a/?raw=1)
 
 ---

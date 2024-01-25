@@ -76,7 +76,7 @@ In the end you should have access the NMaaS portal specifically dedicated to you
 
 ## [ #001 ] - Cookbook
 <details>
-<summary>Pré-requisites</summary>
+<summary>Prerequisites</summary>
 
 <li> eduGain R&E IDP </li>
   

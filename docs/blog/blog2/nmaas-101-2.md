@@ -47,7 +47,7 @@ The picture above depicts the four p4 switches connected by 10G circuit on top o
 ## [ #002 ] - Cookbook
 
 <details>
-<summary>Pré-requisites</summary>
+<summary>Prerequisites</summary>
 <li> Network Administration knowledge </li>
 If this management network does not exist beforehand, you should be able to implement or have it implemented by your network operation team. 
 

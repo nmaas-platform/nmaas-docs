@@ -49,7 +49,7 @@ NMaaS portal: Oxidized
 
     !!! warning ""
 
-        The name has a particular importance as it will dynamically create a FQDN for the NMaaS service in the form: **'<service_name>'.'<domain>'.nmaas.eu** In my example it is: **prm.rare.nmaas.eu**
+        The name has a particular importance as it will dynamically create a FQDN for the NMaaS service in the form: **`<service_name>`.`<domain>`.nmaas.eu** In my example it is: **prm.rare.nmaas.eu**
 
     - Click on configure (blue bottom on the lefthand side) information
 

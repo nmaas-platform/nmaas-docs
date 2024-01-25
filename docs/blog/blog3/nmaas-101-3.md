@@ -4,7 +4,7 @@ In article [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview) and [#
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px;">
 
-<h3 style="margin: 0.6em 0 0.4em;">Requirements</h3>
+<h4 style="margin: 0.6em 0 0.4em;">Requirements</h3>
 <li>Completed #001</li> 
 <li>Completed #002</li>
 <li>Basic knowledge related to configuration management</li>
@@ -29,7 +29,7 @@ NMaaS portal: Oxidized
 
 ## [#003] - Cookbook
 
-??? note "Pré-requisites"
+??? note "Prerequisites"
 
     - Having completed [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview)
     - Having completed [#002](https://docs.nmaas.eu/blog/blog2/nmaas-101-2/#overview)

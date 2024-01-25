@@ -4,7 +4,7 @@ The main objective **[NMaaS 101]** series is to help you to get started with NM
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px;">
 
-<h3 style="margin: 0.6em 0 0.4em;">Requirements</h3>
+<h4 style="margin: 0.6em 0 0.4em;">Requirements</h3>
 <li>Having an eduGain account</li> 
 <li> Identified as NMaaS Domain Manager on behalf of your organisation</li>
 <li> If you are not an NREN, have your local NREN endorsement for using NMaaS</li>
@@ -76,7 +76,7 @@ In the end you should have access the NMaaS portal specifically dedicated to you
 
 ## [ #001 ] - Cookbook
 <details>
-<summary>Pré-requisites</summary>
+<summary>Prerequisites</summary>
 
 <li> eduGain R&E IDP </li>
   

@@ -4,7 +4,7 @@ In article [#001](https://docs.nmaas.eu/blog/blog1/nmaas-101-1/#overview) your o
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px;">
 
-<h3 style="margin: 0.6em 0 0.4em;">Requirements</h3>
+<h4 style="margin: 0.6em 0 0.4em;">Requirements</h3>
 <li>Use existing or deploy out of band management VLAN dedicated to your equipment</li> 
 <li> Use existing or deploy an OpenVPN client on a separate server or VM</li>
 <li> Knowledge to implement OpenVPN tunnels</li>
@@ -47,7 +47,7 @@ The picture above depicts the four p4 switches connected by 10G circuit on top o
 ## [ #002 ] - Cookbook
 
 <details>
-<summary>Pré-requisites</summary>
+<summary>Prerequisites</summary>
 <li> Network Administration knowledge </li>
 If this management network does not exist beforehand, you should be able to implement or have it implemented by your network operation team. 
 

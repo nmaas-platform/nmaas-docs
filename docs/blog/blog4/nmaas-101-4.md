@@ -47,7 +47,7 @@ NMaaS portal: Oxidized
 
     - choose a name for your service instance, in our case we chose: "prm"
 
-     !!! warning ""
+    !!! warning ""
 
         The name has a particular importance as it will dynamically create a FQDN for the NMaaS service in the form: **<service_name>.<domain>.nmaas.eu** In my example it is: **prm.rare.nmaas.eu**
 
@@ -79,7 +79,8 @@ NMaaS portal: Oxidized
 
             Job name: **router**
 
-        -Device (IP address)
+        - Device (IP address)
+
             we chose:  **192.168.0.1:9001**
 
     - Apply configuration
@@ -100,3 +101,98 @@ NMaaS portal: Oxidized
 
     **Congratulation. You should have completed Prometheus deployment**
 
+??? note "Prometheus application specific configuration"
+
+    In the RARE domain we have specifically configured a Prometheus agent on each P4 switch. In the configuration above we have only configured a dummy IP address.
+
+    Subsequent configuration will be done through the usual NMaaS micro-service-configuration workflow using **git**. (Similar to [Oxidized post](https://wiki.geant.org/pages/viewpage.action?pageId=148088057))
+
+    We are using then NMaaS configuration feature (also refer to [NMaaS configuration process](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-NMaaSToolconfigurationprocess)), which actually will provide us the way to alter Prometheus configuration software.
+
+    - From the NMaaS portal service instance page select "configuration" entry from the drop-down list
+
+    ![CONFIGURE](img/blog4-8.png)
+
+    - you should be provided a git command that will let you clone your Prometheus NMaaS configuration repository
+    
+    ![UPDATE](img/blog4-9.png)
+
+    ``` terminal title="From a terminal, clone oxidized configuration repository"
+    git clone ssh://git@gitlab.nmaas.eu/groups-rare/rare-prometheus-382.git
+    < enter my SSH credientials ... >
+    cd rare-prometheus-382
+    ╭─[05/6/21|11:18:47]loui@MacBook-Pro-de-Frederic.local ~/rare-prometheus-382  ‹master›
+    ╰─➤  ls -l
+    total 8
+    -rw-r--r--  1 loui  staff  297 May  6 11:17 prometheus.yml
+    ```
+
+    - You can now configure prometheus with your target config and adjust it as you see fit
+
+    For more information please refer to [Prometheus official documentation](https://prometheus.io/docs/introduction/overview/).
+
+    In our case we will use prometheus configuration from the [RARE blog post](https://wiki.geant.org/pages/viewpage.action?pageId=154995651).
+
+    ``` terminal title="From a terminal, clone oxidized configuration repository"
+    global:
+        scrape_interval: 15s
+        evaluation_interval: 30s
+    alerting:
+        alertmanagers:
+            - static_configs:
+                - targets:
+    rule_files:
+    scrape_configs:
+        - job_name: 'router'
+        metrics_path: /metrics
+        scrape_interval: 15s
+        static_configs:
+        - targets: ['192.168.0.1:9001','192.168.0.2:9001']
+            labels:
+        -rw-r
+    ```
+
+## Verification
+
+??? note "Check that you can access Prometheus using: <svc-name>.<domain>.nmaas.eu"
+
+    - Access the application 
+    
+    ![ACCESS](img/blog4-10.png)
+
+    - "Access the application" button shortcut
+
+     ![ACCESS](img/blog4-11.png)
+
+    it will lead you to a dynamic FQDN: [https://prm.rare.nmaas.eu](https://prm.rare.nmaas.eu)
+
+    You have now access to Prometheus console
+
+    ![CONSOLE](img/blog4-12.png)
+
+    - You can check if the configured agent is reachable
+    
+    ![TARGET](img/blog4-13.png)
+
+    - In this case you have a problem to reach the Prometheus agent. (Check connectivity to the configured Agent 192.168.0.1:9001 in prometheus.yml)
+
+    ![TARGET](img/blog4-14.png)
+
+    Congratulations! You have deployed and configured your Prometheus NMaaS service specifically for your domain !
+
+## Conclusion
+
+In this article you:
+
+- You have deployed a powerful and flexible metric collector for your organisation
+- Prometheus uses PUSH model similar to SNMP so every scrape minutes it will interrogate all the configured agents.
+- You have learned how to apply specific configurations to it in order to match your requirements
+- In this example, we used RARE/freeRtr prometheus agent whose configuration is described [here](https://wiki.geant.org/pages/viewpage.action?pageId=154995651). In your case, you agent will have its own different configuration (different IP, port, job name and metrics )
+
+!!! success "[ #004 ] NMaaS-101 - key take-away"
+    
+    - Deploying a NMaaS service is as easy as deploying an application on your mobile phone, you just have to log into the NMaaS portal and of course have the sufficient privileges to deploy application for your domain
+    - Deploying an application is a 2 steps process
+        - deploy the application via the portal
+        - configure the application via git tool
+    - Even if Prometheus deployment by NMaaS is made easy, it is mandatory to have a strong knowledge of the tool implemented. In this case, it is of course essential to read documentation from [Prometheus](https://prometheus.io/) web site.

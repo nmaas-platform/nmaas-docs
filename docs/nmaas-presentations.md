@@ -408,3 +408,19 @@ Presentations given as part of the GÉANT GN5-1 project.
 **YouTube:** [https://www.youtube.com/watch?v=xx1NxqYTIpA](https://www.youtube.com/watch?v=xx1NxqYTIpA)
 
 ---
+
+### GÉANT Project Symposium 2023
+
+**Event Type:** Presentations / Lightning talks
+
+**Presenter(s):** Vojdan Kjorveziroski
+
+**Event:** GÉANT Project Symposium 2023
+
+**Date:** 12-14 December 2023
+
+**Location:** Montpellier, France
+
+**Slides:** [https://box.psnc.pl/f/e3bdc8d26a](https://box.psnc.pl/f/e3bdc8d26a/?raw=1
+
+---

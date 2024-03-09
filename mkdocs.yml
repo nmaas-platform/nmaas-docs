@@ -63,7 +63,7 @@ nav:
       - MailDev: 'nmaas-applications/tutorials/maildev.md'
       - ChangeDetection.io: 'nmaas-applications/tutorials/changedetectionio.md'
       - GP4L Orchestrator: 'nmaas-applications/tutorials/gp4l-orchestrator.md'
-      - Apache Airflow: 'nmaas-applications/tutorials/airflow.md'
+      - Apache Airflow: 'nmaas-applications/tutorials/apache-airflow.md'
   - Blog:
     - NMaaS-101 - "Hello NMaaS !": 'blog/blog1/nmaas-101-1.md'
     - NMaaS-101 - "I can help! But... Please could you open these two doors?": 'blog/blog2/nmaas-101-2.md'

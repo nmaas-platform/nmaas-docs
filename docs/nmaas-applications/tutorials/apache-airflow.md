@@ -36,7 +36,6 @@ The customizable fields are:
 
 ## Git Sync Information
 
-
 The Git sync process utilized by the Apache Airflow Helm chart involves periodically pulling changes from a specified Git repository into the Airflow DAGs (Directed Acyclic Graphs) folder within the Airflow deployment. This enables users to manage and update their workflows directly in a version-controlled Git repository, ensuring consistency and accoutability in the development and deployment of data pipelines.
 
 It is possible to use either a public or a private repository. In case a private repository is used, the necessary SSH keys must be configured both on the Airflow side and on the platform hosting the Git repository. It is recommended to use a brand new SSH key pair for each Airflow deployment, to ensure safety. A new SSH key pair can be created using:
@@ -47,9 +46,9 @@ ssh-keygen
 
 After creating the SSH key pair, the public key should be added to the platform hosting the Git repository. For GitHub this can be done by navigating into the repository settings, and adding a new deploy key using the **Deploy keys** page. The corresponding private key should be pasted in the `Git maintainer SSH private key` in the default OpenSSH format.
 
-Since Git doesn't allow cloning only of a specific subdirectory within a repository, the setting `Git repository sub-directory` doesn't restrict which folders are cloned. Instead, it simply forces Airflow to only look for DAGs source code in the specified directory. 
+Since Git doesn't allow cloning only of a specific subdirectory within a repository, the setting `Git repository sub-directory` doesn't restrict which folders are cloned. Instead, it simply forces Airflow to only look for DAGs source code in the specified directory. If no value is specified in the deployment wizard, `tests/dags` is used by default. In order to search the whole repository `.` can simply be passed as a value to the `Git repository sub-directory` field. Please note that this is suboptimal with repositories that have a lot of other files, since the `inotify` watcher used for detecting file changes might easily hit the default system-wide threshold for monitored files. As a result, it is a best practice to keep a dedicated subdirectory for workflow files.
 
-Assuming that the Git repository directory tree is as the one below and `airflow-demo` is the root folder of the repository, then specifying `dags` as the value of the `Git repository sub-directory` field will only register the `example-dag` DAG with Airflow, leaving `scratch.py` ignored. Please note that since the whole repository is cloned anyhow, config files can be placed at an arbitrary location, even outside the specified dags directory. 
+Assuming that the Git repository directory tree is as the one below and `airflow-demo` is the root folder of the repository, then specifying `dags` as the value of the `Git repository sub-directory` field will only register the `example-dag` DAG with Airflow, leaving `scratch.py` ignored. Please note that since the whole repository is cloned anyhow, config files can be placed at an arbitrary location, even outside the specified dags directory. Airflow searches recursively within the subfolders in the `Git repository sub-directory`. [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) are also supported.
 
 ```
 airflow-demo/
@@ -58,7 +57,7 @@ airflow-demo/
 └── scratch.py
 ```
 
-Airflow clones the repository to `/opt/airflow/dags/repo` by default, which might be important in certain cases and when refering to absolute paths. The working directory during execution is `/opt/airflow`. However, it is best to not rely on using environment specific paths, and instead implement a platform agnostic approach, such as getting the full path to the Python file being currently executed and navigating from there:
+Airflow clones the repository to `/opt/airflow/dags/repo` by default, which might be important in certain cases and when referring to absolute paths. The working directory during execution is `/opt/airflow`. However, it is best to not rely on using environment specific paths, and instead implement a platform agnostic approach, such as getting the full path to the Python file being currently executed and navigating from there:
 
 ```python
 import os

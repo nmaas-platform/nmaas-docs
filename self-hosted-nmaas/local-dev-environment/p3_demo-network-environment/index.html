@@ -1,0 +1,2116 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.nmaas.eu/self-hosted-nmaas/local-dev-environment/p3_demo-network-environment/">
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-8.5.7">
+    
+    
+      
+        <title>Part 3 - Demo Network Environment - NMaaS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ZXZHTYVKN9"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ZXZHTYVKN9",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ZXZHTYVKN9",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#part-3-setting-up-a-demo-network-environment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="NMaaS Documentation" class="md-header__button md-logo" aria-label="NMaaS Documentation" data-md-component="logo">
+      
+  <img src="../../../img/NMaaS-logo-transparent-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NMaaS Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Part 3 - Demo Network Environment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="NMaaS Documentation" class="md-nav__button md-logo" aria-label="NMaaS Documentation" data-md-component="logo">
+      
+  <img src="../../../img/NMaaS-logo-transparent-white.png" alt="logo">
+
+    </a>
+    NMaaS Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../what-is-nmaas/" class="md-nav__link">
+        What is NMaaS?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          NMaaS Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NMaaS Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          NMaaS Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/application-manager-guide/" class="md-nav__link">
+        Application Manager Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/domain-admin-guide/" class="md-nav__link">
+        Domain Admin Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/user-guide/" class="md-nav__link">
+        User Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Managed NMaaS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Managed NMaaS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Managed NMaaS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../managed-nmaas/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../managed-nmaas/nmaas-playground-instance/" class="md-nav__link">
+        NMaaS Playground Instance
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Self-Hosted NMaaS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Self-Hosted NMaaS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Self-Hosted NMaaS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install-guide/" class="md-nav__link">
+        Installation Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          Local Development Environment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Local Development Environment" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Local Development Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p1_local-kubernetes-cluster/" class="md-nav__link">
+        Part 1 - Deploying a Local Kubernetes Cluster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p2_installing-nmaas/" class="md-nav__link">
+        Part 2 - Installing NMaaS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Part 3 - Demo Network Environment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Part 3 - Demo Network Environment
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-virtualbox" class="md-nav__link">
+    Configuring VirtualBox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-freertr" class="md-nav__link">
+    Installing FreeRTR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-systemd-service" class="md-nav__link">
+    Creating a SystemD Service
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p4_monitoring-demo-network-environment/" class="md-nav__link">
+        Part 4 - Monitoring the Demo Network Environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p5_adding_custom_app/" class="md-nav__link">
+        Part 5 - Adding a Custom Application
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/" class="md-nav__link">
+        Appendix - Credentials
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          NMaaS Use-Cases
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NMaaS Use-Cases" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          NMaaS Use-Cases
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_1">
+          Virtual Lab
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Virtual Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          Virtual Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../use-cases/virtual-lab/vlab-introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../use-cases/virtual-lab/bulk-domain-deployment/" class="md-nav__link">
+        Bulk Domain Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../use-cases/virtual-lab/domain-groups/" class="md-nav__link">
+        Domain Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../use-cases/virtual-lab/bulk-application-deployment/" class="md-nav__link">
+        Bulk Application Deployment
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          NMaaS Applications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NMaaS Applications" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          NMaaS Applications
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/general-app-deployment/" class="md-nav__link">
+        General Application Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/application-list/" class="md-nav__link">
+        List of Supported Applications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/new-application/" class="md-nav__link">
+        Adding a New Application
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4" type="checkbox" id="__nav_7_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_4">
+          Application Deployment Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Application Deployment Tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          Application Deployment Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/oxidized/" class="md-nav__link">
+        Oxidized
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/librenms/" class="md-nav__link">
+        LibreNMS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/nav/" class="md-nav__link">
+        NAV
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/prometheus/" class="md-nav__link">
+        Prometheus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/grafana/" class="md-nav__link">
+        Grafana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/bastion/" class="md-nav__link">
+        Bastion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/booked/" class="md-nav__link">
+        Booked
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/debian-repository/" class="md-nav__link">
+        Debian Repository
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/spa-inventory/" class="md-nav__link">
+        SPA Inventory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4_10" type="checkbox" id="__nav_7_4_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_4_10">
+          PerfSONAR
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PerfSONAR" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_4_10">
+          <span class="md-nav__icon md-icon"></span>
+          PerfSONAR
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/psconfig-web-admin/" class="md-nav__link">
+        psConfig Web Admin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/maddash/" class="md-nav__link">
+        MaDDash
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/esmond/" class="md-nav__link">
+        Esmond
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/perfsonar-central-management/" class="md-nav__link">
+        perfSONAR Central Management
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/influxdb/" class="md-nav__link">
+        InfluxDB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/jenkins/" class="md-nav__link">
+        Jenkins
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/elk-stack/" class="md-nav__link">
+        ELK Stack
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/wifimon/" class="md-nav__link">
+        WiFiMon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/icinga2/" class="md-nav__link">
+        Icinga2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/victoria-metrics/" class="md-nav__link">
+        Victoria Metrics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/synapse/" class="md-nav__link">
+        Synapse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/routinator/" class="md-nav__link">
+        Routinator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/codimd/" class="md-nav__link">
+        CodiMD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/webdav/" class="md-nav__link">
+        WebDAV
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/uptime-kuma/" class="md-nav__link">
+        Uptime Kuma
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/netbox/" class="md-nav__link">
+        Netbox
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/zabbix/" class="md-nav__link">
+        Zabbix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/spa/" class="md-nav__link">
+        SPA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/maildev/" class="md-nav__link">
+        MailDev
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/changedetectionio/" class="md-nav__link">
+        ChangeDetection.io
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/gp4l-orchestrator/" class="md-nav__link">
+        GP4L Orchestrator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/apache-airflow/" class="md-nav__link">
+        Apache Airflow
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Blog" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/blog1/nmaas-101-1/" class="md-nav__link">
+        NMaaS-101 - "Hello NMaaS !"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/blog2/nmaas-101-2/" class="md-nav__link">
+        NMaaS-101 - "I can help! But... Please could you open these two doors?"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/blog3/nmaas-101-3/" class="md-nav__link">
+        NMaaS-101 - "My name is Oxidized and I'm a nifty configuration management tool"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/blog4/nmaas-101-4/" class="md-nav__link">
+        NMaaS-101 - "Prometheus"
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-presentations/" class="md-nav__link">
+        NMaaS Presentations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        Contact
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-virtualbox" class="md-nav__link">
+    Configuring VirtualBox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-freertr" class="md-nav__link">
+    Installing FreeRTR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-systemd-service" class="md-nav__link">
+    Creating a SystemD Service
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="part-3-setting-up-a-demo-network-environment">Part 3: Setting Up a Demo Network Environment</h1>
+<div class="admonition note">
+<p class="admonition-title">Acknowledgement</p>
+<p>These instructions are heavily based on the excellent blog posts and FreeRTR Docs written by <a href="https://twitter.com/FredericLoui">Fréderic Loui</a> and the RARE team.</p>
+</div>
+<p>If there are existing network elements ready to be monitored by NMaaS applications, then this part can be completely skipped. </p>
+<h2 id="configuring-virtualbox">Configuring VirtualBox</h2>
+<p>This tutorial will assume that VirtualBox is used, even though the discussion should be applicable to other virtualization software as well, with minor modifications.</p>
+<p>The virtual machine where FreeRTR will be installed requires at least two network interfaces, one primary and one additional for each FreeRTR process. </p>
+<p>The addition of new interfaces can be easily accomplished from the VirtualBox VM settings screen, using the Network section. Each new interface is represented by a new tab, named <code>Adapter 1</code>, <code>Adapter 2</code>... For the new interface, choose <code>Attached to: NAT</code> and <strong>make sure to select the NAT network created in <a href="../p1_local-kubernetes-cluster/#creating-a-new-nat-network-in-virtualbox">Part 1</a> and that Promiscuous Mode is set to Allow All</strong> in the Advanced section. If Promiscuous Mode is not enabled, unfortunately pcapInt will not be able to work properly.</p>
+<h2 id="installing-freertr">Installing FreeRTR</h2>
+<ol>
+<li>
+<p>To run a local installation of FreeRTR we must first install a Java distribution. Fortunately, this can be accomplished with a single command:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>apt<span class="w"> </span>update
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a>apt<span class="w"> </span>install<span class="w"> </span>default-jre-headless<span class="w"> </span>ethtool
+</span></code></pre></div></td></tr></table></div>
+<p>FreeRTR requires at least Java 8 and works with newer versions as well.</p>
+</li>
+<li>
+<p>We are now ready to download FreeRTR:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a>mkdir<span class="w"> </span>/opt/rtr
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>/opt/rtr
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a>wget<span class="w"> </span>http://www.freertr.net/rtr.jar
+</span></code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>To make our virtual router accessible from the local network we must install the FreeRTR net-tools as well. They come precompiled for convenience. Please refer to <a href="https://wiki.geant.org/pages/viewpage.action?pageId=148083914">RARE/FreeRouter-101 [ #002 ] - "Let me get out !"</a> for instructions on building these from source.</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a>wget<span class="w"> </span>freerouter.nop.hu/rtr-<span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span>.tar
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a>mkdir<span class="w"> </span>/opt/rtr/bin
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a>tar<span class="w"> </span>-xvf<span class="w"> </span>rtr-<span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span>.tar<span class="w"> </span>-C<span class="w"> </span>/opt/rtr/bin
+</span></code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>As discussed in <a href="http://docs.freertr.org/guides/getting-started/001-hello-world/">http://docs.freertr.net/guides/getting-started/001-hello-world/</a>, to enable basic functionality we need to create two TXT files: a hardware specification file and a software specification file. </p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">r1-hw.txt</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>int eth1 eth 0000.1111.0001 127.0.0.1 1001 127.0.0.1 2001
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>tcp2vrf 1123 v1 23
+</span></code></pre></div></td></tr></table></div>
+<p>The hardware specification file given above is used to declare the interfaces that we would like our router to have. The syntax is: <code>int &lt;int_name&gt; &lt;int_type&gt; &lt;int_mac_addr&gt; &lt;ip_addr_socket_src&gt; &lt;ip_addr_udp_port_src&gt; &lt;ip_addr_socket_dest&gt; &lt;ip_addr_udp_port_dest&gt;</code>.</p>
+<p>Note that by using the second line in the hardware specification file we have enabled remote reachability of port 23 (Telnet) by forwarding any TCP connection established towards <code>VM_IP:1123</code> toward <code>VRF_V1:23</code>. More information about VRFs will be given in the next steps. This allows easy remote configuration of our router even before we have bound it to a specific network interface of our VM.</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">r1-sw.txt</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">  1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">  2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">  3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">  4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">  5</a></span>
+<span class="normal"><a href="#__codelineno-4-6">  6</a></span>
+<span class="normal"><a href="#__codelineno-4-7">  7</a></span>
+<span class="normal"><a href="#__codelineno-4-8">  8</a></span>
+<span class="normal"><a href="#__codelineno-4-9">  9</a></span>
+<span class="normal"><a href="#__codelineno-4-10"> 10</a></span>
+<span class="normal"><a href="#__codelineno-4-11"> 11</a></span>
+<span class="normal"><a href="#__codelineno-4-12"> 12</a></span>
+<span class="normal"><a href="#__codelineno-4-13"> 13</a></span>
+<span class="normal"><a href="#__codelineno-4-14"> 14</a></span>
+<span class="normal"><a href="#__codelineno-4-15"> 15</a></span>
+<span class="normal"><a href="#__codelineno-4-16"> 16</a></span>
+<span class="normal"><a href="#__codelineno-4-17"> 17</a></span>
+<span class="normal"><a href="#__codelineno-4-18"> 18</a></span>
+<span class="normal"><a href="#__codelineno-4-19"> 19</a></span>
+<span class="normal"><a href="#__codelineno-4-20"> 20</a></span>
+<span class="normal"><a href="#__codelineno-4-21"> 21</a></span>
+<span class="normal"><a href="#__codelineno-4-22"> 22</a></span>
+<span class="normal"><a href="#__codelineno-4-23"> 23</a></span>
+<span class="normal"><a href="#__codelineno-4-24"> 24</a></span>
+<span class="normal"><a href="#__codelineno-4-25"> 25</a></span>
+<span class="normal"><a href="#__codelineno-4-26"> 26</a></span>
+<span class="normal"><a href="#__codelineno-4-27"> 27</a></span>
+<span class="normal"><a href="#__codelineno-4-28"> 28</a></span>
+<span class="normal"><a href="#__codelineno-4-29"> 29</a></span>
+<span class="normal"><a href="#__codelineno-4-30"> 30</a></span>
+<span class="normal"><a href="#__codelineno-4-31"> 31</a></span>
+<span class="normal"><a href="#__codelineno-4-32"> 32</a></span>
+<span class="normal"><a href="#__codelineno-4-33"> 33</a></span>
+<span class="normal"><a href="#__codelineno-4-34"> 34</a></span>
+<span class="normal"><a href="#__codelineno-4-35"> 35</a></span>
+<span class="normal"><a href="#__codelineno-4-36"> 36</a></span>
+<span class="normal"><a href="#__codelineno-4-37"> 37</a></span>
+<span class="normal"><a href="#__codelineno-4-38"> 38</a></span>
+<span class="normal"><a href="#__codelineno-4-39"> 39</a></span>
+<span class="normal"><a href="#__codelineno-4-40"> 40</a></span>
+<span class="normal"><a href="#__codelineno-4-41"> 41</a></span>
+<span class="normal"><a href="#__codelineno-4-42"> 42</a></span>
+<span class="normal"><a href="#__codelineno-4-43"> 43</a></span>
+<span class="normal"><a href="#__codelineno-4-44"> 44</a></span>
+<span class="normal"><a href="#__codelineno-4-45"> 45</a></span>
+<span class="normal"><a href="#__codelineno-4-46"> 46</a></span>
+<span class="normal"><a href="#__codelineno-4-47"> 47</a></span>
+<span class="normal"><a href="#__codelineno-4-48"> 48</a></span>
+<span class="normal"><a href="#__codelineno-4-49"> 49</a></span>
+<span class="normal"><a href="#__codelineno-4-50"> 50</a></span>
+<span class="normal"><a href="#__codelineno-4-51"> 51</a></span>
+<span class="normal"><a href="#__codelineno-4-52"> 52</a></span>
+<span class="normal"><a href="#__codelineno-4-53"> 53</a></span>
+<span class="normal"><a href="#__codelineno-4-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-4-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-4-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-4-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-4-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-4-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-4-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-4-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-4-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-4-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-4-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-4-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-4-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-4-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-4-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-4-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-4-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-4-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-4-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-4-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-4-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-4-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-4-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-4-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-4-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-4-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-4-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-4-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-4-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-4-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-4-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-4-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-4-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-4-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-4-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-4-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-4-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-4-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-4-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-4-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-4-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-4-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-4-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-4-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-4-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-4-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-4-100">100</a></span>
+<span class="normal"><a href="#__codelineno-4-101">101</a></span>
+<span class="normal"><a href="#__codelineno-4-102">102</a></span>
+<span class="normal"><a href="#__codelineno-4-103">103</a></span>
+<span class="normal"><a href="#__codelineno-4-104">104</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>hostname r1
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>buggy
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a>!
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a>vrf def v1
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a>rd 1:1
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a>exit
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a>!
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a>prefix-list p4
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9"></a>sequence 10 permit 0.0.0.0/0 ge 0 le 0
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10"></a>exit
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11"></a>!
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12"></a>server telnet tel
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13"></a>security protocol tel
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14"></a>vrf v1
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15"></a>exit
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16"></a>!
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17"></a>ipv4 route v1 0.0.0.0 0.0.0.0 192.168.1.1
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18"></a>!
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19"></a>int eth1
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20"></a>desc r1@eth1 -&gt; enp0s8
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21"></a>lldp ena
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22"></a>vrf for v1
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23"></a>ipv4 addr 192.168.1.17 255.255.255.0
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24"></a>ipv4 gateway-prefix p4
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25"></a>no shutdown
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26"></a>exit
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27"></a>!
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28"></a>!
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29"></a>!
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30"></a>sensor ifaces-hw
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31"></a>path interfaces-hw/interface/counter
+</span><span id="__span-4-32"><a id="__codelineno-4-32" name="__codelineno-4-32"></a>prefix freertr-ifaces
+</span><span id="__span-4-33"><a id="__codelineno-4-33" name="__codelineno-4-33"></a>prepend iface_hw_byte_
+</span><span id="__span-4-34"><a id="__codelineno-4-34" name="__codelineno-4-34"></a>command sho inter hwsumm
+</span><span id="__span-4-35"><a id="__codelineno-4-35" name="__codelineno-4-35"></a>name 0 ifc=
+</span><span id="__span-4-36"><a id="__codelineno-4-36" name="__codelineno-4-36"></a>key name interfaces-hw/interface
+</span><span id="__span-4-37"><a id="__codelineno-4-37" name="__codelineno-4-37"></a>replace \. _
+</span><span id="__span-4-38"><a id="__codelineno-4-38" name="__codelineno-4-38"></a>column 1 name st
+</span><span id="__span-4-39"><a id="__codelineno-4-39" name="__codelineno-4-39"></a>column 1 replace admin -1
+</span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40"></a>column 1 replace down 0
+</span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41"></a>column 1 replace up 1
+</span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42"></a>column 2 name tx
+</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43"></a>column 3 name rx
+</span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44"></a>column 4 name dr
+</span><span id="__span-4-45"><a id="__codelineno-4-45" name="__codelineno-4-45"></a>exit
+</span><span id="__span-4-46"><a id="__codelineno-4-46" name="__codelineno-4-46"></a>!
+</span><span id="__span-4-47"><a id="__codelineno-4-47" name="__codelineno-4-47"></a>sensor ifaces-hwp
+</span><span id="__span-4-48"><a id="__codelineno-4-48" name="__codelineno-4-48"></a>path interfaces-hwp/interface/counter
+</span><span id="__span-4-49"><a id="__codelineno-4-49" name="__codelineno-4-49"></a>prefix freertr-ifaces
+</span><span id="__span-4-50"><a id="__codelineno-4-50" name="__codelineno-4-50"></a>prepend iface_hw_pack_
+</span><span id="__span-4-51"><a id="__codelineno-4-51" name="__codelineno-4-51"></a>command sho inter hwpsumm
+</span><span id="__span-4-52"><a id="__codelineno-4-52" name="__codelineno-4-52"></a>name 0 ifc=
+</span><span id="__span-4-53"><a id="__codelineno-4-53" name="__codelineno-4-53"></a>key name interfaces-hwp/interface
+</span><span id="__span-4-54"><a id="__codelineno-4-54" name="__codelineno-4-54"></a>replace \. _
+</span><span id="__span-4-55"><a id="__codelineno-4-55" name="__codelineno-4-55"></a>column 1 name st
+</span><span id="__span-4-56"><a id="__codelineno-4-56" name="__codelineno-4-56"></a>column 1 replace admin -1
+</span><span id="__span-4-57"><a id="__codelineno-4-57" name="__codelineno-4-57"></a>column 1 replace down 0
+</span><span id="__span-4-58"><a id="__codelineno-4-58" name="__codelineno-4-58"></a>column 1 replace up 1
+</span><span id="__span-4-59"><a id="__codelineno-4-59" name="__codelineno-4-59"></a>column 2 name tx
+</span><span id="__span-4-60"><a id="__codelineno-4-60" name="__codelineno-4-60"></a>column 3 name rx
+</span><span id="__span-4-61"><a id="__codelineno-4-61" name="__codelineno-4-61"></a>column 4 name dr
+</span><span id="__span-4-62"><a id="__codelineno-4-62" name="__codelineno-4-62"></a>exit
+</span><span id="__span-4-63"><a id="__codelineno-4-63" name="__codelineno-4-63"></a>!
+</span><span id="__span-4-64"><a id="__codelineno-4-64" name="__codelineno-4-64"></a>sensor ifaces-sw
+</span><span id="__span-4-65"><a id="__codelineno-4-65" name="__codelineno-4-65"></a>path interfaces-sw/interface/counter
+</span><span id="__span-4-66"><a id="__codelineno-4-66" name="__codelineno-4-66"></a>prefix freertr-ifaces
+</span><span id="__span-4-67"><a id="__codelineno-4-67" name="__codelineno-4-67"></a>prepend iface_sw_byte_
+</span><span id="__span-4-68"><a id="__codelineno-4-68" name="__codelineno-4-68"></a>command sho inter swsumm
+</span><span id="__span-4-69"><a id="__codelineno-4-69" name="__codelineno-4-69"></a>name 0 ifc=
+</span><span id="__span-4-70"><a id="__codelineno-4-70" name="__codelineno-4-70"></a>key name interfaces-sw/interface
+</span><span id="__span-4-71"><a id="__codelineno-4-71" name="__codelineno-4-71"></a>replace \. _
+</span><span id="__span-4-72"><a id="__codelineno-4-72" name="__codelineno-4-72"></a>column 1 name st
+</span><span id="__span-4-73"><a id="__codelineno-4-73" name="__codelineno-4-73"></a>column 1 replace admin -1
+</span><span id="__span-4-74"><a id="__codelineno-4-74" name="__codelineno-4-74"></a>column 1 replace down 0
+</span><span id="__span-4-75"><a id="__codelineno-4-75" name="__codelineno-4-75"></a>column 1 replace up 1
+</span><span id="__span-4-76"><a id="__codelineno-4-76" name="__codelineno-4-76"></a>column 2 name tx
+</span><span id="__span-4-77"><a id="__codelineno-4-77" name="__codelineno-4-77"></a>column 3 name rx
+</span><span id="__span-4-78"><a id="__codelineno-4-78" name="__codelineno-4-78"></a>column 4 name dr
+</span><span id="__span-4-79"><a id="__codelineno-4-79" name="__codelineno-4-79"></a>exit
+</span><span id="__span-4-80"><a id="__codelineno-4-80" name="__codelineno-4-80"></a>!
+</span><span id="__span-4-81"><a id="__codelineno-4-81" name="__codelineno-4-81"></a>sensor ifaces-swp
+</span><span id="__span-4-82"><a id="__codelineno-4-82" name="__codelineno-4-82"></a>path interfaces-swp/interface/counter
+</span><span id="__span-4-83"><a id="__codelineno-4-83" name="__codelineno-4-83"></a>prefix freertr-ifaces
+</span><span id="__span-4-84"><a id="__codelineno-4-84" name="__codelineno-4-84"></a>prepend iface_sw_pack_
+</span><span id="__span-4-85"><a id="__codelineno-4-85" name="__codelineno-4-85"></a>command sho inter swpsumm
+</span><span id="__span-4-86"><a id="__codelineno-4-86" name="__codelineno-4-86"></a>name 0 ifc=
+</span><span id="__span-4-87"><a id="__codelineno-4-87" name="__codelineno-4-87"></a>key name interfaces-swp/interface
+</span><span id="__span-4-88"><a id="__codelineno-4-88" name="__codelineno-4-88"></a>replace \. _
+</span><span id="__span-4-89"><a id="__codelineno-4-89" name="__codelineno-4-89"></a>column 1 name st
+</span><span id="__span-4-90"><a id="__codelineno-4-90" name="__codelineno-4-90"></a>column 1 replace admin -1
+</span><span id="__span-4-91"><a id="__codelineno-4-91" name="__codelineno-4-91"></a>column 1 replace down 0
+</span><span id="__span-4-92"><a id="__codelineno-4-92" name="__codelineno-4-92"></a>column 1 replace up 1
+</span><span id="__span-4-93"><a id="__codelineno-4-93" name="__codelineno-4-93"></a>column 2 name tx
+</span><span id="__span-4-94"><a id="__codelineno-4-94" name="__codelineno-4-94"></a>column 3 name rx
+</span><span id="__span-4-95"><a id="__codelineno-4-95" name="__codelineno-4-95"></a>column 4 name dr
+</span><span id="__span-4-96"><a id="__codelineno-4-96" name="__codelineno-4-96"></a>exit
+</span><span id="__span-4-97"><a id="__codelineno-4-97" name="__codelineno-4-97"></a>!
+</span><span id="__span-4-98"><a id="__codelineno-4-98" name="__codelineno-4-98"></a>server prometheus r1
+</span><span id="__span-4-99"><a id="__codelineno-4-99" name="__codelineno-4-99"></a>sensor ifaces-hw
+</span><span id="__span-4-100"><a id="__codelineno-4-100" name="__codelineno-4-100"></a>sensor ifaces-hwp
+</span><span id="__span-4-101"><a id="__codelineno-4-101" name="__codelineno-4-101"></a>sensor ifaces-sw
+</span><span id="__span-4-102"><a id="__codelineno-4-102" name="__codelineno-4-102"></a>sensor ifaces-swp
+</span><span id="__span-4-103"><a id="__codelineno-4-103" name="__codelineno-4-103"></a>vrf v1
+</span><span id="__span-4-104"><a id="__codelineno-4-104" name="__codelineno-4-104"></a>exit
+</span></code></pre></div></td></tr></table></div>
+<p>Even though the software specification file is large, the most important parts that need to be adapted to the local environment are:</p>
+<ul>
+<li>Adding a default route: <code>ipv4 route v1 0.0.0.0 0.0.0.0 192.168.1.1</code></li>
+<li>Configuring a static IP: <code>ipv4 addr 192.168.1.17 255.255.255.0</code></li>
+<li>The sensor directives need to be left as they are, since they configure the Prometheus Exporter which will be scrapped using an NMaaS hosted Prometheus instance which we will deploy in the next part.</li>
+</ul>
+</li>
+<li>
+<p>As a last step before starting the FreeRTR process, we need to bring up our second interface and disable hardware offloading:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nv">INT_NAME</span><span class="o">=</span>enp0s8
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>ip<span class="w"> </span>link<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>up<span class="w"> </span>promisc<span class="w"> </span>on
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>rx<span class="w"> </span>off
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>tx<span class="w"> </span>off
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>sg<span class="w"> </span>off
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>tso<span class="w"> </span>off
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>ufo<span class="w"> </span>off
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>gso<span class="w"> </span>off
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>gro<span class="w"> </span>off
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>lro<span class="w"> </span>off
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>rxvlan<span class="w"> </span>off
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>txvlan<span class="w"> </span>off
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>ntuple<span class="w"> </span>off
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14"></a>/sbin/ethtool<span class="w"> </span>-K<span class="w"> </span><span class="nv">$INT_NAME</span><span class="w"> </span>rxhash<span class="w"> </span>off
+</span></code></pre></div></td></tr></table></div>
+<p>As before, please make sure that the correct interface name is used.</p>
+</li>
+<li>
+<p>Once the necessary changes are made to the hardware and software specification files, we are ready to start our first router:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a>java<span class="w"> </span>-jar<span class="w"> </span>rtr.jar<span class="w"> </span>routersc<span class="w"> </span>r1-hw.txt<span class="w"> </span>r1-sw.txt
+</span></code></pre></div></td></tr></table></div>
+<p>This will open an interactive session from where we can further alter the running configuration of the router. Of course, access to the local network is still not possible. To enable two-way communication with the "outside" world, we need to bind the UDP socket to the network interface that we have configured in the previous section using the <code>pcapInit.bin</code> tool:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a>./pcapInt.bin<span class="w"> </span>enp0s8<span class="w"> </span><span class="m">2001</span><span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span><span class="m">1001</span><span class="w"> </span><span class="m">127</span>.0.0.1
+</span></code></pre></div></td></tr></table></div>
+<p>Please note that in the above command <code>enp0s8</code> needs to be replaced with the name of the additional network interface connected to the virtual machine. If reusing the hardware file posted above, the port numbers can remain unchanged.</p>
+</li>
+<li>
+<p>Once started, you can try pinging your default gateway from FreeRTR itself:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a>ping<span class="w"> </span>&lt;GATEWAY_IP&gt;<span class="w"> </span>/vrf<span class="w"> </span>v1
+</span></code></pre></div></td></tr></table></div>
+<p>It should work without any issues.</p>
+</li>
+</ol>
+<p>The same steps can be repeated for another instance of the virtual router, this time choosing different socket ports in step 4, and adjusting the IP address in the software configuration file.</p>
+<h2 id="creating-a-systemd-service">Creating a SystemD Service</h2>
+<p>If automatic startup of the virtual devices is desired, a SystemD service unit can be created.</p>
+<ul>
+<li>
+<p>Create a new file called <code>freertr@.service</code> in <code>/etc/systemd/system</code>.</p>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">freertr@.service</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-9-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-9-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-9-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-9-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-9-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-9-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-9-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-9-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-9-10">10</a></span>
+<span class="normal"><a href="#__codelineno-9-11">11</a></span>
+<span class="normal"><a href="#__codelineno-9-12">12</a></span>
+<span class="normal"><a href="#__codelineno-9-13">13</a></span>
+<span class="normal"><a href="#__codelineno-9-14">14</a></span>
+<span class="normal"><a href="#__codelineno-9-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">[Unit]</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Start a freeRTR instance for %I</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5"></a><span class="k">[Service]</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="na">EnvironmentFile</span><span class="o">=</span><span class="s">/etc/default/freertr@%i</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="na">ExecStartPre</span><span class="o">=</span><span class="s">/opt/rtr/interface-config.sh ${INT_NAME}</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">java -jar /opt/rtr/rtr.jar routers ${HW_PATH} ${SW_PATH}</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="na">User</span><span class="o">=</span><span class="s">root</span><span class="w"> </span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10"></a><span class="c1"># Restart every &gt;2 seconds to avoid StartLimitInterval failure</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="na">RestartSec</span><span class="o">=</span><span class="s">5</span><span class="w"> </span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12"></a><span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13"></a>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14"></a><span class="k">[Install]</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</span></code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>To enable automatic startup of the pcapInt tool as well, the following service unit needs to be created for each router instance, adjusting the <code>After=</code> parameter and the <code>EnvironmentFile</code> accordingly:</p>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">pcap-freertr-r1.service</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-10-10">10</a></span>
+<span class="normal"><a href="#__codelineno-10-11">11</a></span>
+<span class="normal"><a href="#__codelineno-10-12">12</a></span>
+<span class="normal"><a href="#__codelineno-10-13">13</a></span>
+<span class="normal"><a href="#__codelineno-10-14">14</a></span>
+<span class="normal"><a href="#__codelineno-10-15">15</a></span>
+<span class="normal"><a href="#__codelineno-10-16">16</a></span>
+<span class="normal"><a href="#__codelineno-10-17">17</a></span>
+<span class="normal"><a href="#__codelineno-10-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">[Unit]</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="na">Description</span><span class="o">=</span><span class="s">Start a PCAP freeRTR instance for %I</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="hll"><span class="na">After</span><span class="o">=</span><span class="s">freertr@r1.service</span>
+</span></span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5"></a><span class="k">[Service]</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6"></a><span class="hll"><span class="na">EnvironmentFile</span><span class="o">=</span><span class="s">/etc/default/pcap-freertr-r1</span>
+</span></span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/opt/rtr/bin/pcapInt.bin ${INT_NAME} ${PORT1} 127.0.0.1 ${PORT2} 127.0.0.1</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8"></a><span class="na">User</span><span class="o">=</span><span class="s">root</span><span class="w"> </span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9"></a><span class="c1"># Restart every &gt;2 seconds to avoid StartLimitInterval failure</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10"></a><span class="na">RestartSec</span><span class="o">=</span><span class="s">5</span><span class="w"> </span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12"></a><span class="na">StandardInput</span><span class="o">=</span><span class="s">tty</span>
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13"></a><span class="na">TTYPath</span><span class="o">=</span><span class="s">/dev/tty2</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14"></a><span class="na">TTYReset</span><span class="o">=</span><span class="s">yes</span>
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15"></a><span class="na">TTYVHangup</span><span class="o">=</span><span class="s">yes</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16"></a>
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17"></a><span class="k">[Install]</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Please note that if multiple instances of pcapInit need to be started (e.g. for different virtual routers), then the <code>TTYPath</code> parameter will need to be incremented accordingly.</p>
+</li>
+<li>
+<p>The necessary environment variables that are referenced in these unit files can be created in <code>/etc/default</code>. An example is given below:</p>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">/etc/default/freertr@r1</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
+<span class="normal"><a href="#__codelineno-11-2">2</a></span>
+<span class="normal"><a href="#__codelineno-11-3">3</a></span>
+<span class="normal"><a href="#__codelineno-11-4">4</a></span>
+<span class="normal"><a href="#__codelineno-11-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="na">INT_NAME</span><span class="o">=</span><span class="s">enp0s8</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="na">HW_PATH</span><span class="o">=</span><span class="s">/opt/rtr/r1-hw.txt</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="na">SW_PATH</span><span class="o">=</span><span class="s">/opt/rtr/r1-sw.txt</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="na">PORT1</span><span class="o">=</span><span class="s">2001</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="na">PORT2</span><span class="o">=</span><span class="s">1001</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-ini highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">/etc/default/pcap-freertr-r1</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
+<span class="normal"><a href="#__codelineno-12-2">2</a></span>
+<span class="normal"><a href="#__codelineno-12-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="na">INT_NAME</span><span class="o">=</span><span class="s">enp0s8</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="na">PORT1</span><span class="o">=</span><span class="s">2001</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="na">PORT2</span><span class="o">=</span><span class="s">1001</span>
+</span></code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>Finally the newly created services can be enabled and started:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>freertr@r1
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>pcap-freertr-r1
+</span></code></pre></div></td></tr></table></div>
+</li>
+</ul>
+<p>We are now ready to configure monitoring and configuration backup of our virtual router using tools from the NMaaS catalog.</p></div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+          <footer class="md-footer">
+    
+      
+        
+        <nav class="md-footer__inner md-grid" aria-label="" >
+          
+            
+            <a href="../p2_installing-nmaas/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Part 2 - Installing NMaaS" rel="prev">
+              <div class="md-footer__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+              </div>
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                <div class="md-ellipsis">
+                  Part 2 - Installing NMaaS
+                </div>
+              </div>
+            </a>
+          
+          
+            
+            <a href="../p4_monitoring-demo-network-environment/" class="md-footer__link md-footer__link--next" aria-label="Next: Part 4 - Monitoring the Demo Network Environment" rel="next">
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                <div class="md-ellipsis">
+                  Part 4 - Monitoring the Demo Network Environment
+                </div>
+              </div>
+              <div class="md-footer__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+              </div>
+            </a>
+          
+        </nav>
+      
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <!--
+ Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+    
+    <div class="md-copyright__highlight">
+        <a href="#__consent">Change cookie settings</a>
+
+    </div>
+    
+    
+    Made with
+    <span class="twemoji heart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408z"/></svg>
+    </span> by NMaaS contributors and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>
+    
+</div>
+        
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <div><img class="logo" src="../../../img/geant_logo_white.png" /></div>
+        <div><img class="logo" src="../../../img/eu_logo.png"</div>
+      </div>
+      </div>
+    </div>
+  </footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+<h4>Cookie Consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input type="checkbox" class="md-toggle" id="__settings">
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);console.log(new FormData(form)),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

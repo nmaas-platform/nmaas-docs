@@ -86,7 +86,7 @@ Desktop editions of Ubuntu usually come with their own GUI network manager, so t
 ```powershell title="Microsoft Windows"
 route add <NAT_NETWORK> mask <SUBNET_MASK> <VIRTUALBOX_HOST_NETWORK_IP>
 # Using the examples above, the command would be:
-# route add 10.99.99.0 mask 255.255.255.255 192.168.56.1
+# route add 10.99.99.0 mask 255.255.255.0 192.168.56.1
 ```
 
 ```bash title="GNU/Linux"
@@ -324,7 +324,7 @@ K3s is another easy way to configure a full-fledged Kubernetes cluster in a matt
     mkdir -p ~/manifests/calico
     cd ~/manifests/calico
     wget https://docs.projectcalico.org/manifests/calico.yaml
-    nano calico.yml
+    nano calico.yaml
     ```
 
     ```yaml title="calico.yaml"
@@ -339,7 +339,7 @@ K3s is another easy way to configure a full-fledged Kubernetes cluster in a matt
     ```
 
     ```bash
-    kubectl create -f calico.yml --save-config
+    kubectl create -f calico.yaml --save-config
     ```
 
 - Once Calico has been installed, the node should transition to a `Ready` state.
@@ -432,7 +432,7 @@ The last application that needs to be installed before we can move on to install
 
 - Customize the values.yaml file according to the local environment:
 
-    ```yaml title="ingress.yaml"
+    ```yaml title="ingress-values.yaml"
     defaultBackend:
     enabled: true
     controller:
@@ -457,7 +457,7 @@ The last application that needs to be installed before we can move on to install
     helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
     helm repo update
     kubectl create namespace nmaas-system
-    helm install -f ingress.yaml --namespace nmaas-system nmaas-ingress ingress-nginx/ingress-nginx
+    helm install -f ingress-values.yaml --namespace nmaas-system nmaas-ingress ingress-nginx/ingress-nginx
     ```
 
     We have chosen to install `ingress-nginx` in the `nmaas-system` namespace, which will house all the other NMaaS components as well.

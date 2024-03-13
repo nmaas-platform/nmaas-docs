@@ -112,7 +112,7 @@ We are ready to add the GitLab Helm repository and install the 4.X version of Gi
 ```bash
 helm repo add gitlab https://charts.gitlab.io
 helm repo update
-helm install -f gitlab.yaml --namespace nmaas-system nmaas-gitlab --version 4.12.13 gitlab/gitlab
+helm install -f gitlab-values.yaml --namespace nmaas-system nmaas-gitlab --version 4.12.13 gitlab/gitlab
 ```
 
 Once GitLab has been deployed, it should be possible to navigate to the login page using a web browser. After logging in, users are advised to configure the following settings:
@@ -209,7 +209,7 @@ Once the values.yaml file has been customized, NMaaS can be deployed by executin
 
 ```bash
 helm repo add nmaas https://artifactory.software.geant.org/artifactory/nmaas-helm
-helm install -f values.yaml --namespace nmaas-system nmaas --version 1.1.2 nmaas/nmaas
+helm install -f nmaas-values.yaml --namespace nmaas-system nmaas --version 1.1.2 nmaas/nmaas
 ```
 
 NMaaS also requires an the stakater autoreloader component, which can simply be installed using the commands below. This component takes care of restarting the affected pods whenever a configuration change is submitted via GitLab.

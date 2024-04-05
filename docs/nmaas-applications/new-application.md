@@ -126,7 +126,7 @@ It would be tedious to manually package each new chart version, update the artif
           run: ct lint --debug
   ```
 
-- Once a pull request has been merged to master we want to automatically release a new version of the chart. For this purpose, we create a new workflow by defining the file release.yaml.
+- Once a pull request has been merged to master we want to automatically release a new version of the chart. For this purpose, we create a new workflow by defining the file `release.yaml`.
   ```yaml title=".github/workflows/release.yaml"
   name: Release Charts
   

@@ -69,6 +69,8 @@ nav:
     - NMaaS-101 - "I can help! But... Please could you open these two doors?": 'blog/blog2/nmaas-101-2.md'
     - NMaaS-101 - "My name is Oxidized and I'm a nifty configuration management tool": 'blog/blog3/nmaas-101-3.md'
     - NMaaS-101 - "Prometheus" : 'blog/blog4/nmaas-101-4.md'
+  - Release Notes: 
+    - '1.6.0': 'release-notes/1.6.0.md' 
   - NMaaS Presentations: 'nmaas-presentations.md'
   - FAQ: faq.md
   - Contact: contact.md

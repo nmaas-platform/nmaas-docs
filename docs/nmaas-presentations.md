@@ -389,6 +389,24 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 ---
 
+### RoEduNet 2023
+
+**Event Type:** Presentations
+
+**Presenter(s):** Jovana Vuleta-Radoičić
+
+**Event:** RoEduNet 2023
+
+**Event Homepage:** [RoEduNet 2023 Homepage](https://events.roedu.net/event/6/timetable/?view=standard)
+
+**Date:** 21-22 September 2023
+
+**Location:** Craiova, Romania
+
+**Slides (incl. videos):** [https://static.nmaas.eu/roedunet23/NMaaS-RoEduNet.pdf](https://static.nmaas.eu/roedunet23/NMaaS-RoEduNet.pdf)
+
+---
+
 ### NMaaS Virtual Labs for Education
 
 **Event Type:** Presentations

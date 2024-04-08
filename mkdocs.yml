@@ -71,6 +71,7 @@ nav:
     - NMaaS-101 - "Prometheus" : 'blog/blog4/nmaas-101-4.md'
   - Release Notes: 
     - '1.6.0': 'release-notes/1.6.0.md' 
+    - '1.5.4': 'release-notes/1.5.4.md' 
   - NMaaS Presentations: 'nmaas-presentations.md'
   - FAQ: faq.md
   - Contact: contact.md

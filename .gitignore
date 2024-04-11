@@ -7,3 +7,4 @@ old-raw/
 .vscode/
 venv/
 *:Zone.Identifier
+/.idea/

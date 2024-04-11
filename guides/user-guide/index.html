@@ -1,0 +1,2350 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.nmaas.eu/guides/user-guide/">
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-8.5.7">
+    
+    
+      
+        <title>User Guide - NMaaS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ZXZHTYVKN9"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ZXZHTYVKN9",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ZXZHTYVKN9",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#user-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="NMaaS Documentation" class="md-header__button md-logo" aria-label="NMaaS Documentation" data-md-component="logo">
+      
+  <img src="../../img/NMaaS-logo-transparent-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NMaaS Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="NMaaS Documentation" class="md-nav__button md-logo" aria-label="NMaaS Documentation" data-md-component="logo">
+      
+  <img src="../../img/NMaaS-logo-transparent-white.png" alt="logo">
+
+    </a>
+    NMaaS Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../what-is-nmaas/" class="md-nav__link">
+        What is NMaaS?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          NMaaS Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NMaaS Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          NMaaS Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../application-manager-guide/" class="md-nav__link">
+        Application Manager Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domain-admin-guide/" class="md-nav__link">
+        Domain Admin Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          User Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        User Guide
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-nmaas-domains" class="md-nav__link">
+    1. NMaaS Domains
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-introduction-to-nmaas-user-roles" class="md-nav__link">
+    2. Introduction to NMaaS User Roles
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Introduction to NMaaS User Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-global-level-roles" class="md-nav__link">
+    2.1. Global Level Roles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-domain-level-roles" class="md-nav__link">
+    2.2 Domain Level Roles
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-nmaas-portal" class="md-nav__link">
+    3. NMaaS Portal
+  </a>
+  
+    <nav class="md-nav" aria-label="3. NMaaS Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-about" class="md-nav__link">
+    3.1 About
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-user-login" class="md-nav__link">
+    4. User Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-user-registration" class="md-nav__link">
+    5. User Registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-application-market" class="md-nav__link">
+    6. Application Market
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-application-subscriptions-and-instances" class="md-nav__link">
+    7. Application Subscriptions and Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-application-instance-deployment" class="md-nav__link">
+    8. Application Instance Deployment
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Application Instance Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-application-details-view" class="md-nav__link">
+    8.1 Application Details View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-initiating-application-instance-deployment" class="md-nav__link">
+    8.2 Initiating Application Instance Deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-application-instance-initial-configuration" class="md-nav__link">
+    8.3 Application Instance Initial Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-accessing-application-instance" class="md-nav__link">
+    8.4 Accessing Application Instance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-configuring-application-instance" class="md-nav__link">
+    8.5 Configuring Application Instance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-managing-application-instance-upgrades" class="md-nav__link">
+    8.6 Managing Application Instance Upgrades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-initiating-application-instance-removal" class="md-nav__link">
+    8.7 Initiating Application Instance Removal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88-managing-failed-application-instance-deployments" class="md-nav__link">
+    8.8 Managing Failed Application Instance Deployments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-user-settings" class="md-nav__link">
+    9. User Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="9. User Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-user-profile" class="md-nav__link">
+    9.1 User Profile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-setting-a-users-default-domain" class="md-nav__link">
+    9.2 Setting a User's Default Domain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-setting-user-ssh-keys" class="md-nav__link">
+    9.3 Setting User SSH Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-password-change" class="md-nav__link">
+    9.4 Password Change
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-contact-form" class="md-nav__link">
+    10. Contact Form
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Managed NMaaS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Managed NMaaS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Managed NMaaS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-nmaas/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../managed-nmaas/nmaas-playground-instance/" class="md-nav__link">
+        NMaaS Playground Instance
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Self-Hosted NMaaS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Self-Hosted NMaaS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Self-Hosted NMaaS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-hosted-nmaas/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-hosted-nmaas/install-guide/" class="md-nav__link">
+        Installation Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          Local Development Environment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Local Development Environment" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Local Development Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-hosted-nmaas/local-dev-environment/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-hosted-nmaas/local-dev-environment/p1_local-kubernetes-cluster/" class="md-nav__link">
+        Part 1 - Deploying a Local Kubernetes Cluster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-hosted-nmaas/local-dev-environment/p2_installing-nmaas/" class="md-nav__link">
+        Part 2 - Installing NMaaS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-hosted-nmaas/local-dev-environment/p3_demo-network-environment/" class="md-nav__link">
+        Part 3 - Demo Network Environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-hosted-nmaas/local-dev-environment/p4_monitoring-demo-network-environment/" class="md-nav__link">
+        Part 4 - Monitoring the Demo Network Environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-hosted-nmaas/local-dev-environment/p5_adding_custom_app/" class="md-nav__link">
+        Part 5 - Adding a Custom Application
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../self-hosted-nmaas/local-dev-environment/appendix/" class="md-nav__link">
+        Appendix - Credentials
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          NMaaS Use-Cases
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NMaaS Use-Cases" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          NMaaS Use-Cases
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_1">
+          Virtual Lab
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Virtual Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          Virtual Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/virtual-lab/vlab-introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/virtual-lab/bulk-domain-deployment/" class="md-nav__link">
+        Bulk Domain Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/virtual-lab/domain-groups/" class="md-nav__link">
+        Domain Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use-cases/virtual-lab/bulk-application-deployment/" class="md-nav__link">
+        Bulk Application Deployment
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          NMaaS Applications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NMaaS Applications" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          NMaaS Applications
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/general-app-deployment/" class="md-nav__link">
+        General Application Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/application-list/" class="md-nav__link">
+        List of Supported Applications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/new-application/" class="md-nav__link">
+        Adding a New Application
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4" type="checkbox" id="__nav_7_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_4">
+          Application Deployment Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Application Deployment Tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          Application Deployment Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/oxidized/" class="md-nav__link">
+        Oxidized
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/librenms/" class="md-nav__link">
+        LibreNMS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/nav/" class="md-nav__link">
+        NAV
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/prometheus/" class="md-nav__link">
+        Prometheus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/grafana/" class="md-nav__link">
+        Grafana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/bastion/" class="md-nav__link">
+        Bastion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/booked/" class="md-nav__link">
+        Booked
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/debian-repository/" class="md-nav__link">
+        Debian Repository
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/spa-inventory/" class="md-nav__link">
+        SPA Inventory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4_10" type="checkbox" id="__nav_7_4_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_4_10">
+          PerfSONAR
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PerfSONAR" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_4_10">
+          <span class="md-nav__icon md-icon"></span>
+          PerfSONAR
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/psconfig-web-admin/" class="md-nav__link">
+        psConfig Web Admin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/maddash/" class="md-nav__link">
+        MaDDash
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/esmond/" class="md-nav__link">
+        Esmond
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/perfsonar-central-management/" class="md-nav__link">
+        perfSONAR Central Management
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/influxdb/" class="md-nav__link">
+        InfluxDB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/jenkins/" class="md-nav__link">
+        Jenkins
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/elk-stack/" class="md-nav__link">
+        ELK Stack
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/wifimon/" class="md-nav__link">
+        WiFiMon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/icinga2/" class="md-nav__link">
+        Icinga2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/victoria-metrics/" class="md-nav__link">
+        Victoria Metrics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/synapse/" class="md-nav__link">
+        Synapse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/routinator/" class="md-nav__link">
+        Routinator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/codimd/" class="md-nav__link">
+        CodiMD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/webdav/" class="md-nav__link">
+        WebDAV
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/uptime-kuma/" class="md-nav__link">
+        Uptime Kuma
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/netbox/" class="md-nav__link">
+        Netbox
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/zabbix/" class="md-nav__link">
+        Zabbix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/spa/" class="md-nav__link">
+        SPA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/maildev/" class="md-nav__link">
+        MailDev
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/changedetectionio/" class="md-nav__link">
+        ChangeDetection.io
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/gp4l-orchestrator/" class="md-nav__link">
+        GP4L Orchestrator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-applications/tutorials/apache-airflow/" class="md-nav__link">
+        Apache Airflow
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Blog" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/blog1/nmaas-101-1/" class="md-nav__link">
+        NMaaS-101 - "Hello NMaaS !"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/blog2/nmaas-101-2/" class="md-nav__link">
+        NMaaS-101 - "I can help! But... Please could you open these two doors?"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/blog3/nmaas-101-3/" class="md-nav__link">
+        NMaaS-101 - "My name is Oxidized and I'm a nifty configuration management tool"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/blog4/nmaas-101-4/" class="md-nav__link">
+        NMaaS-101 - "Prometheus"
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Release Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Release Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Release Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release-notes/1.6.0/" class="md-nav__link">
+        1.6.0
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release-notes/1.5.4/" class="md-nav__link">
+        1.5.4
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nmaas-presentations/" class="md-nav__link">
+        NMaaS Presentations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        Contact
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-nmaas-domains" class="md-nav__link">
+    1. NMaaS Domains
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-introduction-to-nmaas-user-roles" class="md-nav__link">
+    2. Introduction to NMaaS User Roles
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Introduction to NMaaS User Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-global-level-roles" class="md-nav__link">
+    2.1. Global Level Roles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-domain-level-roles" class="md-nav__link">
+    2.2 Domain Level Roles
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-nmaas-portal" class="md-nav__link">
+    3. NMaaS Portal
+  </a>
+  
+    <nav class="md-nav" aria-label="3. NMaaS Portal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-about" class="md-nav__link">
+    3.1 About
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-user-login" class="md-nav__link">
+    4. User Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-user-registration" class="md-nav__link">
+    5. User Registration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-application-market" class="md-nav__link">
+    6. Application Market
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-application-subscriptions-and-instances" class="md-nav__link">
+    7. Application Subscriptions and Instances
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-application-instance-deployment" class="md-nav__link">
+    8. Application Instance Deployment
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Application Instance Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-application-details-view" class="md-nav__link">
+    8.1 Application Details View
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-initiating-application-instance-deployment" class="md-nav__link">
+    8.2 Initiating Application Instance Deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-application-instance-initial-configuration" class="md-nav__link">
+    8.3 Application Instance Initial Configuration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-accessing-application-instance" class="md-nav__link">
+    8.4 Accessing Application Instance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-configuring-application-instance" class="md-nav__link">
+    8.5 Configuring Application Instance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-managing-application-instance-upgrades" class="md-nav__link">
+    8.6 Managing Application Instance Upgrades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-initiating-application-instance-removal" class="md-nav__link">
+    8.7 Initiating Application Instance Removal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88-managing-failed-application-instance-deployments" class="md-nav__link">
+    8.8 Managing Failed Application Instance Deployments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-user-settings" class="md-nav__link">
+    9. User Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="9. User Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-user-profile" class="md-nav__link">
+    9.1 User Profile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-setting-a-users-default-domain" class="md-nav__link">
+    9.2 Setting a User's Default Domain
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-setting-user-ssh-keys" class="md-nav__link">
+    9.3 Setting User SSH Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-password-change" class="md-nav__link">
+    9.4 Password Change
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-contact-form" class="md-nav__link">
+    10. Contact Form
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="user-guide">User Guide</h1>
+<div class="admonition warning work in progress">
+<p class="admonition-title">Warning</p>
+<p>This guide is currently a work in progress. Some sections might be missing or contain incomplete information.</p>
+</div>
+<h2 id="1-nmaas-domains">1. NMaaS Domains</h2>
+<p>A domain in NMaaS corresponds to a dedicated and isolated tenant environment created within the system for particular institution, project, team or in general a group of users.</p>
+<div class="admonition info">
+<p class="admonition-title">Domain Assignment</p>
+<p>User can be assigned to multiple domains.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Requesting a New Domain</p>
+<p>In order to apply for a new domain creation submit the form available at <a href="https://nmaas.eu/about?type=NEW_DOMAIN_REQUEST">https://nmaas.eu/about?type=NEW_DOMAIN_REQUEST</a>.</p>
+</div>
+<h2 id="2-introduction-to-nmaas-user-roles">2. Introduction to NMaaS User Roles</h2>
+<p>NMaaS specifies user roles on two levels: global (system) level and user domain level.</p>
+<p>Roles on each level can be assigned independently. </p>
+<h3 id="21-global-level-roles">2.1. Global Level Roles</h3>
+<p>The <em>Guest</em> default global role assigned to each user after successful account registration or first federated login allows the user to browse, comment and rate the offered applications (even without being assigned to any of the domains).</p>
+<p>The remaining roles on the global level are:</p>
+<ul>
+<li><strong>Operator</strong> - allows the user to view domain details and update status of particular DCN network upon its manual configuration or de-configuration</li>
+<li><strong>Application manager</strong> - allows the user to add new applications and/or application versions to the offer through dedicated form built in the Portal as well as manage applications for which the System administrator assigned user as an owner</li>
+<li><strong>System administrator</strong> - gives the user the complete system administration rights in the Portal (including user, domain and application management)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Additional Information</p>
+<p>For Application manager and Domain administrator user guides visit <a href="../application-manager-guide/">NMaaS Application Manager Guide</a> and <a href="../domain-admin-guide/">NMaaS Domain Admin Guide</a></p>
+</div>
+<h3 id="22-domain-level-roles">2.2 Domain Level Roles</h3>
+<p>There are three user roles defined at the domain level:</p>
+<ul>
+<li><strong>Guest</strong> - a basic role in given domain that allows the user to view the list of subscribed applications and currently deployed application instances however user is not allowed to view details any of running application instances</li>
+<li><strong>User</strong> - with this role user is allowed to view details of running application instances including the access and configuration options</li>
+<li><strong>Domain administrator</strong> - gives full control over the application subscriptions and application instances (including deployment, configuration and access) within given domain, also allows for user role management (within the scope of particular domain)</li>
+</ul>
+<p>These roles are assigned per user domain. A single user may have different roles assigned in multiple domains.</p>
+<div class="admonition info">
+<p class="admonition-title">Permission Hierarchy</p>
+<p>On the domain level, a higher role always includes all the permissions specified for all underlying lower level roles</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">VPN Requirements</p>
+<p>In order to access the applications running within a particular domain user needs to connect to a dedicated VPN that is being set up independently of the user account within the Portal</p>
+</div>
+<h2 id="3-nmaas-portal">3. NMaaS Portal</h2>
+<p>NMaaS web-based graphical user interface can be accessed by browsing to address <a href="https://nmaas.eu">https://nmaas.eu</a>.</p>
+<p><a class="glightbox" href="../img/user-guide-s01.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="NmaaS portal" src="../img/user-guide-s01.png"></a></p>
+<p>NMaaS landing page contains a basic set of information about the NMaaS concept and the service. Users are required to log in to gain access to the actual application market.</p>
+<p>The NMaaS Portal in available in four languages including English, French, German and Polish (though still not all texts might be properly translated in languages apart from English).</p>
+<h3 id="31-about">3.1 About</h3>
+<p>The About page available from the top bar menu contains information about current and past NMaaS software versions and a contact form being the preferred way of reaching out to the NMaaS team regarding any subject.</p>
+<h2 id="4-user-login">4. User Login</h2>
+<p>The user login form is available on the right side of the top bar menu.</p>
+<p><a class="glightbox" href="../img/user-guide-s02.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Login" src="../img/user-guide-s02.png"></a></p>
+<p>There are two login options to enter the Portal. First is to fill in credentials of a local user account created in the system: username and password and then clicking the <code>Login</code> button.</p>
+<p>The second option is to use an existing account from one of the IdPs federated under eduGAIN. After clicking on the <code>Federated login</code> button, user will be redirected to the eduGAIN authorization page. If performed for the first time, user is asked to provide additional information about his account including mandatory and unique username and email address.</p>
+<p>Users with accounts created directly in the system through the registration form are able to recover their password by clicking on the <code>Forgot password</code> link. A new input field will be displayed to provide the email address used during the registration to which a reset password link will be sent.</p>
+<div class="admonition info">
+<p class="admonition-title">Federated Login</p>
+<p>The federated login option is preferred and should be used whenever possible</p>
+</div>
+<h2 id="5-user-registration">5. User Registration</h2>
+<p>For creating local account user has to select the <code>Register</code> tab in the login window.</p>
+<p><a class="glightbox" href="../img/user-guide-s03.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="New account registration" src="../img/user-guide-s03.png"></a></p>
+<p>Registration form contains several mandatory fields, which are: <code>Username</code>, <code>Password</code>, <code>Confirm password</code> and a valid <code>Email address</code>.</p>
+<p>The provided <code>Username</code> has to be at least 3 letters long.</p>
+<p>The user also has to confirm that he has read the NMaaS Privacy Notice text.</p>
+<p>There are also few optional fields, namely <code>First name</code>, <code>Last name</code> and <code>Domain selection</code>.</p>
+<p>After submitting the registration form, user has to wait for the account being activated by the administrator. The user will be notified with an email that their account is active.</p>
+<p>A user needs to be assigned a specific role within particular domain in order to be able to view and deploy application instances in this domain.</p>
+<h2 id="6-application-market">6. Application Market</h2>
+<p>After the user account has been activated by the NMaaS administrator (in the case when the user submitted the registration form), they are able to log in and are granted a basic access to the main NMaaS applications view. Same access rights are granted to users that log in through eduGAIN for the first time.</p>
+<p><a class="glightbox" href="../img/user-guide-s04.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application market" src="../img/user-guide-s04.png"></a></p>
+<p>On the <code>Applications</code> tab all of the applications supported by NMaaS are enlisted. Applications can be filtered by tags and sorted by few criteria. User can also search them by name.</p>
+<p>Single application tile consists of the logo, name, brief description and current rating of the application. Clicking on a tile redirects the user to the application’s details page.</p>
+<div class="admonition info">
+<p class="admonition-title">Domain Selection</p>
+<p>User needs to verify or select a proper Domain from the selector located on the top bar menu</p>
+</div>
+<h2 id="7-application-subscriptions-and-instances">7. Application Subscriptions and Instances</h2>
+<p>Once a user is granted a role inside a particular Domain they are able to view the content of the <code>Subscriptions</code> tab. This view comprises applications subscribed for his domain by a Domain administrator. Only these applications can be further deployed in the NMaaS cloud within the scope of particular domain.</p>
+<p>In order to subscribe to a given application user needs to open the details view of chosen application and click the <code>Subscribe</code> button.</p>
+<div class="admonition info">
+<p class="admonition-title">Application Subscriptions</p>
+<p>The subscribe option is only available for users with the <em>Domain administrator</em> role</p>
+</div>
+<p>The third tab present on the top navigation bar named <code>Instances</code> contains information about all the application instances deployed within user’s domain. By default the displayed list of application instances only includes instances deployed by given user. It is possible to display all instances in given domain by selecting <code>All</code> in the <code>Show</code> selector. In addition it is possible to display all the instances that were already undeployed and which are hidden by default.</p>
+<p>Application instances are described by custom Name assigned during deployment, name of the <code>Application</code>, selected <code>Version</code> of the application, user being the <code>Owner</code> of this instance (user who initiated the deployment), <code>Deployment time</code> and current <code>State</code>.</p>
+<h2 id="8-application-instance-deployment">8. Application Instance Deployment</h2>
+<h3 id="81-application-details-view">8.1 Application Details View</h3>
+<p>On the application details page user can view a basic description of the application, example screenshots of the user interface, references to its website, code repository, website for registering issues and the versions of the application currently available on NMaaS.</p>
+<p><a class="glightbox" href="../img/user-guide-s05.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application details" src="../img/user-guide-s05.png"></a></p>
+<p>A user can rate an application by selecting the appropriate number of stars, view the average rating and the rating breakdown. They can also add comments for this application.</p>
+<p>Users can deploy instances of selected (subscribed) application clicking the <code>Deploy</code> button.</p>
+<div class="admonition info">
+<p class="admonition-title">Application Deployment</p>
+<p>Deploy option is only available for users with the <code>Domain administrator</code> role</p>
+</div>
+<h3 id="82-initiating-application-instance-deployment">8.2 Initiating Application Instance Deployment</h3>
+<p>When deploying a new application instance a user is requested to provide or select:</p>
+<ul>
+<li>custom instance name (unique within the domain, up to 10 lowercase characters)</li>
+<li>version of the application (from a drop down menu)</li>
+<li>chose to enable or not fully automatic application upgrades (triggered when new versions become available in the Portal)</li>
+<li>domain (in which given instance should be deployed)</li>
+</ul>
+<p>The installation process comprises few steps including subscription validation, environment creation, verifying connectivity, application deployment, application first time configuration and activation.</p>
+<p><a class="glightbox" href="../img/user-guide-s06.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application details" src="../img/user-guide-s06.png"></a></p>
+<p>Once the installation process is completed the user is provided with a way or multiple ways of accessing the deployed application instance depending on the application (in majority of cases a link for accessing the web-based UI).</p>
+<div class="admonition info">
+<p class="admonition-title">Importance of the Provided Instance Name</p>
+<p>Providing a suitable instance name is important since it is later on used to create a FQDN unique for this application instance following pattern: <code>&lt;instance name&gt;.&lt;user domain name&gt;.&lt;NMaaS base domain&gt;</code> (e.g. vminstance.pllab.nmaas.eu)</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Application Deployment Notifications</p>
+<p>User is notified with an email once the new application instance becomes available</p>
+</div>
+<p><a class="glightbox" href="../img/user-guide-s07.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application deployment" src="../img/user-guide-s07.png"></a></p>
+<h3 id="83-application-instance-initial-configuration">8.3 Application Instance Initial Configuration</h3>
+<p>During the installation process, once the application instance is initially deployed, the user is asked to provide a initial configuration parameters for the application that is being installed. This data is entered through a configuration wizard presented in a window after clicking the <code>Configure</code> button which becomes visible on the application instance details page once the application transits to <code>Deployed</code> state.</p>
+<p><a class="glightbox" href="../img/user-guide-s08.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application instance" src="../img/user-guide-s08.png"></a></p>
+<p>Different type of data may be required depending on the application. Typically the user is requested to provide credentials for a default account to be created at application startup or basic set of information about the equipment to be monitored by this application instance. Configuration parameters to be filled in are distributed over two or three tabs depending on the application.</p>
+<p>Once all required fields are populated user can select the <em>Apply configuration</em> button to proceed with the application activation process.</p>
+<h3 id="84-accessing-application-instance">8.4 Accessing Application Instance</h3>
+<p>Once the application instance reaches the <code>Active</code> state it can be accessed by the user.</p>
+<p>Multiple access methods are supported by NMaaS and each of the applications supports one or more of them.</p>
+<p><a class="glightbox" href="../img/user-guide-s19.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application access" src="../img/user-guide-s19.png"></a>
+<a class="glightbox" href="../img/user-guide-s09.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application access" src="../img/user-guide-s09.png"></a></p>
+<p>Four types of access are possible:</p>
+<ul>
+<li><strong>public</strong> - application user interface is accessible directly from the public Internet</li>
+<li><strong>external</strong> - application user interface is accessible over HTTPS from within a dedicated client VPN</li>
+<li><strong>internal</strong> - application is accessible over a different protocol than HTTP on a dedicated IP address (assigned by the system) and application specific port</li>
+<li><strong>local</strong> - a Kubernetes service name that can be used to access this application instance from another application instance running within the same user domain (e.g. the local access information for a Prometheus instance can be used to configure data source in Grafana instance deployed within the same domain)</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Single Access Method</p>
+<p>If a given application supports only a single external access option then when selecting the <em>Access</em> button user will be redirected to the application interface directly</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">VPN Requirement for Accessing Deployed Applications</p>
+<p>In order to access the applications running within a particular domain user needs to connect to a dedicated VPN</p>
+</div>
+<h3 id="85-configuring-application-instance">8.5 Configuring Application Instance</h3>
+<p>Some of the applications support the option of updating their configuration during application instance runtime.</p>
+<p>In such case, when instance is in <code>Active</code> state, the <code>Configure</code> button from the Actions menu on the application instance details page should be used to open a window presenting the configuration options.</p>
+<p><a class="glightbox" href="../img/user-guide-s20.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application configuring" src="../img/user-guide-s20.png"></a></p>
+<p><a class="glightbox" href="../img/user-guide-s10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application configuring" src="../img/user-guide-s10.png"></a></p>
+<p>Typically a <code>git clone</code> link is provided that can be used by the user to locally clone the git repository created specifically for this application instance. </p>
+<p>Then user can apply the desired changes to the pre-propulated configuration files added to the repository by default or add new additional files.</p>
+<p>After the files are committed and pushed back to the repository the configuration of the respective application is automatically reloaded within a couple of minutes.</p>
+<div class="admonition info">
+<p class="admonition-title">Accessing the Configuration Repositories</p>
+<p>When cloning, the user is authenticated using their private SSH key therefore is it necessary to upload the public SSH key on the user's <code>Profile</code> page prior to accessing the repository</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The user that initiates a given application instance deployment is automatically added to GitLab as a member of the newly created repository.
+Other users, in order to have the same SSH-based access to the repository, have to be added as members to particular application instance using the <code>Members</code> button from the <code>Actions</code> menu. This operation can be performed by a Domain administrator. A Domain administrator can only select users that are added to their domain and have previously uploaded their SSH keys (see <a href="./#93-setting-user-ssh-keys">section 9.3</a>).</p>
+</div>
+<p><a class="glightbox" href="../img/user-guide-s21.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application configuring" src="../img/user-guide-s21.png"></a></p>
+<p><a class="glightbox" href="../img/user-guide-s22.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Application configuring" src="../img/user-guide-s22.png"></a></p>
+<h3 id="86-managing-application-instance-upgrades">8.6 Managing Application Instance Upgrades</h3>
+<p>Once an application instance is already running, the user is able to alter their choice regarding enabling automatic application upgrades using proper option available in the <code>Actions</code> menu. If during the initial deployment request user opted not to enable the upgrades he is provided with an option to <code>Enable automatic upgrades</code> and vice versa.</p>
+<p>In case the automatic upgrades were not enabled, the user is still able to trigger application instance upgrades manually once a newer version of his deployed application is made available in the marketplace. In order to trigger the upgrade user should click on the <code>Upgrade</code> button from the <code>Actions</code> menu. Once clicked a window is displayed presenting detailed information about the possible upgrade to be performed including target application versions and corresponding target Helm chart version. Once confirmed, the upgrade process begins in the background.</p>
+<p>The fact that a particular application instance can be upgraded is indicated on the <code>Instances</code> view by an up arrow icon displayed next to application instance.</p>
+<div class="admonition info">
+<p class="admonition-title">Upgrade Availability Notifications</p>
+<p>User is notified with an email once a manual upgrade of any of his running application instances becomes possible</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Successful Update Notification</p>
+<p>User is notified with an email once the upgraded application instance becomes active</p>
+</div>
+<h3 id="87-initiating-application-instance-removal">8.7 Initiating Application Instance Removal</h3>
+<p>In order to shutdown a particular application instance and free up resources that are no longer in use, user should click the <code>Undeploy</code> button from the <code>Actions</code> menu and confirm the action in window that pops up.</p>
+<h3 id="88-managing-failed-application-instance-deployments">8.8 Managing Failed Application Instance Deployments</h3>
+<p>In unforeseen situations the deployment process may fail at some stage. </p>
+<p>One of the following actions can be triggered by the user from the application instance view once deployment process ends up in <code>Failure</code> state:</p>
+<ul>
+<li><strong>Check state</strong> - verifying if application instance is already running </li>
+<li><strong>Redeploy</strong> - attempt to re-run the deployment process</li>
+<li><strong>Remove</strong> - complete removal of the failed instance allowing a fresh deployment with the same custom instance name</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Requesting Support for Failed Deployments</p>
+<p>Administrators are notified with an email automatically once an application deployment process fails. 
+Users are encouraged to additionally inform administrators about the incident using the Contact Form.</p>
+</div>
+<h2 id="9-user-settings">9. User Settings</h2>
+<h3 id="91-user-profile">9.1 User Profile</h3>
+<p>A User can view their account details and other personal settings by selecting the <code>Profile</code> option from the drop-down menu displayed after hovering over the username field on the top navigation bar.</p>
+<p><a class="glightbox" href="../img/user-guide-s11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User profile" src="../img/user-guide-s11.png"></a></p>
+<p>The Profile view contains user account information such as: <code>Username</code>, <code>First name</code>, <code>Last name</code> and <code>Email</code>.</p>
+<p><a class="glightbox" href="../img/user-guide-s12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User details" src="../img/user-guide-s12.png"></a></p>
+<p>On the bottom of the page the user can also see their roles granted in particular domains.</p>
+<p><a class="glightbox" href="../img/user-guide-s13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User roles" src="../img/user-guide-s13.png"></a></p>
+<p>By clicking on the flag icon located in the top right section of the view the user can select their preferred language in which the content of the Portal will be displayed.</p>
+<h3 id="92-setting-a-users-default-domain">9.2 Setting a User's Default Domain</h3>
+<p>One of the available options on the user's <code>Profile</code> view is specifying user's default domain.</p>
+<p><a class="glightbox" href="../img/user-guide-s14.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User preferences" src="../img/user-guide-s14.png"></a></p>
+<p>This setting is particularly useful if a given user belongs to multiple domains and would like a specific domain to be selected by default after login.</p>
+<h3 id="93-setting-user-ssh-keys">9.3 Setting User SSH Keys</h3>
+<p>For applications that support the Git-based configuration management model, meaning the possibility to update the application configuration during runtime by pushing updated configuration files to a dedicated Git repository, it is required that all users willing to use this option upload their public SSH keys using the form available on the <code>Profile</code> view.</p>
+<p><a class="glightbox" href="../img/user-guide-s15.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User SSH" src="../img/user-guide-s15.png"></a></p>
+<p><a class="glightbox" href="../img/user-guide-s16.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User SSH add" src="../img/user-guide-s16.png"></a></p>
+<p>Upon key upload or update in the Portal, user information is synchronized with the user account created on the GitLab instance associated with given NMaaS installation.</p>
+<h3 id="94-password-change">9.4 Password Change</h3>
+<p>On clicking the <code>Change password</code> button, a new window will be displayed where the user can change their own password (see picture below).</p>
+<p><a class="glightbox" href="../img/user-guide-s17.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="User change password" src="../img/user-guide-s17.png"></a></p>
+<div class="admonition info">
+<p class="admonition-title">Password Reset Availability</p>
+<p>This option is not available for users that log in using the Federated / SSO option</p>
+</div>
+<h2 id="10-contact-form">10. Contact Form</h2>
+<p>An easy and recommended way for contacting the NMaaS Team is through the Contact Form.</p>
+<p>The Contact Form is available on the About page along with the information about the versions of the NMaaS software.</p>
+<p><a class="glightbox" href="../img/user-guide-s18.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Contact form" src="../img/user-guide-s18.png"></a></p>
+<p>The user can select one of five form types that best matches the subject of his message:</p>
+<ul>
+<li><strong>Contact</strong> - generic request form</li>
+<li><strong>Access request</strong> - for requests related with new account creation or role assignment</li>
+<li><strong>Issue report</strong> - for reporting any encountered issues with the Portal or deployed application instances</li>
+<li><strong>New domain request</strong> - for requests related with new domain creation</li>
+<li><strong>Enhancement or new application request</strong> - for placing suggestions of enhancements, new features or integration of new applications </li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Form Fields</p>
+<p>Each type of form contains a different set of mandatory fields to be populated to best describe the subject of the message</p>
+</div></div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+          <footer class="md-footer">
+    
+      
+        
+        <nav class="md-footer__inner md-grid" aria-label="" >
+          
+            
+            <a href="../domain-admin-guide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Domain Admin Guide" rel="prev">
+              <div class="md-footer__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+              </div>
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                <div class="md-ellipsis">
+                  Domain Admin Guide
+                </div>
+              </div>
+            </a>
+          
+          
+            
+            <a href="../../managed-nmaas/introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                <div class="md-ellipsis">
+                  Introduction
+                </div>
+              </div>
+              <div class="md-footer__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+              </div>
+            </a>
+          
+        </nav>
+      
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <!--
+ Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+    
+    <div class="md-copyright__highlight">
+        <a href="#__consent">Change cookie settings</a>
+
+    </div>
+    
+    
+    Made with
+    <span class="twemoji heart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408z"/></svg>
+    </span> by NMaaS contributors and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>
+    
+</div>
+        
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <div><img class="logo" src="../../img/geant_logo_white.png" /></div>
+        <div><img class="logo" src="../../img/eu_logo.png"</div>
+      </div>
+      </div>
+    </div>
+  </footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+<h4>Cookie Consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input type="checkbox" class="md-toggle" id="__settings">
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);console.log(new FormData(form)),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.footer"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

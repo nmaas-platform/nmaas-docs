@@ -1,0 +1,2216 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.nmaas.eu/self-hosted-nmaas/local-dev-environment/p4_monitoring-demo-network-environment/">
+      
+      <link rel="icon" href="../../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-8.5.7">
+    
+    
+      
+        <title>Part 4 - Monitoring the Demo Network Environment - NMaaS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ZXZHTYVKN9"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ZXZHTYVKN9",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ZXZHTYVKN9",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#part-4-monitoring-the-demo-network-environment-with-nmaas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="NMaaS Documentation" class="md-header__button md-logo" aria-label="NMaaS Documentation" data-md-component="logo">
+      
+  <img src="../../../img/NMaaS-logo-transparent-white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NMaaS Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Part 4 - Monitoring the Demo Network Environment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="NMaaS Documentation" class="md-nav__button md-logo" aria-label="NMaaS Documentation" data-md-component="logo">
+      
+  <img src="../../../img/NMaaS-logo-transparent-white.png" alt="logo">
+
+    </a>
+    NMaaS Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../what-is-nmaas/" class="md-nav__link">
+        What is NMaaS?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          NMaaS Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NMaaS Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          NMaaS Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/application-manager-guide/" class="md-nav__link">
+        Application Manager Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/domain-admin-guide/" class="md-nav__link">
+        Domain Admin Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guides/user-guide/" class="md-nav__link">
+        User Guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Managed NMaaS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Managed NMaaS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Managed NMaaS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../managed-nmaas/introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../managed-nmaas/nmaas-playground-instance/" class="md-nav__link">
+        NMaaS Playground Instance
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Self-Hosted NMaaS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Self-Hosted NMaaS" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Self-Hosted NMaaS
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install-guide/" class="md-nav__link">
+        Installation Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" type="checkbox" id="__nav_5_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_3">
+          Local Development Environment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Local Development Environment" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Local Development Environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p1_local-kubernetes-cluster/" class="md-nav__link">
+        Part 1 - Deploying a Local Kubernetes Cluster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p2_installing-nmaas/" class="md-nav__link">
+        Part 2 - Installing NMaaS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p3_demo-network-environment/" class="md-nav__link">
+        Part 3 - Demo Network Environment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Part 4 - Monitoring the Demo Network Environment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Part 4 - Monitoring the Demo Network Environment
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#registering-a-new-local-nmaas-user" class="md-nav__link">
+    Registering a new Local NMaaS User
+  </a>
+  
+    <nav class="md-nav" aria-label="Registering a new Local NMaaS User">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#approving-the-new-user-as-admin-and-creating-a-new-domain" class="md-nav__link">
+    Approving the New User (as Admin) and Creating a New Domain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-personal-ssh-public-key" class="md-nav__link">
+    Adding a Personal SSH Public Key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-deployment" class="md-nav__link">
+    Application Deployment
+  </a>
+  
+    <nav class="md-nav" aria-label="Application Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploying-prometheus" class="md-nav__link">
+    Deploying Prometheus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploying-grafana" class="md-nav__link">
+    Deploying Grafana
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploying-oxidized" class="md-nav__link">
+    Deploying Oxidized
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying Oxidized">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-freertr-devices-with-oxidized" class="md-nav__link">
+    Monitoring freeRTR Devices with Oxidized
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../p5_adding_custom_app/" class="md-nav__link">
+        Part 5 - Adding a Custom Application
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/" class="md-nav__link">
+        Appendix - Credentials
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          NMaaS Use-Cases
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NMaaS Use-Cases" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          NMaaS Use-Cases
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_1" type="checkbox" id="__nav_6_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6_1">
+          Virtual Lab
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Virtual Lab" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_1">
+          <span class="md-nav__icon md-icon"></span>
+          Virtual Lab
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../use-cases/virtual-lab/vlab-introduction/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../use-cases/virtual-lab/bulk-domain-deployment/" class="md-nav__link">
+        Bulk Domain Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../use-cases/virtual-lab/domain-groups/" class="md-nav__link">
+        Domain Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../use-cases/virtual-lab/bulk-application-deployment/" class="md-nav__link">
+        Bulk Application Deployment
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          NMaaS Applications
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="NMaaS Applications" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          NMaaS Applications
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/general-app-deployment/" class="md-nav__link">
+        General Application Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/application-list/" class="md-nav__link">
+        List of Supported Applications
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/new-application/" class="md-nav__link">
+        Adding a New Application
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4" type="checkbox" id="__nav_7_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_4">
+          Application Deployment Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Application Deployment Tutorials" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          Application Deployment Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/oxidized/" class="md-nav__link">
+        Oxidized
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/librenms/" class="md-nav__link">
+        LibreNMS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/nav/" class="md-nav__link">
+        NAV
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/prometheus/" class="md-nav__link">
+        Prometheus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/grafana/" class="md-nav__link">
+        Grafana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/bastion/" class="md-nav__link">
+        Bastion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/booked/" class="md-nav__link">
+        Booked
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/debian-repository/" class="md-nav__link">
+        Debian Repository
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/spa-inventory/" class="md-nav__link">
+        SPA Inventory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4_10" type="checkbox" id="__nav_7_4_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_4_10">
+          PerfSONAR
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PerfSONAR" data-md-level="3">
+        <label class="md-nav__title" for="__nav_7_4_10">
+          <span class="md-nav__icon md-icon"></span>
+          PerfSONAR
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/psconfig-web-admin/" class="md-nav__link">
+        psConfig Web Admin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/maddash/" class="md-nav__link">
+        MaDDash
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/esmond/" class="md-nav__link">
+        Esmond
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/perfsonar-central-management/" class="md-nav__link">
+        perfSONAR Central Management
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/influxdb/" class="md-nav__link">
+        InfluxDB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/jenkins/" class="md-nav__link">
+        Jenkins
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/elk-stack/" class="md-nav__link">
+        ELK Stack
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/wifimon/" class="md-nav__link">
+        WiFiMon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/icinga2/" class="md-nav__link">
+        Icinga2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/victoria-metrics/" class="md-nav__link">
+        Victoria Metrics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/synapse/" class="md-nav__link">
+        Synapse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/routinator/" class="md-nav__link">
+        Routinator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/codimd/" class="md-nav__link">
+        CodiMD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/webdav/" class="md-nav__link">
+        WebDAV
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/uptime-kuma/" class="md-nav__link">
+        Uptime Kuma
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/netbox/" class="md-nav__link">
+        Netbox
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/zabbix/" class="md-nav__link">
+        Zabbix
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/spa/" class="md-nav__link">
+        SPA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/maildev/" class="md-nav__link">
+        MailDev
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/changedetectionio/" class="md-nav__link">
+        ChangeDetection.io
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/gp4l-orchestrator/" class="md-nav__link">
+        GP4L Orchestrator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-applications/tutorials/apache-airflow/" class="md-nav__link">
+        Apache Airflow
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Blog
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Blog" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Blog
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/blog1/nmaas-101-1/" class="md-nav__link">
+        NMaaS-101 - "Hello NMaaS !"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/blog2/nmaas-101-2/" class="md-nav__link">
+        NMaaS-101 - "I can help! But... Please could you open these two doors?"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/blog3/nmaas-101-3/" class="md-nav__link">
+        NMaaS-101 - "My name is Oxidized and I'm a nifty configuration management tool"
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/blog4/nmaas-101-4/" class="md-nav__link">
+        NMaaS-101 - "Prometheus"
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9">
+          Release Notes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Release Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Release Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../release-notes/1.6.0/" class="md-nav__link">
+        1.6.0
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../release-notes/1.5.4/" class="md-nav__link">
+        1.5.4
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../nmaas-presentations/" class="md-nav__link">
+        NMaaS Presentations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        Contact
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#registering-a-new-local-nmaas-user" class="md-nav__link">
+    Registering a new Local NMaaS User
+  </a>
+  
+    <nav class="md-nav" aria-label="Registering a new Local NMaaS User">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#approving-the-new-user-as-admin-and-creating-a-new-domain" class="md-nav__link">
+    Approving the New User (as Admin) and Creating a New Domain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-a-personal-ssh-public-key" class="md-nav__link">
+    Adding a Personal SSH Public Key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-deployment" class="md-nav__link">
+    Application Deployment
+  </a>
+  
+    <nav class="md-nav" aria-label="Application Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploying-prometheus" class="md-nav__link">
+    Deploying Prometheus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploying-grafana" class="md-nav__link">
+    Deploying Grafana
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploying-oxidized" class="md-nav__link">
+    Deploying Oxidized
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying Oxidized">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-freertr-devices-with-oxidized" class="md-nav__link">
+    Monitoring freeRTR Devices with Oxidized
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<div><h1 id="part-4-monitoring-the-demo-network-environment-with-nmaas">Part 4: Monitoring the Demo Network Environment with NMaaS</h1>
+<h2 id="registering-a-new-local-nmaas-user">Registering a new Local NMaaS User</h2>
+<p>Registering a new local NMaaS user can be done from the NMaaS homepage.</p>
+<p><a class="glightbox" href="../img/07-new-nmaas-user.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Registering a new NMaaS user" src="../img/07-new-nmaas-user.png"></a></p>
+<p>Once all of the required fields (denoted by a red *) are filled, and the privacy policy accepted, the registration form can be submitted.</p>
+<p>After submission, an administrator approval is required before being able to login.</p>
+<h3 id="approving-the-new-user-as-admin-and-creating-a-new-domain">Approving the New User (as Admin) and Creating a New Domain</h3>
+<p>To approve a newly registered user, login as the NMaaS admin, and navigate to <code>Settings -&gt; Users</code> from the right-hand side navigation menu. Hover over the cog next to the new user and select <code>Enable</code>.</p>
+<p><a class="glightbox" href="../img/08-enabling-user.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Approving the new user" src="../img/08-enabling-user.png"></a></p>
+<p>Once enabled, the user should be made part of an existing domain. Since we currently have not configured any domains, a new one needs to be created.</p>
+<ul>
+<li>Navigate to <code>Settings -&gt; Domains</code> from the right-hand side navigation menu.</li>
+<li>Click the blue <code>Add domain</code> button</li>
+<li>Enter a descriptive name for the domain, as well as a short codename. Please keep the codename as short as possible, since it will be embedded in all customer deployed Kubernetes resources.</li>
+<li>
+<p>Choose which Kubernetes namespace will be dedicated to hosting the customer deployed applications. A new namespace can be created by executing:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a>kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>&lt;DOMAIN_CODENAME&gt;
+</span></code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>For a local deployment, leave the Kubernetes storage class field empty, and set Kubernetes Ingress class to the ingress class available in the cluster (public for MicroK8s, nginx for K3s)</p>
+</li>
+<li>As External service domain set the domain codename, suffixed by the NMaaS URL. For example, if the domain codename is demo, then External service domain should be set to <code>demo.nmaas.&lt;INGRESS_LB_IP&gt;.nip.io</code>.</li>
+<li>Set the DCN deployment type to <code>Manual</code> and tick <code>DCN Configured</code>.</li>
+<li>
+<p>Set a dummy customer network, for example <code>127.0.0.1/24</code>.</p>
+<p><a class="glightbox" href="../img/09-creating-new-domain.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Creating a new domain" src="../img/09-creating-new-domain.png"></a></p>
+</li>
+</ul>
+<p>Once created, any existing user can be made part of the domain. Return to <code>Settings -&gt; Users</code> and choose the <code>Details</code> option after hovering over the cog for the new user. In the <code>Privileges</code> section, assign the role <code>Domain admin</code> to the newly created user.</p>
+<p><a class="glightbox" href="../img/10-role-assignment.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Assigning a user role" src="../img/10-role-assignment.png"></a></p>
+<h2 id="adding-a-personal-ssh-public-key">Adding a Personal SSH Public Key</h2>
+<p>After the user has been approved, if email sending has been successfully configured, the user should receive a confirmation message.</p>
+<p>During the first login, the user will be asked to enter an SSH public key which will be used for access to the GitLab repositories hosting the deployed applications' configuration files. An SSH key can also be specified at any later point in time from the <code>Profile -&gt; SSH keys</code> section.</p>
+<p><a class="glightbox" href="../img/11-adding-ssh-public-key.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Adding an SSH Public Key" src="../img/11-adding-ssh-public-key.png"></a></p>
+<p>Please add an SSH public key before proceeding to the next section, Application Deployment.</p>
+<h2 id="application-deployment">Application Deployment</h2>
+<p>The application deployment process is consisted of two parts:</p>
+<ol>
+<li>
+<p>Subscribing to the desired application from the list of all applications.</p>
+<p><a class="glightbox" href="../img/12-application-subscription.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Subscribing to an application" src="../img/12-application-subscription.png"></a></p>
+</li>
+<li>
+<p>Deploying an instance of the application from the Subscriptions page.</p>
+<p><a class="glightbox" href="../img/13-application-deployment.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Deploying an application" src="../img/13-application-deployment.png"></a></p>
+</li>
+</ol>
+<h3 id="deploying-prometheus">Deploying Prometheus</h3>
+<p>Prometheus is a monitoring application which uses the pull methodology to fetch metrics from a given device. </p>
+<p>To deploy Prometheus, first subscribe to it from the Applications section. Then choose the <code>Deploy</code> option.</p>
+<p>On the first pop-up, an option is presented to enter a unique instance name, as well as select the desired application version.</p>
+<p>The deployment process consists of 6 different steps, but only step 4, Application deployed, requires user interaction. Once step 4 has been reached, a blue <code>Configure</code> button will appear.</p>
+<p><a class="glightbox" href="../img/14-prometheus-deployment.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Deploying Prometheus" src="../img/14-prometheus-deployment.png"></a></p>
+<p>Clicking on this blue <code>Configure</code> button will present a configuration wizard, where additional parameters can be set.</p>
+<p><a class="glightbox" href="../img/15-configuring-prometheus.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Configuring Prometheus" src="../img/15-configuring-prometheus.png"></a></p>
+<p>The configuration wizard is specific to the application being deployed. In the case of Prometheus, there is an option to configure the HTTP Basic authentication username and password, as well as the scrape interval. The IP addresses of the devices that need to be monitored can be specified in the Jobs array. Note that the demo networking devices deployed in the previous step can also be monitored. They have a Prometheus exporter running on port 9001, reachable without any authentication. Additional devices can be added after the application has been deployed by using the Git repository which will host the configuration.</p>
+<p>After the application is successfully deployed, it will transition to an Active state, and a blue <code>Actions</code> button will become available. By selecting the Access option in this dropdown menu, the user will be immediately redirected to the Prometheus home page.</p>
+<p><a class="glightbox" href="../img/16-prometheus-access.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Accessing Prometheus" src="../img/16-prometheus-access.png"></a></p>
+<p><a class="glightbox" href="../img/17-prometheus-access-methods.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Prometheus access methods" src="../img/17-prometheus-access-methods.png"></a></p>
+<p><a class="glightbox" href="../img/18-prometheus-homepage.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Prometheus Homepage" src="../img/18-prometheus-homepage.png"></a></p>
+<h3 id="deploying-grafana">Deploying Grafana</h3>
+<p>By now we have configured Prometheus to monitor the devices in our environment, but we still do not have a way to visualize the gathered metrics. </p>
+<p>Grafana is an open-source application that can generate graphs from different data sources, including Prometheus.</p>
+<p>To deploy Grafana in an NMaaS environment, the same general steps can be used as before:</p>
+<ul>
+<li>subscribing to the Grafana application from the Applications page</li>
+<li>creating a new instance from the Subscriptions page</li>
+</ul>
+<p><a class="glightbox" href="../img/19-deploying-grafana.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Deploying Grafana" src="../img/19-deploying-grafana.png"></a></p>
+<p>The configuration wizard that becomes available once the deployment enters the Deployed phase is different in the case of Grafana. Apart from specifying the Grafana username and password that can be used for accessing the web interface, users have the option of directly choosing an existing Prometheus instance that has been deployed within their NMaaS domain, and adding it as a data source to Grafana. This can be accomplished by ticking the <code>Connect to existing Prometheus instance</code> checkbox, and selecting the <code>NMaaS Prometheus Instance</code> radio button.</p>
+<p><a class="glightbox" href="../img/20-connecting-grafana-prometheus.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Connecting Grafana to Prometheus" src="../img/20-connecting-grafana-prometheus.png"></a></p>
+<p>Of course, a Grafana instance hosted on NMaaS can be used for connecting to external data sources as well. In this case, the checkbox <code>Connect to existing Prometheus instance</code> can simply be left unchecked. </p>
+<p>Once the application is deployed, it can be accessed by selecting the <code>Actions -&gt; Access</code> button. After login, users can verify that the previously deployed Prometheus instance has been added as a Data Source by selecting the cog icon on the left hand side and choosing <code>Data Sources</code>.</p>
+<p><a class="glightbox" href="../img/21-grafana-access.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Verifying datasources in Grafana" src="../img/21-grafana-access.png"></a></p>
+<p>At this point, new dashboards can either be created from scratch, or imported from the Grafana dashboard gallery. </p>
+<p>For example, if the freeRTR virtual instances are deployed, the following two dashboards can be imported to visualize the packet and input/output rates of the devices:</p>
+<ul>
+<li><a href="https://grafana.com/grafana/dashboards/13152">https://grafana.com/grafana/dashboards/13152</a></li>
+<li><a href="https://grafana.com/grafana/dashboards/13153">https://grafana.com/grafana/dashboards/13153</a> </li>
+</ul>
+<p>An existing dashboard can be imported into Grafana by simply choosing the Plus button on the left-hand side and selecting Import.</p>
+<p><a class="glightbox" href="../img/22-grafana-dashboard-import.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Importing a Grafana dashboard" src="../img/22-grafana-dashboard-import.png"></a></p>
+<p>Either a JSON document describing the parameters of the dashboard can be pasted or just the dashboard ID, as shown on the official Grafana page.</p>
+<p><a class="glightbox" href="../img/23-grafana-import-wizard.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Grafana dashboard import wizard" src="../img/23-grafana-import-wizard.png"></a></p>
+<p>In our case, the IDs for the two previously mentioned dashboards are <code>13152</code> and <code>13153</code>, respectively. This information is also directly visible in their URL.</p>
+<p>After importing the dashboard, a redirect is immediately issued, and the defined graphs are shown.</p>
+<p><a class="glightbox" href="../img/24-grafana-dashboard-preview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Grafana dashboard preview" src="../img/24-grafana-dashboard-preview.png"></a></p>
+<h3 id="deploying-oxidized">Deploying Oxidized</h3>
+<p>Oxidized is an open-source application that is capable of fetching the configuration of remote devices and if enabled, version it using an internal or external Git repository.</p>
+<p>In our demo scenario, we will use Oxidized to periodically fetch the configuration from the available network elements. To do so, we must first deploy Oxidized in our NMaaS domain. </p>
+<p>The deployment steps for Oxidized are very similar to the other applications that have been deployed so far:</p>
+<ul>
+<li>Subscribe to the Oxidized application from the <code>Applications</code> page.</li>
+<li>Deploy an Oxidized instance from the <code>Subscriptions</code> page.</li>
+</ul>
+<p><a class="glightbox" href="../img/25-deploying-oxidized.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Deploying Oxidized" src="../img/25-deploying-oxidized.png"></a></p>
+<p>Once the <code>Deploy</code> button is clicked, a pop-up similar as before appears, where an instance name should be provided, and the desired Oxidized version selected.</p>
+<p><a class="glightbox" href="../img/26-oxidized-deployment-wizard.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Oxidized deployment wizard" src="../img/26-oxidized-deployment-wizard.png"></a></p>
+<p>Since Oxidized can connect to devices using a remote access protocol such as Telnet or SSH, the configuration wizard asks for IP information. Additionally, HTTP Basic authentication can also be configured to better secure the Oxidized web interface, using the Oxidized <code>access username</code> and Oxidized <code>access password</code> fields.</p>
+<p><a class="glightbox" href="../img/27-oxidized-configuration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Oxidized configuration" src="../img/27-oxidized-configuration.png"></a></p>
+<p>Once deployed, the web interface becomes immediately accessible, simply by choosing the blue <code>Actions</code> button and selecting <code>Access</code>.</p>
+<p>Additional Oxidized configuration, such as altering the list of monitored devices or even adding custom Oxidized models can be done using Git. During the deployment process, a new GitLab repository has been automatically created which hosts the Oxidized configuration data. To access it, select <code>Actions -&gt; Configure</code> and copy the <code>git clone</code> command.</p>
+<p><a class="glightbox" href="../img/28-oxidized-git-configuration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Oxidized Git configuration" src="../img/28-oxidized-git-configuration.png"></a></p>
+<p>After cloning this repository, two folders should appear: <code>base</code> and <code>model</code>.</p>
+<p>The base folder houses basic configuration about the monitored devices:</p>
+<ul>
+<li><code>router.db</code> – hostnames, IP addresses, and groups for the devices</li>
+<li><code>config</code> – storage backend, backup storage location, credentials...</li>
+</ul>
+<p>The <code>model</code> folder houses specific device models, which describe how Oxidized should connect to the monitored devices and what commands to execute in order to acquire the running configuration.</p>
+<p>The RARE team has created a custom Oxidized model which allows configuration fetching from FreeRTR devices. If you have configured freeRTR as part of this tutorial, then this model is required for successful connections towards the freeRTR instances.</p>
+<h4 id="monitoring-freertr-devices-with-oxidized">Monitoring freeRTR Devices with Oxidized</h4>
+<p>After cloning the repository, navigate to the <code>model</code> folder and create the file <code>rare.rb</code> wth the following content:</p>
+<div class="language-rb highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">rare.rb</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span>
+<span class="normal"><a href="#__codelineno-1-18">18</a></span>
+<span class="normal"><a href="#__codelineno-1-19">19</a></span>
+<span class="normal"><a href="#__codelineno-1-20">20</a></span>
+<span class="normal"><a href="#__codelineno-1-21">21</a></span>
+<span class="normal"><a href="#__codelineno-1-22">22</a></span>
+<span class="normal"><a href="#__codelineno-1-23">23</a></span>
+<span class="normal"><a href="#__codelineno-1-24">24</a></span>
+<span class="normal"><a href="#__codelineno-1-25">25</a></span>
+<span class="normal"><a href="#__codelineno-1-26">26</a></span>
+<span class="normal"><a href="#__codelineno-1-27">27</a></span>
+<span class="normal"><a href="#__codelineno-1-28">28</a></span>
+<span class="normal"><a href="#__codelineno-1-29">29</a></span>
+<span class="normal"><a href="#__codelineno-1-30">30</a></span>
+<span class="normal"><a href="#__codelineno-1-31">31</a></span>
+<span class="normal"><a href="#__codelineno-1-32">32</a></span>
+<span class="normal"><a href="#__codelineno-1-33">33</a></span>
+<span class="normal"><a href="#__codelineno-1-34">34</a></span>
+<span class="normal"><a href="#__codelineno-1-35">35</a></span>
+<span class="normal"><a href="#__codelineno-1-36">36</a></span>
+<span class="normal"><a href="#__codelineno-1-37">37</a></span>
+<span class="normal"><a href="#__codelineno-1-38">38</a></span>
+<span class="normal"><a href="#__codelineno-1-39">39</a></span>
+<span class="normal"><a href="#__codelineno-1-40">40</a></span>
+<span class="normal"><a href="#__codelineno-1-41">41</a></span>
+<span class="normal"><a href="#__codelineno-1-42">42</a></span>
+<span class="normal"><a href="#__codelineno-1-43">43</a></span>
+<span class="normal"><a href="#__codelineno-1-44">44</a></span>
+<span class="normal"><a href="#__codelineno-1-45">45</a></span>
+<span class="normal"><a href="#__codelineno-1-46">46</a></span>
+<span class="normal"><a href="#__codelineno-1-47">47</a></span>
+<span class="normal"><a href="#__codelineno-1-48">48</a></span>
+<span class="normal"><a href="#__codelineno-1-49">49</a></span>
+<span class="normal"><a href="#__codelineno-1-50">50</a></span>
+<span class="normal"><a href="#__codelineno-1-51">51</a></span>
+<span class="normal"><a href="#__codelineno-1-52">52</a></span>
+<span class="normal"><a href="#__codelineno-1-53">53</a></span>
+<span class="normal"><a href="#__codelineno-1-54">54</a></span>
+<span class="normal"><a href="#__codelineno-1-55">55</a></span>
+<span class="normal"><a href="#__codelineno-1-56">56</a></span>
+<span class="normal"><a href="#__codelineno-1-57">57</a></span>
+<span class="normal"><a href="#__codelineno-1-58">58</a></span>
+<span class="normal"><a href="#__codelineno-1-59">59</a></span>
+<span class="normal"><a href="#__codelineno-1-60">60</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">RARE</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="no">Oxidized</span><span class="o">::</span><span class="no">Model</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="n">prompt</span><span class="w"> </span><span class="sr">/([\w.@()-]+#\s?)$/</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">  </span><span class="n">comment</span><span class="w"> </span><span class="s1">'! '</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="n">cmd</span><span class="w"> </span><span class="ss">:all</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">|</span><span class="n">cfg</span><span class="o">|</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">    </span><span class="n">cfg</span><span class="o">.</span><span class="n">gsub!</span> <span class="sr">/^% Invalid input detected at '\^' marker\.$|^\s+\^$/</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="w">    </span><span class="n">cfg</span><span class="o">.</span><span class="n">cut_both</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">  </span><span class="k">end</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="n">cmd</span><span class="w"> </span><span class="ss">:secret</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">|</span><span class="n">cfg</span><span class="o">|</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="n">cfg</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">  </span><span class="k">end</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">  </span><span class="n">cmd</span><span class="w"> </span><span class="s1">'show clock'</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">|</span><span class="n">cfg</span><span class="o">|</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="n">comment</span><span class="w"> </span><span class="s2">"---------- show clock"</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="n">comment</span><span class="w"> </span><span class="n">cfg</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">  </span><span class="k">end</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">  </span><span class="n">cmd</span><span class="w"> </span><span class="s1">'show platform'</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">|</span><span class="n">cfg</span><span class="o">|</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">    </span><span class="n">comment</span><span class="w"> </span><span class="s2">"---------- show platform"</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">    </span><span class="n">comments</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[]</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">    </span><span class="n">comments</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">cfg</span><span class="o">.</span><span class="n">lines</span><span class="o">.</span><span class="n">first</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">    </span><span class="n">lines</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cfg</span><span class="o">.</span><span class="n">lines</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">    </span><span class="n">lines</span><span class="o">.</span><span class="n">each_with_index</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">|</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">|</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">!~</span> <span class="sr">/^mem:|^uptime:/</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">        </span><span class="n">comments</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">line</span><span class="o">.</span><span class="n">strip!</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">      </span><span class="k">end</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">    </span><span class="k">end</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">    </span><span class="n">comments</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">    </span><span class="n">comment</span><span class="w"> </span><span class="n">comments</span><span class="o">.</span><span class="n">join</span><span class="w"> </span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">  </span><span class="k">end</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">  </span><span class="n">cmd</span><span class="w"> </span><span class="s1">'show interfaces description'</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">|</span><span class="n">cfg</span><span class="o">|</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29"></a><span class="w">    </span><span class="n">comment</span><span class="w"> </span><span class="s2">"---------- show interface description"</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">    </span><span class="n">comment</span><span class="w"> </span><span class="n">cfg</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="w">  </span><span class="k">end</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="w">  </span><span class="n">cmd</span><span class="w"> </span><span class="s1">'show startup-config'</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">|</span><span class="n">cfg</span><span class="o">|</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33"></a><span class="w">    </span><span class="n">comment</span><span class="w"> </span><span class="s2">"---------- show startup-config"</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34"></a><span class="w">    </span><span class="n">cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cfg</span><span class="o">.</span><span class="n">each_line</span><span class="o">.</span><span class="n">to_a</span><span class="o">[</span><span class="mi">0</span><span class="o">..-</span><span class="mi">1</span><span class="o">]</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35"></a><span class="w">    </span><span class="n">cfg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cfg</span><span class="o">.</span><span class="n">reject</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">|</span><span class="n">line</span><span class="o">|</span><span class="w"> </span><span class="n">line</span><span class="o">.</span><span class="n">match</span><span class="w"> </span><span class="sr">/^ntp clock-period /</span><span class="w"> </span><span class="p">}</span><span class="o">.</span><span class="n">join</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36"></a><span class="w">    </span><span class="n">cfg</span><span class="o">.</span><span class="n">gsub!</span> <span class="sr">/^Current configuration : [^\n]*\n/</span><span class="p">,</span><span class="w"> </span><span class="s1">''</span>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37"></a><span class="w">    </span><span class="n">cfg</span><span class="o">.</span><span class="n">gsub!</span> <span class="sr">/^ tunnel mpls traffic-eng bandwidth[^\n]*\n*(</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38"></a><span class="sr">                  (?: [^\n]*\n*)*</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39"></a><span class="sr">                  tunnel mpls traffic-eng auto-bw)/mx</span><span class="p">,</span><span class="w"> </span><span class="s1">'</span><span class="se">\1</span><span class="s1">'</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40"></a><span class="w">    </span><span class="n">cfg</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41"></a><span class="w">  </span><span class="k">end</span>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42"></a><span class="w">  </span><span class="n">cfg</span><span class="w"> </span><span class="ss">:telnet</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43"></a><span class="w">    </span><span class="n">username</span><span class="w"> </span><span class="sr">/^Username:/i</span>
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44"></a><span class="w">    </span><span class="n">password</span><span class="w"> </span><span class="sr">/^Password:/i</span>
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45"></a><span class="w">  </span><span class="k">end</span>
+</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46"></a><span class="w">  </span><span class="n">cfg</span><span class="w"> </span><span class="ss">:telnet</span><span class="p">,</span><span class="w"> </span><span class="ss">:ssh</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47"></a><span class="w">    </span><span class="c1"># preferred way to handle additional passwords</span>
+</span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48"></a><span class="w">    </span><span class="n">post_login</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="n">vars</span><span class="p">(</span><span class="ss">:enable</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kp">true</span>
+</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50"></a><span class="w">        </span><span class="n">cmd</span><span class="w"> </span><span class="s2">"enable"</span>
+</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51"></a><span class="w">      </span><span class="k">elsif</span><span class="w"> </span><span class="n">vars</span><span class="p">(</span><span class="ss">:enable</span><span class="p">)</span>
+</span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52"></a><span class="w">        </span><span class="n">cmd</span><span class="w"> </span><span class="s2">"enable"</span><span class="p">,</span><span class="w"> </span><span class="sr">/^[pP]assword:/</span>
+</span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53"></a><span class="w">        </span><span class="n">cmd</span><span class="w"> </span><span class="n">vars</span><span class="p">(</span><span class="ss">:enable</span><span class="p">)</span>
+</span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54"></a><span class="w">      </span><span class="k">end</span>
+</span><span id="__span-1-55"><a id="__codelineno-1-55" name="__codelineno-1-55"></a><span class="w">    </span><span class="k">end</span>
+</span><span id="__span-1-56"><a id="__codelineno-1-56" name="__codelineno-1-56"></a><span class="w">    </span><span class="n">post_login</span><span class="w"> </span><span class="s1">'terminal length 0'</span>
+</span><span id="__span-1-57"><a id="__codelineno-1-57" name="__codelineno-1-57"></a><span class="w">    </span><span class="n">post_login</span><span class="w"> </span><span class="s1">'terminal width 0'</span>
+</span><span id="__span-1-58"><a id="__codelineno-1-58" name="__codelineno-1-58"></a><span class="w">    </span><span class="n">pre_logout</span><span class="w"> </span><span class="s1">'exit'</span>
+</span><span id="__span-1-59"><a id="__codelineno-1-59" name="__codelineno-1-59"></a><span class="w">  </span><span class="k">end</span>
+</span><span id="__span-1-60"><a id="__codelineno-1-60" name="__codelineno-1-60"></a><span class="k">end</span>
+</span></code></pre></div></td></tr></table></div>
+<p>After adding the model, it must also be referenced in the <code>base/config</code> file, where the format of the <code>router.db</code> file can be altered as well.</p>
+<div class="language-yaml highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">config</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span>
+<span class="normal"><a href="#__codelineno-2-22">22</a></span>
+<span class="normal"><a href="#__codelineno-2-23">23</a></span>
+<span class="normal"><a href="#__codelineno-2-24">24</a></span>
+<span class="normal"><a href="#__codelineno-2-25">25</a></span>
+<span class="normal"><a href="#__codelineno-2-26">26</a></span>
+<span class="normal"><a href="#__codelineno-2-27">27</a></span>
+<span class="normal"><a href="#__codelineno-2-28">28</a></span>
+<span class="normal"><a href="#__codelineno-2-29">29</a></span>
+<span class="normal"><a href="#__codelineno-2-30">30</a></span>
+<span class="normal"><a href="#__codelineno-2-31">31</a></span>
+<span class="normal"><a href="#__codelineno-2-32">32</a></span>
+<span class="normal"><a href="#__codelineno-2-33">33</a></span>
+<span class="normal"><a href="#__codelineno-2-34">34</a></span>
+<span class="normal"><a href="#__codelineno-2-35">35</a></span>
+<span class="normal"><a href="#__codelineno-2-36">36</a></span>
+<span class="normal"><a href="#__codelineno-2-37">37</a></span>
+<span class="normal"><a href="#__codelineno-2-38">38</a></span>
+<span class="normal"><a href="#__codelineno-2-39">39</a></span>
+<span class="normal"><a href="#__codelineno-2-40">40</a></span>
+<span class="normal"><a href="#__codelineno-2-41">41</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nn">---</span><span class="w">                                                                                                                                                                                                                                                         </span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">root</span><span class="w">                                                                                                                                                                                                                                              </span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">root</span><span class="w">                                                                                                                                                                                                                                              </span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rare</span><span class="w">                                                                                                                                                                                                                                                 </span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">43200</span><span class="w">                                                                                                                                                                                                                                             </span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="nt">use_syslog</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">                                                                                                                                                                                                                                           </span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="nt">debug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">                                                                                                                                                                                                                                                </span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="nt">threads</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span><span class="w">                                                                                                                                                                                                                                                 </span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span><span class="w">                                                                                                                                                                                                                                                 </span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w">                                                                                                                                                                                                                                                  </span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="nt">prompt</span><span class="p">:</span><span class="w"> </span><span class="kt">!ruby/regexp</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/^([\w.@-]+[#&gt;]\s?)$/</span><span class="w">                                                                                                                                                                                                                  </span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="nt">rest</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.0.0:8888</span><span class="w">                                                                                                                                                                                                                                          </span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="nt">vars</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w">                                                                                                                                                                                                                                                    </span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="nt">groups</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w">                                                                                                                                                                                                                                                  </span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="nt">pid</span><span class="p">:</span><span class="w"> </span><span class="s">"/storage/pid"</span><span class="w">                                                                                                                                                                                                                                         </span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="nt">input</span><span class="p">:</span><span class="w">                                                                                                                                                                                                                                                      </span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">  </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssh, telnet</span><span class="w">                                                                                                                                                                                                                                      </span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">  </span><span class="nt">debug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">                                                                                                                                                                                                                                              </span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">  </span><span class="nt">ssh</span><span class="p">:</span><span class="w">                                                                                                                                                                                                                                                      </span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">    </span><span class="nt">secure</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">                                                                                                                                                                                                                                           </span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="nt">output</span><span class="p">:</span><span class="w">                                                                                                                                                                                                                                                     </span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">  </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">git</span><span class="w">                                                                                                                                                                                                                                              </span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">  </span><span class="nt">file</span><span class="p">:</span><span class="w">                                                                                                                                                                                                                                                     </span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">    </span><span class="nt">directory</span><span class="p">:</span><span class="w"> </span><span class="s">"/storage/configs"</span><span class="w">                                                                                                                                                                                                                           </span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="w">  </span><span class="nt">git</span><span class="p">:</span><span class="w">                                                                                                                                                                                                                                                      </span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">oxidized</span><span class="w">                                                                                                                                                                                                                                          </span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="w">    </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">oxidized@man.poznan.pl</span><span class="w">                                                                                                                                                                                                                           </span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28"></a><span class="w">    </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="s">"/storage/oxidized.git"</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="nt">source</span><span class="p">:</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30"></a><span class="w">  </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">csv</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31"></a><span class="w">  </span><span class="nt">csv</span><span class="p">:</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32"></a><span class="w">    </span><span class="nt">file</span><span class="p">:</span><span class="w"> </span><span class="s">"/root/.config/oxidized/router.db"</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33"></a><span class="w">    </span><span class="nt">delimiter</span><span class="p">:</span><span class="w"> </span><span class="kt">!ruby/regexp</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/:/</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34"></a><span class="w">    </span><span class="nt">map</span><span class="p">:</span>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35"></a><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36"></a><span class="w">      </span><span class="nt">ip</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37"></a><span class="w">      </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38"></a><span class="nt">model_map</span><span class="p">:</span>
+</span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39"></a><span class="w">  </span><span class="nt">rare</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rare</span>
+</span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40"></a><span class="w">  </span><span class="nt">cisco</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ios</span>
+</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41"></a><span class="w">  </span><span class="nt">juniper</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">junos</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Note that we have altered the keys: model, source.csv.map and model_map.</p>
+<p>By altering the source.csv.map object we can set the format of the CSV file that contains the device information. In this case, we will format our CSV file using three columns: <code>name</code>; <code>ip</code>; <code>model</code>.</p>
+<p>Finally, alter the <code>base/router.db</code> file to reflect the changes made to the CSV format:</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">router.db</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a>r1:10.99.99.50:rare
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a>r2:10.99.99.51:rare
+</span></code></pre></div></td></tr></table></div>
+<p>The second column, the IP addresses, should be replaced with the IP addresses of your virtual freeRTR devices.</p>
+<p>The final step is to simply commit the changes that have been made. If this is the first time that Git is used, then the global Git <code>user.name</code> and <code>email</code> should be set:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">"NMaaS Demo"</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">"nmaas_demo@example.com"</span>
+</span></code></pre></div></td></tr></table></div>
+<p>Any value can be used for these parameters, they are not related to NMaaS.</p>
+<p>The changes can be committed and pushed to the remote repository using:</p>
+<div class="language-bash highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"freeRTR config change"</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a>git<span class="w"> </span>push
+</span></code></pre></div></td></tr></table></div>
+<p>After the push is made, the Oxidized container will be rebooted to apply the changes. </p>
+<p>To verify the configuration changes that were made, the Oxidized web interface can be visited. It should show green boxes under Last Status for all devices. This means that the last attempt to fetch the configuration data has been successful.</p>
+<p><a class="glightbox" href="../img/29-oxidized-homepage.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Oxidized homepage" src="../img/29-oxidized-homepage.png"></a></p>
+<p>A complete version history can be obtained by using the versions option from the Actions column.</p>
+<p><a class="glightbox" href="../img/30-oxidized-version-history.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Oxidized version history" src="../img/30-oxidized-version-history.png"></a></p>
+<p>On the <code>Versions</code> page there is an option to download a given configuration archive or create a diff.</p>
+<p><a class="glightbox" href="../img/31-oxidized-diff-initiation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Oxidized actions" src="../img/31-oxidized-diff-initiation.png"></a></p>
+<p><a class="glightbox" href="../img/32-oxidized-diff.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Oxidized diff preview" src="../img/32-oxidized-diff.png"></a></p></div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+          <footer class="md-footer">
+    
+      
+        
+        <nav class="md-footer__inner md-grid" aria-label="" >
+          
+            
+            <a href="../p3_demo-network-environment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Part 3 - Demo Network Environment" rel="prev">
+              <div class="md-footer__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+              </div>
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Previous
+                </span>
+                <div class="md-ellipsis">
+                  Part 3 - Demo Network Environment
+                </div>
+              </div>
+            </a>
+          
+          
+            
+            <a href="../p5_adding_custom_app/" class="md-footer__link md-footer__link--next" aria-label="Next: Part 5 - Adding a Custom Application" rel="next">
+              <div class="md-footer__title">
+                <span class="md-footer__direction">
+                  Next
+                </span>
+                <div class="md-ellipsis">
+                  Part 5 - Adding a Custom Application
+                </div>
+              </div>
+              <div class="md-footer__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+              </div>
+            </a>
+          
+        </nav>
+      
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <!--
+ Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+    
+    <div class="md-copyright__highlight">
+        <a href="#__consent">Change cookie settings</a>
+
+    </div>
+    
+    
+    Made with
+    <span class="twemoji heart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 0 1-.686 0 16.709 16.709 0 0 1-.465-.252 31.147 31.147 0 0 1-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0 1 14 20.408z"/></svg>
+    </span> by NMaaS contributors and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a>
+    
+</div>
+        
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <div><img class="logo" src="../../../img/geant_logo_white.png" /></div>
+        <div><img class="logo" src="../../../img/eu_logo.png"</div>
+      </div>
+      </div>
+    </div>
+  </footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+<h4>Cookie Consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input type="checkbox" class="md-toggle" id="__settings">
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);console.log(new FormData(form)),__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

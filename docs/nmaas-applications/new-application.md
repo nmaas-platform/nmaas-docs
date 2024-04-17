@@ -14,7 +14,7 @@ Please note that we do not require the use of GitHub or mandate a specific code 
 - Login or register a new account on GitHub and create a new public repository. Repositories can be created either as an individual user or as an organization.
 
 <figure markdown>
-  ![New GitHub Repository](../img/new-application-1.png)
+  ![New GitHub Repository](img/new-application-1.png)
   <figcaption>Creating a New GitHub Repository</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ To enable GitHub Pages for your project, the following steps need to be performe
 - Once the branch is created, GitHub Pages can be officially enabled from the Settings page of your repository
 
 <figure markdown>
-  ![Enabling GitHub Pages](../img/new-application-2.png)
+  ![Enabling GitHub Pages](img/new-application-2.png)
   <figcaption>Enabling GitHub Pages</figcaption>
 </figure>
 
@@ -185,57 +185,57 @@ We have prepared the source code of the Helm chart in Step 3 and set up the requ
 - Go to your repository on GitHub and open a new pull request from the Pull requests page. As source branch choose the newly created one – `new-chart-version`.
 
 <figure markdown>
-  ![Opening a New Pull Request](../img/new-application-3.png)
+  ![Opening a New Pull Request](img/new-application-3.png)
   <figcaption>Opening a New Pull Request</figcaption>
 </figure>
 
 <figure markdown>
-  ![Choosing a Source Branch for the Pull Request](../img/new-application-4.png)
+  ![Choosing a Source Branch for the Pull Request](img/new-application-4.png)
   <figcaption>Choosing a Source Branch for the Pull Request</figcaption>
 </figure>
 
 <figure markdown>
-  ![Comparing Changes Between the Branches](../img/new-application-5.png)
+  ![Comparing Changes Between the Branches](img/new-application-5.png)
   <figcaption>Comparing Changes Between the Branches</figcaption>
 </figure>
 
 - Once the pull request is created the lint workflow should be automatically triggered. You can check the status from Actions page on your GitHub repository.
 
 <figure markdown>
-  ![Check Status for the Lint Workflow](../img/new-application-6.png)
+  ![Check Status for the Lint Workflow](img/new-application-6.png)
   <figcaption>Check Status for the Lint Workflow</figcaption>
 </figure>
 
 - Should everything go well, we are ready to merge the changes to master. Choose Pull requests and select the previously created one. Choose the option to automatically merge its changes.
 
 <figure markdown>
-  ![Merge Pull Request](../img/new-application-7.png)
+  ![Merge Pull Request](img/new-application-7.png)
   <figcaption>Merge Pull Request</figcaption>
 </figure>
 
 - With the merging of the pull request, the second workflow that we defined should have automatically been triggered.
 
 <figure markdown>
-  ![Helm Chart Publishing Workflow](../img/new-application-8.png)
+  ![Helm Chart Publishing Workflow](img/new-application-8.png)
   <figcaption>Helm Chart Publishing Workflow</figcaption>
 </figure>
 
 - As a result of this workflow, a new Release should have also been made in our repository.
 
 <figure markdown>
-  ![Previewing the Repository Release](../img/new-application-9.png)
+  ![Previewing the Repository Release](img/new-application-9.png)
   <figcaption>Previewing the Repository Release</figcaption>
 </figure>
 
 <figure markdown>
-  ![Release Details](../img/new-application-10.png)
+  ![Release Details](img/new-application-10.png)
   <figcaption>Release Details</figcaption>
 </figure>
 
 - If we switch to the `gh-pages` branch, we can see that there is a new file that has been automatically created – `index.yaml` which contains the necessary metadata for the Helm Repository.
 
 <figure markdown>
-  ![index.yaml Metadata](../img/new-application-11.png)
+  ![index.yaml Metadata](img/new-application-11.png)
   <figcaption>index.yaml Metadata</figcaption>
 </figure>
 
@@ -252,7 +252,7 @@ helm install release-name local-repo-name/chart-name
 You can find the generated link to your GitHub Pages website by navigating to Settings → Pages.
 
 <figure markdown>
-  ![Discovering the GitHub Pages URL](../img/new-application-12.png)
+  ![Discovering the GitHub Pages URL](img/new-application-12.png)
   <figcaption>Discovering the GitHub Pages URL</figcaption>
 </figure>
 

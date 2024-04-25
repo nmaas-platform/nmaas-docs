@@ -1,0 +1,36 @@
+stages:
+  - build
+  - publish
+
+build_website:
+  stage: build
+  image: python:3.9-bookworm
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - mkdocs build --strict
+  artifacts:
+    paths:
+      - "site/"
+    expire_in: "30 minutes"
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH # Run for all changes to the default branch
+
+copy_static_files:
+  stage: publish
+  image: instrumentisto/rsync-ssh:alpine
+  # image: python:3.9-bookworm
+  before_script:
+    - eval $(ssh-agent -s)
+    - chmod 400 "$SSH_PRIVATE_KEY"
+    - ssh-add "$SSH_PRIVATE_KEY"
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - cp "$SSH_KNOWN_HOSTS" ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - rsync -ah --delete --progress site/ $SSH_HOST:/
+  dependencies:
+    - "build_website"
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH # Run for all changes to the default branch

@@ -12,7 +12,7 @@ The following steps can be followed to set up a local environment:
 2. Create a new Python virtual environment
 
     ```bash
-    git clone https://github.com/nmaas-platform/nmaas-docs
+    git clone git@gitlab.software.geant.org:nmaas/nmaas-docs.git
     cd nmaas-docs
     virtualenv -p python3 venv
     ```

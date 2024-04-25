@@ -4,7 +4,7 @@ NMaaS components are open-source licensed under the Apache 2.0 Licence.
 
 ## Useful links
 
-- [GitHub](https://github.com/nmaas-platform)
+- [GÉANT's GitLab Instance](https://gitlab.software.geant.org/nmaas)
 - [GÉANT project](https://geant.org/)
 
 ## Project members

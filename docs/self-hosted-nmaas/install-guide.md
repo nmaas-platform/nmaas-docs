@@ -181,7 +181,7 @@ GitLab supports SSH access to any created repositories. If you want to allow you
 
 ### NMaaS Installation
 
-The source code for the NMaaS Helm chart is publicly available on [nmaas-platform/nmaas-chart](https://github.com/nmaas-platform/nmaas-chart). The `README.md` file provides details on all the customizable `value` parameters for a given chart version.
+The source code for the NMaaS Helm chart is publicly available on [nmaas-platform/nmaas-chart](https://gitlab.software.geant.org/nmaas/nmaas-chart). The `README.md` file provides details on all the customizable `value` parameters for a given chart version.
 
 The following manual steps must be performed before deploying NMaaS:
 

@@ -4,7 +4,7 @@ stages:
 
 build_website:
   stage: build
-  image: python:3.9-bookworm
+  image: python:3.12-bookworm
   before_script:
     - pip install -r requirements.txt
   script:

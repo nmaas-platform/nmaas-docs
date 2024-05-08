@@ -11,7 +11,7 @@ A web-based calendar and resource scheduling system that allows administered man
 
 ## Default Credentials
 
-As stated in the [Customizable Parameters](#customizable-parameters) section, the admin username is the administrator's email address that is specified during the deployment process directly from the NMaaS web interface. The default password is simply `password`. Users are strongly encouraged to change the default password of their admin accounts after the initial login.
+As stated in the [Base tab](#base-tab) section, the admin username is the administrator's email address that is specified during the deployment process directly from the NMaaS web interface. The default password is simply `password`. Users are strongly encouraged to change the default password of their admin accounts after the initial login.
 
 ## Configuration wizard
 

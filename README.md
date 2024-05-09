@@ -12,7 +12,8 @@ The following steps can be followed to set up a local environment:
 2. Create a new Python virtual environment
 
     ```bash
-    git clone git@gitlab.software.geant.org:nmaas/nmaas-docs.git
+    sudo apt update && sudo apt install -y virtualenv
+    git clone git@gitlab.software.geant.org:nmaas/documentation/nmaas-docs.git
     cd nmaas-docs
     virtualenv -p python3 venv
     ```

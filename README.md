@@ -1,6 +1,6 @@
-# NMaaS Documentation
+# nmaas Documentation
 
-This repository contains the source files for the [docs.nmaas.eu](https://docs.nmaas.eu) website. It provides information on both the self-hosted NMaaS version, as well as the hosted one.
+This repository contains the source files for the [docs.nmaas.eu](https://docs.nmaas.eu) website. It provides information on both the self-hosted nmaas version, as well as the hosted one.
 
 ## Contributing to the Documentation
 

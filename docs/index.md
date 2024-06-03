@@ -1,17 +1,24 @@
-# **NMaaS** home
+# **nmaas** home
 
-## **Overview**
+nmaas or nmaas Platform is an open-source orchestration software that allows deployment of various containerized applications in a Kubernetes cluster. It is a versatile solution with many possible use-cases, two of which are currently actively supported in the context of the GÉANT project:
 
-The cost and complexity of developing and integrating in-house network management may be too high for many NRENs (National Research and Education Networks), institutions, projects or teams. Off-the-shelf solutions might not be suitable and might be costly. 
+- nmaas Virtual NOC
+- nmaas Virtual Lab
 
-Network Management as a Service (NMaaS) aims to support these users in providing an effective, efficient network and service management platform. NMaaS enables management and monitoring of user networks through on-demand deployment of network management tools in a Kubernetes-based cloud infrastructure. Using a multi-tenant approach and software based VPNs, each NREN or institution has private access to their network management systems and services from a highly available cloud based platform.
+All use-cases take advantage of the same version of the nmaas Platform, and all of the functionality is available in the base version of the software. What distinguishes them is the way in which they are utilized.
 
-NMaaS is meant for smaller and emerging NRENs, campuses, small organisations or distributed research projects that may have limited resources to develop and/or maintain their own NMS infrastructure or planned to outsource these activities. By using a shared and supported platform, institutions can focus solely on the monitoring and management of their service components. It is also suitable for use in those NRENs which provide campus network management service (CNaaS) to their institutions. Using NMaaS, NRENs can easily provide per-campus network management software instances.
+nmaas Virtual NOC is the new name for what was formerly known as NMaaS (Network Management as a Service). With the pivot of the nmaas Platform to a general purpose application orchestration tool, not limited solely to network management, NMaaS was renamed to nmaas Virtual NOC to avoid any confusion. More details about the Virtual NOC use-case are available on the [nmaas Virtual NOC page](use-cases/virtual-noc/vnoc-introduction.md).
 
-## Managed NMaaS
+nmaas Virtual Lab is a brand new use-case built on top of the nmaas Platform, introducing many new exciting features that ease the process of organizing hands-on exercises in an educational context. More information about the Virtual Lab use-case is available on the [nmaas Virtual Lab page](use-cases/virtual-lab/vlab-introduction.md).
 
-NMaaS (https://nmaas.eu) is offered within the GÉANT project as a [managed service](https://docs.nmaas.eu/managed-nmaas/introduction/) since December 2018. Currently, the portfolio of tools offered by NMaaS consists of over 30 applications including Oxidized, LibreNMS, Prometheus, Grafana, Zabbix, NetBox and others.
+## Managed nmaas Instances
 
-## Self-hosted NMaaS
+The nmaas team offers access to multiple managed instances, depending on the use-case and overall context:
 
-NMaaS [self-hosting](https://docs.nmaas.eu/self-hosted-nmaas/introduction/) options are also available for users having access to an existing Kubernetes infrastructure.
+- [The nmaas Virtual NOC production instance](managed-nmaas/introduction/#the-virtual-noc-managed-instance) available on [https://nmaas.eu](https://nmaas.eu)
+- [The nmaas Virtual Lab pilots instance](managed-nmaas/introduction/#the-virtual-lab-managed-instance) available on [https://vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu).
+- [The generic Playground instance](managed-nmaas/nmaas-playground-instance.md) for testing out the overall feature set of nmaas.
+
+## Self-hosted nmaas
+
+nmaas [self-hosting](https://docs.nmaas.eu/self-hosted-nmaas/introduction/) options are also available for users having access to an existing Kubernetes infrastructure.

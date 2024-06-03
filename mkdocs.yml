@@ -3,7 +3,7 @@ site_url: 'https://docs.nmaas.eu'
 nav:
   - Home: index.md
   - What is nmaas?: 'what-is-nmaas.md'
-  - NMaaS Guides:
+  - nmaas Guides:
     - Application Manager Guide: 'guides/application-manager-guide.md'
     - Domain Admin Guide: 'guides/domain-admin-guide.md'
     - User Guide: 'guides/user-guide.md'

@@ -3,9 +3,9 @@
 !!! warning Work in Progress
     This guide is currently a work in progress. Some sections might be missing or contain incomplete information.
 
-## 1. NMaaS Domains
+## 1. nmaas Domains
 
-A domain in NMaaS corresponds to a dedicated and isolated tenant environment created within the system for particular institution, project, team or in general a group of users.
+A domain in nmaas corresponds to a dedicated and isolated tenant environment created within the system for particular institution, project, team or in general a group of users.
 
 !!! info "Domain Assignment"
     User can be assigned to multiple domains.
@@ -13,9 +13,9 @@ A domain in NMaaS corresponds to a dedicated and isolated tenant environment cre
 !!! info "Requesting a New Domain"
     In order to apply for a new domain creation submit the form available at https://nmaas.eu/about?type=NEW_DOMAIN_REQUEST.
 
-## 2. Introduction to NMaaS User Roles
+## 2. Introduction to nmaas User Roles
 
-NMaaS specifies user roles on two levels: global (system) level and user domain level.
+nmaas specifies user roles on two levels: global (system) level and user domain level.
 
 Roles on each level can be assigned independently. 
 
@@ -30,7 +30,7 @@ The remaining roles on the global level are:
  - **System administrator** - gives the user the complete system administration rights in the Portal (including user, domain and application management)
 
 !!! info "Additional Information"
-    For Application manager and Domain administrator user guides visit [NMaaS Application Manager Guide](./application-manager-guide.md) and [NMaaS Domain Admin Guide](./domain-admin-guide.md)
+    For Application manager and Domain administrator user guides visit [nmaas Application Manager Guide](./application-manager-guide.md) and [nmaas Domain Admin Guide](./domain-admin-guide.md)
 
 ### 2.2 Domain Level Roles 
 
@@ -48,19 +48,19 @@ These roles are assigned per user domain. A single user may have different roles
 !!! info "VPN Requirements"
     In order to access the applications running within a particular domain user needs to connect to a dedicated VPN that is being set up independently of the user account within the Portal
 
-## 3. NMaaS Portal
+## 3. nmaas Portal
 
-NMaaS web-based graphical user interface can be accessed by browsing to address https://nmaas.eu.
+nmaas web-based graphical user interface can be accessed by browsing to address https://nmaas.eu.
 
 ![NmaaS portal](./img/user-guide-s01.png)
 
-NMaaS landing page contains a basic set of information about the NMaaS concept and the service. Users are required to log in to gain access to the actual application market.
+nmaas landing page contains a basic set of information about the nmaas concept and the service. Users are required to log in to gain access to the actual application market.
 
-The NMaaS Portal in available in four languages including English, French, German and Polish (though still not all texts might be properly translated in languages apart from English).
+The nmaas Portal in available in four languages including English, French, German and Polish (though still not all texts might be properly translated in languages apart from English).
 
 ### 3.1 About
 
-The About page available from the top bar menu contains information about current and past NMaaS software versions and a contact form being the preferred way of reaching out to the NMaaS team regarding any subject.
+The About page available from the top bar menu contains information about current and past nmaas software versions and a contact form being the preferred way of reaching out to the nmaas team regarding any subject.
 
 ## 4. User Login 
 
@@ -87,7 +87,7 @@ Registration form contains several mandatory fields, which are: `Username`, `Pas
 
 The provided `Username` has to be at least 3 letters long.
 
-The user also has to confirm that he has read the NMaaS Privacy Notice text.
+The user also has to confirm that they have read the nmaas Privacy Notice text.
 
 There are also few optional fields, namely `First name`, `Last name` and `Domain selection`.
 
@@ -97,11 +97,11 @@ A user needs to be assigned a specific role within particular domain in order to
 
 ## 6. Application Market
 
-After the user account has been activated by the NMaaS administrator (in the case when the user submitted the registration form), they are able to log in and are granted a basic access to the main NMaaS applications view. Same access rights are granted to users that log in through eduGAIN for the first time.
+After the user account has been activated by the nmaas administrator (in the case when the user submitted the registration form), they are able to log in and are granted a basic access to the main nmaas applications view. Same access rights are granted to users that log in through eduGAIN for the first time.
 
 ![Application market](./img/user-guide-s04.png)
 
-On the `Applications` tab all of the applications supported by NMaaS are enlisted. Applications can be filtered by tags and sorted by few criteria. User can also search them by name.
+On the `Applications` tab all of the applications supported by nmaas are enlisted. Applications can be filtered by tags and sorted by few criteria. User can also search them by name.
 
 Single application tile consists of the logo, name, brief description and current rating of the application. Clicking on a tile redirects the user to the application’s details page.
 
@@ -110,7 +110,7 @@ Single application tile consists of the logo, name, brief description and curren
 
 ## 7. Application Subscriptions and Instances 
 
-Once a user is granted a role inside a particular Domain they are able to view the content of the `Subscriptions` tab. This view comprises applications subscribed for his domain by a Domain administrator. Only these applications can be further deployed in the NMaaS cloud within the scope of particular domain.
+Once a user is granted a role inside a particular Domain they are able to view the content of the `Subscriptions` tab. This view comprises applications subscribed for his domain by a Domain administrator. Only these applications can be further deployed in the nmaas cloud within the scope of particular domain.
 
 In order to subscribe to a given application user needs to open the details view of chosen application and click the `Subscribe` button.
 
@@ -125,7 +125,7 @@ Application instances are described by custom Name assigned during deployment, n
 
 ### 8.1 Application Details View
 
-On the application details page user can view a basic description of the application, example screenshots of the user interface, references to its website, code repository, website for registering issues and the versions of the application currently available on NMaaS.
+On the application details page user can view a basic description of the application, example screenshots of the user interface, references to its website, code repository, website for registering issues and the versions of the application currently available on nmaas.
 
 ![Application details](./img/user-guide-s05.png)
 
@@ -152,7 +152,7 @@ The installation process comprises few steps including subscription validation, 
 Once the installation process is completed the user is provided with a way or multiple ways of accessing the deployed application instance depending on the application (in majority of cases a link for accessing the web-based UI).
 
 !!! info "Importance of the Provided Instance Name"
-    Providing a suitable instance name is important since it is later on used to create a FQDN unique for this application instance following pattern: `<instance name>.<user domain name>.<NMaaS base domain>` (e.g. vminstance.pllab.nmaas.eu)
+    Providing a suitable instance name is important since it is later on used to create a FQDN unique for this application instance following pattern: `<instance name>.<user domain name>.<nmaas base domain>` (e.g. vminstance.pllab.nmaas.eu)
 
 !!! info "Application Deployment Notifications"
     User is notified with an email once the new application instance becomes available
@@ -173,7 +173,7 @@ Once all required fields are populated user can select the *Apply configuration*
 
 Once the application instance reaches the `Active` state it can be accessed by the user.
 
-Multiple access methods are supported by NMaaS and each of the applications supports one or more of them.
+Multiple access methods are supported by nmaas and each of the applications supports one or more of them.
 
 ![Application access](./img/user-guide-s19.png)
 ![Application access](./img/user-guide-s09.png)
@@ -284,7 +284,7 @@ For applications that support the Git-based configuration management model, mean
 
 ![User SSH add](./img/user-guide-s16.png)
 
-Upon key upload or update in the Portal, user information is synchronized with the user account created on the GitLab instance associated with given NMaaS installation.
+Upon key upload or update in the Portal, user information is synchronized with the user account created on the GitLab instance associated with given nmaas installation.
 
 ### 9.4 Password Change
 
@@ -297,9 +297,9 @@ On clicking the `Change password` button, a new window will be displayed where t
 
 ## 10. Contact Form
 
-An easy and recommended way for contacting the NMaaS Team is through the Contact Form.
+An easy and recommended way for contacting the nmaas Team is through the Contact Form.
 
-The Contact Form is available on the About page along with the information about the versions of the NMaaS software.
+The Contact Form is available on the About page along with the information about the versions of the nmaas software.
 
 ![Contact form](./img/user-guide-s18.png)
 

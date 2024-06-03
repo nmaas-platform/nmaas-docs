@@ -1,8 +1,8 @@
-site_name: NMaaS Documentation
+site_name: nmaas Documentation
 site_url: 'https://docs.nmaas.eu'
 nav:
   - Home: index.md
-  - What is NMaaS?: 'what-is-nmaas.md'
+  - What is nmaas?: 'what-is-nmaas.md'
   - NMaaS Guides:
     - Application Manager Guide: 'guides/application-manager-guide.md'
     - Domain Admin Guide: 'guides/domain-admin-guide.md'
@@ -22,6 +22,8 @@ nav:
       - Part 5 - Adding a Custom Application: 'self-hosted-nmaas/local-dev-environment/p5_adding_custom_app.md'
       - Appendix - Credentials: 'self-hosted-nmaas/local-dev-environment/appendix.md'
   - NMaaS Use-Cases:
+    - Virtual NOC:
+      - Introduction: 'use-cases/virtual-noc/vnoc-introduction.md'
     - Virtual Lab:
       - Introduction: 'use-cases/virtual-lab/vlab-introduction.md'
       - Bulk Domain Deployment: 'use-cases/virtual-lab/bulk-domain-deployment.md'

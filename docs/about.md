@@ -1,6 +1,6 @@
-**NMaaS Platform** is actively developed and maintained as part of the [GÉANT GN5-1](https://geant.org/gn5-1/) project co-funded by the European Union.
+**nmaas Platform** is actively developed and maintained as part of the [GÉANT GN5-1](https://geant.org/gn5-1/) project co-funded by the European Union.
 
-NMaaS components are open-source licensed under the Apache 2.0 Licence.
+nmaas components are open-source licensed under the Apache 2.0 Licence.
 
 ## Useful links
 

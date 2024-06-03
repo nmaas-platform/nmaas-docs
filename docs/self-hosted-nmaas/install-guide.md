@@ -210,14 +210,14 @@ The following manual steps must be performed before deploying nmaas:
     kubectl create secret generic -n $NMAAS_NAMESPACE nmaas-sp-secret --from-literal=secret=<SSO_SHARED_KEY>
     ```
 
-- Create the NMaaS Janitor secret containing the GitLab API key, generated previously:
+- Create the nmaas Janitor secret containing the GitLab API key, generated previously:
 
     ```bash
     export NMAAS_NAMESPACE="nmaas-system"
     kubectl create secret generic -n $NMAAS_NAMESPACE nmaas-gitlab-janitor-token --from-literal=secret=<GITLAB_API_TOKEN>
     ```
 
-Once the required secrets have been created, NMaaS can be deployed using the following command (make sure to deploy in the same namespace as GitLab):
+Once the required secrets have been created, nmaas can be deployed using the following command (make sure to deploy in the same namespace as GitLab):
 
 ```bash
 export NMAAS_NAMESPACE="nmaas-system"
@@ -225,7 +225,7 @@ helm repo add nmaas https://artifactory.software.geant.org/artifactory/nmaas-hel
 helm install -f values.yaml --namespace $NMAAS_NAMESPACE --version 1.0.0 nmaas nmaas/nmaas
 ```
 
-It is recommended to use `nmaas-system` as the namespace where NMaaS and all associated components (PostgreSQL, GitLab) will be deployed.
+It is recommended to use `nmaas-system` as the namespace where nmaas and all associated components (PostgreSQL, GitLab) will be deployed.
 
 !!! warning "nmaas Deployment Time"
     Please allow at least 10 minutes for nmaas to be fully deployed, depending on hardware configuration and resource utilization.

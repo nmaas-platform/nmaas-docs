@@ -11,7 +11,7 @@ A dedicated wizard composed of several forms was developed to ease this manageme
 
 In order to access the applications management area user should open the `Settings` drop down menu available on the top navigation bar and click the Applications button.
 
-The main view lists all the applications available in this particular NMaaS installation or a filtered list of applications to which a given user has management access. For each application its `Name` and `Owner` user is provided. When an application entry is clicked subsequent information about available versions of particular application and their status is displayed.
+The main view lists all the applications available in this particular nmaas installation or a filtered list of applications to which a given user has management access. For each application its `Name` and `Owner` user is provided. When an application entry is clicked subsequent information about available versions of particular application and their status is displayed.
 
 The application version statuses are the following:
 
@@ -40,7 +40,7 @@ From this view an `Application manager` can perform the following actions:
 
 !!! info
 
-    The applications from the NMaaS portfolio are being deployed on Kubernetes. To this end each application has to be containerized and described in the form of a Helm chart.
+    The applications from the nmaas portfolio are being deployed on Kubernetes. To this end each application has to be containerized and described in the form of a Helm chart.
 
 !!! info
     The application administration option is available only for users with System administrator or Application manager roles assigned.

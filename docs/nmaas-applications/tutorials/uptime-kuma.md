@@ -13,9 +13,9 @@
 - various other application specific monitors for PostgreSQL, MariaDB, MongoDB, etc...
 - design and create status pages
 
-## Uptime Kuma on NMaaS
+## Uptime Kuma on nmaas
 
-Uptime Kuma on NMaaS is fully supported in two flavors:
+Uptime Kuma on nmaas is fully supported in two flavors:
 
 - standalone flavor, identical with the upstream release, without any modifications.
 - extended flavor which also supports API access using a [third-party API extension](https://github.com/MedAziz11/Uptime-Kuma-Web-API).
@@ -24,7 +24,7 @@ Refer to the sections below for more details regarding deployment options for th
 
 ### Deploiying the Standalone Version of Uptime Kuma
 
-As with any other application available in the NMaaS catalog, the deployment process for the standalone version is:
+As with any other application available in the nmaas catalog, the deployment process for the standalone version is:
 
 1. Subscribe your domain to the Uptime Kuma application from the `Applications` page.
 2. Deploy a new instance of Uptime Kuma, providing a unique name for it.
@@ -34,7 +34,7 @@ As with any other application available in the NMaaS catalog, the deployment pro
 
 ### Deploying Uptime Kuma together with an API Server
 
-NMaaS also offers an extended flavor of Uptime Kuma, one that comes collocated with the open-source API server implementation by [MedAziz11/Uptime-Kuma-Web-API](https://github.com/MedAziz11/Uptime-Kuma-Web-API). The deployment process for this flavor, differs somewhat from the standalone version, taking into account the additional features. The deployment steps are:
+nmaas also offers an extended flavor of Uptime Kuma, one that comes collocated with the open-source API server implementation by [MedAziz11/Uptime-Kuma-Web-API](https://github.com/MedAziz11/Uptime-Kuma-Web-API). The deployment process for this flavor, differs somewhat from the standalone version, taking into account the additional features. The deployment steps are:
 
 1. Subscribe your domain to the Uptime Kuma application from the `Applications` page.
 2. Deploy a new instance of Uptime Kuma, providing a unique name for it.
@@ -45,7 +45,7 @@ NMaaS also offers an extended flavor of Uptime Kuma, one that comes collocated w
   <figcaption>Fig. 1: Uptime Kuma Deployment Wizard</figcaption>
 </figure>
 
-4. Enter the username and password for the default Uptime Kuma user. NMaaS will automatically initialize a new user with the specified credentials, and the first run page will be skipped once the application is deployed. The user will be able to directly login.
+4. Enter the username and password for the default Uptime Kuma user. nmaas will automatically initialize a new user with the specified credentials, and the first run page will be skipped once the application is deployed. The user will be able to directly login.
 5. Enter the password for the API user. The API user is different from the Uptime Kuma user. The default username for the API user is `admin`. This username cannot be changed at the moment. 
 6. Finish the deployment process and access the Uptime Kuma web interface and the API's OpenAPI documentation.
 
@@ -65,4 +65,4 @@ NMaaS also offers an extended flavor of Uptime Kuma, one that comes collocated w
     **The default username for the API is always `admin`.**
 
 !!! danger
-    Changing the user's password from the Uptime Kuma web interface after the application has been deployed will make the API addon nonfunctional. Contact the NMaaS team in case a password change is necessary.
+    Changing the user's password from the Uptime Kuma web interface after the application has been deployed will make the API addon nonfunctional. Contact the nmaas team in case a password change is necessary.

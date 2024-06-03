@@ -30,7 +30,7 @@ Configuration parameters to be provided by the user are explained in the list be
 - `Password for the Uptime Kuma web server` - password related to the defined username
 - `Password for the Uptime Kuma API` - password used to authenticate to the Uptime Kuma API
 - `Oxidized Git repository URL` - URL to the Git repository related to the Oxidized instance that is to be used
-- `Email addresses to receive the generated repository access SSH public key` - once the Camunda orchestrator is setup and initialized it will generate a pair of ssh keys used to access the Oxidized Git repository. The public key of this pair will be sent to this email address and will then need to be copy pasted to the NMaaS user profile. (Note: check the junk folder)
+- `Email addresses to receive the generated repository access SSH public key` - once the Camunda orchestrator is setup and initialized it will generate a pair of ssh keys used to access the Oxidized Git repository. The public key of this pair will be sent to this email address and will then need to be copy pasted to the nmaas user profile. (Note: check the junk folder)
 - `The name to use for all Git commits created by Camunda` - name under which all Git changes will be made
 - `The email to use for all Git commits created by Camunda` - email under which all Git changes will be made
 

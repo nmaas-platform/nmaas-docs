@@ -15,9 +15,9 @@ Configuration parameters to be provided by the user are explained in the subsect
 - `Grafana admin username` - Username to be used to access the Grafana user interface
 - `Grafana admin password` - Password to be used to access the Grafana user interface
 - `Connect to existing Prometheus instance` ***[Optional]*** - If selected, additional fields are displayed allowing to provide information about a Prometheus instance that should be added as a default data source in Grafana 
-- `NMaaS Prometheus instance` / `External Prometheus instance` - Switch between the type of Prometheus instance that should be used as the data source
+- `nmaas Prometheus instance` / `External Prometheus instance` - Switch between the type of Prometheus instance that should be used as the data source
 - `Data source name` - The custom data source name that will be assigned to this Prometheus instance
-- `Select Prometheus instance` *(if NMaaS Prometheus instance is selected)* - Pick list allowing to select an instance of Prometheus deployed and already running in the same domain as the Grafana being configured
+- `Select Prometheus instance` *(if nmaas Prometheus instance is selected)* - Pick list allowing to select an instance of Prometheus deployed and already running in the same domain as the Grafana being configured
 - `Prometheus instance address` *(if External Prometheus instance is selected)* - URL of the standalone Prometheus instance to be used
 
 ### Additional tab

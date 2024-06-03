@@ -2,11 +2,11 @@
 
 [ChangeDetection.io](https://github.com/dgtlmoon/changedetection.io) is an open-source tool for website change detection. It is capable of monitoring HTML and JSON files and can send various types of notifications when a change is detected.
 
-Using XPath or CSS selectors it is also possible to only watch specific page elements. Interactive websites relying heavily on JavaScript can be crawled using a headless Chrome instance which is also deployed on NMaaS together with the base application.
+Using XPath or CSS selectors it is also possible to only watch specific page elements. Interactive websites relying heavily on JavaScript can be crawled using a headless Chrome instance which is also deployed on nmaas together with the base application.
 
 ## Customizable Parameters
 
-ChangeDetection.io does not have any parameters that need to be customized during the initial deployment on NMaaS. 
+ChangeDetection.io does not have any parameters that need to be customized during the initial deployment on nmaas. 
 
 All configuration is done from the built-in configuration manager accessible once the application is deployed.
 
@@ -36,7 +36,7 @@ All configuration is done from the built-in configuration manager accessible onc
 
 ChangeDetection.io has support for various notification providers, using the [Apprise library](https://github.com/caronc/apprise). Details about each supported notification provider are given on the [Apprise Wiki](https://github.com/caronc/apprise/wiki), as well as on the [ChangeDetection.io wiki](https://github.com/caronc/apprise/wiki) pages.
 
-In terms of the managed NMaaS production instance, users can leverage the built-in mail sender, using the following configuration:
+In terms of the managed nmaas production instance, users can leverage the built-in mail sender, using the following configuration:
 
 ```
 mailto://nmaas.eu:587?smtp=nmaas-postfix.nmaas-system&from=changedetection.$domain-name@nmaas.eu&to=$dest-email

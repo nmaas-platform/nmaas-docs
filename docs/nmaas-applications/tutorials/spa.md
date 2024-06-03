@@ -6,7 +6,7 @@
 
 The Service Provider Architecture (SPA) is a service management digital platform providing the general processes and components necessary to manage the CSP services via a user-friendly web graphical user interface (Self-Service Portal).
 
-The platform in NMaaS has been prepared to manage E-Line service (L2 end-to-end connectivity) implemented by the OpenNSA application with a test default configuration and virtual simplified network topology. Users can familiarize with the SPA without the need of setting up the platform from the scratch.
+The platform in nmaas has been prepared to manage E-Line service (L2 end-to-end connectivity) implemented by the OpenNSA application with a test default configuration and virtual simplified network topology. Users can familiarize with the SPA without the need of setting up the platform from the scratch.
 
 Just log in to the portal and start creating new circuits in a simple network to see how it works.
 

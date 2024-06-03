@@ -1,10 +1,10 @@
-# Part 4: Monitoring the Demo Network Environment with NMaaS
+# Part 4: Monitoring the Demo Network Environment with nmaas
 
-## Registering a new Local NMaaS User
+## Registering a new Local nmaas User
 
-Registering a new local NMaaS user can be done from the NMaaS homepage.
+Registering a new local nmaas user can be done from the nmaas homepage.
 
-![Registering a new NMaaS user](./img/07-new-nmaas-user.png)
+![Registering a new nmaas user](./img/07-new-nmaas-user.png)
 
 Once all of the required fields (denoted by a red *) are filled, and the privacy policy accepted, the registration form can be submitted.
 
@@ -12,7 +12,7 @@ After submission, an administrator approval is required before being able to log
 
 ### Approving the New User (as Admin) and Creating a New Domain
 
-To approve a newly registered user, login as the NMaaS admin, and navigate to `Settings -> Users` from the right-hand side navigation menu. Hover over the cog next to the new user and select `Enable`.
+To approve a newly registered user, login as the nmaas admin, and navigate to `Settings -> Users` from the right-hand side navigation menu. Hover over the cog next to the new user and select `Enable`.
 
 ![Approving the new user](./img/08-enabling-user.png)
 
@@ -28,7 +28,7 @@ Once enabled, the user should be made part of an existing domain. Since we curre
     ```
 
 - For a local deployment, leave the Kubernetes storage class field empty, and set Kubernetes Ingress class to the ingress class available in the cluster (public for MicroK8s, nginx for K3s)
-- As External service domain set the domain codename, suffixed by the NMaaS URL. For example, if the domain codename is demo, then External service domain should be set to `demo.nmaas.<INGRESS_LB_IP>.nip.io`.
+- As External service domain set the domain codename, suffixed by the nmaas URL. For example, if the domain codename is demo, then External service domain should be set to `demo.nmaas.<INGRESS_LB_IP>.nip.io`.
 - Set the DCN deployment type to `Manual` and tick `DCN Configured`.
 - Set a dummy customer network, for example `127.0.0.1/24`.
 
@@ -92,18 +92,18 @@ By now we have configured Prometheus to monitor the devices in our environment, 
 
 Grafana is an open-source application that can generate graphs from different data sources, including Prometheus.
 
-To deploy Grafana in an NMaaS environment, the same general steps can be used as before:
+To deploy Grafana in an nmaas environment, the same general steps can be used as before:
 
 - subscribing to the Grafana application from the Applications page
 - creating a new instance from the Subscriptions page
 
 ![Deploying Grafana](./img/19-deploying-grafana.png)
 
-The configuration wizard that becomes available once the deployment enters the Deployed phase is different in the case of Grafana. Apart from specifying the Grafana username and password that can be used for accessing the web interface, users have the option of directly choosing an existing Prometheus instance that has been deployed within their NMaaS domain, and adding it as a data source to Grafana. This can be accomplished by ticking the `Connect to existing Prometheus instance` checkbox, and selecting the `NMaaS Prometheus Instance` radio button.
+The configuration wizard that becomes available once the deployment enters the Deployed phase is different in the case of Grafana. Apart from specifying the Grafana username and password that can be used for accessing the web interface, users have the option of directly choosing an existing Prometheus instance that has been deployed within their nmaas domain, and adding it as a data source to Grafana. This can be accomplished by ticking the `Connect to existing Prometheus instance` checkbox, and selecting the `nmaas Prometheus Instance` radio button.
 
 ![Connecting Grafana to Prometheus](./img/20-connecting-grafana-prometheus.png)
 
-Of course, a Grafana instance hosted on NMaaS can be used for connecting to external data sources as well. In this case, the checkbox `Connect to existing Prometheus instance` can simply be left unchecked. 
+Of course, a Grafana instance hosted on nmaas can be used for connecting to external data sources as well. In this case, the checkbox `Connect to existing Prometheus instance` can simply be left unchecked. 
 
 Once the application is deployed, it can be accessed by selecting the `Actions -> Access` button. After login, users can verify that the previously deployed Prometheus instance has been added as a Data Source by selecting the cog icon on the left hand side and choosing `Data Sources`.
 
@@ -134,7 +134,7 @@ After importing the dashboard, a redirect is immediately issued, and the defined
 
 Oxidized is an open-source application that is capable of fetching the configuration of remote devices and if enabled, version it using an internal or external Git repository.
 
-In our demo scenario, we will use Oxidized to periodically fetch the configuration from the available network elements. To do so, we must first deploy Oxidized in our NMaaS domain. 
+In our demo scenario, we will use Oxidized to periodically fetch the configuration from the available network elements. To do so, we must first deploy Oxidized in our nmaas domain. 
 
 The deployment steps for Oxidized are very similar to the other applications that have been deployed so far:
 
@@ -297,11 +297,11 @@ The second column, the IP addresses, should be replaced with the IP addresses of
 The final step is to simply commit the changes that have been made. If this is the first time that Git is used, then the global Git `user.name` and `email` should be set:
 
 ```bash
-git config --global user.name "NMaaS Demo"
+git config --global user.name "nmaas Demo"
 git config --global user.email "nmaas_demo@example.com"
 ```
 
-Any value can be used for these parameters, they are not related to NMaaS.
+Any value can be used for these parameters, they are not related to nmaas.
 
 The changes can be committed and pushed to the remote repository using:
 

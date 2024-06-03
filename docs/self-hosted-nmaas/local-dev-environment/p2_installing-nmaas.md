@@ -1,6 +1,6 @@
-# Part 2: Installing NMaaS
+# Part 2: Installing nmaas
 
-Once a working Kubernetes cluster has been deployed, we are ready to proceed to the next step - installing NMaaS.
+Once a working Kubernetes cluster has been deployed, we are ready to proceed to the next step - installing nmaas.
 
 All the necessary components will be installed in a single namespace – `nmaas-system`. If this namespace has not been created so far, execute:
 
@@ -10,7 +10,7 @@ kubectl create namespace nmaas-system
 
 ## GitLab Installation
 
-The first NMaaS dependency that we will set up is GitLab, a self-hosted web based Git repository hosting service. Many applications that are deployed by NMaaS users store their configuration data in a Git repository, allowing easier editing, and version management.
+The first nmaas dependency that we will set up is GitLab, a self-hosted web based Git repository hosting service. Many applications that are deployed by nmaas users store their configuration data in a Git repository, allowing easier editing, and version management.
 
 GitLab has an official Helm chart, and we will use it to create a basic GitLab installation locally. Some parameters must be customized in the values.yaml file before deployment:
 
@@ -124,14 +124,14 @@ Once GitLab has been deployed, it should be possible to navigate to the login pa
     - `Allow requests to the local network from web hooks and services` = checked
     - `Allow requests to the local network from system hooks` = checked
 
-The final step before installing NMaaS itself is to generate a GitLab personal access token which will allow NMaaS to connect to the GitLab API. This can be done from the User Profile page:
+The final step before installing nmaas itself is to generate a GitLab personal access token which will allow nmaas to connect to the GitLab API. This can be done from the User Profile page:
 
     - Click on the user avatar in the right-hand corner of the screen, Edit Profile. Select Access Tokens from the left-hand navigation menu. Give a new name for the authentication token, as well as an optional expiry date. Check all scopes.
     - Store the token until the next section, where we will create a new secret containing it.
 
-## NMaaS Installation
+## nmaas Installation
 
-The final step is to install NMaaS. NMaaS uses SSH communication to connect between components, so we need to create an SSH key pair and store it in a Kubernetes secret. This can be done by executing the following commands:
+The final step is to install nmaas. nmaas uses SSH communication to connect between components, so we need to create an SSH key pair and store it in a Kubernetes secret. This can be done by executing the following commands:
 
 ```bash
 #!/bin/bash
@@ -145,12 +145,12 @@ kubectl create secret generic nmaas-helm-key-private -n <NMAAS_NAMESPACE> --from
 kubectl create secret generic nmaas-helm-key-public -n <NMAAS_NAMESPACE> --from-file=helm=$tmpdir/key.pub
 ```
 
-A few parameters need to be customized in the values.yaml file, to reflect the environment where NMaaS is deployed.
+A few parameters need to be customized in the values.yaml file, to reflect the environment where nmaas is deployed.
 
 - `global.wildcardCertificateName` – the name of the secret containing the TLS certificate to be used to secure the HTTP communication
-- `global.nmaasDomain` – the hostname where NMaaS will be accessible.
+- `global.nmaasDomain` – the hostname where nmaas will be accessible.
 - `platform.properties.adminEmail` – the email address which will receive various notifications such as new user sign-up, deployment errors, new application versions...
-- `platform.adminPassword.literal` – the password used to login as the admin user in the NMaaS Portal.
+- `platform.adminPassword.literal` – the password used to login as the admin user in the nmaas Portal.
 - `platform.properties.k8s.ingress.certificate.issuerOrWildcardName` – the name of the wilcard certificate to be used for customer deployed applications, or the name of the cert-manager issuer to use if certificates are issued ad-hoc.
 - `platform.properties.k8s.ingress.controller.ingressClass` – the ingress class to be used for deployed applications. Should be set to nginx in the case of K3s and public in the case of MicroK8s.
 - `platform.properties.k8s.ingress.controller.publicIngressClass` – the ingress class to be used for applications where the users have explicitly selected to enable public access (e.g. without a VPN). Since this is a local deployment, the value of this parameter should equal the value set in `platform.properties.k8s.ingress.controller.ingressClass`.
@@ -205,14 +205,14 @@ janitor:
     gitlabApiUrl: http://nmaas-gitlab-webservice-default:8181/api/v4
 ```
 
-Once the values.yaml file has been customized, NMaaS can be deployed by executing:
+Once the values.yaml file has been customized, nmaas can be deployed by executing:
 
 ```bash
 helm repo add nmaas https://artifactory.software.geant.org/artifactory/nmaas-helm
 helm install -f nmaas-values.yaml --namespace nmaas-system nmaas --version 1.1.2 nmaas/nmaas
 ```
 
-NMaaS also requires an the stakater autoreloader component, which can simply be installed using the commands below. This component takes care of restarting the affected pods whenever a configuration change is submitted via GitLab.
+nmaas also requires an the stakater autoreloader component, which can simply be installed using the commands below. This component takes care of restarting the affected pods whenever a configuration change is submitted via GitLab.
 
 ```bash
 helm repo add stakater https://stakater.github.io/stakater-charts
@@ -222,4 +222,4 @@ helm install config-reload --namespace nmaas-system stakater/reloader
 
 After the installation, login as the `admin` user should be possible with the configured password.
 
-![Preview of the NMaaS catalog of applications](./img/06-nmaas-catalog.png)
+![Preview of the nmaas catalog of applications](./img/06-nmaas-catalog.png)

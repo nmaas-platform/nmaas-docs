@@ -1,21 +1,21 @@
-# NMaaS Installation Guide
+# nmaas Installation Guide
 
 ## Requirements
 
-To install NMaaS into an existing Kubernetes cluster, the following requirements must be met:
+To install nmaas into an existing Kubernetes cluster, the following requirements must be met:
 
 - Kubernetes version `>=1.16`
 - Helm v3 support in the Kubernetes cluster
 - Existing ingress controller, preferably with a default TLS certificate set (more information available below) 
 - An integration with an external load-balancer or MetalLB for bare-metal deployments, so that IPs can be assigned to `LoadBalancer` services.
 
-## NMaaS Components
+## nmaas Components
 
-NMaaS is comprised of multiple components, and a brief description for each one is provided in the [self-hosting introduction](./introduction.md) page.
+nmaas is comprised of multiple components, and a brief description for each one is provided in the [self-hosting introduction](./introduction.md) page.
 
 ## Installation 
 
-The NMaaS installation is a two-step process - first an instance of GItLab must be deployed and configured, and then NMaaS itself. The two components cannot be deployed at the same time, since during the deployment process NMaaS requires a GitLab API key to be specified.
+The nmaas installation is a two-step process - first an instance of GItLab must be deployed and configured, and then nmaas itself. The two components cannot be deployed at the same time, since during the deployment process nmaas requires a GitLab API key to be specified.
 
 ### GitLab Installation
 
@@ -37,10 +37,10 @@ GitLab can be deployed using the [official Helm chart](https://docs.gitlab.com/r
 
 !!! success "GitLab Version"
 
-    `4.8.2` is the latest version of the GitLab chart that has been tested with the latest version of NMaaS. 
+    `4.8.2` is the latest version of the GitLab chart that has been tested with the latest version of nmaas. 
 
 
-Bellow is a snippet of the mandatory parameters that must be specified during GitLab's deployment, so that it will be compatible with NMaaS. The complete list of supported value parameters is available in the [official GitLab Helm chart Git repository](https://gitlab.com/gitlab-org/charts/gitlab).
+Bellow is a snippet of the mandatory parameters that must be specified during GitLab's deployment, so that it will be compatible with nmaas. The complete list of supported value parameters is available in the [official GitLab Helm chart Git repository](https://gitlab.com/gitlab-org/charts/gitlab).
 
 ```yaml title="gitlab-values.yaml"
 certmanager:
@@ -145,7 +145,7 @@ Note that the built-in PostgreSQL chart that can be automatically deployed toget
 In case an external PostgreSQL instance will be used then the secret specified in `.Values.global.psql.password.secret` must be created automatically. Also, keep in mind the warning given above, if a regular PostgreSQL user is specified, the `btree` and `trgm` extensions must be enabled beforehand.
 
 !!! info "GitLab Email Sending"
-    NMaaS does not rely on email sending via GitLab, so both the email and smtp sections in the value files can be left with their default values - unconfigured. However, users are free to customize these sections according to their own environments. 
+    nmaas does not rely on email sending via GitLab, so both the email and smtp sections in the value files can be left with their default values - unconfigured. However, users are free to customize these sections according to their own environments. 
 
 Once all configuration parameters have been specified, GitLab can be installed using the following Helm v3 command:
 
@@ -165,9 +165,9 @@ Once GitLab has been deployed, it can be accessed by navigating to `gitlab.<TLD>
 
     Note that after deployment, by default, anyone can register to your newly deployed GitLab instance. This can be configured by logging in as the root GitLab user.
 
-    Users are advised to determine whether public exposure of the GitLab web interface is needed at all. NMaaS' GitLab integration can work even if only public access to the GitLab SSH interface is provided, since repository cloning always relies on SSH as the transport protocol.
+    Users are advised to determine whether public exposure of the GitLab web interface is needed at all. nmaas' GitLab integration can work even if only public access to the GitLab SSH interface is provided, since repository cloning always relies on SSH as the transport protocol.
 
-To create a GitLab API token that can be used by NMaaS, perform the following steps:
+To create a GitLab API token that can be used by nmaas, perform the following steps:
 
 - Login to GitLab using the root account;
 - Click on the avatar image in the top right corner and select `Settings`;
@@ -179,13 +179,13 @@ To create a GitLab API token that can be used by NMaaS, perform the following st
 
 GitLab supports SSH access to any created repositories. If you want to allow your users to clone the repositories where their application configuration is stored, then you will have to alter the GitLab Shell service, and change its type to LoadBalancer, so that a routable IP address will be assigned to it.
 
-### NMaaS Installation
+### nmaas Installation
 
-The source code for the NMaaS Helm chart is publicly available on [nmaas-platform/nmaas-chart](https://gitlab.software.geant.org/nmaas/nmaas-chart). The `README.md` file provides details on all the customizable `value` parameters for a given chart version.
+The source code for the nmaas Helm chart is publicly available on [nmaas-platform/nmaas-chart](https://gitlab.software.geant.org/nmaas/nmaas-chart). The `README.md` file provides details on all the customizable `value` parameters for a given chart version.
 
-The following manual steps must be performed before deploying NMaaS:
+The following manual steps must be performed before deploying nmaas:
 
-- Creating a private/public SSH keypair so that NMaaS Platform can access NMaaS Helm:
+- Creating a private/public SSH keypair so that nmaas Platform can access nmaas Helm:
 
     ```bash
     #!/bin/bash
@@ -227,12 +227,12 @@ helm install -f values.yaml --namespace $NMAAS_NAMESPACE --version 1.0.0 nmaas n
 
 It is recommended to use `nmaas-system` as the namespace where NMaaS and all associated components (PostgreSQL, GitLab) will be deployed.
 
-!!! warning "NMaaS Deployment Time"
-    Please allow at least 10 minutes for NMaaS to be fully deployed, depending on hardware configuration and resource utilization.
+!!! warning "nmaas Deployment Time"
+    Please allow at least 10 minutes for nmaas to be fully deployed, depending on hardware configuration and resource utilization.
 
 #### Verifying the Installation
 
-You can verify that NMaaS has been successfully deployed by navigating to its ingress URL from your browser, logging in as the admin user and selecting `Settings -> Monitoring`. From this location, you can execute checks for all the required components of NMaaS. A fully functional installation should return a successful response for all monitors.
+You can verify that nmaas has been successfully deployed by navigating to its ingress URL from your browser, logging in as the admin user and selecting `Settings -> Monitoring`. From this location, you can execute checks for all the required components of nmaas. A fully functional installation should return a successful response for all monitors.
 
 ## Administrator Information
 
@@ -240,10 +240,10 @@ For more detailed instructions, refer to the [Domain Admin Guide](../guides/doma
 
 ### Creating New Domains
 
-Creating a new customer domain within NMaaS is a two-step process:
+Creating a new customer domain within nmaas is a two-step process:
 
-1. First, the new domain should be added from the NMaaS web interface. The following steps should be performed.
-    - Login to the NMaaS Portal as the administrator user (the default administrator username is `admin` and the desired password is passed as a installation parameter);
+1. First, the new domain should be added from the nmaas web interface. The following steps should be performed.
+    - Login to the nmaas Portal as the administrator user (the default administrator username is `admin` and the desired password is passed as a installation parameter);
     - Navigate to `Settings -> Domains`;
     - Click the `Add` button and enter the required parameters specific to the newly created domain:
         - `Name` - full name of given domain (e.g. `Test Domain`)
@@ -251,7 +251,7 @@ Creating a new customer domain within NMaaS is a two-step process:
         - `Kubernetes namespace` *(Optional)* - a namespace dedicated for this domain to be created in the next step
         - `Kubernetes storage class` *(Optional)* - a specific storage class to be used for persistent volumes created in this domain (typically should be left blank)
         - `Kubernetes ingress class` *(Optional)* - a ingress class supported by the ingress controller deployed for this domain (should be left blank if a single common controller supports all the domains)
-        - `External service domain` - a base URL for accessing all applications deployed in this domain (typically should contain the Codename and the URL of NMaaS itself, e.g. `testdom.nmaas.example.com`)
+        - `External service domain` - a base URL for accessing all applications deployed in this domain (typically should contain the Codename and the URL of nmaas itself, e.g. `testdom.nmaas.example.com`)
         - `DCN deployment type` - by default should be set to `Manual`
         - `DCN status` - by default should be set to `Configured`
         - `Customer networks` *(to be removed)* - list of network prefixes to which applications deployed in this domain should have access (thought this parameter is currently mandatory it is not used for any automated actions so any initial values can be provided) 
@@ -286,8 +286,8 @@ Creating a new customer domain within NMaaS is a two-step process:
 
 ## Additional Documentation
 
-An online user guide is available at [NMaaS User Guide](../guides/user-guide.md) page.
+An online user guide is available at [nmaas User Guide](../guides/user-guide.md) page.
 
-Information about the NMaaS applications deployment and configuration process and the NMaaS portfolio is available on the [NMaaS Tools](../nmaas-applications/general-app-deployment.md) page.
+Information about the nmaas applications deployment and configuration process and the nmaas portfolio is available on the [nmaas Tools](../nmaas-applications/general-app-deployment.md) page.
 
-In case of any questions please contact the NMaaS Team at [nmaas@lists.geant.org](mailto:nmaas@lists.geant.org).
+In case of any questions please contact the nmaas Team at [nmaas@lists.geant.org](mailto:nmaas@lists.geant.org).

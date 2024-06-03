@@ -1,4 +1,4 @@
-# Appendix: Default Credentials for the NMaaS Development Virtual Machine
+# Appendix: Default Credentials for the nmaas Development Virtual Machine
 
 !!! note Virtual Machine Download
 
@@ -13,10 +13,10 @@
 | Port for Telnet Access FreeRTR Instance #1 | 1124                                                   |
 | Virtual Machine Username                   | nmaas                                                  |
 | Virtual Machine Password                   | nmaas                                                  |
-| NMaaS URL                                  | https://nmaas.10.99.99.150.nip.io                      |
-| NMaaS Admin Username                       | admin                                                  |
-| NMaaS Admin Password                       | saamn                                                  |
-| NMaaS API Secret                           | saamn                                                  |
+| nmaas URL                                  | https://nmaas.10.99.99.150.nip.io                      |
+| nmaas Admin Username                       | admin                                                  |
+| nmaas Admin Password                       | saamn                                                  |
+| nmaas API Secret                           | saamn                                                  |
 | GitLab URL                                 | https://gitlab.nmaas.10.99.99.150.nip.io/users/sign_in |
 | GitLab Admin Username                      | root                                                   |
 | GitLab Admin Password                      | nmaasgitlab                                            |

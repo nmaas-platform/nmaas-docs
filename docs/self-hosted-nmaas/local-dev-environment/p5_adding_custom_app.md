@@ -1,12 +1,12 @@
-# Part 5: Adding a Custom Application to the NMaaS Catalog
+# Part 5: Adding a Custom Application to the nmaas Catalog
 
-Any application that has an existing Helm chart can be added to the NMaaS catalog. In this example we will use the popular uptime monitoring application - [UptimeKuma](https://github.com/louislam/uptime-kuma).
+Any application that has an existing Helm chart can be added to the nmaas catalog. In this example we will use the popular uptime monitoring application - [UptimeKuma](https://github.com/louislam/uptime-kuma).
 
-The agenda is to first create a regular Helm chart, without introducing any NMaaS dependencies, thus keeping it reusable across platforms. Then, we will add this Helm chart as a new application to the NMaaS catalog.
+The agenda is to first create a regular Helm chart, without introducing any nmaas dependencies, thus keeping it reusable across platforms. Then, we will add this Helm chart as a new application to the nmaas catalog.
 
 ## Creating a Helm Chart
 
-NMaaS does not mandate any requirements when creating Helm charts. If Helm best practices are followed, then there should not be any problem in integrating the application to the NMaaS catalog.
+nmaas does not mandate any requirements when creating Helm charts. If Helm best practices are followed, then there should not be any problem in integrating the application to the nmaas catalog.
 
 The boilerplate code for a new Helm chart can be generated using the helm create command:
 
@@ -254,19 +254,19 @@ persistence:
   existingClaim: ""
 ```
 
-Note that no NMaaS specific information has been used in the chart. The same chart can be used to create an instance of the uptime-kuma application on any Kubernetes cluster.
+Note that no nmaas specific information has been used in the chart. The same chart can be used to create an instance of the uptime-kuma application on any Kubernetes cluster.
 
 Once the chart has been created, it should be uploaded to a Helm repository. There are many providers which allow hosting of Helm charts free of charge.
 
-!!! note "Submitting an Application to the NMaaS catalog"
+!!! note "Submitting an Application to the nmaas catalog"
 
      For more information, please have a look at our dedicated guide where a step-by-step explanation is provided on using GitHub for hosting and publishing Helm charts - [Adding a New Application](../../nmaas-applications/new-application.md).
 
-## Adding a new Application to the NMaaS Catalog
+## Adding a new Application to the nmaas Catalog
 
-After the chart has been updated to a public Helm repository, the new application wizard can be used to add it to the NMaaS catalog.
+After the chart has been updated to a public Helm repository, the new application wizard can be used to add it to the nmaas catalog.
 
-- Login as the administrator user within the NMaaS portal and choose `Settings -> Applications`.
+- Login as the administrator user within the nmaas portal and choose `Settings -> Applications`.
 - Click on the blue `Add` button in the top-left corner.
 - The new application wizard consists of 7 steps. These steps are:
     - General information
@@ -283,7 +283,7 @@ In the sections that follow we elaborate further on each step.
 
 ### Step 1: General Information
 
-The general information step provides a brief description of the process for adding a new application to the NMaaS catalog.
+The general information step provides a brief description of the process for adding a new application to the nmaas catalog.
 
 Users are required only to tick the `I read the general instructions above checkbox before proceeding to the next step, Basic application information`.
 
@@ -305,7 +305,7 @@ Before uploading any images, please ensure that you have the appropriate copyrig
 
 ### Step 4: Application Descriptions
 
-NMaaS supports localization in multiple languages. By default the Application descriptions steps shows input fields for `Brief description` and `Full description` of the application in English. These fields should be used to provide a brief introduction for new users to the applications, explaining its features, as well as any default username or passwords that have been used and users are expected to change.
+nmaas supports localization in multiple languages. By default the Application descriptions steps shows input fields for `Brief description` and `Full description` of the application in English. These fields should be used to provide a brief introduction for new users to the applications, explaining its features, as well as any default username or passwords that have been used and users are expected to change.
 
 Translation of the content can be provided for additional languages by choosing the `Select optional languages` dropdown in the bottom left corner.
 
@@ -320,7 +320,7 @@ The deployment specification page contains common parameters that should be para
 The basic application information is consisted of the following fields:
 
 - **Chart name** – the name of the Helm chart that has been uploaded to a public repository. All instances created by end-users will actually be Releases of this chart.
-- **Chart version** – the chart version to be used for creating new application instances. Note that NMaaS fully supports application versioning, and more than one application version can be active and available in the NMaaS catalog at a given point in time. Additional versions can be added once the application has been integrated into the catalog.
+- **Chart version** – the chart version to be used for creating new application instances. Note that nmaas fully supports application versioning, and more than one application version can be active and available in the nmaas catalog at a given point in time. Additional versions can be added once the application has been integrated into the catalog.
 - **Helm Chart repository URL address** – the full URL to the Helm repository where the chart is hosted.
 - **Expose web user interface** – whether the application being added to the catalog exposes a web interface that should be reachable by users. In the case of UptimeKuma, this should be ticked.
 - **Allow SSH access** – whether the application being added to the catalog comes with a built-in SSH server through which the users can directly connect to the container where the application is running, e.g., for additional configuration.
@@ -329,7 +329,7 @@ The basic application information is consisted of the following fields:
 
 #### Global Deploy Parameters
 
-The global deploy parameters allow the administrator to pass some globally defined NMaaS variables to the Helm Release during its deployment. For example, many applications allow users to specify outbound SMTP servers which can be used for external email sending. Since NMaaS already has an SMTP component, any deployed application can simply use the configured and tested NMaaS email server. In this case, the system variables `SMTP_HOSTNAME`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD` can be passed to arbitrary Helm value keys.
+The global deploy parameters allow the administrator to pass some globally defined nmaas variables to the Helm Release during its deployment. For example, many applications allow users to specify outbound SMTP servers which can be used for external email sending. Since nmaas already has an SMTP component, any deployed application can simply use the configured and tested nmaas email server. In this case, the system variables `SMTP_HOSTNAME`, `SMTP_PORT`, `SMTP_USERNAME`, `SMTP_PASSWORD` can be passed to arbitrary Helm value keys.
 
 For example, the following configuration would pass the global `SMTP_HOSTNAME` deploy parameter as the `config.smtp.host` chart parameter whenever a new Release is created:
 
@@ -350,11 +350,11 @@ In the case of UptimeKuma, we do not need to configure any global deploy paramet
 
 #### Static Global Deploy Parameters
 
-Static global deploy parameters allow the application administrator to specify custom parameters that should be passed to the chart whenever a new Release is being created. Please note that this is different than `Global Deploy Parameters` which were used to pass an ***internal*** NMaaS parameter to each new Release.
+Static global deploy parameters allow the application administrator to specify custom parameters that should be passed to the chart whenever a new Release is being created. Please note that this is different than `Global Deploy Parameters` which were used to pass an ***internal*** nmaas parameter to each new Release.
 
 In the case of static global deploy parameters, there is no limitation on what can be passed as a value. 
 
-Let's assume that our chart has a values.yaml parameter that enables or disables new user registration, and this parameter is set to enable by default. If we want to disable new user registrations for each new Release and do not want the NMaaS user to have an option to enable registrations, then we can simple disable this behavior using a static global deploy parameter. An example is given below.
+Let's assume that our chart has a values.yaml parameter that enables or disables new user registration, and this parameter is set to enable by default. If we want to disable new user registrations for each new Release and do not want the nmaas user to have an option to enable registrations, then we can simple disable this behavior using a static global deploy parameter. An example is given below.
 
 ![Application Wizard - Static global deploy parameters](./img/39-static-global-deploy-parameters.png)
 
@@ -379,9 +379,9 @@ In the case of UptimeKuma, the following configuration is required:
 
 #### Access Methods
 
-The Access Methods section allows the application administrator to customize the parameters related to external access. As previously, NMaaS parameters are mapped to the appropriate parameters exposed by the Chart's values.yaml file.
+The Access Methods section allows the application administrator to customize the parameters related to external access. As previously, nmaas parameters are mapped to the appropriate parameters exposed by the Chart's values.yaml file.
 
-Most of the parameters are self-explanatory, but some warrant additional attention. For example: the `INGRESS_CLASS` parameter will contain the ingress class that should be used for the newly deployed ingress object once the Helm Release is created. This is an essential information, since NMaaS supports per-domain ingress controllers. Without this information, the wrong ingress controller will most like be used for serving, or the application would not be accessible at all.
+Most of the parameters are self-explanatory, but some warrant additional attention. For example: the `INGRESS_CLASS` parameter will contain the ingress class that should be used for the newly deployed ingress object once the Helm Release is created. This is an essential information, since nmaas supports per-domain ingress controllers. Without this information, the wrong ingress controller will most like be used for serving, or the application would not be accessible at all.
 
 In the case of UptimeKuma, the following configuration is required:
 
@@ -393,7 +393,7 @@ In the Configuration Templates step the administrator can specify which chart pa
 
 ![Application Wizard - Configuration templates](./img/42-configuration-templates.png)
 
-Let's presume that the chart exposes a `global.notifications.certificateExpiry` parameter which customizes whether the application will send certificate expiry notifications for added monitors or not. We can allow the NMaaS users to customize this parameter in the following way.
+Let's presume that the chart exposes a `global.notifications.certificateExpiry` parameter which customizes whether the application will send certificate expiry notifications for added monitors or not. We can allow the nmaas users to customize this parameter in the following way.
 
 - This parameter would best be modeled by a checkbox, so we drag-and-drop the checkbox component from the left hand side toolbar to the main canvas.
 - In the `Display` tab enter basic information about the new form field, such as its label, description, and optional tooltip that will be shown on hover.
@@ -416,6 +416,6 @@ If no additional changes need to be made, the application can be submitted by cl
 
 ### Approving the Application
 
-Before the application will be shown to all users of the NMaaS instance, it must be activated. This can be done from the Applications page by simply expanding the list of application versions, hovering on the cog button, selecting the `Change state` option and setting the state to `Active`.
+Before the application will be shown to all users of the nmaas instance, it must be activated. This can be done from the Applications page by simply expanding the list of application versions, hovering on the cog button, selecting the `Change state` option and setting the state to `Active`.
 
 ![Application Wizard - Activating the application](./img/46-activating-app.png)

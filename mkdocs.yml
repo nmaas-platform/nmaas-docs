@@ -80,7 +80,7 @@ nav:
   - About: about.md
 
 theme:
-  logo: 'img/NMaaS-logo-transparent-white.png'
+  logo: 'img/nmaas-new.jpg'
   custom_dir: docs/overrides
   favicon: 'img/favicon.ico'
   name: 'material'

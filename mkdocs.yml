@@ -7,9 +7,9 @@ nav:
     - Application Manager Guide: 'guides/application-manager-guide.md'
     - Domain Admin Guide: 'guides/domain-admin-guide.md'
     - User Guide: 'guides/user-guide.md'
-  - Managed NMaaS:
+  - Managed nmaas:
     - Introduction: 'managed-nmaas/introduction.md'
-    - NMaaS Playground Instance: 'managed-nmaas/nmaas-playground-instance.md'
+    - nmaas Playground Instance: 'managed-nmaas/nmaas-playground-instance.md'
   - Self-Hosted NMaaS:
     - Introduction: 'self-hosted-nmaas/introduction.md'
     - Installation Guide: 'self-hosted-nmaas/install-guide.md'

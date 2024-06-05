@@ -8,11 +8,9 @@ LibreNMS is an auto-discovering PHP/MySQL/SNMP based network monitoring system w
 
 Configuration parameters to be provided by the user are divided into two tabs: *Base tab* and *Advanced tab*.
 
-<!-- ![NMaaS LibreNMS Application Wizard](img/librenms-screenshot.png) -->
-
 <figure markdown>
-  ![NMaaS LibreNMS Application Wizard](img/librenms-screenshot.png)
-  <figcaption>NMaaS LibreNMS Application Wizard</figcaption>
+  ![nmaas LibreNMS Application Wizard](img/librenms-screenshot.png)
+  <figcaption>nmaas LibreNMS Application Wizard</figcaption>
 </figure>
 
 ### Base Tab

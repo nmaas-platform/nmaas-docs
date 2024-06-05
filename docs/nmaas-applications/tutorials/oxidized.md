@@ -26,7 +26,7 @@ Multiple devices can be configured by using the `Add device` button.
 
 ### Configuration Update
 
-Oxidized allows for updating tools configuration during runtime. User should follow the steps described on the [NMaaS Tool Configuration Process](../general-app-deployment.md#nmaas-tool-configuration-process) page.
+Oxidized allows for updating tools configuration during runtime. User should follow the steps described on the [nmaas Tool Configuration Process](../general-app-deployment.md#nmaas-tool-configuration-process) page.
 
 Inside the repository two files are being created by default, namely `config` and `router.db`, and are placed in the `base` directory.
 

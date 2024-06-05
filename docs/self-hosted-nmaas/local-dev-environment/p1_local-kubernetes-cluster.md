@@ -1,6 +1,6 @@
 # Part 1: Deploying a Local Kubernetes Cluster
 
-This tutorial will assume that NMaaS is installed in a virtual machine that is completely isolated from any production environment. However, the discussed steps are applicable to bare-metal hardware as well, once the correct network strategy has been identified by the system administrator.
+This tutorial will assume that nmaas is installed in a virtual machine that is completely isolated from any production environment. However, the discussed steps are applicable to bare-metal hardware as well, once the correct network strategy has been identified by the system administrator.
 
 ## Virtual Machine Prerequisites 
 
@@ -13,12 +13,12 @@ This tutorial will assume that NMaaS is installed in a virtual machine that is c
 
 Although we will focus on VirtualBox, any virtualization software can be used, depending on the user's preference. Virtualbox 6 is an open-source virtualization software which can be downloaded for free from the [official website](https://www.virtualbox.org/wiki/Downloads).
 
-After installation, additional network configuration needs to be done before a Kubernetes cluster can be set up. The following network configuration creates a completely isolated network environment from the production network. NMaaS will only be accessible from the host operating system where the virtual machine is deployed. 
+After installation, additional network configuration needs to be done before a Kubernetes cluster can be set up. The following network configuration creates a completely isolated network environment from the production network. nmaas will only be accessible from the host operating system where the virtual machine is deployed. 
 
 Our virtual machine will need three network interfaces in total:
 
 - 3 NAT type network adapters (from the same NAT network) which are created manually in Virtualbox (one for Kubernetes, two for freeRTR)
-- **Optional:** 1 Host-only type network adapter which is also created manually in Virtualbox - for accessing the NAT network from the host system. Using this approach, the NMaaS instance deployed inside the virtual machine will be made accessible by adding a custom route on the host operating system towards the NAT network, traversing the host-only interfaces.
+- **Optional:** 1 Host-only type network adapter which is also created manually in Virtualbox - for accessing the NAT network from the host system. Using this approach, the nmaas instance deployed inside the virtual machine will be made accessible by adding a custom route on the host operating system towards the NAT network, traversing the host-only interfaces.
 
 DHCP should not be enabled for the second or third NAT interfaces, but DHCP should be enabled for the first NAT interface. If an optional host interface has been added, DHCP should be enabled on it as well.
 
@@ -34,11 +34,11 @@ Detailed description of the required configuration steps is given below.
 
     ![Configuring the new NAT network in Virtualbox](img/02-nat-network-config.png)
 
-- If the pre-prepared NMaaS VirtualBox image is used, make sure to select the exact same Network CIDR (10.99.99.0/24) since all NMaaS components have already been installed and expect addresses in the 10.99.99.0/24 range.
+- If the pre-prepared nmaas VirtualBox image is used, make sure to select the exact same Network CIDR (10.99.99.0/24) since all nmaas components have already been installed and expect addresses in the 10.99.99.0/24 range.
 
 ### Optional: Creating a New Host-Only Network in Virtualbox
 
-If the NMaaS installation needs to be accessible from other networks, one option is to add a Host-Only interface to the virtual machine that will act as a transit between the outside networks and the internal VirtualBox NAT network configured in the previous step.
+If the nmaas installation needs to be accessible from other networks, one option is to add a Host-Only interface to the virtual machine that will act as a transit between the outside networks and the internal VirtualBox NAT network configured in the previous step.
 
 - Navigate to `File -> Host Network Manager` and click on the green `Create` Button.
 
@@ -52,7 +52,7 @@ If the NMaaS installation needs to be accessible from other networks, one option
 
 Create a regular virtual machine in VirtualBox, using the latest Ubuntu 20.04 ISO. The following parameters need to be altered:
 
-- Allocate sufficient memory to the virtual machine. 12GB is the minimum amount which will support a complete NMaaS installation, along with the possibility for deploying additional applications via the catalog.
+- Allocate sufficient memory to the virtual machine. 12GB is the minimum amount which will support a complete nmaas installation, along with the possibility for deploying additional applications via the catalog.
 - Allocate sufficient number of CPU cores, depending on the performance of your system.
 - In the `Network` configuration tab, add three adapters:
     - Adapter 1: NAT Network (Select the network created [previously](./p1_local-kubernetes-cluster.md#creating-a-new-nat-network-in-virtualbox))
@@ -238,7 +238,7 @@ Once the assigned IP to the LoadBalancer Service has been acquired by executing 
 
 ##### Helm
 
-Helm is a package manager for Kubernetes allowing seamless installation of complex application. NMaaS and all of its dependencies have also been packaged as Helm charts, thus easing their deployment process.
+Helm is a package manager for Kubernetes allowing seamless installation of complex application. nmaas and all of its dependencies have also been packaged as Helm charts, thus easing their deployment process.
 
 ```bash
 microk8s enable helm3
@@ -255,7 +255,7 @@ microk8s helm3 list --all-namespaces
 
 !!! danger "Helm Version"
 
-    Unfortunately, the Helm version installed in this manner, as an official MicroK8s addon is too old. A newer version, if needed, can be installed by following the instructions available below. **Please note that the GitLab chart, which is a dependency of NMaaS requires a newer Helm version than the one installed as a MicroK8s addon.**
+    Unfortunately, the Helm version installed in this manner, as an official MicroK8s addon is too old. A newer version, if needed, can be installed by following the instructions available below. **Please note that the GitLab chart, which is a dependency of nmaas requires a newer Helm version than the one installed as a MicroK8s addon.**
 
 ###### Installing a Newer Helm Version
 
@@ -428,7 +428,7 @@ To install Helm, we need to first download the latest binary for our architectur
 
 ##### Ingress Nginx
 
-The last application that needs to be installed before we can move on to installing the NMaaS components is Ingress Nginx. Since we have already configured Helm, the Ingress Nginx installation is simple.
+The last application that needs to be installed before we can move on to installing the nmaas components is Ingress Nginx. Since we have already configured Helm, the Ingress Nginx installation is simple.
 
 - Customize the values.yaml file according to the local environment:
 
@@ -460,7 +460,7 @@ The last application that needs to be installed before we can move on to install
     helm install -f ingress-values.yaml --namespace nmaas-system nmaas-ingress ingress-nginx/ingress-nginx
     ```
 
-    We have chosen to install `ingress-nginx` in the `nmaas-system` namespace, which will house all the other NMaaS components as well.
+    We have chosen to install `ingress-nginx` in the `nmaas-system` namespace, which will house all the other nmaas components as well.
 
     !!! danger "Note About Helm Errors"
         

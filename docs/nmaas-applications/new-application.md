@@ -1,13 +1,13 @@
 # Adding a new Application
 
-Anyone can submit an application to be included to the NMaaS catalog, thus making it available to all users of the production instance. Each application should have at least one official maintainer who will regularly pull changes from the upstream project and provide updated Docker images and Helm charts. The source code for each Helm chart should be hosted in a separate Git repository.
+Anyone can submit an application to be included to the nmaas catalog, thus making it available to all users of the production instance. Each application should have at least one official maintainer who will regularly pull changes from the upstream project and provide updated Docker images and Helm charts. The source code for each Helm chart should be hosted in a separate Git repository.
 
 A brief guide on how a new chart repository can be set up using the GitHub platform is presented below.
 
 Please note that we do not require the use of GitHub or mandate a specific code hosting service. Any platform that is publicly accessible would suffice.
 
 !!! note "Process Explanation"
-    Applying for an application to be added to the NMaaS catalog is a two-step process. First, the chart needs to be created, and then a brief proposal submitted to the NMaaS team via email. After reviewing the chart, the user who submitted it will be assigned a new role on the production instance of NMaaS (https://nmaas.eu) – <i><u>tool manager</u></i>, which allows uploading of new versions and parameter changes.
+    Applying for an application to be added to the nmaas catalog is a two-step process. First, the chart needs to be created, and then a brief proposal submitted to the nmaas team via email. After reviewing the chart, the user who submitted it will be assigned a new role on the production instance of nmaas (https://nmaas.eu) – <i><u>tool manager</u></i>, which allows uploading of new versions and parameter changes.
 
 ## Step 1: Create a new GitHub Repository
 
@@ -258,7 +258,7 @@ You can find the generated link to your GitHub Pages website by navigating to Se
 
 ## Step 7: Generating a README File with Default Values for the Chart
 
-Each chart submitted for addition to the NMaaS catalog must have a README file containing all of the parameters that can be altered during its deployment. Such a README file can either be created manually or automatically. Helm-docs is one such tool for automated generation of chart descriptions.
+Each chart submitted for addition to the nmaas catalog must have a README file containing all of the parameters that can be altered during its deployment. Such a README file can either be created manually or automatically. Helm-docs is one such tool for automated generation of chart descriptions.
 
 - Download the latest release of helm-docs from the official Releases page: https://github.com/norwoodj/helm-docs/releases
 
@@ -292,7 +292,7 @@ The workflow for releasing a new version of a chart is:
 - creating a new pull request to merge these changes to `master`. At this point the linting task will be executed.
 - merge the changes to the `master` branch. At this point the release task will be executed.
 
-If you want to see your chart added to the NMaaS catalog please contact [nmaas-admin@lists.geant.org](mailto:nmaas-admin@lists.geant.org) with the following information:
+If you want to see your chart added to the nmaas catalog please contact [nmaas-admin@lists.geant.org](mailto:nmaas-admin@lists.geant.org) with the following information:
 
 - URL to the upstream source-code repository of the proposed application
 - Brief description of its features

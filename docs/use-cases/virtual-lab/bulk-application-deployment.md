@@ -1,20 +1,20 @@
 # Bulk Application Deployment
 
-The "bulk application deployment" feature allows NMaaS administrators to deploy many application instances at once. This is useful for scenarios where NMaaS is used simply as an orchestration platform, and the end-users of the deployed applications should not be required to have an NMaaS account. 
+The "bulk application deployment" feature allows nmaas administrators to deploy many application instances at once. This is useful for scenarios where nmaas is used simply as an orchestration platform, and the end-users of the deployed applications should not be required to have an nmaas account. 
 
 ## Bulk Application Deployment in the Context of Virtual Lab
 
-When using NMaaS for the virtual lab use-case, teachers might want to deploy individual application instances for each student taking part in a course, without going over the account provisioning process first. There can be many reasons for taking this approach, such as:
+When using nmaas for the virtual lab use-case, teachers might want to deploy individual application instances for each student taking part in a course, without going over the account provisioning process first. There can be many reasons for taking this approach, such as:
 
-- the NMaaS web UI is deployed in an isolated network without public access
+- the nmaas web UI is deployed in an isolated network without public access
 - the students are not experienced enough with the use of PaaS-like platforms
-- the process defined by the home institution regarding on-boarding of new users to NMaaS is too time consuming
+- the process defined by the home institution regarding on-boarding of new users to nmaas is too time consuming
 
-After bulk deploying the applications, teachers can simply share the connection information with the students, completely abstracting away the use of NMaaS, and hiding any implementational details.
+After bulk deploying the applications, teachers can simply share the connection information with the students, completely abstracting away the use of nmaas, and hiding any implementational details.
 
 ## Using Bulk Application Deployment
 
-The bulk application deployment feature can be accessed by navigating to `Advanced -> Bulk application deployments`. Note that currently this feature is only available to global NMaaS administrators. 
+The bulk application deployment feature can be accessed by navigating to `Advanced -> Bulk application deployments`. Note that currently this feature is only available to global nmaas administrators. 
 
 The overview page shows a history of past bulk application deployments, with options either to see more details about a given deployment, or create a new one.
 

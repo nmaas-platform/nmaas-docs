@@ -4,7 +4,7 @@
 
     These instructions are heavily based on the excellent blog posts and FreeRTR Docs written by [Fréderic Loui](https://twitter.com/FredericLoui) and the RARE team.
 
-If there are existing network elements ready to be monitored by NMaaS applications, then this part can be completely skipped. 
+If there are existing network elements ready to be monitored by nmaas applications, then this part can be completely skipped. 
 
 ## Configuring VirtualBox
 
@@ -163,7 +163,7 @@ The addition of new interfaces can be easily accomplished from the VirtualBox VM
 
     - Adding a default route: `ipv4 route v1 0.0.0.0 0.0.0.0 192.168.1.1`
     - Configuring a static IP: `ipv4 addr 192.168.1.17 255.255.255.0`
-    - The sensor directives need to be left as they are, since they configure the Prometheus Exporter which will be scrapped using an NMaaS hosted Prometheus instance which we will deploy in the next part.
+    - The sensor directives need to be left as they are, since they configure the Prometheus Exporter which will be scrapped using an nmaas hosted Prometheus instance which we will deploy in the next part.
 
 5. As a last step before starting the FreeRTR process, we need to bring up our second interface and disable hardware offloading:
 
@@ -282,4 +282,4 @@ If automatic startup of the virtual devices is desired, a SystemD service unit c
     systemctl enable --now pcap-freertr-r1
     ```
 
-We are now ready to configure monitoring and configuration backup of our virtual router using tools from the NMaaS catalog.
+We are now ready to configure monitoring and configuration backup of our virtual router using tools from the nmaas catalog.

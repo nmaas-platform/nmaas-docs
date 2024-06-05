@@ -1,4 +1,4 @@
-# **nmaas** home
+# **nmaas** Home
 
 nmaas or nmaas Platform is an open-source orchestration software that allows deployment of various containerized applications in a Kubernetes cluster. It is a versatile solution with many possible use-cases, two of which are currently actively supported in the context of the GÉANT project:
 
@@ -15,8 +15,8 @@ nmaas Virtual Lab is a brand new use-case built on top of the nmaas Platform, in
 
 The nmaas team offers access to multiple managed instances, depending on the use-case and overall context:
 
-- [The nmaas Virtual NOC production instance](managed-nmaas/introduction/#the-virtual-noc-managed-instance) available on [https://nmaas.eu](https://nmaas.eu)
-- [The nmaas Virtual Lab pilots instance](managed-nmaas/introduction/#the-virtual-lab-managed-instance) available on [https://vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu).
+- [The nmaas Virtual NOC production instance](managed-nmaas/introduction.md/#the-virtual-noc-managed-instance) available on [https://nmaas.eu](https://nmaas.eu)
+- [The nmaas Virtual Lab pilots instance](managed-nmaas/introduction.md/#the-virtual-lab-managed-instance) available on [https://vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu).
 - [The generic Playground instance](managed-nmaas/nmaas-playground-instance.md) for testing out the overall feature set of nmaas.
 
 ## Self-hosted nmaas

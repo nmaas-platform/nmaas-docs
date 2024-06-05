@@ -3,10 +3,6 @@ site_url: 'https://docs.nmaas.eu'
 nav:
   - Home: index.md
   - What is nmaas?: 'what-is-nmaas.md'
-  - nmaas Guides:
-    - Application Manager Guide: 'guides/application-manager-guide.md'
-    - Domain Admin Guide: 'guides/domain-admin-guide.md'
-    - User Guide: 'guides/user-guide.md'
   - Managed nmaas:
     - Introduction: 'managed-nmaas/introduction.md'
     - nmaas Playground Instance: 'managed-nmaas/nmaas-playground-instance.md'
@@ -66,6 +62,10 @@ nav:
       - ChangeDetection.io: 'nmaas-applications/tutorials/changedetectionio.md'
       - GP4L Orchestrator: 'nmaas-applications/tutorials/gp4l-orchestrator.md'
       - Apache Airflow: 'nmaas-applications/tutorials/apache-airflow.md'
+  - nmaas Guides:
+    - Application Manager Guide: 'guides/application-manager-guide.md'
+    - Domain Admin Guide: 'guides/domain-admin-guide.md'
+    - User Guide: 'guides/user-guide.md'
   - Blog:
     - nmaas-101 - "Hello nmaas!": 'blog/blog1/nmaas-101-1.md'
     - nmaas-101 - "I can help! But... Please could you open these two doors?": 'blog/blog2/nmaas-101-2.md'

@@ -62,7 +62,7 @@ nav:
       - ChangeDetection.io: 'nmaas-applications/tutorials/changedetectionio.md'
       - GP4L Orchestrator: 'nmaas-applications/tutorials/gp4l-orchestrator.md'
       - Apache Airflow: 'nmaas-applications/tutorials/apache-airflow.md'
-  - nmaas Guides:
+  - nmaas Portal Guides:
     - Application Manager Guide: 'guides/application-manager-guide.md'
     - Domain Admin Guide: 'guides/domain-admin-guide.md'
     - User Guide: 'guides/user-guide.md'

@@ -3,6 +3,7 @@ site_url: 'https://docs.nmaas.eu'
 nav:
   - Home: index.md
   - What is nmaas?: 'what-is-nmaas.md'
+  - Get Started: 'get-started.md'
   - Managed nmaas:
     - Introduction: 'managed-nmaas/introduction.md'
     - nmaas Playground Instance: 'managed-nmaas/nmaas-playground-instance.md'

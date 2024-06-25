@@ -459,4 +459,6 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 **Slides (incl. videos):** [https://box.psnc.pl/f/67931bd988/](https://box.psnc.pl/f/67931bd988/?raw=1)
 
+**Video Recording:** [https://tnc24.geant.org/recordings/?session=s505](https://tnc24.geant.org/recordings/?session=s505)
+
 ---

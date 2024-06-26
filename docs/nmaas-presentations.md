@@ -1,4 +1,4 @@
-# NMaaS Presentations
+# nmaas Presentations
 
 ## GN4-2
 
@@ -440,5 +440,25 @@ Presentations given as part of the GÉANT GN5-1 project.
 **Location:** Montpellier, France
 
 **Slides:** [https://box.psnc.pl/f/e3bdc8d26a](https://box.psnc.pl/f/e3bdc8d26a/?raw=1)
+
+---
+
+### TNC 2024
+
+**Event Type:** Presentations
+
+**Presentation Title:** Orchestrated Deployment of Virtual Labs for Education with NMaaS
+
+**Presenter(s):** Lukasz Lopatowski and Vojdan Kjorveziroski
+
+**Event:** TNC 2024
+
+**Date:** 10-14 June 2024
+
+**Location:** Rennes, France
+
+**Slides (incl. videos):** [https://box.psnc.pl/f/67931bd988/](https://box.psnc.pl/f/67931bd988/?raw=1)
+
+**Video Recording:** [https://tnc24.geant.org/recordings/?session=s505](https://tnc24.geant.org/recordings/?session=s505)
 
 ---

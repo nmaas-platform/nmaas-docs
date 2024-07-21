@@ -62,8 +62,7 @@ global:
       enabled: true
       # secretName: <EXISTING_OR_DUMMY_TLS_SECRET_NAME> # can be left empty, self-signed certificates will be generated
     path: /
-    annotations:
-      kubernetes.io/ingress.class: "public"
+    class: "nginx"
   initialRootPassword:
     secret: gitlab-root-password
     key: password
@@ -73,46 +72,43 @@ global:
   time_zone: Europe/Warsaw
   smtp:
     enabled: false
-    address: smtp.mailgun.org
-    port: 2525
+    address: smtp.example.com
+    port: 587
     user_name: ""
     ## doc/installation/secrets.md#smtp-password
     password:
       secret: "my-smtp-secret"
       key: password
     # domain:
-    authentication: "plain"
-    starttls_auto: false
+    authentication: "login"
+    starttls_auto: true
     openssl_verify_mode: "peer"
 ## doc/installation/deployment.md#outgoing-email
 ## Email persona used in email sent by GitLab
   email:
-    from: ''
+    from: 'noreply@example.com'
     display_name: GitLab
-    reply_to: ''
-    subject_suffix: ''
+    reply_to: 'support@example.com'
     smime:
       enabled: false
-      secretName: ""
-      keyName: "tls.key"
-      certName: "tls.crt"
 ```
 
 GitLab requires the deployment of a PostgreSQL instance. The necessary secrets containing the PostgreSQL passwords need to be created, as well as the secret containing the initial root GitLab password:
 
 ```bash
-kubectl create secret generic -n <NAMESPACE> gitlab-postgresql --from-literal=postgresql-password=<POSTGRESQL_USER_PASSWORD> --from-literal=postgresql-postgres-password=<POSTGRESQL_ROOT_PASSWORD>
-kubectl create secret generic -n <NAMESPACE> gitlab-root-password --from-literal=password=<GITLAB_ROOT_PASSWORD>
+export NMAAS_NAMESPACE="nmaas-system"
+kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-postgresql --from-literal=postgresql-password=<POSTGRESQL_USER_PASSWORD> --from-literal=postgresql-postgres-password=<POSTGRESQL_ROOT_PASSWORD>
+kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-root-password --from-literal=password=<GITLAB_ROOT_PASSWORD>
 ```
 
 The root GitLab password will be used for login to the GitLab web interface.
 
-We are ready to add the GitLab Helm repository and install the 4.X version of GitLab:
+We are ready to add the GitLab Helm repository and install the 8.2.x version of GitLab:
 
 ```bash
 helm repo add gitlab https://charts.gitlab.io
 helm repo update
-helm install -f gitlab-values.yaml --namespace nmaas-system nmaas-gitlab --version 4.12.13 gitlab/gitlab
+helm install -f gitlab-values.yaml --namespace nmaas-system nmaas-gitlab --version 8.2.0 gitlab/gitlab
 ```
 
 Once GitLab has been deployed, it should be possible to navigate to the login page using a web browser. After logging in, users are advised to configure the following settings:
@@ -135,81 +131,72 @@ The final step is to install nmaas. nmaas uses SSH communication to connect betw
 
 ```bash
 #!/bin/bash
+export NMAAS_NAMESPACE="nmaas-system"
 tmpdir=$(mktemp -d)
 ssh-keygen -f $tmpdir/key -N ""
   
 # nmaas-helm-key-private should be replaced with {{ .Values.global.helmAccessKeyPrivate }}
-kubectl create secret generic nmaas-helm-key-private -n <NMAAS_NAMESPACE> --from-file=id_rsa=$tmpdir/key
+kubectl create secret generic nmaas-helm-key-private -n $NMAAS_NAMESPACE --from-file=id_rsa=$tmpdir/key
   
 # nmaas-helm-key-private should be replaced with {{ .Values.global.helmAccessKeyPublic }}
-kubectl create secret generic nmaas-helm-key-public -n <NMAAS_NAMESPACE> --from-file=helm=$tmpdir/key.pub
+kubectl create secret generic nmaas-helm-key-public -n $NMAAS_NAMESPACE --from-file=helm=$tmpdir/key.pub
 ```
 
 A few parameters need to be customized in the values.yaml file, to reflect the environment where nmaas is deployed.
 
 - `global.wildcardCertificateName` – the name of the secret containing the TLS certificate to be used to secure the HTTP communication
 - `global.nmaasDomain` – the hostname where nmaas will be accessible.
+- `global.gitlabApiUrl` - the API endpoint for GitLab
+- `global.gitlabApiToken.literal` - the value of the personal access token created previously in GitLab.
 - `platform.properties.adminEmail` – the email address which will receive various notifications such as new user sign-up, deployment errors, new application versions...
 - `platform.adminPassword.literal` – the password used to login as the admin user in the nmaas Portal.
 - `platform.properties.k8s.ingress.certificate.issuerOrWildcardName` – the name of the wilcard certificate to be used for customer deployed applications, or the name of the cert-manager issuer to use if certificates are issued ad-hoc.
 - `platform.properties.k8s.ingress.controller.ingressClass` – the ingress class to be used for deployed applications. Should be set to nginx in the case of K3s and public in the case of MicroK8s.
 - `platform.properties.k8s.ingress.controller.publicIngressClass` – the ingress class to be used for applications where the users have explicitly selected to enable public access (e.g. without a VPN). Since this is a local deployment, the value of this parameter should equal the value set in `platform.properties.k8s.ingress.controller.ingressClass`.
 - `publicServiceDomain`, `externalServiceDomain` – for a local deployment this parameter should be set to the same value as `global.nmaasDomain`.
-- `janitor.properties.gitlabToken.literal` – the value of the personal access token created in GitLab, previously.
 
 ```yaml title="nmaas-values.yaml"
 global:
   acmeIssuer: false
-  wildcardCertificateName: <EXISTING_OR_DUMMY_TLS_SECRET_NAME>
-  ingressName: public
-  nmaasDomain: nmaas.<INGRESS_IP>.nip.io
   demoDeployment: true
- 
+  ingressName: nmaas
+  nmaasDomain: nmaas.<INGRESS_IP>.nip.io
+  wildcardCertificateName: <EXISTING_OR_DUMMY_TLS_SECRET_NAME>
+  gitlabApiUrl: 'http://nmaas-gitlab-webservice-default:8181/api/v4'
+  gitlabApiToken:
+    literal: <GITLAB_ACCESS_TOKEN>
 platform:
-  image:
-    tag: 1.4.4-SNAPSHOT
+  ingress:
+    className: nginx
   adminPassword:
     literal: saamn
   apiSecret:
     literal: saamn
   initscripts:
-    image:
-      tag: 1.4.4
+    enabled: true
   properties:
-    gitlab:
-      host: nmaas-gitlab-webservice-default
+    autoNamespaceCreationForDomains: true
     sso:
       encrpytionSecret:
         literal: saamn
     adminEmail: noreply@nmaas.local
+    appInstanceFailureEmailList: noreply@nmaas.local
     k8s:
       ingress:
         certificate:
           issuerOrWildcardName: <EXISTING_OR_DUMMY_TLS_SECRET_NAME>
         controller:
-          ingressClass: public
-          publicIngresClass: public
+          ingressClass: nmaas
+          publicIngresClass: nmaas
           publicServiceDomain: nmaas.<INGRESS_IP>.nip.io
           externalServiceDomain: nmaas.<INGRESS_IP>.nip.io
- 
-portal:
-  image:
-    tag: 1.4.4-SNAPSHOT
- 
-janitor:
-  image:
-    tag: 1.4.4
-  properties:
-    gitlabToken:
-      literal: <GITLAB_ACCESS_TOKEN>
-    gitlabApiUrl: http://nmaas-gitlab-webservice-default:8181/api/v4
 ```
 
 Once the values.yaml file has been customized, nmaas can be deployed by executing:
 
 ```bash
 helm repo add nmaas https://artifactory.software.geant.org/artifactory/nmaas-helm
-helm install -f nmaas-values.yaml --namespace nmaas-system nmaas --version 1.1.2 nmaas/nmaas
+helm install -f nmaas-values.yaml --namespace nmaas-system nmaas --version 1.2.11 nmaas/nmaas
 ```
 
 nmaas also requires an the stakater autoreloader component, which can simply be installed using the commands below. This component takes care of restarting the affected pods whenever a configuration change is submitted via GitLab.

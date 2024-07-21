@@ -6,8 +6,8 @@ To install nmaas into an existing Kubernetes cluster, the following requirements
 
 - Kubernetes version `>=1.16`
 - Helm v3 support in the Kubernetes cluster
-- Existing ingress controller, preferably with a default TLS certificate set (more information available below) 
-- An integration with an external load-balancer or MetalLB for bare-metal deployments, so that IPs can be assigned to `LoadBalancer` services.
+- Existing ingress controller, preferably with a default TLS certificate set (more information available below)
+- An integration with an external load-balancer or MetalLB for bare-metal deployments, so that IPs can be assigned to `LoadBalancer` services
 
 ## nmaas Components
 
@@ -37,7 +37,7 @@ GitLab can be deployed using the [official Helm chart](https://docs.gitlab.com/r
 
 !!! success "GitLab Version"
 
-    `4.8.2` is the latest version of the GitLab chart that has been tested with the latest version of nmaas. 
+    `8.2.0` is the latest version of the GitLab chart that has been tested with the latest version of nmaas. 
 
 
 Bellow is a snippet of the mandatory parameters that must be specified during GitLab's deployment, so that it will be compatible with nmaas. The complete list of supported value parameters is available in the [official GitLab Helm chart Git repository](https://gitlab.com/gitlab-org/charts/gitlab).
@@ -55,8 +55,6 @@ postgresql:
   postgresqlUsername: gitlab
   install: true
   postgresqlDatabase: gitlabhq_production
-  image:
-    tag: 11.9.0
   usePasswordFile: false
   existingSecret: 'gitlab-postgresql'
   master:
@@ -68,10 +66,11 @@ postgresql:
       postgresql.gitlab/init-revision: "1"
   metrics:
     enabled: true
-    ## Optionally define additional custom metrics
-    ## ref: https://github.com/wrouesnel/postgres_exporter#adding-new-metrics-via-a-config-file
 gitlab-runner:
   install: false
+gitlab-shell:
+  service:
+    type: LoadBalancer
 global:
   edition: ce
   hosts:
@@ -85,54 +84,48 @@ global:
       enabled: true
       secretName: <MY_TLS_SECRET>
     path: /
-    annotations:
-      kubernetes.io/ingress.class: "nginx"
+    class: "nginx"
   initialRootPassword:
     secret: gitlab-root-password
     key: password
-  ## configuration for external postgresql
-  psql:
-  ## the secret must be manually created
-    password: {}
-#        useSecret: true
-#        secret: gitlab-db-password
-#        key: password
-#      host: psql-standalone-postgresql
-#      port: 5432
-#      username: gitlab
-#      database: gitlab
+  ## configuration for external PostgreSQL (set postgresql.enabled to false if used)
+  # psql:
+  #   password:
+  #     secret: gitlab-db-password
+  #     key: password
+  #   host: psql-standalone-postgresql
+  #   port: 5432
+  #   username: gitlab
+  #   database: gitlab
   appConfig:
     defaultProjectFeatures:
       builds: false
   time_zone: UTC
+  ## use an external smtp server for outgoing email (optional)
   smtp:
     enabled: false
-    address: smtp.mailgun.org
-    port: 2525
-    user_name: ""
+    address: smtp.example.com
+    port: 587
+    user_name: "noreply@example.com"
     ## doc/installation/secrets.md#smtp-password
     password:
-      secret: ""
+      secret: "gitlab-smtp-password"
       key: password
     # domain:
-    authentication: "plain"
-    starttls_auto: false
-    openssl_verify_mode: "peer"
+    authentication: "login"
+    starttls_auto: true
+    openssl_verify_mode: "peer" # or none
 ## doc/installation/deployment.md#outgoing-email
 ## Email persona used in email sent by GitLab
   email:
-    from: ''
+    from: 'noreply@example.com'
     display_name: GitLab
-    reply_to: ''
-    subject_suffix: ''
+    reply_to: 'support@example.com'
     smime:
       enabled: false
-      secretName: ""
-      keyName: "tls.key"
-      certName: "tls.crt"
 ```
 
-Note that the secrets whose names are specified in `.Values.postgresql.existingSecret` and `.Values.global.initialRootPassword.secret` must be manually created. These secrets contain the postgresql root and user passwords, as well as the initial root password to be used by GitLab, respectively. Below is a snippet that can be reused to create these secrets:
+Note that the secrets whose names are specified in `.Values.postgresql.existingSecret` (for internal PostgreSQL), `.Values.global.initialRootPassword.secret` , `.Values.global.psql.password.secret` (for external PostgreSQL), and `.Values.global.smtp.password.secret` must be manually created. These secrets contain the PostgreSQL root and user passwords, the initial root password to be used by GitLab, as well as SMTP server credentials. Below is a snippet that can be reused to create such secrets:
 
 ```bash
 export NMAAS_NAMESPACE="nmaas-system"
@@ -152,7 +145,7 @@ Once all configuration parameters have been specified, GitLab can be installed u
 ```bash
 export NMAAS_NAMESPACE="nmaas-system"
 helm repo add gitlab https://charts.gitlab.io
-helm install -f gitlab.yaml --namespace $NMAAS_NAMESPACE <RELEASE_NAME> --version 4.8.2 gitlab/gitlab
+helm install -f gitlab.yaml --namespace $NMAAS_NAMESPACE <RELEASE_NAME> --version 8.2.0 gitlab/gitlab
 ```
 
 !!! warning "GitLab Deployment Duration"
@@ -214,7 +207,7 @@ The following manual steps must be performed before deploying nmaas:
 
     ```bash
     export NMAAS_NAMESPACE="nmaas-system"
-    kubectl create secret generic -n $NMAAS_NAMESPACE nmaas-gitlab-janitor-token --from-literal=secret=<GITLAB_API_TOKEN>
+    kubectl create secret generic -n $NMAAS_NAMESPACE nmaas-gitlab-api-token --from-literal=secret=<GITLAB_API_TOKEN>
     ```
 
 Once the required secrets have been created, nmaas can be deployed using the following command (make sure to deploy in the same namespace as GitLab):
@@ -222,7 +215,7 @@ Once the required secrets have been created, nmaas can be deployed using the fol
 ```bash
 export NMAAS_NAMESPACE="nmaas-system"
 helm repo add nmaas https://artifactory.software.geant.org/artifactory/nmaas-helm
-helm install -f values.yaml --namespace $NMAAS_NAMESPACE --version 1.0.0 nmaas nmaas/nmaas
+helm install -f values.yaml --namespace $NMAAS_NAMESPACE --version 1.2.11 nmaas nmaas/nmaas
 ```
 
 It is recommended to use `nmaas-system` as the namespace where nmaas and all associated components (PostgreSQL, GitLab) will be deployed.

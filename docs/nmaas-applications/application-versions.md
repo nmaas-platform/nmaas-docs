@@ -7,8 +7,13 @@
     |     Oxidized     |          0.29.1          |    3.0.0    |      N/A     |  VNOC  |
     |     LibreNMS     |           1.47           |    2.0.1    |      N/A     |  VNOC  |
     |        NAV       |           4.8.6          |    2.0.1    |      N/A     |  VNOC  |
-    |    Prometheus    |           2.8.0          |    2.0.1    |      N/A     |  VNOC  |
-    |      Grafana     |          9.5.17          |    6.0.4    |      N/A     |  VNOC  |
+    |    Prometheus    |           2.8.0          |    2.0.1    |    2.53.1    |  VNOC  |
+    |      Grafana     |           6.5.2          |    2.0.1    |      N/A     |  VNOC  |
+    |      Grafana     |         7.5.16-1         |    3.0.7    |      N/A     |  VNOC  |
+    |      Grafana     |          8.5.27          |    4.0.25   |      N/A     |  VNOC  |
+    |      Grafana     |           9.5.5          |    6.0.1    |      N/A     |  VNOC  |
+    |      Grafana     |          10.4.5          |    7.0.6    |      N/A     |  VNOC  |
+    |      Grafana     |          11.0.0          |    8.0.0    |    11.1.3    |  VNOC  |
     |      Booked      |           2.8.6          |    3.1.0    |      N/A     |  VNOC  |
     |     Telegraf     |          1.31.0          |    1.8.49   |      N/A     |  VNOC  |
     | GP4L Orchestrator|0.1.20-develop-rev-5a0e11f|    1.0.20   |      N/A     |  VNOC  |
@@ -23,6 +28,7 @@
     |Central Management|           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
     |   WebDAV Server  |           1.0.0          |    1.0.0    |      N/A     |  VNOC  |
     |      NetBox      |           3.7.2          |    6.2.0    |      N/A     |  VNOC  |
+    |      Zabbix      |           6.0.8          |    2.0.3    |      N/A     |  VNOC  |
     |      Zabbix      |           7.0.0          |    4.0.0    |      N/A     |  VNOC  |
     |   Healthchecks   |       3.4.20240701       |    1.1.16   |      N/A     |  VNOC  |
     |      Adminer     |           4.8.1          |    3.0.0    |      N/A     |  VNOC  |
@@ -48,7 +54,8 @@
     |     Oxidized     |    0.28.0    |    2.0.1    |      N/A     |  VLAB  |
     |     LibreNMS     |     1.47     |    2.0.1    |      N/A     |  VLAB  |
     |        NAV       |     4.8.6    |    2.0.1    |      N/A     |  VLAB  |
-    |    Prometheus    |     2.8.0    |    2.0.1    |      N/A     |  VLAB  |
+    |    Prometheus    |     2.8.0    |    2.0.1    |    2.53.1    |  VLAB  |
+    |      Grafana     |     6.5.2    |    2.0.1    |      N/A     |  VLAB  |
     |      Grafana     |     7.2.0    |    2.0.1    |      N/A     |  VLAB  |
     |      Bastion     |     18.04    |    2.1.0    |      N/A     |  VLAB  |
     |      MaDDash     |     4.3.4    |    2.2.4    |      N/A     |  VLAB  |
@@ -63,12 +70,11 @@
     |Central Management|     4.3.4    |    2.2.0    |      N/A     |  VLAB  |
     |   WebDAV Server  |     1.0.0    |    1.0.0    |      N/A     |  VLAB  |
     |      NetBox      |     3.5.2    |    6.0.0    |      N/A     |  VLAB  |
-    |      Zabbix      |    5.0.20    |    1.0.0    |      N/A     |  VLAB  |
     |   Healthchecks   |    2.10.2    |    1.0.13   |      N/A     |  VLAB  |
-    |       CTFd       |     3.5.1    |    1.0.1    |      N/A     |  VLAB  |
-    |  OWASP JuiceShop |    14.5.1    |    1.0.0    |      N/A     |  VLAB  |
+    |       CTFd       |     3.5.1    |    1.0.1    |     3.7.3    |  VLAB  |
+    |  OWASP JuiceShop |    14.5.1    |    1.0.0    |    17.0.0    |  VLAB  |
     |      Adminer     |     4.8.1    |    3.0.0    |      N/A     |  VLAB  |
-    |      MailDev     |     2.0.5    |    1.0.0    |      N/A     |  VLAB  |
+    |      MailDev     |     2.0.5    |    1.0.0    |     2.1.0    |  VLAB  |
     | changedetectionio|    0.45.2    |    1.0.3    |      N/A     |  VLAB  |
     |       Znuny      |    6.0.39    |    1.0.0    |      N/A     |  VLAB  |
     |     UnrealIRC    |    3.2.8-1   |    1.0.0    |      N/A     |  VLAB  |
@@ -92,7 +98,7 @@
     |    Oxidized    |   0.25.1  |    1.0.1    |      N/A     |Playground|
     |    LibreNMS    |    1.47   |    1.1.1    |      N/A     |Playground|
     |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
-    |   Prometheus   |   2.8.0   |    1.0.0    |      N/A     |Playground|
+    |   Prometheus   |   2.8.0   |    1.0.0    |    2.53.1    |Playground|
     |     Grafana    |   6.5.2   |    1.1.1    |      N/A     |Playground|
     |     Booked     |   2.7.7   |    1.0.0    |      N/A     |Playground|
     |  SPA Inventory |    2.1    |    0.1.5    |      N/A     |Playground|

@@ -67,7 +67,7 @@
     |      Icinga2     |    2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |     InfluxDB     |    1.7.10    |    4.4.8    |      N/A     |  VLAB  |
     |    Inventory3    |    0.15.0    |    1.0.0    |      N/A     |  VLAB  |
-    |      Jenkins     |    2.452.3   |    5.5.1    |      N/A     |  VLAB  |
+    |      Jenkins     |   2.452.3-1  |    5.5.3    |      N/A     |  VLAB  |
     |   LibreBooking   |     2.8.5    |    3.0.0    |      N/A     |  VLAB  |
     |     LibreNMS     |     1.47     |    2.0.1    |      N/A     |  VLAB  |
     |      MaDDash     |     4.3.4    |    2.2.4    |      N/A     |  VLAB  |

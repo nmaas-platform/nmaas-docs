@@ -5,7 +5,7 @@
     |       Name       |        App Version       |Chart Version|Latest Version|Instance|
     |------------------|--------------------------|-------------|--------------|--------|
     |      Adminer     |           4.8.1          |    3.0.0    |     4.8.1    |  VNOC  |
-    |  Apache Airflow  |           2.7.1          |1.11.0-beta.1|      N/A     |  VNOC  |
+    |  Apache Airflow  |           2.7.1          |1.11.0-beta.1|     2.9.3    |  VNOC  |
     |      Bastion     |         20.04-v2         |    2.1.4    |      N/A     |  VNOC  |
     |      Booked      |           2.8.6          |    3.1.0    |      N/A     |  VNOC  |
     |Central Management|           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
@@ -24,7 +24,7 @@
     |   Healthchecks   |       3.4.20240701       |    1.1.16   |      N/A     |  VNOC  |
     |      Icinga2     |          2.11.4          |    2.0.1    |      N/A     |  VNOC  |
     |     InfluxDB     |          1.7.10          |    4.4.8    |      N/A     |  VNOC  |
-    |      Jenkins     |          2.277.3         |    4.0.0    |      N/A     |  VNOC  |
+    |      Jenkins     |          2.277.3         |    4.0.0    |    2.452.3   |  VNOC  |
     |     LibreNMS     |           1.47           |    2.0.1    |      N/A     |  VNOC  |
     |       Maat       |           1.0.1          |    2.0.2    |      N/A     |  VNOC  |
     |      MaDDash     |           4.3.4          |    2.2.4    |      N/A     |  VNOC  |
@@ -52,7 +52,7 @@
     |       Name       |  App Version |Chart Version|Latest Version|Instance|
     |------------------|--------------|-------------|--------------|--------|
     |      Adminer     |     4.8.1    |    3.0.0    |     4.8.1    |  VLAB  |
-    |  Apache Airflow  |2.7.1-original|   21.11.0   |      N/A     |  VLAB  |
+    |  Apache Airflow  |2.7.1-original|   21.11.0   |     2.9.3    |  VLAB  |
     |      Bastion     |     18.04    |    2.1.0    |      N/A     |  VLAB  |
     |Central Management|     4.3.4    |    2.2.0    |      N/A     |  VLAB  |
     | changedetectionio|    0.45.2    |    1.0.3    |    0.46.2    |  VLAB  |
@@ -67,7 +67,7 @@
     |      Icinga2     |    2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |     InfluxDB     |    1.7.10    |    4.4.8    |      N/A     |  VLAB  |
     |    Inventory3    |    0.15.0    |    1.0.0    |      N/A     |  VLAB  |
-    |      Jenkins     |   2.452.3-1  |    5.5.3    |      N/A     |  VLAB  |
+    |      Jenkins     |   2.452.3-1  |    5.5.3    |    2.452.3   |  VLAB  |
     |   LibreBooking   |     2.8.5    |    3.0.0    |      N/A     |  VLAB  |
     |     LibreNMS     |     1.47     |    2.0.1    |      N/A     |  VLAB  |
     |      MaDDash     |     4.3.4    |    2.2.4    |      N/A     |  VLAB  |
@@ -101,7 +101,7 @@
     |     Grafana    |   6.5.2   |    1.1.1    |      N/A     |Playground|
     |     Icinga2    |   2.11.4  |    2.0.1    |      N/A     |Playground|
     |    InfluxDB    |   1.7.10  |    4.4.8    |      N/A     |Playground|
-    |     Jenkins    |   latest  |    1.21.3   |      N/A     |Playground|
+    |     Jenkins    |   latest  |    1.21.3   |    2.452.3   |Playground|
     |    LibreNMS    |    1.47   |    1.1.1    |      N/A     |Playground|
     |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
     |    Oxidized    |   0.25.1  |    1.0.1    |    0.30.1    |Playground|

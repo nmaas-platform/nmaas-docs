@@ -24,7 +24,7 @@
     |   Healthchecks   |       3.4.20240701       |    1.1.16   |      N/A     |  VNOC  |
     |      Icinga2     |          2.11.4          |    2.0.1    |      N/A     |  VNOC  |
     |     InfluxDB     |          1.7.10          |    4.4.8    |    1.8.10    |  VNOC  |
-    |      Jenkins     |          2.277.3         |    4.0.0    |    2.452.3   |  VNOC  |
+    |      Jenkins     |          2.277.3         |    4.0.0    |    2.462.1   |  VNOC  |
     |     LibreNMS     |           1.47           |    2.0.1    |      N/A     |  VNOC  |
     |       Maat       |           1.0.1          |    2.0.2    |      N/A     |  VNOC  |
     |      MaDDash     |           4.3.4          |    2.2.4    |      N/A     |  VNOC  |
@@ -67,7 +67,7 @@
     |      Icinga2     |    2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |     InfluxDB     |    1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |    Inventory3    |    0.15.0    |    1.0.0    |      N/A     |  VLAB  |
-    |      Jenkins     |   2.452.3-1  |    5.5.3    |    2.452.3   |  VLAB  |
+    |      Jenkins     |   2.452.3-1  |    5.5.3    |    2.462.1   |  VLAB  |
     |   LibreBooking   |     2.8.5    |    3.0.0    |      N/A     |  VLAB  |
     |     LibreNMS     |     1.47     |    2.0.1    |      N/A     |  VLAB  |
     |      MaDDash     |     4.3.4    |    2.2.4    |      N/A     |  VLAB  |
@@ -101,7 +101,7 @@
     |     Grafana    |   6.5.2   |    1.1.1    |     6.7.6    |Playground|
     |     Icinga2    |   2.11.4  |    2.0.1    |      N/A     |Playground|
     |    InfluxDB    |   1.7.10  |    4.4.8    |    1.8.10    |Playground|
-    |     Jenkins    |   latest  |    1.21.3   |    2.452.3   |Playground|
+    |     Jenkins    |   latest  |    1.21.3   |    2.462.1   |Playground|
     |    LibreNMS    |    1.47   |    1.1.1    |      N/A     |Playground|
     |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
     |    Oxidized    |   0.25.1  |    1.0.1    |    0.30.1    |Playground|

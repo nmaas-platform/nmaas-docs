@@ -31,7 +31,7 @@
     |        NAV       |           4.8.6          |    2.0.1    |      N/A     |  VNOC  |
     |      NetBox      |           3.7.2          |    6.2.0    |     4.0.8    |  VNOC  |
     |     Oxidized     |          0.29.1          |    3.0.0    |    0.30.1    |  VNOC  |
-    |    Prometheus    |           2.8.0          |    2.0.1    |    2.53.1    |  VNOC  |
+    |    Prometheus    |           2.8.0          |    2.0.1    |    2.54.0    |  VNOC  |
     |pSConfig Web Admin|           4.3.2          |    2.1.0    |      N/A     |  VNOC  |
     |    Routinator    |           0.8.3          |    2.0.0    |    0.14.0    |  VNOC  |
     |        SPA       |          1.3.3-1         |    1.0.4    |      N/A     |  VNOC  |
@@ -77,7 +77,7 @@
     |  OWASP JuiceShop |    14.5.1    |    1.0.0    |    17.0.0    |  VLAB  |
     |     Oxidized     |    0.28.0    |    2.0.1    |    0.30.1    |  VLAB  |
     |    PostgreSQL    |    14.3.0    |    11.5.0   |      N/A     |  VLAB  |
-    |    Prometheus    |     2.8.0    |    2.0.1    |    2.53.1    |  VLAB  |
+    |    Prometheus    |     2.8.0    |    2.0.1    |    2.54.0    |  VLAB  |
     |pSConfig Web Admin|     4.2.4    |    2.1.0    |      N/A     |  VLAB  |
     |    Routinator    |     0.8.3    |    2.0.0    |    0.14.0    |  VLAB  |
     |        SPA       |     1.3.3    |    1.0.0    |      N/A     |  VLAB  |
@@ -105,7 +105,7 @@
     |    LibreNMS    |    1.47   |    1.1.1    |      N/A     |Playground|
     |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
     |    Oxidized    |   0.25.1  |    1.0.1    |    0.30.1    |Playground|
-    |   Prometheus   |   2.8.0   |    1.0.0    |    2.53.1    |Playground|
+    |   Prometheus   |   2.8.0   |    1.0.0    |    2.54.0    |Playground|
     |   Routinator   |   0.8.3   |    2.0.0    |    0.14.0    |Playground|
     |  SPA Inventory |    2.1    |    0.1.5    |      N/A     |Playground|
     |     Synapse    |   1.44.0  |    3.0.3    |    1.98.0    |Playground|

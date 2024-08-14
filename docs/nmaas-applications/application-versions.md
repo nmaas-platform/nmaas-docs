@@ -29,7 +29,7 @@
     |       Maat       |           1.0.1          |    2.0.2    |        N/A        |  VNOC  |
     |      MaDDash     |           4.3.4          |    2.2.4    |        N/A        |  VNOC  |
     |        NAV       |           4.8.6          |    2.0.1    |        N/A        |  VNOC  |
-    |      NetBox      |           3.7.2          |    6.2.0    |       4.0.8       |  VNOC  |
+    |      NetBox      |           3.7.2          |    6.2.0    |       4.0.9       |  VNOC  |
     |     Oxidized     |          0.29.1          |    3.0.0    |       0.30.1      |  VNOC  |
     |    Prometheus    |           2.8.0          |    2.0.1    |2.54.0+dedupelabels|  VNOC  |
     |pSConfig Web Admin|           4.3.2          |    2.1.0    |        N/A        |  VNOC  |
@@ -74,7 +74,7 @@
     |      MailDev     |     2.0.5    |    1.0.0    |       2.1.0       |  VLAB  |
     |      Moodle      |     4.4.1    |    23.0.3   |        N/A        |  VLAB  |
     |        NAV       |     4.8.6    |    2.0.1    |        N/A        |  VLAB  |
-    |      NetBox      |     3.5.2    |    6.0.0    |       4.0.8       |  VLAB  |
+    |      NetBox      |     3.5.2    |    6.0.0    |       4.0.9       |  VLAB  |
     |  OWASP JuiceShop |    14.5.1    |    1.0.0    |       17.0.0      |  VLAB  |
     |     Oxidized     |    0.28.0    |    2.0.1    |       0.30.1      |  VLAB  |
     |    PostgreSQL    |    14.3.0    |    11.5.0   |        N/A        |  VLAB  |

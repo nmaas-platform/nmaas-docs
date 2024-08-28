@@ -19,8 +19,8 @@
     |      Grafana     |         7.5.16-1         |    3.0.7    |    7.5.17    |  VNOC  |
     |      Grafana     |          8.5.27          |    4.0.25   |    8.5.27    |  VNOC  |
     |      Grafana     |           9.5.5          |    6.0.1    |    9.5.21    |  VNOC  |
-    |      Grafana     |          10.4.5          |    7.0.6    |    10.4.8    |  VNOC  |
-    |      Grafana     |          11.0.0          |    8.0.0    |    11.2.0    |  VNOC  |
+    |      Grafana     |          10.4.8          |    7.0.7    |    10.4.8    |  VNOC  |
+    |      Grafana     |          11.2.0          |    8.0.6    |    11.2.0    |  VNOC  |
     |   Healthchecks   |       3.4.20240701       |    1.1.16   |     3.5.2    |  VNOC  |
     |      Icinga2     |          2.11.4          |    2.0.1    |      N/A     |  VNOC  |
     |     InfluxDB     |          1.7.10          |    4.4.8    |    1.8.10    |  VNOC  |
@@ -67,7 +67,7 @@
     |           Icinga2          |    2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |    1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |         Inventory3         |    0.15.0    |    1.0.0    |      N/A     |  VLAB  |
-    |           Jenkins          |   2.452.3-1  |    5.5.3    |    2.462.1   |  VLAB  |
+    |           Jenkins          |   2.462.1-1  |    5.5.12   |    2.462.1   |  VLAB  |
     |        LibreBooking        |     2.8.5    |    3.0.0    |      N/A     |  VLAB  |
     |          LibreNMS          |     1.47     |    2.0.1    |      N/A     |  VLAB  |
     |           MaDDash          |     4.3.4    |    2.2.4    |      N/A     |  VLAB  |

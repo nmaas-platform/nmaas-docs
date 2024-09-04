@@ -87,6 +87,7 @@
     |          UnrealIRC         |    3.2.8-1   |    1.0.0    |      N/A     |  VLAB  |
     |         Uptime Kuma        |    1.10.2    |    1.0.0    |    1.23.13   |  VLAB  |
     |      Victoria Metrics      |    1.46.0    |    2.0.1    |      N/A     |  VLAB  |
+    |       VS Code Server       |    4.92.2    |    3.23.0   |      N/A     |  VLAB  |
     |        WebDAV Server       |     1.0.0    |    1.0.0    |      N/A     |  VLAB  |
     |           WiFiMon          |     1.4.0    |    2.0.1    |      N/A     |  VLAB  |
     |            Znuny           |    6.0.39    |    1.0.0    |      N/A     |  VLAB  |

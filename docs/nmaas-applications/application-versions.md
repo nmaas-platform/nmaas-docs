@@ -75,7 +75,7 @@
     |           Moodle           |     4.4.1    |    23.0.3   |     4.4.3    |  VLAB  |
     |             NAV            |     4.8.6    |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     3.5.2    |    6.0.0    |     4.1.0    |  VLAB  |
-    |       OWASP JuiceShop      |    14.5.1    |    1.0.0    |    17.0.0    |  VLAB  |
+    |       OWASP JuiceShop      |    14.5.1    |    1.0.0    |    17.1.1    |  VLAB  |
     |          Oxidized          |    0.28.0    |    2.0.1    |    0.30.1    |  VLAB  |
     |         PostgreSQL         |    14.3.0    |    11.5.0   |      N/A     |  VLAB  |
     |         Prometheus         |     2.8.0    |    2.0.1    |    2.54.1    |  VLAB  |

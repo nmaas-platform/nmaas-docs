@@ -7,6 +7,8 @@ nav:
   - Managed nmaas:
     - Introduction: 'managed-nmaas/introduction.md'
     - nmaas Playground Instance: 'managed-nmaas/nmaas-playground-instance.md'
+    - User Information: 
+      - 'New VNOC Infrastructure': 'managed-nmaas/user-information/new-vnoc-infrastructure.md'
   - Self-Hosted nmaas:
     - Introduction: 'self-hosted-nmaas/introduction.md'
     - Installation Guide: 'self-hosted-nmaas/install-guide.md'

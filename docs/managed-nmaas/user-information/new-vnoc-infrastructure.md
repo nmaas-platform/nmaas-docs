@@ -1,8 +1,8 @@
-# New nmaas VNOC Infrastructure
+# New nmaas vNOC Infrastructure
 
 ## Benefits of the new Infrastructure
 
-After 5 years of service, the managed nmaas VNOC instance available at [nmaas.eu](https://nmaas.eu) is scheduled to be migrated to a completely new infrastructure, bringing with it many benefits and improvements. The user-facing changes that existing users should be aware of are:
+After 5 years of service, the managed nmaas vNOC instance available at [nmaas.eu](https://nmaas.eu) is scheduled to be migrated to a completely new infrastructure, bringing with it many benefits and improvements. The user-facing changes that existing users should be aware of are:
 
 - improved disk I/O speeds - allowing the monitoring of even more customer devices using I/O sensitive applications such as Zabbix, InfluxDB, and Prometheus.
 - dual-stack networking - nmaas now supports IPv6 in addition to IPv4 both for client access to the deployed applications as well as for the site-to-site connection towards the customer devices.
@@ -36,8 +36,8 @@ No, once a given domain is migrated to the new infrastructure it is expected tha
 
 No, the URLs will remain the same. E.g., if there is a Prometheus instance with the URL `prom.example.nmaas.eu` in the existing nmaas infrastructure, it will keep the same name once migrated to the new infrastructure. The IP address that it is resolved to though will change. 
 
-### Where can I access the new nmaas VNOC instance?
+### Where can I access the new nmaas vNOC instance?
 
-The nmaas VNOC instance hosted on the new infrastructure will be accessible at [vnoc.nmaas.eu](https://vnoc.nmaas.eu). As part of the migration process, users will receive a personalized email when they will need to start using the [vnoc.nmaas.eu](https://vnoc.nmaas.eu) endpoint. Until that time, all activity is done via [https://nmaas.eu](https://nmaas.eu).
+The nmaas vNOC instance hosted on the new infrastructure will be accessible at [vnoc.nmaas.eu](https://vnoc.nmaas.eu). As part of the migration process, users will receive a personalized email when they will need to start using the [vnoc.nmaas.eu](https://vnoc.nmaas.eu) endpoint. Until that time, all activity is done via [https://nmaas.eu](https://nmaas.eu).
 
-Hosting the VNOC instance using the `vnoc` subdomain also goes hand-in-hand with the new nmaas branding strategy centered around the different use-cases - [VNOC](../../use-cases/virtual-noc/vnoc-introduction.md) and [VLAB](../../use-cases/virtual-lab/vlab-introduction.md).
+Hosting the vNOC instance using the `vnoc` subdomain also goes hand-in-hand with the new nmaas branding strategy centered around the different use-cases - [vNOC](../../use-cases/virtual-noc/vnoc-introduction.md) and [vLAB](../../use-cases/virtual-lab/vlab-introduction.md).

@@ -20,7 +20,7 @@ All administrators of an existing domain on [nmaas.eu](https://nmaas.eu) will be
 
 One of the fundamental goals of the migration is to preserve all user data. In cases where some applications need to be upgraded before being migrated (due to them being outdated and no longer supported), the nmaas team will get in touch with the respective domain administrators as soon as possible.
 
-### Can I continue to use the existing site-to-site VPN tunnels
+### Can I continue to use the existing site-to-site VPN tunnels?
 
 If there is already established site-to-site connectivity for a given domain, the same VPN technology can be used (e.g. Wireguard or OpenVPN), but the tunnels themselves will need to be reestablished with new information, since the subnets have changed on the nmaas side.
 
@@ -28,7 +28,7 @@ If there is already established site-to-site connectivity for a given domain, th
 
 Yes, when reestablishing the site-to-site VPN connection, it is very likely that routing changes will need to be performed on the customer side as well, since the nmaas subnets will have changed.
 
-### Can I continue to use the existing client-access VPN tunnels
+### Can I continue to use the existing client-access VPN tunnels?
 
 No, once a given domain is migrated to the new infrastructure it is expected that all users that require access to the deployed applications within it will be using eduVPN as the client access VPN technology. Since eduVPN can use both Wireguard and OpenVPN behind the scenes, compatibility with all major computing platforms is guaranteed. The nmaas team has made this decision in order to simplify administration aspects, since the management of different overlapping client-access VPN solutions adds additional burden and is time-consuming.
 

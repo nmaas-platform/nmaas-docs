@@ -11,7 +11,7 @@ The fastest way to get access to nmaas for evaluation and testing purposes is to
 If your are part of an organization affiliated with your national NREN (National Research and Education Network), then you can get access to the managed nmaas instances hosted at [https://nmaas.eu](https://nmaas.eu) for the [vNOC use-case](use-cases/virtual-noc/vnoc-introduction.md) or at [https://vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu) for the [Virtual Lab use-case](use-cases/virtual-lab/vlab-introduction.md). Please use the contact forms on the respective instances to request access. Should the access request be approved, a dedicated domain will be set up on the appropriate instance. 
 
 - [Request a domain on the vNOC instance for monitoring and management of network equipment](https://nmaas.eu/about?type=NEW_DOMAIN_REQUEST)
-- [Request a domain on the Virtual Lab instance for organizing small scale hands-on exercises](https://vlab.dev.nmaas.eu/about?type=NEW_DOMAIN_REQUEST)
+- [Request a dedicated environment on the Virtual Lab instance for organizing small scale hands-on exercises](https://vlab.dev.nmaas.eu/about?type=VLAB_REQUEST)
 
 ## Self-Hosting nmaas
 

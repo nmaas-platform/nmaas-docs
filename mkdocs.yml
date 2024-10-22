@@ -12,14 +12,11 @@ nav:
   - Self-Hosted nmaas:
     - Introduction: 'self-hosted-nmaas/introduction.md'
     - Installation Guide: 'self-hosted-nmaas/install-guide.md'
-    - Local Development Environment:
-      - Introduction: 'self-hosted-nmaas/local-dev-environment/introduction.md'
-      - Part 1 - Deploying a Local Kubernetes Cluster: 'self-hosted-nmaas/local-dev-environment/p1_local-kubernetes-cluster.md'
-      - Part 2 - Installing nmaas: 'self-hosted-nmaas/local-dev-environment/p2_installing-nmaas.md'
-      - Part 3 - Demo Network Environment: 'self-hosted-nmaas/local-dev-environment/p3_demo-network-environment.md'
-      - Part 4 - Monitoring the Demo Network Environment: 'self-hosted-nmaas/local-dev-environment/p4_monitoring-demo-network-environment.md'
-      - Part 5 - Adding a Custom Application: 'self-hosted-nmaas/local-dev-environment/p5_adding_custom_app.md'
-      - Appendix - Credentials: 'self-hosted-nmaas/local-dev-environment/appendix.md'
+  - nmaas Portal Guides:
+    - Introduction: 'guides/introduction.md'
+    - Application Manager Guide: 'guides/application-manager-guide.md'
+    - Domain Admin Guide: 'guides/domain-admin-guide.md'
+    - User Guide: 'guides/user-guide.md'
   - nmaas Use-Cases:
     - Virtual NOC:
       - Introduction: 'use-cases/virtual-noc/vnoc-introduction.md'
@@ -28,6 +25,18 @@ nav:
       - Bulk Domain Deployment: 'use-cases/virtual-lab/bulk-domain-deployment.md'
       - Domain Groups: 'use-cases/virtual-lab/domain-groups.md'
       - Bulk Application Deployment: 'use-cases/virtual-lab/bulk-application-deployment.md'
+  - nmaas Tutorials and Workshops:
+    - Introduction: 'tutorials-workshops/introduction.md'
+    - JRES 2022:
+      - Introduction: 'tutorials-workshops/jres2022/introduction.md'
+      - Part 1 - Deploying a Local Kubernetes Cluster: 'tutorials-workshops/jres2022/p1_local-kubernetes-cluster.md'
+      - Part 2 - Installing nmaas: 'tutorials-workshops/jres2022/p2_installing-nmaas.md'
+      - Part 3 - Demo Network Environment: 'tutorials-workshops/jres2022/p3_demo-network-environment.md'
+      - Part 4 - Monitoring the Demo Network Environment: 'tutorials-workshops/jres2022/p4_monitoring-demo-network-environment.md'
+      - Part 5 - Adding a Custom Application: 'tutorials-workshops/jres2022/p5_adding_custom_app.md'
+      - Appendix - Credentials: 'tutorials-workshops/jres2022/appendix.md'
+    - JRES 2024:
+      - Introduction: 'tutorials-workshops/jres2024/introduction.md'
   - nmaas Applications:
     - General Application Deployment: 'nmaas-applications/general-app-deployment.md'
     - List of Supported Applications: 'nmaas-applications/application-list.md'
@@ -65,11 +74,6 @@ nav:
       - ChangeDetection.io: 'nmaas-applications/tutorials/changedetectionio.md'
       - GP4L Orchestrator: 'nmaas-applications/tutorials/gp4l-orchestrator.md'
       - Apache Airflow: 'nmaas-applications/tutorials/apache-airflow.md'
-  - nmaas Portal Guides:
-    - Introduction: 'guides/introduction.md'
-    - Application Manager Guide: 'guides/application-manager-guide.md'
-    - Domain Admin Guide: 'guides/domain-admin-guide.md'
-    - User Guide: 'guides/user-guide.md'
   - Blog:
     - nmaas-101 - "Hello nmaas!": 'blog/blog1/nmaas-101-1.md'
     - nmaas-101 - "I can help! But... Please could you open these two doors?": 'blog/blog2/nmaas-101-2.md'

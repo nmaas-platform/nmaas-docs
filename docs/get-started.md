@@ -19,7 +19,7 @@ As open-source software, nmaas can be installed in any existing or new Kubernete
 
 ### Evaluating nmaas Using a Single-Node Local Cluster
 
-Interested users can test nmaas locally in a VM by deploying a single-node MicroK8s or K3s Kubernetes cluster. A detailed step-by-step guide for deploying a single node Kubernetes cluster, as well as deploying nmaas and its dependencies is available on the [Local Development Environment page](self-hosted-nmaas/local-dev-environment/introduction.md).
+Interested users can test nmaas locally in a VM by deploying a single-node MicroK8s or K3s Kubernetes cluster. A detailed step-by-step guide for deploying a single node Kubernetes cluster, as well as deploying nmaas and its dependencies is available as part of the tutorials given at the [JRES 2022](tutorials-workshops/jres2022/introduction.md) and [JRES 2024](tutorials-workshops/jres2024/introduction.md) conferences.
 
 ### Deploying nmaas on a Multi-Node Production Kubernetes Cluster
 

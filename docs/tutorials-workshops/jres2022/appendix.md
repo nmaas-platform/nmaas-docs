@@ -30,6 +30,6 @@
 | Oxidized Test Instance URL                 | https://oxidized-demo.nmaas.10.99.99.150.nip.io        |
 | Oxidized Test Instance HTTP Username       | nmaas_demo                                             |
 | Oxidized Test Instance HTTP Password       | nmaasdemo                                              |
-| UptimeKuma Test Instance URL              | https://uptimekuma-demo.nmaas.10.99.99.150.nip.io      |
-| UptimeKuma Test Instance Username         | nmaas_demo                                             |
-| UptimeKuma Test Instance Password         | nmaasdemo!                                             |
+| UptimeKuma Test Instance URL               | https://uptimekuma-demo.nmaas.10.99.99.150.nip.io      |
+| UptimeKuma Test Instance Username          | nmaas_demo                                             |
+| UptimeKuma Test Instance Password          | nmaasdemo!                                             |

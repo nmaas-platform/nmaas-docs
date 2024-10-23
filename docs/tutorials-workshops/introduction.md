@@ -7,5 +7,6 @@ This section contains the materials for tutorials and workshops where the nmaas 
 
 To fully leverage the content in these materials, access to an nmaas test instance is advised. This can be accomplish by:
 
-- deploying a local Kubernetes cluster and then deploying an nmaas test instance in it.
+- deploying a [local Kubernetes cluster](./deploying-local-kubernetes-cluster.md) and then [deploying an nmaas test instance in it](./deploying-nmaas-test-instance.md).
 - registering for an account on the [managed vNOC Playground instance](https://nmaas.geant.org) or the [managed vLAB instance](https://vlab.dev.nmaas.eu), depending on the use-case that you are interested in.
+- downloading the ready-made all-in-one nmaas test VM image. Please note that this VM image does not have a `LoadBalancer` implementation installed and it is up to the user to install and configure one. More details about the all-in-one nmaas image are available on the [corresponding docs page](./all-in-one-vm-image.md).

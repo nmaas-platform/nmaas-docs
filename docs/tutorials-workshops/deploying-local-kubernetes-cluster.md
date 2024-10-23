@@ -1,4 +1,4 @@
-# Part 1: Deploying a Local Kubernetes Cluster
+# Deploying a Local Kubernetes Cluster
 
 This tutorial will assume that nmaas is installed in a virtual machine that is completely isolated from any production environment. However, the discussed steps are applicable to bare-metal hardware as well, once the correct network strategy has been identified by the system administrator.
 
@@ -28,9 +28,7 @@ Create a regular virtual machine in VirtualBox, using the latest Debian 12 or Ub
 
 ### Configuring the Guest Operating System
 
- Once the guest operating system has been installed, it will automatically acquire an IP address from the local DHCP server.
-
- //TODO: Explain hosts access method.
+Once the guest operating system has been installed, it will automatically acquire an IP address from the local DHCP server.
 
 ## Kubernetes Cluster Setup
 
@@ -145,11 +143,11 @@ To install Helm, we need to first download the latest binary for our architectur
 
 !!! Warning
 
-For helm to function properly, the `kube.config` file must be copied (or linked) to `~/.kube/config`. This can be done like so:
+    For helm to function properly, the `kube.config` file must be copied (or linked) to `~/.kube/config`. This can be done like so:
 
-```bash
-ln -s /etc/rancher/k3s/k3s.yaml ~/.kube/config
-```
+    ```bash
+    ln -s /etc/rancher/k3s/k3s.yaml ~/.kube/config
+    ```
 
 ##### Ingress Nginx
 

@@ -1,8 +1,8 @@
-# Part 2: Installing nmaas
+# Installing nmaas
 
 Once a working Kubernetes cluster has been deployed, we are ready to proceed to the next step - installing nmaas.
 
-All the necessary components will be installed in the `nmaas-system` namespace that was created in the [previous part](p1_local-kubernetes-cluster.md).
+All the necessary components will be installed in the `nmaas-system` namespace that was created in the [previous part](./deploying-local-kubernetes-cluster.md).
 
 ## GitLab Installation
 

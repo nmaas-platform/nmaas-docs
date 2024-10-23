@@ -27,16 +27,21 @@ nav:
       - Bulk Application Deployment: 'use-cases/virtual-lab/bulk-application-deployment.md'
   - nmaas Tutorials and Workshops:
     - Introduction: 'tutorials-workshops/introduction.md'
+    - Deploying a Local Kubernetes Cluster: 'tutorials-workshops/deploying-local-kubernetes-cluster.md'
+    - Deploying an nmaas Test Instance: 'tutorials-workshops/deploying-nmaas-test-instance.md'
     - JRES 2022:
       - Introduction: 'tutorials-workshops/jres2022/introduction.md'
-      - Part 1 - Deploying a Local Kubernetes Cluster: 'tutorials-workshops/jres2022/p1_local-kubernetes-cluster.md'
-      - Part 2 - Installing nmaas: 'tutorials-workshops/jres2022/p2_installing-nmaas.md'
-      - Part 3 - Demo Network Environment: 'tutorials-workshops/jres2022/p3_demo-network-environment.md'
-      - Part 4 - Monitoring the Demo Network Environment: 'tutorials-workshops/jres2022/p4_monitoring-demo-network-environment.md'
-      - Part 5 - Adding a Custom Application: 'tutorials-workshops/jres2022/p5_adding_custom_app.md'
+      - Demo Network Environment: 'tutorials-workshops/jres2022/p3_demo-network-environment.md'
+      - Monitoring the Demo Network Environment: 'tutorials-workshops/jres2022/p4_monitoring-demo-network-environment.md'
+      - Adding a Custom Application: 'tutorials-workshops/jres2022/p5_adding_custom_app.md'
       - Appendix - Credentials: 'tutorials-workshops/jres2022/appendix.md'
     - JRES 2024:
       - Introduction: 'tutorials-workshops/jres2024/introduction.md'
+      - Bulk Domain Deployment: 'tutorials-workshops/jres2024/p1_vlab-bulk-registration.md'
+      - Domain Groups Customization: 'tutorials-workshops/jres2024/p2_domain-groups-customization.md'
+      - Deploying the First Application: 'tutorials-workshops/jres2024/p3_deploying-the-first-app.md'
+      - Complete Web Development vLAB Scenario: 'tutorials-workshops/jres2024/p4_complete-web-dev-vlab-scenario.md'
+      - Bulk Application Deployment: 'tutorials-workshops/jres2024/p5_vlab-bulk-app-deployment.md'
   - nmaas Applications:
     - General Application Deployment: 'nmaas-applications/general-app-deployment.md'
     - List of Supported Applications: 'nmaas-applications/application-list.md'

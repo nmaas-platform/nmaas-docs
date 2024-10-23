@@ -2,7 +2,7 @@
 
 !!! note Virtual Machine Download
 
-    The virtual machine image can be downloaded from [https://drive1.demo.renater.fr/index.php/s/rp2awZ6sMnNFQwK](https://drive1.demo.renater.fr/index.php/s/rp2awZ6sMnNFQwK). Users are advised to follow [part 1](p1_local-kubernetes-cluster.md) in order to set up the required VirtualBox NAT network before importing.
+    The virtual machine image can be downloaded from [https://drive1.demo.renater.fr/index.php/s/rp2awZ6sMnNFQwK](https://drive1.demo.renater.fr/index.php/s/rp2awZ6sMnNFQwK). Users are advised to follow [part 1](../deploying-local-kubernetes-cluster.md) in order to set up the required VirtualBox NAT network before importing.
 
 | Name                                       | Value                                                  |
 |--------------------------------------------|--------------------------------------------------------|

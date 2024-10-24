@@ -5,7 +5,7 @@
 
 While being logged in as a virtual lab participant, we can start with the deployment of the necessary applications to realize the desired web development scenario. The first application that will be deployed is PostgreSQL. 
 
-The initial step that needs to be performed is "subscribing" to the application by clicking the "Subscribe" button. This will add the application to the `Subscriptions` page so that it is easily accessible later. After the application has been subscribed to, the `Deploy` button will become available. Clicking on it will open the first step of the application deployment wizard, asking for the `Instance name` and the `Version` of the application to be deployed. nmaas supports multiple versions of the same application and all enabled versions are at the users' disposal for deployment.  Optionally, during the deployment, the `Enable automatic upgrades` option can also be selected, but this option is only seen as useful for longer lived instances, where during the lifetime of the application's deployment new versions might become available. 
+The initial step that needs to be performed is "subscribing" to the application by clicking the `Subscribe` button. This will add the application to the `Subscriptions` page so that it is easily accessible later. After the application has been subscribed to, the `Deploy` button will become available. Clicking on it will open the first step of the application deployment wizard, asking for the `Instance name` and the `Version` of the application to be deployed. nmaas supports multiple versions of the same application and all enabled versions are at the users' disposal for deployment.  Optionally, during the deployment, the `Enable automatic upgrades` option can also be selected, but this option is only seen as useful for longer lived instances, where during the lifetime of the application's deployment new versions might become available. 
 
 ![PostgreSQL Deployment - Step 01](img/06-postgresql-step1.png)
 
@@ -38,7 +38,7 @@ The [vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu) instance requires the use of 
 
 The eduVPN client applications can be downloaded from the [official eduVPN website](https://www.eduvpn.org/client-apps/). Once installed, the user can search for their institution in the list of available eduVPN servers. If the eduVPN installation is not indexed, the user can connect by entering the fully qualified domain name of the eduVPN server, such as `eduvpn.nmaas.eu`.
 
-The user will be redirected to the eduVPN login page from where they can choose to authenticate either with a local account or an institutional account.
+The user will be redirected to the eduVPN login page where they can choose to authenticate either with a local account or an institutional account.
 
 ![eduVPN Login](img/11-eduvpn-login.png)
 
@@ -50,7 +50,7 @@ Once connected to the VPN, all deployed resources on nmaas should be remotely ac
 
 Using the access details for the previously deployed PostgreSQL instance, we can connect to it using Adminer, so that we can test out if it works as expected. 
 
-The demo application that we will be building this tutorial is a random quotes application. The end goal is to expose an API which will provide one random quote per day. This random quote will be retrieved from the database when the first user visits the application in the day and it will then be cached in the Valkey server that is yet to be deployed. All subsequent API calls made within the same day will retrieve the same quote, cached in Valkey.
+The demo application that we will be building in this tutorial is a random quotes application. The end goal is to expose an API which will provide one random quote per day. This random quote will be retrieved from the database when the first user visits the application in the day and it will then be cached in the Valkey server that is yet to be deployed. All subsequent API calls made within the same day will retrieve the same quote, cached in Valkey.
 
 The model for this application is very simple, so we will use a single table. We can create this table immediately from the Adminer web interface by choosing the `SQL command` button and providing the corresponding definition:
 

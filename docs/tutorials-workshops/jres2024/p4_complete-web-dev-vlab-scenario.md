@@ -1,5 +1,8 @@
 # Complete Remote Web Development Virtual Lab Scenario
 
+!!! info
+    This part assumes that the [Deploying the First Application](./p4_complete-web-dev-vlab-scenario.md) part has already been completed as it uses resources which have been described and deployed in it.
+
 In this part of the tutorial, we will continue with the deployment of the additional applications required to complete the remote web development virtual lab scenario.
 
 ## Deploying MailDev

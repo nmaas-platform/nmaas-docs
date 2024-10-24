@@ -4,6 +4,10 @@
 
     These instructions are heavily based on the excellent blog posts and FreeRTR Docs written by [Fréderic Loui](https://twitter.com/FredericLoui) and the RARE team.
 
+!!! note "Clarification"
+
+    This guide assumes that a local deployment of nmaas already exists and that either you are working in the provided nmaas test VM or you have followed the [instructions to deploy nmaas from scratch locally](../deploying-local-kubernetes-cluster.md).
+
 If there are existing network elements ready to be monitored by nmaas applications, then this part can be completely skipped. 
 
 ## Configuring VirtualBox
@@ -12,7 +16,7 @@ This tutorial will assume that VirtualBox is used, even though the discussion sh
 
 The virtual machine where FreeRTR will be installed requires at least two network interfaces, one primary and one additional for each FreeRTR process. 
 
-The addition of new interfaces can be easily accomplished from the VirtualBox VM settings screen, using the Network section. Each new interface is represented by a new tab, named `Adapter 1`, `Adapter 2`... For the new interface, choose `Attached to: NAT` and **make sure to select the NAT network created in [Part 1](./p1_local-kubernetes-cluster.md#creating-a-new-nat-network-in-virtualbox) and that Promiscuous Mode is set to Allow All** in the Advanced section. If Promiscuous Mode is not enabled, unfortunately pcapInt will not be able to work properly.
+The addition of new interfaces can be easily accomplished from the VirtualBox VM settings screen, using the Network section. Each new interface is represented by a new tab, named `Adapter 1`, `Adapter 2`... For the new interface, choose `Attached to: NAT` and **make sure to select a `NAT network` created and that Promiscuous Mode is set to Allow All** in the Advanced section. If Promiscuous Mode is not enabled, unfortunately pcapInt will not be able to work properly.
 
 ## Installing FreeRTR
 

@@ -6,7 +6,7 @@
 
 !!! note "Clarification"
 
-    This guides assumes that a local deployment of nmaas already exists and that either you are working in the provided nmaas test VM or you have followed the [instructions to deploy nmaas from scratch locally](../deploying-local-kubernetes-cluster.md).
+    This guide assumes that a local deployment of nmaas already exists and that either you are working in the provided nmaas test VM or you have followed the [instructions to deploy nmaas from scratch locally](../deploying-local-kubernetes-cluster.md).
 
 If there are existing network elements ready to be monitored by nmaas applications, then this part can be completely skipped. 
 

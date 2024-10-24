@@ -9,7 +9,7 @@ The initial step that needs to be performed is "subscribing" to the application 
 
 ![PostgreSQL Deployment - Step 01](img/06-postgresql-step1.png)
 
-The next user action that is required is to fill out the configuration parameters for the given application. Each application can specify configuration parameters that need to be customizable by the end-users during deployment. In the case of the PostgreSQL application these are:
+The next user action that is required is to fill out the configuration parameters for the given application. Each application can specify configuration parameters that need to be customized by the end-users during deployment. In the case of the PostgreSQL application these are:
 
 - Root password
 - Database user
@@ -32,7 +32,7 @@ As Adminer is a web based application, it does expose a web interface that can b
 
 ![Adminer Deployment - Accessing the Application](img/10-adminer-deployment-app-access.png)
 
-In the managed nmaas instances, to remotely access the deployed applications the users need a client-access VPN connection. If you are using a self-hosted nmaas instance deployed in the premise or in a commercial cloud, the access strategy might differ. In the text that follows we will focus on the required steps to access the deployed instances when using the managed nmaas service.
+In the managed nmaas instances, to remotely access the deployed applications the users need a client-access VPN connection. If you are using a self-hosted nmaas instance deployed on premise or in a commercial cloud, the access strategy might differ. In the text that follows we will focus on the required steps to access the deployed instances when using the managed nmaas service.
 
 The [vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu) instance requires the use of [eduVPN](https://www.eduvpn.org/) to access the applications remotely. eduVPN is an open-source VPN server and client developed within the GÉANT project. It uses the well-known and robust OpenVPN and Wireguard protocols behind the scenes. The major advantage that eduVPN provides is that users can login using SSO and generate new VPN profiles for all their devices, without a need for administrator intervention. 
 

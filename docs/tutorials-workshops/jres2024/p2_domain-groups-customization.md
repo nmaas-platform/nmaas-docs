@@ -5,7 +5,7 @@
 
 If a virtual lab participant logs in to their newly created account before the virtual lab manager has had a chance to customize the list of whitelisted applications, they will simply see a blank catalog. No applications will be available for deployment, thus preventing any unexpected and unauthorized use of the available computing resources. Of course, if the participant has already been a member of a different domain group that contains whitelisted applications, these will still be available for deployment.
 
-It is recommended that as soon as new domain groups are created, either manually or automatically using the bulk domain deployment feature, they are customized so that applications are whitelisted. Virtual lab managers can do this by using the cog wheel button in the top navigation menu and choosing the domain groups option. Once the details for a given domain group are opened, applications can be whitelisted using the `Application properties` section.
+It is recommended that as soon as new domain groups are created, either manually or automatically using the bulk domain deployment feature, they are customized so that applications are whitelisted. Virtual lab managers can do this by using the cog wheel symbol in the top navigation menu and choosing the domain groups option. Once the details for a given domain group are opened, applications can be whitelisted using the `Application properties` section.
 
 ![Whitelisting Applications in a Domain Group](img/04-domain-group-app-whitelist.png)
 

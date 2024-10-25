@@ -15,7 +15,7 @@ To follow the tutorial access to an nmaas instance is required. This can be acco
 - By [deploying a local Kubernetes cluster](../deploying-local-kubernetes-cluster.md) and then [deploying an nmaas test instance](../deploying-nmaas-test-instance.md) in it.
 - By requesting access to the [vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu) managed instance via the [contact form](https://vlab.dev.nmaas.eu/about?type=VLAB_REQUEST).
 - By deploying nmaas on existing infrastructure, spanning multiple nodes (production grade setup).
-- By downloading the ready-made all-in-one nmaas test VM image. Please note that this VM image does not have a `LoadBalancer` implementation installed and it is up to the user to install and configure one. More details about the all-in-one nmaas image are available on the [corresponding docs page](./all-in-one-vm-image.md).
+- By downloading the ready-made all-in-one nmaas test VM image. Please note that this VM image does not have a `LoadBalancer` implementation installed and it is up to the user to install and configure one. More details about the all-in-one nmaas image are available on the [corresponding docs page](../all-in-one-vm-image.md).
 
 !!! note 
     All JRES 2024 participants attending the tutorial live during the conference will get access to the [vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu) instance. More information and instructions will be provided on-site.

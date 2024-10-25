@@ -32,6 +32,8 @@ As Adminer is a web based application, it does expose a web interface that can b
 
 ![Adminer Deployment - Accessing the Application](img/10-adminer-deployment-app-access.png)
 
+## Connecting to eduVPN
+
 In the managed nmaas instances, to remotely access the deployed applications the users need a client-access VPN connection. If you are using a self-hosted nmaas instance deployed on premise or in a commercial cloud, the access strategy might differ. In the text that follows we will focus on the required steps to access the deployed instances when using the managed nmaas service.
 
 The [vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu) instance requires the use of [eduVPN](https://www.eduvpn.org/) to access the applications remotely. eduVPN is an open-source VPN server and client developed within the GÉANT project. It uses the well-known and robust OpenVPN and Wireguard protocols behind the scenes. The major advantage that eduVPN provides is that users can login using SSO and generate new VPN profiles for all their devices, without a need for administrator intervention. 
@@ -49,6 +51,8 @@ Once connected to the VPN, all deployed resources on nmaas should be remotely ac
 ![Adminer Access](img/12-adminer-access.png)
 
 Using the access details for the previously deployed PostgreSQL instance, we can connect to it using Adminer, so that we can test out if it works as expected. 
+
+## Testing the PostgreSQL Instance
 
 The demo application that we will be building in this tutorial is a random quotes application. The end goal is to expose an API which will provide one random quote per day. This random quote will be retrieved from the database when the first user visits the application in the day and it will then be cached in the Valkey server that is yet to be deployed. All subsequent API calls made within the same day will retrieve the same quote, cached in Valkey.
 

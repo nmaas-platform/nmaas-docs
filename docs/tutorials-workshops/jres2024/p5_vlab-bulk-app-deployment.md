@@ -2,7 +2,7 @@
 
 The last vLAB feature to be showcased using this tutorial is the bulk application deployment feature. This allows a virtual lab manager to deploy all required application instances in advance, on the behalf of the virtual lab participants. Utilizing this approach, the use of nmaas as the underlying platform for organizing and hosting the virtual lab exercises can be completely transparent to the virtual lab participants. 
 
-To perform a new bulk application deployment, the virtual lab manager needs to choose the option `Advanced -> Bulk Application Deployments` from the right part of the top navigation menu.
+To perform a new bulk application deployment, the virtual lab manager needs to choose the option `Advanced -> Bulk application deployments` from the right part of the top navigation menu.
 
 The new bulk application deployment wizard starts off with a dropdown selector for the application to be deployed - in this case MailDev.
 

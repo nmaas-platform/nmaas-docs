@@ -462,3 +462,21 @@ Presentations given as part of the GÉANT GN5-1 project.
 **Video Recording:** [https://tnc24.geant.org/recordings/?session=s505](https://tnc24.geant.org/recordings/?session=s505)
 
 ---
+
+### THECUC 2024
+
+**Event Type:** Presentations
+
+**Presentation Title:** Cloud Network Monitoring and Virtual Lab with NMaaS
+
+**Presenter(s):** Mirko Lovričević
+
+**Event:** THECUC 2024
+
+**Event Homepage:** [https://thecuc.carnet.hr/2024/](https://thecuc.carnet.hr/2024/)
+
+**Date:** 6-8 November 2024
+
+**Location:** Pula, Croatia
+
+**Slides (in Croatian):** [https://box.psnc.pl/f/e4d7dbe05b/](https://box.psnc.pl/f/e4d7dbe05b/?raw=1)

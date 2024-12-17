@@ -480,3 +480,27 @@ Presentations given as part of the GÉANT GN5-1 project.
 **Location:** Pula, Croatia
 
 **Slides (in Croatian):** [https://box.psnc.pl/f/e4d7dbe05b/](https://box.psnc.pl/f/e4d7dbe05b/?raw=1)
+
+---
+
+### JRES 2024
+
+**Event Type:** Presentations
+
+**Presentation Title:** Orchestrated Deployment of Virtual Labs for Education
+
+**Presenter(s):** Vojdan Kjorveziroski and Lukasz Lopatowski
+
+**Event:** JRES 2024
+
+**Event Homepage:** [https://2024.jres.org/](https://2024.jres.org/)
+
+**Date:** 10-13 December 2024
+
+**Location:** Rennes, France
+
+**Slides (with embedded videos):** [https://conf-ng.jres.org/2024/document_revision_1378.html?download](https://conf-ng.jres.org/2024/document_revision_1378.html?download)
+
+**Slides (supporting material):** [https://conf-ng.jres.org/2024/document_revision_1564.html?download](https://conf-ng.jres.org/2024/document_revision_1564.html?download)
+
+**Video Recording:** [https://jres.ubicast.tv/permalink/v1268c642ec90z6vny0c/iframe/](https://jres.ubicast.tv/permalink/v1268c642ec90z6vny0c/iframe/)

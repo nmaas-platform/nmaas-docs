@@ -483,6 +483,26 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 ---
 
+### GRNOG 17
+
+**Event Type:** Presentations
+
+**Presentation Title:** Virtual Network Operation Center (NOC) with nmaas
+
+**Presenter(s):** Karol Beyrowski
+
+**Event:** GRNOG 17
+
+**Event Homepage:** [https://grnog.indico.nogalliance.org/event/10/timetable/](https://grnog.indico.nogalliance.org/event/10/timetable/)
+
+**Date:** 6 December 2024
+
+**Location:** Athens, Greece
+
+**Slides:** [https://box.psnc.pl/f/c5cdad8ba8/?raw=1](https://box.psnc.pl/f/c5cdad8ba8/?raw=1)
+
+---
+
 ### JRES 2024
 
 **Event Type:** Presentations

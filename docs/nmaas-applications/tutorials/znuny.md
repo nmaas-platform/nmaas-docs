@@ -9,7 +9,7 @@ Znuny/Znuny LTS is a fork of the ((OTRS)) Community Edition, one of the most fle
 
 Configuration parameters to be provided by the user are explained in the subsections below.
 
-![Znuny configuration wizard](./img/znuny-screenshot-01.png)
+![Znuny configuration wizard](./img/znuny-screenshot-01.png){ width="400"}
 
 ### Base tab
 

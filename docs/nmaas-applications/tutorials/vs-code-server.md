@@ -8,7 +8,7 @@ Code on any device with a consistent development environment, using cloud server
 
 Configuration parameters to be provided by the user are explained in the subsections below.
 
-![VS Code server configuration wizard](./img/vs-code-server-screenshot-01.png)
+![VS Code server configuration wizard](./img/vs-code-server-screenshot-01.png){width="400"}
 
 ### Base tab
 

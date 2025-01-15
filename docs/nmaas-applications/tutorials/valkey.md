@@ -9,7 +9,7 @@ Valkey is a high-performance data structure server that primarily serves key/val
 
 Configuration parameters to be provided by the user are explained in the subsections below.
 
-![Valkey configuration wizard](./img/valkey-screenshot-01.png)
+![Valkey configuration wizard](./img/valkey-screenshot-01.png){ width="400"}
 
 ### Base tab
 

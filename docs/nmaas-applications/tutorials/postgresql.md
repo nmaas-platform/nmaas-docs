@@ -8,7 +8,7 @@ PostgreSQL (Postgres) is an open source object-relational database known for rel
 
 Configuration parameters to be provided by the user are explained in the subsections below.
 
-![Postgresql configuration wizard](./img/postgresql-screenshot-01.png)
+![Postgresql configuration wizard](./img/postgresql-screenshot-01.png){ width="400"}
 
 ### Base tab
 

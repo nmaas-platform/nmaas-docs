@@ -8,7 +8,7 @@ Moodle is the World's Open Source Learning Platform, widely used around the worl
 
 Configuration parameters to be provided by the user are explained in the subsections below.
 
-![Moodle configuration wizard](./img/moodle-screenshot-01.png)
+![Moodle configuration wizard](./img/moodle-screenshot-01.png){ width="400"}
 
 ### Base tab
 

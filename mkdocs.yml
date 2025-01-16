@@ -86,6 +86,9 @@ nav:
     - nmaas-101 - "My name is Oxidized and I'm a nifty configuration management tool": 'blog/blog3/nmaas-101-3.md'
     - nmaas-101 - "Prometheus" : 'blog/blog4/nmaas-101-4.md'
   - Release Notes:
+    - '1.6.5': 'release-notes/1.6.5.md'
+    - '1.6.4': 'release-notes/1.6.4.md'
+    - '1.6.3': 'release-notes/1.6.3.md'
     - '1.6.2': 'release-notes/1.6.2.md'
     - '1.6.1': 'release-notes/1.6.1.md'
     - '1.6.0': 'release-notes/1.6.0.md' 

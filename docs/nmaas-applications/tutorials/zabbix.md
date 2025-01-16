@@ -7,3 +7,9 @@ Zabbix is a mature and effortless enterprise-class open source monitoring soluti
 The Zabbix application included in the nmaas catalog uses TimescaleDB for better performance.
 
 After deployment, use the default `Admin/zabbix` credentials to login.
+
+## Configuration Wizard
+
+Configuration parameters to be provided by the user are explained in the subsections below.
+
+![Zabbix configuration wizard](./img/zabbix-screenshot-01.png){ width="400"}

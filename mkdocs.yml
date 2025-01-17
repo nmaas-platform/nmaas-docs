@@ -125,6 +125,8 @@ theme:
 
 extra_css:
   - 'css/extra.css'
+extra_javascript:
+  - 'css/extra.js'
 
 copyright: >
   <a href="#__consent">Change cookie settings</a>

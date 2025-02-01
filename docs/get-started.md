@@ -1,3 +1,6 @@
+---
+description: Get started with nmaas by either using one of the managed instances or deploying your own self-hosted instance
+---
 # Get Started
 
 There are multiple options to get started with using nmaas, depending on the requirements and desired use-case. 

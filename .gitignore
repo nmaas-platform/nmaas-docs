@@ -8,3 +8,4 @@ old-raw/
 venv/
 *:Zone.Identifier
 /.idea/
+.cache/

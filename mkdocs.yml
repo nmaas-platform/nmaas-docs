@@ -2,6 +2,8 @@ site_name: nmaas Documentation
 site_url: 'https://docs.nmaas.eu'
 nav:
   - Home: index.md
+  - Blog:
+    - blog/index.md
   - What is nmaas?: 'what-is-nmaas.md'
   - Get Started: 'get-started.md'
   - Managed nmaas:
@@ -91,12 +93,11 @@ nav:
       - WebDAV: 'nmaas-applications/tutorials/webdav.md'
       - Zabbix: 'nmaas-applications/tutorials/zabbix.md'
       - Znuny: 'nmaas-applications/tutorials/znuny.md'
-
-  - Blog:
-    - nmaas-101 - "Hello nmaas!": 'blog/blog1/nmaas-101-1.md'
-    - nmaas-101 - "I can help! But... Please could you open these two doors?": 'blog/blog2/nmaas-101-2.md'
-    - nmaas-101 - "My name is Oxidized and I'm a nifty configuration management tool": 'blog/blog3/nmaas-101-3.md'
-    - nmaas-101 - "Prometheus" : 'blog/blog4/nmaas-101-4.md'
+  # - Blog:
+  #   - nmaas-101 - "Hello nmaas!": 'blog/blog1/nmaas-101-1.md'
+  #   - nmaas-101 - "I can help! But... Please could you open these two doors?": 'blog/blog2/nmaas-101-2.md'
+  #   - nmaas-101 - "My name is Oxidized and I'm a nifty configuration management tool": 'blog/blog3/nmaas-101-3.md'
+  #   - nmaas-101 - "Prometheus" : 'blog/blog4/nmaas-101-4.md'
   - Release Notes:
     - '1.6.5': 'release-notes/1.6.5.md'
     - '1.6.4': 'release-notes/1.6.4.md'
@@ -187,3 +188,5 @@ plugins:
   - search
   - glightbox
   - mkdocs-video
+  - blog
+  - social

@@ -192,6 +192,8 @@ plugins:
   - social
   - rss:
       match_path: blog/posts/.*
+      use_material_social_cards: false
+      abstract_chars_count: -1
       date_from_meta:
         as_creation: date
       categories:

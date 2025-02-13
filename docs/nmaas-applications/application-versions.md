@@ -9,7 +9,7 @@
     |      Bastion     |         20.04-v2         |    2.1.4    |      N/A     |  VNOC  |
     |      Booked      |           2.8.6          |    3.1.0    |      N/A     |  VNOC  |
     |Central Management|           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
-    | changedetectionio|          0.45.25         |    1.0.12   |    0.47.03   |  VNOC  |
+    | changedetectionio|          0.49.1          |    1.0.27   |    0.47.03   |  VNOC  |
     |      CodiMD      |           2.5.3          |    1.0.5    |     2.5.4    |  VNOC  |
     | Debian repository|            1.0           |    2.0.1    |      N/A     |  VNOC  |
     |     ELK Stack    |           7.7.1          |    1.8.0    |      N/A     |  VNOC  |
@@ -20,16 +20,16 @@
     |      Grafana     |          8.5.27          |    4.0.25   |    8.5.27    |  VNOC  |
     |      Grafana     |           9.5.5          |    6.0.1    |    9.5.21    |  VNOC  |
     |      Grafana     |          10.4.8          |    7.0.7    |    10.4.9    |  VNOC  |
-    |      Grafana     |          11.2.0          |    8.0.6    |    11.3.0    |  VNOC  |
-    |   Healthchecks   |       3.4.20240701       |    1.1.16   |      3.7     |  VNOC  |
-    |      Icinga2     |          2.11.4          |    2.0.1    |      N/A     |  VNOC  |
+    |      Grafana     |          11.5.1          |    8.0.9    |    11.3.0    |  VNOC  |
+    |   Healthchecks   |       3.9.20251230       |    1.1.37   |      3.7     |  VNOC  |
+    |      Icinga2     |          2.13.1          |    2.0.3    |      N/A     |  VNOC  |
     |     InfluxDB     |          1.7.10          |    4.4.8    |    1.8.10    |  VNOC  |
     |      Jenkins     |          2.277.3         |    4.0.0    |    2.492.1   |  VNOC  |
     |     LibreNMS     |           1.47           |    2.0.1    |      N/A     |  VNOC  |
-    |       Maat       |           1.0.1          |    2.0.2    |      N/A     |  VNOC  |
+    |       Maat       |           1.0.8          |    3.0.1    |      N/A     |  VNOC  |
     |      MaDDash     |           4.3.4          |    2.2.4    |      N/A     |  VNOC  |
     |        NAV       |           4.8.6          |    2.0.1    |      N/A     |  VNOC  |
-    |      NetBox      |           3.7.2          |    6.2.0    |     4.1.4    |  VNOC  |
+    |      NetBox      |           4.1.8          |    7.0.0    |     4.1.4    |  VNOC  |
     |     Oxidized     |          0.30.1          |    3.0.2    |    0.30.1    |  VNOC  |
     |    Prometheus    |           2.8.0          |    2.0.1    | 3.0.0-beta.0 |  VNOC  |
     |pSConfig Web Admin|           4.3.2          |    2.1.0    |      N/A     |  VNOC  |
@@ -63,16 +63,17 @@
     |           esmond           |     4.3.4    |    2.2.0    |      N/A     |  VLAB  |
     |           Grafana          |     6.5.2    |    2.0.1    |     6.7.6    |  VLAB  |
     |           Grafana          |     7.2.0    |    2.0.1    |    7.5.17    |  VLAB  |
+    |           Grafana          |    11.2.0    |    8.0.6    |    11.3.0    |  VLAB  |
     |        Healthchecks        |    2.10.2    |    1.0.13   |      3.7     |  VLAB  |
     |           Icinga2          |    2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |    1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |         Inventory3         |    0.15.0    |    1.0.0    |      N/A     |  VLAB  |
-    |           Jenkins          |   2.462.1-1  |    5.5.12   |    2.492.1   |  VLAB  |
+    |           Jenkins          |   2.492.1-1  |    5.8.10   |    2.492.1   |  VLAB  |
     |        LibreBooking        |     2.8.5    |    3.0.0    |      N/A     |  VLAB  |
     |          LibreNMS          |     1.47     |    2.0.1    |      N/A     |  VLAB  |
     |           MaDDash          |     4.3.4    |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5    |    1.0.0    |     2.1.0    |  VLAB  |
-    |           Moodle           |     4.4.1    |    23.0.3   |   4.5.0-rc2  |  VLAB  |
+    |           Moodle           |    4.5.2-1   |    25.1.3   |   4.5.0-rc2  |  VLAB  |
     |             NAV            |     4.8.6    |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     3.5.2    |    6.0.0    |     4.1.4    |  VLAB  |
     |       OWASP JuiceShop      |    14.5.1    |    1.0.0    |    17.1.1    |  VLAB  |
@@ -86,6 +87,7 @@
     |           Synapse          |    1.22.1    |    3.0.0    |    1.98.0    |  VLAB  |
     |          UnrealIRC         |    3.2.8-1   |    1.0.0    |      N/A     |  VLAB  |
     |         Uptime Kuma        |    1.10.2    |    1.0.0    |    1.23.13   |  VLAB  |
+    |           Valkey           |     7.2.6    |    0.3.15   |      N/A     |  VLAB  |
     |      Victoria Metrics      |    1.46.0    |    2.0.1    |      N/A     |  VLAB  |
     |       VS Code Server       |    4.92.2    |    3.23.0   |      N/A     |  VLAB  |
     |        WebDAV Server       |     1.0.0    |    1.0.0    |      N/A     |  VLAB  |

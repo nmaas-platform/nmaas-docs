@@ -31,7 +31,7 @@
     |        NAV       |           4.8.6          |    2.0.1    |      N/A     |  VNOC  |
     |      NetBox      |           4.1.8          |    7.0.0    |     4.1.4    |  VNOC  |
     |     Oxidized     |          0.30.1          |    3.0.2    |    0.32.0    |  VNOC  |
-    |    Prometheus    |           2.8.0          |    2.0.1    | 3.0.0-beta.0 |  VNOC  |
+    |    Prometheus    |           2.8.0          |    2.0.1    |     3.2.0    |  VNOC  |
     |pSConfig Web Admin|           4.3.2          |    2.1.0    |      N/A     |  VNOC  |
     |    Routinator    |           0.8.3          |    2.0.0    |    0.14.0    |  VNOC  |
     |        SPA       |          1.3.3-1         |    1.0.4    |      N/A     |  VNOC  |
@@ -79,7 +79,7 @@
     |       OWASP JuiceShop      |    14.5.1    |    1.0.0    |    17.1.1    |  VLAB  |
     |          Oxidized          |    0.28.0    |    2.0.1    |    0.32.0    |  VLAB  |
     |         PostgreSQL         |    14.3.0    |    11.5.0   |      N/A     |  VLAB  |
-    |         Prometheus         |     2.8.0    |    2.0.1    | 3.0.0-beta.0 |  VLAB  |
+    |         Prometheus         |     2.8.0    |    2.0.1    |     3.2.0    |  VLAB  |
     |Prometheus Blackbox Exporter|    0.25.0    |    8.16.0   |      N/A     |  VLAB  |
     |     pSConfig Web Admin     |     4.2.4    |    2.1.0    |      N/A     |  VLAB  |
     |         Routinator         |     0.8.3    |    2.0.0    |    0.14.0    |  VLAB  |
@@ -110,7 +110,7 @@
     |    LibreNMS    |    1.47   |    1.1.1    |      N/A     |Playground|
     |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
     |    Oxidized    |   0.25.1  |    1.0.1    |    0.32.0    |Playground|
-    |   Prometheus   |   2.8.0   |    1.0.0    | 3.0.0-beta.0 |Playground|
+    |   Prometheus   |   2.8.0   |    1.0.0    |     3.2.0    |Playground|
     |   Routinator   |   0.8.3   |    2.0.0    |    0.14.0    |Playground|
     |  SPA Inventory |    2.1    |    0.1.5    |      N/A     |Playground|
     |     Synapse    |   1.44.0  |    3.0.3    |    1.98.0    |Playground|

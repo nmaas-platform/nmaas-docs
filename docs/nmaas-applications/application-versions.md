@@ -36,7 +36,7 @@
     |    Routinator    |           0.8.3          |    2.0.0    |    0.14.0    |  VNOC  |
     |        SPA       |          1.3.3-1         |    1.0.4    |      N/A     |  VNOC  |
     |      Synapse     |          1.22.1          |    3.0.1    |    1.98.0    |  VNOC  |
-    |     Telegraf     |          1.31.0          |    1.8.49   |    1.32.1    |  VNOC  |
+    |     Telegraf     |          1.31.0          |    1.8.49   |    1.33.3    |  VNOC  |
     |    Uptime Kuma   |          1.23.11         |    2.0.1    |    1.23.13   |  VNOC  |
     | Victoria Metrics |          1.85.1          |    3.0.0    |      N/A     |  VNOC  |
     |   WebDAV Server  |           1.0.0          |    1.0.0    |      N/A     |  VNOC  |

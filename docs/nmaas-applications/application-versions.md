@@ -31,7 +31,7 @@
     |        NAV       |           4.8.6          |    2.0.1    |      N/A     |  VNOC  |
     |      NetBox      |           4.1.8          |    7.0.0    |     4.2.4    |  VNOC  |
     |     Oxidized     |          0.30.1          |    3.0.2    |    0.32.1    |  VNOC  |
-    |    Prometheus    |           2.8.0          |    2.0.1    |     3.2.0    |  VNOC  |
+    |    Prometheus    |           3.2.0          |    4.0.1    |     3.2.0    |  VNOC  |
     |pSConfig Web Admin|           4.3.2          |    2.1.0    |      N/A     |  VNOC  |
     |    Routinator    |           0.8.3          |    2.0.0    |    0.14.0    |  VNOC  |
     |        SPA       |          1.3.3-1         |    1.0.4    |      N/A     |  VNOC  |
@@ -73,13 +73,13 @@
     |          LibreNMS          |     1.47     |    2.0.1    |      N/A     |  VLAB  |
     |           MaDDash          |     4.3.4    |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5    |    1.0.0    |     2.1.0    |  VLAB  |
-    |           Moodle           |    4.5.2-1   |    25.1.3   |   4.5.0-rc2  |  VLAB  |
+    |           Moodle           |    4.5.2-2   |    25.1.4   |   4.5.0-rc2  |  VLAB  |
     |             NAV            |     4.8.6    |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     3.5.2    |    6.0.0    |     4.2.4    |  VLAB  |
     |       OWASP JuiceShop      |    14.5.1    |    1.0.0    |    17.1.1    |  VLAB  |
     |          Oxidized          |    0.28.0    |    2.0.1    |    0.32.1    |  VLAB  |
     |         PostgreSQL         |    14.3.0    |    11.5.0   |      N/A     |  VLAB  |
-    |         Prometheus         |     2.8.0    |    2.0.1    |     3.2.0    |  VLAB  |
+    |         Prometheus         |     3.2.0    |    4.0.1    |     3.2.0    |  VLAB  |
     |Prometheus Blackbox Exporter|    0.25.0    |    8.16.0   |      N/A     |  VLAB  |
     |     pSConfig Web Admin     |     4.2.4    |    2.1.0    |      N/A     |  VLAB  |
     |         Routinator         |     0.8.3    |    2.0.0    |    0.14.0    |  VLAB  |

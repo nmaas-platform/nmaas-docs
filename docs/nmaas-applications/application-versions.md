@@ -78,6 +78,7 @@
     |           NetBox           |     3.5.2    |    6.0.0    |     4.2.4    |  VLAB  |
     |       OWASP JuiceShop      |    14.5.1    |    1.0.0    |    17.1.1    |  VLAB  |
     |          Oxidized          |    0.28.0    |    2.0.1    |    0.32.2    |  VLAB  |
+    |          PgBackWeb         |     0.4.2    |    1.0.0    |      N/A     |  VLAB  |
     |         PostgreSQL         |    14.3.0    |    11.5.0   |      N/A     |  VLAB  |
     |         Prometheus         |     3.2.0    |    4.0.1    |     3.2.1    |  VLAB  |
     |Prometheus Blackbox Exporter|    0.25.0    |    8.16.0   |      N/A     |  VLAB  |

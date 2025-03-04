@@ -33,7 +33,7 @@
     |     Oxidized     |          0.30.1          |    3.0.2    |    0.32.2    |  VNOC  |
     |    Prometheus    |           3.2.0          |    4.0.1    |     3.2.1    |  VNOC  |
     |pSConfig Web Admin|           4.3.2          |    2.1.0    |      N/A     |  VNOC  |
-    |    Routinator    |           0.8.3          |    2.0.0    |    0.14.0    |  VNOC  |
+    |    Routinator    |           0.8.3          |    2.0.0    |  0.14.2-rc1  |  VNOC  |
     |        SPA       |          1.3.3-1         |    1.0.4    |      N/A     |  VNOC  |
     |      Synapse     |          1.22.1          |    3.0.1    |    1.98.0    |  VNOC  |
     |     Telegraf     |          1.31.0          |    1.8.49   |    1.33.3    |  VNOC  |
@@ -83,7 +83,7 @@
     |         Prometheus         |     3.2.0    |    4.0.1    |     3.2.1    |  VLAB  |
     |Prometheus Blackbox Exporter|    0.25.0    |    8.16.0   |      N/A     |  VLAB  |
     |     pSConfig Web Admin     |     4.2.4    |    2.1.0    |      N/A     |  VLAB  |
-    |         Routinator         |     0.8.3    |    2.0.0    |    0.14.0    |  VLAB  |
+    |         Routinator         |     0.8.3    |    2.0.0    |  0.14.2-rc1  |  VLAB  |
     |             SPA            |     1.3.3    |    1.0.0    |      N/A     |  VLAB  |
     |           Synapse          |    1.22.1    |    3.0.0    |    1.98.0    |  VLAB  |
     |          UnrealIRC         |    3.2.8-1   |    1.0.0    |      N/A     |  VLAB  |
@@ -112,7 +112,7 @@
     |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
     |    Oxidized    |   0.25.1  |    1.0.1    |    0.32.2    |Playground|
     |   Prometheus   |   2.8.0   |    1.0.0    |     3.2.1    |Playground|
-    |   Routinator   |   0.8.3   |    2.0.0    |    0.14.0    |Playground|
+    |   Routinator   |   0.8.3   |    2.0.0    |  0.14.2-rc1  |Playground|
     |  SPA Inventory |    2.1    |    0.1.5    |      N/A     |Playground|
     |     Synapse    |   1.44.0  |    3.0.3    |    1.98.0    |Playground|
     |   Uptime Kuma  |   1.16.1  |    1.0.3    |    1.23.13   |Playground|

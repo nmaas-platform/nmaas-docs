@@ -1,20 +1,27 @@
-# New nmaas vNOC Infrastructure
+---
+authors: 
+  - korvoj
+date: 2025-03-01
+slug: nmaas-infrastructure-migration
+categories:
+    - Infrastructure
+---
 
-## Benefits of the new Infrastructure
+# nmaas Migrates to a New Infrastructure
 
-After 5 years of service, the managed nmaas vNOC instance available at [nmaas.eu](https://nmaas.eu) is scheduled to be migrated to a completely new infrastructure, bringing with it many benefits and improvements. The user-facing changes that existing users should be aware of are:
+After 5 years of service, the managed nmaas vNOC instance available at [nmaas.eu](https://nmaas.eu) is to be migrated to a completely new infrastructure. This will bring many exciting user-facing changes, such as:
 
 - improved disk I/O speeds - allowing the monitoring of even more customer devices using I/O sensitive applications such as Zabbix, InfluxDB, and Prometheus.
 - dual-stack networking - nmaas now supports IPv6 in addition to IPv4 both for client access to the deployed applications as well as for the site-to-site connection towards the customer devices.
 - improved networking architecture - each customer domain is now allocated with a dedicated private IPv4 subnet range from which all outbound connections will occur, as well as a publicly routable IPv6 range, improving scalability and ensuring that no subnets conflicts will occur.
-- new VPN connectivity options for client-access VPN profiles - eduVPN is now the recommended method for establishing client-access VPN connections. Since eduVPN supports both OpenVPN and Wireguard behind the scenes, it provides maximum flexibility regardless of the environment where it is used. Additionally, users can also use the self-service eduVPN portal to generate additional client access VPN profiles, as needed.
+- new VPN connectivity options for client-access - [eduVPN](https://www.eduvpn.org/) is now the recommended method for establishing client-access VPN connections. Since eduVPN supports both OpenVPN and Wireguard behind the scenes, it provides maximum flexibility regardless of the environment where it is used. Additionally, users can also use the self-service eduVPN portal to generate additional client access VPN profiles, as needed.
 - Wireguard as the recommended site-to-site VPN protocol - Wireguard is now the recommended protocol for establishing site-to-site VPN connections between nmaas and the customers' environments. OpenVPN is still supported should it be requested, but Wireguard has proven itself to be faster while also simpler to configure.
 
 ## Frequently Asked Questions About the Migration
 
 ### When will the migration process start?
 
-All administrators of an existing domain on [nmaas.eu](https://nmaas.eu) will be contacted individually by the nmaas team, beginning from October 2024. 
+The migration process has already started. All administrators of an existing domain on [nmaas.eu](https://nmaas.eu) will be contacted individually by the nmaas team and no user action is required before this.  
 
 ### Will there be any data loss?
 

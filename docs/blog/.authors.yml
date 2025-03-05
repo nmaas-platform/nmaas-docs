@@ -5,3 +5,9 @@ authors:
     description: Frederic Loui is the creator of nmaas
     avatar: 'https://avatars.githubusercontent.com/u/9639687?v=4'
     url: 'https://github.com/frederic-loui'
+  korvoj:
+    name: korvoj
+    slug: korvoj
+    description: Responsible for ops aspects of nmaas
+    avatar: 'https://avatars.githubusercontent.com/u/4062681?v=4'
+    url: 'https://github.com/korvoj'

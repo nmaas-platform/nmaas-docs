@@ -5,7 +5,7 @@
     |       Name       |        App Version       |Chart Version|Latest Version|Instance|
     |------------------|--------------------------|-------------|--------------|--------|
     |      Adminer     |           4.8.1          |    3.0.0    |     4.9.4    |  VNOC  |
-    |  Apache Airflow  |           2.7.1          |1.11.0-beta.1|    3.0.0b1   |  VNOC  |
+    |  Apache Airflow  |           2.7.1          |1.11.0-beta.1|    3.0.0b2   |  VNOC  |
     |      Bastion     |         20.04-v2         |    2.1.4    |      N/A     |  VNOC  |
     |      Booked      |           2.8.6          |    3.1.0    |      N/A     |  VNOC  |
     |Central Management|           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
@@ -52,7 +52,7 @@
     |            Name            |  App Version |Chart Version|Latest Version|Instance|
     |----------------------------|--------------|-------------|--------------|--------|
     |           Adminer          |     4.8.1    |    3.0.0    |     4.9.4    |  VLAB  |
-    |       Apache Airflow       |2.7.1-original|   21.11.0   |    3.0.0b1   |  VLAB  |
+    |       Apache Airflow       |2.7.1-original|   21.11.0   |    3.0.0b2   |  VLAB  |
     |           Bastion          |     18.04    |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4    |    2.2.0    |      N/A     |  VLAB  |
     |      changedetectionio     |    0.45.2    |    1.0.3    |    0.49.3    |  VLAB  |

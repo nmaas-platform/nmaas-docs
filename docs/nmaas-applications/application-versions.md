@@ -26,7 +26,7 @@
     |     InfluxDB     |          1.7.10          |    4.4.8    |    1.8.10    |  VNOC  |
     |      Jenkins     |          2.277.3         |    4.0.0    |    2.492.1   |  VNOC  |
     |     LibreNMS     |           1.47           |    2.0.1    |      N/A     |  VNOC  |
-    |       Maat       |           1.0.8          |    3.0.1    |      N/A     |  VNOC  |
+    |       Maat       |           1.0.9          |    3.0.2    |      N/A     |  VNOC  |
     |      MaDDash     |           4.3.4          |    2.2.4    |      N/A     |  VNOC  |
     |        NAV       |           4.8.6          |    2.0.1    |      N/A     |  VNOC  |
     |      NetBox      |           4.1.8          |    7.0.0    |     4.2.4    |  VNOC  |

@@ -4,7 +4,7 @@
 
     |       Name       |        App Version       |Chart Version|Latest Version|Instance|
     |------------------|--------------------------|-------------|--------------|--------|
-    |      Adminer     |           4.8.1          |    3.0.0    |     5.0.0    |  VNOC  |
+    |      Adminer     |           4.8.1          |    3.0.0    |     5.0.1    |  VNOC  |
     |  Apache Airflow  |           2.7.1          |1.11.0-beta.1|    3.0.0b2   |  VNOC  |
     |      Bastion     |         20.04-v2         |    2.1.4    |      N/A     |  VNOC  |
     |      Booked      |           2.8.6          |    3.1.0    |      N/A     |  VNOC  |
@@ -51,7 +51,7 @@
 
     |            Name            |  App Version |Chart Version|Latest Version|Instance|
     |----------------------------|--------------|-------------|--------------|--------|
-    |           Adminer          |     4.8.1    |    3.0.0    |     5.0.0    |  VLAB  |
+    |           Adminer          |     4.8.1    |    3.0.0    |     5.0.1    |  VLAB  |
     |       Apache Airflow       |2.7.1-original|   21.11.0   |    3.0.0b2   |  VLAB  |
     |           Bastion          |     18.04    |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4    |    2.2.0    |      N/A     |  VLAB  |

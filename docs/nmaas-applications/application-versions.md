@@ -75,7 +75,7 @@
     |          LibreNMS          |     1.47     |    2.0.1    |      N/A     |  VLAB  |
     |           MaDDash          |     4.3.4    |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5    |    1.0.0    |     2.1.0    |  VLAB  |
-    |           Moodle           |    4.5.2-2   |    25.1.4   |   4.5.0-rc2  |  VLAB  |
+    |           Moodle           |    4.5.2-2   |    25.1.4   |     4.5.3    |  VLAB  |
     |             NAV            |     4.8.6    |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     3.5.2    |    6.0.0    |     4.2.5    |  VLAB  |
     |       OWASP JuiceShop      |    14.5.1    |    1.0.0    |    17.2.0    |  VLAB  |

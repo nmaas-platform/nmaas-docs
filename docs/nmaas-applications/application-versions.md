@@ -9,7 +9,7 @@
     |      Bastion     |         20.04-v2         |    2.1.4    |      N/A     |  VNOC  |
     |      Booked      |           2.8.6          |    3.1.0    |      N/A     |  VNOC  |
     |Central Management|           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
-    | changedetectionio|          0.49.1          |    1.0.27   |    0.49.4    |  VNOC  |
+    | changedetectionio|          0.49.7          |    1.0.29   |    0.49.4    |  VNOC  |
     |      CodiMD      |           2.5.3          |    1.0.5    |     2.5.4    |  VNOC  |
     | Debian repository|            1.0           |    2.0.1    |      N/A     |  VNOC  |
     |     ELK Stack    |           7.7.1          |    1.8.0    |      N/A     |  VNOC  |

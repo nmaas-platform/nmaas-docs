@@ -44,7 +44,7 @@
     |   WebDAV Server  |           1.0.0          |    1.0.0    |      N/A     |  VNOC  |
     |      WiFiMon     |           1.6.0          |    2.0.2    |      N/A     |  VNOC  |
     |      Zabbix      |           6.0.8          |    2.0.3    |    6.0.32    |  VNOC  |
-    |      Zabbix      |           7.0.0          |    4.0.0    |     7.0.2    |  VNOC  |
+    |      Zabbix      |           7.0.2          |    4.0.1    |     7.0.2    |  VNOC  |
 
 
 

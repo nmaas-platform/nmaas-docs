@@ -46,7 +46,7 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 **Location:** Athens, Greece
 
-**Slides:** [https://box.psnc.pl/f/c5cdad8ba8/?raw=1](https://box.psnc.pl/f/c5cdad8ba8/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/Virtual_Network_Operation_Center_nmaas.pdf](https://static.nmaas.eu/resources/Virtual_Network_Operation_Center_nmaas.pdf)
 
 ---
 
@@ -66,7 +66,7 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 **Location:** Pula, Croatia
 
-**Slides (in Croatian):** [https://box.psnc.pl/f/e4d7dbe05b/](https://box.psnc.pl/f/e4d7dbe05b/?raw=1)
+**Slides (in Croatian):** [https://static.nmaas.eu/resources/THECUC2024_lovricevic.pdf](https://static.nmaas.eu/resources/THECUC2024_lovricevic.pdf)
 
 ---
 
@@ -84,7 +84,7 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 **Location:** Rennes, France
 
-**Slides (incl. videos):** [https://box.psnc.pl/f/67931bd988/](https://box.psnc.pl/f/67931bd988/?raw=1)
+**Slides (incl. videos):** [https://static.nmaas.eu/resources/Orchestrated_Deployment_of_Virtual_Labs_for_Education_with_nmaas_v0.5.pptx](https://static.nmaas.eu/resources/Orchestrated_Deployment_of_Virtual_Labs_for_Education_with_nmaas_v0.5.pptx)
 
 **Video Recording:** [https://tnc24.geant.org/recordings/?session=s505](https://tnc24.geant.org/recordings/?session=s505)
 
@@ -102,7 +102,7 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 **Location:** Montpellier, France
 
-**Slides:** [https://box.psnc.pl/f/e3bdc8d26a](https://box.psnc.pl/f/e3bdc8d26a/?raw=1)
+**Slides:** [http://static.nmaas.eu/resources/NMaaS_Virtual_Labs_for_Education.pdf](http://static.nmaas.eu/resources/NMaaS_Virtual_Labs_for_Education.pdf)
 
 ---
 
@@ -120,7 +120,7 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 **Location:** Online
 
-**Slides (incl. videos):** [https://box.psnc.pl/f/8fcec7c3eb](https://box.psnc.pl/f/8fcec7c3eb/?raw=1)
+**Slides (incl. videos):** [https://static.nmaas.eu/resources/NMaaS_Virtual_Lab_Infoshare_20231130.pptx](https://static.nmaas.eu/resources/NMaaS_Virtual_Lab_Infoshare_20231130.pptx)
 
 **YouTube:** [https://www.youtube.com/watch?v=xx1NxqYTIpA](https://www.youtube.com/watch?v=xx1NxqYTIpA)
 
@@ -158,7 +158,7 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 **Location:** Minneapolis, MN, USA
 
-**Slides (incl. videos):** [https://box.psnc.pl/f/6b709beffd](https://box.psnc.pl/f/6b709beffd/?raw=1)
+**Slides (incl. videos):** [https://static.nmaas.eu/resources/20230920-kjorveziroski-virtual-labs-with-nmaas.pptx](https://static.nmaas.eu/resources/20230920-kjorveziroski-virtual-labs-with-nmaas.pptx)
 
 ---
 
@@ -176,7 +176,7 @@ Presentations given as part of the GÉANT GN5-1 project.
 
 **Location:** Online
 
-**Slides:** [https://box.psnc.pl/f/58d94370a3](https://box.psnc.pl/f/58d94370a3/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/20-1_2023-04-23_NETDEV_Infoshare_NMaaS_v0.3.pdf](https://static.nmaas.eu/resources/20-1_2023-04-23_NETDEV_Infoshare_NMaaS_v0.3.pdf)
 
 ---
 
@@ -200,7 +200,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Zurich, Switzerland
 
-**Slides:** [https://box.psnc.pl/f/707bcc4440](https://box.psnc.pl/f/707bcc4440/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/30-1_STF27_NMaaS_update_final.pdf](https://static.nmaas.eu/resources/30-1_STF27_NMaaS_update_final.pdf)
 
 ---
 
@@ -218,7 +218,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Trieste, Italy
 
-**Slides:** [https://box.psnc.pl/f/edf86afb7f](https://box.psnc.pl/f/edf86afb7f/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/19-1_TNC22_NMaaS_in_GARRLab_v0.7.pdf](https://static.nmaas.eu/resources/19-1_TNC22_NMaaS_in_GARRLab_v0.7.pdf)
 
 ---
 
@@ -237,7 +237,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Marseille, France
 
-**Slides:** [https://box.psnc.pl/f/c80e51a115](https://box.psnc.pl/f/c80e51a115/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/jres2022-presentation.pptx](https://static.nmaas.eu/resources/jres2022-presentation.pptx)
 
 ---
 
@@ -255,7 +255,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Budapest, Hungary
 
-**Slides:** [https://box.psnc.pl/f/0861da6b54](https://box.psnc.pl/f/0861da6b54/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/22-1_NOMS_NMaaS_April_2022.pdf](https://static.nmaas.eu/resources/22-1_NOMS_NMaaS_April_2022.pdf)
 
 ---
 
@@ -273,7 +273,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Online
 
-**Slides:** [https://box.psnc.pl/f/546af9f0de](https://box.psnc.pl/f/546af9f0de/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/18-2_NMaaS_WSGARR21_20211109_FINAL.pdf](https://static.nmaas.eu/resources/18-2_NMaaS_WSGARR21_20211109_FINAL.pdf)
 
 ---
 
@@ -291,7 +291,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Online
 
-**Slides:** [https://box.psnc.pl/f/2f62dd797e](https://box.psnc.pl/f/2f62dd797e/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/28-1_20210921_NMaaS_GRP_Workshop.pdf](https://static.nmaas.eu/resources/28-1_20210921_NMaaS_GRP_Workshop.pdf)
 
 ---
 
@@ -309,7 +309,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Online
 
-**Slides:** [https://box.psnc.pl/f/1132ef30aa](https://box.psnc.pl/f/1132ef30aa/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/27-2_TNC21_NMaaS_in_a_nutshell_DEMO_20210623_v1.pdf](https://static.nmaas.eu/resources/27-2_TNC21_NMaaS_in_a_nutshell_DEMO_20210623_v1.pdf)
 
 ---
 
@@ -327,7 +327,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Online
 
-**Slides:** [https://box.psnc.pl/f/67cf28cd51](https://box.psnc.pl/f/67cf28cd51/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/26-1_GN4-3_PSNC_CNaaSTools_Infoshare_NMaaS_Lukasz_Lopatowski.pdf](https://static.nmaas.eu/resources/26-1_GN4-3_PSNC_CNaaSTools_Infoshare_NMaaS_Lukasz_Lopatowski.pdf)
 
 ---
 
@@ -345,7 +345,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Online
 
-**Slides:** [https://box.psnc.pl/f/d5dccc4e14](https://box.psnc.pl/f/d5dccc4e14/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/25-1_JISC_NWS49_NMaaS_v1.0.pdf](https://static.nmaas.eu/resources/25-1_JISC_NWS49_NMaaS_v1.0.pdf)
 
 ---
 
@@ -363,7 +363,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Online
 
-**Slides:** [https://box.psnc.pl/f/427c7340b5](https://box.psnc.pl/f/427c7340b5/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/24-1_NMaaS_NEMMO_Tools_20210324_v0.4.pdf](https://static.nmaas.eu/resources/24-1_NMaaS_NEMMO_Tools_20210324_v0.4.pdf)
 
 ---
 
@@ -379,7 +379,8 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Online
 
-**Slides:** [Introduction](https://box.psnc.pl/f/b7f3c44e19/?raw=1), [Concept, Architecture and Deployment](https://box.psnc.pl/f/739890b7d7/?raw=1), [Application portfolio](https://box.psnc.pl/f/61ccc03651/?raw=1), [Infrastructure requirements](https://box.psnc.pl/f/c5ca4ea0fc/?raw=1), [GÉANT production service](https://box.psnc.pl/f/75d1e8b5c1/?raw=1)
+**Slides:** [Introduction](https://static.nmaas.eu/resources/16-3_20201125-NMaaS_Infoshare_Introduction.pdf), [Concept, Architecture and Deployment](https://static.nmaas.eu/resources/16-7_20201125-NMaaS_Infoshare_Concept_Architecture_and_Deployment
+.pdf), [Application portfolio](https://static.nmaas.eu/resources/16-9_20201125-NMaaS_Infoshare_Application_portfolio.pdf), [Infrastructure requirements](https://static.nmaas.eu/resources/16-2_20201125-NMaaS_Infoshare_Infrastructure_requirements.pdf), [GÉANT production service](https://static.nmaas.eu/resources/16-11_20201125-NMaaS_Infoshare_Geant_production_service.pdf)
 
 ---
 
@@ -395,7 +396,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Online
 
-**Slides:** [https://box.psnc.pl/f/9e0ef03a63](https://box.psnc.pl/f/9e0ef03a63/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/15-2_ACONET-GN4-3-NMAAS-20201119_final.pdf](https://static.nmaas.eu/resources/15-2_ACONET-GN4-3-NMAAS-20201119_final.pdf)
 
 ---
 
@@ -411,7 +412,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Online
 
-**Slides:** [https://box.psnc.pl/f/546af9f0de](https://box.psnc.pl/f/546af9f0de/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/18-2_NMaaS_WSGARR21_20211109_FINAL.pdf](https://static.nmaas.eu/resources/18-2_NMaaS_WSGARR21_20211109_FINAL.pdf)
 
 ---
 
@@ -427,7 +428,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Ljubljana, Slovenia
 
-**Slides:** [https://box.psnc.pl/f/69d463b21e](https://box.psnc.pl/f/69d463b21e/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/14-1_Symposium_General_v1.pdf](https://static.nmaas.eu/resources/14-1_Symposium_General_v1.pdf)
 
 ---
 
@@ -445,7 +446,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Copenhagen, Denmark
 
-**Slides:** [https://box.psnc.pl/f/a396c1b98f](https://box.psnc.pl/f/a396c1b98f/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/13-1_STF_NMaaS_v0.2.pdf](https://static.nmaas.eu/resources/13-1_STF_NMaaS_v0.2.pdf)
 
 ---
 
@@ -463,7 +464,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Copenhagen, Denmark
 
-**Slides:** [https://box.psnc.pl/f/b496d50542](https://box.psnc.pl/f/b496d50542/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/12-2_WoNMM_Copenhagen_October_2019_NMaaS.pdf](https://static.nmaas.eu/resources/12-2_WoNMM_Copenhagen_October_2019_NMaaS.pdf)
 
 ---
 
@@ -481,7 +482,7 @@ Presentations given as part of the GÉANT GN4-3 project.
 
 **Location:** Dublin, Ireland
 
-**Slides:** [https://box.psnc.pl/f/d8e1ac8b26](https://box.psnc.pl/f/d8e1ac8b26/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/11-2_SIG-PMV_Dublin_July_2019_Kubernetes_and_microservice_monitoring.pdf](https://static.nmaas.eu/resources/11-2_SIG-PMV_Dublin_July_2019_Kubernetes_and_microservice_monitoring.pdf)
 
 ---
 
@@ -505,7 +506,7 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Dallas, USA
 
-**Slides:** [https://box.psnc.pl/f/6303a85328](https://box.psnc.pl/f/6303a85328/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/10-2_SC18-NMaaS_Demo_Presentation_New_V4.pdf](https://static.nmaas.eu/resources/10-2_SC18-NMaaS_Demo_Presentation_New_V4.pdf)
 
 ---
 
@@ -523,5 +524,5 @@ Presentations given as part of the GÉANT GN4-2 project.
 
 **Location:** Denver, USA
 
-**Slides:** [https://box.psnc.pl/f/c3d5727e61](https://box.psnc.pl/f/c3d5727e61/?raw=1)
+**Slides:** [https://static.nmaas.eu/resources/05-1_NMaaS_demo_SC17.pdf](https://static.nmaas.eu/resources/05-1_NMaaS_demo_SC17.pdf)
 

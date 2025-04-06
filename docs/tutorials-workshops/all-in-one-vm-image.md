@@ -1,6 +1,6 @@
 # All-in-one nmaas VM Image
 
-An all-in-one VirtualBox VM image with an installed single node K3s Kubernetes cluster and a deployment of nmaas is available for [download](https://box.psnc.pl/f/45ab1871b2/?raw=1). The goal of this image is to be able to get a local nmaas environment suitable for basic experiments as fast as possible. The installed software includes:
+An all-in-one VirtualBox VM image with an installed single node K3s Kubernetes cluster and a deployment of nmaas is available for [download](https://static.nmaas.eu/resources/nmaas-aio.ova). The goal of this image is to be able to get a local nmaas environment suitable for basic experiments as fast as possible. The installed software includes:
 
 - Single node K3s cluster
 - GitLab

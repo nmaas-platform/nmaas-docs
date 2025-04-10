@@ -1,5 +1,29 @@
 # nmaas Presentations
 
+## GN5-2
+
+Presentations given as part of the GÉANT GN5-2 project.
+
+---
+
+### Infoshare: Network Platforms Workshop
+
+**Event Type:** Presentations
+
+**Presentation Title:** nmaas
+
+**Presenter(s):** Lukasz Lopatowski and Vojdan Kjorveziroski
+
+**Event:** Infoshare: Network Platforms Workshop
+
+**Event Homepage:** [https://events.geant.org/event/1841/](https://events.geant.org/event/1841/)
+
+**Date:** 10 April 2025
+
+**Location:** Online
+
+**Slides:** [http://static.nmaas.eu/resources/nmaas_infoshare_2025_final.pdf](http://static.nmaas.eu/resources/nmaas_infoshare_2025_final.pdf)
+
 ## GN5-1
 
 Presentations given as part of the GÉANT GN5-1 project.

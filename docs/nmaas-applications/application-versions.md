@@ -7,6 +7,7 @@
     |      Adminer     |           4.8.1          |    3.0.0    |     5.0.6    |  VNOC  |
     |  Apache Airflow  |           2.7.1          |1.11.0-beta.1|    3.0.0b4   |  VNOC  |
     |      Bastion     |         20.04-v2         |    2.1.4    |      N/A     |  VNOC  |
+    |Bastion Web Server|          22.04.1         |    1.0.0    |      N/A     |  VNOC  |
     |      Booked      |           2.8.6          |    3.1.0    |      N/A     |  VNOC  |
     |Central Management|           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
     | changedetectionio|          0.49.7          |    1.0.29   |    0.49.4    |  VNOC  |

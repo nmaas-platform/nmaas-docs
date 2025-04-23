@@ -22,7 +22,7 @@
     |      Grafana     |           9.5.5          |    6.0.1    |    9.5.21    |  VNOC  |
     |      Grafana     |          10.4.8          |    7.0.7    |    10.4.9    |  VNOC  |
     |      Grafana     |          11.6.0          |    8.0.11   |    11.5.2    |  VNOC  |
-    |   Healthchecks   |       3.9.20251230       |    1.1.37   |      3.7     |  VNOC  |
+    |   Healthchecks   |       3.9.20251231       |    1.1.38   |      3.7     |  VNOC  |
     |      Icinga2     |          2.13.1          |    2.0.3    |      N/A     |  VNOC  |
     |     InfluxDB     |          1.7.10          |    4.4.8    |    1.8.10    |  VNOC  |
     |      Jenkins     |          2.277.3         |    4.0.0    |    2.492.3   |  VNOC  |

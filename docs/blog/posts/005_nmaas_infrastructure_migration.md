@@ -57,12 +57,12 @@ The profiles downloaded from eduVPN can be used with any OpenVPN compatible clie
 
 ### How can I login to the new instance?
 
-The legacy [nmaas.eu](nmaas.eu) instance supported two different modes of authentication:
+The legacy [nmaas.eu](https://nmaas.eu) instance supported two different modes of authentication:
 
 - local nmaas accounts
 - federated login via eduGain
 
-With the migration to [vnoc.nmaas.eu](vnoc.nmaas.eu) all accounts (both local and federated) have been migrated to a new authentication and authorization infrastructure. This will also enable to use the same login throughout the whole nmaas tools ecosystem, including the eduVPN self-service portal.
+With the migration to [vnoc.nmaas.eu](https://vnoc.nmaas.eu) all accounts (both local and federated) have been migrated to a new authentication and authorization infrastructure. This will also enable to use the same login throughout the whole nmaas tools ecosystem, including the eduVPN self-service portal.
 
 The conversion of existing accounts to the new authentication backend requires specific user action, depending on the type of the account, as explained below.
 

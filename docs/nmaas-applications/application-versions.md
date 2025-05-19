@@ -67,7 +67,7 @@
     |           Grafana          |     6.5.2     |    2.0.1    |     6.7.6    |  VLAB  |
     |           Grafana          |     7.2.0     |    2.0.1    |    7.5.17    |  VLAB  |
     |           Grafana          |     11.2.0    |    8.0.6    |    11.5.2    |  VLAB  |
-    |        Healthchecks        |3.10.20250512-1|   1.1.39-1  |      3.7     |  VLAB  |
+    |        Healthchecks        |3.10.20250519-1|   1.1.40-1  |      3.7     |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |         Inventory3         |     0.15.0    |    1.0.0    |      N/A     |  VLAB  |
@@ -83,7 +83,7 @@
     |          Oxidized          |     0.28.0    |    2.0.1    |    0.32.2    |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |      N/A     |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |      N/A     |  VLAB  |
-    |         Prometheus         |    3.3.1-1    |   4.0.4-1   |     3.2.1    |  VLAB  |
+    |         Prometheus         |    3.4.0-1    |   4.0.5-1   |     3.2.1    |  VLAB  |
     |Prometheus Blackbox Exporter|     0.25.0    |    8.16.0   |      N/A     |  VLAB  |
     |     pSConfig Web Admin     |     4.2.4     |    2.1.0    |      N/A     |  VLAB  |
     |         Routinator         |     0.8.3     |    2.0.0    |  0.14.2-rc1  |  VLAB  |

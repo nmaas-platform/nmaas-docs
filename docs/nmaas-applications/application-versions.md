@@ -72,7 +72,7 @@
     |           Icinga2          |     2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |         Inventory3         |     0.15.0    |    1.0.0    |      N/A     |  VLAB  |
-    |           Jenkins          |   2.504.1-2   |    5.8.43   |    2.504.2   |  VLAB  |
+    |           Jenkins          |   2.504.2-1   |    5.8.55   |    2.504.2   |  VLAB  |
     |        LibreBooking        |     2.8.5     |    3.0.0    |      N/A     |  VLAB  |
     |          LibreNMS          |      1.47     |    2.0.1    |      N/A     |  VLAB  |
     |           MaDDash          |     4.3.4     |    2.2.4    |      N/A     |  VLAB  |
@@ -84,7 +84,7 @@
     |          Oxidized          |     0.28.0    |    2.0.1    |    0.32.2    |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |      N/A     |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |      N/A     |  VLAB  |
-    |         Prometheus         |    3.4.0-1    |   4.0.5-1   |     3.2.1    |  VLAB  |
+    |         Prometheus         |    3.4.1-1    |   4.0.6-1   |     3.2.1    |  VLAB  |
     |Prometheus Blackbox Exporter|     0.25.0    |    8.16.0   |      N/A     |  VLAB  |
     |     pSConfig Web Admin     |     4.2.4     |    2.1.0    |      N/A     |  VLAB  |
     |         Routinator         |     0.8.3     |    2.0.0    |  0.14.2-rc1  |  VLAB  |

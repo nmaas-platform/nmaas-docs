@@ -92,6 +92,8 @@ nav:
       - Zabbix: 'nmaas-applications/tutorials/zabbix.md'
       - Znuny: 'nmaas-applications/tutorials/znuny.md'
   - Release Notes:
+    - '1.7.1': 'release-notes/1.7.1.md'
+    - '1.7.0': 'release-notes/1.7.0.md'
     - '1.6.5': 'release-notes/1.6.5.md'
     - '1.6.4': 'release-notes/1.6.4.md'
     - '1.6.3': 'release-notes/1.6.3.md'

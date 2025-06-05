@@ -75,7 +75,7 @@
     |           Jenkins          |   2.504.2-1   |    5.8.55   |    2.504.2   |  VLAB  |
     |        LibreBooking        |     2.8.5     |    3.0.0    |      N/A     |  VLAB  |
     |          LibreNMS          |      1.47     |    2.0.1    |      N/A     |  VLAB  |
-    |            Maat            |     1.0.11    |   3.0.5-3   |      N/A     |  VLAB  |
+    |            Maat            |    1.0.11-1   |   3.0.6-1   |      N/A     |  VLAB  |
     |           MaDDash          |     4.3.4     |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |     2.1.0    |  VLAB  |
     |           Moodle           |    5.0.0-2    |    26.0.2   |     4.5.3    |  VLAB  |

@@ -58,7 +58,7 @@
     |       Apache Airflow       | 2.7.1-original|   21.11.0   |    3.0.0b4   |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
-    |      changedetectionio     |   0.49.18-1   |   1.0.36-1  |    0.49.4    |  VLAB  |
+    |      changedetectionio     |    0.50.2-1   |   1.0.37-1  |    0.49.4    |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
     |            CTFd            |     3.5.1     |    1.0.1    |     3.7.6    |  VLAB  |
     |      Debian repository     |      1.0      |    2.0.1    |      N/A     |  VLAB  |
@@ -68,7 +68,7 @@
     |           Grafana          |     7.2.0     |    2.0.1    |    7.5.17    |  VLAB  |
     |           Grafana          |   10.4.19-1   |   7.0.13-1  |    10.4.9    |  VLAB  |
     |           Grafana          |    11.6.2-1   |   8.0.13-1  |    11.5.2    |  VLAB  |
-    |        Healthchecks        |3.10.20250526-1|   1.1.41-1  |      3.7     |  VLAB  |
+    |        Healthchecks        |3.10.20250609-1|   1.1.42-1  |      3.7     |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |         Inventory3         |     0.15.0    |    1.0.0    |      N/A     |  VLAB  |
@@ -78,7 +78,7 @@
     |            Maat            |    1.0.11-1   |   3.0.6-1   |      N/A     |  VLAB  |
     |           MaDDash          |     4.3.4     |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |     2.1.0    |  VLAB  |
-    |           Moodle           |    5.0.0-2    |    26.0.2   |     4.5.3    |  VLAB  |
+    |           Moodle           |    5.0.1-1    |    26.0.4   |     4.5.3    |  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     4.3.1     |    6.0.18   |     4.2.6    |  VLAB  |
     |       OWASP JuiceShop      |     14.5.1    |    1.0.0    |    17.2.0    |  VLAB  |

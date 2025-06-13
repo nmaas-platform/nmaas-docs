@@ -58,7 +58,7 @@
     |       Apache Airflow       | 2.7.1-original|   21.11.0   |    3.0.0b4   |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
-    |      changedetectionio     |    0.50.2-1   |   1.0.37-1  |    0.49.4    |  VLAB  |
+    |      changedetectionio     |    0.50.3-1   |   1.0.38-1  |    0.49.4    |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
     |            CTFd            |     3.5.1     |    1.0.1    |     3.7.6    |  VLAB  |
     |      Debian repository     |      1.0      |    2.0.1    |      N/A     |  VLAB  |

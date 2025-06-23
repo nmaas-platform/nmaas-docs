@@ -40,9 +40,11 @@ article ul ul ul {
 	font-size: 16px;
 	color: #333;
 	box-shadow: 0 3px 8px #00000030;
+	gap: 15px;
 }
 
 .custom-bar a {
+	height: 100%;
 	display: flex;
 	align-items: center;
 	margin-left: 5px;

@@ -25,7 +25,7 @@
     |   Healthchecks   |       3.9.20251231       |    1.1.38   |      3.7     |  VNOC  |
     |      Icinga2     |          2.13.1          |    2.0.3    |      N/A     |  VNOC  |
     |     InfluxDB     |          1.7.10          |    4.4.8    |    1.8.10    |  VNOC  |
-    |      Jenkins     |          2.277.3         |    4.0.0    |    2.504.2   |  VNOC  |
+    |      Jenkins     |          2.277.3         |    4.0.0    |    2.504.3   |  VNOC  |
     |     LibreNMS     |           1.47           |    2.0.1    |      N/A     |  VNOC  |
     |       Maat       |           1.0.9          |    3.0.2    |      N/A     |  VNOC  |
     |      MaDDash     |           4.3.4          |    2.2.4    |      N/A     |  VNOC  |
@@ -72,7 +72,7 @@
     |           Icinga2          |     2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |         Inventory3         |     0.15.0    |    1.0.0    |      N/A     |  VLAB  |
-    |           Jenkins          |   2.504.2-1   |    5.8.55   |    2.504.2   |  VLAB  |
+    |           Jenkins          |   2.504.2-1   |    5.8.55   |    2.504.3   |  VLAB  |
     |        LibreBooking        |     2.8.5     |    3.0.0    |      N/A     |  VLAB  |
     |          LibreNMS          |      1.47     |    2.0.1    |      N/A     |  VLAB  |
     |            Maat            |    1.0.11-1   |   3.0.6-1   |      N/A     |  VLAB  |
@@ -112,7 +112,7 @@
     |     Grafana    |   6.5.2   |    1.1.1    |     6.7.6    |Playground|
     |     Icinga2    |   2.11.4  |    2.0.1    |      N/A     |Playground|
     |    InfluxDB    |   1.7.10  |    4.4.8    |    1.8.10    |Playground|
-    |     Jenkins    |   latest  |    1.21.3   |    2.504.2   |Playground|
+    |     Jenkins    |   latest  |    1.21.3   |    2.504.3   |Playground|
     |    LibreNMS    |    1.47   |    1.1.1    |      N/A     |Playground|
     |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
     |    Oxidized    |   0.25.1  |    1.0.1    |    0.32.2    |Playground|

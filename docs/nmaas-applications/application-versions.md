@@ -58,7 +58,7 @@
     |       Apache Airflow       | 2.7.1-original|   21.11.0   |    3.0.0b4   |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
-    |      changedetectionio     |    0.50.4-1   |   1.0.39-1  |    0.49.4    |  VLAB  |
+    |      changedetectionio     |    0.50.5-1   |   1.0.40-1  |    0.49.4    |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
     |            CTFd            |     3.5.1     |    1.0.1    |     3.7.6    |  VLAB  |
     |      Debian repository     |      1.0      |    2.0.1    |      N/A     |  VLAB  |
@@ -85,7 +85,7 @@
     |          Oxidized          |     0.28.0    |    2.0.1    |    0.32.2    |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |      N/A     |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |      N/A     |  VLAB  |
-    |         Prometheus         |    3.4.1-1    |   4.0.6-1   |     3.2.1    |  VLAB  |
+    |         Prometheus         |    3.4.2-1    |   4.0.7-1   |     3.2.1    |  VLAB  |
     |Prometheus Blackbox Exporter|     0.25.0    |    8.16.0   |      N/A     |  VLAB  |
     |     pSConfig Web Admin     |     4.2.4     |    2.1.0    |      N/A     |  VLAB  |
     |         Routinator         |     0.8.3     |    2.0.0    |  0.14.2-rc1  |  VLAB  |

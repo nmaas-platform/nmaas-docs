@@ -4,14 +4,14 @@
 
     |       Name       |        App Version       |Chart Version|Latest Version|Instance|
     |------------------|--------------------------|-------------|--------------|--------|
-    |      Adminer     |           4.8.1          |    3.0.0    |     5.0.6    |  VNOC  |
-    |  Apache Airflow  |           2.7.1          |1.11.0-beta.1|    3.0.0b4   |  VNOC  |
+    |      Adminer     |           5.3.0          |    3.0.8    |     5.0.6    |  VNOC  |
+    |  Apache Airflow  |           2.7.1          |1.11.0-beta.1|     3.0.2    |  VNOC  |
     |      Bastion     |         20.04-v2         |    2.1.4    |      N/A     |  VNOC  |
     |Bastion Web Server|          22.04.1         |    1.0.0    |      N/A     |  VNOC  |
     |      Booked      |          2.8.6-2         |    3.1.1    |      N/A     |  VNOC  |
     |Central Management|           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
     | changedetectionio|          0.49.7          |    1.0.29   |    0.49.4    |  VNOC  |
-    |      CodiMD      |           2.5.3          |    1.0.5    |     2.5.4    |  VNOC  |
+    |      CodiMD      |           2.6.0          |    1.0.7    |     2.5.4    |  VNOC  |
     | Debian repository|            1.0           |    2.0.1    |      N/A     |  VNOC  |
     |     ELK Stack    |           7.7.1          |    1.8.0    |      N/A     |  VNOC  |
     |      esmond      |           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
@@ -30,7 +30,7 @@
     |       Maat       |           1.0.9          |    3.0.2    |      N/A     |  VNOC  |
     |      MaDDash     |           4.3.4          |    2.2.4    |      N/A     |  VNOC  |
     |        NAV       |           4.8.6          |    2.0.1    |      N/A     |  VNOC  |
-    |      NetBox      |           4.3.1          |    8.0.0    |     4.2.6    |  VNOC  |
+    |      NetBox      |           4.3.3          |    8.0.1    |     4.2.6    |  VNOC  |
     |     Oxidized     |          0.30.1          |    3.0.2    |    0.32.2    |  VNOC  |
     |     PgBackWeb    |           0.4.2          |    1.0.0    |      N/A     |  VNOC  |
     |    PostgreSQL    |          14.3.0          |    11.5.0   |      N/A     |  VNOC  |
@@ -55,7 +55,7 @@
     |            Name            |  App Version  |Chart Version|Latest Version|Instance|
     |----------------------------|---------------|-------------|--------------|--------|
     |           Adminer          |     4.8.1     |    3.0.0    |     5.0.6    |  VLAB  |
-    |       Apache Airflow       | 2.7.1-original|   21.11.0   |    3.0.0b4   |  VLAB  |
+    |       Apache Airflow       | 2.7.1-original|   21.11.0   |     3.0.2    |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
     |      changedetectionio     |    0.50.5-1   |   1.0.40-1  |    0.49.4    |  VLAB  |
@@ -80,7 +80,7 @@
     |           MailDev          |     2.0.5     |    1.0.0    |     2.1.0    |  VLAB  |
     |           Moodle           |    5.0.1-1    |    26.0.4   |     4.5.3    |  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |      N/A     |  VLAB  |
-    |           NetBox           |     4.3.1     |    6.0.18   |     4.2.6    |  VLAB  |
+    |           NetBox           |     4.3.3     |    8.0.1    |     4.2.6    |  VLAB  |
     |       OWASP JuiceShop      |     14.5.1    |    1.0.0    |    17.2.0    |  VLAB  |
     |          Oxidized          |     0.28.0    |    2.0.1    |    0.32.2    |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |      N/A     |  VLAB  |

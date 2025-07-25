@@ -105,6 +105,7 @@ nav:
   - FAQ: faq.md
   - Contact: contact.md
   - About: about.md
+  - API Docs: api-docs.md
   
 theme:
   logo: 'img/nmaas_white_text.png'
@@ -185,6 +186,7 @@ plugins:
   - mkdocs-video
   - blog
   - social
+  - redoc-tag
   - rss:
       match_path: blog/posts/.*
       use_material_social_cards: false

@@ -1,1 +1,6 @@
+---
+hide:
+  - toc
+---
+
 <redoc src="https://static.nmaas.eu/api-docs/nmaas-platform.json"/>

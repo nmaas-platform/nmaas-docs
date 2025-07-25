@@ -6,3 +6,4 @@ mkdocs-glightbox>=0.3.4
 mkdocs-video==1.5.0
 mkdocs-material[imaging]==9.6.15
 mkdocs-rss-plugin==1.17.3
+mkdocs-redoc-tag==0.2.0

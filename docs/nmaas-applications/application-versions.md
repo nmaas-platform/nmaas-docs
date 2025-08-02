@@ -80,6 +80,7 @@
     |           MaDDash          |     4.3.4     |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |     2.1.0    |  VLAB  |
     |           Moodle           |    5.0.1-1    |    26.0.4   |     4.5.3    |  VLAB  |
+    |             N8n            |    1.104.2    |    1.0.13   |      N/A     |  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     4.3.3     |    8.0.1    |     4.2.6    |  VLAB  |
     |       OWASP JuiceShop      |     18.0.0    |    1.0.2    |    17.2.0    |  VLAB  |

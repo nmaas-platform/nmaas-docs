@@ -1,5 +1,6 @@
 site_name: nmaas Documentation
 site_url: 'https://docs.nmaas.eu'
+use_directory_urls: true
 nav:
   - Home: index.md
   - Blog:

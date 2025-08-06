@@ -69,7 +69,7 @@
     |           Grafana          |     7.2.0     |    2.0.1    |    7.5.17    |  VLAB  |
     |           Grafana          |   10.4.19-1   |   7.0.13-1  |    10.4.9    |  VLAB  |
     |           Grafana          |    11.6.3-1   |   8.0.14-1  |    11.5.2    |  VLAB  |
-    |        Healthchecks        |3.10.20250728-1|   1.1.45-1  |      3.7     |  VLAB  |
+    |        Healthchecks        |3.10.20250804-1|   1.1.46-1  |      3.7     |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |         Inventory3         |     0.15.0    |    1.0.0    |      N/A     |  VLAB  |

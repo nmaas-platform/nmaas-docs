@@ -17,6 +17,7 @@ Configuration parameters to be provided by the user are explained in the subsect
 As CheckCle is still in early stages of development, it comes with a default username and password for the admin user.
 
 Username: `admin@example.com`
+
 Password: `Admin123456`
 
 The default credentials can be changed after the initial login using the web interface. 

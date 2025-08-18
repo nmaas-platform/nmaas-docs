@@ -11,7 +11,7 @@
     |      Booked      |          2.8.6-2         |    3.1.1    |      N/A     |  VNOC  |
     |Central Management|           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
     | changedetectionio|          0.49.7          |    1.0.29   |    0.49.4    |  VNOC  |
-    |     CheckCle     |           1.4.0          |    1.0.2    |      N/A     |  VNOC  |
+    |     CheckCle     |           1.5.0          |    1.0.3    |      N/A     |  VNOC  |
     |      CodiMD      |           2.6.0          |    1.0.7    |     2.5.4    |  VNOC  |
     | Debian repository|            1.0           |    2.0.1    |      N/A     |  VNOC  |
     |     ELK Stack    |           7.7.1          |    1.8.0    |      N/A     |  VNOC  |

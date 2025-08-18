@@ -56,6 +56,7 @@ nav:
       - Bastion Web Server: 'nmaas-applications/tutorials/bastion-web-server.md'
       - Booked: 'nmaas-applications/tutorials/booked.md'
       - ChangeDetection.io: 'nmaas-applications/tutorials/changedetectionio.md'
+      - CheckCle: 'nmaas-applications/tutorials/checkcle.md'
       - CodiMD: 'nmaas-applications/tutorials/codimd.md'
       - CTFd: 'nmaas-applications/tutorials/ctfd.md'
       - Debian Repository: 'nmaas-applications/tutorials/debian-repository.md'

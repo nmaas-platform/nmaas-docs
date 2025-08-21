@@ -30,6 +30,7 @@
     |     LibreNMS     |           1.47           |    2.0.1    |      N/A     |  VNOC  |
     |       Maat       |           1.0.9          |    3.0.2    |      N/A     |  VNOC  |
     |      MaDDash     |           4.3.4          |    2.2.4    |      N/A     |  VNOC  |
+    |     Metabase     |          56.2.4          |    1.0.7    |      N/A     |  VNOC  |
     |        N8n       |          1.104.2         |    1.0.13   |      N/A     |  VNOC  |
     |        NAV       |           4.8.6          |    2.0.1    |      N/A     |  VNOC  |
     |      NetBox      |           4.3.3          |    8.0.1    |     4.2.6    |  VNOC  |

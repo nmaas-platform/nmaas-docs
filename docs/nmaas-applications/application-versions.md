@@ -8,7 +8,7 @@
     |  Apache Airflow  |           2.7.1          |1.11.0-beta.1|     3.0.2    |  VNOC  |
     |      Bastion     |         20.04-v2         |    2.1.4    |      N/A     |  VNOC  |
     |Bastion Web Server|          22.04.2         |    1.0.2    |      N/A     |  VNOC  |
-    |      Booked      |          2.8.6-2         |    3.1.1    |      N/A     |  VNOC  |
+    |      Booked      |          2.8.6-3         |    3.1.4    |      N/A     |  VNOC  |
     |Central Management|           4.3.4          |    2.2.0    |      N/A     |  VNOC  |
     | changedetectionio|          0.50.10         |    1.0.43   |    0.49.4    |  VNOC  |
     |     CheckCle     |           1.5.0          |    1.0.3    |      N/A     |  VNOC  |

@@ -35,7 +35,7 @@
     |        NAV       |           4.8.6          |    2.0.1    |      N/A     |  VNOC  |
     |      NetBox      |           4.3.3          |    8.0.1    |     4.2.6    |  VNOC  |
     |     Oxidized     |          0.30.1          |    3.0.2    |    0.32.2    |  VNOC  |
-    |     PgBackWeb    |           0.4.2          |    1.0.0    |      N/A     |  VNOC  |
+    |     PgBackWeb    |          0.4.2-1         |    1.0.9    |      N/A     |  VNOC  |
     |    PostgreSQL    |          17.6.0          |   16.7.26   |      N/A     |  VNOC  |
     |    Prometheus    |           3.2.0          |    4.0.1    |     3.2.1    |  VNOC  |
     |pSConfig Web Admin|           4.3.2          |    2.1.0    |      N/A     |  VNOC  |

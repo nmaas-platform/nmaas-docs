@@ -88,6 +88,7 @@
     |           NetBox           |     4.3.3     |    8.0.1    |     4.2.6    |  VLAB  |
     |       OWASP JuiceShop      |     18.0.0    |    1.0.2    |    17.2.0    |  VLAB  |
     |          Oxidized          |     0.28.0    |    2.0.1    |    0.32.2    |  VLAB  |
+    |     perfSONAR Testpoint    |     5.2.2     |    0.1.1    |      N/A     |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |      N/A     |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |      N/A     |  VLAB  |
     |         Prometheus         |    3.5.0-1    |   4.0.8-1   |     3.2.1    |  VLAB  |

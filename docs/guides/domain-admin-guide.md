@@ -5,7 +5,7 @@
 Before being able to deploy and/or access application instances via the nmaas Portal user needs to be assigned to a Domain.
 
 !!! info 
-    In order to apply for a new domain creation submit the form available at https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST.
+    In order to apply for a new domain creation submit the form available at [https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST).
 
 Within a domain user can be granted one of three roles as described in the [nmaas User Guide](./user-guide.md). Domain needs to have at least one `Domain administrator`.
 

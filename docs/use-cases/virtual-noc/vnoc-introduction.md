@@ -6,7 +6,7 @@ The cost and complexity of developing and integrating in-house network managemen
 
 ## What does nmaas Virtual NOC offer?
 
-nmaas Virtual NOC provides a portfolio of network management applications run on a per-user, secured network monitoring infrastructure. A managed instance of nmaas Virtual NOC is available on [https://nmaas.eu](https://nmaas.eu). [Self-hosting](../../self-hosted-nmaas/introduction.md) is also possible, since all of the components are open-source. The managed instance caters to the following aspects:
+nmaas Virtual NOC provides a portfolio of network management applications run on a per-user, secured network monitoring infrastructure. A managed instance of nmaas Virtual NOC is available on [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu). [Self-hosting](../../self-hosted-nmaas/introduction.md) is also possible, since all of the components are open-source. The managed instance caters to the following aspects:
 
 - Providing, managing and maintaining the infrastructure of the nmaas service portal, platform and selected tools.
 - Supporting users in using the system, and the selected tools for monitoring their networks via nmaas Virtual NOC.

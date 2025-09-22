@@ -2,12 +2,12 @@
 
 The GEANT project offers two managed instances of nmaas, dedicated to specific use-cases:
 
-- The nmaas Virtual NOC managed instance hosted at [https://nmaas.eu](https://nmaas.eu)
+- The nmaas Virtual NOC managed instance hosted at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu)
 - The nmaas Virtual Lab managed instance hosted at [https://vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu)
 
 ## The Virtual NOC Managed Instance
 
-The [nmaas Virtual NOC managed instance](https://nmaas.eu) is aimed at NRENs or NREN end-institutions and provides an effortless way of getting started with basic network monitoring and management. Potential users can request on-boarding into the nmaas Virtual NOC managed instance by filling out the `New domain request` form available on [https://nmaas.eu/about](https://nmaas.eu/about).
+The [nmaas Virtual NOC managed instance](https://vnoc.nmaas.eu) is aimed at NRENs or NREN end-institutions and provides an effortless way of getting started with basic network monitoring and management. Potential users can request on-boarding into the nmaas Virtual NOC managed instance by filling out the `New domain request` form available on [https://vnoc.nmaas.eu/about](https://vnoc.nmaas.eu/about).
 
 ## The Virtual Lab Managed Instance
 

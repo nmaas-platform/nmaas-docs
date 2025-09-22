@@ -11,7 +11,7 @@ A domain in nmaas corresponds to a dedicated and isolated tenant environment cre
     User can be assigned to multiple domains.
 
 !!! info "Requesting a New Domain"
-    In order to apply for a new domain creation submit the form available at https://nmaas.eu/about?type=NEW_DOMAIN_REQUEST.
+    In order to apply for a new domain creation submit the form available at [https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST).
 
 ## 2. Introduction to nmaas User Roles
 
@@ -50,7 +50,7 @@ These roles are assigned per user domain. A single user may have different roles
 
 ## 3. nmaas Portal
 
-nmaas web-based graphical user interface can be accessed by browsing to address https://nmaas.eu.
+nmaas web-based graphical user interface can be accessed by browsing to address [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu).
 
 ![NmaaS portal](./img/user-guide-s01.png)
 

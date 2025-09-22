@@ -7,7 +7,7 @@ A brief guide on how a new chart repository can be set up using the GitHub platf
 Please note that we do not require the use of GitHub or mandate a specific code hosting service. Any platform that is publicly accessible would suffice.
 
 !!! note "Process Explanation"
-    Applying for an application to be added to the nmaas catalog is a two-step process. First, the chart needs to be created, and then a brief proposal submitted to the nmaas team via email. After reviewing the chart, the user who submitted it will be assigned a new role on the production instance of nmaas (https://nmaas.eu) – <i><u>tool manager</u></i>, which allows uploading of new versions and parameter changes.
+    Applying for an application to be added to the nmaas catalog is a two-step process. First, the chart needs to be created, and then a brief proposal submitted to the nmaas team via email. After reviewing the chart, the user who submitted it will be assigned a new role on the production instance of nmaas (https://vnoc.nmaas.eu) – <i><u>tool manager</u></i>, which allows uploading of new versions and parameter changes.
 
 ## Step 1: Create a new GitHub Repository
 

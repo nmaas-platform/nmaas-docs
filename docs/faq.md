@@ -31,7 +31,7 @@ Once You log in to the Portal, the nmaas administrator will receive an automatic
 More information about the nmaas sandbox is available at [nmaas Playground page](https://wiki.geant.org/display/NMAAS/NMaaS+Playground).
 
 ## How can I start monitoring my infrastructure with nmaas?
-The GÉANT nmaas production service is available at https://nmaas.eu where users have the possibility to log in with their eduGAIN accounts.
+The GÉANT nmaas production service is available at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu) where users have the possibility to log in with their eduGAIN accounts.
 
 However, in order to be able to deploy network management applications user needs to be assigned to a domain. 
 
@@ -39,7 +39,7 @@ In order to request new dedicated domain creation refer to question <i>"How can 
 
 ## How can I request creation of new nmaas domain for my NREN/Institution/Project?
 
-In order to request a new nmaas domain on the GÉANT production service fill in and submit the form available at https://nmaas.eu/about?type=NEW_DOMAIN_REQUEST.
+In order to request a new nmaas domain on the GÉANT production service fill in and submit the form available at [https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST).
 
 You will be requested to provide some basic information about the domain to be created and a brief justification of the request.
 
@@ -64,7 +64,7 @@ The nmaas Administrator guide is under preparation and an initial version is ava
 ## What applications are currently supported by nmaas?
 For the up to date information about the supported applications refer to page nmaas Tools.
 
-It is also possible to browse all the applications in on nmaas Portal directly at https://nmaas.eu.
+It is also possible to browse all the applications in on nmaas Portal directly at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu).
 
 ## What type of VPNs are established by nmaas?
 Two types of VPN connections are configured before a user is able to deploy and effectively used nmaas applications:

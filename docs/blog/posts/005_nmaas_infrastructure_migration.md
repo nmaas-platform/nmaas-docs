@@ -9,7 +9,7 @@ categories:
 
 # nmaas Migrates to a New Infrastructure
 
-After 5 years of service, the managed nmaas vNOC instance available at [nmaas.eu](https://nmaas.eu) is to be migrated to a completely new infrastructure. This will bring many exciting user-facing changes, such as:
+After 5 years of service, the managed nmaas vNOC instance available at nmaas.eu is to be migrated to a completely new infrastructure. This will bring many exciting user-facing changes, such as:
 
 - improved disk I/O speeds - allowing the monitoring of even more customer devices using I/O sensitive applications such as Zabbix, InfluxDB, and Prometheus.
 - dual-stack networking - nmaas now supports IPv6 in addition to IPv4 both for client access to the deployed applications as well as for the site-to-site connection towards the customer devices.
@@ -21,7 +21,7 @@ After 5 years of service, the managed nmaas vNOC instance available at [nmaas.eu
 
 ### When will the migration process start?
 
-The migration process has already started. All administrators of an existing domain on [nmaas.eu](https://nmaas.eu) will be contacted individually by the nmaas team and no user action is required before this.  
+The migration process has already started. All administrators of an existing domain on nmaas.eu will be contacted individually by the nmaas team and no user action is required before this.  
 
 ### Will there be any data loss?
 
@@ -45,7 +45,7 @@ No, the URLs will remain the same. E.g., if there is a Prometheus instance with 
 
 ### Where can I access the new nmaas vNOC instance?
 
-The nmaas vNOC instance hosted on the new infrastructure will be accessible at [vnoc.nmaas.eu](https://vnoc.nmaas.eu). As part of the migration process, users will receive a personalized email when they will need to start using the [vnoc.nmaas.eu](https://vnoc.nmaas.eu) endpoint. Until that time, all activity is done via [https://nmaas.eu](https://nmaas.eu).
+The nmaas vNOC instance hosted on the new infrastructure will be accessible at [vnoc.nmaas.eu](https://vnoc.nmaas.eu). As part of the migration process, users will receive a personalized email when they will need to start using the [vnoc.nmaas.eu](https://vnoc.nmaas.eu) endpoint. Until that time, all activity is done via [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu).
 
 Hosting the vNOC instance using the `vnoc` subdomain also goes hand-in-hand with the new nmaas branding strategy centered around the different use-cases - [vNOC](../../use-cases/virtual-noc/vnoc-introduction.md) and [vLAB](../../use-cases/virtual-lab/vlab-introduction.md).
 
@@ -57,7 +57,7 @@ The profiles downloaded from eduVPN can be used with any OpenVPN compatible clie
 
 ### How can I login to the new instance?
 
-The legacy [nmaas.eu](https://nmaas.eu) instance supported two different modes of authentication:
+The legacy nmaas.eu instance supported two different modes of authentication:
 
 - local nmaas accounts
 - federated login via eduGain
@@ -68,16 +68,16 @@ The conversion of existing accounts to the new authentication backend requires s
 
 #### How can I login if I previously used a local account?
 
-For users who logged in directly to [nmaas](https://nmaas.eu) using the built-in authentication form specifying their username and password, the following steps need to be perfromed upon their first login to [vnoc.nmaas.eu](https://vnoc.nmaas.eu):
+For users who logged in directly to nmaas.eu using the built-in authentication form specifying their username and password, the following steps need to be perfromed upon their first login to [vnoc.nmaas.eu](https://vnoc.nmaas.eu):
 
 1. Navigate to [vnoc.nmaas.eu](https://vnoc.nmaas.eu) and click on the Login button. Choose  the `Federated Login` option. This will issue a redirect to [auth.nmaas.eu](https://auth.nmaas.eu)
 2. Using the `Forgot your password` option, reset your password, providing the original email address that was used during the initial registration.
 3. Using the password reset link that you should have received via an email message, set a new password.
-4. You will be automatically redirected to [vnoc.nmaas.eu](https://vnoc.nmaas.eu) where you will be asked to merge your old account with your new one. All user data and domain associations will remain after the merging process is complete. The merging process is done by entering your email address and the password that you used for your original account on [nmaas.eu](https://nmaas.eu).
+4. You will be automatically redirected to [vnoc.nmaas.eu](https://vnoc.nmaas.eu) where you will be asked to merge your old account with your new one. All user data and domain associations will remain after the merging process is complete. The merging process is done by entering your email address and the password that you used for your original account on nmaas.eu.
 
 #### How can I login if I previously used a federated account?
 
-For users who logged in directly to [nmaas](https://nmaas.eu) using the federated login option (via eduGAIN), the following steps need to be perfromed upon their first login to [vnoc.nmaas.eu](https://vnoc.nmaas.eu):
+For users who logged in directly to nmaas using the federated login option (via eduGAIN), the following steps need to be perfromed upon their first login to [vnoc.nmaas.eu](https://vnoc.nmaas.eu):
 
 1. Navigate to [vnoc.nmaas.eu](https://vnoc.nmaas.eu) and click on the Login button. Choose  the `Federated Login` option. This will issue a redirect to [auth.nmaas.eu](https://auth.nmaas.eu)
 2. Click on the button `eduGAIN` and choose your institution from the list, as usually. 

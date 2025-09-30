@@ -6,6 +6,26 @@ Presentations given as part of the GÉANT GN5-2 project.
 
 ---
 
+### BalticNOG 2025
+
+**Event Type:** Presentations
+
+**Presentation Title:** Virtual Network Operation Center Enabled by the nmaas Platform
+
+**Presenter(s):** Lukasz Lopatowski and Vojdan Kjorveziroski
+
+**Event:** BalticNOG Conference 2025
+
+**Event Homepage:** [https://events.balticnog.org/event/1/overview](https://events.balticnog.org/event/1/overview)
+
+**Date:** 24-25 September 2025
+
+**Location:** Vilnius, Lithuania
+
+**Slides (with embedded videos):** [https://static.nmaas.eu/resources/nmaas-vNOC-BalticNOC-final.pptx](https://static.nmaas.eu/resources/nmaas-vNOC-BalticNOC-final.pptx)
+
+---
+
 ### Infoshare: Network Platforms Workshop
 
 **Event Type:** Presentations

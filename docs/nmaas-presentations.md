@@ -6,6 +6,28 @@ Presentations given as part of the GÉANT GN5-2 project.
 
 ---
 
+### 17th ICT Innovations Conference
+
+**Event Type:** Research Conference
+
+**Presentation Title:** Extending PaaS Use-Cases to Distributed Environments
+
+**Presenter(s):** Lukasz Lopatowski
+
+**Paper Author(s):** Vojdan Kjorveziroski, Lukasz Lopatowski, Roman Lapacz
+
+**Event:** 17th ICT Innovations
+
+**Event Homepage:** [https://ictinnovations.org/](https://ictinnovations.org/)
+
+**Date:** 11-13 October 2025
+
+**Location:** Ohrid, North Macedonia
+
+**Slides:** [https://static.nmaas.eu/resources/31-nmaas-ICT-2025.pdf](https://static.nmaas.eu/resources/31-nmaas-ICT-2025.pdf)
+
+---
+
 ### BalticNOG 2025
 
 **Event Type:** Presentations

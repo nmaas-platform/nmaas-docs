@@ -33,6 +33,7 @@ article ul ul ul {
 
 .custom-bar {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	background-color: #edeef3;
 	padding: 10px;

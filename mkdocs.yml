@@ -102,23 +102,21 @@ nav:
     - '1.6.3': 'release-notes/1.6.3.md'
     - '1.6.2': 'release-notes/1.6.2.md'
     - '1.6.1': 'release-notes/1.6.1.md'
-    - '1.6.0': 'release-notes/1.6.0.md' 
-    - '1.5.4': 'release-notes/1.5.4.md' 
+    - '1.6.0': 'release-notes/1.6.0.md'
+    - '1.5.4': 'release-notes/1.5.4.md'
   - nmaas Presentations: 'nmaas-presentations.md'
   - FAQ: faq.md
   - Contact: contact.md
   - About: about.md
   - API Docs: api-docs.md
-  
+
 theme:
   logo: 'img/nmaas_white_text.png'
   custom_dir: docs/overrides
   favicon: 'img/favicon.ico'
   name: 'material'
   palette:
-    scheme: default
-    primary: 'black'
-    accent: 'light-blue'
+    scheme: custom
   features:
     - content.code.copy
     - navigation.footer

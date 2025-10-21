@@ -43,7 +43,7 @@
     |        SPA       |          1.3.3-1         |    1.0.4    |             N/A            |  VNOC  |
     |      Synapse     |          1.22.1          |    3.0.1    |           1.98.0           |  VNOC  |
     |     Telegraf     |          1.35.3          |    1.8.61   |           1.36.3           |  VNOC  |
-    |    Uptime Kuma   |          1.23.11         |    2.0.1    |           1.23.13          |  VNOC  |
+    |    Uptime Kuma   |           2.0.1          |    4.0.1    |           1.23.13          |  VNOC  |
     | Victoria Metrics |          1.85.1          |    3.0.0    |             N/A            |  VNOC  |
     |   WebDAV Server  |           1.0.0          |    1.0.0    |             N/A            |  VNOC  |
     |      WiFiMon     |           1.6.0          |    2.0.2    |             N/A            |  VNOC  |

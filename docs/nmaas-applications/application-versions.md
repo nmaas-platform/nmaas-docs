@@ -22,7 +22,7 @@
     |      Grafana     |          8.5.27          |    4.0.25   |           8.5.27           |  VNOC  |
     |      Grafana     |           9.5.5          |    6.0.1    |           9.5.21           |  VNOC  |
     |      Grafana     |          10.4.8          |    7.0.7    |           10.4.9           |  VNOC  |
-    |      Grafana     |          11.6.6          |    8.0.16   |           11.5.2           |  VNOC  |
+    |      Grafana     |          11.6.6          |    8.0.16   |           11.6.7           |  VNOC  |
     |   Healthchecks   |       3.9.20251231       |    1.1.38   |             3.7            |  VNOC  |
     |      Icinga2     |         2.14.6-1         |    3.0.2    |             N/A            |  VNOC  |
     |     InfluxDB     |         1.8.10-2         |    5.0.0    |           1.8.10           |  VNOC  |
@@ -42,7 +42,7 @@
     |    Routinator    |           0.8.3          |    2.0.0    |         0.14.2-rc1         |  VNOC  |
     |        SPA       |          1.3.3-1         |    1.0.4    |             N/A            |  VNOC  |
     |      Synapse     |          1.22.1          |    3.0.1    |           1.98.0           |  VNOC  |
-    |     Telegraf     |          1.35.3          |    1.8.61   |           1.34.0           |  VNOC  |
+    |     Telegraf     |          1.35.3          |    1.8.61   |           1.36.3           |  VNOC  |
     |    Uptime Kuma   |          1.23.11         |    2.0.1    |           1.23.13          |  VNOC  |
     | Victoria Metrics |          1.85.1          |    3.0.0    |             N/A            |  VNOC  |
     |   WebDAV Server  |           1.0.0          |    1.0.0    |             N/A            |  VNOC  |
@@ -71,7 +71,7 @@
     |           Grafana          |     6.5.2     |    2.0.1    |     6.7.6    |  VLAB  |
     |           Grafana          |     7.2.0     |    2.0.1    |    7.5.17    |  VLAB  |
     |           Grafana          |   10.4.19-1   |   7.0.13-1  |    10.4.9    |  VLAB  |
-    |           Grafana          |    11.6.6-1   |   8.0.16-1  |    11.5.2    |  VLAB  |
+    |           Grafana          |    11.6.6-1   |   8.0.16-1  |    11.6.7    |  VLAB  |
     |        Healthchecks        |3.10.20250825-1|   1.1.47-1  |      3.7     |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |

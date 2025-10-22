@@ -34,7 +34,7 @@ As with any other application available in the nmaas catalog, the deployment pro
 
 ### Deploying Uptime Kuma together with an API Server
 
-nmaas also offers an extended flavor of Uptime Kuma, one that comes collocated with the open-source API server implementation by [MedAziz11/Uptime-Kuma-Web-API](https://github.com/MedAziz11/Uptime-Kuma-Web-API). The deployment process for this flavor, differs somewhat from the standalone version, taking into account the additional features. The deployment steps are:
+nmaas also offers an extended flavor of Uptime Kuma, one that comes collocated with the open-source API server implementation by [MedAziz11/Uptime-Kuma-Web-API](https://github.com/MedAziz11/Uptime-Kuma-Web-API). The deployment process for this flavor, differs somewhat from the standalone version, taking into account the additional features. Please note that the external Uptime Kuma API server is only available with Uptime Kuma versions `1.21.3` and `1.23.11` on [vnoc.nmaas.eu](https://vnoc.nmaas.eu)  The deployment steps are:
 
 1. Subscribe your domain to the Uptime Kuma application from the `Applications` page.
 2. Deploy a new instance of Uptime Kuma, providing a unique name for it.
@@ -66,3 +66,35 @@ nmaas also offers an extended flavor of Uptime Kuma, one that comes collocated w
 
 !!! danger
     Changing the user's password from the Uptime Kuma web interface after the application has been deployed will make the API addon nonfunctional. Contact the nmaas team in case a password change is necessary.
+
+### Uptime Kuma 2
+
+Uptime Kuma 2 is the newest major version of the popular monitoring tool. It comes with many performance improvements, including an option to use a MariaDB database for persisting the monitor data, instead of the previously used SQLite.
+
+Uptime Kuma 2 is supported starting with version 2.0.1 on nmaas. When deploying a new Uptime Kuma 2 instance on nmaas, we recommend using the embedded MariaDB database which offers greatly increased performance, as well as ease of deployment. 
+
+To deploy an Uptime Kuma 2 instance, follow these steps:
+
+- Subscribe to the Uptime Kuma application if you have not already.
+- Follow the deployment wizard to deploy a new instance of Uptime Kuma, making sure to selecting a version as part of the 2.x.x series of releases.
+- Once the application is deployed, access the Uptime Kuma web interface. You will be greeted by a welcome page, asking you to select the preferred database (Fig. 4).
+
+<figure markdown>
+  ![Uptime Kuma Screenshot, Database Preference](img/uptime-kuma-screenshot-04.png){ width="450" }
+  <figcaption>Fig. 4: Uptime Kuma Preferred Database Selection</figcaption>
+</figure>
+
+- Choose `Embedded MariaDB` and conitnue to the next screen (Fig. 5).
+
+<figure markdown>
+  ![Uptime Kuma Screenshot, Database Preference](img/uptime-kuma-screenshot-05.png){ width="450" }
+  <figcaption>Fig. 5: Uptime Kuma Embedded MariaDB Usage</figcaption>
+</figure>
+
+- After the database has been prepopulated with initial data, you will be redirected to the account creation screen, where you can create your first account. 
+
+#### Upgrading from Uptime Kuma 1.x.x
+
+Automatic upgrades from Uptime Kuma version 1 to Uptime Kuma version 2 are disabled on purpose. Users are recommeded to start with a brand new deployment of Uptime Kuma 2 and choose the option to use the embedded database during setup, as described above.
+
+In cases where losing the historical monitor data is not acceptable, contact the nmaas team to arrange for a manual upgrade from an Uptime Kuma version 1 instance to version 2.

@@ -10,7 +10,7 @@
     |Bastion Web Server|          22.04.2         |    1.0.2    |             N/A            |  VNOC  |
     |      Booked      |          2.8.6-3         |    3.1.4    |             N/A            |  VNOC  |
     |Central Management|           4.3.4          |    2.2.0    |             N/A            |  VNOC  |
-    | changedetectionio|          0.50.10         |    1.0.43   |           0.50.31          |  VNOC  |
+    | changedetectionio|          0.50.10         |    1.0.43   |           0.50.32          |  VNOC  |
     |     CheckCle     |           1.6.0          |    1.0.4    |             N/A            |  VNOC  |
     |      CodiMD      |           2.6.0          |    1.0.7    |            2.5.4           |  VNOC  |
     | Debian repository|            1.0           |    2.0.1    |             N/A            |  VNOC  |
@@ -61,7 +61,7 @@
     |       Apache Airflow       | 2.7.1-original|   21.11.0   |   3.1.1rc2   |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
-    |      changedetectionio     |    0.50.7-1   |   1.0.42-1  |    0.50.31   |  VLAB  |
+    |      changedetectionio     |    0.50.7-1   |   1.0.42-1  |    0.50.32   |  VLAB  |
     |          CheckCle          |    1.6.0-1    |   1.0.5-1   |      N/A     |  VLAB  |
     |           Checkle          |     1.4.0     |    1.0.1    |      N/A     |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |

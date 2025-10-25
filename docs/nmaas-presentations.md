@@ -6,6 +6,26 @@ Presentations given as part of the GÉANT GN5-2 project.
 
 ---
 
+### Infoshare: Orchestration Solutions for Network Development
+
+**Event Type:** Presentations
+
+**Presentation Title:** nmaas
+
+**Presenter(s):** Lukasz Lopatowski and Vojdan Kjorveziroski
+
+**Event:** Infoshare: Orchestration solutions for network development - WP6 update
+
+**Event Homepage:** [https://events.geant.org/event/1958/](https://events.geant.org/event/1958/)
+
+**Date:** 22 October 2025
+
+**Location:** Online
+
+**Slides:** [http://static.nmaas.eu/resources/32-nmaas-Infoshare-2025-October-final.pdf](http://static.nmaas.eu/resources/32-nmaas-Infoshare-2025-October-final.pdf)
+
+---
+
 ### 17th ICT Innovations Conference
 
 **Event Type:** Research Conference

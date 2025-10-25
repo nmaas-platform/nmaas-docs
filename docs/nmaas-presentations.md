@@ -10,7 +10,7 @@ Presentations given as part of the GÉANT GN5-2 project.
 
 **Event Type:** Presentations
 
-**Presentation Title:** nmaas
+**Presentation Title:** nmaas Support for Remote K8s Clusters
 
 **Presenter(s):** Lukasz Lopatowski and Vojdan Kjorveziroski
 

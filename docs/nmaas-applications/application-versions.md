@@ -10,7 +10,7 @@
     | Bastion Web Server|          22.04.2         |    1.0.2    |             N/A            |  VNOC  |
     |       Booked      |          2.8.6-3         |    3.1.4    |             N/A            |  VNOC  |
     | Central Management|           4.3.4          |    2.2.0    |             N/A            |  VNOC  |
-    | changedetectionio |          0.50.10         |    1.0.43   |           0.50.34          |  VNOC  |
+    | changedetectionio |          0.50.34         |    1.0.46   |           0.50.34          |  VNOC  |
     |      CheckCle     |           1.6.0          |    1.0.4    |             N/A            |  VNOC  |
     |       CodiMD      |           2.6.0          |    1.0.7    |            2.5.4           |  VNOC  |
     | Debian repository |            1.0           |    2.0.1    |             N/A            |  VNOC  |

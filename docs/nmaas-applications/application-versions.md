@@ -66,7 +66,7 @@
     |          CheckCle          |    1.6.0-1    |   1.0.5-1   |      N/A     |  VLAB  |
     |           Checkle          |     1.4.0     |    1.0.1    |      N/A     |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
-    |            CTFd            |     3.7.7     |    2.0.1    |     3.7.6    |  VLAB  |
+    |            CTFd            |     3.7.7     |    2.0.1    |     3.8.1    |  VLAB  |
     |      Debian repository     |      1.0      |    2.0.1    |      N/A     |  VLAB  |
     |          ELK Stack         |     7.7.1     |    1.8.0    |      N/A     |  VLAB  |
     |           esmond           |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |

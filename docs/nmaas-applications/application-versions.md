@@ -31,7 +31,7 @@
     |        Maat       |           1.0.9          |    3.0.2    |          N/A          |  VNOC  |
     |      MaDDash      |           4.3.4          |    2.2.4    |          N/A          |  VNOC  |
     |      Metabase     |          56.3.6          |    1.0.11   |embedding-sdk-57-stable|  VNOC  |
-    |        N8n        |          1.108.2         |    1.0.17   |      n8n@1.120.0      |  VNOC  |
+    |        N8n        |          1.108.2         |    1.0.17   |      n8n@1.120.1      |  VNOC  |
     |        NAV        |           4.8.6          |    2.0.1    |          N/A          |  VNOC  |
     |       NetBox      |           4.3.7          |    8.0.2    |         4.4.5         |  VNOC  |
     |      Oxidized     |          0.30.1          |    3.0.2    |         0.32.2        |  VNOC  |
@@ -85,7 +85,7 @@
     |           MaDDash          |     4.3.4     |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |     2.1.0    |  VLAB  |
     |           Moodle           |    5.0.1-1    |    26.0.4   |     4.5.3    |  VLAB  |
-    |             N8n            |    1.104.2    |    1.0.13   |  n8n@1.120.0 |  VLAB  |
+    |             N8n            |    1.104.2    |    1.0.13   |  n8n@1.120.1 |  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     4.3.3     |    8.0.1    |     4.4.5    |  VLAB  |
     |       OWASP JuiceShop      |     18.0.0    |    1.0.2    |    17.2.0    |  VLAB  |

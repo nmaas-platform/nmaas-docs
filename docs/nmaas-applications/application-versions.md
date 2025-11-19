@@ -10,7 +10,7 @@
     | Bastion Web Server|          22.04.2         |    1.0.2    |          N/A          |  VNOC  |
     |       Booked      |          2.8.6-3         |    3.1.4    |          N/A          |  VNOC  |
     | Central Management|           4.3.4          |    2.2.0    |          N/A          |  VNOC  |
-    | changedetectionio |          0.50.42         |    1.0.49   |         0.51.1        |  VNOC  |
+    | changedetectionio |          0.50.42         |    1.0.49   |         0.51.2        |  VNOC  |
     |      CheckCle     |           1.6.0          |    1.0.4    |          N/A          |  VNOC  |
     |       CodiMD      |           2.6.0          |    1.0.7    |         2.5.4         |  VNOC  |
     | Debian repository |            1.0           |    2.0.1    |          N/A          |  VNOC  |
@@ -31,7 +31,7 @@
     |        Maat       |           1.0.9          |    3.0.2    |          N/A          |  VNOC  |
     |      MaDDash      |           4.3.4          |    2.2.4    |          N/A          |  VNOC  |
     |      Metabase     |          56.3.6          |    1.0.11   |embedding-sdk-57-stable|  VNOC  |
-    |        N8n        |          1.108.2         |    1.0.17   |      n8n@1.121.0      |  VNOC  |
+    |        N8n        |          1.108.2         |    1.0.17   |      n8n@1.121.1      |  VNOC  |
     |        NAV        |           4.8.6          |    2.0.1    |          N/A          |  VNOC  |
     |       NetBox      |           4.3.7          |    8.0.2    |         4.4.6         |  VNOC  |
     |      Oxidized     |          0.30.1          |    3.0.2    |         0.32.2        |  VNOC  |
@@ -62,7 +62,7 @@
     |       Apache Airflow       | 2.7.1-original|   21.11.0   |     3.1.3    |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
-    |      changedetectionio     |    0.50.7-1   |   1.0.42-1  |    0.51.1    |  VLAB  |
+    |      changedetectionio     |    0.50.7-1   |   1.0.42-1  |    0.51.2    |  VLAB  |
     |          CheckCle          |    1.6.0-1    |   1.0.5-1   |      N/A     |  VLAB  |
     |           Checkle          |     1.4.0     |    1.0.1    |      N/A     |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
@@ -85,7 +85,7 @@
     |           MaDDash          |     4.3.4     |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |     2.1.0    |  VLAB  |
     |           Moodle           |    5.0.1-1    |    26.0.4   |     4.5.3    |  VLAB  |
-    |             N8n            |    1.104.2    |    1.0.13   |  n8n@1.121.0 |  VLAB  |
+    |             N8n            |    1.104.2    |    1.0.13   |  n8n@1.121.1 |  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     4.3.3     |    8.0.1    |     4.4.6    |  VLAB  |
     |       OWASP JuiceShop      |     18.0.0    |    1.0.2    |    19.1.1    |  VLAB  |

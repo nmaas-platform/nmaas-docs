@@ -72,11 +72,13 @@ When installing nmaas using Helm ([nmaas-chart](https://gitlab.software.geant.or
 ## Other providers
 
 To integrate a different OIDC provider, you must identify equivalent parameters:
+
  - `clientID`
  - `client secret`
  - `issuer URI`
 
 nmaas requires the provider to supply the following claims:
+
  - `preferred_username`
  - `email`
  - `family_name`

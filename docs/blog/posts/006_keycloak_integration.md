@@ -46,7 +46,7 @@ If your realm is ready, you can proceed to creating a client.<br/>
 ![Screenshoot_6](./img/006_nmaas_keycloak_integration/keycloak/Screenshot_6.png)
 - In the next step, select `Standard flow` to give the client access to OpenID Connect and `Client authentication` to set the access type as confidential access. <br/>
 ![Screenshoot_7](./img/006_nmaas_keycloak_integration/keycloak/Screenshot_7.png)
-- In the last step of creating a client to enable nmaas-platform to log in via Keycloak, specify `Valid redirect URIs` relative to the nmaas-platform service. <br/>
+- In the last step of creating a client to enable the nmaas-platform to log in via Keycloak, specify `Valid redirect URIs` relative to the nmaas-platform service. <br/>
 ![Screenshoot_8](./img/006_nmaas_keycloak_integration/keycloak/Screenshot_8.png)
 - After creating the client, go to the `Credentials` tab to copy the `Client secret`. It will be needed for the `OIDC_CLIENT_SECRET` environment variable. <br/>
 ![Screenshoot_9](./img/006_nmaas_keycloak_integration/keycloak/Screenshot_9.png)
@@ -72,15 +72,15 @@ When installing nmaas using Helm ([nmaas-chart](https://gitlab.software.geant.or
 ## Other providers
 
 To integrate a different OIDC provider, you must identify equivalent parameters:
-- `clientID`
-- `client secret`
-- `issuer URI`
+ - `clientID`
+ - `client secret`
+ - `issuer URI`
 
 nmaas requires the provider to supply the following claims:
-- `preferred_username`
-- `email`
-- `family_name`
-- `given_name`
-- `sub`
+ - `preferred_username`
+ - `email`
+ - `family_name`
+ - `given_name`
+ - `sub`
 
 If the provider does not expose these claims, integration may require custom mapping on their side.

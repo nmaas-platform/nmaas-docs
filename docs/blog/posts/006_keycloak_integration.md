@@ -4,7 +4,7 @@ authors:
 date: 2025-11-21
 slug: nmaas-keycloak-integration
 categories:
-    - Application Tutorials
+    - Installation Tutorials
 ---
 # How to use keycloak as an external IdP for your own nmaas instance
 

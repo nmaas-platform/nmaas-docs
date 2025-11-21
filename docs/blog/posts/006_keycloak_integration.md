@@ -6,7 +6,7 @@ slug: nmaas-keycloak-integration
 categories:
     - Installation Tutorials
 ---
-# How to use keycloak as an external IdP for your own nmaas instance
+# How to use Keycloak as an external IdP for your own nmaas instance
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px; padding-bottom: 20px">
 
@@ -24,7 +24,7 @@ nmaas allows users to log in not only via a local account, but also using extern
 This is done in 2 steps:
 
 - Keycloak realm and client configuration
-- Filling in the required environmental variables in nmmas-platform
+- Filling in the required environmental variables in nmaas-platform
 
 ## Keycloak configuration
 

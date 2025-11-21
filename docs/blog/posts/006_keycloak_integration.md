@@ -59,13 +59,15 @@ If your realm is ready, you can proceed to creating a client.<br/>
 
 If you already have a working Keycloak instance with a configured realm and client, you need to specify the following environment variables when building nmaas-platform:
 
-
 | ENV                       | Value                              |
 |---------------------------|------------------------------------|
 | `PORTAL_SSO_ALLOWED_FLAG` | Must be set to `true`              |
 | `OIDC_CLIENT_ID`          | Client ID from Keycloak            |
 | `OIDC_CLIENT_SECRET`      | Secret from the client credentials |
 | `OIDC_ISSUER_URI`         | Issuer URI from realm metadata     |
+
+When installing nmaas using Helm ([nmaas-chart](https://gitlab.software.geant.org/nmaas/nmaas-chart)) alter the values file with proper parameters.
+
 
 ## Other providers
 

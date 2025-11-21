@@ -22,7 +22,7 @@
     |      Grafana      |          8.5.27          |    4.0.25   |         8.5.27        |  VNOC  |
     |      Grafana      |           9.5.5          |    6.0.1    |         9.5.21        |  VNOC  |
     |      Grafana      |          10.4.8          |    7.0.7    |         10.4.9        |  VNOC  |
-    |      Grafana      |          11.6.7          |    8.0.17   |         11.6.8        |  VNOC  |
+    |      Grafana      |          11.6.8          |    8.0.18   |         11.6.8        |  VNOC  |
     |    Healthchecks   |       3.9.20251231       |    1.1.38   |          3.7          |  VNOC  |
     |      Icinga2      |         2.14.6-1         |    3.0.2    |          N/A          |  VNOC  |
     |      InfluxDB     |         1.8.10-2         |    5.0.0    |         1.8.10        |  VNOC  |
@@ -62,7 +62,7 @@
     |       Apache Airflow       | 2.7.1-original|   21.11.0   |     3.1.3    |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
-    |      changedetectionio     |    0.50.7-1   |   1.0.42-1  |    0.51.3    |  VLAB  |
+    |      changedetectionio     |    0.51.3-1   |   1.0.51-1  |    0.51.3    |  VLAB  |
     |          CheckCle          |    1.6.0-1    |   1.0.5-1   |      N/A     |  VLAB  |
     |           Checkle          |     1.4.0     |    1.0.1    |      N/A     |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
@@ -73,7 +73,7 @@
     |           Grafana          |     6.5.2     |    2.0.1    |     6.7.6    |  VLAB  |
     |           Grafana          |     7.2.0     |    2.0.1    |    7.5.17    |  VLAB  |
     |           Grafana          |   10.4.19-1   |   7.0.13-1  |    10.4.9    |  VLAB  |
-    |           Grafana          |    11.6.7-1   |   8.0.17-1  |    11.6.8    |  VLAB  |
+    |           Grafana          |    11.6.8-1   |   8.0.18-1  |    11.6.8    |  VLAB  |
     |        Healthchecks        |3.11.20250828-1|   1.1.48-1  |      3.7     |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |

@@ -1,3 +1,11 @@
+---
+authors: 
+  - pkazimierowski
+date: 2025-11-21
+slug: nmaas-keycloak-integration
+categories:
+    - Application Tutorials
+---
 # How to use keycloak as an external IdP for your own nmaas instance
 
 <div style="border: 3px solid gray; border-radius: 5px; padding-left: 20px; padding-bottom: 20px">

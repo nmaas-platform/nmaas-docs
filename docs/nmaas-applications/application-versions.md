@@ -4,7 +4,7 @@
 
     |        Name       |        App Version       |Chart Version|     Latest Version    |Instance|
     |-------------------|--------------------------|-------------|-----------------------|--------|
-    |      Adminer      |           5.4.0          |    3.0.10   |         5.0.6         |  VNOC  |
+    |      Adminer      |           5.4.1          |    3.0.11   |         5.0.6         |  VNOC  |
     |   Apache Airflow  |           2.7.1          |1.11.0-beta.1|         3.1.3         |  VNOC  |
     |      Bastion      |         20.04-v2         |    2.1.4    |          N/A          |  VNOC  |
     | Bastion Web Server|          22.04.2         |    1.0.2    |          N/A          |  VNOC  |
@@ -30,10 +30,10 @@
     |      LibreNMS     |           1.47           |    2.0.1    |          N/A          |  VNOC  |
     |        Maat       |           1.0.9          |    3.0.2    |          N/A          |  VNOC  |
     |      MaDDash      |           4.3.4          |    2.2.4    |          N/A          |  VNOC  |
-    |      Metabase     |          56.3.6          |    1.0.11   |embedding-sdk-57-stable|  VNOC  |
-    |        N8n        |          1.108.2         |    1.0.17   |      n8n@1.121.2      |  VNOC  |
+    |      Metabase     |          57.3.2          |    1.0.12   |embedding-sdk-57-stable|  VNOC  |
+    |        N8n        |          1.116.2         |    1.1.0    |      n8n@1.121.2      |  VNOC  |
     |        NAV        |           4.8.6          |    2.0.1    |          N/A          |  VNOC  |
-    |       NetBox      |           4.3.7          |    8.0.2    |         4.4.6         |  VNOC  |
+    |       NetBox      |           4.4.6          |    8.0.3    |         4.4.6         |  VNOC  |
     |      Oxidized     |          0.30.1          |    3.0.2    |         0.32.2        |  VNOC  |
     |perfSONAR Testpoint|          5.2.2-1         |    0.2.2    |          N/A          |  VNOC  |
     |     PgBackWeb     |          0.4.2-1         |    1.0.9    |          N/A          |  VNOC  |
@@ -58,7 +58,7 @@
 
     |            Name            |  App Version  |Chart Version|Latest Version|Instance|
     |----------------------------|---------------|-------------|--------------|--------|
-    |           Adminer          |     4.8.1     |    3.0.0    |     5.0.6    |  VLAB  |
+    |           Adminer          |     5.4.1     |    3.0.11   |     5.0.6    |  VLAB  |
     |       Apache Airflow       | 2.7.1-original|   21.11.0   |     3.1.3    |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
@@ -66,7 +66,7 @@
     |          CheckCle          |    1.6.0-1    |   1.0.5-1   |      N/A     |  VLAB  |
     |           Checkle          |     1.4.0     |    1.0.1    |      N/A     |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
-    |            CTFd            |     3.7.7     |    2.0.1    |     3.8.1    |  VLAB  |
+    |            CTFd            |     3.8.1     |    2.0.4    |     3.8.1    |  VLAB  |
     |      Debian repository     |      1.0      |    2.0.1    |      N/A     |  VLAB  |
     |          ELK Stack         |     7.7.1     |    1.8.0    |      N/A     |  VLAB  |
     |           esmond           |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
@@ -85,10 +85,10 @@
     |           MaDDash          |     4.3.4     |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |     2.1.0    |  VLAB  |
     |           Moodle           |    5.0.1-1    |    26.0.4   |     4.5.3    |  VLAB  |
-    |             N8n            |    1.104.2    |    1.0.13   |  n8n@1.121.2 |  VLAB  |
+    |             N8n            |    1.116.2    |    1.1.0    |  n8n@1.121.2 |  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |      N/A     |  VLAB  |
-    |           NetBox           |     4.3.3     |    8.0.1    |     4.4.6    |  VLAB  |
-    |       OWASP JuiceShop      |     18.0.0    |    1.0.2    |    19.1.1    |  VLAB  |
+    |           NetBox           |     4.4.6     |    8.0.3    |     4.4.6    |  VLAB  |
+    |       OWASP JuiceShop      |     19.1.1    |    1.0.3    |    19.1.1    |  VLAB  |
     |          Oxidized          |     0.28.0    |    2.0.1    |    0.32.2    |  VLAB  |
     |     perfSONAR Testpoint    |    5.2.2-1    |    0.2.2    |      N/A     |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |      N/A     |  VLAB  |

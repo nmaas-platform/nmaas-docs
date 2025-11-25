@@ -33,7 +33,7 @@
     |      Metabase     |          57.3.2          |    1.0.12   |embedding-sdk-57-stable|  VNOC  |
     |        N8n        |          1.116.2         |    1.1.0    |      n8n@1.122.2      |  VNOC  |
     |        NAV        |           4.8.6          |    2.0.1    |          N/A          |  VNOC  |
-    |       NetBox      |           4.4.6          |    8.0.3    |         4.4.6         |  VNOC  |
+    |       NetBox      |           4.4.6          |    8.0.3    |         4.4.7         |  VNOC  |
     |      Oxidized     |          0.30.1          |    3.0.2    |         0.32.2        |  VNOC  |
     |perfSONAR Testpoint|          5.2.2-1         |    0.2.2    |          N/A          |  VNOC  |
     |     PgBackWeb     |          0.4.2-1         |    1.0.9    |          N/A          |  VNOC  |
@@ -87,7 +87,7 @@
     |           Moodle           |    5.0.1-1    |    26.0.4   |     4.5.3    |  VLAB  |
     |             N8n            |    1.116.2    |    1.1.0    |  n8n@1.122.2 |  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |      N/A     |  VLAB  |
-    |           NetBox           |     4.4.6     |    8.0.3    |     4.4.6    |  VLAB  |
+    |           NetBox           |     4.4.6     |    8.0.3    |     4.4.7    |  VLAB  |
     |       OWASP JuiceShop      |     19.1.1    |    1.0.3    |    19.1.1    |  VLAB  |
     |          Oxidized          |     0.28.0    |    2.0.1    |    0.32.2    |  VLAB  |
     |     perfSONAR Testpoint    |    5.2.2-1    |    0.2.2    |      N/A     |  VLAB  |

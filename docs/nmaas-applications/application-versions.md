@@ -12,7 +12,7 @@
     | Central Management|           4.3.4          |    2.2.0    |          N/A          |  VNOC  |
     | changedetectionio |          0.50.42         |    1.0.49   |         0.51.4        |  VNOC  |
     |      CheckCle     |           1.6.0          |    1.0.4    |          N/A          |  VNOC  |
-    |       CodiMD      |           2.6.0          |    1.0.7    |         2.5.4         |  VNOC  |
+    |       CodiMD      |           2.6.1          |    1.0.8    |         2.5.4         |  VNOC  |
     | Debian repository |            1.0           |    2.0.1    |          N/A          |  VNOC  |
     |     ELK Stack     |           7.7.1          |    1.8.0    |          N/A          |  VNOC  |
     |       esmond      |           4.3.4          |    2.2.0    |          N/A          |  VNOC  |
@@ -30,7 +30,7 @@
     |      LibreNMS     |           1.47           |    2.0.1    |          N/A          |  VNOC  |
     |        Maat       |           1.0.9          |    3.0.2    |          N/A          |  VNOC  |
     |      MaDDash      |           4.3.4          |    2.2.4    |          N/A          |  VNOC  |
-    |      Metabase     |          57.3.2          |    1.0.12   |embedding-sdk-57-stable|  VNOC  |
+    |      Metabase     |          57.4.3          |    1.0.13   |embedding-sdk-57-stable|  VNOC  |
     |        N8n        |          1.116.2         |    1.1.0    |      n8n@1.122.4      |  VNOC  |
     |        NAV        |           4.8.6          |    2.0.1    |          N/A          |  VNOC  |
     |       NetBox      |           4.4.6          |    8.0.3    |         4.4.7         |  VNOC  |
@@ -44,12 +44,12 @@
     |        SPA        |          1.3.3-1         |    1.0.4    |          N/A          |  VNOC  |
     |      Synapse      |          1.22.1          |    3.0.1    |         1.98.0        |  VNOC  |
     |      Telegraf     |          1.35.3          |    1.8.61   |         1.36.4        |  VNOC  |
-    |    Uptime Kuma    |           2.0.1          |    4.0.1    |        1.23.13        |  VNOC  |
+    |    Uptime Kuma    |           2.0.2          |    4.0.2    |        1.23.13        |  VNOC  |
     |  Victoria Metrics |          1.85.1          |    3.0.0    |          N/A          |  VNOC  |
     |   WebDAV Server   |           1.0.0          |    1.0.0    |          N/A          |  VNOC  |
     |      WiFiMon      |           1.6.0          |    2.0.2    |          N/A          |  VNOC  |
     |       Zabbix      |           6.0.8          |    2.0.3    |         6.0.32        |  VNOC  |
-    |       Zabbix      |           7.0.2          |    4.0.1    |         7.0.2         |  VNOC  |
+    |       Zabbix      |          7.0.21          |    4.0.4    |         7.0.2         |  VNOC  |
 
 
 

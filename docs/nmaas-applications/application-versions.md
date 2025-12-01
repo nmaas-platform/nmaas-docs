@@ -62,7 +62,7 @@
     |       Apache Airflow       | 2.7.1-original|   21.11.0   |     3.1.3    |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |     Central Management     |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
-    |      changedetectionio     |    0.51.3-1   |   1.0.51-1  |    0.51.4    |  VLAB  |
+    |      changedetectionio     |    0.51.4-1   |   1.0.52-1  |    0.51.4    |  VLAB  |
     |          CheckCle          |    1.6.0-1    |   1.0.5-1   |      N/A     |  VLAB  |
     |           Checkle          |     1.4.0     |    1.0.1    |      N/A     |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
@@ -74,7 +74,7 @@
     |           Grafana          |     7.2.0     |    2.0.1    |    7.5.17    |  VLAB  |
     |           Grafana          |   10.4.19-1   |   7.0.13-1  |    10.4.9    |  VLAB  |
     |           Grafana          |    11.6.8-1   |   8.0.18-1  |    11.6.8    |  VLAB  |
-    |        Healthchecks        |3.11.20250828-1|   1.1.48-1  |      3.7     |  VLAB  |
+    |        Healthchecks        |3.11.20251130-1|   1.1.49-1  |      3.7     |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |         Inventory3         |     0.15.0    |    1.0.0    |      N/A     |  VLAB  |

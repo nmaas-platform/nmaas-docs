@@ -38,7 +38,7 @@
     |perfSONAR Testpoint|          5.2.2-1         |    0.2.2    |          N/A          |  VNOC  |
     |     PgBackWeb     |          0.4.2-1         |    1.0.9    |          N/A          |  VNOC  |
     |     PostgreSQL    |          17.6.0          |   16.7.26   |          N/A          |  VNOC  |
-    |     Prometheus    |           3.2.0          |    4.0.1    |         3.7.3         |  VNOC  |
+    |     Prometheus    |           3.2.0          |    4.0.1    |         3.8.0         |  VNOC  |
     | pSConfig Web Admin|           4.3.2          |    2.1.0    |          N/A          |  VNOC  |
     |     Routinator    |           0.8.3          |    2.0.0    |       0.14.2-rc1      |  VNOC  |
     |        SPA        |          1.3.3-1         |    1.0.4    |          N/A          |  VNOC  |
@@ -93,7 +93,7 @@
     |     perfSONAR Testpoint    |    5.2.2-1    |    0.2.2    |      N/A     |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |      N/A     |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |      N/A     |  VLAB  |
-    |         Prometheus         |    3.7.3-1    |   4.0.12-1  |     3.7.3    |  VLAB  |
+    |         Prometheus         |    3.7.3-1    |   4.0.12-1  |     3.8.0    |  VLAB  |
     |Prometheus Blackbox Exporter|     0.25.0    |    8.16.0   |      N/A     |  VLAB  |
     |     pSConfig Web Admin     |     4.2.4     |    2.1.0    |      N/A     |  VLAB  |
     |         Routinator         |     0.8.3     |    2.0.0    |  0.14.2-rc1  |  VLAB  |
@@ -124,7 +124,7 @@
     |    LibreNMS    |    1.47   |    1.1.1    |      N/A     |Playground|
     |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
     |    Oxidized    |   0.25.1  |    1.0.1    |    0.32.2    |Playground|
-    |   Prometheus   |   2.8.0   |    1.0.0    |     3.7.3    |Playground|
+    |   Prometheus   |   2.8.0   |    1.0.0    |     3.8.0    |Playground|
     |   Routinator   |   0.8.3   |    2.0.0    |  0.14.2-rc1  |Playground|
     |  SPA Inventory |    2.1    |    0.1.5    |      N/A     |Playground|
     |     Synapse    |   1.44.0  |    3.0.3    |    1.98.0    |Playground|

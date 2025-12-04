@@ -31,10 +31,10 @@
     |        Maat       |           1.0.9          |    3.0.2    |          N/A          |  VNOC  |
     |      MaDDash      |           4.3.4          |    2.2.4    |          N/A          |  VNOC  |
     |      Metabase     |          57.4.3          |    1.0.13   |embedding-sdk-57-stable|  VNOC  |
-    |        N8n        |          1.116.2         |    1.1.0    |     n8n@2.0.0-rc.1    |  VNOC  |
+    |        N8n        |          1.116.2         |    1.1.0    |     n8n@2.0.0-rc.2    |  VNOC  |
     |        NAV        |           4.8.6          |    2.0.1    |          N/A          |  VNOC  |
     |       NetBox      |           4.4.6          |    8.0.3    |         4.4.7         |  VNOC  |
-    |      Oxidized     |          0.30.1          |    3.0.2    |         0.32.2        |  VNOC  |
+    |      Oxidized     |          0.30.1          |    3.0.2    |         0.35.0        |  VNOC  |
     |perfSONAR Testpoint|          5.2.2-1         |    0.2.2    |          N/A          |  VNOC  |
     |     PgBackWeb     |          0.4.2-1         |    1.0.9    |          N/A          |  VNOC  |
     |     PostgreSQL    |          17.6.0          |   16.7.26   |          N/A          |  VNOC  |
@@ -85,11 +85,11 @@
     |           MaDDash          |     4.3.4     |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |     2.1.0    |  VLAB  |
     |           Moodle           |    5.0.1-1    |    26.0.4   |     4.5.3    |  VLAB  |
-    |             N8n            |    1.116.2    |    1.1.0    |n8n@2.0.0-rc.1|  VLAB  |
+    |             N8n            |    1.116.2    |    1.1.0    |n8n@2.0.0-rc.2|  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     4.4.6     |    8.0.3    |     4.4.7    |  VLAB  |
     |       OWASP JuiceShop      |     19.1.1    |    1.0.3    |    19.1.1    |  VLAB  |
-    |          Oxidized          |     0.28.0    |    2.0.1    |    0.32.2    |  VLAB  |
+    |          Oxidized          |     0.28.0    |    2.0.1    |    0.35.0    |  VLAB  |
     |     perfSONAR Testpoint    |    5.2.2-1    |    0.2.2    |      N/A     |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |      N/A     |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |      N/A     |  VLAB  |
@@ -123,7 +123,7 @@
     |     Jenkins    |   latest  |    1.21.3   |    2.528.2   |Playground|
     |    LibreNMS    |    1.47   |    1.1.1    |      N/A     |Playground|
     |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
-    |    Oxidized    |   0.25.1  |    1.0.1    |    0.32.2    |Playground|
+    |    Oxidized    |   0.25.1  |    1.0.1    |    0.35.0    |Playground|
     |   Prometheus   |   2.8.0   |    1.0.0    |     3.8.0    |Playground|
     |   Routinator   |   0.8.3   |    2.0.0    |  0.14.2-rc1  |Playground|
     |  SPA Inventory |    2.1    |    0.1.5    |      N/A     |Playground|

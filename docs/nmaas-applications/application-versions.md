@@ -84,7 +84,7 @@
     |            Maat            |     1.0.12    |   3.0.9-2   |      N/A     |  VLAB  |
     |           MaDDash          |     4.3.4     |    2.2.4    |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |     2.1.0    |  VLAB  |
-    |           Moodle           |    5.0.1-1    |    26.0.4   |     4.5.3    |  VLAB  |
+    |           Moodle           |    5.0.1-1    |    26.0.4   |     5.1.1    |  VLAB  |
     |             N8n            |    1.116.2    |    1.1.0    |n8n@2.0.0-rc.4|  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |     4.4.6     |    8.0.3    |     4.4.7    |  VLAB  |

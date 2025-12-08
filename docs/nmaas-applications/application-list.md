@@ -2,38 +2,52 @@
 
 This is a continuously updated list of currently supported applications on nmaas. Note that not all applications are supported across all environments, some are supported only on the managed server, while others can only be supported on self-hosted installations.
 
-| No |           Application name           |             Helm chart name             |                                             App Version (Helm chart version given in brackets)                                             | Environment           |
-|:--:|:------------------------------------:|:---------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------:|-----------------------|
-|  1 | Oxidized                             | nmaas-oxidized                          | 0.25.1 (2.0.1); 0.28.0 (2.0.1);                                                                                                            | Managed + Self-Hosted |
-|  2 | LibreNMS                             | nmaas-librenms                          | 1.4.7 (2.0.1);                                                                                                                             | Managed + Self-Hosted |
-|  3 | NAV                                  | nav                                     | 4.8.6 (2.0.1);                                                                                                                             | Managed + Self-Hosted |
-|  4 | Prometheus                           | nmaas-prometheus                        | 2.8.0 (2.0.1); 2.39.1 (2.0.28); 2.40.4 (3.0.0); 2.40.5 (3.0.1);                                                                            | Managed + Self-Hosted |
-|  5 | Grafana                              | nmaas-grafana                           | 7.2.0 (2.0.1); 7.3.4 (2.0.1); 7.5.16 (3.0.7); 8.0.7 (2.0.1); 8.5.11 (4.0.23); 9.1.4 (5.0.3); 9.3.1 (6.0.0);                                | Managed + Self-Hosted |
-|  6 | Bastion                              | nmaas-bastion                           | 18.04 (2.1.0); 20.04 (2.1.2); 20.04-v2 (2.1.4);                                                                                            | Managed + Self-Hosted |
-|  7 | Booked                               | nmaas-booked                            | 2.7.7 (2.0.1); 2.8.5 (3.0.0);                                                                                                              | Managed + Self-Hosted |
-|  8 | Statping                             | nmaas-statping                          | 0.90.17 (2.0.1);                                                                                                                           | **DEPRECATED**        |
-|  9 | SPA Inventory                        | nmaas-spa-inventory                     | 2.0 (2.0.1);                                                                                                                               | Managed + Self-Hosted |
-| 10 | perfSONAR PWA                        | nmaas-perfsonar-pwa                     | 4.2.2 (2.0.1); 4.3.2 (2.1.0);                                                                                                              | Managed + Self-Hosted |
-| 11 | perfSONAR MaDDash                    | nmaas-perfsonar-maddash                 | 4.3.4 (2.2.4);                                                                                                                             | Managed + Self-Hosted |
-| 12 | perfSONAR esmond                     | nmaas-perfsonar-esmond                  | 4.2.4-1 (2.0.1); 4.3.4 (2.2.0);                                                                                                            | Managed + Self-Hosted |
-| 13 | perfSONAR Central Management         | nmaas-perfsonar-centralmanagement       | 4.2.4 (2.0.1); 4.3.4 (2.2.0);                                                                                                              | Managed + Self-Hosted |
-| 14 | Debian package repository (Reprepro) | nmaas-reprepro                          | 1.0 (2.0.1);                                                                                                                               | Managed + Self-Hosted |
-| 15 | InfluxDB                             | influxdata/influxdb                     | 1.7.10 (4.4.8);                                                                                                                            | Managed + Self-Hosted |
-| 16 | Jenkins                              | nmaas-jenkins                           | 2.277.3 (4.0.0);                                                                                                                           | Managed + Self-Hosted |
-| 17 | ELK Stack                            | elastic-stack                           | 7.7.1 (1.8.0);                                                                                                                             | Managed + Self-Hosted |
-| 18 | WiFiMon (with ELK)                   | nmaas-wifimon                           | 1.6.0 (2.0.2);                                                                                                                             | Managed + Self-Hosted |
-| 19 | Icinga2                              | nmaas-icinga2                           | 2.11.4 (2.0.1);                                                                                                                            | Managed + Self-Hosted |
-| 20 | Victoria Metrics                     | nmaas-victoria                          | 1.46.0 (2.0.1); 1.81.2 (2.0.16); 1.82.1 (2.0.17); 1.83.1 (2.0.18); 1.84.0 (2.0.19); 1.85.1 (3.0.0);                                        | Managed + Self-Hosted |
-| 21 | Matrix / Synapse                     | nmaas-matrix                            | 1.22.1 (3.0.1);                                                                                                                            | Managed + Self-Hosted |
-| 22 | Routinator                           | nmaas-routinator                        | 0.8.3 (2.0.0), 0.11.3 (2.0.3);                                                                                                             | Managed + Self-Hosted |
-| 23 | CodiMD                               | nmaas-codimd                            | 2.4.1 (1.0.0);                                                                                                                             | Managed + Self-Hosted |
-| 24 | WebDAV                               | nmaas-webdav                            | 1.0.0 (1.0.0);                                                                                                                             | Managed + Self-Hosted |
-| 25 | Uptime Kuma                          | nmaas-uptimekuma                        | 1.10.2 (1.0.0); 1.15.1 (1.0.2); 1.16.1 (1.0.3); 1.18.0 (1.0.4); 1.18.1 (1.0.5); 1.18.4 (1.0.6); 1.18.5 (1.0.7);  1.21.3 (2.0.0);           | Managed + Self-Hosted |
-| 26 | Zabbix                               | nmaas-zabbix                            | 5.0.20 (1.0.0); 5.0.21 (1.0.1); 5.0.22 (1.0.2); 5.0.27 (1.0.3); 6.0.5 (2.0.2); 6.0.8 (2.0.3); 6.2.2 (3.0.0); 6.2.4 (3.0.2); 6.2.5 (3.0.3); | Managed + Self-Hosted |
-| 27 | Healthchecks                         | nmaas-healthchecks                      | 2.1 (1.0.2); 2.3 (1.0.4); 2.4.1 (1.0.5); 2.5.0 (1.0.6); 2.7.0 (1.0.7); 2.8.0 (1.0.8);                                                      | Managed + Self-Hosted |
-| 28 | SPA                                  | nmaas-spa                               | 1.3.3-1 (1.0.4);                                                                                                                           | Managed + Self-Hosted |
-| 29 | Netbox                               | netbox/netbox nmaas-netbox (from 6.0.0) | 3.0.11 (4.0.1); 3.2.8 (4.1.1);  3.5.2 (6.0.0);                                                                                             | Managed + Self-Hosted |
-| 30 | CTFd                                 | nmaas-ctfd                              | 3.5.1 (1.0.1);                                                                                                                             | :warning: Self-Hosted |
-| 31 | JuiceShop                            | nmaas-juiceshop                         | 14.5.1 (1.0.0);                                                                                                                            | :warning: Self-Hosted |
-| 32 | Adminer                              | nmaas-adminer                           | 4.8.1 (3.0.0);                                                                                                                             | Managed + Self-Hosted |
-| 33 | Changedetection.io                   | nmaas-changedetection                   | 0.44.1 (1.0.2);                                                                                                                            | Managed + Self-Hosted |
+
+    |        Name       |        App Version       |Chart Version|
+    |-------------------|--------------------------|-------------|
+    |      Adminer      |           5.4.1          |    3.0.11   |
+    |   Apache Airflow  |           2.7.1          |1.11.0-beta.1|
+    |      Bastion      |         20.04-v2         |    2.1.4    |
+    | Bastion Web Server|          22.04.2         |    1.0.2    |
+    |       Booked      |          2.8.6-3         |    3.1.4    |
+    | Central Management|           4.3.4          |    2.2.0    |
+    | changedetectionio |          0.50.42         |    1.0.49   |
+    |      CheckCle     |           1.6.0          |    1.0.4    |
+    |       CodiMD      |           2.6.1          |    1.0.8    |
+    | Debian repository |            1.0           |    2.0.1    |
+    |     ELK Stack     |           7.7.1          |    1.8.0    |
+    |       esmond      |           4.3.4          |    2.2.0    |
+    | GP4L Orchestrator |0.1.20-develop-rev-5a0e11f|    1.0.20   |
+    |      Grafana      |           6.5.2          |    2.0.1    |
+    |      Grafana      |         7.5.16-1         |    3.0.7    |
+    |      Grafana      |          8.5.27          |    4.0.25   |
+    |      Grafana      |           9.5.5          |    6.0.1    |
+    |      Grafana      |          10.4.8          |    7.0.7    |
+    |      Grafana      |          11.6.8          |    8.0.18   |
+    |    Healthchecks   |       3.9.20251231       |    1.1.38   |
+    |      Icinga2      |         2.14.6-1         |    3.0.2    |
+    |      InfluxDB     |         1.8.10-2         |    5.0.0    |
+    |      Jenkins      |         2.516.2-1        |    5.8.83   |
+    |      LibreNMS     |           1.47           |    2.0.1    |
+    |        Maat       |           1.0.9          |    3.0.2    |
+    |      MaDDash      |           4.3.4          |    2.2.4    |
+    |      Metabase     |          57.4.3          |    1.0.13   |
+    |        N8n        |          1.116.2         |    1.1.0    |
+    |        NAV        |           4.8.6          |    2.0.1    |
+    |       NetBox      |           4.4.6          |    8.0.3    |
+    |      Oxidized     |          0.30.1          |    3.0.2    |
+    |perfSONAR Testpoint|          5.2.2-1         |    0.2.2    |
+    |     PgBackWeb     |          0.4.2-1         |    1.0.9    |
+    |     PostgreSQL    |          17.6.0          |   16.7.26   |
+    |     Prometheus    |           3.2.0          |    4.0.1    |
+    | pSConfig Web Admin|           4.3.2          |    2.1.0    |
+    |     Routinator    |           0.8.3          |    2.0.0    |
+    |        SPA        |          1.3.3-1         |    1.0.4    |
+    |      Synapse      |          1.22.1          |    3.0.1    |
+    |      Telegraf     |          1.35.3          |    1.8.61   |
+    |    Uptime Kuma    |           2.0.2          |    4.0.2    |
+    |  Victoria Metrics |          1.85.1          |    3.0.0    |
+    |   WebDAV Server   |           1.0.0          |    1.0.0    |
+    |      WiFiMon      |           1.6.0          |    2.0.2    |
+    |       Zabbix      |           6.0.8          |    2.0.3    |
+    |       Zabbix      |          7.0.21          |    4.0.4    |

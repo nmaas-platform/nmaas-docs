@@ -107,26 +107,3 @@
     |        WebDAV Server       |     1.0.0     |    1.0.0    |      N/A     |  VLAB  |
     |           WiFiMon          |     1.4.0     |    2.0.1    |      N/A     |  VLAB  |
     |            Znuny           |     6.0.39    |    1.0.0    |      N/A     |  VLAB  |
-
-
-=== "Playground"
-
-
-    |      Name      |App Version|Chart Version|Latest Version| Instance |
-    |----------------|-----------|-------------|--------------|----------|
-    |     Booked     |   2.7.7   |    1.0.0    |      N/A     |Playground|
-    |     CodiMD     |   2.4.1   |    1.0.0    |     2.5.4    |Playground|
-    |     esmond     |   1.16.0  |    1.1.0    |      N/A     |Playground|
-    |     Grafana    |   6.5.2   |    1.1.1    |     6.7.6    |Playground|
-    |     Icinga2    |   2.11.4  |    2.0.1    |      N/A     |Playground|
-    |    InfluxDB    |   1.7.10  |    4.4.8    |    1.8.10    |Playground|
-    |     Jenkins    |   latest  |    1.21.3   |    2.528.2   |Playground|
-    |    LibreNMS    |    1.47   |    1.1.1    |      N/A     |Playground|
-    |       NAV      |   4.8.6   |    1.0.0    |      N/A     |Playground|
-    |    Oxidized    |   0.25.1  |    1.0.1    |    0.35.0    |Playground|
-    |   Prometheus   |   2.8.0   |    1.0.0    |     3.8.0    |Playground|
-    |   Routinator   |   0.8.3   |    2.0.0    |  0.14.2-rc1  |Playground|
-    |  SPA Inventory |    2.1    |    0.1.5    |      N/A     |Playground|
-    |     Synapse    |   1.44.0  |    3.0.3    |    1.98.0    |Playground|
-    |   Uptime Kuma  |   1.16.1  |    1.0.3    |    1.23.13   |Playground|
-    |Victoria Metrics|   1.46.0  |    2.0.1    |      N/A     |Playground|

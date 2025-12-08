@@ -14,7 +14,6 @@ This is a continuously updated list of currently supported applications on nmaas
 |               [CheckCle](https://docs.nmaas.eu/nmaas-applications/tutorials/checkcle/)               |           1.6.0          |    1.0.4    |
 |                 [CodiMD](https://docs.nmaas.eu/nmaas-applications/tutorials/codimd/)                 |           2.6.1          |    1.0.8    |
 |      [Debian repository](https://docs.nmaas.eu/nmaas-applications/tutorials/debian-repository/)      |            1.0           |    2.0.1    |
-|             [ELK Stack](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-ELK)             |           7.7.1          |    1.8.0    |
 |                 [esmond](https://docs.nmaas.eu/nmaas-applications/tutorials/esmond/)                 |           4.3.4          |    2.2.0    |
 |      [GP4L Orchestrator](https://docs.nmaas.eu/nmaas-applications/tutorials/gp4l-orchestrator/)      |0.1.20-develop-rev-5a0e11f|    1.0.20   |
 |                [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                |           6.5.2          |    2.0.1    |
@@ -47,6 +46,5 @@ This is a continuously updated list of currently supported applications on nmaas
 |            [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)            |           2.0.2          |    4.0.2    |
 |       [Victoria Metrics](https://docs.nmaas.eu/nmaas-applications/tutorials/victoria-metrics/)       |          1.85.1          |    3.0.0    |
 |              [WebDAV Server](https://docs.nmaas.eu/nmaas-applications/tutorials/webdav/)             |           1.0.0          |    1.0.0    |
-|                [WiFiMon](https://docs.nmaas.eu/nmaas-applications/tutorials/wifimon/)                |           1.6.0          |    2.0.2    |
 |                 [Zabbix](https://docs.nmaas.eu/nmaas-applications/tutorials/zabbix/)                 |           6.0.8          |    2.0.3    |
 |                 [Zabbix](https://docs.nmaas.eu/nmaas-applications/tutorials/zabbix/)                 |          7.0.21          |    4.0.4    |

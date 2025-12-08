@@ -14,7 +14,6 @@
     |      CheckCle     |           1.6.0          |    1.0.4    |          N/A          |  VNOC  |
     |       CodiMD      |           2.6.1          |    1.0.8    |         2.5.4         |  VNOC  |
     | Debian repository |            1.0           |    2.0.1    |          N/A          |  VNOC  |
-    |     ELK Stack     |           7.7.1          |    1.8.0    |          N/A          |  VNOC  |
     |       esmond      |           4.3.4          |    2.2.0    |          N/A          |  VNOC  |
     | GP4L Orchestrator |0.1.20-develop-rev-5a0e11f|    1.0.20   |          N/A          |  VNOC  |
     |      Grafana      |           6.5.2          |    2.0.1    |         6.7.6         |  VNOC  |
@@ -47,7 +46,6 @@
     |    Uptime Kuma    |           2.0.2          |    4.0.2    |        1.23.13        |  VNOC  |
     |  Victoria Metrics |          1.85.1          |    3.0.0    |          N/A          |  VNOC  |
     |   WebDAV Server   |           1.0.0          |    1.0.0    |          N/A          |  VNOC  |
-    |      WiFiMon      |           1.6.0          |    2.0.2    |          N/A          |  VNOC  |
     |       Zabbix      |           6.0.8          |    2.0.3    |         6.0.32        |  VNOC  |
     |       Zabbix      |          7.0.21          |    4.0.4    |         7.0.2         |  VNOC  |
 
@@ -68,7 +66,6 @@
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
     |            CTFd            |     3.8.1     |    2.0.4    |     3.8.1    |  VLAB  |
     |      Debian repository     |      1.0      |    2.0.1    |      N/A     |  VLAB  |
-    |          ELK Stack         |     7.7.1     |    1.8.0    |      N/A     |  VLAB  |
     |           esmond           |     4.3.4     |    2.2.0    |      N/A     |  VLAB  |
     |           Grafana          |     6.5.2     |    2.0.1    |     6.7.6    |  VLAB  |
     |           Grafana          |     7.2.0     |    2.0.1    |    7.5.17    |  VLAB  |
@@ -105,5 +102,4 @@
     |      Victoria Metrics      |     1.46.0    |    2.0.1    |      N/A     |  VLAB  |
     |       VS Code Server       |     4.92.2    |    3.23.0   |      N/A     |  VLAB  |
     |        WebDAV Server       |     1.0.0     |    1.0.0    |      N/A     |  VLAB  |
-    |           WiFiMon          |     1.4.0     |    2.0.1    |      N/A     |  VLAB  |
     |            Znuny           |     6.0.39    |    1.0.0    |      N/A     |  VLAB  |

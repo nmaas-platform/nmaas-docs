@@ -44,10 +44,9 @@ nav:
       - Deploying the First Application: 'tutorials-workshops/jres2024/p3_deploying-the-first-app.md'
       - Complete Web Development vLAB Scenario: 'tutorials-workshops/jres2024/p4_complete-web-dev-vlab-scenario.md'
       - Bulk Application Deployment: 'tutorials-workshops/jres2024/p5_vlab-bulk-app-deployment.md'
-  - nmaas Applications:
+  - nmaas Catalogue:
     - General Application Deployment: 'nmaas-applications/general-app-deployment.md'
-    - List of Supported Applications: 'nmaas-applications/application-list.md'
-    - Application Versions: 'nmaas-applications/application-versions.md'
+    - Supported Applications: 'nmaas-applications/application-list.md'
     - Adding a New Application: 'nmaas-applications/new-application.md'
     - Application Deployment Tutorials:
       - Adminer: 'nmaas-applications/tutorials/adminer.md'

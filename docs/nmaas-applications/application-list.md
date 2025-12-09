@@ -10,7 +10,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |  [Bastion Web Server](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion-webserver/) |          22.04.2         |    1.0.2    |
 |         [Booked](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Booked)         |          2.8.6-3         |    3.1.4    |
 |  [changedetectionio](https://docs.nmaas.eu/nmaas-applications/tutorials/changedetectionio/)  |          0.50.42         |    1.0.49   |
-|           [CheckCle](https://docs.nmaas.eu/nmaas-applications/tutorials/checkcle/)           |           1.6.0          |    1.0.4    |
+|           [CheckCle](https://docs.nmaas.eu/nmaas-applications/tutorials/checkcle/)           |          1.6.0-1         |    1.0.6    |
 |             [CodiMD](https://docs.nmaas.eu/nmaas-applications/tutorials/codimd/)             |           2.6.1          |    1.0.8    |
 |  [Debian repository](https://docs.nmaas.eu/nmaas-applications/tutorials/debian-repository/)  |            1.0           |    2.0.1    |
 |  [GP4L Orchestrator](https://docs.nmaas.eu/nmaas-applications/tutorials/gp4l-orchestrator/)  |0.1.20-develop-rev-5a0e11f|    1.0.20   |
@@ -34,7 +34,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |[perfSONAR Testpoint](https://docs.nmaas.eu/nmaas-applications/tutorials/perfsonar-testpoint/)|          5.2.2-1         |    0.2.2    |
 |          [PgBackWeb](https://docs.nmaas.eu/nmaas-applications/tutorials/pgbackweb/)          |          0.4.2-1         |    1.0.9    |
 |           [PostgreSQL](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#PostgreSQL)          |          17.6.0          |   16.7.26   |
-|         [Prometheus](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus/)         |           3.2.0          |    4.0.1    |
+|         [Prometheus](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus/)         |           3.8.0          |    4.0.13   |
 |         [Routinator](https://docs.nmaas.eu/nmaas-applications/tutorials/routinator/)         |           0.8.3          |    2.0.0    |
 |            [Telegraf](https://docs.nmaas.eu/nmaas-applications/tutorials/telegraf)           |          1.35.3          |    1.8.61   |
 |        [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)        |           2.0.2          |    4.0.2    |

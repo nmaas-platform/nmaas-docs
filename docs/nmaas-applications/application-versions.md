@@ -10,7 +10,7 @@
     | Bastion Web Server|          22.04.2         |    1.0.2    |          N/A          |  VNOC  |
     |       Booked      |          2.8.6-3         |    3.1.4    |          N/A          |  VNOC  |
     | changedetectionio |          0.50.42         |    1.0.49   |         0.51.4        |  VNOC  |
-    |      CheckCle     |           1.6.0          |    1.0.4    |          N/A          |  VNOC  |
+    |      CheckCle     |          1.6.0-1         |    1.0.6    |          N/A          |  VNOC  |
     |       CodiMD      |           2.6.1          |    1.0.8    |         2.5.4         |  VNOC  |
     | Debian repository |            1.0           |    2.0.1    |          N/A          |  VNOC  |
     | GP4L Orchestrator |0.1.20-develop-rev-5a0e11f|    1.0.20   |          N/A          |  VNOC  |
@@ -34,7 +34,7 @@
     |perfSONAR Testpoint|          5.2.2-1         |    0.2.2    |          N/A          |  VNOC  |
     |     PgBackWeb     |          0.4.2-1         |    1.0.9    |          N/A          |  VNOC  |
     |     PostgreSQL    |          17.6.0          |   16.7.26   |          N/A          |  VNOC  |
-    |     Prometheus    |           3.2.0          |    4.0.1    |         3.8.0         |  VNOC  |
+    |     Prometheus    |           3.8.0          |    4.0.13   |         3.8.0         |  VNOC  |
     |     Routinator    |           0.8.3          |    2.0.0    |       0.14.2-rc1      |  VNOC  |
     |      Telegraf     |          1.35.3          |    1.8.61   |         1.37.0        |  VNOC  |
     |    Uptime Kuma    |           2.0.2          |    4.0.2    |        1.23.13        |  VNOC  |
@@ -54,7 +54,7 @@
     |       Apache Airflow       | 2.7.1-original|   21.11.0   |   3.1.4rc2   |  VLAB  |
     |           Bastion          |     18.04     |    2.1.0    |      N/A     |  VLAB  |
     |      changedetectionio     |    0.51.4-1   |   1.0.52-1  |    0.51.4    |  VLAB  |
-    |          CheckCle          |    1.6.0-1    |   1.0.5-1   |      N/A     |  VLAB  |
+    |          CheckCle          |    1.6.0-2    |   1.0.6-1   |      N/A     |  VLAB  |
     |           Checkle          |     1.4.0     |    1.0.1    |      N/A     |  VLAB  |
     |           CodiMD           |     2.5.3     |    1.0.4    |     2.5.4    |  VLAB  |
     |            CTFd            |     3.8.1     |    2.0.4    |     3.8.1    |  VLAB  |
@@ -63,7 +63,7 @@
     |           Grafana          |     7.2.0     |    2.0.1    |    7.5.17    |  VLAB  |
     |           Grafana          |   10.4.19-1   |   7.0.13-1  |    10.4.9    |  VLAB  |
     |           Grafana          |    11.6.8-1   |   8.0.18-1  |    11.6.8    |  VLAB  |
-    |        Healthchecks        |3.11.20251130-1|   1.1.49-1  |      3.7     |  VLAB  |
+    |        Healthchecks        |3.13.20251208-1|   1.1.50-1  |      3.7     |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |    1.8.10    |  VLAB  |
     |           Jenkins          |   2.528.2-1   |   5.8.110   |    2.528.2   |  VLAB  |
@@ -80,7 +80,7 @@
     |     perfSONAR Testpoint    |    5.2.2-1    |    0.2.2    |      N/A     |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |      N/A     |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |      N/A     |  VLAB  |
-    |         Prometheus         |    3.7.3-1    |   4.0.12-1  |     3.8.0    |  VLAB  |
+    |         Prometheus         |    3.8.0-1    |   4.0.13-1  |     3.8.0    |  VLAB  |
     |Prometheus Blackbox Exporter|     0.25.0    |    8.16.0   |      N/A     |  VLAB  |
     |         Routinator         |     0.8.3     |    2.0.0    |  0.14.2-rc1  |  VLAB  |
     |          UnrealIRC         |    3.2.8-1    |    1.0.0    |      N/A     |  VLAB  |

@@ -6,6 +6,26 @@ Presentations given as part of the GÉANT GN5-2 project.
 
 ---
 
+### Internet2 Technology Exchange (TechEx) 2025
+
+**Event Type:** Presentations
+
+**Presentation Title:** nmaas: Simple Application Deployment Across Kubernetes Environments
+
+**Presenter(s):** Lukasz Lopatowski
+
+**Event:** TechEx 2025
+
+**Event Homepage:** [https://events.internet2.edu/website/84273/program/](https://events.internet2.edu/website/84273/program/)
+
+**Date:** 8-12 December 2025
+
+**Location:** Denver, Colorado, US
+
+**Slides (with embedded videos):** [http://static.nmaas.eu/resources/20251210-lopatowski-nmaas-simple-application-deployment.pptx](http://static.nmaas.eu/resources/20251210-lopatowski-nmaas-simple-application-deployment.pptx)
+
+---
+
 ### Infoshare: Orchestration Solutions for Network Development
 
 **Event Type:** Presentations

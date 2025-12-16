@@ -34,7 +34,7 @@
     |perfSONAR Testpoint|          5.2.2-1         |    0.2.2    |          N/A          |  VNOC  |
     |     PgBackWeb     |          0.4.2-1         |    1.0.9    |          N/A          |  VNOC  |
     |     PostgreSQL    |          17.6.0          |   16.7.26   |          N/A          |  VNOC  |
-    |     Prometheus    |           3.8.0          |    4.0.13   |         3.8.1         |  VNOC  |
+    |     Prometheus    |           3.8.0          |    4.0.13   |         3.8.0         |  VNOC  |
     |     Routinator    |           0.8.3          |    2.0.0    |       0.14.2-rc1      |  VNOC  |
     |      Telegraf     |          1.35.3          |    1.8.61   |         1.37.0        |  VNOC  |
     |    Uptime Kuma    |           2.0.2          |    4.0.2    |        1.23.13        |  VNOC  |
@@ -81,7 +81,7 @@
     |     perfSONAR Testpoint    |    5.2.2-1    |    0.2.2    |          N/A          |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |          N/A          |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |          N/A          |  VLAB  |
-    |         Prometheus         |    3.8.0-1    |   4.0.13-1  |         3.8.1         |  VLAB  |
+    |         Prometheus         |    3.8.0-1    |   4.0.13-1  |         3.8.0         |  VLAB  |
     |Prometheus Blackbox Exporter|     0.25.0    |    8.16.0   |          N/A          |  VLAB  |
     |         Routinator         |     0.8.3     |    2.0.0    |       0.14.2-rc1      |  VLAB  |
     |          UnrealIRC         |    3.2.8-1    |    1.0.0    |          N/A          |  VLAB  |

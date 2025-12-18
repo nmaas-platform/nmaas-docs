@@ -24,7 +24,7 @@ The nmaas Team can be contacted either by:
 
 ## How can I test nmaas?
 
-In order to test nmaas you can request an account on either the [managed VNOC instance](https://vnoc.nmaas.eu/about) or the [managed VLAB instance](https://vlab.dev.nmaas.eu/about), depending on the use-case that you are interested in.
+In order to test nmaas you can request an account on either the [managed vNOC instance](https://vnoc.nmaas.eu/about) or the [managed vLAB instance](https://vlab.dev.nmaas.eu/about), depending on the use-case that you are interested in.
 
 ## How can I start monitoring my infrastructure with nmaas?
 The GÉANT nmaas production service is available at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu) where users have the possibility to log in with their eduGAIN accounts.

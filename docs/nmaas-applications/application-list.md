@@ -19,7 +19,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |            [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)            |          8.5.27          |    4.0.25   |
 |            [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)            |           9.5.5          |    6.0.1    |
 |            [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)            |          10.4.8          |    7.0.7    |
-|            [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)            |          11.6.8          |    8.0.18   |
+|            [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)            |          11.6.9          |    8.0.19   |
 |   [Healthchecks](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Healthchecks)   |       3.9.20251231       |    1.1.38   |
 |            [Icinga2](https://docs.nmaas.eu/nmaas-applications/tutorials/icinga2/)            |         2.14.6-1         |    3.0.2    |
 |           [InfluxDB](https://docs.nmaas.eu/nmaas-applications/tutorials/influxdb/)           |         1.8.10-2         |    5.0.0    |

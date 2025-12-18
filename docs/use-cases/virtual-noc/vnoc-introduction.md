@@ -28,5 +28,3 @@ nmaas Virtual NOC has been designed to be as flexible as possible to support a w
 ## How Can I Get Started with nmaas Virtual NOC?
 
 If you are NREN or an institution under an NREN and you would like to use the managed nmaas for Virtual NOC instance provided by the GÉANT project, [get in touch with us](../../contact.md). Users interested in self-hosting nmaas Virtual NOC are welcome to visit the dedicated pages for deploying nmaas for Virtual NOC on their [own infrastructure](../../self-hosted-nmaas/introduction.md). Deployment of a local demo environment consisting of a single VM can also be performed by following the tutorials presented at the [JRES 2022](../../tutorials-workshops/jres2022/introduction.md) or [JRES 2024](../../tutorials-workshops/jres2024/introduction.md) conferences.
-
-A [playground instance](../../managed-nmaas/nmaas-playground-instance.md) hosted by GÉANT is also available.

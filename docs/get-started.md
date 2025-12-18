@@ -5,10 +5,6 @@ description: Get started with nmaas by either using one of the managed instances
 
 There are multiple options to get started with using nmaas, depending on the requirements and desired use-case. 
 
-## nmaas Demo Instance
-
-The fastest way to get access to nmaas for evaluation and testing purposes is to use the managed [nmaas Playground instance](https://docs.nmaas.eu/managed-nmaas/nmaas-playground-instance/). Users can register a new account and either deploy their own demo applications or reuse some of the existing applications monitoring dummy network devices. Please note that this instance is only for evaluation purposes and data can be reset at any time.
-
 ## Managed Instances
 
 If your are part of an organization affiliated with your national NREN (National Research and Education Network), then you can get access to the managed nmaas instances hosted at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu) for the [vNOC use-case](use-cases/virtual-noc/vnoc-introduction.md) or at [https://vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu) for the [Virtual Lab use-case](use-cases/virtual-lab/vlab-introduction.md). Please use the contact forms on the respective instances to request access. Should the access request be approved, a dedicated domain will be set up on the appropriate instance. 

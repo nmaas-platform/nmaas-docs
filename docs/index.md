@@ -17,7 +17,6 @@ The nmaas team offers access to multiple managed instances, depending on the use
 
 - [The nmaas Virtual NOC production instance](managed-nmaas/introduction.md/#the-virtual-noc-managed-instance) available on [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu)
 - [The nmaas Virtual Lab pilots instance](managed-nmaas/introduction.md/#the-virtual-lab-managed-instance) available on [https://vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu).
-- [The generic Playground instance](managed-nmaas/nmaas-playground-instance.md) for testing out the overall feature set of nmaas.
 
 ## Self-hosted nmaas
 

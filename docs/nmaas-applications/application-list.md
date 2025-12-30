@@ -32,7 +32,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |             [NetBox](https://docs.nmaas.eu/nmaas-applications/tutorials/netbox/)             |           4.4.6          |    8.0.3    |
 |           [Oxidized](https://docs.nmaas.eu/nmaas-applications/tutorials/oxidized/)           |          0.30.1          |    3.0.2    |
 |[perfSONAR Testpoint](https://docs.nmaas.eu/nmaas-applications/tutorials/perfsonar-testpoint/)|          5.2.2-1         |    0.2.2    |
-|          [PgBackWeb](https://docs.nmaas.eu/nmaas-applications/tutorials/pgbackweb/)          |          0.4.2-1         |    1.0.9    |
+|          [PgBackWeb](https://docs.nmaas.eu/nmaas-applications/tutorials/pgbackweb/)          |           0.5.1          |    1.0.12   |
 |           [PostgreSQL](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#PostgreSQL)          |          17.6.0          |   16.7.26   |
 |         [Prometheus](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus/)         |           3.8.0          |    4.0.13   |
 |         [Routinator](https://docs.nmaas.eu/nmaas-applications/tutorials/routinator/)         |           0.8.3          |    2.0.0    |

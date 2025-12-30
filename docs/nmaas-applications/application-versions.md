@@ -32,7 +32,7 @@
     |       NetBox      |           4.4.6          |    8.0.3    |         4.4.8         |  VNOC  |
     |      Oxidized     |          0.30.1          |    3.0.2    |         0.35.0        |  VNOC  |
     |perfSONAR Testpoint|          5.2.2-1         |    0.2.2    |          N/A          |  VNOC  |
-    |     PgBackWeb     |          0.4.2-1         |    1.0.9    |          N/A          |  VNOC  |
+    |     PgBackWeb     |           0.5.1          |    1.0.12   |          N/A          |  VNOC  |
     |     PostgreSQL    |          17.6.0          |   16.7.26   |          N/A          |  VNOC  |
     |     Prometheus    |           3.8.0          |    4.0.13   |         3.8.0         |  VNOC  |
     |     Routinator    |           0.8.3          |    2.0.0    |       0.14.2-rc1      |  VNOC  |

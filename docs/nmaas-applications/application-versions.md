@@ -19,22 +19,22 @@
     |      Grafana      |          8.5.27          |    4.0.25   |         8.5.27        |  VNOC  |
     |      Grafana      |           9.5.5          |    6.0.1    |         9.5.21        |  VNOC  |
     |      Grafana      |          10.4.8          |    7.0.7    |         10.4.9        |  VNOC  |
-    |      Grafana      |          11.6.9          |    8.0.19   |         11.6.8        |  VNOC  |
+    |      Grafana      |          11.6.9          |    8.0.19   |         11.6.9        |  VNOC  |
     |    Healthchecks   |       3.9.20251231       |    1.1.38   |          3.7          |  VNOC  |
     |      Icinga2      |         2.14.6-1         |    3.0.2    |          N/A          |  VNOC  |
     |      InfluxDB     |         1.8.10-2         |    5.0.0    |         1.8.10        |  VNOC  |
     |      Jenkins      |         2.516.2-1        |    5.8.83   |        2.528.3        |  VNOC  |
     |      LibreNMS     |           1.47           |    2.0.1    |          N/A          |  VNOC  |
     |        Maat       |           1.0.9          |    3.0.2    |          N/A          |  VNOC  |
-    |      Metabase     |          57.5.7          |    1.0.14   |embedding-sdk-57-stable|  VNOC  |
-    |        N8n        |          1.116.2         |    1.1.0    |     n8n@2.0.0-rc.4    |  VNOC  |
+    |      Metabase     |          57.5.7          |    1.0.14   |embedding-sdk-58-stable|  VNOC  |
+    |        N8n        |          1.116.2         |    1.1.0    |       n8n@2.1.5       |  VNOC  |
     |        NAV        |           4.8.6          |    2.0.1    |          N/A          |  VNOC  |
-    |       NetBox      |           4.4.6          |    8.0.3    |         4.4.8         |  VNOC  |
+    |       NetBox      |           4.4.6          |    8.0.3    |         4.4.9         |  VNOC  |
     |      Oxidized     |          0.30.1          |    3.0.2    |         0.35.0        |  VNOC  |
     |perfSONAR Testpoint|          5.2.2-1         |    0.2.2    |          N/A          |  VNOC  |
     |     PgBackWeb     |           0.5.1          |    1.0.12   |          N/A          |  VNOC  |
     |     PostgreSQL    |          17.6.0          |   16.7.26   |          N/A          |  VNOC  |
-    |     Prometheus    |           3.8.0          |    4.0.13   |         3.8.0         |  VNOC  |
+    |     Prometheus    |           3.8.0          |    4.0.13   |         3.8.1         |  VNOC  |
     |     Routinator    |           0.8.3          |    2.0.0    |       0.14.2-rc1      |  VNOC  |
     |      Telegraf     |          1.35.3          |    1.8.61   |         1.37.0        |  VNOC  |
     |    Uptime Kuma    |           2.0.2          |    4.0.2    |        1.23.13        |  VNOC  |
@@ -62,7 +62,7 @@
     |           Grafana          |     6.5.2     |    2.0.1    |         6.7.6         |  VLAB  |
     |           Grafana          |     7.2.0     |    2.0.1    |         7.5.17        |  VLAB  |
     |           Grafana          |   10.4.19-1   |   7.0.13-1  |         10.4.9        |  VLAB  |
-    |           Grafana          |    11.6.9-1   |   8.0.19-1  |         11.6.8        |  VLAB  |
+    |           Grafana          |    11.6.9-1   |   8.0.19-1  |         11.6.9        |  VLAB  |
     |        Healthchecks        |3.13.20251215-1|   1.1.51-1  |          3.7          |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |          N/A          |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |         1.8.10        |  VLAB  |
@@ -71,17 +71,17 @@
     |          LibreNMS          |      1.47     |    2.0.1    |          N/A          |  VLAB  |
     |            Maat            |     1.0.12    |   3.0.9-2   |          N/A          |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |         2.1.0         |  VLAB  |
-    |          Metabase          |     57.7.1    |   1.0.17-1  |embedding-sdk-57-stable|  VLAB  |
+    |          Metabase          |     57.7.1    |   1.0.17-1  |embedding-sdk-58-stable|  VLAB  |
     |           Moodle           |    5.0.1-1    |    26.0.4   |         5.1.1         |  VLAB  |
-    |             N8n            |    1.116.2    |    1.1.0    |     n8n@2.0.0-rc.4    |  VLAB  |
+    |             N8n            |    1.116.2    |    1.1.0    |       n8n@2.1.5       |  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |          N/A          |  VLAB  |
-    |           NetBox           |     4.4.6     |    8.0.3    |         4.4.8         |  VLAB  |
+    |           NetBox           |     4.4.6     |    8.0.3    |         4.4.9         |  VLAB  |
     |       OWASP JuiceShop      |     19.1.1    |    1.0.3    |         19.1.1        |  VLAB  |
     |          Oxidized          |     0.28.0    |    2.0.1    |         0.35.0        |  VLAB  |
     |     perfSONAR Testpoint    |    5.2.2-1    |    0.2.2    |          N/A          |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |          N/A          |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |          N/A          |  VLAB  |
-    |         Prometheus         |    3.8.1-1    |   4.0.14-1  |         3.8.0         |  VLAB  |
+    |         Prometheus         |    3.8.1-1    |   4.0.14-1  |         3.8.1         |  VLAB  |
     |Prometheus Blackbox Exporter|     0.25.0    |    8.16.0   |          N/A          |  VLAB  |
     |         Routinator         |     0.8.3     |    2.0.0    |       0.14.2-rc1      |  VLAB  |
     |          UnrealIRC         |    3.2.8-1    |    1.0.0    |          N/A          |  VLAB  |

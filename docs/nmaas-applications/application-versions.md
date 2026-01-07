@@ -63,7 +63,7 @@
     |           Grafana          |     7.2.0     |    2.0.1    |         7.5.17        |  VLAB  |
     |           Grafana          |   10.4.19-1   |   7.0.13-1  |         10.4.9        |  VLAB  |
     |           Grafana          |    11.6.9-1   |   8.0.19-1  |         11.6.9        |  VLAB  |
-    |        Healthchecks        |3.13.20251215-1|   1.1.51-1  |          3.7          |  VLAB  |
+    |        Healthchecks        |3.13.20260104-1|   1.1.52-1  |          3.7          |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |          N/A          |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |         1.8.10        |  VLAB  |
     |           Jenkins          |   2.528.3-1   |   5.8.114   |        2.528.3        |  VLAB  |
@@ -71,7 +71,7 @@
     |          LibreNMS          |      1.47     |    2.0.1    |          N/A          |  VLAB  |
     |            Maat            |     1.0.12    |   3.0.9-2   |          N/A          |  VLAB  |
     |           MailDev          |     2.0.5     |    1.0.0    |         2.1.0         |  VLAB  |
-    |          Metabase          |     57.7.1    |   1.0.17-1  |embedding-sdk-58-stable|  VLAB  |
+    |          Metabase          |     58.1.1    |   1.0.18-1  |embedding-sdk-58-stable|  VLAB  |
     |           Moodle           |    5.0.1-1    |    26.0.4   |         5.1.1         |  VLAB  |
     |             N8n            |    1.116.2    |    1.1.0    |       n8n@2.2.4       |  VLAB  |
     |             NAV            |     4.8.6     |    2.0.1    |          N/A          |  VLAB  |
@@ -81,7 +81,7 @@
     |     perfSONAR Testpoint    |    5.2.2-1    |    0.2.2    |          N/A          |  VLAB  |
     |          PgBackWeb         |     0.4.2     |    1.0.0    |          N/A          |  VLAB  |
     |         PostgreSQL         |     14.3.0    |    11.5.0   |          N/A          |  VLAB  |
-    |         Prometheus         |    3.8.1-1    |   4.0.14-1  |         3.9.0         |  VLAB  |
+    |         Prometheus         |    3.9.0-1    |   4.0.15-1  |         3.9.0         |  VLAB  |
     |Prometheus Blackbox Exporter|     0.25.0    |    8.16.0   |          N/A          |  VLAB  |
     |         Routinator         |     0.8.3     |    2.0.0    |       0.14.2-rc1      |  VLAB  |
     |          UnrealIRC         |    3.2.8-1    |    1.0.0    |          N/A          |  VLAB  |

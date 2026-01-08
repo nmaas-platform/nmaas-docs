@@ -1,7 +1,7 @@
 ---
 authors: 
   - korvoj
-date: 2025-12-30
+date: 2026-01-08
 slug: postgresql-backups-pgbackweb
 categories:
     - Application Tutorials
@@ -182,5 +182,3 @@ In this tutorial we have performed the following steps:
 5. Configured PgBackWeb to execute a webhook upon each successful backup execution.
 6. Deployed PostgreSQL on nmaas.
 7. Restored the initial backup performed by PgBackWeb of the remote database to the PostgreSQL instance on nmaas.
-
-

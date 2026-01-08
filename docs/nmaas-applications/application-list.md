@@ -36,7 +36,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |           [PostgreSQL](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#PostgreSQL)          |          17.6.0          |   16.7.26   |
 |         [Prometheus](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus/)         |           3.8.0          |    4.0.13   |
 |         [Routinator](https://docs.nmaas.eu/nmaas-applications/tutorials/routinator/)         |           0.8.3          |    2.0.0    |
-|            [Telegraf](https://docs.nmaas.eu/nmaas-applications/tutorials/telegraf)           |          1.35.3          |    1.8.61   |
+|            [Telegraf](https://docs.nmaas.eu/nmaas-applications/tutorials/telegraf)           |          1.36.4          |    1.8.65   |
 |        [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)        |           2.0.2          |    4.0.2    |
 |   [Victoria Metrics](https://docs.nmaas.eu/nmaas-applications/tutorials/victoria-metrics/)   |          1.85.1          |    3.0.0    |
 |          [WebDAV Server](https://docs.nmaas.eu/nmaas-applications/tutorials/webdav/)         |           1.0.0          |    1.0.0    |

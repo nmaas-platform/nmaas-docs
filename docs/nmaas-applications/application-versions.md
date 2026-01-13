@@ -24,7 +24,7 @@
     |      Icinga2      |         2.14.6-1         |    3.0.2    |          N/A          |  VNOC  |
     |      InfluxDB     |         1.8.10-2         |    5.0.0    |         1.8.10        |  VNOC  |
     |      Jenkins      |         2.516.2-1        |    5.8.83   |        2.528.3        |  VNOC  |
-    |      LibreNMS     |           1.47           |    2.0.1    |          N/A          |  VNOC  |
+    |      LibreNMS     |          25.11.0         |    7.0.0    |          N/A          |  VNOC  |
     |        Maat       |           1.0.9          |    3.0.2    |          N/A          |  VNOC  |
     |      Metabase     |          57.5.7          |    1.0.14   |embedding-sdk-58-stable|  VNOC  |
     |        N8n        |          1.116.2         |    1.1.0    |       n8n@2.2.4       |  VNOC  |

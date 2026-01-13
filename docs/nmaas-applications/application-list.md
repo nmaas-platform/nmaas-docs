@@ -24,7 +24,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |            [Icinga2](https://docs.nmaas.eu/nmaas-applications/tutorials/icinga2/)            |         2.14.6-1         |    3.0.2    |
 |           [InfluxDB](https://docs.nmaas.eu/nmaas-applications/tutorials/influxdb/)           |         1.8.10-2         |    5.0.0    |
 |            [Jenkins](https://docs.nmaas.eu/nmaas-applications/tutorials/jenkins/)            |         2.516.2-1        |    5.8.83   |
-|           [LibreNMS](https://docs.nmaas.eu/nmaas-applications/tutorials/librenms/)           |           1.47           |    2.0.1    |
+|           [LibreNMS](https://docs.nmaas.eu/nmaas-applications/tutorials/librenms/)           |          25.11.0         |    7.0.0    |
 |               [Maat](https://docs.nmaas.eu/nmaas-applications/tutorials/maat/)               |           1.0.9          |    3.0.2    |
 |           [Metabase](https://docs.nmaas.eu/nmaas-applications/tutorials/metabase/)           |          57.5.7          |    1.0.14   |
 |                [N8n](https://docs.nmaas.eu/nmaas-applications/tutorials/n8n/)                |          1.116.2         |    1.1.0    |

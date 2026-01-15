@@ -19,4 +19,4 @@ jobs:
           source-repo: "git@gitlab.software.geant.org:nmaas/documentation/nmaas-docs.git"
           destination-repo: "git@github.com:nmaas-platform/nmaas-docs.git"
           single-branch: true
-          single-branch-name: "develop"
+          single-branch-name: "master"

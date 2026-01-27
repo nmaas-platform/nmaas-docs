@@ -19,7 +19,7 @@
     |      Grafana      |          8.5.27          |    4.0.25   |         8.5.27        |  VNOC  |
     |      Grafana      |           9.5.5          |    6.0.1    |         9.5.21        |  VNOC  |
     |      Grafana      |          10.4.8          |    7.0.7    |         10.4.9        |  VNOC  |
-    |      Grafana      |          11.6.9          |    8.0.19   |         11.6.9        |  VNOC  |
+    |      Grafana      |          11.6.9          |    8.0.19   |   11.6.9+security-01  |  VNOC  |
     |    Healthchecks   |       3.9.20251231       |    1.1.38   |          4.0          |  VNOC  |
     |      Icinga2      |         2.14.6-1         |    3.0.2    |          N/A          |  VNOC  |
     |      InfluxDB     |         1.8.10-2         |    5.0.0    |         1.8.10        |  VNOC  |
@@ -62,7 +62,7 @@
     |           Grafana          |     6.5.2     |    2.0.1    |         6.7.6         |  VLAB  |
     |           Grafana          |     7.2.0     |    2.0.1    |         7.5.17        |  VLAB  |
     |           Grafana          |   10.4.19-1   |   7.0.13-1  |         10.4.9        |  VLAB  |
-    |           Grafana          |    11.6.9-1   |   8.0.19-1  |         11.6.9        |  VLAB  |
+    |           Grafana          |    11.6.9-1   |   8.0.19-1  |   11.6.9+security-01  |  VLAB  |
     |        Healthchecks        |3.13.20260119-1|   1.1.54-1  |          4.0          |  VLAB  |
     |           Icinga2          |     2.11.4    |    2.0.1    |          N/A          |  VLAB  |
     |          InfluxDB          |     1.7.10    |    4.4.8    |         1.8.10        |  VLAB  |

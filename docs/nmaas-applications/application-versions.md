@@ -9,7 +9,7 @@
     |      Bastion      |         20.04-v2         |    2.1.4    |          N/A          |  VNOC  |
     | Bastion Web Server|          22.04.2         |    1.0.2    |          N/A          |  VNOC  |
     |       Booked      |          2.8.6-3         |    3.1.4    |          N/A          |  VNOC  |
-    | changedetectionio |          0.50.42         |    1.0.49   |         0.52.9        |  VNOC  |
+    | changedetectionio |          0.52.9          |    1.0.55   |         0.52.9        |  VNOC  |
     |      CheckCle     |          1.6.0-1         |    1.0.6    |          N/A          |  VNOC  |
     |       CodiMD      |           2.6.1          |    1.0.8    |         2.5.4         |  VNOC  |
     | Debian repository |            1.0           |    2.0.1    |          N/A          |  VNOC  |
@@ -20,7 +20,7 @@
     |      Grafana      |           9.5.5          |    6.0.1    |         9.5.21        |  VNOC  |
     |      Grafana      |          10.4.8          |    7.0.7    |         10.4.9        |  VNOC  |
     |      Grafana      |          11.6.9          |    8.0.19   |   11.6.9+security-01  |  VNOC  |
-    |    Healthchecks   |       3.9.20251231       |    1.1.38   |          4.0          |  VNOC  |
+    |    Healthchecks   |       4.0.20260126       |    1.1.55   |          4.0          |  VNOC  |
     |      Icinga2      |         2.14.6-1         |    3.0.2    |          N/A          |  VNOC  |
     |      InfluxDB     |         1.8.10-2         |    5.0.0    |         1.8.10        |  VNOC  |
     |      Jenkins      |         2.516.2-1        |    5.8.83   |        2.541.1        |  VNOC  |
@@ -53,7 +53,7 @@
     |           Adminer          |     5.4.1    |    3.0.11   |         5.0.6         |  VLAB  |
     |       Apache Airflow       |2.7.1-original|   21.11.0   |         3.1.6         |  VLAB  |
     |           Bastion          |     18.04    |    2.1.0    |          N/A          |  VLAB  |
-    |      changedetectionio     |   0.52.8-1   |   1.0.54-1  |         0.52.9        |  VLAB  |
+    |      changedetectionio     |   0.52.9-1   |   1.0.55-1  |         0.52.9        |  VLAB  |
     |          CheckCle          |    1.6.0-4   |   1.0.8-1   |          N/A          |  VLAB  |
     |           Checkle          |     1.4.0    |    1.0.1    |          N/A          |  VLAB  |
     |           CodiMD           |     2.5.3    |    1.0.4    |         2.5.4         |  VLAB  |

@@ -27,7 +27,7 @@
     |      LibreNMS     |          25.11.0         |    7.0.0    |          N/A          |  VNOC  |
     |        Maat       |           1.0.9          |    3.0.2    |          N/A          |  VNOC  |
     |      Metabase     |          57.5.7          |    1.0.14   |embedding-sdk-58-stable|  VNOC  |
-    |        N8n        |          1.116.2         |    1.1.0    |       n8n@2.4.8       |  VNOC  |
+    |        N8n        |         1.123.12         |    1.1.1    |       n8n@2.4.8       |  VNOC  |
     |        NAV        |           4.8.6          |    2.0.1    |          N/A          |  VNOC  |
     |       NetBox      |           4.4.6          |    8.0.3    |         4.5.1         |  VNOC  |
     |      Oxidized     |          0.30.1          |    3.0.2    |         0.35.0        |  VNOC  |

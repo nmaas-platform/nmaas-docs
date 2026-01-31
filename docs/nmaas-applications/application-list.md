@@ -27,7 +27,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |           [LibreNMS](https://docs.nmaas.eu/nmaas-applications/tutorials/librenms/)           |          25.11.0         |    7.0.0    |
 |               [Maat](https://docs.nmaas.eu/nmaas-applications/tutorials/maat/)               |           1.0.9          |    3.0.2    |
 |           [Metabase](https://docs.nmaas.eu/nmaas-applications/tutorials/metabase/)           |          57.5.7          |    1.0.14   |
-|                [N8n](https://docs.nmaas.eu/nmaas-applications/tutorials/n8n/)                |          1.116.2         |    1.1.0    |
+|                [N8n](https://docs.nmaas.eu/nmaas-applications/tutorials/n8n/)                |         1.123.12         |    1.1.1    |
 |                [NAV](https://docs.nmaas.eu/nmaas-applications/tutorials/nav/)                |           4.8.6          |    2.0.1    |
 |             [NetBox](https://docs.nmaas.eu/nmaas-applications/tutorials/netbox/)             |           4.4.6          |    8.0.3    |
 |           [Oxidized](https://docs.nmaas.eu/nmaas-applications/tutorials/oxidized/)           |          0.30.1          |    3.0.2    |

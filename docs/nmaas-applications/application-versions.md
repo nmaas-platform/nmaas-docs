@@ -84,6 +84,7 @@
     |         Prometheus         |    3.9.1-1   |   4.0.16-1  |         3.9.1         |  VLAB  |
     |Prometheus Blackbox Exporter|    0.25.0    |    8.16.0   |          N/A          |  VLAB  |
     |         Routinator         |     0.8.3    |    2.0.0    |       0.14.2-rc1      |  VLAB  |
+    |            Trino           |     479-1    |    1.42.0   |          N/A          |  VLAB  |
     |          UnrealIRC         |    3.2.8-1   |    1.0.0    |          N/A          |  VLAB  |
     |         Uptime Kuma        |    1.10.2    |    1.0.0    |        1.23.13        |  VLAB  |
     |           Valkey           |     7.2.6    |    0.3.15   |          N/A          |  VLAB  |

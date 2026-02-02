@@ -36,7 +36,7 @@
     |     PostgreSQL    |          17.6.0          |   16.7.26   |          N/A          |  VNOC  |
     |     Prometheus    |           3.8.0          |    4.0.13   |         3.9.1         |  VNOC  |
     |     Routinator    |           0.8.3          |    2.0.0    |       0.14.2-rc1      |  VNOC  |
-    |      Telegraf     |          1.36.4          |    1.8.65   |         1.37.1        |  VNOC  |
+    |      Telegraf     |          1.36.4          |    1.8.65   |         1.37.2        |  VNOC  |
     |    Uptime Kuma    |           2.0.2          |    4.0.2    |        1.23.13        |  VNOC  |
     |  Victoria Metrics |          1.85.1          |    3.0.0    |          N/A          |  VNOC  |
     |   WebDAV Server   |           1.0.0          |    1.0.0    |          N/A          |  VNOC  |

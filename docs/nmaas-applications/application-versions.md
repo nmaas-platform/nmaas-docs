@@ -79,7 +79,7 @@
     |            Maat            |   1.0.13-4   |   3.0.13-1  |      N/A     |  VLAB  |
     |           MailDev          |     2.0.5    |    1.0.0    |     2.1.0    |  VLAB  |
     |          Metabase          |    59.5.2    |   1.0.31-1  |  latest-oss  |  VLAB  |
-    |           Moodle           |    5.0.1-1   |    26.0.4   |     5.1.1    |  VLAB  |
+    |           Moodle           |    5.0.1-1   |    26.0.4   |   5.2.0-rc2  |  VLAB  |
     |             N8n            |    1.116.2   |    1.1.0    |    stable    |  VLAB  |
     |             NAV            |     4.8.6    |    2.0.1    |      N/A     |  VLAB  |
     |           NetBox           |    4.5.5-2   |    8.0.19   |     4.5.8    |  VLAB  |

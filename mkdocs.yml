@@ -25,6 +25,9 @@ nav:
       - Bulk Domain Deployment: 'use-cases/virtual-lab/bulk-domain-deployment.md'
       - Domain Groups: 'use-cases/virtual-lab/domain-groups.md'
       - Bulk Application Deployment: 'use-cases/virtual-lab/bulk-application-deployment.md'
+    - Metrics:
+      - Introduction: 'use-cases/metrics/metrics-introduction.md'
+      - Example Workflows: 'use-cases/metrics/example-workflows.md'
   - nmaas Tutorials and Workshops:
     - Introduction: 'tutorials-workshops/introduction.md'
     - Deploying a Local Kubernetes Cluster: 'tutorials-workshops/deploying-local-kubernetes-cluster.md'

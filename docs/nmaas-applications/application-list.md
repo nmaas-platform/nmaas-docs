@@ -38,7 +38,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |                   [PgBackWeb](https://docs.nmaas.eu/nmaas-applications/tutorials/pgbackweb/)                  |           0.5.1          |    1.0.12   |
 |                   [PostgreSQL](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#PostgreSQL)                   |          17.6.0          |   16.7.26   |
 |                  [Prometheus](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus/)                 |           3.8.0          |    4.0.13   |
-|[Prometheus Blackbox Exporter](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus-blackbox-exporter)|          0.28.0          |    11.9.1   |
+|[Prometheus Blackbox Exporter](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus-blackbox-exporter)|         0.28.0-1         |    11.9.1   |
 |                  [Routinator](https://docs.nmaas.eu/nmaas-applications/tutorials/routinator/)                 |           0.8.3          |    2.0.0    |
 |                    [Telegraf](https://docs.nmaas.eu/nmaas-applications/tutorials/telegraf)                    |          1.36.4          |    1.8.65   |
 |                       [Trino](https://docs.nmaas.eu/nmaas-applications/tutorials/trino/)                      |            476           |    1.42.0   |

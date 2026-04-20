@@ -40,7 +40,7 @@
     |         Prometheus         |           3.8.0          |    4.0.13   |     3.8.0    |  VNOC  |
     |Prometheus Blackbox Exporter|         0.28.0-1         |    11.9.1   |      N/A     |  VNOC  |
     |         Routinator         |           0.8.3          |    2.0.0    |  0.14.2-rc1  |  VNOC  |
-    |          Telegraf          |          1.36.4          |    1.8.65   |    1.37.0    |  VNOC  |
+    |          Telegraf          |          1.36.4          |    1.8.65   |    1.38.3    |  VNOC  |
     |            Trino           |            476           |    1.42.0   |      N/A     |  VNOC  |
     |         Uptime Kuma        |           2.2.1          |    4.0.5    |    1.23.13   |  VNOC  |
     |      Victoria Metrics      |          1.85.1          |    3.0.0    |      N/A     |  VNOC  |
@@ -62,7 +62,7 @@
     |          CheckCle          |    1.6.0-5   |    1.0.4    |      N/A     |  VLAB  |
     |           Checkle          |     1.4.0    |    1.0.1    |      N/A     |  VLAB  |
     |           CodiMD           |     2.5.3    |    1.0.4    |     2.5.4    |  VLAB  |
-    |            CTFd            |     3.8.1    |    2.0.4    |     3.8.1    |  VLAB  |
+    |            CTFd            |     3.8.1    |    2.0.4    |     3.8.4    |  VLAB  |
     |          Databasus         |    3.24.0    |    3.24.0   |      N/A     |  VLAB  |
     |      Debian repository     |      1.0     |    2.0.1    |      N/A     |  VLAB  |
     |           Grafana          |     6.5.2    |    2.0.1    |     6.7.6    |  VLAB  |

@@ -24,7 +24,7 @@
     |        Healthchecks        |       4.1.20260323       |    1.1.62   |      3.7     |  VNOC  |
     |           Icinga2          |         2.14.6-1         |    3.0.2    |      N/A     |  VNOC  |
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |    1.8.10    |  VNOC  |
-    |           Jenkins          |         2.541.3-2        |    5.9.12   |    2.555.1   |  VNOC  |
+    |           Jenkins          |         2.555.1-1        |    5.9.18   |    2.555.1   |  VNOC  |
     |          Keycloak          |          26.5.3          |    0.14.6   |      N/A     |  VNOC  |
     |           Kuvasz           |           3.5.1          |    3.5.1    |      N/A     |  VNOC  |
     |          LibreNMS          |          25.11.0         |    7.0.0    |      N/A     |  VNOC  |
@@ -62,7 +62,7 @@
     |          CheckCle          |    1.6.0-5   |    1.0.4    |      N/A     |  VLAB  |
     |           Checkle          |     1.4.0    |    1.0.1    |      N/A     |  VLAB  |
     |           CodiMD           |     2.5.3    |    1.0.4    |     2.5.4    |  VLAB  |
-    |            CTFd            |     3.8.1    |    2.0.4    |     3.8.4    |  VLAB  |
+    |            CTFd            |     3.8.4    |    2.0.7    |     3.8.4    |  VLAB  |
     |          Databasus         |    3.24.0    |    3.24.0   |      N/A     |  VLAB  |
     |      Debian repository     |      1.0     |    2.0.1    |      N/A     |  VLAB  |
     |           Grafana          |     6.5.2    |    2.0.1    |     6.7.6    |  VLAB  |
@@ -72,7 +72,7 @@
     |        Healthchecks        |4.1.20260323-1|   1.1.62-1  |      3.7     |  VLAB  |
     |           Icinga2          |    2.11.4    |    2.0.1    |      N/A     |  VLAB  |
     |          InfluxDB          |   1.8.10-3   |    5.0.0    |    1.8.10    |  VLAB  |
-    |           Jenkins          |   2.541.3-2  |    5.9.12   |    2.555.1   |  VLAB  |
+    |           Jenkins          |   2.555.1-1  |    5.9.18   |    2.555.1   |  VLAB  |
     |          Keycloak          |    26.5.3    |    0.14.6   |      N/A     |  VLAB  |
     |           Kuvasz           |    3.5.1-3   |    3.5.1    |      N/A     |  VLAB  |
     |        LibreBooking        |     2.8.6    |    3.1.0    |      N/A     |  VLAB  |

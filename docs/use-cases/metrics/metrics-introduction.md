@@ -1,6 +1,6 @@
 # Introduction to nmaas Metrics
 
-nmaas Metrics is an nmaas use-case centered around applications for collecting, consolidating, and visualizing data from multiple systems. It allows the creation of unified dashboards, enabling organizations to monitor project progress, track service KPIs and SLA compliance, analyze infrastructure performance, and measure user engagement in real time. By integrating data from source code repositories, CI/CD pipelines, monitoring systems, APIs, and other external services, it transforms distributed operational data into clear, actionable insights.
+nmaas Metrics is an nmaas use-case centered around [applications](../../nmaas-applications/application-list.md) for collecting, consolidating, and visualizing data from multiple systems. It allows the creation of unified dashboards, enabling organizations to monitor project progress, track service KPIs and SLA compliance, analyze infrastructure performance, and measure user engagement in real time. By integrating data from source code repositories, CI/CD pipelines, monitoring systems, APIs, and other external services, it transforms distributed operational data into clear, actionable insights.
 
 ## nmaas Metrics in Practice
 
@@ -24,9 +24,11 @@ nmaas Metrics allows you to track all your key performance indicators within a s
 - Monitor development activity in source code management platforms such as GitLab, gaining visibility into contributions, workload distribution, and potential bottlenecks.
 - Track application deployments and user registrations by consuming data from the nmaas Platform API, helping you understand adoption trends and service growth.
 - Oversee content publishing schedules through RSS integrations, ensuring regular communication and timely updates.
-- Log presentations, outreach activities, or other organizational events via custom data ingestion endpoints, keeping a clear record of dissemination efforts. By bringing together data from multiple sources into a cohesive analytics layer, nmaas Metrics transforms scattered operational information into structured insights that support informed decision-making and continuous improvement.
+- Log presentations, outreach activities, or other organizational events via custom data ingestion endpoints, keeping a clear record of dissemination efforts. 
 
-The [example workflows](example-workflows.md) page provides more details on how the nmaas Team has adopted nmaas Metrics for day-to-day monitoring of internal KPIs, including the source-code for the data fetchign and data transformation workflows.
+By bringing together data from multiple sources into a cohesive analytics layer, nmaas Metrics transforms scattered operational information into structured insights that support informed decision-making and continuous improvement.
+
+The [example workflows](example-workflows.md) page provides more details on how the nmaas Team has adopted nmaas Metrics for day-to-day monitoring of internal KPIs, including the source-code for the data fetching and data transformation workflows.
 
 #### AI-Enhanced Data Workflows
 
@@ -41,6 +43,6 @@ This approach enables teams to reduce manual reporting effort, improve data qual
 
 ## How Can I Get Started with nmaas Metrics?
 
-If you are NREN or an institution under an NREN and you would like to use the managed nmaas instance provided by the GÉANT project, [get in touch with us](../../contact.md). Users interested in self-hosting nmaas are welcome to visit the dedicated pages for deploying nmaas for on their [own infrastructure](../../self-hosted-nmaas/introduction.md).
+If you are NREN or an institution under an NREN and you would like to use the managed nmaas instance provided by the GÉANT project, [get in touch with us](../../contact.md). Users interested in self-hosting nmaas are welcome to visit the dedicated pages for deploying nmaas on their [own infrastructure](../../self-hosted-nmaas/introduction.md).
 
 Detailed video tutorials showcasing the deployment of the core applications backing the nmaas Metrics use-case are also available on YouTube.

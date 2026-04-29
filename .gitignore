@@ -9,3 +9,4 @@ venv/
 *:Zone.Identifier
 /.idea/
 .cache/
+.python-version

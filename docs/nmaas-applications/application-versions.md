@@ -77,7 +77,7 @@
     |           Kuvasz           |    3.5.1-3   |    3.5.1    |        N/A       |  VLAB  |
     |        LibreBooking        |     2.8.6    |    3.1.0    |        N/A       |  VLAB  |
     |          LibreNMS          |     1.47     |    2.0.1    |        N/A       |  VLAB  |
-    |            Maat            |   1.0.13-4   |   3.0.13-1  |        N/A       |  VLAB  |
+    |            Maat            |    1.0.15    |    4.0.4    |        N/A       |  VLAB  |
     |           MailDev          |     2.0.5    |    1.0.0    |       2.1.0      |  VLAB  |
     |          Metabase          |    60.2.2    |   1.0.32-1  |ux-3754-full-state|  VLAB  |
     |           Moodle           |    5.0.1-1   |    26.0.4   |     5.2.0-rc2    |  VLAB  |
@@ -86,7 +86,7 @@
     |           NetBox           |    4.5.5-2   |    8.0.19   |       4.5.9      |  VLAB  |
     |       OWASP JuiceShop      |    19.1.1    |    1.0.3    |      19.1.1      |  VLAB  |
     |          Oxidized          |    0.28.0    |    2.0.1    |      0.35.0      |  VLAB  |
-    |     perfSONAR Testpoint    |    5.2.2-1   |    0.2.2    |        N/A       |  VLAB  |
+    |     perfSONAR Testpoint    |     5.2.4    |  0.2.4-beta |        N/A       |  VLAB  |
     |          PgBackWeb         |     0.4.2    |    1.0.0    |        N/A       |  VLAB  |
     |         PostgreSQL         |    14.3.0    |    11.5.0   |        N/A       |  VLAB  |
     |         Prometheus         |    3.9.1-1   |   4.0.16-1  |       3.8.0      |  VLAB  |

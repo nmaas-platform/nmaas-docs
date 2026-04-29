@@ -1,10 +1,10 @@
 # Introduction to nmaas Metrics
 
-nmaas Metrics is an nmaas use-case centered around [applications](../../nmaas-applications/application-list.md) for collecting, consolidating, and visualizing data from multiple systems. It allows the creation of unified dashboards, enabling organizations to monitor project progress, track service KPIs and SLA compliance, analyze infrastructure performance, and measure user engagement in real time. By integrating data from source code repositories, CI/CD pipelines, monitoring systems, APIs, and other external services, it transforms distributed operational data into clear, actionable insights.
+nmaas Metrics is an nmaas use-case centered around applications for collecting, consolidating, and visualizing data from multiple systems. It allows the creation of unified dashboards, enabling organizations to monitor project progress, track service KPIs and SLA compliance, analyze infrastructure performance, and measure user engagement in real time. By integrating data from source code repositories, CI/CD pipelines, monitoring systems, APIs, and other external services, it transforms distributed operational data into clear, actionable insights.
 
 ## nmaas Metrics in Practice
 
-The nmaas Metrics use-case is centered around 4 core applications now available in the nmaas catalogue:
+The nmaas Metrics use-case is centered around 4 core applications now available in the [nmaas catalogue](../../nmaas-applications/application-list.md):
 
 - [Metabase](https://www.metabase.com/) - a business analytics application capable of connecting to local and remote [datasources](https://www.metabase.com/data-sources/) (e.g., PostgreSQL, MySQL, ClickHouse, MondoDB...) to visualize data.
 - [N8n](https://n8n.io/) - a workflow management system offering a visual workflow builder, allowing users to construct data fetching, cleaning, enrichment, and persistence to a Metabase supported datastore.

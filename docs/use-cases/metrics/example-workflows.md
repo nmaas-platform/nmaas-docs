@@ -14,7 +14,7 @@ The sections below demonstrate the end-to-end usage of the nmaas Metrics use-cas
 
 The four [core nmaas Metrics applications](./metrics-introduction.md#nmaas-metrics-in-practice) (PostgreSQL, Adminer, N8n, Metabase) can be deployed in any new or existing nmaas domain. The video below demonstrates the application deployment process, including any required configuration steps.
 
-![type:video](https://www.youtube.com/watch?v=QpNyalHUCN0)
+![type:video](https://www.youtube.com/embed/QpNyalHUCN0)
 
 ## Application Configuration
 
@@ -22,7 +22,7 @@ Once the core nmaas Metrics applications are deployed, they can be configured to
 
 The video below provides a visual walkthrough of this process.
 
-![type:video](https://www.youtube.com/watch?v=91I8Xcpe64g)
+![type:video](https://www.youtube.com/embed/91I8Xcpe64g)
 
 ## Workflows
 
@@ -30,7 +30,7 @@ With the applications deployed and configured, the next step is to design the in
 
 The following video implements the three demo nmaas Metrics workflows (web page scraping, GitLab, and nmaas information retrieval), along with a detailed explanation of how the JSONB column can be used when implementing other workflows from scratch. 
 
-![type:video](https://www.youtube.com/watch?v=JRgdBTJES3k)
+![type:video](https://www.youtube.com/embed/JRgdBTJES3k)
 
 The source code for the presented workflows can be downloaded from the following links:
 
@@ -44,4 +44,4 @@ The final step is to visualize the obtained data through dashboards. This is acc
 
 The final video in the nmaas Metrics series provides an overview of how a unified dashboard can be created in Metabase using a variety of visualization options.
 
-![type:video](https://www.youtube.com/watch?v=t_3eJsV2MmM)
+![type:video](https://www.youtube.com/embed/t_3eJsV2MmM)

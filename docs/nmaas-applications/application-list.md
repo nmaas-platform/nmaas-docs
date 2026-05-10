@@ -26,7 +26,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |                    [InfluxDB](https://docs.nmaas.eu/nmaas-applications/tutorials/influxdb/)                   |         1.8.10-2         |    5.0.0    |
 |                     [Jenkins](https://docs.nmaas.eu/nmaas-applications/tutorials/jenkins/)                    |         2.555.1-1        |    5.9.18   |
 |                    [Keycloak](https://docs.nmaas.eu/nmaas-applications/tutorials/keycloak/)                   |          26.5.3          |    0.14.6   |
-|                      [Kuvasz](https://docs.nmaas.eu/nmaas-applications/tutorials/kuvasz/)                     |           3.5.1          |    3.5.1    |
+|                      [Kuvasz](https://docs.nmaas.eu/nmaas-applications/tutorials/kuvasz/)                     |           3.9.0          |    3.3.0    |
 |                    [LibreNMS](https://docs.nmaas.eu/nmaas-applications/tutorials/librenms/)                   |          25.11.0         |    7.0.0    |
 |                        [Maat](https://docs.nmaas.eu/nmaas-applications/tutorials/maat/)                       |           1.0.9          |    3.0.2    |
 |                    [Metabase](https://docs.nmaas.eu/nmaas-applications/tutorials/metabase/)                   |          59.5.2          |    1.0.31   |

@@ -26,7 +26,7 @@
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |      1.8.10      |  VNOC  |
     |           Jenkins          |         2.555.1-1        |    5.9.18   |      2.555.1     |  VNOC  |
     |          Keycloak          |          26.5.3          |    0.14.6   |        N/A       |  VNOC  |
-    |           Kuvasz           |           3.5.1          |    3.5.1    |        N/A       |  VNOC  |
+    |           Kuvasz           |           3.9.0          |    3.3.0    |        N/A       |  VNOC  |
     |          LibreNMS          |          25.11.0         |    7.0.0    |        N/A       |  VNOC  |
     |            Maat            |           1.0.9          |    3.0.2    |        N/A       |  VNOC  |
     |          Metabase          |          59.5.2          |    1.0.31   |ux-3754-full-state|  VNOC  |
@@ -75,7 +75,7 @@
     |          InfluxDB          |   1.8.10-3   |    5.0.0    |      1.8.10      |  VLAB  |
     |           Jenkins          |   2.555.1-1  |    5.9.18   |      2.555.1     |  VLAB  |
     |          Keycloak          |    26.5.3    |    0.14.6   |        N/A       |  VLAB  |
-    |           Kuvasz           |    3.5.1-3   |    3.5.1    |        N/A       |  VLAB  |
+    |           Kuvasz           |     3.8.0    |    3.3.0    |        N/A       |  VLAB  |
     |        LibreBooking        |     2.8.6    |    3.1.0    |        N/A       |  VLAB  |
     |          LibreNMS          |     1.47     |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |    1.0.15    |    4.0.4    |        N/A       |  VLAB  |

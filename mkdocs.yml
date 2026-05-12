@@ -12,12 +12,12 @@ nav:
   - Self-Hosted nmaas:
     - Introduction: 'self-hosted-nmaas/introduction.md'
     - Installation Guide: 'self-hosted-nmaas/install-guide.md'
-  - nmaas Portal Guides:
+  - User Guides:
     - Introduction: 'guides/introduction.md'
-    - Application Manager Guide: 'guides/application-manager-guide.md'
     - Domain Admin Guide: 'guides/domain-admin-guide.md'
-    - User Guide: 'guides/user-guide.md'
-  - nmaas Use-Cases:
+    - Domain User Guide: 'guides/user-guide.md'
+    - Application Manager Guide: 'guides/application-manager-guide.md'
+  - Use-Cases:
     - Virtual NOC:
       - Introduction: 'use-cases/virtual-noc/vnoc-introduction.md'
     - Virtual Lab:
@@ -28,25 +28,7 @@ nav:
     - Metrics:
       - Introduction: 'use-cases/metrics/metrics-introduction.md'
       - Example Workflows: 'use-cases/metrics/example-workflows.md'
-  - nmaas Tutorials and Workshops:
-    - Introduction: 'tutorials-workshops/introduction.md'
-    - Deploying a Local Kubernetes Cluster: 'tutorials-workshops/deploying-local-kubernetes-cluster.md'
-    - Deploying an nmaas Test Instance: 'tutorials-workshops/deploying-nmaas-test-instance.md'
-    - All-in-one nmaas VM image: 'tutorials-workshops/all-in-one-vm-image.md'
-    - JRES 2022:
-      - Introduction: 'tutorials-workshops/jres2022/introduction.md'
-      - Demo Network Environment: 'tutorials-workshops/jres2022/p3_demo-network-environment.md'
-      - Monitoring the Demo Network Environment: 'tutorials-workshops/jres2022/p4_monitoring-demo-network-environment.md'
-      - Adding a Custom Application: 'tutorials-workshops/jres2022/p5_adding_custom_app.md'
-      - Appendix - Credentials: 'tutorials-workshops/jres2022/appendix.md'
-    - JRES 2024:
-      - Introduction: 'tutorials-workshops/jres2024/introduction.md'
-      - Bulk Domain Deployment: 'tutorials-workshops/jres2024/p1_vlab-bulk-registration.md'
-      - Domain Groups Customization: 'tutorials-workshops/jres2024/p2_domain-groups-customization.md'
-      - Deploying the First Application: 'tutorials-workshops/jres2024/p3_deploying-the-first-app.md'
-      - Complete Web Development vLAB Scenario: 'tutorials-workshops/jres2024/p4_complete-web-dev-vlab-scenario.md'
-      - Bulk Application Deployment: 'tutorials-workshops/jres2024/p5_vlab-bulk-app-deployment.md'
-  - nmaas Catalogue:
+  - Catalogue:
     - General Application Deployment: 'nmaas-applications/general-app-deployment.md'
     - Supported Applications: 'nmaas-applications/application-list.md'
     - Adding a New Application: 'nmaas-applications/new-application.md'
@@ -94,24 +76,42 @@ nav:
       - WebDAV: 'nmaas-applications/tutorials/webdav.md'
       - Zabbix: 'nmaas-applications/tutorials/zabbix.md'
       - Znuny: 'nmaas-applications/tutorials/znuny.md'
+  - Tutorials and Workshops:
+      - Introduction: 'tutorials-workshops/introduction.md'
+      - Deploying a Local Kubernetes Cluster: 'tutorials-workshops/deploying-local-kubernetes-cluster.md'
+      - Deploying an nmaas Test Instance: 'tutorials-workshops/deploying-nmaas-test-instance.md'
+      - All-in-one nmaas VM image: 'tutorials-workshops/all-in-one-vm-image.md'
+      - JRES 2022:
+          - Introduction: 'tutorials-workshops/jres2022/introduction.md'
+          - Demo Network Environment: 'tutorials-workshops/jres2022/p3_demo-network-environment.md'
+          - Monitoring the Demo Network Environment: 'tutorials-workshops/jres2022/p4_monitoring-demo-network-environment.md'
+          - Adding a Custom Application: 'tutorials-workshops/jres2022/p5_adding_custom_app.md'
+          - Appendix - Credentials: 'tutorials-workshops/jres2022/appendix.md'
+      - JRES 2024:
+          - Introduction: 'tutorials-workshops/jres2024/introduction.md'
+          - Bulk Domain Deployment: 'tutorials-workshops/jres2024/p1_vlab-bulk-registration.md'
+          - Domain Groups Customization: 'tutorials-workshops/jres2024/p2_domain-groups-customization.md'
+          - Deploying the First Application: 'tutorials-workshops/jres2024/p3_deploying-the-first-app.md'
+          - Complete Web Development vLAB Scenario: 'tutorials-workshops/jres2024/p4_complete-web-dev-vlab-scenario.md'
+          - Bulk Application Deployment: 'tutorials-workshops/jres2024/p5_vlab-bulk-app-deployment.md'
+  - Presentations: 'nmaas-presentations.md'
   - Release Notes:
-    - '1.9.0': 'release-notes/1.9.0.md'
-    - '1.8.1': 'release-notes/1.8.1.md'
-    - '1.8.0': 'release-notes/1.8.0.md'
-    - '1.7.1': 'release-notes/1.7.1.md'
-    - '1.7.0': 'release-notes/1.7.0.md'
-    - '1.6.5': 'release-notes/1.6.5.md'
-    - '1.6.4': 'release-notes/1.6.4.md'
-    - '1.6.3': 'release-notes/1.6.3.md'
-    - '1.6.2': 'release-notes/1.6.2.md'
-    - '1.6.1': 'release-notes/1.6.1.md'
-    - '1.6.0': 'release-notes/1.6.0.md'
-    - '1.5.4': 'release-notes/1.5.4.md'
-  - nmaas Presentations: 'nmaas-presentations.md'
+      - '1.9.0': 'release-notes/1.9.0.md'
+      - '1.8.1': 'release-notes/1.8.1.md'
+      - '1.8.0': 'release-notes/1.8.0.md'
+      - '1.7.1': 'release-notes/1.7.1.md'
+      - '1.7.0': 'release-notes/1.7.0.md'
+      - '1.6.5': 'release-notes/1.6.5.md'
+      - '1.6.4': 'release-notes/1.6.4.md'
+      - '1.6.3': 'release-notes/1.6.3.md'
+      - '1.6.2': 'release-notes/1.6.2.md'
+      - '1.6.1': 'release-notes/1.6.1.md'
+      - '1.6.0': 'release-notes/1.6.0.md'
+      - '1.5.4': 'release-notes/1.5.4.md'
+  - API Docs: api-docs.md
   - FAQ: faq.md
   - Contact: contact.md
   - About: about.md
-  - API Docs: api-docs.md
 
 theme:
   logo: 'img/nmaas_white_text.png'

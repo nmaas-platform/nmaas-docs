@@ -85,7 +85,7 @@
     |             N8n            |   1.123.31   |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |     4.8.6    |    2.0.1    |        N/A       |  VLAB  |
     |           NetBox           |    4.5.5-2   |    8.0.19   |       4.6.0      |  VLAB  |
-    |       OWASP JuiceShop      |    19.1.1    |    1.0.3    |      19.1.1      |  VLAB  |
+    |       OWASP JuiceShop      |    19.1.1    |    1.0.3    |      20.0.0      |  VLAB  |
     |          Oxidized          |    0.28.0    |    2.0.1    |      0.35.0      |  VLAB  |
     |      perfSONAR Archive     | 5.2.0-beta.4 |    0.1.4    |        N/A       |  VLAB  |
     |     perfSONAR Testpoint    | 5.2.4-alpha.5|  0.2.5-beta |        N/A       |  VLAB  |

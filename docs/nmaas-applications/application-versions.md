@@ -5,7 +5,7 @@
     |            Name            |        App Version       |Chart Version|  Latest Version  |Instance|
     |----------------------------|--------------------------|-------------|------------------|--------|
     |           Adminer          |           5.4.2          |    3.0.15   |       5.0.6      |  VNOC  |
-    |       Apache Airflow       |           2.7.1          |1.11.0-beta.1|     3.2.1rc3     |  VNOC  |
+    |       Apache Airflow       |           3.2.0          |    1.21.0   |     3.2.1rc3     |  VNOC  |
     |           Bastion          |         20.04-v2         |    2.1.4    |        N/A       |  VNOC  |
     |     Bastion Web Server     |          22.04.2         |    1.0.2    |        N/A       |  VNOC  |
     |           Booked           |          2.8.6-3         |    3.1.4    |        N/A       |  VNOC  |
@@ -57,7 +57,7 @@
     |            Name            |  App Version |Chart Version|  Latest Version  |Instance|
     |----------------------------|--------------|-------------|------------------|--------|
     |           Adminer          |     5.4.1    |    3.0.11   |       5.0.6      |  VLAB  |
-    |       Apache Airflow       |2.7.1-original|   21.11.0   |     3.2.1rc3     |  VLAB  |
+    |       Apache Airflow       | 3.2.0-beta.5 |    1.21.0   |     3.2.1rc3     |  VLAB  |
     |           Bastion          |     18.04    |    2.1.0    |        N/A       |  VLAB  |
     |      changedetectionio     |   0.55.3-1   |   1.0.64-1  |      0.55.3      |  VLAB  |
     |          CheckCle          |    1.6.0-5   |    1.0.4    |        N/A       |  VLAB  |
@@ -70,7 +70,7 @@
     |           Grafana          |     7.2.0    |    2.0.1    |      7.5.17      |  VLAB  |
     |           Grafana          |   10.4.19-1  |   7.0.13-1  |      10.4.9      |  VLAB  |
     |           Grafana          |   11.6.9-1   |   8.0.19-1  |      11.6.8      |  VLAB  |
-    |        Healthchecks        |4.2.20260504-1|   1.1.64-1  |        4.2       |  VLAB  |
+    |        Healthchecks        |4.2.20260511-1|   1.1.65-1  |        4.2       |  VLAB  |
     |           Icinga2          |    2.11.4    |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |   1.8.10-3   |    5.0.0    |      1.8.10      |  VLAB  |
     |           Jenkins          |   2.555.1-1  |    5.9.18   |      2.555.1     |  VLAB  |
@@ -80,7 +80,7 @@
     |          LibreNMS          |     1.47     |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |    1.0.15    |    4.0.4    |        N/A       |  VLAB  |
     |           MailDev          |     2.0.5    |    1.0.0    |       2.1.0      |  VLAB  |
-    |          Metabase          |    60.4.2    |   1.0.34-1  |ux-3754-full-state|  VLAB  |
+    |          Metabase          |    60.4.4    |   1.0.35-1  |ux-3754-full-state|  VLAB  |
     |           Moodle           |    5.0.1-1   |    26.0.4   |     5.2.0-rc2    |  VLAB  |
     |             N8n            |   1.123.31   |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |     4.8.6    |    2.0.1    |        N/A       |  VLAB  |

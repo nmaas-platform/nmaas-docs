@@ -1,6 +1,6 @@
 # What is **nmaas**?
 
-The nmaas is an [open-source](https://gitlab.software.geant.org/nmaas) platform originally developed within the 
+nmaas is an [open-source](https://gitlab.software.geant.org/nmaas) platform originally developed within the 
 [GÉANT](https://geant.org/projects/) project for orchestrated on-demand deployment of applications in a Kubernetes-based 
 cloud environment.
 

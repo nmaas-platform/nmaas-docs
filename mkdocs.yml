@@ -7,16 +7,6 @@ nav:
     - blog/index.md
   - What is nmaas?: 'what-is-nmaas.md'
   - Get Started: 'get-started.md'
-  - Managed nmaas:
-    - Introduction: 'managed-nmaas/introduction.md'
-  - Self-Hosted nmaas:
-    - Introduction: 'self-hosted-nmaas/introduction.md'
-    - Installation Guide: 'self-hosted-nmaas/install-guide.md'
-  - User Guides:
-    - Introduction: 'guides/introduction.md'
-    - Domain Admin Guide: 'guides/domain-admin-guide.md'
-    - Domain User Guide: 'guides/user-guide.md'
-    - Application Manager Guide: 'guides/application-manager-guide.md'
   - Use-Cases:
     - Virtual NOC:
       - Introduction: 'use-cases/virtual-noc/vnoc-introduction.md'
@@ -28,6 +18,14 @@ nav:
     - Metrics:
       - Introduction: 'use-cases/metrics/metrics-introduction.md'
       - Example Workflows: 'use-cases/metrics/example-workflows.md'
+  - User Guides:
+      - Introduction: 'guides/introduction.md'
+      - Domain Admin Guide: 'guides/domain-admin-guide.md'
+      - Domain User Guide: 'guides/user-guide.md'
+      - Application Manager Guide: 'guides/application-manager-guide.md'
+  - Installation Guide:
+      - Introduction: 'self-hosted-nmaas/introduction.md'
+      - Helm deployment: 'self-hosted-nmaas/install-guide.md'
   - Catalogue:
     - General Application Deployment: 'nmaas-applications/general-app-deployment.md'
     - Supported Applications: 'nmaas-applications/application-list.md'
@@ -58,11 +56,9 @@ nav:
       - Netbox: 'nmaas-applications/tutorials/netbox.md'
       - OWASP Juice Shop: 'nmaas-applications/tutorials/owasp-juice-shop.md'
       - Oxidized: 'nmaas-applications/tutorials/oxidized.md'
-      - PerfSONAR:
-        - Esmond: 'nmaas-applications/tutorials/esmond.md'
-        - MaDDash: 'nmaas-applications/tutorials/maddash.md'
-        - psConfig Web Admin: 'nmaas-applications/tutorials/psconfig-web-admin.md'
-        - perfSONAR Central Management: 'nmaas-applications/tutorials/perfsonar-central-management.md'
+      - perfSONAR:
+        - perfSONAR Archive: 'nmaas-applications/tutorials/perfsonar-archive.md'
+        - perfSONAR Testpoint: 'nmaas-applications/tutorials/perfsonar-testpoint.md'
       - PostgreSQL: 'nmaas-applications/tutorials/postgresql.md'
       - Prometheus: 'nmaas-applications/tutorials/prometheus.md'
       - Prometheus Blackbox Exporter: 'nmaas-applications/tutorials/prometheus-blackbox-exporter.md'

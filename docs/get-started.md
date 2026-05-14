@@ -7,10 +7,27 @@ There are multiple options to get started with using nmaas, depending on the req
 
 ## Managed Instances
 
-If your are part of an organization affiliated with your national NREN (National Research and Education Network), then you can get access to the managed nmaas instances hosted at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu) for the [vNOC use-case](use-cases/virtual-noc/vnoc-introduction.md) or at [https://vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu) for the [Virtual Lab use-case](use-cases/virtual-lab/vlab-introduction.md). Please use the contact forms on the respective instances to request access. Should the access request be approved, a dedicated domain will be set up on the appropriate instance. 
+If you are part of an organization affiliated with your national NREN (National Research and Education Network), then you 
+can get access to the managed nmaas instances. The GEANT project offers two managed instances of nmaas, dedicated to 
+specific use-cases:
 
-- [Request a domain on the vNOC instance for monitoring and management of network equipment](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST)
-- [Request a dedicated environment on the Virtual Lab instance for organizing small scale hands-on exercises](https://vlab.dev.nmaas.eu/about?type=VLAB_REQUEST)
+- nmaas Virtual NOC managed instance hosted at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu)
+- nmaas Virtual Lab managed instance hosted at [https://vlab.dev.nmaas.eu](https://vlab.dev.nmaas.eu) 
+
+### The Virtual NOC Managed Instance
+
+The [nmaas Virtual NOC managed instance](https://vnoc.nmaas.eu) is aimed at NRENs or NREN end-institutions and provides 
+an effortless way of getting started with basic network monitoring and management. Potential users can request on-boarding 
+into the nmaas Virtual NOC managed instance by filling out the [New domain request](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST) 
+form.
+
+### The Virtual Lab Managed Instance
+
+The [nmaas Virtual Lab managed instance](https://vlab.dev.nmaas.eu) acts as a demo environment for testing the newly 
+developed features enabling the Virtual Lab use-case. It can support small-scale exercises with up to around 20 students. 
+In the case of bigger courses, institutions are encouraged to deploy a nmaas instance locally, on their own infrastructure. 
+Interested users in evaluating nmaas Virtual Lab on the managed instance can request nmaas team assistance by filling out 
+the [VLAB request](https://vlab.dev.nmaas.eu/about?type=VLAB_REQUEST) form.
 
 ## Self-Hosting nmaas
 

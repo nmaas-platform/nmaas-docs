@@ -1,6 +1,8 @@
 # List of Supported Applications
 
-This is a continuously updated list of currently supported applications on nmaas. Note that not all applications are supported across all environments, some are supported only on the managed server, while others can only be supported on self-hosted installations.
+This is a continuously updated list of applications currently supported on nmaas. Note that not all applications are 
+supported across all the [managed instances](https://docs.nmaas.eu/get-started/). Nevertheless, all applications can be 
+made available on self-hosted installations.
 
 |                                                      Name                                                     |        App Version       |Chart Version|
 |---------------------------------------------------------------------------------------------------------------|--------------------------|-------------|

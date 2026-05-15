@@ -1,7 +1,6 @@
 # nmaas Guides - Introduction
 
-The Guides section provides step-by-step instructions on how to perform common tasks from the nmaas web interface (the nmaas Portal). 
-The following guides are currently available:
+The Guides section provides step-by-step instructions on how to perform common tasks from the nmaas web interface (the nmaas Portal). The following guides are currently available:
 
 - [Domain Admin Guide](domain-admin-guide.md) – targeted at users with the `Domain administrator` role. It describes the steps to add or remove users to/from an existing domain.
 - [User Guide](user-guide.md) – targeted at regular users. It provides a comprehensive overview on how nmaas can be used, starting from requesting a new domain and registering a user account, to deploying application instances, accessing them, reconfiguring them, and finally deprovisioning application instances which are no longer needed.

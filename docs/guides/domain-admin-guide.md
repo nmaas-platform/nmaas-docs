@@ -13,7 +13,7 @@ Every domain needs to have at least one `Domain administrator`. The initial assi
 
 Only a domain administrator can subscribe to applications for their domain and trigger the deployment of those applications.
 
-Additionally, such a user has access to the `Admin panel` located on the bottom of the left menu.
+Additionally, such a user has access to the `Admin panel` located on the bottom of the left menu bar.
 
 ## Viewing Domain Details
 
@@ -46,7 +46,8 @@ On the users list view domain administrator needs to open a dedicated view by cl
 
 ### Changing User Role in a Domain
 
-In order to change user's role assigned in a domain the domain administrator needs to open the user details view by clicking on the respective entry on the users lists, select proper role from the drop down selector in the `Privileges` section and confirm the new assignment by clicking on the `Add/Update` button.
+To change user's role assigned in a domain, the domain administrator needs to open the user details view by clicking on 
+the respective entry on the users lists, select proper role from the drop down selector in the `Privileges` section and confirm the new assignment by clicking on the `Add/Update` button.
 
 !!! info
     User is not allowed to update his own role in domain

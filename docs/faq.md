@@ -137,3 +137,6 @@ Before the client-access profile can be created, the following information is ne
 <li>a list of individuals that need access to the applications deployed in the new nmaas domain, including their full names and email addresses.</li>
 </div>
 </details>
+
+## What is a Domain in nmaas?
+A domain in nmaas corresponds to a dedicated and isolated tenant environment created within the system for an institution, project, team or in general any group of users.

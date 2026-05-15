@@ -5,40 +5,50 @@
 
 ## 1. nmaas Domains
 
-A domain in nmaas corresponds to a dedicated and isolated tenant environment created within the system for particular institution, project, team or in general a group of users.
+A domain in nmaas corresponds to a dedicated and isolated tenant environment created within the system for an institution, project, team or in general any group of users.
 
 !!! info "Domain Assignment"
     User can be assigned to multiple domains.
 
 !!! info "Requesting a New Domain"
-    In order to apply for a new domain creation submit the form available at [https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST).
+    To apply for a new domain creation, submit the [New domain request](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST) form.
 
 ## 2. Introduction to nmaas User Roles
 
-nmaas specifies user roles on two levels: global (system) level and user domain level.
+nmaas specifies user roles on two levels: global (system) level and domain level.
 
 Roles on each level can be assigned independently. 
 
 ### 2.1. Global Level Roles
 
-The *Guest* default global role assigned to each user after successful account registration or first federated login allows the user to browse, comment and rate the offered applications (even without being assigned to any of the domains).
+The *Guest* default global role assigned to each user after successful account registration or first federated login allows the user to browse the list of offered applications (even without being assigned to any of the domains).
 
 The remaining roles on the global level are:
 
- - **Operator** - allows the user to view domain details and update status of particular DCN network upon its manual configuration or de-configuration
- - **Application manager** - allows the user to add new applications and/or application versions to the offer through dedicated form built in the Portal as well as manage applications for which the System administrator assigned user as an owner
- - **System administrator** - gives the user the complete system administration rights in the Portal (including user, domain and application management)
+ - **Operator** – allows the user to view domain details and update the status of a particular DCN network upon its manual 
+   configuration or de-configuration
+ - **Application manager** – allows the user to add new applications and/or application versions to the catalogue through 
+    a dedicated form built in the Portal as well as maintain applications for which the System administrator assigned the 
+    user as an owner
+ - **Virtual lab manager** – grants user access to domain group management options, along with bulk user onboarding and 
+   bulk application deployment functions
+ - **System administrator** – gives the user the complete system administration rights in the Portal (including user, domain 
+    and application management)
 
 !!! info "Additional Information"
-    For Application manager and Domain administrator user guides visit [nmaas Application Manager Guide](./application-manager-guide.md) and [nmaas Domain Admin Guide](./domain-admin-guide.md)
+    For *Application manager* and *Domain administrator* user guides visit [nmaas Application Manager Guide](./application-manager-guide.md) 
+    and [nmaas Domain Admin Guide](./domain-admin-guide.md)
 
 ### 2.2 Domain Level Roles 
 
 There are three user roles defined at the domain level:
 
- - **Guest** - a basic role in given domain that allows the user to view the list of subscribed applications and currently deployed application instances however user is not allowed to view details any of running application instances
- - **User** - with this role user is allowed to view details of running application instances including the access and configuration options
- - **Domain administrator** - gives full control over the application subscriptions and application instances (including deployment, configuration and access) within given domain, also allows for user role management (within the scope of particular domain)
+ - **Guest** – a base role in a given domain that allows the user to view the list of subscribed applications and currently 
+   deployed application instances, however, the user is not allowed to view details any of running application
+ - **User** – with this role user is allowed to view details of running application instances, including the access and 
+   configuration options
+ - **Domain administrator** – gives full control over the application subscriptions and application instances (including 
+   deployment, configuration and access) within a given domain, also allows for adding new users to the domain
 
 These roles are assigned per user domain. A single user may have different roles assigned in multiple domains.
 
@@ -46,60 +56,75 @@ These roles are assigned per user domain. A single user may have different roles
     On the domain level, a higher role always includes all the permissions specified for all underlying lower level roles
 
 !!! info "VPN Requirements"
-    In order to access the applications running within a particular domain user needs to connect to a dedicated VPN that is being set up independently of the user account within the Portal
+    To access the applications running within a particular domain, the user needs to connect to a dedicated VPN that is 
+    being set up independently of the user account within the Portal
 
 ## 3. nmaas Portal
 
-nmaas web-based graphical user interface can be accessed by browsing to address [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu).
+nmaas web-based graphical user interface can be accessed by browsing to address [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu) 
+(in case of the vNOC managed instance).
 
-![NmaaS portal](./img/user-guide-s01.png)
+![nmaas portal](./img/user-guide-s01.png)
 
-nmaas landing page contains a basic set of information about the nmaas concept and the service. Users are required to log in to gain access to the actual application market.
+Users are required to log in to gain access to the actual application market.
 
-The nmaas Portal in available in four languages including English, French, German and Polish (though still not all texts might be properly translated in languages apart from English).
+The nmaas Portal is available in four languages including English, French, German and Polish (though still not all texts 
+might be properly translated in languages apart from English).
 
 ### 3.1 About
 
-The About page available from the top bar menu contains information about current and past nmaas software versions and a contact form being the preferred way of reaching out to the nmaas team regarding any subject.
+The *About* page available from the top bar menu contains information about current and past nmaas software versions and 
+a contact form being the preferred way of reaching out to the nmaas team regarding any subject.
 
-## 4. User Login 
+## 4. User Login
 
-The user login form is available on the right side of the top bar menu.
+The user login form is available on the top bar menu.
 
 ![Login](./img/user-guide-s02.png)
 
-There are two login options to enter the Portal. First is to fill in credentials of a local user account created in the system: username and password and then clicking the `Login` button.
+There are two login options to enter the Portal. First is to fill in credentials of a local user account created in the 
+system (username and password) and then clicking the `Login` button.
 
-The second option is to use an existing account from one of the IdPs federated under eduGAIN. After clicking on the `Federated login` button, user will be redirected to the eduGAIN authorization page. If performed for the first time, user is asked to provide additional information about his account including mandatory and unique username and email address.
+The second option is to use an existing account from one of the IdPs federated under eduGAIN. After clicking on the  
+`Federated login` button, user will be redirected to an OIDC-compliant IdP authorization page. If performed for the first 
+time, the user is asked to provide additional information about his account, including mandatory and unique username and 
+email address.
 
-Users with accounts created directly in the system through the registration form are able to recover their password by clicking on the `Forgot password` link. A new input field will be displayed to provide the email address used during the registration to which a reset password link will be sent.
+Users with accounts created directly in the system through the registration form are able to recover their password by 
+clicking on the `Forgot password` link. A new input field will be displayed to provide the email address used during the 
+registration to which a reset password link will be sent.
 
 !!! info "Federated Login"
-    The federated login option is preferred and should be used whenever possible
+    The federated login option is preferred on the nmaas managed instances and should be used whenever possible. Users are 
+    first redirected to a dedicated nmaas Keycloak instance, which in turn allows for accessing the eduGAIN login forms.
 
 ## 5. User Registration
 
-For creating local account user has to select the `Register` tab in the login window.
+For creating a local account, user has to select the `Register` option from the top bar menu.
 
 ![New account registration](./img/user-guide-s03.png)
 
-Registration form contains several mandatory fields, which are: `Username`, `Password`, `Confirm password` and a valid `Email address`.
+Registration form contains several mandatory fields, which are: `Username`, `Password`, `Confirm password` and a valid 
+`Email address`.
 
-The provided `Username` has to be at least 3 letters long.
+The provided `Username` has to be at least three letters long.
 
-The user also has to confirm that they have read the nmaas Privacy Notice text.
+The user also has to confirm that they have read the respective nmaas Privacy Notice text.
 
-There are also few optional fields, namely `First name`, `Last name` and `Domain selection`.
+There are also few optional fields, namely `First name`, `Last name` and a prefered `Domain` selector.
 
-After submitting the registration form, user has to wait for the account being activated by the administrator. The user will be notified with an email that their account is active.
+After submitting the registration form, the user has to wait for the account to be activated by the administrator. The 
+user will be notified via email that their account is active.
 
-A user needs to be assigned a specific role within particular domain in order to be able to view and deploy application instances in this domain.
+A user needs to be assigned a role in a particular domain to be able to view and deploy application instances in it.
 
-## 6. Application Market
+## 6. Application Catalogue
 
-After the user account has been activated by the nmaas administrator (in the case when the user submitted the registration form), they are able to log in and are granted a basic access to the main nmaas applications view. Same access rights are granted to users that log in through eduGAIN for the first time.
+After the user account has been activated by the nmaas administrator (in the case when the user submitted the registration 
+form), they are able to log in and are granted base access to the main nmaas applications view. The same access rights are 
+granted to users that log in through eduGAIN for the first time.
 
-![Application market](./img/user-guide-s04.png)
+![Application catalogue](./img/user-guide-s04.png)
 
 On the `Applications` tab all of the applications supported by nmaas are enlisted. Applications can be filtered by tags and sorted by few criteria. User can also search them by name.
 

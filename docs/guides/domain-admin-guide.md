@@ -5,30 +5,32 @@
 Before being able to deploy and/or access application instances via the nmaas Portal user needs to be assigned to a Domain.
 
 !!! info 
-    In order to apply for a new domain creation submit the form available at [https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST).
+    To apply for a new domain creation, submit the [New domain request](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST) form.
 
-Within a domain user can be granted one of three roles as described in the [nmaas User Guide](./user-guide.md). Domain needs to have at least one `Domain administrator`.
+Within a given domain, a user can be granted one of three roles as described in the [nmaas User Guide](./user-guide.md).
 
-The initial assignment of that role in newly created domain is performed by administrators based on the received domain creation request.
+Every domain needs to have at least one `Domain administrator`. The initial assignment of that role in a newly created domain is performed by administrators based on the received domain creation request.
 
-Only domain administrator has the possibility of subscribing to applications for his domain and triggering the deployment of instances of those applications.
+Only a domain administrator can subscribe to applications for their domain and trigger the deployment of those applications.
 
-Additionally such user has access to some additional settings pages for his domain reachable from the Settings menu located on the top navigation bar.
+Additionally, such a user has access to the `Admin panel` located on the bottom of the left menu.
 
 ## Viewing Domain Details
 
-After clicking on the `Domains` button from the Settings menu user is directed to a view listing all the domains for which he is assigned the administrator role.
+After selecting the `Domains` and `List` item from the menu user is directed to a view listing all the domains for which they are assigned the administrator role.
 
-On this view only basic information about a given domain is displayed including the Codename, full `Name` and `Active` state indication. Domain details view can be displayed by clicking on the respective entry on the list.
+On this view only basic information about a given domain is displayed including the domain `Codename`, `Name`, 
+`Limit` usage and `Active` state indication. Domain details view can be displayed by clicking on the respective entry on the list.
 
 Domain details view includes several sections:
 
-- domain name and technical details related with Kubernetes and VPN configuration
-- application properties indicating some custom application settings for this domain (comprising information if particular application available in the marketplace is available in this domain and what is the limit of storage space that can be requested for given application instances deployed in this domain)
+- domain name and technical details related to Kubernetes and VPN configuration
+- resource limit information for the domain
 - list of users assigned to this domain and their assigned roles
+- application properties indicating some custom application settings for this domain (comprising information if particular application available in the marketplace is available in this domain and what is the limit of storage space that can be requested for given application instances deployed in this domain)
 
-
-This view allows only for viewing the information and no data editions nor actions can be triggered from this view by domain administrators.
+All the data is presented in read-only mode, and no data editions nor actions can be triggered from this view by domain 
+administrators.
 
 ## Managing Domain Users
 

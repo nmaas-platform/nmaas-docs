@@ -24,30 +24,30 @@ The nmaas Team can be contacted either by:
 
 ## How can I test nmaas?
 
-In order to test nmaas you can request an account on either the [managed vNOC instance](https://vnoc.nmaas.eu/about) or the [managed vLAB instance](https://vlab.dev.nmaas.eu/about), depending on the use-case that you are interested in.
+To test nmaas, you can request an account on either the [managed vNOC instance](https://vnoc.nmaas.eu/about) or the [managed vLAB instance](https://vlab.dev.nmaas.eu/about), depending on the use-case that you are interested in.
 
 ## How can I start monitoring my infrastructure with nmaas?
 The GÉANT nmaas production service is available at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu) where users have the possibility to log in with their eduGAIN accounts.
 
-However, in order to be able to deploy network management applications user needs to be assigned to a domain. 
+However, to be able to deploy applications, a user needs to be assigned to a domain. 
 
-In order to request new dedicated domain creation refer to question <i>"How can I request creation of new nmaas domain for my NREN/Institution/Project?"</i>
+To request new dedicated domain creation, refer to the question <i>"How can I request creation of new nmaas domain for my NREN/Institution/Project?"</i>
 
 ## How can I request creation of new nmaas domain for my NREN/Institution/Project?
 
-In order to request a new nmaas domain on the GÉANT production service fill in and submit the form available at [https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST).
+To request a new nmaas domain on the GÉANT production service, fill in and submit the form available at [https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST).
 
 You will be requested to provide some basic information about the domain to be created and a brief justification of the request.
 
-Your request will be reviewed by the nmaas Team and You will receive a reply as soon as possible.
+Your request will be reviewed by the nmaas Team, and You will receive a reply as soon as possible.
 
-In case of any issues, You can also email your request directly to nmaas@lists.geant.org.
+In case of any issues, You can also email your request directly to [nmaas@lists.geant.org](mailto:nmaas@lists.geant.org).
 
 ## How can I deploy nmaas on my own infrastructure?
 
 The complete information about the deployment of nmaas instance is available at [nmaas Installation Guide](self-hosted-nmaas/install-guide.md)).
 
-What are the technical requirement for the underlying nmaas infrastructure?
+## What are the technical requirement for the underlying nmaas infrastructure?
 
 The complete information about the requirements for the nmaas Kubernetes cluster are available at [nmaas Cluster Requirements](https://wiki.geant.org/display/NMAAS/NMaaS+Cluster+Requirements).
 
@@ -55,18 +55,18 @@ The complete information about the requirements for the nmaas Kubernetes cluster
 The nmaas User Guide is available at [nmaas User Guide](guides/user-guide.md).
 
 ## Where can I find nmaas Administrator Guide?
-The nmaas Administrator guide is under preparation and an initial version is available at [nmaas Administrator Guide](guides/domain-admin-guide.md)
+The nmaas Administrator guide is under preparation, and an initial version is available at [nmaas Administrator Guide](guides/domain-admin-guide.md)
 
 ## What applications are currently supported by nmaas?
-For the up to date information about the supported applications refer to page nmaas Tools.
+For the up-to-date information about the supported applications refer to [List of Supported Applications](nmaas-applications/application-list.md).
 
-It is also possible to browse all the applications in on nmaas Portal directly at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu).
+It is also possible to browse all the applications in the nmaas Portal directly at [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu).
 
-## What type of VPNs are established by nmaas?
-Two types of VPN connections are configured before a user is able to deploy and effectively used nmaas applications:
+## What types of VPNs are established by nmaas?
+Two types of VPN connections are configured before a user is able to deploy and effectively use deployed applications:
 
 - **site-to-site VPN** connection as a secure tunnel from the customer's management VLAN to nmaas infrastructure, used for monitoring of the network equipment
-- **client-access VPN** used by the network operators, from their own workstations, to access and configure the deployed network management applications within nmaas.
+- **client-access VPN** used by the nmaas users, from their own workstations, to access and configure the running applications.
 
 ## What VPN solutions are supported by nmaas?
 Currently, two site-to-site VPN technologies are actively supported: OpenVPN and WireGuard.

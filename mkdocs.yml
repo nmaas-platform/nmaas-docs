@@ -3,8 +3,6 @@ site_url: 'https://docs.nmaas.eu'
 use_directory_urls: true
 nav:
   - Home: index.md
-  - Blog:
-    - blog/index.md
   - What is nmaas?: 'what-is-nmaas.md'
   - Get Started: 'get-started.md'
   - Use-Cases:
@@ -91,6 +89,8 @@ nav:
       - Complete Web Development vLAB Scenario: 'tutorials-workshops/jres2024/p4_complete-web-dev-vlab-scenario.md'
       - Bulk Application Deployment: 'tutorials-workshops/jres2024/p5_vlab-bulk-app-deployment.md'
   - Presentations: 'nmaas-presentations.md'
+  - Blog:
+      - blog/index.md
   - Release Notes:
     - '1.9.0': 'release-notes/1.9.0.md'
     - '1.8.1': 'release-notes/1.8.1.md'

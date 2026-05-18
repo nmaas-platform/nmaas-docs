@@ -4,8 +4,10 @@ authors:
 date: 2026-05-18
 slug: introducing-nmaas-metrics
 categories:
-    - Use-Cases
+    - Use Cases
 ---
+
+# Introducing nmaas Metrics
 
 The nmaas open-source platform has been extended with a new full-fledged use-case, nmaas Metrics. nmaas Metrics combines the well-known nmaas features such as multitenancy, simple application deployment, and full lifecycle management with four new catalogue entries focused on continuous data collection and visualization. Using PostgreSQL, n8n, Metabase, and Trino, nmaas users can retrieve data from virtually any system, transform it, and visualize it through rich dashboards. n8n acts as the workflow orchestration layer responsible for data retrieval, transformation, and persistence into PostgreSQL, while Metabase provides the visualization layer.
 

@@ -5,7 +5,7 @@ nav:
   - Home: index.md
   - What is nmaas?: 'what-is-nmaas.md'
   - Get Started: 'get-started.md'
-  - Use-Cases:
+  - Use Cases:
     - Virtual NOC:
       - Introduction: 'use-cases/virtual-noc/vnoc-introduction.md'
     - Virtual Lab:

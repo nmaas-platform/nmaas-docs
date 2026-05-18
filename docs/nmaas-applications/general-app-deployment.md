@@ -18,7 +18,7 @@ The whole process shouldn't take more than several minutes.
 
 ![Application deployment workflow](./img/100-general-app-deployment.png)
 
-!!! "User Guide Reference"
+!!! note "User Guide Reference"
     Refer to the [User Guide](../guides/user-guide.md#82-initiating-application-instance-deployment) for more details regarding the application deployment process.
 
 ## Application Configuration Process
@@ -28,7 +28,7 @@ During an application deployment process, the user is asked to fill in a custom 
 This data might comprise default user credentials, IP addresses of devices to be monitored and/or requested storage space for persisting monitoring data.
 
 !!! note "User Guide Reference"
-Refer to the [User Guide](../guides/user-guide.md#83-application-instance-initial-configuration) for more details regarding the application initial configuration process.
+    Refer to the [User Guide](../guides/user-guide.md#83-application-instance-initial-configuration) for more details regarding the application initial configuration process.
 
 For some applications this data provided by the user is used to populate application-specific configurations files that are later on uploaded to a dedicated Git repository (a new repository is created for each application instance).
 

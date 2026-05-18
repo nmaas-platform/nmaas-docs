@@ -27,7 +27,7 @@ During an application deployment process, the user is asked to fill in a custom 
 
 This data might comprise default user credentials, IP addresses of devices to be monitored and/or requested storage space for persisting monitoring data.
 
-!!! "User Guide Reference"
+!!! note "User Guide Reference"
 Refer to the [User Guide](../guides/user-guide.md#83-application-instance-initial-configuration) for more details regarding the application initial configuration process.
 
 For some applications this data provided by the user is used to populate application-specific configurations files that are later on uploaded to a dedicated Git repository (a new repository is created for each application instance).
@@ -40,10 +40,10 @@ steps of a GitOps workflow:
 3. Apply desired modifications, commit and push altered files back to the remote repository.
 4. Wait for a couple of minutes in order for the new configuration to be loaded and applied by the application instance.
 
-!!! "Git Repositories"
+!!! note "Git Repositories"
     Git repositories containing application configuration files are hosted on a dedicated private GitLab instance operated by the nmaas Team.
 
-!!! "Providing User SSH Key"
+!!! note "Providing User SSH Key"
     Users should upload their public SSH key using the Profile page before deploying a new instance of an application to be able to clone the Git repository afterwards.
 
 ## Specific Application Tutorials

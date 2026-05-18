@@ -17,14 +17,15 @@ nav:
       - Introduction: 'use-cases/metrics/metrics-introduction.md'
       - Example Workflows: 'use-cases/metrics/example-workflows.md'
   - User Guides:
-      - Introduction: 'guides/introduction.md'
-      - Domain Admin Guide: 'guides/domain-admin-guide.md'
-      - Domain User Guide: 'guides/user-guide.md'
-      - Application Manager Guide: 'guides/application-manager-guide.md'
+    - Introduction: 'guides/introduction.md'
+    - Domain Admin Guide: 'guides/domain-admin-guide.md'
+    - Domain User Guide: 'guides/user-guide.md'
+    - Application Manager Guide: 'guides/application-manager-guide.md'
   - Installation Guide:
-      - Introduction: 'self-hosted-nmaas/introduction.md'
-      - Helm deployment: 'self-hosted-nmaas/install-guide.md'
-  - Catalogue:
+    - Introduction: 'self-hosted-nmaas/introduction.md'
+    - Helm deployment: 'self-hosted-nmaas/install-guide.md'
+  - Application Catalogue:
+    - Introduction: 'nmaas-applications/introduction.md'
     - General Application Deployment: 'nmaas-applications/general-app-deployment.md'
     - Supported Applications: 'nmaas-applications/application-list.md'
     - Adding a New Application: 'nmaas-applications/new-application.md'
@@ -90,7 +91,7 @@ nav:
       - Bulk Application Deployment: 'tutorials-workshops/jres2024/p5_vlab-bulk-app-deployment.md'
   - Presentations: 'nmaas-presentations.md'
   - Blog:
-      - blog/index.md
+    - blog/index.md
   - Release Notes:
     - '1.9.0': 'release-notes/1.9.0.md'
     - '1.8.1': 'release-notes/1.8.1.md'

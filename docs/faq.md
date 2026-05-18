@@ -13,9 +13,9 @@ The following nmaas-related questions are answered on this page:
 - [What type of VPNs are established by nmaas?](#what-type-of-vpns-are-established-by-nmaas)
 - [What VPN solutions are supported by nmaas?](#what-vpn-solutions-are-supported-by-nmaas)
 - [What are nmaas VPN requirements?](#what-are-nmaas-vpn-requirements)
+- [What is a Domain in nmaas?](#what-is-a-domain-in-nmaas)
 
 ## How can I contact the nmaas Team members?
-
 The nmaas Team can be contacted either by:
 <div style="margin-left: 20px">
 <li>contact form available at <a href="http://nmaas.eu/about?type=CONTACT">http://nmaas.eu/about?type=CONTACT</a></li>
@@ -23,7 +23,6 @@ The nmaas Team can be contacted either by:
 </div>
 
 ## How can I test nmaas?
-
 To test nmaas, you can request an account on either the [managed vNOC instance](https://vnoc.nmaas.eu/about) or the [managed vLAB instance](https://vlab.dev.nmaas.eu/about), depending on the use-case that you are interested in.
 
 ## How can I start monitoring my infrastructure with nmaas?
@@ -34,7 +33,6 @@ However, to be able to deploy applications, a user needs to be assigned to a dom
 To request new dedicated domain creation, refer to the question <i>"How can I request creation of new nmaas domain for my NREN/Institution/Project?"</i>
 
 ## How can I request creation of new nmaas domain for my NREN/Institution/Project?
-
 To request a new nmaas domain on the GÉANT production service, fill in and submit the form available at [https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST).
 
 You will be requested to provide some basic information about the domain to be created and a brief justification of the request.
@@ -44,11 +42,9 @@ Your request will be reviewed by the nmaas Team, and You will receive a reply as
 In case of any issues, You can also email your request directly to [nmaas@lists.geant.org](mailto:nmaas@lists.geant.org).
 
 ## How can I deploy nmaas on my own infrastructure?
-
 The complete information about the deployment of nmaas instance is available at [nmaas Installation Guide](self-hosted-nmaas/install-guide.md)).
 
 ## What are the technical requirement for the underlying nmaas infrastructure?
-
 The complete information about the requirements for the nmaas Kubernetes cluster are available at [nmaas Cluster Requirements](https://wiki.geant.org/display/NMAAS/NMaaS+Cluster+Requirements).
 
 ## Where can I find nmaas User Guide?

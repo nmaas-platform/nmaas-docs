@@ -182,7 +182,7 @@ Four types of access are possible:
  - **public** – application web user interface is accessible directly from the public Internet
  - **external** – application web user interface is accessible over HTTPS from within a dedicated client VPN
  - **internal** – application is accessible over a different protocol than HTTP on a dedicated IP address (assigned by the system) and application-specific port
- - **local** – a Kubernetes service name that can be used to access this application instance from another application instance running within the same user domain (e.g., the local access information for a Prometheus instance can be used to configure a data source in a Grafana instance deployed within the same domain)
+ - **local** – a Kubernetes service name that can be used to access this application instance from another application instance running within the same user domain (e.g., the service name for a Prometheus instance can be used to configure a data source in a Grafana instance deployed within the same domain)
 
 !!! info "VPN Requirement for Accessing Deployed Applications"
     To access the applications running within a particular domain, the user needs to connect to a dedicated VPN
@@ -230,14 +230,34 @@ The fact that a particular application instance can be upgraded is indicated on 
 !!! info "Successful Update Notification"
     User is notified with an email once the upgraded application instance becomes again active
 
-### 8.7 Initiating Application Instance Removal
+### 8.7 Accessing Application Instance Logs
+
+**WIP**
+
+!!! info "Access to Application Logs"
+    Access to the application logs needs to be explicitly allowed for a given application either by the system administrator or the respective *Application Manager*.
+
+### 8.8 Accessing Application Instance Shell
+
+**WIP**
+
+!!! info "Access to Application Shell"
+    Access to the application shell needs to be explicitly allowed for a given application either by the system administrator or the respective *Application Manager*.
+
+### 8.9 Application Pausing and Resuming
+
+A running application instance can be temporarly paused to save resources by selecting the `Pause` option from the 
+`Actions` menu. A previously paused application instance can be resumed by selecting the `Resume` option. Both 
+configuration and data of a paused application instance are preserved.
+
+### 8.9 Initiating Application Instance Removal
 
 To shut down a particular application instance and free up resources that are no longer in use, user should select `Undeploy` from the `Actions` menu and confirm the action in window that pops up.
 
 !!! warning "Removing Application Instances"
     Removing an application instance is a destructive operation and cannot be undone.
 
-### 8.8 Managing Failed Application Instance Deployments
+### 8.10 Managing Failed Application Instance Deployments
 
 In unforeseen situations the deployment process may fail at some stage.
 

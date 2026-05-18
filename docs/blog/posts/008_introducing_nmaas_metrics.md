@@ -15,4 +15,4 @@ To demonstrate the capabilities of the nmaas Metrics use-case and how it can be 
 
 nmaas Metrics is available to all existing nmaas users through the production instance hosted at [vnoc.nmaas.eu](https://vnoc.nmaas.eu), as well as to all users of self-hosted nmaas deployments. If you are interested in trying nmaas Metrics, please submit a domain request using the appropriate [contact form](https://vnoc.nmaas.eu/about). 
 
-More details about the nmaas Metrics use-case, including example usage and descriptions of how the nmaas team uses it in day-to-day operations to track KPIs, are available on [metrics.nmaas.eu](https://metrics.docs.nmaas.eu/). Technical details and example workflows are available on the [nmaas Docs](https://docs.nmaas.eu/use-cases/metrics/metrics-introduction/).
+More details about the nmaas Metrics use-case, including example usage and descriptions of how the nmaas team uses it in day-to-day operations to track KPIs, are available on [metrics.docs.nmaas.eu](https://metrics.docs.nmaas.eu/). Technical details and example workflows are available on the [nmaas Docs](https://docs.nmaas.eu/use-cases/metrics/metrics-introduction/).

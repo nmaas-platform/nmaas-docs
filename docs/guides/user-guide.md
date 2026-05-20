@@ -11,7 +11,7 @@ A domain in nmaas corresponds to a dedicated and isolated tenant environment cre
     User can be assigned to multiple domains.
 
 !!! info "Requesting a New Domain"
-    To apply for a new domain creation, submit the [New domain request](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST) form.
+    To apply for a new domain creation on the vNOC managed instance, submit the [New domain request](https://vnoc.nmaas.eu/about?type=NEW_DOMAIN_REQUEST) form.
 
 ## 2. Introduction to nmaas User Roles
 
@@ -171,7 +171,7 @@ Once all required fields are populated user can click the `Apply configuration` 
 
 Once the application instance reaches the `Active` state it can be accessed by the user.
 
-![Application access](./img/user-guide-s19.png){ width="300" }
+![Application access](./img/user-guide-instance-actions-access.png){ width="300" }
 
 Multiple access methods are supported by nmaas, and each of the applications supports one or more of them.
 
@@ -195,11 +195,11 @@ Some applications support the option of updating their configuration during appl
 
 In such a case, when instance is in `Active` state, open the `Actions` menu on the application instance details page and select `Configure` to open a window presenting the configuration options.
 
-![Application configuring](./img/user-guide-s20.png){ width="300" }
+![Application configuring](./img/user-guide-instance-actions-configure.png){ width="300" }
 
 Typically, a `git clone` link is provided that can be used by the user to locally clone the git repository created specifically for this application instance.
 
-![Application configuring](./img/user-guide-s10.png)
+![Application configuring](img/user-guide-instance-configure.png)
 
 Then user can apply the desired changes to the pre-populated configuration files added to the repository by default or add new additional files.
 
@@ -210,11 +210,11 @@ After the files are committed and pushed back to the repository, the configurati
 
 The user that initiates a given application instance deployment is automatically added to GitLab as a member of the newly created repository. Other domain users, to have the same SSH-based access to the repository, have to be added as members to particular application instance by selecting `Members` from the `Actions` menu. 
 
-![Application configuring](./img/user-guide-s21.png){ width="300" }
+![Application instance mambers](./img/user-guide-instance-actions-members.png){ width="300" }
 
 This operation can be performed by a Domain administrator. A Domain administrator can only select users that are added to their domain and have previously uploaded their SSH keys (see [section 9.3](./user-guide.md#93-setting-user-ssh-keys)).
 
-![Application configuring](./img/user-guide-s22.png)
+![Application instance members](img/user-guide-instance-members.png)
 
 ### 8.6 Managing Application Instance Upgrades
 
@@ -310,7 +310,7 @@ Upon key upload or update in the Portal, user information is synchronized with t
 
 After clicking the `Change password` button, a new window will be displayed where the user can change their own password.
 
-![User change password](./img/user-guide-s17.png)
+![User change password](img/user-guide-change-password.png)
 
 !!! info "Password Change Availability"
     This option is not available for users that log in using the Federated/SSO option

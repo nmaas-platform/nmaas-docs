@@ -53,7 +53,7 @@ These roles are assigned per user domain. A single user may have different roles
 
 nmaas web-based graphical user interface can be accessed by browsing to address [https://vnoc.nmaas.eu](https://vnoc.nmaas.eu) (in case of the vNOC managed instance).
 
-![nmaas portal](./img/user-guide-s01.png)
+![nmaas portal landing page](img/user-guide-landing-page.png)
 
 Users are required to log in to gain access to the actual application market.
 
@@ -67,7 +67,7 @@ The *About* page available from the top navigation bar contains information abou
 
 The user login form is available on the top navigation bar.
 
-![Login](./img/user-guide-s02.png)
+![Login](img/user-guide-login.png)
 
 There are two login options to enter the Portal. The first option is to enter credentials of a local user account created in the system (username and password) and then click the `Login` button.
 
@@ -82,7 +82,7 @@ Users with accounts created directly in the system through the registration form
 
 To create a local account, user has to select `Register` from the top navigation bar.
 
-![New account registration](./img/user-guide-s03.png)
+![New account registration](img/user-guide-registration.png)
 
 Registration form contains several mandatory fields, which are: `Username`, `Password`, `Confirm password` and `Email address`.
 

@@ -1,6 +1,6 @@
-**nmaas Platform** is actively developed and maintained as part of the [GÉANT GN5-1](https://geant.org/gn5-1/) project co-funded by the European Union.
+**nmaas Platform** is actively developed and maintained as part of the [GÉANT GN5-2](https://geant.org/gn5-2/) project co-funded by the European Union.
 
-nmaas components are open-source licensed under the Apache 2.0 Licence.
+nmaas components are open-source licensed under the Apache 2.0 License.
 
 ## Useful links
 
@@ -10,7 +10,7 @@ nmaas components are open-source licensed under the Apache 2.0 Licence.
 ## Project members
 
 - [Frederic Loui](https://github.com/frederic-loui) (RENATER, France)
-- [Lukasz Lopatowski](https://github.com/llopat) (Poznan Supercomputing and Network Center, Poland)
+- [Lukasz Lopatowski](https://github.com/llopat) (Poznanskie Centrum Superkomputerowo-Sieciowe, Poland)
 - [Vojdan Kjorveziroski](https://github.com/korvoj) (Ss. Cyril and Methodius University in Skopje, North Macedonia)
 
 Follow the information on the [contact](./contact.md) page to reach us! 

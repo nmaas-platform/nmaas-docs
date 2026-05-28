@@ -59,7 +59,7 @@
     |           Adminer          |     5.4.1    |    3.0.11   |       5.0.6      |  VLAB  |
     |       Apache Airflow       | 3.2.0-beta.5 |    1.21.0   |     3.2.2rc2     |  VLAB  |
     |           Bastion          |     18.04    |    2.1.0    |        N/A       |  VLAB  |
-    |      changedetectionio     |   0.55.5-1   |   1.0.65-1  |      0.55.7      |  VLAB  |
+    |      changedetectionio     |   0.55.7-1   |   1.0.66-1  |      0.55.7      |  VLAB  |
     |          CheckCle          |    1.6.0-5   |    1.0.4    |        N/A       |  VLAB  |
     |           Checkle          |     1.4.0    |    1.0.1    |        N/A       |  VLAB  |
     |           CodiMD           |     2.5.3    |    1.0.4    |       2.5.4      |  VLAB  |
@@ -70,7 +70,7 @@
     |           Grafana          |     7.2.0    |    2.0.1    |      7.5.17      |  VLAB  |
     |           Grafana          |   10.4.19-1  |   7.0.13-1  |      10.4.9      |  VLAB  |
     |           Grafana          |   11.6.9-1   |   8.0.19-1  |      11.6.8      |  VLAB  |
-    |        Healthchecks        |4.2.20260518-1|   1.1.66-1  |        4.2       |  VLAB  |
+    |        Healthchecks        |4.2.20260525-1|   1.1.67-1  |        4.2       |  VLAB  |
     |           Icinga2          |    2.11.4    |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |   1.8.10-3   |    5.0.0    |      1.8.10      |  VLAB  |
     |           Jenkins          |   2.555.2-1  |    5.9.22   |      2.555.2     |  VLAB  |

@@ -6,6 +6,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |---------------------------------------------------------------------------------------------------------------|--------------------------|-------------|
 |                 [Adminer](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Adminer)                |           5.4.2          |    3.0.15   |
 |                 [Apache Airflow](https://docs.nmaas.eu/nmaas-applications/tutorials/airflow/)                 |           3.2.0          |    1.21.0   |
+|                       [Argus](https://docs.nmaas.eu/nmaas-applications/tutorials/argus/)                      |          2.9.1-2         |    0.8.2    |
 |                     [Bastion](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion/)                    |         20.04-v2         |    2.1.4    |
 |          [Bastion Web Server](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion-webserver/)          |          22.04.2         |    1.0.2    |
 |                  [Booked](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Booked)                 |          2.8.6-3         |    3.1.4    |

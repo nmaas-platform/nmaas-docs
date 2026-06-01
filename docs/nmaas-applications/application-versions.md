@@ -44,7 +44,7 @@
     |         Routinator         |           0.8.3          |    2.0.0    |    0.14.2-rc1    |  VNOC  |
     |          Telegraf          |          1.36.4          |    1.8.65   |      1.38.4      |  VNOC  |
     |            Trino           |            476           |    1.42.0   |        N/A       |  VNOC  |
-    |         Uptime Kuma        |           2.2.1          |    4.0.5    |      1.23.13     |  VNOC  |
+    |         Uptime Kuma        |           2.4.0          |    4.0.6    |      1.23.13     |  VNOC  |
     |      Victoria Metrics      |          1.85.1          |    3.0.0    |        N/A       |  VNOC  |
     |        WebDAV Server       |           1.0.0          |    1.0.0    |        N/A       |  VNOC  |
     |           Zabbix           |           6.0.8          |    2.0.3    |      6.0.32      |  VNOC  |

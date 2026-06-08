@@ -42,7 +42,7 @@
     |         Prometheus         |           3.8.0          |    4.0.13   |       3.8.0      |  VNOC  |
     |Prometheus Blackbox Exporter|         0.28.0-1         |    11.9.1   |        N/A       |  VNOC  |
     |         Routinator         |           0.8.3          |    2.0.0    |      0.15.2      |  VNOC  |
-    |          Telegraf          |          1.36.4          |    1.8.65   |      1.38.4      |  VNOC  |
+    |          Telegraf          |          1.36.4          |    1.8.65   |      1.39.0      |  VNOC  |
     |            Trino           |            476           |    1.42.0   |        N/A       |  VNOC  |
     |         Uptime Kuma        |           2.4.0          |    4.0.6    |      1.23.13     |  VNOC  |
     |      Victoria Metrics      |          1.85.1          |    3.0.0    |        N/A       |  VNOC  |

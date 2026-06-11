@@ -6,6 +6,26 @@ Presentations given as part of the GÉANT GN5-2 project.
 
 ---
 
+### TNC 2026
+
+**Event Type:** Presentations
+
+**Presentation Title:** Distributed Active Network Monitoring with nmaas: Insights from an NREN production deployment
+
+**Presenter(s):** Vojdan Kjorveziroski, Firat Koyuncu
+
+**Event:** TNC 2026
+
+**Event Homepage:** [https://tnc26.geant.org/programme/#Wednesday/all/s1077](https://tnc26.geant.org/programme/#Wednesday/all/s1077)
+
+**Date:** 10 June 2026
+
+**Location:** Helsinki, Finland
+
+**Slides:** [https://static.nmaas.eu/resources/33-nmaas-TNC-v1.0.1.pdf](https://static.nmaas.eu/resources/33-nmaas-TNC-v1.0.1.pdf)
+
+---
+
 ### Internet2 Technology Exchange (TechEx) 2025
 
 **Event Type:** Presentations

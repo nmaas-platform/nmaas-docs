@@ -65,7 +65,7 @@
     |          CheckCle          |    1.6.0-5   |    1.0.4    |        N/A       |  VLAB  |
     |           Checkle          |     1.4.0    |    1.0.1    |        N/A       |  VLAB  |
     |           CodiMD           |     2.5.3    |    1.0.4    |       2.5.4      |  VLAB  |
-    |            CTFd            |     3.8.4    |    2.0.7    |       3.8.5      |  VLAB  |
+    |            CTFd            |     3.8.4    |    2.0.7    |       3.8.6      |  VLAB  |
     |          Databasus         |    3.24.0    |    3.24.0   |        N/A       |  VLAB  |
     |      Debian repository     |      1.0     |    2.0.1    |        N/A       |  VLAB  |
     |           Grafana          |     6.5.2    |    2.0.1    |       6.7.6      |  VLAB  |

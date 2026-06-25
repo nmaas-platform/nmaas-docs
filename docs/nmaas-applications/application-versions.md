@@ -22,7 +22,7 @@
     |           Grafana          |           9.5.5          |    6.0.1    |      9.5.21      |  VNOC  |
     |           Grafana          |          10.4.8          |    7.0.7    |      10.4.9      |  VNOC  |
     |           Grafana          |          11.6.9          |    8.0.19   |      11.6.8      |  VNOC  |
-    |        Healthchecks        |       4.2.20260615       |    1.1.68   |        4.2       |  VNOC  |
+    |        Healthchecks        |       4.2.20260622       |    1.1.68   |        4.2       |  VNOC  |
     |           Icinga2          |         2.14.6-1         |    3.0.2    |        N/A       |  VNOC  |
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |      1.8.10      |  VNOC  |
     |           Jenkins          |         2.555.3-1        |    5.9.26   |      2.555.3     |  VNOC  |
@@ -30,7 +30,7 @@
     |           Kuvasz           |           4.0.1          |    3.3.2    |        N/A       |  VNOC  |
     |          LibreNMS          |          25.11.0         |    7.0.0    |        N/A       |  VNOC  |
     |            Maat            |           1.0.9          |    3.0.2    |        N/A       |  VNOC  |
-    |          Metabase          |          62.2.1          |    1.0.40   |ux-3754-full-state|  VNOC  |
+    |          Metabase          |          62.3.3          |    1.0.41   |ux-3754-full-state|  VNOC  |
     |             N8n            |         1.123.31         |    1.1.2    |      stable      |  VNOC  |
     |             NAV            |           4.8.6          |    2.0.1    |        N/A       |  VNOC  |
     |           NetBox           |           4.4.6          |    8.0.3    |       4.6.2      |  VNOC  |

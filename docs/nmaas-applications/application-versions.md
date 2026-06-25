@@ -6,7 +6,7 @@
     |----------------------------|--------------------------|-------------|------------------|--------|
     |           Adminer          |           5.4.2          |    3.0.15   |       5.0.6      |  VNOC  |
     |       Apache Airflow       |           3.2.0          |    1.21.0   |      3.3.0b2     |  VNOC  |
-    |            Argus           |          2.9.1-2         |    0.8.2    |        N/A       |  VNOC  |
+    |            Argus           |          2.9.1-3         |    0.8.3    |        N/A       |  VNOC  |
     |           Bastion          |         20.04-v2         |    2.1.4    |        N/A       |  VNOC  |
     |     Bastion Web Server     |          22.04.2         |    1.0.2    |        N/A       |  VNOC  |
     |           Booked           |          2.8.6-3         |    3.1.4    |        N/A       |  VNOC  |
@@ -22,21 +22,21 @@
     |           Grafana          |           9.5.5          |    6.0.1    |      9.5.21      |  VNOC  |
     |           Grafana          |          10.4.8          |    7.0.7    |      10.4.9      |  VNOC  |
     |           Grafana          |          11.6.9          |    8.0.19   |      11.6.8      |  VNOC  |
-    |        Healthchecks        |       4.1.20260323       |    1.1.62   |        4.2       |  VNOC  |
+    |        Healthchecks        |       4.2.20260615       |    1.1.68   |        4.2       |  VNOC  |
     |           Icinga2          |         2.14.6-1         |    3.0.2    |        N/A       |  VNOC  |
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |      1.8.10      |  VNOC  |
-    |           Jenkins          |         2.555.1-1        |    5.9.18   |      2.555.3     |  VNOC  |
+    |           Jenkins          |         2.555.3-1        |    5.9.26   |      2.555.3     |  VNOC  |
     |          Keycloak          |          26.5.3          |    0.14.6   |        N/A       |  VNOC  |
-    |           Kuvasz           |           3.9.0          |    3.3.0    |        N/A       |  VNOC  |
+    |           Kuvasz           |           4.0.1          |    3.3.2    |        N/A       |  VNOC  |
     |          LibreNMS          |          25.11.0         |    7.0.0    |        N/A       |  VNOC  |
     |            Maat            |           1.0.9          |    3.0.2    |        N/A       |  VNOC  |
-    |          Metabase          |          59.5.2          |    1.0.31   |ux-3754-full-state|  VNOC  |
+    |          Metabase          |          62.2.1          |    1.0.40   |ux-3754-full-state|  VNOC  |
     |             N8n            |         1.123.31         |    1.1.2    |      stable      |  VNOC  |
     |             NAV            |           4.8.6          |    2.0.1    |        N/A       |  VNOC  |
     |           NetBox           |           4.4.6          |    8.0.3    |       4.6.2      |  VNOC  |
     |          Oxidized          |          0.30.1          |    3.0.2    |      0.37.0      |  VNOC  |
-    |      perfSONAR Archive     |          5.2.0-2         |    0.1.6    |        N/A       |  VNOC  |
-    |     perfSONAR Testpoint    |           5.2.4          |  0.2.5-beta |        N/A       |  VNOC  |
+    |      perfSONAR Archive     |          5.2.0-3         |    0.1.7    |        N/A       |  VNOC  |
+    |     perfSONAR Testpoint    |          5.2.4-2         | 0.2.6-beta.1|        N/A       |  VNOC  |
     |          PgBackWeb         |           0.5.1          |    1.0.12   |        N/A       |  VNOC  |
     |         PostgreSQL         |          17.6.0          |   16.7.26   |        N/A       |  VNOC  |
     |         Prometheus         |           3.8.0          |    4.0.13   |       3.8.0      |  VNOC  |
@@ -48,7 +48,7 @@
     |      Victoria Metrics      |          1.85.1          |    3.0.0    |        N/A       |  VNOC  |
     |        WebDAV Server       |           1.0.0          |    1.0.0    |        N/A       |  VNOC  |
     |           Zabbix           |           6.0.8          |    2.0.3    |      6.0.32      |  VNOC  |
-    |           Zabbix           |          7.0.21          |    4.0.4    |       7.0.2      |  VNOC  |
+    |           Zabbix           |          7.0.27          |    4.0.6    |       7.0.2      |  VNOC  |
 
 
 
@@ -59,7 +59,7 @@
     |----------------------------|--------------|-------------|------------------|--------|
     |           Adminer          |     5.4.1    |    3.0.11   |       5.0.6      |  VLAB  |
     |       Apache Airflow       | 3.2.0-beta.5 |    1.21.0   |      3.3.0b2     |  VLAB  |
-    |            Argus           |    2.9.1-2   |    0.8.2    |        N/A       |  VLAB  |
+    |            Argus           |    2.9.1-3   |    0.8.3    |        N/A       |  VLAB  |
     |           Bastion          |     18.04    |    2.1.0    |        N/A       |  VLAB  |
     |      changedetectionio     |   0.55.7-1   |   1.0.66-1  |      0.55.7      |  VLAB  |
     |          CheckCle          |    1.6.0-5   |    1.0.4    |        N/A       |  VLAB  |
@@ -72,17 +72,17 @@
     |           Grafana          |     7.2.0    |    2.0.1    |      7.5.17      |  VLAB  |
     |           Grafana          |   10.4.19-1  |   7.0.13-1  |      10.4.9      |  VLAB  |
     |           Grafana          |   11.6.9-1   |   8.0.19-1  |      11.6.8      |  VLAB  |
-    |        Healthchecks        |4.2.20260525-1|   1.1.67-1  |        4.2       |  VLAB  |
+    |        Healthchecks        |4.2.20260615-1|   1.1.68-1  |        4.2       |  VLAB  |
     |           Icinga2          |    2.11.4    |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |   1.8.10-3   |    5.0.0    |      1.8.10      |  VLAB  |
-    |           Jenkins          |   2.555.2-1  |    5.9.22   |      2.555.3     |  VLAB  |
+    |           Jenkins          |   2.555.3-1  |    5.9.26   |      2.555.3     |  VLAB  |
     |          Keycloak          |    26.5.3    |    0.14.6   |        N/A       |  VLAB  |
     |           Kuvasz           |     3.8.0    |    3.3.0    |        N/A       |  VLAB  |
     |        LibreBooking        |     2.8.6    |    3.1.0    |        N/A       |  VLAB  |
     |          LibreNMS          |     1.47     |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |   1.0.16-1   |    4.0.6    |        N/A       |  VLAB  |
     |           MailDev          |     2.0.5    |    1.0.0    |       2.1.0      |  VLAB  |
-    |          Metabase          |    61.2.2    |   1.0.37-1  |ux-3754-full-state|  VLAB  |
+    |          Metabase          |    62.2.1    |   1.0.40-1  |ux-3754-full-state|  VLAB  |
     |           Moodle           |    5.0.1-1   |    26.0.4   |       list       |  VLAB  |
     |             N8n            |   1.123.31   |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |     4.8.6    |    2.0.1    |        N/A       |  VLAB  |

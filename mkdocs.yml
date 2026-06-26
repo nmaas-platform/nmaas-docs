@@ -16,6 +16,9 @@ nav:
     - Metrics:
       - Introduction: 'use-cases/metrics/metrics-introduction.md'
       - Example Workflows: 'use-cases/metrics/example-workflows.md'
+    - ActiveMon:
+      - Introduction: 'use-cases/activemon/activemon-introduction.md'
+      - Getting Started: 'use-cases/activemon/activemon-getstarted.md'
   - User Guides:
     - Introduction: 'guides/introduction.md'
     - Domain Admin Guide: 'guides/domain-admin-guide.md'

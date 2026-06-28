@@ -35,8 +35,8 @@
     |             NAV            |           4.8.6          |    2.0.1    |        N/A       |  VNOC  |
     |           NetBox           |           4.4.6          |    8.0.3    |       4.6.2      |  VNOC  |
     |          Oxidized          |          0.30.1          |    3.0.2    |      0.37.0      |  VNOC  |
-    |      perfSONAR Archive     |          5.2.0-3         |    0.1.7    |        N/A       |  VNOC  |
-    |     perfSONAR Testpoint    |          5.2.4-2         | 0.2.6-beta.1|        N/A       |  VNOC  |
+    |      perfSONAR Archive     |          5.2.0-5         |    0.1.8    |        N/A       |  VNOC  |
+    |     perfSONAR Testpoint    |          5.2.4-3         | 0.2.6-beta.2|        N/A       |  VNOC  |
     |          PgBackWeb         |           0.5.1          |    1.0.12   |        N/A       |  VNOC  |
     |         PostgreSQL         |          17.6.0          |   16.7.26   |        N/A       |  VNOC  |
     |         Prometheus         |           3.8.0          |    4.0.13   |       3.8.0      |  VNOC  |

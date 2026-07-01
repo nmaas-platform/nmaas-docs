@@ -22,15 +22,15 @@
     |           Grafana          |           9.5.5          |    6.0.1    |      9.5.21      |  VNOC  |
     |           Grafana          |          10.4.8          |    7.0.7    |      10.4.9      |  VNOC  |
     |           Grafana          |          11.6.9          |    8.0.19   |      11.6.8      |  VNOC  |
-    |        Healthchecks        |       4.2.20260622       |    1.1.68   |        4.2       |  VNOC  |
+    |        Healthchecks        |       4.2.20260629       |    1.1.70   |        4.2       |  VNOC  |
     |           Icinga2          |         2.14.6-1         |    3.0.2    |        N/A       |  VNOC  |
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |      1.8.10      |  VNOC  |
-    |           Jenkins          |         2.555.3-1        |    5.9.26   |      2.555.3     |  VNOC  |
+    |           Jenkins          |         2.555.3-2        |    5.9.32   |      2.555.3     |  VNOC  |
     |          Keycloak          |          26.5.3          |    0.14.6   |        N/A       |  VNOC  |
     |           Kuvasz           |           4.0.1          |    3.3.2    |        N/A       |  VNOC  |
     |          LibreNMS          |          25.11.0         |    7.0.0    |        N/A       |  VNOC  |
     |            Maat            |           1.0.9          |    3.0.2    |        N/A       |  VNOC  |
-    |          Metabase          |          62.3.3          |    1.0.41   |ux-3754-full-state|  VNOC  |
+    |          Metabase          |          62.3.5          |    1.0.42   |ux-3754-full-state|  VNOC  |
     |             N8n            |         1.123.31         |    1.1.2    |      stable      |  VNOC  |
     |             NAV            |           4.8.6          |    2.0.1    |        N/A       |  VNOC  |
     |           NetBox           |           4.4.6          |    8.0.3    |       4.6.4      |  VNOC  |
@@ -42,6 +42,7 @@
     |         Prometheus         |           3.8.0          |    4.0.13   |       3.8.0      |  VNOC  |
     |Prometheus Blackbox Exporter|         0.28.0-1         |    11.9.1   |        N/A       |  VNOC  |
     |         Routinator         |           0.8.3          |    2.0.0    |      0.15.2      |  VNOC  |
+    |          SmokePing         |          2.9.0-6         |    1.0.0    |        N/A       |  VNOC  |
     |          Telegraf          |          1.36.4          |    1.8.65   |      1.39.1      |  VNOC  |
     |            Trino           |            476           |    1.42.0   |        N/A       |  VNOC  |
     |         Uptime Kuma        |           2.4.0          |    4.0.6    |      1.23.13     |  VNOC  |

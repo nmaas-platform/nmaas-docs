@@ -22,15 +22,15 @@ This is a continuously updated list of currently supported applications on nmaas
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |           9.5.5          |    6.0.1    |
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |          10.4.8          |    7.0.7    |
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |          11.6.9          |    8.0.19   |
-|            [Healthchecks](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Healthchecks)           |       4.2.20260622       |    1.1.68   |
+|            [Healthchecks](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Healthchecks)           |       4.2.20260629       |    1.1.70   |
 |                     [Icinga2](https://docs.nmaas.eu/nmaas-applications/tutorials/icinga2/)                    |         2.14.6-1         |    3.0.2    |
 |                    [InfluxDB](https://docs.nmaas.eu/nmaas-applications/tutorials/influxdb/)                   |         1.8.10-2         |    5.0.0    |
-|                     [Jenkins](https://docs.nmaas.eu/nmaas-applications/tutorials/jenkins/)                    |         2.555.3-1        |    5.9.26   |
+|                     [Jenkins](https://docs.nmaas.eu/nmaas-applications/tutorials/jenkins/)                    |         2.555.3-2        |    5.9.32   |
 |                    [Keycloak](https://docs.nmaas.eu/nmaas-applications/tutorials/keycloak/)                   |          26.5.3          |    0.14.6   |
 |                      [Kuvasz](https://docs.nmaas.eu/nmaas-applications/tutorials/kuvasz/)                     |           4.0.1          |    3.3.2    |
 |                    [LibreNMS](https://docs.nmaas.eu/nmaas-applications/tutorials/librenms/)                   |          25.11.0         |    7.0.0    |
 |                        [Maat](https://docs.nmaas.eu/nmaas-applications/tutorials/maat/)                       |           1.0.9          |    3.0.2    |
-|                    [Metabase](https://docs.nmaas.eu/nmaas-applications/tutorials/metabase/)                   |          62.3.3          |    1.0.41   |
+|                    [Metabase](https://docs.nmaas.eu/nmaas-applications/tutorials/metabase/)                   |          62.3.5          |    1.0.42   |
 |                         [N8n](https://docs.nmaas.eu/nmaas-applications/tutorials/n8n/)                        |         1.123.31         |    1.1.2    |
 |                         [NAV](https://docs.nmaas.eu/nmaas-applications/tutorials/nav/)                        |           4.8.6          |    2.0.1    |
 |                      [NetBox](https://docs.nmaas.eu/nmaas-applications/tutorials/netbox/)                     |           4.4.6          |    8.0.3    |
@@ -42,6 +42,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |                  [Prometheus](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus/)                 |           3.8.0          |    4.0.13   |
 |[Prometheus Blackbox Exporter](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus-blackbox-exporter)|         0.28.0-1         |    11.9.1   |
 |                  [Routinator](https://docs.nmaas.eu/nmaas-applications/tutorials/routinator/)                 |           0.8.3          |    2.0.0    |
+|                   [SmokePing](https://docs.nmaas.eu/nmaas-applications/tutorials/smokeping/)                  |          2.9.0-6         |    1.0.0    |
 |                    [Telegraf](https://docs.nmaas.eu/nmaas-applications/tutorials/telegraf)                    |          1.36.4          |    1.8.65   |
 |                       [Trino](https://docs.nmaas.eu/nmaas-applications/tutorials/trino/)                      |            476           |    1.42.0   |
 |                 [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)                |           2.4.0          |    4.0.6    |

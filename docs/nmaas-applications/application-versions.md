@@ -56,53 +56,53 @@
 === "VLAB"
 
 
-    |            Name            |  App Version |Chart Version|    Latest Version   |Instance|
-    |----------------------------|--------------|-------------|---------------------|--------|
-    |           Adminer          |     5.4.1    |    3.0.11   |        5.0.6        |  VLAB  |
-    |       Apache Airflow       | 3.2.0-beta.5 |    1.21.0   |       3.3.0rc2      |  VLAB  |
-    |            Argus           |    2.9.1-3   |    0.8.3    |         N/A         |  VLAB  |
-    |           Bastion          |     18.04    |    2.1.0    |         N/A         |  VLAB  |
-    |      changedetectionio     |   0.55.7-1   |   1.0.66-1  |        0.55.7       |  VLAB  |
-    |          CheckCle          |    1.6.0-5   |    1.0.4    |         N/A         |  VLAB  |
-    |           Checkle          |     1.4.0    |    1.0.1    |         N/A         |  VLAB  |
-    |           CodiMD           |     2.5.3    |    1.0.4    |        2.5.4        |  VLAB  |
-    |            CTFd            |     3.8.4    |    2.0.7    |        3.8.6        |  VLAB  |
-    |          Databasus         |    3.24.0    |    3.24.0   |         N/A         |  VLAB  |
-    |      Debian repository     |      1.0     |    2.0.1    |         N/A         |  VLAB  |
-    |           Grafana          |     6.5.2    |    2.0.1    |        6.7.6        |  VLAB  |
-    |           Grafana          |     7.2.0    |    2.0.1    |        7.5.17       |  VLAB  |
-    |           Grafana          |   10.4.19-1  |   7.0.13-1  |        10.4.9       |  VLAB  |
-    |           Grafana          |   11.6.9-1   |   8.0.19-1  |        11.6.8       |  VLAB  |
-    |        Healthchecks        |4.2.20260629-1|   1.1.70-1  |         4.2         |  VLAB  |
-    |           Icinga2          |    2.11.4    |    2.0.1    |         N/A         |  VLAB  |
-    |          InfluxDB          |   1.8.10-3   |    5.0.0    |        1.8.10       |  VLAB  |
-    |           Jenkins          |   2.555.3-2  |    5.9.32   |       2.555.3       |  VLAB  |
-    |          Keycloak          |    26.5.3    |    0.14.6   |         N/A         |  VLAB  |
-    |           Kuvasz           |     3.8.0    |    3.3.0    |         N/A         |  VLAB  |
-    |        LibreBooking        |     2.8.6    |    3.1.0    |         N/A         |  VLAB  |
-    |          LibreNMS          |     1.47     |    2.0.1    |         N/A         |  VLAB  |
-    |            Maat            |   1.0.16-1   |    4.0.6    |         N/A         |  VLAB  |
-    |           MailDev          |     2.0.5    |    1.0.0    |maildev@3.0.0-alpha.0|  VLAB  |
-    |          Metabase          |    62.3.5    |   1.0.42-1  |  ux-3754-full-state |  VLAB  |
-    |           Moodle           |    5.0.1-1   |    26.0.4   |         list        |  VLAB  |
-    |             N8n            |   1.123.31   |    1.1.2    |        stable       |  VLAB  |
-    |             NAV            |     4.8.6    |    2.0.1    |         N/A         |  VLAB  |
-    |           NetBox           |    4.5.5-2   |    8.0.19   |        4.6.4        |  VLAB  |
-    |       OWASP JuiceShop      |    19.1.1    |    1.0.3    |        20.1.1       |  VLAB  |
-    |          Oxidized          |    0.28.0    |    2.0.1    |        0.37.0       |  VLAB  |
-    |      perfSONAR Archive     | 5.2.0-beta.4 |    0.1.4    |         N/A         |  VLAB  |
-    |     perfSONAR Testpoint    | 5.2.4-alpha.5|  0.2.5-beta |         N/A         |  VLAB  |
-    |          PgBackWeb         |     0.4.2    |    1.0.0    |         N/A         |  VLAB  |
-    |         PostgreSQL         |    14.3.0    |    11.5.0   |         N/A         |  VLAB  |
-    |         Prometheus         |    3.9.1-1   |   4.0.16-1  |        3.8.0        |  VLAB  |
-    |Prometheus Blackbox Exporter|   0.28.0-1   |    11.9.1   |         N/A         |  VLAB  |
-    |         Routinator         |     0.8.3    |    2.0.0    |        0.15.2       |  VLAB  |
-    |          SmokePing         |    2.9.0-5   |    0.1.0    |         N/A         |  VLAB  |
-    |            Trino           |     479-1    |    1.42.0   |         N/A         |  VLAB  |
-    |          UnrealIRC         |    3.2.8-1   |    1.0.0    |         N/A         |  VLAB  |
-    |         Uptime Kuma        |     2.1.3    |    4.0.4    |       1.23.13       |  VLAB  |
-    |           Valkey           |     7.2.6    |    0.3.15   |         N/A         |  VLAB  |
-    |      Victoria Metrics      |    1.46.0    |    2.0.1    |         N/A         |  VLAB  |
-    |       VS Code Server       |    4.92.2    |    3.23.0   |         N/A         |  VLAB  |
-    |        WebDAV Server       |     1.0.0    |    1.0.0    |         N/A         |  VLAB  |
-    |            Znuny           |    6.0.39    |    1.0.0    |         N/A         |  VLAB  |
+    |            Name            |  App Version |Chart Version|  Latest Version  |Instance|
+    |----------------------------|--------------|-------------|------------------|--------|
+    |           Adminer          |     5.4.1    |    3.0.11   |       5.0.6      |  VLAB  |
+    |       Apache Airflow       | 3.2.0-beta.5 |    1.21.0   |     3.3.0rc2     |  VLAB  |
+    |            Argus           |    2.9.1-3   |    0.8.3    |        N/A       |  VLAB  |
+    |           Bastion          |     18.04    |    2.1.0    |        N/A       |  VLAB  |
+    |      changedetectionio     |   0.55.7-1   |   1.0.66-1  |      0.55.7      |  VLAB  |
+    |          CheckCle          |    1.6.0-5   |    1.0.4    |        N/A       |  VLAB  |
+    |           Checkle          |     1.4.0    |    1.0.1    |        N/A       |  VLAB  |
+    |           CodiMD           |     2.5.3    |    1.0.4    |       2.5.4      |  VLAB  |
+    |            CTFd            |     3.8.4    |    2.0.7    |       3.8.6      |  VLAB  |
+    |          Databasus         |    3.24.0    |    3.24.0   |        N/A       |  VLAB  |
+    |      Debian repository     |      1.0     |    2.0.1    |        N/A       |  VLAB  |
+    |           Grafana          |     6.5.2    |    2.0.1    |       6.7.6      |  VLAB  |
+    |           Grafana          |     7.2.0    |    2.0.1    |      7.5.17      |  VLAB  |
+    |           Grafana          |   10.4.19-1  |   7.0.13-1  |      10.4.9      |  VLAB  |
+    |           Grafana          |   11.6.9-1   |   8.0.19-1  |      11.6.8      |  VLAB  |
+    |        Healthchecks        |4.2.20260629-1|   1.1.70-1  |        4.2       |  VLAB  |
+    |           Icinga2          |    2.11.4    |    2.0.1    |        N/A       |  VLAB  |
+    |          InfluxDB          |   1.8.10-3   |    5.0.0    |      1.8.10      |  VLAB  |
+    |           Jenkins          |   2.555.3-2  |    5.9.32   |      2.555.3     |  VLAB  |
+    |          Keycloak          |    26.5.3    |    0.14.6   |        N/A       |  VLAB  |
+    |           Kuvasz           |     3.8.0    |    3.3.0    |        N/A       |  VLAB  |
+    |        LibreBooking        |     2.8.6    |    3.1.0    |        N/A       |  VLAB  |
+    |          LibreNMS          |     1.47     |    2.0.1    |        N/A       |  VLAB  |
+    |            Maat            |   1.0.16-1   |    4.0.6    |        N/A       |  VLAB  |
+    |           MailDev          |     2.0.5    |    1.0.0    |maildev@3.0.0-rc.1|  VLAB  |
+    |          Metabase          |    62.3.5    |   1.0.42-1  |ux-3754-full-state|  VLAB  |
+    |           Moodle           |    5.0.1-1   |    26.0.4   |       list       |  VLAB  |
+    |             N8n            |   1.123.31   |    1.1.2    |      stable      |  VLAB  |
+    |             NAV            |     4.8.6    |    2.0.1    |        N/A       |  VLAB  |
+    |           NetBox           |    4.5.5-2   |    8.0.19   |       4.6.4      |  VLAB  |
+    |       OWASP JuiceShop      |    19.1.1    |    1.0.3    |      20.1.1      |  VLAB  |
+    |          Oxidized          |    0.28.0    |    2.0.1    |      0.37.0      |  VLAB  |
+    |      perfSONAR Archive     | 5.2.0-beta.4 |    0.1.4    |        N/A       |  VLAB  |
+    |     perfSONAR Testpoint    | 5.2.4-alpha.5|  0.2.5-beta |        N/A       |  VLAB  |
+    |          PgBackWeb         |     0.4.2    |    1.0.0    |        N/A       |  VLAB  |
+    |         PostgreSQL         |    14.3.0    |    11.5.0   |        N/A       |  VLAB  |
+    |         Prometheus         |    3.9.1-1   |   4.0.16-1  |       3.8.0      |  VLAB  |
+    |Prometheus Blackbox Exporter|   0.28.0-1   |    11.9.1   |        N/A       |  VLAB  |
+    |         Routinator         |     0.8.3    |    2.0.0    |      0.15.2      |  VLAB  |
+    |          SmokePing         |    2.9.0-5   |    0.1.0    |        N/A       |  VLAB  |
+    |            Trino           |     479-1    |    1.42.0   |        N/A       |  VLAB  |
+    |          UnrealIRC         |    3.2.8-1   |    1.0.0    |        N/A       |  VLAB  |
+    |         Uptime Kuma        |     2.1.3    |    4.0.4    |      1.23.13     |  VLAB  |
+    |           Valkey           |     7.2.6    |    0.3.15   |        N/A       |  VLAB  |
+    |      Victoria Metrics      |    1.46.0    |    2.0.1    |        N/A       |  VLAB  |
+    |       VS Code Server       |    4.92.2    |    3.23.0   |        N/A       |  VLAB  |
+    |        WebDAV Server       |     1.0.0    |    1.0.0    |        N/A       |  VLAB  |
+    |            Znuny           |    6.0.39    |    1.0.0    |        N/A       |  VLAB  |

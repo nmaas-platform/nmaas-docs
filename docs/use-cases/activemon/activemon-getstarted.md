@@ -1,5 +1,11 @@
 # Getting Started with ActiveMon
 
+For the central nmaas instance to manage applications deployed on remote Kubernetes clusters, it must be able to communicate with the Kubernetes API server of each registered cluster. In the typical ActiveMon deployment model, this communication takes place over a VPN connection established between the central nmaas environment and the remote site hosting the Kubernetes cluster.
+
+The VPN provides a secure management channel used for cluster health checks, application lifecycle operations and configuration updates. In most deployments, the server field in the kubeconfig submitted to nmaas therefore points to the VPN address of the remote cluster's control plane rather than to its public or local network address.
+
+Alternative connectivity models are possible provided that the central nmaas instance has reliable and secure network access to the Kubernetes API server. Examples include private research network backbones, dedicated management networks, existing site-to-site connectivity between participating organizations or a securely exposed Kubernetes API server reachable over the public internet, for example through TLS-protected access with appropriate authentication and network restrictions.
+
 ## Adding a Remote Cluster to nmaas
 
 To add a remote cluster to nmaas, a corresponding `kubeconfig` file needs to be created and submitted via the nmaas Portal. The steps below explain how to generate two types of `kubeconfig` files:
@@ -88,6 +94,13 @@ roleRef:
   name: nmaas-external-kube-system-services-reader
   apiGroup: rbac.authorization.k8s.io
 ```
+
+Apply the resource:
+
+```bash
+kubectl apply -f nmaas-external-admin-kube-system-binding.roleBinding.yaml
+```
+
 
 The final step is to construct the `kubeconfig` file itself.
 
@@ -230,7 +243,7 @@ During application deployment, the nmaas platform creates a dedicated Git reposi
 - the nmaas Platform fetches the latest changes and syncs the changes to the in-cluster ConfigMap
 - Stakater Reloader detects that the ConfigMap has changed and restarts the affected pod(s).
 
-The installation of the Stakater Reloader component is straight forward:
+The installation of the Stakater Reloader component is straightforward:
 
 ```bash
 helm repo add stakater https://stakater.github.io/stakater-charts
@@ -238,7 +251,17 @@ helm repo update
 helm install -n $namespace reloader stakater/reloader
 ```
 
-## Advanced Network Topologies in Remote Clusters
+## Application Network Options
+
+Active monitoring applications often need control over the network interfaces they use. nmaas supports several networking options depending on the application and deployment environment:
+
+- **Kubernetes Networking** uses the default cluster networking provided by the CNI plugin and is suitable for most latency measurements and lightweight monitoring scenarios.
+- **Host Networking** attaches the application directly to the host network stack and is useful when measurements should originate from the node itself or when exposing well-known service ports.
+- **Multus Networking** allows applications to use additional interfaces attached to physical networks, VLANs or dedicated measurement networks, making it suitable for advanced active monitoring deployments and high-performance throughput testing.
+
+The following section describes an advanced networking scenario based on Multus and explains how it can be integrated with remote ActiveMon deployments.
+
+### Advanced Network Topologies in Remote Clusters
 
 It is possible that when using a remote cluster to host an active monitoring application, the remote node can also host additional services, apart from being a Kubernetes node. In such cases it is not always feasible to deploy containers using host networking, to avoid situations where multiple services bind to the same port (e.g., the perfSONAR Testpoint web server and a reverse proxy). The solution to this problem is Multus, a Kubernetes networking plugin.
 

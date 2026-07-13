@@ -25,10 +25,10 @@ The *Guest* default global role assigned to each user after successful account r
 
 The remaining roles on the global level are:
 
- - **Operator** – allows the user to view domain details and update the status of a particular DCN network upon its manual configuration or de-configuration
- - **Application manager** – allows the user to add new applications and/or application versions to the catalogue through a dedicated form built in the Portal as well as maintain applications for which the System administrator assigned the user as an owner
- - **Virtual lab manager** – grants user access to domain group management options, along with bulk user onboarding and bulk application deployment functions
- - **System administrator** – gives the user the complete system administration rights in the Portal (including user, domain and application management)
+ - **Operator** - allows the user to view domain details and update the status of a particular DCN network upon its manual configuration or de-configuration
+ - **Application manager** - allows the user to add new applications and/or application versions to the catalogue through a dedicated form built in the Portal as well as maintain applications for which the System administrator assigned the user as an owner
+ - **Virtual lab manager** - grants user access to domain group management options, along with bulk user onboarding and bulk application deployment functions
+ - **System administrator** - gives the user the complete system administration rights in the Portal (including user, domain and application management)
 
 !!! info "Additional Information"
     For *Application manager* and *Domain administrator* user guides visit [nmaas Application Manager Guide](./application-manager-guide.md) and [nmaas Domain Admin Guide](./domain-admin-guide.md)
@@ -37,9 +37,9 @@ The remaining roles on the global level are:
 
 There are three user roles defined at the domain level:
 
- - **Guest** – a base role in a given domain that allows the user to view the list of subscribed applications and currently deployed application instances, however, the user is not allowed to view details any of running application
- - **User** – with this role user is allowed to view details of running application instances, including the access and configuration options
- - **Domain administrator** – gives full control over the application subscriptions and application instances (including deployment, configuration and access) within a given domain, also allows for adding new users to the domain
+ - **Guest** - a base role in a given domain that allows the user to view the list of subscribed applications and currently deployed application instances, however, the user is not allowed to view details of any running application
+ - **User** - with this role user is allowed to view details of running application instances, including the access and configuration options
+ - **Domain administrator** - gives full control over the application subscriptions and application instances (including deployment, configuration and access) within a given domain, also allows for adding new users to the domain
 
 These roles are assigned per user domain. A single user may have different roles assigned in multiple domains.
 
@@ -90,7 +90,7 @@ The provided `Username` has to be at least three letters long.
 
 The user also has to confirm that they have read the respective nmaas Privacy Notice text.
 
-There are also few optional fields, namely `First name`, `Last name` and a prefered `Domain` selector.
+There are also few optional fields, namely `First name`, `Last name` and a preferred `Domain` selector.
 
 After submitting the registration form, the user has to wait for the account to be activated by the administrator. User will be notified via email that their account is active.
 
@@ -104,16 +104,16 @@ After the user account has been activated by the nmaas administrator (in the cas
 
 On the `Applications` view all the applications available on given nmaas instance are presented. Applications can be filtered by tags and sorted by a few criteria. Users can also search them by name.
 
-A single application tile consists of the logo, name and brief description of the application. Clicking a tile opens the application’s details page.
+A single application tile consists of the logo, name and brief description of the application. Clicking a tile opens the application's details page.
 
 !!! info "Domain Selection"
     User needs to verify or select a proper *Domain* from the selector located on the left menu bar
 
 ## 7. Application Instances 
 
-The `Instances` view contains information about all the application instances deployed within user’s domain.
+The `Instances` view contains information about all the application instances deployed within user's domain.
 
-By default, the displayed list of application instances includes all instances but can be filetered to only instances deployed by given user by selecting the `Show only my` checkbox. In addition, it is possible to display all the instances that were already undeployed and which are hidden by default.
+By default, the displayed list of application instances includes all instances but can be filtered to only instances deployed by a given user by selecting the `Show only my` checkbox. In addition, it is possible to display all the instances that were already undeployed and which are hidden by default.
 
 User can switch between the default card-based view and a table-based view that contains additional information about the application instances.
 
@@ -140,7 +140,7 @@ When deploying a new application instance, the user is requested to provide or s
  - custom instance name (unique within the domain, up to 10 lowercase characters)
  - version of the application (from a selector)
  - confirm the domain (in which a given instance should be deployed)
- - chose to enable or not fully automatic application upgrades (triggered when new versions become available in the Portal)
+ - choose whether to enable fully automatic application upgrades (triggered when new versions become available in the Portal)
  - select a remote cluster for the deployment (if available in the selected domain) 
 
 The installation process comprises a few steps including subscription validation, environment creation, connectivity verification, application deployment, application first time configuration and activation.
@@ -159,7 +159,7 @@ Once the installation process is completed, the user is provided with a way or m
 
 ### 8.3 Application Instance Initial Configuration
 
-During the installation process, once the application instance is initially deployed, the user is asked to provide an initial configuration for the application that is being installed. Thre required data is entered through a configuration wizard presented in a window after clicking the `Configure` button, which becomes visible on the application instance details page once the application transits to the `Deployed` state.
+During the installation process, once the application instance is initially deployed, the user is asked to provide an initial configuration for the application that is being installed. The required data is entered through a configuration wizard presented in a window after clicking the `Configure` button, which becomes visible on the application instance details page once the application transits to the `Deployed` state.
 
 ![Application instance](./img/user-guide-s08.png)
 
@@ -179,10 +179,10 @@ Multiple access methods are supported by nmaas, and each of the applications sup
 
 Four types of access are possible:
 
- - **public** – application web user interface is accessible directly from the public Internet
- - **external** – application web user interface is accessible over HTTPS from within a dedicated client VPN
- - **internal** – application is accessible over a different protocol than HTTP on a dedicated IP address (assigned by the system) and application-specific port
- - **local** – a Kubernetes service name that can be used to access this application instance from another application instance running within the same user domain (e.g., the service name for a Prometheus instance can be used to configure a data source in a Grafana instance deployed within the same domain)
+ - **public** - application web user interface is accessible directly from the public Internet
+ - **external** - application web user interface is accessible over HTTPS from within a dedicated client VPN
+ - **internal** - application is accessible over a different protocol than HTTP on a dedicated IP address (assigned by the system) and application-specific port
+ - **local** - a Kubernetes service name that can be used to access this application instance from another application instance running within the same user domain (e.g., the service name for a Prometheus instance can be used to configure a data source in a Grafana instance deployed within the same domain)
 
 !!! info "VPN Requirement for Accessing Deployed Applications"
     To access the applications running within a particular domain, the user needs to connect to a dedicated VPN
@@ -206,11 +206,11 @@ Then user can apply the desired changes to the pre-populated configuration files
 After the files are committed and pushed back to the repository, the configuration of the respective application is automatically reloaded within a couple of minutes.
 
 !!! info "Accessing the Configuration Repositories"
-    When cloning, the user is authenticated using their private SSH key. Therefore, is it necessary to upload the public SSH key on the user's `Profile` page before accessing the repository
+    When cloning, the user is authenticated using their private SSH key. Therefore, it is necessary to upload the public SSH key on the user's `Profile` page before accessing the repository
 
 The user that initiates a given application instance deployment is automatically added to GitLab as a member of the newly created repository. Other domain users, to have the same SSH-based access to the repository, have to be added as members to particular application instance by selecting `Members` from the `Actions` menu. 
 
-![Application instance mambers](./img/user-guide-instance-actions-members.png){ width="300" }
+![Application instance members](./img/user-guide-instance-actions-members.png){ width="300" }
 
 This operation can be performed by a Domain administrator. A Domain administrator can only select users that are added to their domain and have previously uploaded their SSH keys (see [section 9.3](./user-guide.md#93-setting-user-ssh-keys)).
 
@@ -246,7 +246,7 @@ The fact that a particular application instance can be upgraded is indicated on 
 
 ### 8.9 Application Pausing and Resuming
 
-A running application instance can be temporarly paused to save resources by selecting the `Pause` option from the 
+A running application instance can be temporarily paused to save resources by selecting the `Pause` option from the 
 `Actions` menu. A previously paused application instance can be resumed by selecting the `Resume` option. Both 
 configuration and data of a paused application instance are preserved.
 
@@ -263,9 +263,9 @@ In unforeseen situations the deployment process may fail at some stage.
 
 One of the following actions can be triggered by the user from the application instance view once a deployment process ends up in the `Failure` state:
 
- - **Check state** – verify if the application instance is already running 
- - **Redeploy** – attempt to re-run the deployment process
- - **Remove** – complete removal of the failed instance allowing a fresh deployment with the same custom instance name
+ - **Check state** - verify if the application instance is already running 
+ - **Redeploy** - attempt to re-run the deployment process
+ - **Remove** - complete removal of the failed instance allowing a fresh deployment with the same custom instance name
 
 !!! info "Requesting Support for Failed Deployments"
     Administrators are notified with an email automatically once an application deployment process fails. Users are encouraged to additionally inform administrators about the incident using the *Issue report* contact form available on the `About` page.
@@ -323,13 +323,13 @@ The Contact Form is available on the About page along with the information about
 
 ![Contact form](./img/user-guide-s18.png)
 
-The user can select one of five form types that best matches the subject of his message:
+The user can select one of five form types that best matches the subject of their message:
 
- - **Contact** – generic request form
- - **Access request** – for requests related to new account creation or role assignment
- - **Issue report** – for reporting any encountered issues with the Portal or deployed application instances
- - **New domain request** – for requests related to new domain creation
- - **Enhancement or new application request** – for placing suggestions of enhancements, new features or integration of new applications 
+ - **Contact** - generic request form
+ - **Access request** - for requests related to new account creation or role assignment
+ - **Issue report** - for reporting any encountered issues with the Portal or deployed application instances
+ - **New domain request** - for requests related to new domain creation
+ - **Enhancement or new application request** - for placing suggestions of enhancements, new features or integration of new applications 
 
 !!! info "Form Fields"
     Each type of form contains a different set of mandatory fields to be populated to best describe the subject of the message

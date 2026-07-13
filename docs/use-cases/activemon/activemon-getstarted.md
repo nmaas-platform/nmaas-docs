@@ -6,6 +6,8 @@ The VPN provides a secure management channel used for cluster health checks, app
 
 Alternative connectivity models are possible provided that the central nmaas instance has reliable and secure network access to the Kubernetes API server. Examples include private research network backbones, dedicated management networks, existing site-to-site connectivity between participating organizations or a securely exposed Kubernetes API server reachable over the public internet, for example through TLS-protected access with appropriate authentication and network restrictions.
 
+The process of registering and managing remote clusters from the nmaas Portal is described in the [Domain Administrator Guide](https://docs.nmaas.eu/guides/domain-admin-guide/#managing-remote-clusters). The following sections focus on preparing the Kubernetes-side configuration required for onboarding a cluster, including the creation of the kubeconfig file that will be submitted to nmaas during the registration process.
+
 ## Adding a Remote Cluster to nmaas
 
 To add a remote cluster to nmaas, a corresponding `kubeconfig` file needs to be created and submitted via the nmaas Portal. The steps below explain how to generate two types of `kubeconfig` files:

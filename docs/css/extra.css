@@ -3,7 +3,9 @@
     src: url('fonts/airlock.ttf');
     /*src: url('css/airlock.ttf'); **/
 }
-
+redoc, redoc * {
+	font-family: 'Roboto', sans-serif !important;
+}
 span.md-header-nav__topic {
   font-family: Airlock;
 }

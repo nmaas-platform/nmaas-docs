@@ -6,6 +6,46 @@ Presentations given as part of the GÉANT GN5-2 project.
 
 ---
 
+### TNC 2026 (Community Hub)
+
+**Event Type:** Presentations
+
+**Presentation Title:** **Presentation Title:** Exploring nmaas Platform Use Cases – Beyond network and service monitoring
+
+**Presenter(s):** Lukasz Lopatowski, Vojdan Kjorveziroski
+
+**Event:** TNC 2026
+
+**Event Homepage:** [https://tnc26.geant.org/check-out-the-programme-of-tnc26/#Thursday/all/s1195](https://tnc26.geant.org/check-out-the-programme-of-tnc26/#Thursday/all/s1195)
+
+**Date:** 11 June 2026
+
+**Location:** Helsinki, Finland
+
+**Slides:** [https://static.nmaas.eu/resources/34-nmaas-TNC-ComHub.pdf](https://static.nmaas.eu/resources/34-nmaas-TNC-ComHub.pdf)
+
+---
+
+### TNC 2026
+
+**Event Type:** Presentations
+
+**Presentation Title:** Distributed Active Network Monitoring with nmaas: Insights from an NREN production deployment
+
+**Presenter(s):** Vojdan Kjorveziroski, Firat Koyuncu
+
+**Event:** TNC 2026
+
+**Event Homepage:** [https://tnc26.geant.org/programme/#Wednesday/all/s1077](https://tnc26.geant.org/programme/#Wednesday/all/s1077)
+
+**Date:** 10 June 2026
+
+**Location:** Helsinki, Finland
+
+**Slides:** [https://static.nmaas.eu/resources/33-nmaas-TNC-v1.0.1.pdf](https://static.nmaas.eu/resources/33-nmaas-TNC-v1.0.1.pdf)
+
+---
+
 ### Internet2 Technology Exchange (TechEx) 2025
 
 **Event Type:** Presentations

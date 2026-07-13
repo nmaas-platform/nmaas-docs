@@ -6,6 +6,26 @@ Presentations given as part of the GÉANT GN5-2 project.
 
 ---
 
+### TNC 2026 (Community Hub)
+
+**Event Type:** Presentations
+
+**Presentation Title:** **Presentation Title:** Exploring nmaas Platform Use Cases – Beyond network and service monitoring
+
+**Presenter(s):** Lukasz Lopatowski, Vojdan Kjorveziroski
+
+**Event:** TNC 2026
+
+**Event Homepage:** [https://tnc26.geant.org/check-out-the-programme-of-tnc26/#Thursday/all/s1195](https://tnc26.geant.org/check-out-the-programme-of-tnc26/#Thursday/all/s1195)
+
+**Date:** 11 June 2026
+
+**Location:** Helsinki, Finland
+
+**Slides:** [https://static.nmaas.eu/resources/34-nmaas-TNC-ComHub.pdf](https://static.nmaas.eu/resources/34-nmaas-TNC-ComHub.pdf)
+
+---
+
 ### TNC 2026
 
 **Event Type:** Presentations

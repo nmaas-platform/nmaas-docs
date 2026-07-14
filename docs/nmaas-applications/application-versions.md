@@ -22,7 +22,7 @@
     |           Grafana          |           9.5.5          |    6.0.1    |      9.5.21      |  VNOC  |
     |           Grafana          |          10.4.8          |    7.0.7    |      10.4.9      |  VNOC  |
     |           Grafana          |          11.6.9          |    8.0.19   |      11.6.8      |  VNOC  |
-    |        Healthchecks        |       4.2.20260629       |    1.1.70   |        4.2       |  VNOC  |
+    |        Healthchecks        |       4.2.20260629       |    1.1.70   |        4.3       |  VNOC  |
     |           Icinga2          |         2.14.6-1         |    3.0.2    |        N/A       |  VNOC  |
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |      1.8.10      |  VNOC  |
     |           Jenkins          |         2.555.3-2        |    5.9.32   |      2.568.1     |  VNOC  |
@@ -73,7 +73,7 @@
     |           Grafana          |     7.2.0    |    2.0.1    |      7.5.17      |  VLAB  |
     |           Grafana          |   10.4.19-1  |   7.0.13-1  |      10.4.9      |  VLAB  |
     |           Grafana          |   11.6.9-1   |   8.0.19-1  |      11.6.8      |  VLAB  |
-    |        Healthchecks        |4.2.20260706-1|   1.1.71-1  |        4.2       |  VLAB  |
+    |        Healthchecks        |4.2.20260706-1|   1.1.71-1  |        4.3       |  VLAB  |
     |           Icinga2          |    2.11.4    |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |   1.8.10-3   |    5.0.0    |      1.8.10      |  VLAB  |
     |           Jenkins          |   2.555.3-2  |    5.9.32   |      2.568.1     |  VLAB  |

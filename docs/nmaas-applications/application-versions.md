@@ -4,7 +4,7 @@
 
     |            Name            |        App Version       |Chart Version|  Latest Version  |Instance|
     |----------------------------|--------------------------|-------------|------------------|--------|
-    |           Adminer          |           5.4.2          |    3.0.15   |       5.5.1      |  VNOC  |
+    |           Adminer          |           5.5.0          |    3.0.20   |       5.5.1      |  VNOC  |
     |       Apache Airflow       |           3.2.0          |    1.21.0   |     3.3.0rc2     |  VNOC  |
     |            Argus           |          2.9.1-3         |    0.8.3    |        N/A       |  VNOC  |
     |           Bastion          |         20.04-v2         |    2.1.4    |        N/A       |  VNOC  |
@@ -45,11 +45,11 @@
     |          SmokePing         |          2.9.0-6         |    1.0.0    |        N/A       |  VNOC  |
     |          Telegraf          |          1.36.4          |    1.8.65   |      1.39.2      |  VNOC  |
     |            Trino           |            476           |    1.42.0   |        N/A       |  VNOC  |
-    |         Uptime Kuma        |           2.4.0          |    4.0.6    |      1.23.13     |  VNOC  |
+    |         Uptime Kuma        |           2.5.0          |    4.0.7    |      1.23.13     |  VNOC  |
     |      Victoria Metrics      |          1.85.1          |    3.0.0    |        N/A       |  VNOC  |
     |        WebDAV Server       |           1.0.0          |    1.0.0    |        N/A       |  VNOC  |
     |           Zabbix           |           6.0.8          |    2.0.3    |      6.0.32      |  VNOC  |
-    |           Zabbix           |          7.0.27          |    4.0.6    |       7.0.2      |  VNOC  |
+    |           Zabbix           |          7.0.29          |    4.0.7    |       7.0.2      |  VNOC  |
 
 
 
@@ -66,7 +66,7 @@
     |          CheckCle          |    1.6.0-5   |    1.0.4    |        N/A       |  VLAB  |
     |           Checkle          |     1.4.0    |    1.0.1    |        N/A       |  VLAB  |
     |           CodiMD           |     2.5.3    |    1.0.4    |       2.5.4      |  VLAB  |
-    |            CTFd            |     3.8.4    |    2.0.7    |       3.8.6      |  VLAB  |
+    |            CTFd            |     3.8.6    |    2.0.8    |       3.8.6      |  VLAB  |
     |          Databasus         |    3.24.0    |    3.24.0   |        N/A       |  VLAB  |
     |      Debian repository     |      1.0     |    2.0.1    |        N/A       |  VLAB  |
     |           Grafana          |     6.5.2    |    2.0.1    |       6.7.6      |  VLAB  |
@@ -88,7 +88,7 @@
     |             N8n            |   1.123.31   |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |     4.8.6    |    2.0.1    |        N/A       |  VLAB  |
     |           NetBox           |    4.5.5-2   |    8.0.19   |       4.6.7      |  VLAB  |
-    |       OWASP JuiceShop      |    19.1.1    |    1.0.3    |      20.1.1      |  VLAB  |
+    |       OWASP JuiceShop      |    20.1.1    |    1.0.5    |      20.1.1      |  VLAB  |
     |          Oxidized          |    0.28.0    |    2.0.1    |      0.37.0      |  VLAB  |
     |      perfSONAR Archive     | 5.2.0-beta.4 |    0.1.4    |        N/A       |  VLAB  |
     |     perfSONAR Testpoint    | 5.2.4-alpha.5|  0.2.5-beta |        N/A       |  VLAB  |

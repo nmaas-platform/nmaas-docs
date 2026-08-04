@@ -10,7 +10,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |                     [Bastion](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion/)                    |         20.04-v2         |    2.1.4    |
 |          [Bastion Web Server](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion-webserver/)          |          22.04.2         |    1.0.2    |
 |                  [Booked](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Booked)                 |          2.8.6-3         |    3.1.4    |
-|           [changedetectionio](https://docs.nmaas.eu/nmaas-applications/tutorials/changedetectionio/)          |          0.54.7          |    1.0.62   |
+|           [changedetectionio](https://docs.nmaas.eu/nmaas-applications/tutorials/changedetectionio/)          |          0.55.8          |    1.0.67   |
 |                    [CheckCle](https://docs.nmaas.eu/nmaas-applications/tutorials/checkcle/)                   |          1.6.0-3         |    1.0.8    |
 |                      [CodiMD](https://docs.nmaas.eu/nmaas-applications/tutorials/codimd/)                     |           2.6.1          |    1.0.8    |
 |                   [Databasus](https://docs.nmaas.eu/nmaas-applications/tutorials/databasus/)                  |          3.24.0          |    3.24.0   |
@@ -22,10 +22,10 @@ This is a continuously updated list of currently supported applications on nmaas
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |           9.5.5          |    6.0.1    |
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |          10.4.8          |    7.0.7    |
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |          11.6.9          |    8.0.19   |
-|            [Healthchecks](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Healthchecks)           |       4.2.20260629       |    1.1.70   |
+|            [Healthchecks](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Healthchecks)           |       4.3.20260803       |    1.1.72   |
 |                     [Icinga2](https://docs.nmaas.eu/nmaas-applications/tutorials/icinga2/)                    |         2.14.6-1         |    3.0.2    |
 |                    [InfluxDB](https://docs.nmaas.eu/nmaas-applications/tutorials/influxdb/)                   |         1.8.10-2         |    5.0.0    |
-|                     [Jenkins](https://docs.nmaas.eu/nmaas-applications/tutorials/jenkins/)                    |         2.555.3-2        |    5.9.32   |
+|                     [Jenkins](https://docs.nmaas.eu/nmaas-applications/tutorials/jenkins/)                    |         2.568.1-1        |    5.9.49   |
 |                    [Keycloak](https://docs.nmaas.eu/nmaas-applications/tutorials/keycloak/)                   |          26.5.3          |    0.14.6   |
 |                      [Kuvasz](https://docs.nmaas.eu/nmaas-applications/tutorials/kuvasz/)                     |           4.0.1          |    3.3.2    |
 |                    [LibreNMS](https://docs.nmaas.eu/nmaas-applications/tutorials/librenms/)                   |          25.11.0         |    7.0.0    |

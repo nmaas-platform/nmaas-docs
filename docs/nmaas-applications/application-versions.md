@@ -4,7 +4,7 @@
 
     |            Name            |        App Version       |Chart Version|  Latest Version  |Instance|
     |----------------------------|--------------------------|-------------|------------------|--------|
-    |           Adminer          |           5.5.0          |    3.0.20   |       6.0.0      |  VNOC  |
+    |           Adminer          |           5.5.1          |    3.0.21   |       6.0.0      |  VNOC  |
     |       Apache Airflow       |           3.2.0          |    1.21.0   |     3.3.1rc1     |  VNOC  |
     |            Argus           |          2.9.1-3         |    0.8.3    |        N/A       |  VNOC  |
     |           Bastion          |         20.04-v2         |    2.1.4    |        N/A       |  VNOC  |

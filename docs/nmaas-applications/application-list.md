@@ -4,7 +4,7 @@ This is a continuously updated list of currently supported applications on nmaas
 
 |                                                      Name                                                     |        App Version       |Chart Version|
 |---------------------------------------------------------------------------------------------------------------|--------------------------|-------------|
-|                 [Adminer](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Adminer)                |           5.5.0          |    3.0.20   |
+|                 [Adminer](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Adminer)                |           5.5.1          |    3.0.21   |
 |                 [Apache Airflow](https://docs.nmaas.eu/nmaas-applications/tutorials/airflow/)                 |           3.2.0          |    1.21.0   |
 |                       [Argus](https://docs.nmaas.eu/nmaas-applications/tutorials/argus/)                      |          2.9.1-3         |    0.8.3    |
 |                     [Bastion](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion/)                    |         20.04-v2         |    2.1.4    |

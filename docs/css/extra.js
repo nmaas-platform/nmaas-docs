@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
         '                       <img style="margin-left:5px;" src="/img/discord-logo.png" height="15px">' +
         '                   </a>' +
         '               </div> ' +
-        '               <div style="display: flex; justify-content: center">Join our ' +
-        '                   <a href="https://www.linkedin.com/groups/10068131/" target="_blank"> LinkedIn group ' +
+        '               <div style="display: flex; justify-content: center">Follow us on ' +
+        '                   <a href="https://pl.linkedin.com/company/nmaas" target="_blank"> LinkedIn ' +
         '                       <img style="margin-left:5px;" src="/img/linkedin-logo.png" height="15px">' +
         '                   </a>' +
         '               </div> ';

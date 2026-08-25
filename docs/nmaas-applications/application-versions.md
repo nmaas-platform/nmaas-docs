@@ -73,7 +73,7 @@
     |           Grafana          |       7.2.0       |    2.0.1    |      7.5.17      |  VLAB  |
     |           Grafana          |10.4.19-security-01|   7.0.14-1  |      10.4.9      |  VLAB  |
     |           Grafana          |      11.6.9-1     |   8.0.19-1  |      11.6.8      |  VLAB  |
-    |        Healthchecks        |   4.3.20260803-1  |   1.1.72-1  |        4.3       |  VLAB  |
+    |        Healthchecks        |   4.3.20260824-1  |   1.1.73-1  |        4.3       |  VLAB  |
     |           Icinga2          |       2.11.4      |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |      1.8.10-3     |    5.0.0    |      1.8.10      |  VLAB  |
     |           Jenkins          |     2.568.2-1     |    5.9.54   |      2.568.2     |  VLAB  |

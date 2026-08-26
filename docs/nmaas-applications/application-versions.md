@@ -82,7 +82,7 @@
     |        LibreBooking        |       2.8.6       |    3.1.0    |        N/A       |  VLAB  |
     |          LibreNMS          |        1.47       |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |      1.0.16-1     |    4.0.6    |        N/A       |  VLAB  |
-    |           MailDev          |       2.0.5       |    1.0.0    |maildev@3.0.0-rc.1|  VLAB  |
+    |           MailDev          |       2.0.5       |    1.0.0    |maildev@3.0.0-rc.2|  VLAB  |
     |          Metabase          |       63.5.2      |   1.0.45-1  |ux-3754-full-state|  VLAB  |
     |           Moodle           |      5.0.1-1      |    26.0.4   |       list       |  VLAB  |
     |             N8n            |      1.123.31     |    1.1.2    |      stable      |  VLAB  |

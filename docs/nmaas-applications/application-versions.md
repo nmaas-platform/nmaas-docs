@@ -13,7 +13,7 @@
     |      changedetectionio     |          0.55.8          |    1.0.67   |      0.55.8      |  VNOC  |
     |          CheckCle          |          1.6.0-3         |    1.0.8    |        N/A       |  VNOC  |
     |           CodiMD           |           2.6.1          |    1.0.8    |       2.5.4      |  VNOC  |
-    |          Databasus         |          3.24.0          |    3.24.0   |        N/A       |  VNOC  |
+    |          Databasus         |          3.55.3          |    3.55.3   |        N/A       |  VNOC  |
     |      Debian repository     |            1.0           |    2.0.1    |        N/A       |  VNOC  |
     |      GP4L Orchestrator     |0.1.20-develop-rev-5a0e11f|    1.0.20   |        N/A       |  VNOC  |
     |           Grafana          |           6.5.2          |    2.0.1    |       6.7.6      |  VNOC  |
@@ -26,25 +26,25 @@
     |           Icinga2          |         2.14.6-1         |    3.0.2    |        N/A       |  VNOC  |
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |      1.8.10      |  VNOC  |
     |           Jenkins          |         2.568.1-1        |    5.9.49   |      2.568.2     |  VNOC  |
-    |          Keycloak          |          26.5.3          |    0.14.6   |        N/A       |  VNOC  |
+    |          Keycloak          |          26.7.2          |   0.21.33   |        N/A       |  VNOC  |
     |           Kuvasz           |           4.0.1          |    3.3.2    |        N/A       |  VNOC  |
     |          LibreNMS          |          25.11.0         |    7.0.0    |        N/A       |  VNOC  |
     |            Maat            |           1.0.9          |    3.0.2    |        N/A       |  VNOC  |
     |          Metabase          |          62.3.5          |    1.0.42   |ux-3754-full-state|  VNOC  |
     |             N8n            |         1.123.31         |    1.1.2    |      stable      |  VNOC  |
     |             NAV            |           4.8.6          |    2.0.1    |        N/A       |  VNOC  |
-    |           NetBox           |           4.4.6          |    8.0.3    |       4.6.9      |  VNOC  |
+    |           NetBox           |           4.6.9          |    8.3.63   |       4.6.9      |  VNOC  |
     |          Oxidized          |          0.30.1          |    3.0.2    |      0.37.0      |  VNOC  |
     |      perfSONAR Archive     |          5.3.0-2         |    1.0.0    |        N/A       |  VNOC  |
     |     perfSONAR Testpoint    |          5.2.4-3         | 0.2.6-beta.2|        N/A       |  VNOC  |
-    |          PgBackWeb         |           0.5.1          |    1.0.12   |       0.5.2      |  VNOC  |
+    |          PgBackWeb         |           0.5.2          |    1.0.14   |       0.5.2      |  VNOC  |
     |         PostgreSQL         |          17.6.0          |   16.7.26   |        N/A       |  VNOC  |
     |         Prometheus         |           3.8.0          |    4.0.13   |       3.8.0      |  VNOC  |
     |Prometheus Blackbox Exporter|         0.28.0-1         |    11.9.1   |        N/A       |  VNOC  |
     |         Routinator         |           0.8.3          |    2.0.0    |      0.15.2      |  VNOC  |
-    |          SmokePing         |          2.9.0-6         |    1.0.0    |        N/A       |  VNOC  |
+    |          SmokePing         |          2.9.0-7         |    1.0.1    |        N/A       |  VNOC  |
     |          Telegraf          |          1.36.4          |    1.8.65   |      1.39.3      |  VNOC  |
-    |            Trino           |            476           |    1.42.0   |        N/A       |  VNOC  |
+    |            Trino           |            480           |    1.42.2   |        N/A       |  VNOC  |
     |         Uptime Kuma        |           2.5.0          |    4.0.7    |      1.23.13     |  VNOC  |
     |      Victoria Metrics      |          1.85.1          |    3.0.0    |        N/A       |  VNOC  |
     |        WebDAV Server       |           1.0.0          |    1.0.0    |        N/A       |  VNOC  |

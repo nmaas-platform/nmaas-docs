@@ -10,7 +10,7 @@
     |           Bastion          |         20.04-v2         |    2.1.4    |        N/A       |  VNOC  |
     |     Bastion Web Server     |          22.04.2         |    1.0.2    |        N/A       |  VNOC  |
     |           Booked           |          2.8.6-3         |    3.1.4    |        N/A       |  VNOC  |
-    |      changedetectionio     |          0.55.8          |    1.0.67   |      0.55.8      |  VNOC  |
+    |      changedetectionio     |          0.55.8          |    1.0.67   |      0.60.2      |  VNOC  |
     |          CheckCle          |          1.6.0-3         |    1.0.8    |        N/A       |  VNOC  |
     |           CodiMD           |           2.6.1          |    1.0.8    |       2.5.4      |  VNOC  |
     |          Databasus         |          3.55.3          |    3.55.3   |        N/A       |  VNOC  |
@@ -62,7 +62,7 @@
     |       Apache Airflow       |    3.2.0-beta.5   |    1.21.0   |     3.3.1rc2     |  VLAB  |
     |            Argus           |      2.9.1-3      |    0.8.3    |        N/A       |  VLAB  |
     |           Bastion          |       18.04       |    2.1.0    |        N/A       |  VLAB  |
-    |      changedetectionio     |      0.55.8-1     |   1.0.67-1  |      0.55.8      |  VLAB  |
+    |      changedetectionio     |      0.55.8-1     |   1.0.67-1  |      0.60.2      |  VLAB  |
     |          CheckCle          |      1.6.0-5      |    1.0.4    |        N/A       |  VLAB  |
     |           Checkle          |       1.4.0       |    1.0.1    |        N/A       |  VLAB  |
     |           CodiMD           |       2.5.3       |    1.0.4    |       2.5.4      |  VLAB  |

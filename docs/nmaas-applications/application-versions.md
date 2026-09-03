@@ -25,7 +25,7 @@
     |        Healthchecks        |       4.3.20260803       |    1.1.72   |        4.4       |  VNOC  |
     |           Icinga2          |         2.14.6-1         |    3.0.2    |        N/A       |  VNOC  |
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |      1.8.10      |  VNOC  |
-    |           Jenkins          |         2.568.1-1        |    5.9.49   |      2.568.2     |  VNOC  |
+    |           Jenkins          |         2.568.1-1        |    5.9.49   |      2.568.3     |  VNOC  |
     |          Keycloak          |          26.7.2          |   0.21.33   |        N/A       |  VNOC  |
     |           Kuvasz           |           4.0.1          |    3.3.2    |        N/A       |  VNOC  |
     |          LibreNMS          |          25.11.0         |    7.0.0    |        N/A       |  VNOC  |
@@ -76,7 +76,7 @@
     |        Healthchecks        |   4.4.20260901-1  |   1.1.74-1  |        4.4       |  VLAB  |
     |           Icinga2          |       2.11.4      |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |      1.8.10-3     |    5.0.0    |      1.8.10      |  VLAB  |
-    |           Jenkins          |     2.568.2-1     |    5.9.54   |      2.568.2     |  VLAB  |
+    |           Jenkins          |     2.568.2-1     |    5.9.54   |      2.568.3     |  VLAB  |
     |          Keycloak          |       26.5.3      |    0.14.6   |        N/A       |  VLAB  |
     |           Kuvasz           |       3.8.0       |    3.3.0    |        N/A       |  VLAB  |
     |        LibreBooking        |       2.8.6       |    3.1.0    |        N/A       |  VLAB  |

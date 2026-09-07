@@ -4,16 +4,16 @@ This is a continuously updated list of currently supported applications on nmaas
 
 |                                                      Name                                                     |        App Version       |Chart Version|
 |---------------------------------------------------------------------------------------------------------------|--------------------------|-------------|
-|                 [Adminer](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Adminer)                |           5.4.2          |    3.0.15   |
+|                 [Adminer](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Adminer)                |           6.0.1          |    3.0.24   |
 |                 [Apache Airflow](https://docs.nmaas.eu/nmaas-applications/tutorials/airflow/)                 |           3.2.0          |    1.21.0   |
 |                       [Argus](https://docs.nmaas.eu/nmaas-applications/tutorials/argus/)                      |          2.9.1-3         |    0.8.3    |
 |                     [Bastion](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion/)                    |         20.04-v2         |    2.1.4    |
 |          [Bastion Web Server](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion-webserver/)          |          22.04.2         |    1.0.2    |
 |                  [Booked](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Booked)                 |          2.8.6-3         |    3.1.4    |
-|           [changedetectionio](https://docs.nmaas.eu/nmaas-applications/tutorials/changedetectionio/)          |          0.54.7          |    1.0.62   |
+|           [changedetectionio](https://docs.nmaas.eu/nmaas-applications/tutorials/changedetectionio/)          |          0.55.8          |    1.0.67   |
 |                    [CheckCle](https://docs.nmaas.eu/nmaas-applications/tutorials/checkcle/)                   |          1.6.0-3         |    1.0.8    |
 |                      [CodiMD](https://docs.nmaas.eu/nmaas-applications/tutorials/codimd/)                     |           2.6.1          |    1.0.8    |
-|                   [Databasus](https://docs.nmaas.eu/nmaas-applications/tutorials/databasus/)                  |          3.24.0          |    3.24.0   |
+|                   [Databasus](https://docs.nmaas.eu/nmaas-applications/tutorials/databasus/)                  |          3.55.3          |    3.55.3   |
 |           [Debian repository](https://docs.nmaas.eu/nmaas-applications/tutorials/debian-repository/)          |            1.0           |    2.0.1    |
 |           [GP4L Orchestrator](https://docs.nmaas.eu/nmaas-applications/tutorials/gp4l-orchestrator/)          |0.1.20-develop-rev-5a0e11f|    1.0.20   |
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |           6.5.2          |    2.0.1    |
@@ -22,31 +22,31 @@ This is a continuously updated list of currently supported applications on nmaas
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |           9.5.5          |    6.0.1    |
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |          10.4.8          |    7.0.7    |
 |                     [Grafana](https://docs.nmaas.eu/nmaas-applications/tutorials/grafana/)                    |          11.6.9          |    8.0.19   |
-|            [Healthchecks](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Healthchecks)           |       4.2.20260629       |    1.1.70   |
+|            [Healthchecks](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Healthchecks)           |       4.3.20260803       |    1.1.72   |
 |                     [Icinga2](https://docs.nmaas.eu/nmaas-applications/tutorials/icinga2/)                    |         2.14.6-1         |    3.0.2    |
 |                    [InfluxDB](https://docs.nmaas.eu/nmaas-applications/tutorials/influxdb/)                   |         1.8.10-2         |    5.0.0    |
-|                     [Jenkins](https://docs.nmaas.eu/nmaas-applications/tutorials/jenkins/)                    |         2.555.3-2        |    5.9.32   |
-|                    [Keycloak](https://docs.nmaas.eu/nmaas-applications/tutorials/keycloak/)                   |          26.5.3          |    0.14.6   |
+|                     [Jenkins](https://docs.nmaas.eu/nmaas-applications/tutorials/jenkins/)                    |         2.568.1-1        |    5.9.49   |
+|                    [Keycloak](https://docs.nmaas.eu/nmaas-applications/tutorials/keycloak/)                   |          26.7.2          |   0.21.33   |
 |                      [Kuvasz](https://docs.nmaas.eu/nmaas-applications/tutorials/kuvasz/)                     |           4.0.1          |    3.3.2    |
 |                    [LibreNMS](https://docs.nmaas.eu/nmaas-applications/tutorials/librenms/)                   |          25.11.0         |    7.0.0    |
 |                        [Maat](https://docs.nmaas.eu/nmaas-applications/tutorials/maat/)                       |           1.0.9          |    3.0.2    |
 |                    [Metabase](https://docs.nmaas.eu/nmaas-applications/tutorials/metabase/)                   |          62.3.5          |    1.0.42   |
 |                         [N8n](https://docs.nmaas.eu/nmaas-applications/tutorials/n8n/)                        |         1.123.31         |    1.1.2    |
 |                         [NAV](https://docs.nmaas.eu/nmaas-applications/tutorials/nav/)                        |           4.8.6          |    2.0.1    |
-|                      [NetBox](https://docs.nmaas.eu/nmaas-applications/tutorials/netbox/)                     |           4.4.6          |    8.0.3    |
+|                      [NetBox](https://docs.nmaas.eu/nmaas-applications/tutorials/netbox/)                     |           4.6.9          |    8.3.63   |
 |                    [Oxidized](https://docs.nmaas.eu/nmaas-applications/tutorials/oxidized/)                   |          0.30.1          |    3.0.2    |
-|           [perfSONAR Archive](https://docs.nmaas.eu/nmaas-applications/tutorials/perfsonar-archive/)          |          5.2.0-5         |    0.1.8    |
+|           [perfSONAR Archive](https://docs.nmaas.eu/nmaas-applications/tutorials/perfsonar-archive/)          |          5.3.0-2         |    1.0.0    |
 |         [perfSONAR Testpoint](https://docs.nmaas.eu/nmaas-applications/tutorials/perfsonar-testpoint/)        |          5.2.4-3         | 0.2.6-beta.2|
-|                   [PgBackWeb](https://docs.nmaas.eu/nmaas-applications/tutorials/pgbackweb/)                  |           0.5.1          |    1.0.12   |
+|                   [PgBackWeb](https://docs.nmaas.eu/nmaas-applications/tutorials/pgbackweb/)                  |           0.5.2          |    1.0.14   |
 |                   [PostgreSQL](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#PostgreSQL)                   |          17.6.0          |   16.7.26   |
 |                  [Prometheus](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus/)                 |           3.8.0          |    4.0.13   |
 |[Prometheus Blackbox Exporter](https://docs.nmaas.eu/nmaas-applications/tutorials/prometheus-blackbox-exporter)|         0.28.0-1         |    11.9.1   |
 |                  [Routinator](https://docs.nmaas.eu/nmaas-applications/tutorials/routinator/)                 |           0.8.3          |    2.0.0    |
-|                   [SmokePing](https://docs.nmaas.eu/nmaas-applications/tutorials/smokeping/)                  |          2.9.0-6         |    1.0.0    |
+|                   [SmokePing](https://docs.nmaas.eu/nmaas-applications/tutorials/smokeping/)                  |          2.9.0-7         |    1.0.1    |
 |                    [Telegraf](https://docs.nmaas.eu/nmaas-applications/tutorials/telegraf)                    |          1.36.4          |    1.8.65   |
-|                       [Trino](https://docs.nmaas.eu/nmaas-applications/tutorials/trino/)                      |            476           |    1.42.0   |
-|                 [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)                |           2.4.0          |    4.0.6    |
+|                       [Trino](https://docs.nmaas.eu/nmaas-applications/tutorials/trino/)                      |            480           |    1.42.2   |
+|                 [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)                |           2.5.0          |    4.0.7    |
 |            [Victoria Metrics](https://docs.nmaas.eu/nmaas-applications/tutorials/victoria-metrics/)           |          1.85.1          |    3.0.0    |
 |                  [WebDAV Server](https://docs.nmaas.eu/nmaas-applications/tutorials/webdav/)                  |           1.0.0          |    1.0.0    |
 |                      [Zabbix](https://docs.nmaas.eu/nmaas-applications/tutorials/zabbix/)                     |           6.0.8          |    2.0.3    |
-|                      [Zabbix](https://docs.nmaas.eu/nmaas-applications/tutorials/zabbix/)                     |          7.0.21          |    4.0.4    |
+|                      [Zabbix](https://docs.nmaas.eu/nmaas-applications/tutorials/zabbix/)                     |          7.0.29          |    4.0.7    |

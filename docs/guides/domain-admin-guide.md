@@ -68,13 +68,13 @@ button located in the top part of the view. Next, an administrator is able to se
 complete email address and clicking `Search`. Once the user is found and listed below, clicking on the `Grant USER role`
 button next to a given user will result in adding them with the `User` role to the domain.
 
-![New user](./img/domain-admin-guide-new-user.png){ width="400" }
+![New user](./img/domain-admin-guide-new-user.png){ width="600" }
 
 ### Changing User Role in a Domain
 
 A user role within a given domain can be changed using the role selector present in the `Role` column.
 
-![User role update](./img/domain-admin-guide-user-update.png){ width="400" }
+![User role update](./img/domain-admin-guide-user-update.png){ width="600" }
 
 !!! info
     A user is not allowed to update their own role in a domain.
@@ -89,7 +89,7 @@ The `Webhooks` section allows domain administrators to configure HTTP callbacks 
 Webhooks can be used to integrate nmaas with external systems and automate follow-up actions after events such as 
 application deployment and removal or user role assignments.
 
-![Menu: Webhooks](img/domain-admin-guide-menu-webhooks.png){ width="200" }
+![Menu: Webhooks](img/domain-admin-guide-menu-webhooks.png){ width="300" }
 
 The section contains two views:
 
@@ -102,7 +102,7 @@ The list can be filtered using the `Search` field and sorted using the controls 
 settings icon at the end of each row provides access to management options for the selected webhook, such as viewing 
 history of given webhook execution or removing it.
 
-![Webhooks](img/domain-admin-guide-webhooks.png){ width="400" }
+![Webhooks](img/domain-admin-guide-webhooks.png){ width="800" }
 
 ### Adding a Webhook
 
@@ -117,7 +117,7 @@ The dialog also provides two optional settings:
 
 Depending on the selected options, additional configuration fields may be displayed in the dialog. After completing the required settings, click `Save` to create the webhook or `Cancel` to discard the changes.
 
-![New Webhook](img/domain-admin-guide-new-webhook.png){ width="400" }
+![New Webhook](img/domain-admin-guide-new-webhook.png){ width="600" }
 
 ### Webhook History
 
@@ -128,7 +128,7 @@ The view can be filtered using the controls at the top of the page. Administrato
 
 The `Response status` column shows the HTTP response returned by the target endpoint, making it easier to identify successful executions and troubleshoot failed webhook calls. The `Execution timestamp` indicates when a particular webhook invocation was performed.
 
-![Webhook history](img/domain-admin-guide-webhooks-history.png){ width="400" }
+![Webhook history](img/domain-admin-guide-webhooks-history.png){ width="800" }
 
 Clicking a row in the history table opens a detailed view of the selected webhook execution. The details include the 
 `Request body` sent by nmaas to the target endpoint and the `Response body` returned by the external service.
@@ -142,7 +142,7 @@ The list view contains a search field and an `Add` button. For each remote clust
 !!! info
     Status of all remote clusters is monitored using a built-in platform process
 
-![Remote clusters](img/domain-admin-guide-remote-clusters.png){ width="400" }
+![Remote clusters](img/domain-admin-guide-remote-clusters.png){ width="800" }
 
 ### Adding a Remote Cluster
 
@@ -156,7 +156,7 @@ Adding a remote cluster is performed using a three-step wizard:
 
 In the first step, Kubernetes configuration is required. The administrator can either paste the content of the `kubeconfig` file into the `Kubernetes config` field or select the `Read kubeConfig from Secret` option. When the secret option is selected, the form requires the `Secret name` and `Secret namespace` instead of the direct kubeconfig content.
 
-![New remote cluster](img/domain-admin-guide-new-remote-cluster.png){ width="400" }
+![New remote cluster](img/domain-admin-guide-new-remote-cluster.png){ width="600" }
 
 In the `Basic cluster settings` step, the form displays the generated cluster codename and requires the 
 administrator to provide a description, contact email address and domain assignment. The domain is selected from the `Domain` selector. The `Create namespace if missing` option controls whether nmaas should automatically create the required namespace on the remote cluster if it does not already exist.

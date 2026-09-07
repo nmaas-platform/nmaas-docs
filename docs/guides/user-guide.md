@@ -67,7 +67,7 @@ The *About* page available from the top navigation bar contains information abou
 
 The user login form is available on the top navigation bar.
 
-![Login](img/user-guide-login.png)
+![Login](img/user-guide-login.png){ width="300" }
 
 There are two login options to enter the Portal. The first option is to enter credentials of a local user account created in the system (username and password) and then click the `Login` button.
 

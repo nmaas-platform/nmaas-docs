@@ -68,7 +68,7 @@ button located in the top part of the view. Next, an administrator is able to se
 complete email address and clicking `Search`. Once the user is found and listed below, clicking on the `Grant USER role`
 button next to a given user will result in adding them with the `User` role to the domain.
 
-![User role update](./img/domain-admin-guide-new-user.png){ width="400" }
+![New user](./img/domain-admin-guide-new-user.png){ width="400" }
 
 ### Changing User Role in a Domain
 
@@ -85,7 +85,53 @@ A given user can also be removed from the domain entirely using the trash bin ic
 
 ## Managing Webhooks
 
-WIP
+The `Webhooks` section allows domain administrators to configure HTTP callbacks triggered by selected events in nmaas. 
+Webhooks can be used to integrate nmaas with external systems and automate follow-up actions after events such as 
+application deployment and removal or user role assignments.
+
+![Menu: Webhooks](img/domain-admin-guide-menu-webhooks.png){ width="200" }
+
+The section contains two views:
+
+- `List` – displays the configured webhooks;
+- `History` – provides information about webhook executions.
+
+The List view shows all webhooks configured for domains managed by the administrator. Each entry includes the webhook `Id`, `Name`, selected `Webhook event`, destination `Target URL` and associated `Domain`.
+
+The list can be filtered using the `Search` field and sorted using the controls available in the column headers. The 
+settings icon at the end of each row provides access to management options for the selected webhook, such as viewing 
+history of given webhook execution or removing it.
+
+![Webhooks](img/domain-admin-guide-webhooks.png){ width="400" }
+
+### Adding a Webhook
+
+A new webhook can be created by clicking the `Add` button in the `Webhooks` list. This opens the `New webhook` dialog, where the administrator defines when the webhook should be triggered and where the notification should be sent.
+
+The `Name` field provides a descriptive name for the webhook, while `Target URL` specifies the HTTP endpoint that will receive webhook requests. The `Webhook event` selector determines which nmaas event triggers the webhook, for example a domain-related action.
+
+The dialog also provides two optional settings:
+
+- `Template required` – enables the use of a custom request template for the webhook payload;
+- `Auth required` – enables authentication settings for requests sent to the target endpoint.
+
+Depending on the selected options, additional configuration fields may be displayed in the dialog. After completing the required settings, click `Save` to create the webhook or `Cancel` to discard the changes.
+
+![New Webhook](img/domain-admin-guide-new-webhook.png){ width="400" }
+
+### Webhook History
+
+The `History` view provides a record of webhook executions and can be used to verify whether configured webhooks were 
+triggered successfully. Each entry shows the `Event id`, `Event type`, associated `Domain`, returned `Response status`, and `Execution timestamp`.
+
+The view can be filtered using the controls at the top of the page. Administrators can narrow the results by `Event id`, `Event type`, `Domain`, or a selected `Date range`. The `Clear` filter action removes the active filters and restores the full history list.
+
+The `Response status` column shows the HTTP response returned by the target endpoint, making it easier to identify successful executions and troubleshoot failed webhook calls. The `Execution timestamp` indicates when a particular webhook invocation was performed.
+
+![Webhook history](img/domain-admin-guide-webhooks-history.png){ width="400" }
+
+Clicking a row in the history table opens a detailed view of the selected webhook execution. The details include the 
+`Request body` sent by nmaas to the target endpoint and the `Response body` returned by the external service.
 
 ## Managing Remote Clusters
 
@@ -95,6 +141,8 @@ The list view contains a search field and an `Add` button. For each remote clust
 
 !!! info
     Status of all remote clusters is monitored using a built-in platform process
+
+![Remote clusters](img/domain-admin-guide-remote-clusters.png){ width="400" }
 
 ### Adding a Remote Cluster
 
@@ -107,5 +155,13 @@ Adding a remote cluster is performed using a three-step wizard:
 - `Advanced cluster settings` - contains additional cluster configuration options.
 
 In the first step, Kubernetes configuration is required. The administrator can either paste the content of the `kubeconfig` file into the `Kubernetes config` field or select the `Read kubeConfig from Secret` option. When the secret option is selected, the form requires the `Secret name` and `Secret namespace` instead of the direct kubeconfig content.
+
+![New remote cluster](img/domain-admin-guide-new-remote-cluster.png){ width="400" }
+
+In the `Basic cluster settings` step, the form displays the generated cluster codename and requires the 
+administrator to provide a description, contact email address and domain assignment. The domain is selected from the `Domain` selector. The `Create namespace if missing` option controls whether nmaas should automatically create the required namespace on the remote cluster if it does not already exist.
+
+In the `Advanced cluster settings` step, cluster ingress, deployment and storage properties are populated with 
+default values and can be adjusted to match the remote cluster configuration. The visible ingress settings include the ingress class, ingress class for public services, external service domain, public service domain, TLS support option and TLS certificate configuration. When TLS is enabled, the administrator can select how the certificate should be configured and provide the Let's Encrypt issuer or wildcard certificate secret name. The deployment settings define the namespace used for application instances, the default storage class and whether services should be deployed on dedicated worker nodes. They also contain the SMTP configuration made available to deployed applications.
 
 After completing the required fields in each step, the administrator can proceed through the wizard using the `Next` button.

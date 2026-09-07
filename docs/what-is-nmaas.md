@@ -22,5 +22,5 @@ While nmaas can be used in diverse scenarios, the use cases currently explored a
 ![nmaas Example Application Instance](./img/nmaas/02-nmaas-example-instance.png){ width="350" }
 ![nmaas List of Deployed Applications](./img/nmaas/03-nmaas-application-instances.png){ width="350" }
 ![nmaas Application Catalog Management](./img/nmaas/04-nmaas-application-management.png){ width="350" }
-![nmaas Application Instance Configuration Wizard](./img/nmaas/05-configuration%20wizard.png){ width="350" }
+![nmaas Application Instance Configuration Wizard](./img/nmaas/05-configuration-wizard.png){ width="350" }
 ![nmaas About Page](./img/nmaas/06-nmaas-about.png){ width="350" }

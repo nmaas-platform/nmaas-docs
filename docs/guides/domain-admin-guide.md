@@ -74,7 +74,7 @@ button next to a given user will result in adding them with the `User` role to t
 
 A user role within a given domain can be changed using the role selector present in the `Role` column.
 
-![User role update](./img/domain-admin-guide-user-update.png){ width="600" }
+![User role update](./img/domain-admin-guide-user-update.png){ width="400" }
 
 !!! info
     A user is not allowed to update their own role in a domain.
@@ -89,7 +89,7 @@ The `Webhooks` section allows domain administrators to configure HTTP callbacks 
 Webhooks can be used to integrate nmaas with external systems and automate follow-up actions after events such as 
 application deployment and removal or user role assignments.
 
-![Menu: Webhooks](img/domain-admin-guide-menu-webhooks.png){ width="300" }
+![Menu: Webhooks](img/domain-admin-guide-menu-webhooks.png)
 
 The section contains two views:
 
@@ -117,7 +117,7 @@ The dialog also provides two optional settings:
 
 Depending on the selected options, additional configuration fields may be displayed in the dialog. After completing the required settings, click `Save` to create the webhook or `Cancel` to discard the changes.
 
-![New Webhook](img/domain-admin-guide-new-webhook.png){ width="600" }
+![New Webhook](img/domain-admin-guide-new-webhook.png)
 
 ### Webhook History
 
@@ -156,7 +156,7 @@ Adding a remote cluster is performed using a three-step wizard:
 
 In the first step, Kubernetes configuration is required. The administrator can either paste the content of the `kubeconfig` file into the `Kubernetes config` field or select the `Read kubeConfig from Secret` option. When the secret option is selected, the form requires the `Secret name` and `Secret namespace` instead of the direct kubeconfig content.
 
-![New remote cluster](img/domain-admin-guide-new-remote-cluster.png){ width="600" }
+![New remote cluster](img/domain-admin-guide-new-remote-cluster.png){ width="800" }
 
 In the `Basic cluster settings` step, the form displays the generated cluster codename and requires the 
 administrator to provide a description, contact email address and domain assignment. The domain is selected from the `Domain` selector. The `Create namespace if missing` option controls whether nmaas should automatically create the required namespace on the remote cluster if it does not already exist.

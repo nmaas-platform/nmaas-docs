@@ -155,13 +155,13 @@ Once the installation process is completed, the user is provided with a way or m
 !!! info "Application Deployment Notifications"
     User is notified with an email once the new application instance becomes available
 
-![Application deployment](./img/user-guide-s07.png)
+![Application deployment](img/user-guide-instance-config-step.png)
 
 ### 8.3 Application Instance Initial Configuration
 
 During the installation process, once the application instance is initially deployed, the user is asked to provide an initial configuration for the application that is being installed. The required data is entered through a configuration wizard presented in a window after clicking the `Configure` button, which becomes visible on the application instance details page once the application transits to the `Deployed` state.
 
-![Application instance](./img/user-guide-s08.png)
+![Application instance](img/user-guide-instance-config-wizard.png)
 
 Different types of data may be required depending on the application. Typically, the user is requested to provide credentials for a default account to be created at application startup or basic set of information about the equipment to be monitored by this application instance. Configuration parameters to be filled in are distributed over two or three tabs depending on the application.
 
@@ -171,11 +171,11 @@ Once all required fields are populated user can click the `Apply configuration` 
 
 Once the application instance reaches the `Active` state it can be accessed by the user.
 
-![Application access](./img/user-guide-instance-actions-access.png){ width="250" }
+![Application access](./img/user-guide-instance-actions-access.png){ width="200" }
 
 Multiple access methods are supported by nmaas, and each of the applications supports one or more of them.
 
-![Application access](img/user-guide-instance-access-methods.png)
+![Application access](img/user-guide-instance-access-methods.png){ width="600" }
 
 Four types of access are possible:
 
@@ -195,11 +195,11 @@ Some applications support the option of updating their configuration during appl
 
 In such a case, when instance is in `Active` state, open the `Actions` menu on the application instance details page and select `Configure` to open a window presenting the configuration options.
 
-![Application configuring](./img/user-guide-instance-actions-configure.png){ width="250" }
+![Application configuring](./img/user-guide-instance-actions-configure.png){ width="200" }
 
 Typically, a `git clone` link is provided that can be used by the user to locally clone the git repository created specifically for this application instance.
 
-![Application configuring](img/user-guide-instance-configure.png)
+![Application configuring](img/user-guide-instance-configure.png){ width="600" }
 
 Then user can apply the desired changes to the pre-populated configuration files added to the repository by default or add new additional files.
 
@@ -210,11 +210,11 @@ After the files are committed and pushed back to the repository, the configurati
 
 The user that initiates a given application instance deployment is automatically added to GitLab as a member of the newly created repository. Other domain users, to have the same SSH-based access to the repository, have to be added as members to particular application instance by selecting `Members` from the `Actions` menu. 
 
-![Application instance members](./img/user-guide-instance-actions-members.png){ width="250" }
+![Application instance members](./img/user-guide-instance-actions-members.png){ width="200" }
 
 This operation can be performed by a Domain administrator. A Domain administrator can only select users that are added to their domain and have previously uploaded their SSH keys (see [section 9.3](./user-guide.md#93-setting-user-ssh-keys)).
 
-![Application instance members](img/user-guide-instance-members.png)
+![Application instance members](img/user-guide-instance-members.png){ width="600" }
 
 ### 8.6 Managing Application Instance Upgrades
 
@@ -276,15 +276,15 @@ One of the following actions can be triggered by the user from the application i
 
 User can view their account details and other personal settings by selecting `Profile` from the drop-down menu displayed after hovering over the username field on the top navigation bar.
 
-![User profile](./img/user-guide-s11.png){ width="300" }
+![User profile](img/user-guide-menu.png){ width="300" }
 
 The Profile view contains user account information such as: `Username`, `First name`, `Last name` and `Email`.
 
-![User details](./img/user-guide-s12.png)
+![User details](img/user-guide-profile.png)
 
 On the bottom of the page the user can also see their roles granted in particular domains.
 
-![User roles](./img/user-guide-s13.png)
+![User roles](img/user-guide-profile-roles.png)
 
 By clicking the flag icon located in the top right section of the view the user can select their preferred language in which the content of the Portal will be displayed.
 
@@ -292,7 +292,7 @@ By clicking the flag icon located in the top right section of the view the user 
 
 One of the available options on the user's `Profile` view is specifying user's default domain.
 
-![User preferences](./img/user-guide-s14.png)
+![User preferences](img/user-guide-profile-preferences.png)
 
 This setting is particularly useful if a given user belongs to multiple domains and would like a specific domain to be selected by default after login.
 
@@ -300,9 +300,9 @@ This setting is particularly useful if a given user belongs to multiple domains 
 
 For applications that support the Git-based configuration management model, meaning the possibility to update the application configuration during runtime by pushing updated configuration files to a dedicated Git repository, it is required that all users willing to use this option upload their public SSH keys using the form available on the `Profile` view.
 
-![User SSH](./img/user-guide-s15.png)
+![User SSH](img/user-guide-profile-ssh-keys.png)
 
-![User SSH add](./img/user-guide-s16.png){ width="600" }
+![User SSH add](img/user-guide-profile-new-ssh-key.png){ width="600" }
 
 Upon key upload or update in the Portal, user information is synchronized with the user account created on the GitLab instance associated with given nmaas installation.
 
@@ -321,7 +321,7 @@ An easy and recommended way for contacting the nmaas Team is through the Contact
 
 The Contact Form is available on the About page along with the information about the versions of the nmaas software.
 
-![Contact form](./img/user-guide-s18.png){ width="600" }
+![Contact form](img/user-guide-contact-form.png){ width="600" }
 
 The user can select one of five form types that best matches the subject of their message:
 

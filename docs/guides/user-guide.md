@@ -82,7 +82,7 @@ Users with accounts created directly in the system through the registration form
 
 To create a local account, user has to select `Register` from the top navigation bar.
 
-![New account registration](img/user-guide-registration.png)
+![New account registration](img/user-guide-registration.png){ width="300" }
 
 Registration form contains several mandatory fields, which are: `Username`, `Password`, `Confirm password` and `Email address`.
 
@@ -100,7 +100,7 @@ User needs to be assigned a role in a domain to be able to view and deploy appli
 
 After the user account has been activated by the nmaas administrator (in the case when the user submitted the registration form), they are able to log in and are granted base access to the main nmaas applications view. The same access rights are automatically granted to users that log in using eduGAIN for the first time.
 
-![Application catalogue](./img/user-guide-s04.png)
+![Application catalogue](img/user-guide-catalogue.png)
 
 On the `Applications` view all the applications available on given nmaas instance are presented. Applications can be filtered by tags and sorted by a few criteria. Users can also search them by name.
 
@@ -125,7 +125,7 @@ Application instances are described by custom `Name` assigned by user during dep
 
 On the application details page users can view the basic description of the application, example screenshots of the user interface, references to external resources and the list of application versions currently available on nmaas.
 
-![Application details](./img/user-guide-s05.png)
+![Application details](img/user-guide-app-details.png)
 
 To subscribe to a given application, user needs to click the `Subscribe` button. Only subscribed applications can be further deployed in the nmaas cloud within the scope of a particular domain.
 
@@ -145,7 +145,7 @@ When deploying a new application instance, the user is requested to provide or s
 
 The installation process comprises a few steps including subscription validation, environment creation, connectivity verification, application deployment, application first time configuration and activation.
 
-![Application details](./img/user-guide-s06.png)
+![Application details](img/user-guide-instance-new.png){ width="600" }
 
 Once the installation process is completed, the user is provided with a way or multiple ways of accessing the deployed application instance depending on the application (in the majority of cases a link for accessing the web-based UI).
 
@@ -171,11 +171,11 @@ Once all required fields are populated user can click the `Apply configuration` 
 
 Once the application instance reaches the `Active` state it can be accessed by the user.
 
-![Application access](./img/user-guide-instance-actions-access.png){ width="300" }
+![Application access](./img/user-guide-instance-actions-access.png){ width="250" }
 
 Multiple access methods are supported by nmaas, and each of the applications supports one or more of them.
 
-![Application access](./img/user-guide-s09.png)
+![Application access](img/user-guide-instance-access-methods.png)
 
 Four types of access are possible:
 
@@ -195,7 +195,7 @@ Some applications support the option of updating their configuration during appl
 
 In such a case, when instance is in `Active` state, open the `Actions` menu on the application instance details page and select `Configure` to open a window presenting the configuration options.
 
-![Application configuring](./img/user-guide-instance-actions-configure.png){ width="300" }
+![Application configuring](./img/user-guide-instance-actions-configure.png){ width="250" }
 
 Typically, a `git clone` link is provided that can be used by the user to locally clone the git repository created specifically for this application instance.
 
@@ -210,7 +210,7 @@ After the files are committed and pushed back to the repository, the configurati
 
 The user that initiates a given application instance deployment is automatically added to GitLab as a member of the newly created repository. Other domain users, to have the same SSH-based access to the repository, have to be added as members to particular application instance by selecting `Members` from the `Actions` menu. 
 
-![Application instance members](./img/user-guide-instance-actions-members.png){ width="300" }
+![Application instance members](./img/user-guide-instance-actions-members.png){ width="250" }
 
 This operation can be performed by a Domain administrator. A Domain administrator can only select users that are added to their domain and have previously uploaded their SSH keys (see [section 9.3](./user-guide.md#93-setting-user-ssh-keys)).
 
@@ -276,7 +276,7 @@ One of the following actions can be triggered by the user from the application i
 
 User can view their account details and other personal settings by selecting `Profile` from the drop-down menu displayed after hovering over the username field on the top navigation bar.
 
-![User profile](./img/user-guide-s11.png)
+![User profile](./img/user-guide-s11.png){ width="300" }
 
 The Profile view contains user account information such as: `Username`, `First name`, `Last name` and `Email`.
 
@@ -302,7 +302,7 @@ For applications that support the Git-based configuration management model, mean
 
 ![User SSH](./img/user-guide-s15.png)
 
-![User SSH add](./img/user-guide-s16.png)
+![User SSH add](./img/user-guide-s16.png){ width="600" }
 
 Upon key upload or update in the Portal, user information is synchronized with the user account created on the GitLab instance associated with given nmaas installation.
 
@@ -310,7 +310,7 @@ Upon key upload or update in the Portal, user information is synchronized with t
 
 After clicking the `Change password` button, a new window will be displayed where the user can change their own password.
 
-![User change password](img/user-guide-change-password.png)
+![User change password](img/user-guide-change-password.png){ width="600" }
 
 !!! info "Password Change Availability"
     This option is not available for users that log in using the Federated/SSO option
@@ -321,7 +321,7 @@ An easy and recommended way for contacting the nmaas Team is through the Contact
 
 The Contact Form is available on the About page along with the information about the versions of the nmaas software.
 
-![Contact form](./img/user-guide-s18.png)
+![Contact form](./img/user-guide-s18.png){ width="600" }
 
 The user can select one of five form types that best matches the subject of their message:
 

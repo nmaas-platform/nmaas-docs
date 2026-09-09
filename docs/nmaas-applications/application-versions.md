@@ -73,10 +73,10 @@
     |           Grafana          |       7.2.0       |    2.0.1    |      7.5.17      |  VLAB  |
     |           Grafana          |10.4.19-security-01|   7.0.14-1  |      10.4.9      |  VLAB  |
     |           Grafana          |      11.6.9-1     |   8.0.19-1  |      11.6.8      |  VLAB  |
-    |        Healthchecks        |   4.4.20260901-1  |   1.1.74-1  |        4.4       |  VLAB  |
+    |        Healthchecks        |   4.4.20260907-1  |   1.1.75-1  |        4.4       |  VLAB  |
     |           Icinga2          |       2.11.4      |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |      1.8.10-3     |    5.0.0    |      1.8.10      |  VLAB  |
-    |           Jenkins          |     2.568.2-1     |    5.9.54   |      2.568.3     |  VLAB  |
+    |           Jenkins          |     2.568.3-1     |    5.9.56   |      2.568.3     |  VLAB  |
     |          Keycloak          |       26.5.3      |    0.14.6   |        N/A       |  VLAB  |
     |           Kuvasz           |       3.8.0       |    3.3.0    |        N/A       |  VLAB  |
     |        LibreBooking        |       2.8.6       |    3.1.0    |        N/A       |  VLAB  |

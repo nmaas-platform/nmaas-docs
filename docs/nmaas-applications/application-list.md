@@ -45,7 +45,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |                   [SmokePing](https://docs.nmaas.eu/nmaas-applications/tutorials/smokeping/)                  |          2.9.0-7         |    1.0.1    |
 |                    [Telegraf](https://docs.nmaas.eu/nmaas-applications/tutorials/telegraf)                    |          1.36.4          |    1.8.65   |
 |                       [Trino](https://docs.nmaas.eu/nmaas-applications/tutorials/trino/)                      |            480           |    1.42.2   |
-|                 [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)                |           2.5.0          |    4.0.7    |
+|                 [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)                |           2.5.4          |    4.0.8    |
 |            [Victoria Metrics](https://docs.nmaas.eu/nmaas-applications/tutorials/victoria-metrics/)           |          1.85.1          |    3.0.0    |
 |                  [WebDAV Server](https://docs.nmaas.eu/nmaas-applications/tutorials/webdav/)                  |           1.0.0          |    1.0.0    |
 |                      [Zabbix](https://docs.nmaas.eu/nmaas-applications/tutorials/zabbix/)                     |           6.0.8          |    2.0.3    |

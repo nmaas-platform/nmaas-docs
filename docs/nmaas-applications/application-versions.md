@@ -45,7 +45,7 @@
     |          SmokePing         |          2.9.0-7         |    1.0.1    |        N/A       |  VNOC  |
     |          Telegraf          |          1.36.4          |    1.8.65   |      1.40.0      |  VNOC  |
     |            Trino           |            480           |    1.42.2   |        N/A       |  VNOC  |
-    |         Uptime Kuma        |           2.5.0          |    4.0.7    |      1.23.13     |  VNOC  |
+    |         Uptime Kuma        |           2.5.4          |    4.0.8    |      1.23.13     |  VNOC  |
     |      Victoria Metrics      |          1.85.1          |    3.0.0    |        N/A       |  VNOC  |
     |        WebDAV Server       |           1.0.0          |    1.0.0    |        N/A       |  VNOC  |
     |           Zabbix           |           6.0.8          |    2.0.3    |      6.0.32      |  VNOC  |

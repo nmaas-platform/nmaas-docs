@@ -62,7 +62,7 @@
     |       Apache Airflow       |    3.2.0-beta.5   |    1.21.0   |     3.3.1rc2     |  VLAB  |
     |            Argus           |      2.9.1-3      |    0.8.3    |        N/A       |  VLAB  |
     |           Bastion          |       18.04       |    2.1.0    |        N/A       |  VLAB  |
-    |      changedetectionio     |      0.55.8-1     |   1.0.67-1  |      0.60.3      |  VLAB  |
+    |      changedetectionio     |      0.60.6-1     |   1.0.68-1  |      0.60.3      |  VLAB  |
     |          CheckCle          |      1.6.0-5      |    1.0.4    |        N/A       |  VLAB  |
     |           Checkle          |       1.4.0       |    1.0.1    |        N/A       |  VLAB  |
     |           CodiMD           |       2.5.3       |    1.0.4    |       2.5.4      |  VLAB  |
@@ -76,7 +76,7 @@
     |        Healthchecks        |   4.4.20260907-1  |   1.1.75-1  |        4.4       |  VLAB  |
     |           Icinga2          |       2.11.4      |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |      1.8.10-3     |    5.0.0    |      1.8.10      |  VLAB  |
-    |           Jenkins          |     2.568.3-1     |    5.9.56   |      2.568.3     |  VLAB  |
+    |           Jenkins          |     2.568.3-2     |    5.9.62   |      2.568.3     |  VLAB  |
     |          Keycloak          |       26.5.3      |    0.14.6   |        N/A       |  VLAB  |
     |           Kuvasz           |       3.8.0       |    3.3.0    |        N/A       |  VLAB  |
     |        LibreBooking        |       2.8.6       |    3.1.0    |        N/A       |  VLAB  |

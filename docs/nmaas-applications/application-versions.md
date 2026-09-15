@@ -87,7 +87,8 @@
     |           Moodle           |      5.0.1-1      |    26.0.4   |       list       |  VLAB  |
     |             N8n            |      1.123.31     |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |       4.8.6       |    2.0.1    |        N/A       |  VLAB  |
-    |           NetBox           |      4.5.5-2      |    8.0.19   |       4.7.0      |  VLAB  |
+    |           NetBox           |       4.6.9       |    8.3.63   |       4.7.0      |  VLAB  |
+    |      NetBox MCP Server     |       1.2.1       |    0.1.0    |        N/A       |  VLAB  |
     |       OWASP JuiceShop      |       20.1.1      |    1.0.5    |      20.2.0      |  VLAB  |
     |          Oxidized          |       0.28.0      |    2.0.1    |      0.37.0      |  VLAB  |
     |      perfSONAR Archive     |    5.2.0-beta.4   |    0.1.4    |        N/A       |  VLAB  |

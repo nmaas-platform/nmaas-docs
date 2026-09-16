@@ -94,7 +94,7 @@
     |      perfSONAR Archive     |    5.2.0-beta.4   |    0.1.4    |        N/A       |  VLAB  |
     |     perfSONAR Testpoint    |   5.2.4-alpha.5   |  0.2.5-beta |        N/A       |  VLAB  |
     |          PgBackWeb         |       0.4.2       |    1.0.0    |       0.5.2      |  VLAB  |
-    |         PostgreSQL         |       14.3.0      |    11.5.0   |        N/A       |  VLAB  |
+    |         PostgreSQL         |       17.6.0      |   16.7.26   |        N/A       |  VLAB  |
     |         Prometheus         |      3.9.1-1      |   4.0.16-1  |       3.8.0      |  VLAB  |
     |Prometheus Blackbox Exporter|      0.28.0-1     |    11.9.1   |        N/A       |  VLAB  |
     |         Routinator         |       0.8.3       |    2.0.0    |      0.15.2      |  VLAB  |

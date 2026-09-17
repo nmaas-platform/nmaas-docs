@@ -34,6 +34,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |                         [N8n](https://docs.nmaas.eu/nmaas-applications/tutorials/n8n/)                        |         1.123.31         |    1.1.2    |
 |                         [NAV](https://docs.nmaas.eu/nmaas-applications/tutorials/nav/)                        |           4.8.6          |    2.0.1    |
 |                      [NetBox](https://docs.nmaas.eu/nmaas-applications/tutorials/netbox/)                     |           4.6.9          |    8.3.63   |
+|              [NetBox MCP Server](https://docs.nmaas.eu/nmaas-applications/tutorials/netbox-mcp/)              |          1.2.1-2         |    0.1.0    |
 |                    [Oxidized](https://docs.nmaas.eu/nmaas-applications/tutorials/oxidized/)                   |          0.30.1          |    3.0.2    |
 |           [perfSONAR Archive](https://docs.nmaas.eu/nmaas-applications/tutorials/perfsonar-archive/)          |          5.3.0-2         |    1.0.0    |
 |         [perfSONAR Testpoint](https://docs.nmaas.eu/nmaas-applications/tutorials/perfsonar-testpoint/)        |          5.2.4-3         | 0.2.6-beta.2|

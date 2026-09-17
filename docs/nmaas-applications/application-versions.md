@@ -34,6 +34,7 @@
     |             N8n            |         1.123.31         |    1.1.2    |      stable      |  VNOC  |
     |             NAV            |           4.8.6          |    2.0.1    |        N/A       |  VNOC  |
     |           NetBox           |           4.6.9          |    8.3.63   |       4.7.0      |  VNOC  |
+    |      NetBox MCP Server     |          1.2.1-2         |    0.1.0    |        N/A       |  VNOC  |
     |          Oxidized          |          0.30.1          |    3.0.2    |      0.37.0      |  VNOC  |
     |      perfSONAR Archive     |          5.3.0-2         |    1.0.0    |        N/A       |  VNOC  |
     |     perfSONAR Testpoint    |          5.2.4-3         | 0.2.6-beta.2|        N/A       |  VNOC  |
@@ -88,7 +89,7 @@
     |             N8n            |      1.123.31     |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |       4.8.6       |    2.0.1    |        N/A       |  VLAB  |
     |           NetBox           |       4.6.9       |    8.3.63   |       4.7.0      |  VLAB  |
-    |      NetBox MCP Server     |       1.2.1       |    0.1.0    |        N/A       |  VLAB  |
+    |      NetBox MCP Server     |      1.2.1-2      |    0.1.0    |        N/A       |  VLAB  |
     |       OWASP JuiceShop      |       20.1.1      |    1.0.5    |      20.2.0      |  VLAB  |
     |          Oxidized          |       0.28.0      |    2.0.1    |      0.37.0      |  VLAB  |
     |      perfSONAR Archive     |    5.2.0-beta.4   |    0.1.4    |        N/A       |  VLAB  |
@@ -101,7 +102,8 @@
     |          SmokePing         |      2.9.0-5      |    0.1.0    |        N/A       |  VLAB  |
     |            Trino           |       479-1       |    1.42.0   |        N/A       |  VLAB  |
     |          UnrealIRC         |      3.2.8-1      |    1.0.0    |        N/A       |  VLAB  |
-    |         Uptime Kuma        |       2.1.3       |    4.0.4    |      1.23.13     |  VLAB  |
+    |         Uptime Kuma        |       2.5.0       |    4.0.7    |      1.23.13     |  VLAB  |
+    |   Uptime Kuma MCP Server   |     0.11.18-2     |    0.1.0    |        N/A       |  VLAB  |
     |           Valkey           |       7.2.6       |    0.3.15   |        N/A       |  VLAB  |
     |      Victoria Metrics      |       1.46.0      |    2.0.1    |        N/A       |  VLAB  |
     |       VS Code Server       |       4.92.2      |    3.23.0   |        N/A       |  VLAB  |

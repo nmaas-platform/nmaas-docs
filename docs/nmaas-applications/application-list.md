@@ -47,6 +47,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |                    [Telegraf](https://docs.nmaas.eu/nmaas-applications/tutorials/telegraf)                    |          1.36.4          |    1.8.65   |
 |                       [Trino](https://docs.nmaas.eu/nmaas-applications/tutorials/trino/)                      |            480           |    1.42.2   |
 |                 [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)                |           2.5.4          |    4.0.8    |
+|          [Uptime Kuma MCP Server](https://docs.nmaas.eu/nmaas-applications/tutorials/uptimekuma-mcp/)         |         0.11.18-2        |    0.1.0    |
 |            [Victoria Metrics](https://docs.nmaas.eu/nmaas-applications/tutorials/victoria-metrics/)           |          1.85.1          |    3.0.0    |
 |                  [WebDAV Server](https://docs.nmaas.eu/nmaas-applications/tutorials/webdav/)                  |           1.0.0          |    1.0.0    |
 |                      [Zabbix](https://docs.nmaas.eu/nmaas-applications/tutorials/zabbix/)                     |           6.0.8          |    2.0.3    |

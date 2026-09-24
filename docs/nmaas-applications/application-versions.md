@@ -81,7 +81,7 @@
     |           Jenkins          |     2.568.3-2     |    5.9.62   |      2.568.3     |  VLAB  |
     |          Keycloak          |       26.5.3      |    0.14.6   |        N/A       |  VLAB  |
     |           Kuvasz           |       3.8.0       |    3.3.0    |        N/A       |  VLAB  |
-    |        LibreBooking        |       2.8.6       |    3.1.0    |        N/A       |  VLAB  |
+    |        LibreBooking        |       5.3.0       |    0.1.0    |        N/A       |  VLAB  |
     |          LibreNMS          |        1.47       |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |      1.0.16-1     |    4.0.6    |        N/A       |  VLAB  |
     |           MailDev          |       2.0.5       |    1.0.0    |maildev@3.0.0-rc.3|  VLAB  |

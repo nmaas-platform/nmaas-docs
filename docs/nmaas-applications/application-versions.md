@@ -13,7 +13,7 @@
     |      changedetectionio     |          0.55.8          |    1.0.67   |      0.60.3      |  VNOC  |
     |          CheckCle          |          1.6.0-3         |    1.0.8    |        N/A       |  VNOC  |
     |           CodiMD           |           2.6.1          |    1.0.8    |       2.5.4      |  VNOC  |
-    |          Databasus         |          3.55.3          |    3.55.3   |        N/A       |  VNOC  |
+    |          Databasus         |          3.60.0          |    3.60.0   |        N/A       |  VNOC  |
     |      Debian repository     |            1.0           |    2.0.1    |        N/A       |  VNOC  |
     |      GP4L Orchestrator     |0.1.20-develop-rev-5a0e11f|    1.0.20   |        N/A       |  VNOC  |
     |           Grafana          |           6.5.2          |    2.0.1    |       6.7.6      |  VNOC  |
@@ -36,7 +36,7 @@
     |           NetBox           |           4.6.9          |    8.3.63   |       4.7.0      |  VNOC  |
     |      NetBox MCP Server     |          1.2.1-2         |    0.1.0    |        N/A       |  VNOC  |
     |          Oxidized          |          0.30.1          |    3.0.2    |      0.37.0      |  VNOC  |
-    |      perfSONAR Archive     |          5.3.0-2         |    1.0.0    |        N/A       |  VNOC  |
+    |      perfSONAR Archive     |          5.3.0-5         |    1.1.2    |        N/A       |  VNOC  |
     |     perfSONAR Testpoint    |          5.2.4-3         | 0.2.6-beta.2|        N/A       |  VNOC  |
     |          PgBackWeb         |           0.5.2          |    1.0.14   |       0.5.2      |  VNOC  |
     |         PostgreSQL         |          17.6.0          |   16.7.26   |        N/A       |  VNOC  |

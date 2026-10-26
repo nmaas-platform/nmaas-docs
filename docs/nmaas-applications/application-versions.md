@@ -27,7 +27,7 @@
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |      1.8.10      |  VNOC  |
     |           Jenkins          |         2.568.1-1        |    5.9.49   |      2.580.1     |  VNOC  |
     |          Keycloak          |          26.7.2          |   0.21.33   |        N/A       |  VNOC  |
-    |           Kuvasz           |           4.0.1          |    3.3.2    |        N/A       |  VNOC  |
+    |           Kuvasz           |           4.6.0          |    3.3.3    |        N/A       |  VNOC  |
     |          LibreNMS          |          25.11.0         |    7.0.0    |        N/A       |  VNOC  |
     |            Maat            |           1.0.9          |    3.0.2    |        N/A       |  VNOC  |
     |          Metabase          |          62.3.5          |    1.0.42   |ux-3754-full-state|  VNOC  |

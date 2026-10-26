@@ -14,7 +14,6 @@
     |      MaDDash     |   4.3.4   |    2.2.4    |      N/A     | QALAB1 |
     | Debian repository|    1.0    |    2.0.1    |      N/A     | QALAB1 |
     |     InfluxDB     |   1.7.10  |    4.4.8    |      N/A     | QALAB1 |
-    |      Jenkins     |  2.263.4  |    3.1.13   |    2.452.3   | QALAB1 |
     |     ELK Stack    |   7.7.1   |    1.8.0    |      N/A     | QALAB1 |
     |      esmond      |   4.3.4   |    2.2.0    |      N/A     | QALAB1 |
     |      WiFiMon     |   1.4.0   |    2.0.1    |      N/A     | QALAB1 |
@@ -65,7 +64,6 @@
     |           MaDDash          |   4.3.4   |    2.2.4    |      N/A     | QALAB2 |
     |      Debian repository     |    1.0    |    2.0.1    |      N/A     | QALAB2 |
     |          InfluxDB          |   1.7.10  |    4.4.8    |      N/A     | QALAB2 |
-    |           Jenkins          |   31.0.0  |    21.0.0   |    2.452.3   | QALAB2 |
     |          ELK Stack         |   7.7.1   |    1.8.0    |      N/A     | QALAB2 |
     |           esmond           |   4.3.4   |    2.2.0    |      N/A     | QALAB2 |
     |           WiFiMon          |   1.4.0   |    2.0.1    |      N/A     | QALAB2 |
@@ -101,7 +99,6 @@
     |           MaDDash          |             4.3.4            |    2.2.4    |      N/A     |  PSNC2 |
     |      Debian repository     |              1.0             |    2.0.1    |      N/A     |  PSNC2 |
     |          InfluxDB          |            1.7.10            |    4.4.8    |      N/A     |  PSNC2 |
-    |           Jenkins          |            latest            |    1.21.3   |    2.452.3   |  PSNC2 |
     |          ELK Stack         |             7.7.1            |    1.8.0    |      N/A     |  PSNC2 |
     |           esmond           |             2.3.4            |    2.2.0    |      N/A     |  PSNC2 |
     |     Central Management     |             4.3.4            |    2.2.0    |      N/A     |  PSNC2 |

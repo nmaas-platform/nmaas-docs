@@ -25,7 +25,6 @@
     |        Healthchecks        |       4.3.20260803       |    1.1.72   |        4.4       |  VNOC  |
     |           Icinga2          |         2.14.6-1         |    3.0.2    |        N/A       |  VNOC  |
     |          InfluxDB          |         1.8.10-2         |    5.0.0    |      1.8.10      |  VNOC  |
-    |           Jenkins          |         2.568.1-1        |    5.9.49   |      2.580.1     |  VNOC  |
     |          Keycloak          |          26.7.2          |   0.21.33   |        N/A       |  VNOC  |
     |           Kuvasz           |           4.0.1          |    3.3.2    |        N/A       |  VNOC  |
     |          LibreNMS          |          25.11.0         |    7.0.0    |        N/A       |  VNOC  |
@@ -78,7 +77,6 @@
     |        Healthchecks        |   4.4.20261012-1  |   1.1.77-1  |        4.4       |  VLAB  |
     |           Icinga2          |       2.11.4      |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |      1.8.10-3     |    5.0.0    |      1.8.10      |  VLAB  |
-    |           Jenkins          |     2.580.1-2     |    5.9.68   |      2.580.1     |  VLAB  |
     |          Keycloak          |       26.5.3      |    0.14.6   |        N/A       |  VLAB  |
     |           Kuvasz           |       3.8.0       |    3.3.0    |        N/A       |  VLAB  |
     |        LibreBooking        |       5.3.0       |    0.1.0    |        N/A       |  VLAB  |
@@ -86,7 +84,6 @@
     |            Maat            |      1.0.16-1     |    4.0.6    |        N/A       |  VLAB  |
     |           MailDev          |       2.0.5       |    1.0.0    |maildev@3.0.0-rc.3|  VLAB  |
     |          Metabase          |       64.1.7      |   1.0.53-1  |ux-3754-full-state|  VLAB  |
-    |           Moodle           |      5.0.1-1      |    26.0.4   |       list       |  VLAB  |
     |             N8n            |      1.123.31     |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |       4.8.6       |    2.0.1    |        N/A       |  VLAB  |
     |           NetBox           |       4.6.9       |    8.3.63   |       4.7.0      |  VLAB  |

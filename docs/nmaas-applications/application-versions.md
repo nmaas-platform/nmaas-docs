@@ -75,7 +75,7 @@
     |           Grafana          |       7.2.0       |    2.0.1    |      7.5.17      |  VLAB  |
     |           Grafana          |10.4.19-security-01|   7.0.14-1  |      10.4.9      |  VLAB  |
     |           Grafana          |      11.6.9-1     |   8.0.19-1  |      11.6.8      |  VLAB  |
-    |        Healthchecks        |   4.4.20261012-1  |   1.1.77-1  |        4.4       |  VLAB  |
+    |        Healthchecks        |   5.0.20261020-1  |   1.1.78-1  |        4.4       |  VLAB  |
     |           Icinga2          |       2.11.4      |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |      1.8.10-3     |    5.0.0    |      1.8.10      |  VLAB  |
     |           Jenkins          |     2.580.1-2     |    5.9.68   |      2.580.1     |  VLAB  |
@@ -85,7 +85,7 @@
     |          LibreNMS          |        1.47       |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |      1.0.16-1     |    4.0.6    |        N/A       |  VLAB  |
     |           MailDev          |       2.0.5       |    1.0.0    |maildev@3.0.0-rc.3|  VLAB  |
-    |          Metabase          |       64.1.7      |   1.0.53-1  |ux-3754-full-state|  VLAB  |
+    |          Metabase          |       65.2.1      |   1.0.54-1  |ux-3754-full-state|  VLAB  |
     |           Moodle           |      5.0.1-1      |    26.0.4   |       list       |  VLAB  |
     |             N8n            |      1.123.31     |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |       4.8.6       |    2.0.1    |        N/A       |  VLAB  |

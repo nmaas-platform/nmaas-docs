@@ -19,16 +19,16 @@ The nmaas installation is a two-step process - first an instance of GItLab must 
 
 ### GitLab Installation
 
-GitLab can be deployed using the [official Helm chart](https://docs.gitlab.com/runner/install/kubernetes.html) whose source code is also [publicly available](https://gitlab.com/gitlab-org/charts/gitlab). Note that GitLab requires at least 8GB of memory to run. Also note that it requires both a PostgreSQL database and a Redis instance, both of which can either be externalized or deployed in-cluster, by the official chart.
+GitLab can be deployed using the [official Helm chart](https://docs.gitlab.com/runner/install/kubernetes.html) whose source code is also [publicly available](https://gitlab.com/gitlab-org/charts/gitlab). Note that GitLab requires at least 8GB of memory to run.
 
-!!! info "GitLab and an External Database"
+!!! warning "No More Bundled PostgreSQL/Redis/Object Storage"
 
-    GitLab can use an external PostgreSQL instance, but during the deployment process either the root user must be specified, or the following extensions enabled in the target GitLab database:
+    Unlike older versions of the chart, GitLab `10.3.1` no longer bundles PostgreSQL, Redis, or object storage (MinIO) as subcharts — GitLab itself does not supply these. A PostgreSQL instance, a Redis instance, and an S3-compatible object store must each be deployed and configured separately before installing GitLab, using GitLab's own external-database/external-storage configuration options shown below. How you provide them (standalone in-cluster Helm charts, managed cloud services, existing infrastructure, etc.) is entirely up to you and left for you to configure — this guide only documents the GitLab-side values and secrets needed to point at whatever you choose.
+
+    If using a PostgreSQL instance with a non-root user, the following extensions must be enabled beforehand in the target GitLab database:
 
     - btree_gist
     - pg_trgm
-
-    This can be done using the following commands:
 
     ```bash
     create extension btree_gist;
@@ -37,40 +37,61 @@ GitLab can be deployed using the [official Helm chart](https://docs.gitlab.com/r
 
 !!! success "GitLab Version"
 
-    `8.2.0` is the latest version of the GitLab chart that has been tested with the latest version of nmaas. 
+    `10.3.1` is the latest version of the GitLab chart that has been tested with the latest version of nmaas.
 
+GitLab needs to be told how to reach your PostgreSQL/Redis instances and object storage via Kubernetes secrets:
 
-Bellow is a snippet of the mandatory parameters that must be specified during GitLab's deployment, so that it will be compatible with nmaas. The complete list of supported value parameters is available in the [official GitLab Helm chart Git repository](https://gitlab.com/gitlab-org/charts/gitlab).
+```bash
+export NMAAS_NAMESPACE="nmaas-system"
+kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-postgresql --from-literal=password=<POSTGRESQL_USER_PASSWORD>
+kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-redis --from-literal=redis-password=<REDIS_PASSWORD>
+kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-root-password --from-literal=password=<GITLAB_ROOT_PASSWORD>
+```
+
+The object storage connection details are passed as secrets containing GitLab-specific config formats, not plain key/value pairs. Consult GitLab's own object storage documentation for the exact set of buckets it expects to find (LFS, artifacts, uploads, packages, container registry, and optionally backups):
+
+```yaml title="rails-storage-connection.yaml"
+provider: AWS
+region: us-east-1
+aws_access_key_id: <OBJECT_STORAGE_ACCESS_KEY>
+aws_secret_access_key: <OBJECT_STORAGE_SECRET_KEY>
+aws_signature_version: 4
+endpoint: "<OBJECT_STORAGE_ENDPOINT>"
+path_style: true
+```
+
+```yaml title="registry-storage-connection.yaml"
+s3:
+  bucket: gitlab-registry-storage
+  accesskey: <OBJECT_STORAGE_ACCESS_KEY>
+  secretkey: <OBJECT_STORAGE_SECRET_KEY>
+  region: us-east-1
+  regionendpoint: "<OBJECT_STORAGE_ENDPOINT>"
+  pathstyle: true
+  v4auth: true
+```
+
+```bash
+kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-rails-storage --from-file=connection=rails-storage-connection.yaml
+kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-registry-storage --from-file=config=registry-storage-connection.yaml
+```
+
+#### GitLab Values
+
+Below is a snippet of the mandatory parameters that must be specified during GitLab's deployment, so that it will be compatible with nmaas. The complete list of supported value parameters is available in the [official GitLab Helm chart Git repository](https://gitlab.com/gitlab-org/charts/gitlab).
 
 ```yaml title="gitlab-values.yaml"
-certmanager:
-  install: false
+installCertmanager: false
 nginx-ingress:
   enabled: false
 prometheus:
   install: false
-redis:
-  install: true
-postgresql:
-  postgresqlUsername: gitlab
-  install: true
-  postgresqlDatabase: gitlabhq_production
-  usePasswordFile: false
-  existingSecret: 'gitlab-postgresql'
-  master:
-    extraVolumeMounts:
-      - name: custom-init-scripts
-        mountPath: /docker-entrypoint-preinitdb.d/init_revision.sh
-        subPath: init_revision.sh
-    podAnnotations:
-      postgresql.gitlab/init-revision: "1"
-  metrics:
-    enabled: true
 gitlab-runner:
   install: false
 gitlab-shell:
   service:
     type: LoadBalancer
+
 global:
   edition: ce
   hosts:
@@ -84,22 +105,38 @@ global:
       enabled: true
       secretName: <MY_TLS_SECRET>
     path: /
-    class: "nginx"
+    class: "cilium" # substitute your own ingress class if not using Cilium
+  gatewayApi:
+    enabled: false # this guide uses classic Ingress throughout, not Gateway API - see note below
+    installEnvoy: false
+    configureCertmanager: false
   initialRootPassword:
     secret: gitlab-root-password
     key: password
-  ## configuration for external PostgreSQL (set postgresql.enabled to false if used)
-  # psql:
-  #   password:
-  #     secret: gitlab-db-password
-  #     key: password
-  #   host: psql-standalone-postgresql
-  #   port: 5432
-  #   username: gitlab
-  #   database: gitlab
+  psql:
+    host: gitlab-postgresql
+    port: 5432
+    username: gitlab
+    database: gitlabhq_production
+    password:
+      useSecret: true
+      secret: gitlab-postgresql
+      key: password
+  redis:
+    host: gitlab-redis-master
+    port: 6379
+    auth:
+      enabled: true
+      secret: gitlab-redis
+      key: redis-password
   appConfig:
     defaultProjectFeatures:
       builds: false
+    object_store:
+      enabled: true
+      connection:
+        secret: gitlab-rails-storage
+        key: connection
   time_zone: UTC
   ## use an external smtp server for outgoing email (optional)
   smtp:
@@ -123,19 +160,22 @@ global:
     reply_to: 'support@example.com'
     smime:
       enabled: false
+
+registry:
+  storage:
+    secret: gitlab-registry-storage
+    key: config
 ```
 
-Note that the secrets whose names are specified in `.Values.postgresql.existingSecret` (for internal PostgreSQL), `.Values.global.initialRootPassword.secret` , `.Values.global.psql.password.secret` (for external PostgreSQL), and `.Values.global.smtp.password.secret` must be manually created. These secrets contain the PostgreSQL root and user passwords, the initial root password to be used by GitLab, as well as SMTP server credentials. Below is a snippet that can be reused to create such secrets:
+!!! info "TLS Secret Must Exist in GitLab's Namespace"
 
-```bash
-export NMAAS_NAMESPACE="nmaas-system"
-kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-postgresql --from-literal=postgresql-password=<POSTGRESQL_USER_PASSWORD> --from-literal=postgresql-postgres-password=<POSTGRESQL_ROOT_PASSWORD>
-kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-root-password --from-literal=password=<GITLAB_ROOT_PASSWORD>
-```
+    Classic `Ingress` TLS `secretName` references only support same-namespace secrets — this is a core Kubernetes `Ingress` limitation, not specific to GitLab or Cilium. Make sure `<MY_TLS_SECRET>` exists in the same namespace GitLab is deployed into before installing.
 
-Note that the built-in PostgreSQL chart that can be automatically deployed together with GitLab is based on Bitnami's PostgreSQL chart, so additional customization options can be seen from [Bitnami's GitHub page](https://github.com/bitnami/charts/tree/master/bitnami/postgresql).
+!!! warning "`global.gatewayApi.enabled: false` Alone Does Not Suppress Envoy Gateway"
 
-In case an external PostgreSQL instance will be used then the secret specified in `.Values.global.psql.password.secret` must be created automatically. Also, keep in mind the warning given above, if a regular PostgreSQL user is specified, the `btree` and `trgm` extensions must be enabled beforehand.
+    Setting `global.gatewayApi.enabled: false` disables Gateway API routing but does **not**, by itself, stop the chart from also installing its bundled Envoy Gateway subchart — `global.gatewayApi.installEnvoy: false` must be set explicitly too, otherwise a stray `envoy-gateway` pod gets deployed for no reason.
+
+Note that the secrets referenced by `global.initialRootPassword.secret`, `global.psql.password.secret`, and `global.smtp.password.secret` must be created manually, pointing at the credentials for whichever PostgreSQL and SMTP instances you deployed or configured for GitLab. Keep in mind the warning given above — if a regular (non-root) PostgreSQL user is used, the `btree_gist` and `pg_trgm` extensions must be enabled beforehand.
 
 !!! info "GitLab Email Sending"
     nmaas does not rely on email sending via GitLab, so both the email and smtp sections in the value files can be left with their default values - unconfigured. However, users are free to customize these sections according to their own environments. 
@@ -145,7 +185,7 @@ Once all configuration parameters have been specified, GitLab can be installed u
 ```bash
 export NMAAS_NAMESPACE="nmaas-system"
 helm repo add gitlab https://charts.gitlab.io
-helm install -f gitlab.yaml --namespace $NMAAS_NAMESPACE <RELEASE_NAME> --version 8.2.0 gitlab/gitlab
+helm install -f gitlab-values.yaml --namespace $NMAAS_NAMESPACE <RELEASE_NAME> --version 10.3.1 gitlab/gitlab
 ```
 
 !!! warning "GitLab Deployment Duration"
@@ -174,7 +214,13 @@ GitLab supports SSH access to any created repositories. If you want to allow you
 
 ### nmaas Installation
 
-The source code for the nmaas Helm chart is publicly available on [nmaas-platform/nmaas-chart](https://gitlab.software.geant.org/nmaas/nmaas-chart). The `README.md` file provides details on all the customizable `value` parameters for a given chart version.
+#### nmaas Values
+
+The source code for the nmaas Helm chart is publicly available on [nmaas-platform/nmaas-chart](https://gitlab.software.geant.org/nmaas/nmaas-chart). The chart's `values.yaml` and `README.md` provide the full, authoritative list of configurable parameters for a given chart version — refer to those directly when preparing your own values file.
+
+!!! success "nmaas Version"
+
+    `2.0.6` (chart version, application version `1.10.0`) is the latest version of nmaas that has been tested with this guide.
 
 The following manual steps must be performed before deploying nmaas:
 
@@ -210,12 +256,28 @@ The following manual steps must be performed before deploying nmaas:
     kubectl create secret generic -n $NMAAS_NAMESPACE nmaas-gitlab-api-token --from-literal=secret=<GITLAB_API_TOKEN>
     ```
 
+- Create the JWT signing secret. This is **required but undocumented in the chart's own `values.yaml` comments** — `platform.properties.jwt.secretName` (default `nmaas-jwt`) must already exist before install; the chart does not generate it automatically, and install simply fails with `secret "nmaas-jwt" not found` if it's skipped. Each key must be at least 96 characters:
+
+    ```bash
+    export NMAAS_NAMESPACE="nmaas-system"
+    openssl rand -base64 96 | tr -d '\n' > jwtSigningKey
+    openssl rand -base64 96 | tr -d '\n' > jwtResetKey
+    kubectl create secret generic -n $NMAAS_NAMESPACE nmaas-jwt --from-file=jwtSigningKey=jwtSigningKey --from-file=jwtResetKey=jwtResetKey
+    ```
+
+- Create the SMTP secret for the `nmaas-postfix` component. This is required regardless of whether real external SMTP relay is needed; if not, placeholder values are sufficient:
+
+    ```bash
+    export NMAAS_NAMESPACE="nmaas-system"
+    kubectl create secret generic -n $NMAAS_NAMESPACE nmaas-smtp-secret --from-literal=smtpHost=localhost --from-literal=smtpUsername=nmaas --from-literal=smtpPassword=unused
+    ```
+
 Once the required secrets have been created, nmaas can be deployed using the following command (make sure to deploy in the same namespace as GitLab):
 
 ```bash
 export NMAAS_NAMESPACE="nmaas-system"
 helm repo add nmaas https://artifactory.software.geant.org/artifactory/nmaas-helm
-helm install -f values.yaml --namespace $NMAAS_NAMESPACE --version 1.2.11 nmaas nmaas/nmaas
+helm install -f nmaas-values.yaml --namespace $NMAAS_NAMESPACE --version 2.0.6 nmaas nmaas/nmaas
 ```
 
 It is recommended to use `nmaas-system` as the namespace where nmaas and all associated components (PostgreSQL, GitLab) will be deployed.
@@ -226,6 +288,20 @@ It is recommended to use `nmaas-system` as the namespace where nmaas and all ass
 #### Verifying the Installation
 
 You can verify that nmaas has been successfully deployed by navigating to its ingress URL from your browser, logging in as the admin user and selecting `Settings -> Monitoring`. From this location, you can execute checks for all the required components of nmaas. A fully functional installation should return a successful response for all monitors.
+
+!!! danger "GitLab Must Allow Local-Network Webhooks Before Any Application Can Be Deployed"
+
+    Every application deployment goes through nmaas registering a webhook on a GitLab project it creates, pointing at `http://nmaas-platform:<port>/api/v1/gitlab/webhooks/<id>` — an internal Kubernetes Service hostname. GitLab's SSRF-protection setting blocks webhooks targeting local/private network addresses **by default**, so without this change, every single application deployment will fail at the configuration step with `GITLAB: Invalid url given Unprocessable Entity` (`GitLabConfigHandler.addWebhookToProject`), no matter which application or domain. Fix it once, as GitLab root:
+
+    **Admin Area → Settings → Network → Outbound requests → enable "Allow requests to the local network from webhooks and integrations"** (and, while there, the adjacent "Allow requests to the local network from system hooks" is worth enabling too).
+
+    This can also be verified/set via the API:
+
+    ```bash
+    curl -X PUT "https://gitlab.<TLD>/api/v4/application/settings" \
+      -H "PRIVATE-TOKEN: <GITLAB_ROOT_API_TOKEN>" \
+      -d "allow_local_requests_from_web_hooks_and_services=true&allow_local_requests_from_system_hooks=true"
+    ```
 
 ## Administrator Information
 
@@ -250,7 +326,7 @@ Creating a new customer domain within nmaas is a two-step process:
         - `Customer networks` *(to be removed)* - list of network prefixes to which applications deployed in this domain should have access (thought this parameter is currently mandatory it is not used for any automated actions so any initial values can be provided) 
     - Click the `Submit` button to create the domain
 2. Then, the following operations should be performed within the cluster:
-    - Create a new Kubernetes namespace with the same name as the domain 
+    - Create a new Kubernetes namespace with the same name as the domain
     - Create a new MetalLB range with the same name as the new customer domain, and set that addresses should not be automatically assigned. To accomplish this, the existing MetalLB ConfigMap can simply be edited to include the new configuration block. An example MetalLB `ConfigMap` is available below:
 
         ```yaml title="config.yaml"
@@ -275,7 +351,18 @@ Creating a new customer domain within nmaas is a two-step process:
 
         With the above configuration, whenever a LoadBalancer Kubernetes Service is created, it will be assigned an address from the default-pool, unless the `annotation metallb.universe.tf/address-pool: domain1` is present, in which case an address from the domain1 pool will be allocated. 
 
-    - Deploy a new ingress controller in the new domain namespace, with an ingress class that will match the name of the domain. 
+    - Deploy a new ingress controller in the new domain namespace, with an ingress class that will match the name of the domain.
+
+!!! danger "DCN Configured Must Be Manually Confirmed"
+
+    Even with `DCN status` set to `Configured` in the domain creation form above, applications deployed into the domain will hang indefinitely at "Verifying secure connectivity to your equipment" unless the domain's DCN configuration is also explicitly confirmed after the domain is created. This is a genuine manual checkpoint in nmaas's deployment workflow, not a bug — it exists to let an operator confirm the domain's network connectivity is actually in place before nmaas proceeds with app deployments.
+
+    Confirm it via the Portal (`Settings -> Domains -> edit the domain -> DCN configured` checkbox), or via the API:
+
+    ```bash
+    curl -X PATCH "https://<nmaas-host>/api/domains/<DOMAIN_ID>/dcn?configured=true" \
+      -H "Authorization: Bearer <TOKEN>"
+    ```
 
 ## Additional Documentation
 

@@ -25,7 +25,6 @@ This is a continuously updated list of currently supported applications on nmaas
 |            [Healthchecks](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Healthchecks)           |       4.3.20260803       |    1.1.72   |
 |                     [Icinga2](https://docs.nmaas.eu/nmaas-applications/tutorials/icinga2/)                    |         2.14.6-1         |    3.0.2    |
 |                    [InfluxDB](https://docs.nmaas.eu/nmaas-applications/tutorials/influxdb/)                   |         1.8.10-2         |    5.0.0    |
-|                     [Jenkins](https://docs.nmaas.eu/nmaas-applications/tutorials/jenkins/)                    |         2.568.1-1        |    5.9.49   |
 |                    [Keycloak](https://docs.nmaas.eu/nmaas-applications/tutorials/keycloak/)                   |          26.7.2          |   0.21.33   |
 |                      [Kuvasz](https://docs.nmaas.eu/nmaas-applications/tutorials/kuvasz/)                     |           4.6.0          |    3.3.3    |
 |                    [LibreNMS](https://docs.nmaas.eu/nmaas-applications/tutorials/librenms/)                   |          25.11.0         |    7.0.0    |

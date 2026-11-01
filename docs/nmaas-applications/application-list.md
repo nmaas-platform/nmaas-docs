@@ -4,7 +4,7 @@ This is a continuously updated list of currently supported applications on nmaas
 
 |                                                      Name                                                     |        App Version       |Chart Version|
 |---------------------------------------------------------------------------------------------------------------|--------------------------|-------------|
-|                 [Adminer](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Adminer)                |           6.0.1          |    3.0.24   |
+|                 [Adminer](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Adminer)                |           6.2.0          |    3.0.26   |
 |                 [Apache Airflow](https://docs.nmaas.eu/nmaas-applications/tutorials/airflow/)                 |           3.2.0          |    1.21.0   |
 |                       [Argus](https://docs.nmaas.eu/nmaas-applications/tutorials/argus/)                      |          2.9.1-3         |    0.8.3    |
 |                     [Bastion](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion/)                    |         20.04-v2         |    2.1.4    |
@@ -46,7 +46,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |                   [SmokePing](https://docs.nmaas.eu/nmaas-applications/tutorials/smokeping/)                  |          2.9.0-7         |    1.0.1    |
 |                    [Telegraf](https://docs.nmaas.eu/nmaas-applications/tutorials/telegraf)                    |          1.36.4          |    1.8.65   |
 |                       [Trino](https://docs.nmaas.eu/nmaas-applications/tutorials/trino/)                      |            480           |    1.42.2   |
-|                 [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)                |           2.5.4          |    4.0.8    |
+|                 [Uptime Kuma](https://docs.nmaas.eu/nmaas-applications/tutorials/uptime-kuma/)                |           2.5.9          |    4.0.11   |
 |          [Uptime Kuma MCP Server](https://docs.nmaas.eu/nmaas-applications/tutorials/uptimekuma-mcp/)         |         0.11.18-2        |    0.1.0    |
 |            [Victoria Metrics](https://docs.nmaas.eu/nmaas-applications/tutorials/victoria-metrics/)           |          1.85.1          |    3.0.0    |
 |                  [WebDAV Server](https://docs.nmaas.eu/nmaas-applications/tutorials/webdav/)                  |           1.0.0          |    1.0.0    |

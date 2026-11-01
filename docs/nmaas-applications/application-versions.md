@@ -4,7 +4,7 @@
 
     |            Name            |        App Version       |Chart Version|  Latest Version  |Instance|
     |----------------------------|--------------------------|-------------|------------------|--------|
-    |           Adminer          |           6.0.1          |    3.0.24   |       6.0.2      |  VNOC  |
+    |           Adminer          |           6.2.0          |    3.0.26   |       6.0.2      |  VNOC  |
     |       Apache Airflow       |           3.2.0          |    1.21.0   |     3.3.1rc2     |  VNOC  |
     |            Argus           |          2.9.1-3         |    0.8.3    |        N/A       |  VNOC  |
     |           Bastion          |         20.04-v2         |    2.1.4    |        N/A       |  VNOC  |
@@ -46,7 +46,7 @@
     |          SmokePing         |          2.9.0-7         |    1.0.1    |        N/A       |  VNOC  |
     |          Telegraf          |          1.36.4          |    1.8.65   |      1.40.0      |  VNOC  |
     |            Trino           |            480           |    1.42.2   |        N/A       |  VNOC  |
-    |         Uptime Kuma        |           2.5.4          |    4.0.8    |      1.23.13     |  VNOC  |
+    |         Uptime Kuma        |           2.5.9          |    4.0.11   |      1.23.13     |  VNOC  |
     |   Uptime Kuma MCP Server   |         0.11.18-2        |    0.1.0    |        N/A       |  VNOC  |
     |      Victoria Metrics      |          1.85.1          |    3.0.0    |        N/A       |  VNOC  |
     |        WebDAV Server       |           1.0.0          |    1.0.0    |        N/A       |  VNOC  |
@@ -63,6 +63,7 @@
     |           Adminer          |       5.4.1       |    3.0.11   |       6.0.2      |  VLAB  |
     |       Apache Airflow       |    3.2.0-beta.5   |    1.21.0   |     3.3.1rc2     |  VLAB  |
     |            Argus           |      2.9.1-3      |    0.8.3    |        N/A       |  VLAB  |
+    |      Argus Zabbix Glue     |       0.1.2       |    0.1.0    |        N/A       |  VLAB  |
     |           Bastion          |       18.04       |    2.1.0    |        N/A       |  VLAB  |
     |      changedetectionio     |      0.60.9-1     |   1.0.70-1  |      0.60.3      |  VLAB  |
     |          CheckCle          |      1.6.0-5      |    1.0.4    |        N/A       |  VLAB  |
@@ -84,7 +85,7 @@
     |        LibreBooking        |       5.3.0       |    0.1.0    |        N/A       |  VLAB  |
     |          LibreNMS          |        1.47       |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |      1.0.16-1     |    4.0.6    |        N/A       |  VLAB  |
-    |           MailDev          |       2.0.5       |    1.0.0    |maildev@3.0.0-rc.3|  VLAB  |
+    |           MailDev          |       3.0.0       |    1.2.5    |maildev@3.0.0-rc.3|  VLAB  |
     |          Metabase          |       65.2.1      |   1.0.54-1  |ux-3754-full-state|  VLAB  |
     |           Moodle           |      5.0.1-1      |    26.0.4   |       list       |  VLAB  |
     |             N8n            |      1.123.31     |    1.1.2    |      stable      |  VLAB  |

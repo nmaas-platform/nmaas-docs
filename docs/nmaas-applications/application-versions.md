@@ -78,22 +78,15 @@
     |        Healthchecks        |   5.0.20261020-1  |   1.1.78-1  |        4.4       |  VLAB  |
     |           Icinga2          |       2.11.4      |    2.0.1    |        N/A       |  VLAB  |
     |          InfluxDB          |      1.8.10-3     |    5.0.0    |      1.8.10      |  VLAB  |
-<<<<<<< HEAD
     |           Jenkins          |     2.580.1-2     |    5.9.68   |      2.580.2     |  VLAB  |
-=======
->>>>>>> 128-add-a-blog-post-about-the-removal-of-jenkins-and-moodle-from-the-nmaas-catalogue
     |          Keycloak          |       26.5.3      |    0.14.6   |        N/A       |  VLAB  |
     |           Kuvasz           |       3.8.0       |    3.3.0    |        N/A       |  VLAB  |
     |        LibreBooking        |       5.3.0       |    0.1.0    |        N/A       |  VLAB  |
     |          LibreNMS          |        1.47       |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |      1.0.16-1     |    4.0.6    |        N/A       |  VLAB  |
     |           MailDev          |       2.0.5       |    1.0.0    |maildev@3.0.0-rc.3|  VLAB  |
-<<<<<<< HEAD
     |          Metabase          |       65.2.1      |   1.0.54-1  |ux-3754-full-state|  VLAB  |
     |           Moodle           |      5.0.1-1      |    26.0.4   |       list       |  VLAB  |
-=======
-    |          Metabase          |       64.1.7      |   1.0.53-1  |ux-3754-full-state|  VLAB  |
->>>>>>> 128-add-a-blog-post-about-the-removal-of-jenkins-and-moodle-from-the-nmaas-catalogue
     |             N8n            |      1.123.31     |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |       4.8.6       |    2.0.1    |        N/A       |  VLAB  |
     |           NetBox           |       4.6.9       |    8.3.63   |       4.7.0      |  VLAB  |

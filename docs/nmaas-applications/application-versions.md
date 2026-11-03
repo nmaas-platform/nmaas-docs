@@ -7,6 +7,7 @@
     |           Adminer          |           6.2.0          |    3.0.26   |       6.3.0      |  VNOC  |
     |       Apache Airflow       |           3.2.0          |    1.21.0   |     3.3.1rc2     |  VNOC  |
     |            Argus           |          2.9.1-3         |    0.8.3    |        N/A       |  VNOC  |
+    |      Argus Zabbix Glue     |          0.1.2-2         |    0.1.0    |        N/A       |  VNOC  |
     |           Bastion          |         20.04-v2         |    2.1.4    |        N/A       |  VNOC  |
     |     Bastion Web Server     |          22.04.2         |    1.0.2    |        N/A       |  VNOC  |
     |           Booked           |          2.8.6-3         |    3.1.4    |        N/A       |  VNOC  |
@@ -63,7 +64,7 @@
     |           Adminer          |       5.4.1       |    3.0.11   |       6.3.0      |  VLAB  |
     |       Apache Airflow       |    3.2.0-beta.5   |    1.21.0   |     3.3.1rc2     |  VLAB  |
     |            Argus           |      2.9.1-3      |    0.8.3    |        N/A       |  VLAB  |
-    |      Argus Zabbix Glue     |       0.1.2       |    0.1.0    |        N/A       |  VLAB  |
+    |      Argus Zabbix Glue     |      0.1.2-2      |    0.1.0    |        N/A       |  VLAB  |
     |           Bastion          |       18.04       |    2.1.0    |        N/A       |  VLAB  |
     |      changedetectionio     |      0.60.9-1     |   1.0.70-1  |      0.60.3      |  VLAB  |
     |          CheckCle          |      1.6.0-5      |    1.0.4    |        N/A       |  VLAB  |
@@ -110,4 +111,5 @@
     |      Victoria Metrics      |       1.46.0      |    2.0.1    |        N/A       |  VLAB  |
     |       VS Code Server       |       4.92.2      |    3.23.0   |        N/A       |  VLAB  |
     |        WebDAV Server       |       1.0.0       |    1.0.0    |        N/A       |  VLAB  |
+    |           Zabbix           |       7.0.32      |    4.0.9    |       7.0.2      |  VLAB  |
     |            Znuny           |       6.0.39      |    1.0.0    |        N/A       |  VLAB  |

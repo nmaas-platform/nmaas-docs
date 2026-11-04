@@ -35,6 +35,7 @@ nav:
     - Application Deployment Tutorials:
       - Adminer: 'nmaas-applications/tutorials/adminer.md'
       - Apache Airflow: 'nmaas-applications/tutorials/apache-airflow.md'
+      - Argus Zabbix Glue: 'nmaas-applications/tutorials/argus-zabbix-glue.md'
       - Bastion: 'nmaas-applications/tutorials/bastion.md'
       - Bastion Web Server: 'nmaas-applications/tutorials/bastion-web-server.md'
       - Booked: 'nmaas-applications/tutorials/booked.md'

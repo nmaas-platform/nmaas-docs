@@ -19,6 +19,7 @@ nav:
     - ActiveMon:
       - Introduction: 'use-cases/activemon/activemon-introduction.md'
       - Getting Started: 'use-cases/activemon/activemon-getstarted.md'
+  - Architecture: 'architecture.md'
   - User Guides:
     - Introduction: 'guides/introduction.md'
     - Domain Admin Guide: 'guides/domain-admin-guide.md'
@@ -27,6 +28,7 @@ nav:
   - Installation Guide:
     - Introduction: 'self-hosted-nmaas/introduction.md'
     - Helm deployment: 'self-hosted-nmaas/install-guide.md'
+    - GitLab Installation: 'self-hosted-nmaas/gitlab-installation.md'
   - Application Catalogue:
     - Introduction: 'nmaas-applications/introduction.md'
     - General Application Deployment: 'nmaas-applications/general-app-deployment.md'

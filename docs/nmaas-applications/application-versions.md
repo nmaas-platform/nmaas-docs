@@ -66,7 +66,7 @@
     |            Argus           |      2.9.1-3      |    0.8.3    |        N/A       |  VLAB  |
     |      Argus Zabbix Glue     |      0.1.2-2      |    0.1.0    |        N/A       |  VLAB  |
     |           Bastion          |       18.04       |    2.1.0    |        N/A       |  VLAB  |
-    |      changedetectionio     |      0.60.9-1     |   1.0.70-1  |      0.70.3      |  VLAB  |
+    |      changedetectionio     |      0.70.3-1     |   1.0.72-1  |      0.70.3      |  VLAB  |
     |          CheckCle          |      1.6.0-5      |    1.0.4    |        N/A       |  VLAB  |
     |           Checkle          |       1.4.0       |    1.0.1    |        N/A       |  VLAB  |
     |           CodiMD           |       2.5.3       |    1.0.4    |       2.5.4      |  VLAB  |
@@ -87,7 +87,7 @@
     |          LibreNMS          |        1.47       |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |      1.0.16-1     |    4.0.6    |        N/A       |  VLAB  |
     |           MailDev          |       3.0.0       |    1.2.5    |maildev@3.0.0-rc.3|  VLAB  |
-    |          Metabase          |       65.2.1      |   1.0.54-1  |ux-3754-full-state|  VLAB  |
+    |          Metabase          |       65.3.7      |   1.0.55-1  |ux-3754-full-state|  VLAB  |
     |           Moodle           |      5.0.1-1      |    26.0.4   |       list       |  VLAB  |
     |             N8n            |      1.123.31     |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |       4.8.6       |    2.0.1    |        N/A       |  VLAB  |

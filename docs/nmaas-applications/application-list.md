@@ -11,7 +11,7 @@ This is a continuously updated list of currently supported applications on nmaas
 |                     [Bastion](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion/)                    |         20.04-v2         |    2.1.4    |
 |          [Bastion Web Server](https://docs.nmaas.eu/nmaas-applications/tutorials/bastion-webserver/)          |          22.04.2         |    1.0.2    |
 |                  [Booked](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Booked)                 |          2.8.6-3         |    3.1.4    |
-|           [changedetectionio](https://docs.nmaas.eu/nmaas-applications/tutorials/changedetectionio/)          |          0.55.8          |    1.0.67   |
+|           [changedetectionio](https://docs.nmaas.eu/nmaas-applications/tutorials/changedetectionio/)          |          0.70.3          |    1.0.72   |
 |                    [CheckCle](https://docs.nmaas.eu/nmaas-applications/tutorials/checkcle/)                   |          1.6.0-3         |    1.0.8    |
 |                      [CodiMD](https://docs.nmaas.eu/nmaas-applications/tutorials/codimd/)                     |           2.6.1          |    1.0.8    |
 |                   [Databasus](https://docs.nmaas.eu/nmaas-applications/tutorials/databasus/)                  |          3.60.0          |    3.60.0   |

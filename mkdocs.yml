@@ -22,7 +22,7 @@ nav:
   - Architecture: 'architecture.md'
   - User Guides:
     - Introduction: 'guides/introduction.md'
-    - Domain Admin Guide: 'guides/domain-admin-guide.md'
+    - Domain Administrator Guide: 'guides/domain-admin-guide.md'
     - Domain User Guide: 'guides/user-guide.md'
     - Application Manager Guide: 'guides/application-manager-guide.md'
   - Installation Guide:

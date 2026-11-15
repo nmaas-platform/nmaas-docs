@@ -4,14 +4,14 @@ GitLab can be deployed using the [official Helm chart](https://docs.gitlab.com/c
 
 !!! warning "No More Bundled PostgreSQL/Redis/Object Storage"
 
-    Unlike older versions of the chart, GitLab `10.3.1` no longer bundles PostgreSQL, Redis, or object storage (MinIO) as subcharts — GitLab itself does not supply these. A PostgreSQL instance, a Redis instance, and an S3-compatible object store must each be deployed and configured separately before installing GitLab, using GitLab's own external-database/external-storage configuration options shown below. This guide only documents the GitLab-side values and secrets needed.
+    Unlike older versions of the chart, GitLab chart `10.3.1` no longer bundles PostgreSQL, Redis, or object storage (MinIO) as subcharts — GitLab itself does not supply these. A PostgreSQL instance and a Redis instance must each be deployed separately before installing GitLab, using GitLab's own external-database configuration options shown below. An S3-compatible object store is strongly recommended, but not essential, see [Object Storage](#object-storage). This guide only documents the GitLab-side values and secrets needed.
 
     If using a PostgreSQL instance with a non-root user, the following extensions must be enabled beforehand in the target GitLab database:
 
     - btree_gist
     - pg_trgm
 
-    ```bash
+    ```sql
     create extension btree_gist;
     create extension pg_trgm;
     ```
@@ -20,46 +20,23 @@ GitLab can be deployed using the [official Helm chart](https://docs.gitlab.com/c
 
     `10.3.1` is the latest version of the GitLab chart that has been tested with the latest version of nmaas.
 
-GitLab needs to be told how to reach your PostgreSQL/Redis instances and object storage via Kubernetes secrets:
+The commands on this page assume that the namespace where GitLab (and later nmaas) is deployed is set in the following variable:
 
 ```bash
 export NMAAS_NAMESPACE="nmaas-system"
+```
+
+GitLab needs to be told how to reach your PostgreSQL and Redis instances via Kubernetes secrets:
+
+```bash
 kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-postgresql --from-literal=password=<POSTGRESQL_USER_PASSWORD>
 kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-redis --from-literal=redis-password=<REDIS_PASSWORD>
 kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-root-password --from-literal=password=<GITLAB_ROOT_PASSWORD>
 ```
 
-The object storage connection details are passed as secrets containing GitLab-specific config formats, not plain key/value pairs. Consult GitLab's own object storage documentation for the exact set of buckets it expects to find (LFS, artifacts, uploads, packages, container registry, and optionally backups):
-
-```yaml title="rails-storage-connection.yaml"
-provider: AWS
-region: us-east-1
-aws_access_key_id: <OBJECT_STORAGE_ACCESS_KEY>
-aws_secret_access_key: <OBJECT_STORAGE_SECRET_KEY>
-aws_signature_version: 4
-endpoint: "<OBJECT_STORAGE_ENDPOINT>"
-path_style: true
-```
-
-```yaml title="registry-storage-connection.yaml"
-s3:
-  bucket: gitlab-registry-storage
-  accesskey: <OBJECT_STORAGE_ACCESS_KEY>
-  secretkey: <OBJECT_STORAGE_SECRET_KEY>
-  region: us-east-1
-  regionendpoint: "<OBJECT_STORAGE_ENDPOINT>"
-  pathstyle: true
-  v4auth: true
-```
-
-```bash
-kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-rails-storage --from-file=connection=rails-storage-connection.yaml
-kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-registry-storage --from-file=config=registry-storage-connection.yaml
-```
-
 ## GitLab Values
 
-Below is a snippet of the mandatory parameters that must be specified during GitLab's deployment, so that it will be compatible with nmaas. The complete list of supported value parameters is available in the [official GitLab Helm chart Git repository](https://gitlab.com/gitlab-org/charts/gitlab).
+Below is a snippet of the mandatory parameters that must be specified during GitLab's deployment, so that it will be compatible with nmaas. The object storage configuration is kept in a separate values file, described in the [Object Storage](#object-storage) section. The complete list of supported value parameters is available in the [official GitLab Helm chart Git repository](https://gitlab.com/gitlab-org/charts/gitlab).
 
 ```yaml title="gitlab-values.yaml"
 installCertmanager: false
@@ -114,11 +91,6 @@ global:
   appConfig:
     defaultProjectFeatures:
       builds: false
-    object_store:
-      enabled: true
-      connection:
-        secret: gitlab-rails-storage
-        key: connection
   time_zone: UTC
   ## use an external smtp server for outgoing email (optional)
   smtp:
@@ -142,11 +114,6 @@ global:
     reply_to: 'support@example.com'
     smime:
       enabled: false
-
-registry:
-  storage:
-    secret: gitlab-registry-storage
-    key: config
 ```
 
 !!! info "TLS Secret Must Exist in GitLab's Namespace"
@@ -162,12 +129,97 @@ Note that the secrets referenced by `global.initialRootPassword.secret`, `global
 !!! info "GitLab Email Sending"
     nmaas does not rely on email sending via GitLab, so both the email and SMTP sections in the value files can be left with their default values - unconfigured. 
 
+## Object Storage
+
+GitLab stores files that are not part of Git repositories, such as uploads, LFS objects, CI artifacts, packages and container images, in object storage. Using an S3-compatible object store is strongly recommended, but not essential: nmaas only relies on Git repositories, which are stored by Gitaly on a persistent volume, and on the GitLab API and webhooks.
+
+Choose one of the two configurations below and save it as `gitlab-object-storage.yaml`, which is passed to the GitLab installation together with `gitlab-values.yaml`.
+
+### With Object Storage (Recommended)
+
+The object storage connection details are passed as secrets containing GitLab-specific config formats, not plain key/value pairs. Consult GitLab's own object storage documentation for the exact set of buckets it expects to find (LFS, artifacts, uploads, packages, container registry, and optionally backups):
+
+```yaml title="rails-storage-connection.yaml"
+provider: AWS
+region: us-east-1
+aws_access_key_id: <OBJECT_STORAGE_ACCESS_KEY>
+aws_secret_access_key: <OBJECT_STORAGE_SECRET_KEY>
+aws_signature_version: 4
+endpoint: "<OBJECT_STORAGE_ENDPOINT>"
+path_style: true
+```
+
+```yaml title="registry-storage-connection.yaml"
+s3:
+  bucket: gitlab-registry-storage
+  accesskey: <OBJECT_STORAGE_ACCESS_KEY>
+  secretkey: <OBJECT_STORAGE_SECRET_KEY>
+  region: us-east-1
+  regionendpoint: "<OBJECT_STORAGE_ENDPOINT>"
+  pathstyle: true
+  v4auth: true
+```
+
+```bash
+kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-rails-storage --from-file=connection=rails-storage-connection.yaml
+kubectl create secret generic -n $NMAAS_NAMESPACE gitlab-registry-storage --from-file=config=registry-storage-connection.yaml
+```
+
+```yaml title="gitlab-object-storage.yaml"
+global:
+  appConfig:
+    object_store:
+      enabled: true
+      connection:
+        secret: gitlab-rails-storage
+        key: connection
+
+registry:
+  storage:
+    secret: gitlab-registry-storage
+    key: config
+```
+
+### Without Object Storage
+
+For a quick evaluation setup, or for a GitLab instance dedicated solely to nmaas, GitLab can also be deployed without object storage. In this case, the following limitations apply:
+
+- Files uploaded through the GitLab web interface or API, such as avatars, attachments in issues and merge requests, and project imports and exports, are stored inside the GitLab containers. They are lost whenever the GitLab pods are restarted, and are not shared between the GitLab pods, so these features do not work reliably.
+- Git LFS, CI artifacts, the package registry and the container registry are not available.
+- The backup utility included in the GitLab chart requires object storage. The GitLab PostgreSQL database and the Gitaly persistent volume have to be backed up by other means.
+- This is not the configuration recommended by GitLab for Helm chart deployments.
+
+None of these limitations affect nmaas itself. To deploy GitLab without object storage, disable the container registry and all object storage types:
+
+```yaml title="gitlab-object-storage.yaml"
+registry:
+  enabled: false
+
+global:
+  registry:
+    enabled: false
+  appConfig:
+    object_store:
+      enabled: false
+    artifacts:
+      enabled: false
+    lfs:
+      enabled: false
+    uploads:
+      enabled: false
+    packages:
+      enabled: false
+```
+
+Object storage can also be added later, by replacing `gitlab-object-storage.yaml` with the configuration from the previous section and upgrading the GitLab release. Files uploaded while running without object storage are not migrated.
+
+## Installing GitLab
+
 Once all configuration parameters have been specified, GitLab can be installed using the following Helm v3 command:
 
 ```bash
-export NMAAS_NAMESPACE="nmaas-system"
 helm repo add gitlab https://charts.gitlab.io
-helm install -f gitlab-values.yaml --namespace $NMAAS_NAMESPACE <RELEASE_NAME> --version 10.3.1 gitlab/gitlab
+helm install -f gitlab-values.yaml -f gitlab-object-storage.yaml --namespace $NMAAS_NAMESPACE <RELEASE_NAME> --version 10.3.1 gitlab/gitlab
 ```
 
 !!! warning "GitLab Deployment Duration"
@@ -182,14 +234,49 @@ Once GitLab has been deployed, it can be accessed by navigating to `gitlab.<TLD>
 
     Users are advised to determine whether public exposure of the GitLab web interface is needed at all. nmaas' GitLab integration can work even if only public access to the GitLab SSH interface is provided, since repository cloning always relies on SSH as the transport protocol.
 
+## GitLab API Token
+
 To create a GitLab API token that can be used by nmaas, perform the following steps:
 
 - Login to GitLab using the root account;
 - Click on the avatar image in the top right corner and select `Settings`;
 - From the left-hand navigation menu choose `Access Tokens`;
-- Create a new access token with no expiration date by simply leaving the `Expires at` field empty, and assigning all available scopes;
+- Create a new access token, assigning all available scopes and an expiration date;
 - Write down the API token, it will be needed during nmaas installation.
+
+!!! warning "GitLab API Token Expiration"
+
+    Depending on the GitLab version and the instance settings, personal access tokens may be required to have an expiration date. Once the token expires, nmaas can no longer communicate with GitLab and application deployments fail, so make sure to rotate the token before it expires:
+
+    1. Create a new access token as described above.
+    2. Replace the token stored in the `nmaas-gitlab-api-token` secret (or update `global.gitlabApiToken.literal` and run `helm upgrade`, if the token is specified in the nmaas values file):
+
+        ```bash
+        kubectl create secret generic -n $NMAAS_NAMESPACE nmaas-gitlab-api-token --from-literal=secret=<NEW_GITLAB_API_TOKEN> --dry-run=client -o yaml | kubectl apply -f -
+        ```
+
+    3. Restart nmaas Platform so that the new token is used:
+
+        ```bash
+        kubectl rollout restart deployment/nmaas-platform -n $NMAAS_NAMESPACE
+        ```
+
+## Allowing Webhooks to the Local Network
+
+Every application deployment goes through nmaas registering a webhook on a GitLab project it creates, pointing at `http://nmaas-platform:<port>/api/v1/gitlab/webhooks/<id>` — an internal Kubernetes Service hostname. GitLab's SSRF-protection setting blocks webhooks targeting local/private network addresses **by default**, so without this change, every single application deployment will fail at the configuration step with `GITLAB: Invalid url given Unprocessable Entity` (`GitLabConfigHandler.addWebhookToProject`), no matter which application or domain.
+
+To allow webhooks to the local network, log in as the GitLab root user and navigate to **Admin Area → Settings → Network → Outbound requests**, then enable **"Allow requests to the local network from webhooks and integrations"**. Enabling the adjacent "Allow requests to the local network from system hooks" setting is recommended as well.
+
+The same settings can also be verified or changed via the API:
+
+```bash
+curl -X PUT "https://gitlab.<TLD>/api/v4/application/settings" \
+  -H "PRIVATE-TOKEN: <GITLAB_ROOT_API_TOKEN>" \
+  -d "allow_local_requests_from_web_hooks_and_services=true&allow_local_requests_from_system_hooks=true"
+```
+
+If nmaas uses an existing GitLab instance, these settings must be enabled by an administrator of that instance.
 
 ## SSH Access to GitLab Repositories
 
-GitLab supports SSH access to any created repositories. If you want to allow your users to clone the repositories where their application configuration is stored, then you will have to alter the GitLab Shell service, and change its type to LoadBalancer, so that a routable IP address will be assigned to it.
+GitLab supports SSH access to any created repositories, allowing users to clone the repositories where their application configuration is stored. This is why the values above set the type of the GitLab Shell service to `LoadBalancer` (`gitlab.gitlab-shell.service.type`), so that a routable IP address is assigned to it. If SSH access to the repositories is not needed, this setting can be omitted.

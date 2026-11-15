@@ -64,7 +64,7 @@ global:
       enabled: true
       secretName: <MY_TLS_SECRET>
     path: /
-    class: "cilium" # substitute your own ingress class if not using Cilium
+    class: <INGRESS_CLASS> # ingress class of the ingress controller in your cluster
   gatewayApi:
     enabled: false # this guide uses classic Ingress throughout, not Gateway API - see note below
     installEnvoy: false
@@ -116,9 +116,11 @@ global:
       enabled: false
 ```
 
+The value of `global.ingress.class` must match the `IngressClass` of an ingress controller running in the cluster. The available ingress classes can be listed with `kubectl get ingressclass`.
+
 !!! info "TLS Secret Must Exist in GitLab's Namespace"
 
-    Classic `Ingress` TLS `secretName` references only support same-namespace secrets — this is a core Kubernetes `Ingress` limitation, not specific to GitLab or Cilium. Make sure `<MY_TLS_SECRET>` exists in the same namespace GitLab is deployed into before installing.
+    Classic `Ingress` TLS `secretName` references only support same-namespace secrets — this is a core Kubernetes `Ingress` limitation, not specific to GitLab. Make sure `<MY_TLS_SECRET>` exists in the same namespace GitLab is deployed into before installing.
 
 !!! warning "`global.gatewayApi.enabled: false` Alone Does Not Suppress Envoy Gateway"
 

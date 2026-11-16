@@ -36,7 +36,7 @@
     |             NAV            |           4.8.6          |    2.0.1    |        N/A       |  VNOC  |
     |           NetBox           |           4.7.5          |   8.3.105   |       4.7.5      |  VNOC  |
     |      NetBox MCP Server     |          1.2.1-2         |    0.1.0    |        N/A       |  VNOC  |
-    |          Oxidized          |          0.30.1          |    3.0.2    |      0.37.0      |  VNOC  |
+    |          Oxidized          |          0.30.1          |    3.0.2    |      0.38.0      |  VNOC  |
     |      perfSONAR Archive     |          5.3.0-5         |    1.1.2    |        N/A       |  VNOC  |
     |     perfSONAR Testpoint    |          5.2.4-3         | 0.2.6-beta.2|        N/A       |  VNOC  |
     |          PgBackWeb         |           0.5.2          |    1.0.14   |       0.5.2      |  VNOC  |
@@ -94,7 +94,7 @@
     |           NetBox           |       4.6.9       |    8.3.63   |       4.7.5      |  VLAB  |
     |      NetBox MCP Server     |      1.2.1-2      |    0.1.0    |        N/A       |  VLAB  |
     |       OWASP JuiceShop      |       20.1.1      |    1.0.5    |      20.4.0      |  VLAB  |
-    |          Oxidized          |       0.28.0      |    2.0.1    |      0.37.0      |  VLAB  |
+    |          Oxidized          |       0.28.0      |    2.0.1    |      0.38.0      |  VLAB  |
     |      perfSONAR Archive     |    5.2.0-beta.4   |    0.1.4    |        N/A       |  VLAB  |
     |     perfSONAR Testpoint    |   5.2.4-alpha.5   |  0.2.5-beta |        N/A       |  VLAB  |
     |          PgBackWeb         |       0.4.2       |    1.0.0    |       0.5.2      |  VLAB  |

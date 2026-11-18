@@ -87,7 +87,7 @@
     |          LibreNMS          |        1.47       |    2.0.1    |        N/A       |  VLAB  |
     |            Maat            |      1.0.16-1     |    4.0.6    |        N/A       |  VLAB  |
     |           MailDev          |       3.0.0       |    1.2.5    |maildev@3.0.0-rc.3|  VLAB  |
-    |          Metabase          |       65.3.7      |   1.0.55-1  |ux-3754-full-state|  VLAB  |
+    |          Metabase          |       65.5.1      |   1.0.56-1  |ux-3754-full-state|  VLAB  |
     |           Moodle           |      5.0.1-1      |    26.0.4   |       list       |  VLAB  |
     |             N8n            |      1.123.31     |    1.1.2    |      stable      |  VLAB  |
     |             NAV            |       4.8.6       |    2.0.1    |        N/A       |  VLAB  |

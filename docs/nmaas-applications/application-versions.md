@@ -43,7 +43,7 @@
     |         PostgreSQL         |          17.6.0          |   16.7.26   |        N/A       |  VNOC  |
     |         Prometheus         |           3.8.0          |    4.0.13   |       3.8.0      |  VNOC  |
     |Prometheus Blackbox Exporter|         0.28.0-1         |    11.9.1   |        N/A       |  VNOC  |
-    |         Routinator         |           0.8.3          |    2.0.0    |      0.16.1      |  VNOC  |
+    |         Routinator         |           0.8.3          |    2.0.0    |      0.16.2      |  VNOC  |
     |          SmokePing         |          2.9.0-7         |    1.0.1    |        N/A       |  VNOC  |
     |          Telegraf          |          1.36.4          |    1.8.65   |      1.40.0      |  VNOC  |
     |            Trino           |            484           |    1.45.0   |        N/A       |  VNOC  |
@@ -101,7 +101,7 @@
     |         PostgreSQL         |       17.6.0      |   16.7.26   |        N/A       |  VLAB  |
     |         Prometheus         |      3.9.1-1      |   4.0.16-1  |       3.8.0      |  VLAB  |
     |Prometheus Blackbox Exporter|      0.28.0-1     |    11.9.1   |        N/A       |  VLAB  |
-    |         Routinator         |       0.8.3       |    2.0.0    |      0.16.1      |  VLAB  |
+    |         Routinator         |       0.8.3       |    2.0.0    |      0.16.2      |  VLAB  |
     |          SmokePing         |      2.9.0-5      |    0.1.0    |        N/A       |  VLAB  |
     |            Trino           |       479-1       |    1.42.0   |        N/A       |  VLAB  |
     |          UnrealIRC         |      3.2.8-1      |    1.0.0    |        N/A       |  VLAB  |

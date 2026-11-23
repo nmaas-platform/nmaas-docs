@@ -45,7 +45,7 @@
     |Prometheus Blackbox Exporter|         0.28.0-1         |    11.9.1   |        N/A       |  VNOC  |
     |         Routinator         |           0.8.3          |    2.0.0    |      0.16.2      |  VNOC  |
     |          SmokePing         |          2.9.0-7         |    1.0.1    |        N/A       |  VNOC  |
-    |          Telegraf          |          1.36.4          |    1.8.65   |      1.40.0      |  VNOC  |
+    |          Telegraf          |          1.36.4          |    1.8.65   |      1.40.4      |  VNOC  |
     |            Trino           |            484           |    1.45.0   |        N/A       |  VNOC  |
     |         Uptime Kuma        |           2.5.9          |    4.0.11   |      1.23.13     |  VNOC  |
     |   Uptime Kuma MCP Server   |         0.11.18-2        |    0.1.0    |        N/A       |  VNOC  |

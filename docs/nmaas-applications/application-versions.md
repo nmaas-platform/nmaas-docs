@@ -4,7 +4,7 @@
 
     |            Name            |        App Version       |Chart Version|  Latest Version  |Instance|
     |----------------------------|--------------------------|-------------|------------------|--------|
-    |           Adminer          |           6.2.0          |    3.0.26   |       6.3.1      |  VNOC  |
+    |           Adminer          |           6.3.1          |    3.0.27   |       6.3.1      |  VNOC  |
     |       Apache Airflow       |           3.2.0          |    1.21.0   |     3.4.0rc3     |  VNOC  |
     |            Argus           |          2.9.1-3         |    0.8.3    |        N/A       |  VNOC  |
     |      Argus Zabbix Glue     |          0.1.2-2         |    0.1.0    |        N/A       |  VNOC  |

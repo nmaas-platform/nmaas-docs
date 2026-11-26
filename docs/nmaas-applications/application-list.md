@@ -4,7 +4,7 @@ This is a continuously updated list of currently supported applications on nmaas
 
 |                                                      Name                                                     |        App Version       |Chart Version|
 |---------------------------------------------------------------------------------------------------------------|--------------------------|-------------|
-|                 [Adminer](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Adminer)                |           6.2.0          |    3.0.26   |
+|                 [Adminer](https://wiki.geant.org/display/NMAAS/NMaaS+Tools#NMaaSTools-Adminer)                |           6.3.1          |    3.0.27   |
 |                 [Apache Airflow](https://docs.nmaas.eu/nmaas-applications/tutorials/airflow/)                 |           3.2.0          |    1.21.0   |
 |                       [Argus](https://docs.nmaas.eu/nmaas-applications/tutorials/argus/)                      |          2.9.1-3         |    0.8.3    |
 |           [Argus Zabbix Glue](https://docs.nmaas.eu/nmaas-applications/tutorials/argus-zabbix-glue/)          |          0.1.2-2         |    0.1.0    |
